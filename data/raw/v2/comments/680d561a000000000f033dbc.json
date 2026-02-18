@@ -1,0 +1,35 @@
+{
+  "note_id": "680d561a000000000f033dbc",
+  "comments": [
+    {
+      "comment_id": "",
+      "note_id": "680d561a000000000f033dbc",
+      "parent_id": "",
+      "content": "台南小吃居然关门了[笑哭R]",
+      "create_time": 1746252491000,
+      "author": {
+        "user_id": "",
+        "nickname": "",
+        "avatar": ""
+      },
+      "liked_count": 0,
+      "sub_comments": []
+    },
+    {
+      "comment_id": "",
+      "note_id": "680d561a000000000f033dbc",
+      "parent_id": "",
+      "content": "这家超级难吃",
+      "create_time": 1760746918000,
+      "author": {
+        "user_id": "",
+        "nickname": "",
+        "avatar": ""
+      },
+      "liked_count": 0,
+      "sub_comments": []
+    }
+  ],
+  "total_count": 2,
+  "fetched_at": "2026-02-16T18:42:06.316528Z"
+}

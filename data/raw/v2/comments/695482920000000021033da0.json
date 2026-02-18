@@ -1,0 +1,35 @@
+{
+  "note_id": "695482920000000021033da0",
+  "comments": [
+    {
+      "comment_id": "",
+      "note_id": "695482920000000021033da0",
+      "parent_id": "",
+      "content": "这个臭豆腐跟我在weee上买来自己炸的差不多[捂脸R]",
+      "create_time": 1769290330000,
+      "author": {
+        "user_id": "",
+        "nickname": "",
+        "avatar": ""
+      },
+      "liked_count": 0,
+      "sub_comments": []
+    },
+    {
+      "comment_id": "",
+      "note_id": "695482920000000021033da0",
+      "parent_id": "",
+      "content": "[偷笑R][偷笑R][偷笑R]所以你推荐的是卫生检查74分的，不是28分的。",
+      "create_time": 1767153903000,
+      "author": {
+        "user_id": "",
+        "nickname": "",
+        "avatar": ""
+      },
+      "liked_count": 0,
+      "sub_comments": []
+    }
+  ],
+  "total_count": 2,
+  "fetched_at": "2026-02-16T18:41:55.709175Z"
+}

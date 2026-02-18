@@ -1,0 +1,475 @@
+{
+  "version": "8.0-merged",
+  "total_restaurants": 38,
+  "restaurants": [
+    {
+      "id": "r016",
+      "name": "Chongqing Xiao Mian",
+      "cuisine": "",
+      "area": "Fremont",
+      "mention_count": 4,
+      "total_engagement": 1702,
+      "sources": [
+        "6923764a000000001f00cd7c",
+        "6923764a000000001f00cd7c",
+        "697a6fea000000000b008c26",
+        "697a6fea000000000b008c26"
+      ],
+      "post_details": [
+        {
+          "id": "6923764a000000001f00cd7c",
+          "title": "",
+          "date": "2025-11-23",
+          "engagement": 291
+        },
+        {
+          "id": "6923764a000000001f00cd7c",
+          "title": "",
+          "date": "2025-11-23",
+          "engagement": 291
+        },
+        {
+          "id": "697a6fea000000000b008c26",
+          "title": "",
+          "date": "2026-01-28",
+          "engagement": 560
+        },
+        {
+          "id": "697a6fea000000000b008c26",
+          "title": "",
+          "date": "2026-01-28",
+          "engagement": 560
+        }
+      ]
+    },
+    {
+      "id": "r017",
+      "name": "Hunan House",
+      "cuisine": "",
+      "area": "Cupertino",
+      "mention_count": 6,
+      "total_engagement": 1510,
+      "sources": [
+        "6856cc340000000013011fd6",
+        "6856cc340000000013011fd6",
+        "68c71d50000000001c005084",
+        "68c71d50000000001c005084",
+        "690c40bf0000000005039eae",
+        "690c40bf0000000005039eae"
+      ],
+      "post_details": [
+        {
+          "id": "6856cc340000000013011fd6",
+          "title": "",
+          "date": "2025-06-21",
+          "engagement": 314
+        },
+        {
+          "id": "6856cc340000000013011fd6",
+          "title": "",
+          "date": "2025-06-21",
+          "engagement": 314
+        },
+        {
+          "id": "68c71d50000000001c005084",
+          "title": "",
+          "date": "2025-09-14",
+          "engagement": 188
+        },
+        {
+          "id": "68c71d50000000001c005084",
+          "title": "",
+          "date": "2025-09-14",
+          "engagement": 188
+        },
+        {
+          "id": "690c40bf0000000005039eae",
+          "title": "-1🥢",
+          "date": "2025-11-05",
+          "engagement": 253
+        },
+        {
+          "id": "690c40bf0000000005039eae",
+          "title": "-1🥢",
+          "date": "2025-11-05",
+          "engagement": 253
+        }
+      ]
+    },
+    {
+      "id": "r018",
+      "name": "",
+      "cuisine": "",
+      "area": "Cupertino",
+      "mention_count": 5,
+      "total_engagement": 1474,
+      "sources": [
+        "6856cc340000000013011fd6",
+        "6875756b0000000015022f47",
+        "68c224b1000000001b01f784",
+        "697a6fea000000000b008c26",
+        "697a7529000000000b0111ab"
+      ],
+      "post_details": [
+        {
+          "id": "6856cc340000000013011fd6",
+          "title": "",
+          "date": "2025-06-21",
+          "engagement": 314
+        },
+        {
+          "id": "6875756b0000000015022f47",
+          "title": "",
+          "date": "2025-07-14",
+          "engagement": 165
+        },
+        {
+          "id": "68c224b1000000001b01f784",
+          "title": "  ",
+          "date": "2025-09-10",
+          "engagement": 132
+        },
+        {
+          "id": "697a6fea000000000b008c26",
+          "title": "",
+          "date": "2026-01-28",
+          "engagement": 560
+        },
+        {
+          "id": "697a7529000000000b0111ab",
+          "title": "10",
+          "date": "2026-01-28",
+          "engagement": 303
+        }
+      ]
+    },
+    {
+      "id": "r019",
+      "name": "epic dumpling",
+      "cuisine": "",
+      "area": "Sunnyvale",
+      "mention_count": 2,
+      "total_engagement": 1286,
+      "sources": [
+        "670977d9000000002a03115c",
+        "670977d9000000002a03115c"
+      ],
+      "post_details": [
+        {
+          "id": "670977d9000000002a03115c",
+          "title": "50Sunnyvale",
+          "date": "2024-10-11",
+          "engagement": 643
+        },
+        {
+          "id": "670977d9000000002a03115c",
+          "title": "50Sunnyvale",
+          "date": "2024-10-11",
+          "engagement": 643
+        }
+      ]
+    },
+    {
+      "id": "r020",
+      "name": "Taiwan Cafe",
+      "cuisine": "",
+      "area": "Milpitas",
+      "mention_count": 2,
+      "total_engagement": 1250,
+      "sources": [
+        "6928cb59000000001e02569d",
+        "6928cb59000000001e02569d"
+      ],
+      "post_details": [
+        {
+          "id": "6928cb59000000001e02569d",
+          "title": "",
+          "date": "2025-11-27",
+          "engagement": 625
+        },
+        {
+          "id": "6928cb59000000001e02569d",
+          "title": "",
+          "date": "2025-11-27",
+          "engagement": 625
+        }
+      ]
+    },
+    {
+      "id": "r021",
+      "name": "Hunan Impression",
+      "cuisine": "",
+      "area": "Cupertino",
+      "mention_count": 4,
+      "total_engagement": 1134,
+      "sources": [
+        "6856cc340000000013011fd6",
+        "6856cc340000000013011fd6",
+        "690c40bf0000000005039eae",
+        "690c40bf0000000005039eae"
+      ],
+      "post_details": [
+        {
+          "id": "6856cc340000000013011fd6",
+          "title": "",
+          "date": "2025-06-21",
+          "engagement": 314
+        },
+        {
+          "id": "6856cc340000000013011fd6",
+          "title": "",
+          "date": "2025-06-21",
+          "engagement": 314
+        },
+        {
+          "id": "690c40bf0000000005039eae",
+          "title": "-1🥢",
+          "date": "2025-11-05",
+          "engagement": 253
+        },
+        {
+          "id": "690c40bf0000000005039eae",
+          "title": "-1🥢",
+          "date": "2025-11-05",
+          "engagement": 253
+        }
+      ]
+    },
+    {
+      "id": "r022",
+      "name": "Hunan",
+      "cuisine": "",
+      "area": "Cupertino",
+      "mention_count": 4,
+      "total_engagement": 887,
+      "sources": [
+        "6856cc340000000013011fd6",
+        "68c224b1000000001b01f784",
+        "68c71d50000000001c005084",
+        "690c40bf0000000005039eae"
+      ],
+      "post_details": [
+        {
+          "id": "6856cc340000000013011fd6",
+          "title": "",
+          "date": "2025-06-21",
+          "engagement": 314
+        },
+        {
+          "id": "68c224b1000000001b01f784",
+          "title": "  ",
+          "date": "2025-09-10",
+          "engagement": 132
+        },
+        {
+          "id": "68c71d50000000001c005084",
+          "title": "",
+          "date": "2025-09-14",
+          "engagement": 188
+        },
+        {
+          "id": "690c40bf0000000005039eae",
+          "title": "-1🥢",
+          "date": "2025-11-05",
+          "engagement": 253
+        }
+      ]
+    },
+    {
+      "id": "r001",
+      "name": "Ping's Bistro",
+      "cuisine": "",
+      "area": "Cupertino",
+      "verified": false,
+      "sources": [
+        "6856cc340000000013011fd6",
+        "690c40bf0000000005039eae",
+        "6924d9f7000000001e009d75"
+      ],
+      "total_engagement": 670,
+      "mention_count": 3,
+      "post_details": [
+        {
+          "post_id": "6856cc340000000013011fd6",
+          "date": "2025-06-21",
+          "engagement": 314,
+          "context": "赞，「招牌毛血旺」里有鳝鱼，食材超多非常惊艳！\n\t\n[五R]Ping's Bistro Cupertino｜留湘·小聚｜云南菜\n很特别的云南菜，点",
+          "found_in": "desc",
+          "title": ""
+        },
+        {
+          "post_id": "690c40bf0000000005039eae",
+          "date": "2025-11-06",
+          "engagement": 253,
+          "context": "点，就是小贵，确实辣。\n人均：40+\n\t\n2、云南菜 小聚：Ping's Bistro Cupertino\n地址：10700 S De Anza ",
+          "found_in": "desc",
+          "title": ""
+        },
+        {
+          "post_id": "6924d9f7000000001e009d75",
+          "date": "2025-11-24",
+          "engagement": 103,
+          "context": "想念虾图\n蓝蟹还行 壳子比梭子蟹硬好多\n3-4 再更新一点点pings bistro 3好吃 香茅烤鱼还行\n5-7 为了王心凌的票去吃的海底捞(",
+          "found_in": "desc",
+          "title": ""
+        }
+      ],
+      "time_series": {
+        "timeline": [
+          {
+            "date": "2025-06-21",
+            "engagement": 314,
+            "posts": 1,
+            "found_in": "desc"
+          },
+          {
+            "date": "2025-11-06",
+            "engagement": 253,
+            "posts": 1,
+            "found_in": "desc"
+          },
+          {
+            "date": "2025-11-24",
+            "engagement": 103,
+            "posts": 1,
+            "found_in": "desc"
+          }
+        ],
+        "total_engagement": 670,
+        "first_mentioned": "2025-06-21",
+        "peak_discussion_date": "2025-06-21",
+        "data_source": "direct_match_with_comments"
+      },
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 3,
+          "total_engagement": 670,
+          "mention_count": 3
+        }
+      }
+    },
+    {
+      "id": "r023",
+      "name": "",
+      "cuisine": "",
+      "area": "Sunnyvale",
+      "mention_count": 1,
+      "total_engagement": 643,
+      "sources": [
+        "670977d9000000002a03115c"
+      ],
+      "post_details": [
+        {
+          "id": "670977d9000000002a03115c",
+          "title": "50Sunnyvale",
+          "date": "2024-10-11",
+          "engagement": 643
+        }
+      ]
+    },
+    {
+      "id": "r024",
+      "name": "",
+      "cuisine": "",
+      "area": "Milpitas",
+      "mention_count": 1,
+      "total_engagement": 625,
+      "sources": [
+        "6928cb59000000001e02569d"
+      ],
+      "post_details": [
+        {
+          "id": "6928cb59000000001e02569d",
+          "title": "",
+          "date": "2025-11-27",
+          "engagement": 625
+        }
+      ]
+    },
+    {
+      "id": "r025",
+      "name": "Pacific Catch",
+      "cuisine": "",
+      "area": "Mountain View",
+      "mention_count": 3,
+      "total_engagement": 555,
+      "sources": [
+        "66667292000000000f00f266",
+        "690b7c6f000000000703b381",
+        "690f77cf00000000050317bb"
+      ],
+      "post_details": [
+        {
+          "id": "66667292000000000f00f266",
+          "title": "(2)",
+          "date": "2024-06-09",
+          "engagement": 245
+        },
+        {
+          "id": "690b7c6f000000000703b381",
+          "title": "",
+          "date": "2025-11-05",
+          "engagement": 269
+        },
+        {
+          "id": "690f77cf00000000050317bb",
+          "title": "Cupertino 🥘 ",
+          "date": "2025-11-08",
+          "engagement": 41
+        }
+      ]
+    },
+    {
+      "id": "r026",
+      "name": "Umami Dumpling House",
+      "cuisine": "",
+      "area": "Sunnyvale",
+      "mention_count": 1,
+      "total_engagement": 531,
+      "sources": [
+        "6915759900000000070383d7"
+      ],
+      "post_details": [
+        {
+          "id": "6915759900000000070383d7",
+          "title": "Sunnyvale",
+          "date": "2025-11-13",
+          "engagement": 531
+        }
+      ]
+    },
+    {
+      "id": "r002",
+      "name": "",
+      "cuisine": "",
+      "area": "Cupertino",
+      "verified": false,
+      "sources": [
+        "693e02ff000000001e038ae4",
+        "697ad7a0000000000c035eb3",
+        "697c2dcb000000002200ab2d"
+      ],
+      "total_engagement": 528,
+      "mention_count": 3,
+      "post_details": [
+        {
+          "post_id": "693e02ff000000001e038ae4",
+          "date": "2025-12-14",
+          "engagement": 92,
+          "context": "的菜品老店都没有[哭惹R]\n\t\n5️⃣ C.Q. Taste重庆铺盖面\n四川人说鸡丝凉面不正宗，属于可以倒闭的程度[嘻嘻R]\n我点",
+          "found_in": "desc",
+          "title": ""
+        },
+        {
+          "post_id": "697ad7a0000000000c035eb3",
+          "date": "2026-01-29",
+          "engagement": 220,
+          "context": "成都人四刷Cupertino重庆铺盖面｜满意",
+          "found_in": "title",
+          "title": ""
+        },
+        {
+          "post_id": "697c2dcb000000002200ab2d",
+          "date": "2026-01-30",
+          "engagement": 216,
+          "context": 

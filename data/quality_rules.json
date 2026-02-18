@@ -1,0 +1,86 @@
+{
+  "rules": [
+    {
+      "id": "rule_001_duplicate_detection",
+      "name": "自动检测重复餐厅",
+      "description": "基于地址或Google Place ID检测重复",
+      "enabled": true,
+      "conditions": {
+        "same_google_place_id": true,
+        "same_address": true,
+        "address_not_null": true
+      },
+      "action": {
+        "type": "merge",
+        "strategy": {
+          "keep_record": "highest_engagement",
+          "merge_fields": [
+            "sources",
+            "post_details"
+          ],
+          "combine_recommendations": true,
+          "mark_duplicate": true
+        }
+      }
+    },
+    {
+      "id": "rule_002_recommendation_quality",
+      "name": "推荐菜质量筛选",
+      "description": "自动识别和保留高质量的推荐菜",
+      "enabled": true,
+      "conditions": null,
+      "action": {
+        "type": "filter",
+        "keep": "specific_dishes_only",
+        "min_dish_name_length": 3
+      }
+    },
+    {
+      "id": "rule_003_name_vs_google_match",
+      "name": "餐厅名与Google名对齐",
+      "description": "确保餐厅正式名称与Google商家名一致",
+      "enabled": true,
+      "conditions": {
+        "google_name_exists": true,
+        "name_mismatch": true
+      },
+      "action": {
+        "type": "extract_from_google",
+        "use_google_name_as_alias": true,
+        "keep_user_friendly_name": true
+      }
+    },
+    {
+      "id": "rule_004_post_title_vs_name",
+      "name": "帖子标题不等于餐厅名",
+      "description": "防止把帖子描述性标题当成餐厅名",
+      "enabled": true,
+      "conditions": {
+        "name_contains_descriptive_words": [
+          "竟然",
+          "这么",
+          "一个",
+          "系",
+          "风格"
+        ],
+        "google_name_different": true
+      },
+      "action": {
+        "type": "use_google_name",
+        "add_original_as_alias": true
+      }
+    },
+    {
+      "id": "rule_005_engagement_sync",
+      "name": "讨论度自动同步",
+      "description": "每天自动刷新帖子互动数",
+      "enabled": true,
+      "conditions": null,
+      "action": {
+        "type": "daily_update",
+        "batch_size": 20,
+        "refresh_interval_hours": 24
+      }
+    }
+  ]
+}

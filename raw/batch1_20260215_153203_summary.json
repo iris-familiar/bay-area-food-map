@@ -1,0 +1,15 @@
+{
+  "batch_id": "batch1_20260215_153203",
+  "search_term": "Cupertino美食",
+  "executed_at": "2026-02-15T15:32:03-08:00",
+  "target_posts": 5,
+  "actual_posts": 0,
+  "status": "pending_execution",
+  "notes": "需要xiaohongshu-mcp环境执行实际抓取",
+  "next_steps": [
+    "1. 配置xiaohongshu-mcp环境",
+    "2. 执行 batch1_20260215_153203_commands.sh",
+    "3. 运行 discover_from_comments.py 提取新餐厅",
+    "4. 人工验证候选餐厅"
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "total_restaurants": 79,
+  "quality_metrics": {
+    "with_google_rating": 78,
+    "with_google_rating_pct": 99,
+    "with_sentiment": 79,
+    "with_sentiment_pct": 100,
+    "with_address": 78,
+    "with_address_pct": 99
+  },
+  "region_distribution": {
+    "East Bay": 18,
+    "South Bay": 55,
+    "San Francisco": 3,
+    "Peninsula": 3
+  },
+  "cuisine_distribution": {
+    "湘菜": 10,
+    "融合菜": 1,
+    "川菜": 7,
+    "日料": 3,
+    "潮汕菜": 1,
+    "中餐": 10,
+    "包子": 1,
+    "墨西哥菜": 1,
+    "上海菜": 5,
+    "烧烤": 2,
+    "麻辣烫": 3,
+    "烧腊": 1,
+    "云南菜": 1,
+    "泰国菜": 2,
+    "拉面": 2,
+    "港式": 1,
+    "徽菜": 1,
+    "台湾菜": 2,
+    "海鲜": 1,
+    "日式": 1,
+    "甜品": 2,
+    "炸鸡": 1,
+    "中东菜": 1,
+    "奶茶": 1,
+    "韩餐": 4,
+    "牛排": 1,
+    "新疆菜": 1,
+    "江浙菜": 1,
+    "面食": 2,
+    "粤菜": 1,
+    "西餐": 1,
+    "淮扬菜": 1,
+    "尼泊尔菜": 1,
+    "台湾小吃": 1,
+    "家常菜": 1,
+    "砂锅": 1,
+    "贵州菜": 1,
+    "湖北菜": 1
+  },
+  "engagement_distribution": {
+    "high": 3,
+    "medium": 14,
+    "low": 62
+  },
+  "top_tags": [
+    {
+      "tag": "authentic",
+      "count": 48
+    },
+    {
+      "tag": "group-dining",
+      "count": 38
+    },
+    {
+      "tag": "lively",
+      "count": 36
+    },
+    {
+      "tag": "casual",
+      "count": 30
+    },
+    {
+      "tag": "solo-dining",
+      "count": 22
+    },
+    {
+      "tag": "family-dining",
+      "count": 22
+    },
+    {
+      "tag": "quick-bite",
+      "count": 21
+    },
+    {
+      "tag": "spicy",
+      "count": 19
+    },
+    {
+      "tag": "date-night",
+      "count": 17
+    },
+    {
+      "tag": "budget",
+      "count": 15
+    },
+    {
+      "tag": "fancy",
+      "count": 10
+    },
+    {
+      "tag": "healthy",
+      "count": 6
+    },
+    {
+      "tag": "business-meal",
+      "count": 5
+    },
+    {
+      "tag": "cozy",
+      "count": 5
+    },
+    {
+      "tag": "lunch-spot",
+      "count": 5
+    }
+  ],
+  "top_dishes": [
+    {
+      "dish": "农家一碗香",
+      "count": 3
+    },
+    {
+      "dish": "小炒黄牛肉",
+      "count": 2
+    },
+    {
+      "dish": "三鲜水饺",
+      "count": 2
+    },
+    {
+      "dish": "豌杂面",
+      "count": 2
+    },
+    {
+      "dish": "擂椒茄子",
+      "count": 2
+    },
+    {
+      "dish": "水煮牛肉",
+      "count": 2
+    },
+    {
+      "dish": "傣味香茅草烤鱼",
+      "count": 1
+    },
+    {
+      "dish": "牛肝菌青椒牛肉炒饭",
+      "count": 1
+    },
+    {
+      "dish": "青椒褐菌炒云腿",
+      "count": 1
+    },
+    {
+      "dish": "油炸菜心",
+      "count": 1
+    },
+    {
+      "dish": "松露野菌牛油拌饭",
+      "count": 1
+    },
+    {
+      "dish": "宝宝米线",
+      "count": 1
+    },
+    {
+      "dish": "芭蕉叶包烧鱼",
+      "count": 1
+    },
+    {
+      "dish": "贵州米锅巴",
+      "count": 1
+    },
+    {
+      "dish": "石杵茄子",
+      "count": 1
+    },
+    {
+      "dish": "水煮鱼",
+      "count": 1
+    },
+    {
+      "dish": "沸腾鱼",
+      "count": 1
+    },
+    {
+      "dish": "烤活鱼",
+      "count": 1
+    },
+    {
+      "dish": "沸腾活鱼",
+      "count": 1
+    },
+    {
+      "dish": "鳗鱼茶泡饭",
+      "count": 1
+    }
+  ],
+  "avg_engagement": 865,
+  "avg_sentiment": 0.7273417721518995,
+  "computed_at": "2026-02-18T20:12:05.450Z"
+}

@@ -1,0 +1,62 @@
+{
+  "agent": "backend_qa",
+  "timestamp": "2026-02-16T21:06:48.470Z",
+  "status": "PASSED_WITH_WARNINGS",
+  "checks": {
+    "data_files": {
+      "status": "PASS",
+      "required": [
+        "data/current/restaurant_database.json",
+        "data/current/restaurant_database_v5_ui.json",
+        "data/current/search_mapping.json"
+      ],
+      "missing": []
+    },
+    "schema": {
+      "status": "PASS",
+      "total_restaurants": 49,
+      "schema_errors_in_sample": 0,
+      "sample_size": 10,
+      "version": "4.1-audited"
+    },
+    "integrity": {
+      "status": "PASS",
+      "total": 49,
+      "invalid_entries": 0,
+      "duplicate_ids": []
+    },
+    "cross_reference": {
+      "status": "WARNING",
+      "main_count": 49,
+      "v5_count": 82,
+      "only_in_v5": [
+        "r054",
+        "r066",
+        "r068",
+        "r071",
+        "r075"
+      ],
+      "only_in_main": [],
+      "data_drift": 33
+    },
+    "verification": {
+      "status": "INFO",
+      "total": 49,
+      "verified": 39,
+      "with_google_rating": 48,
+      "with_sentiment": 49,
+      "verification_rate": "79.6%"
+    }
+  },
+  "issues": [
+    "Data drift: 33 only in v5, 0 only in main"
+  ],
+  "stats": {
+    "total_restaurants": 49,
+    "verified": 39,
+    "with_google_rating": 48,
+    "with_sentiment": 49,
+    "cuisine_types": 37,
+    "areas": 9
+  }
+}

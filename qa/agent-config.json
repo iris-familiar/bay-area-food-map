@@ -1,0 +1,76 @@
+{
+  "name": "bay-area-food-map-qa",
+  "description": "QA Workflow for Bay Area Food Map - Automated validation after major changes",
+  "version": "1.0",
+  "agents": [
+    {
+      "id": "qa-orchestrator",
+      "name": "QA Orchestrator",
+      "role": "master",
+      "description": "Coordinates Backend and Frontend QA agents, compares their reports, and generates final verdict",
+      "entry_point": "node qa/qa-orchestrator.js",
+      "workflow": [
+        "spawn_backend_qa",
+        "spawn_frontend_qa", 
+        "compare_reports",
+        "generate_summary"
+      ]
+    },
+    {
+      "id": "qa-backend",
+      "name": "Backend QA Agent",
+      "role": "validator",
+      "description": "Validates data integrity, schema, cross-references, and verification status",
+      "checks": [
+        "data_files_existence",
+        "schema_validation",
+        "data_integrity",
+        "cross_reference_main_vs_v5",
+        "verification_statistics"
+      ]
+    },
+    {
+      "id": "qa-frontend", 
+      "name": "Frontend QA Agent",
+      "role": "validator",
+      "description": "Validates UI components, file structure, data loading, and JavaScript functions",
+      "checks": [
+        "file_structure",
+        "html_elements",
+        "data_loading_api",
+        "javascript_functions"
+      ]
+    }
+  ],
+  "triggers": {
+    "automatic": [
+      "after_data_update",
+      "after_code_changes",
+      "scheduled_daily_2am"
+    ],
+    "manual": [
+      "user_request_qa",
+      "pre_deployment_check"
+    ]
+  },
+  "outputs": {
+    "backend_report": "qa/reports/backend_qa_TIMESTAMP.json",
+    "frontend_report": "qa/reports/frontend_qa_TIMESTAMP.json",
+    "comparison": "qa/reports/qa_comparison_TIMESTAMP.json",
+    "summary": "qa/reports/qa_summary_TIMESTAMP.md"
+  },
+  "verdicts": {
+    "PASSED": {
+      "description": "All checks passed, safe to deploy",
+      "action": "approve_deployment"
+    },
+    "PASSED_WITH_WARNINGS": {
+      "description": "Minor issues detected, deployment acceptable",
+      "action": "review_warnings_then_approve"
+    },
+    "FAILED": {
+      "description": "Critical issues detected, must fix before deployment",
+      "action": "block_deployment"
+    }
+  }
+}

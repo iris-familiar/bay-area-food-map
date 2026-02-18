@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-02-16T16:45:52.493Z",
+  "total_restaurants": 49,
+  "direct_match": 11,
+  "synthetic": 38,
+  "date_range": {
+    "earliest": "2024-06-10",
+    "latest": "2026-01-30"
+  },
+  "samples": [
+    {
+      "name": "香锅大王",
+      "source": "direct_match",
+      "timeline_count": 1,
+      "trend_7d": 0,
+      "trend_30d": 0
+    },
+    {
+      "name": "王家味",
+      "source": "synthetic",
+      "timeline_count": 9,
+      "trend_7d": 0,
+      "trend_30d": 0
+    },
+    {
+      "name": "Aceking麻辣烫",
+      "source": "synthetic",
+      "timeline_count": 2,
+      "trend_7d": 0,
+      "trend_30d": 0
+    },
+    {
+      "name": "塔里木",
+      "source": "synthetic",
+      "timeline_count": 2,
+      "trend_7d": 0,
+      "trend_30d": 0
+    },
+    {
+      "name": "Z&Y Restaurant",
+      "source": "synthetic",
+      "timeline_count": 3,
+      "trend_7d": 0,
+      "trend_30d": 0
+    },
+    {
+      "name": "Tamarine Restaurant",
+      "source": "synthetic",
+      "timeline_count": 2,
+      "trend_7d": 0,
+      "trend_30d": 0
+    },
+    {
+      "name": "Shoji",
+      "source": "synthetic",
+      "timeline_count": 2,
+      "trend_7d": 0,
+      "trend_30d": 0
+    },
+    {
+      "name": "Noren Izakaya",
+      "source": "synthetic",
+      "timeline_count": 2,
+      "trend_7d": 0,
+      "trend_30d": 0
+    },
+    {
+      "name": "杨裕兴",
+      "source": "synthetic",
+      "timeline_count": 2,
+      "trend_7d": 0,
+      "trend_30d": 0
+    },
+    {
+      "name": "阿拉上海",
+      "source": "synthetic",
+      "timeline_count": 2,
+      "trend_7d": 0,
+      "trend_30d": 0
+    }
+  ]
+}

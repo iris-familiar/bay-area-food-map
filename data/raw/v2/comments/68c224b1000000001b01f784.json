@@ -1,0 +1,60 @@
+{
+  "note_id": "68c224b1000000001b01f784",
+  "comments": [
+    {
+      "comment_id": "68c24be000000000300310d2",
+      "note_id": "68c224b1000000001b01f784",
+      "parent_id": "",
+      "root_comment_id": "68c24be000000000300310d2",
+      "content": "哼哼哼！等我去湾区了再来",
+      "create_time": 1757563873000,
+      "author": {
+        "user_id": "60fbbc07000000000100b93d",
+        "nickname": "亓(Qi)了个葩",
+        "avatar": ""
+      },
+      "interaction": {
+        "liked_count": 1,
+        "reply_count": 1
+      },
+      "sub_comments": [
+        {
+          "comment_id": "68c24e7d0000000002000ad5",
+          "parent_id": "68c24be000000000300310d2",
+          "root_comment_id": "68c24be000000000300310d2",
+          "content": "[斜眼R][斜眼R][斜眼R]快来玩",
+          "create_time": 1757564542000,
+          "author": {
+            "user_id": "5b3baa676b58b77d90dfcf81",
+            "nickname": "小奶音",
+            "avatar": ""
+          },
+          "interaction": {
+            "liked_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "comment_id": "68c23003000000003003222c",
+      "note_id": "68c224b1000000001b01f784",
+      "parent_id": "",
+      "root_comment_id": "68c23003000000003003222c",
+      "content": "henrys's hunan真的是神",
+      "create_time": 1757556740000,
+      "author": {
+        "user_id": "60c6f64a000000000101de7c",
+        "nickname": "南北绿豆",
+        "avatar": ""
+      },
+      "interaction": {
+        "liked_count": 2,
+        "reply_count": 0
+      },
+      "sub_comments": []
+    }
+  ],
+  "total_count": 2,
+  "fetched_at": "2026-02-16T18:49:03.227760+00:00",
+  "fixed": true
+}

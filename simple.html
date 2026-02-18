@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湾区美食地图 - 测试</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Loading Screen -->
+    <div id="loading" class="fixed inset-0 bg-white flex items-center justify-center z-50">
+        <div class="text-center">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-600 mx-auto mb-4"></div>
+            <p class="text-gray-500">正在加载美食地图...</p>
+            <div id="debug-info" class="mt-4 text-xs text-gray-400 max-w-md"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content" class="hidden">
+        <header class="bg-white shadow-sm sticky top-0 z-40">
+            <div class="max-w-5xl mx-auto px-4 py-4">
+                <h1 class="text-2xl font-bold text-gray-900">湾区美食地图</h1>
+                <p class="text-sm text-gray-500">共 <span id="total-count">0</span> 家餐厅</p>
+            </div>
+        </header>
+
+        <div class="max-w-5xl mx-auto px-4 py-6">
+            <div id="restaurant-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </div>
+    </div>
+
+    <script>
+        let restaurants = [];
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const debugDiv = document.getElementById('debug-info');
+            
+            try {
+                debugDiv.textContent = '正在请求数据...';
+                
+                const response = await fetch('data/current/restaurant_database.json?v=' + Date.now(), {
+                    cache: 'no-store'
+                });
+                
+                if (!response.ok) {
+                    throw new Error('HTTP ' + response.status);
+                }
+                
+                debugDiv.textContent = '正在解析数据...';
+                const data = await response.json();
+                
+                restaurants = data.restaurants || [];
+                debugDiv.textContent = '加载了 ' + restaurants.length + ' 个餐厅';
+                
+                // 渲染
+                const grid = document.getElementById('restaurant-grid');
+                const filtered = restaurants.filter(r => !r._status || r._status !== 'duplicate_merged');
+                
+                document.getElementById('total-count').textContent = filtered.length;
+                
+                grid.innerHTML = filtered.slice(0, 6).map(r => `
+                    <div class="bg-white rounded-xl shadow-sm p-4 cursor-pointer hover:shadow-md transition-shadow">
+                        <h3 class="font-semibold text-lg">${r.name}</h3>
+                        <p class="text-sm text-gray-500">${r.cuisine || '未知'} · ${r.city || r.area || '未知'}</p>
+                        <p class="text-sm text-orange-600 mt-2">讨论度: ${(r.engagement || r.total_engagement || 0).toLocaleString()}</p>
+                    </div>
+                `).join('');
+                
+                // 隐藏 loading
+                document.getElementById('loading').classList.add('hidden');
+                document.getElementById('content').classList.remove('hidden');
+                
+            } catch (error) {
+                console.error('Error:', error);
+                debugDiv.innerHTML = '<span style="color:red">错误: ' + error.message + '</span>';
+            }
+        });
+    </script>
+</body>
+</html>

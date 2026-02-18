@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Test</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        input { width: 300px; padding: 10px; font-size: 16px; }
+        .result { margin: 10px 0; padding: 10px; background: #f0f0f0; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>搜索测试</h1>
+    <input type="text" id="search" placeholder="输入：约会、聚餐、便宜..." oninput="doSearch()">
+    <div id="status">加载中...</div>
+    <div id="results"></div>
+
+    <script>
+        let searchMapping = null;
+        let restaurants = [];
+
+        async function init() {
+            try {
+                const r1 = await fetch('data/current/restaurant_database.json');
+                const d1 = await r1.json();
+                restaurants = d1.restaurants;
+                
+                const r2 = await fetch('data/current/search_mapping.json');
+                searchMapping = await r2.json();
+                
+                document.getElementById('status').innerHTML = 
+                    '<span class="success">✓ 数据加载成功：' + restaurants.length + '家餐厅，' + 
+                    Object.keys(searchMapping.keywords).length + '个关键词</span>';
+            } catch (e) {
+                document.getElementById('status').innerHTML = 
+                    '<span class="error">✗ 错误：' + e.message + '</span>';
+            }
+        }
+
+        function findSceneId(query) {
+            if (!searchMapping || !searchMapping.keywords) return null;
+            if (searchMapping.keywords[query]) return searchMapping.keywords[query];
+            for (const [k, v] of Object.entries(searchMapping.keywords)) {
+                if (query.includes(k)) return v;
+            }
+            return null;
+        }
+
+        function doSearch() {
+            const query = document.getElementById('search').value.toLowerCase().trim();
+            const resultsDiv = document.getElementById('results');
+            
+            if (!query) {
+                resultsDiv.innerHTML = '';
+                return;
+            }
+
+            const sceneId = findSceneId(query);
+            if (!sceneId) {
+                resultsDiv.innerHTML = '<div class="error">未找到场景映射</div>';
+                return;
+            }
+
+            const matchedIds = searchMapping.mappings[sceneId];
+            if (!matchedIds || matchedIds.length === 0) {
+                resultsDiv.innerHTML = '<div class="error">场景映射为空</div>';
+                return;
+            }
+
+            const matched = restaurants.filter(r => matchedIds.includes(r.id));
+            
+            let html = '<div>场景: ' + sceneId + '，匹配: ' + matched.length + '家</div>';
+            matched.slice(0, 5).forEach(r => {
+                html += '<div class="result">' + r.name + ' (' + r.type + ')</div>';
+            });
+            resultsDiv.innerHTML = html;
+        }
+
+        init();
+    </script>
+</body>
+</html>

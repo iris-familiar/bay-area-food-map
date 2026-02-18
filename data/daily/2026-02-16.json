@@ -1,0 +1,381 @@
+{
+  "date": "2026-02-16",
+  "scraped_at": "2026-02-16T02:00:00-08:00",
+  "completed_at": "2026-02-16T02:08:00-08:00",
+  "day_of_week": "Monday",
+  "scene_search": "湾区约会餐厅",
+  "task_status": {
+    "data_status_check": "completed",
+    "scene_search": "completed",
+    "data_analysis": "completed",
+    "deep_tracking": "partial",
+    "comments_mining": "pending",
+    "time_series_update": "completed",
+    "quality_checks": "pending",
+    "search_mapping_update": "pending"
+  },
+  "posts": [
+    {
+      "id": "68a52019000000001b037bca",
+      "title": "湾区｜半岛｜6家超小众氛围感餐厅🥰",
+      "author": "菠萝小小🍍",
+      "engagement": {
+        "likes": 205,
+        "shares": 153,
+        "comments": 8,
+        "collections": 351
+      },
+      "totalEngagement": 717
+    },
+    {
+      "id": "696c6df2000000001a0317d4",
+      "title": "湾区SF适合约会/聚会/庆祝的餐厅们",
+      "author": "牛油果果",
+      "engagement": {
+        "likes": 23,
+        "shares": 9,
+        "comments": 0,
+        "collections": 18
+      },
+      "totalEngagement": 50
+    },
+    {
+      "id": "6940e1dc000000001e02a9aa",
+      "title": "在湾区吃了八次的宝藏餐厅🥰",
+      "author": "小鱼在加州摸鱼",
+      "engagement": {
+        "likes": 425,
+        "shares": 435,
+        "comments": 3,
+        "collections": 642
+      },
+      "totalEngagement": 1505
+    },
+    {
+      "id": "68bf7061000000001d010655",
+      "title": "宇宙中心漂亮饭～从服务到食物都满分的餐厅",
+      "author": "超级超级超级喜欢老师耶",
+      "engagement": {
+        "likes": 55,
+        "shares": 125,
+        "comments": 4,
+        "collections": 87
+      },
+      "totalEngagement": 271
+    },
+    {
+      "id": "696b15c4000000000a0338a1",
+      "title": "Le Papillon ｜湾区能吃到撑的漂亮饭",
+      "author": "787.",
+      "engagement": {
+        "likes": 44,
+        "shares": 43,
+        "comments": 8,
+        "collections": 52
+      },
+      "totalEngagement": 147
+    },
+    {
+      "id": "68c26561000000001c0054e9",
+      "title": "湾区餐厅推荐&踩雷实录🍴",
+      "author": "Vivienne",
+      "engagement": {
+        "likes": 101,
+        "shares": 42,
+        "comments": 1,
+        "collections": 118
+      },
+      "totalEngagement": 262
+    },
+    {
+      "id": "68e1a95a000000000300e797",
+      "title": "湾区Resy餐厅别再盯着南湾了",
+      "author": "改个名字真烦啊",
+      "engagement": {
+        "likes": 205,
+        "shares": 238,
+        "comments": 16,
+        "collections": 297
+      },
+      "totalEngagement": 756
+    },
+    {
+      "id": "697fc32900000000210327d5",
+      "title": "湾区新店天花板💗Zaytinya我宣布近期最佳",
+      "author": "宋小问题多",
+      "engagement": {
+        "likes": 400,
+        "shares": 591,
+        "comments": 31,
+        "collections": 757
+      },
+      "totalEngagement": 1779
+    },
+    {
+      "id": "679ff5ff0000000029011f07",
+      "title": "情人节约会必收藏！湾区Fine Dining推荐！",
+      "author": "小柚总越吃越瘦",
+      "engagement": {
+        "likes": 640,
+        "shares": 441,
+        "comments": 22,
+        "collections": 1133
+      },
+      "totalEngagement": 2236
+    },
+    {
+      "id": "68c224b1000000001b01f784",
+      "title": "湾区网红美食测评 ｜米一 ｜留湘",
+      "author": "小奶音",
+      "engagement": {
+        "likes": 74,
+        "shares": 23,
+        "comments": 3,
+        "collections": 55
+      },
+      "totalEngagement": 155
+    },
+    {
+      "id": "68fc5dbf00000000070092f1",
+      "title": "湾区｜超级适合过纪念日的意大利餐厅🍴",
+      "author": "米粒err（过年回国版",
+      "engagement": {
+        "likes": 26,
+        "shares": 11,
+        "comments": 0,
+        "collections": 18
+      },
+      "totalEngagement": 55
+    },
+    {
+      "id": "686f03db000000001202eb56",
+      "title": "",
+      "author": "Lulu Melon",
+      "engagement": {
+        "likes": 120,
+        "shares": 51,
+        "comments": 60,
+        "collections": 252
+      },
+      "totalEngagement": 483
+    },
+    {
+      "id": "6946e463000000001e02e54e",
+      "title": "湾区吃吃｜Yeobo, Darling 终于吃到了😂",
+      "author": "败家子子",
+      "engagement": {
+        "likes": 104,
+        "shares": 115,
+        "comments": 5,
+        "collections": 152
+      },
+      "totalEngagement": 376
+    },
+    {
+      "id": "6769d5a600000000090162d3",
+      "title": "湾区 | 节日约会漂亮饭合集 🎄🎁",
+      "author": "itschloiii 🍢",
+      "engagement": {
+        "likes": 66,
+        "shares": 25,
+        "comments": 1,
+        "collections": 62
+      },
+      "totalEngagement": 154
+    },
+    {
+      "id": "66aa89ec000000002701170e",
+      "title": "2024湾区12家米其林三星/二星大盘点🌟",
+      "author": "北美酱酱",
+      "engagement": {
+        "likes": 476,
+        "shares": 466,
+        "comments": 9,
+        "collections": 746
+      },
+      "totalEngagement": 1697
+    },
+    {
+      "id": "69632b87000000000e03e522",
+      "title": "攒了2年的湾区美食🍣日料篇",
+      "author": "吧唧没烦恼",
+      "engagement": {
+        "likes": 26,
+        "shares": 13,
+        "comments": 13,
+        "collections": 25
+      },
+      "totalEngagement": 77
+    },
+    {
+      "id": "687edaab000000001202fdc0",
+      "title": "湾区小夫妻约会吃喝日记128",
+      "author": "KQ Daily",
+      "engagement": {
+        "likes": 89,
+        "shares": 53,
+        "comments": 6,
+        "collections": 61
+      },
+      "totalEngagement": 209
+    },
+    {
+      "id": "697ef464000000002801ca3e",
+      "title": "188-172情侣湾区约会庆祝一周年❤️",
+      "author": "娇爷是富婆",
+      "engagement": {
+        "likes": 2,
+        "shares": 0,
+        "comments": 0,
+        "collections": 0
+      },
+      "totalEngagement": 2
+    },
+    {
+      "id": "6927f249000000000d00f75c",
+      "title": "🇺🇸旧金山｜圣何塞｜我的妈呀湾区也太好吃了",
+      "author": "碳水战士小陈",
+      "engagement": {
+        "likes": 789,
+        "shares": 538,
+        "comments": 46,
+        "collections": 1006
+      },
+      "totalEngagement": 2379
+    },
+    {
+      "id": "68b5e53c000000001d00fcc8",
+      "title": "湾区最常遇到小札的漂亮飯｜Ethel’s Fancy",
+      "author": "超級大肥豬",
+      "engagement": {
+        "likes": 81,
+        "shares": 142,
+        "comments": 5,
+        "collections": 117
+      },
+      "totalEngagement": 345
+    }
+  ],
+  "restaurant_mentions": {
+    "Le Papillon": {
+      "count": 1,
+      "engagement": 147,
+      "posts": [
+        {
+          "id": "696b15c4000000000a0338a1",
+          "title": "Le Papillon ｜湾区能吃到撑的漂亮饭",
+          "engagement": 147
+        }
+      ]
+    },
+    "Zaytinya": {
+      "count": 1,
+      "engagement": 1779,
+      "posts": [
+        {
+          "id": "697fc32900000000210327d5",
+          "title": "湾区新店天花板💗Zaytinya我宣布近期最佳",
+          "engagement": 1779
+        }
+      ]
+    },
+    "留湘": {
+      "count": 1,
+      "engagement": 155,
+      "posts": [
+        {
+          "id": "68c224b1000000001b01f784",
+          "title": "湾区网红美食测评 ｜米一 ｜留湘",
+          "engagement": 155
+        }
+      ]
+    },
+    "Yeobo": {
+      "count": 1,
+      "engagement": 376,
+      "posts": [
+        {
+          "id": "6946e463000000001e02e54e",
+          "title": "湾区吃吃｜Yeobo, Darling 终于吃到了😂",
+          "engagement": 376
+        }
+      ]
+    },
+    "Darling": {
+      "count": 1,
+      "engagement": 376,
+      "posts": [
+        {
+          "id": "6946e463000000001e02e54e",
+          "title": "湾区吃吃｜Yeobo, Darling 终于吃到了😂",
+          "engagement": 376
+        }
+      ]
+    },
+    "Ethel's Fancy": {
+      "count": 1,
+      "engagement": 345,
+      "posts": [
+        {
+          "id": "68b5e53c000000001d00fcc8",
+          "title": "湾区最常遇到小札的漂亮飯｜Ethel’s Fancy",
+          "engagement": 345
+        }
+      ]
+    }
+  },
+  "daily_metrics": {
+    "total_posts": 20,
+    "total_engagement": 13655,
+    "restaurants_covered": [
+      "Le Papillon",
+      "Zaytinya",
+      "留湘",
+      "Yeobo",
+      "Darling",
+      "Ethel's Fancy"
+    ],
+    "new_restaurants_found": 0
+  },
+  "deep_tracking": {
+    "target_restaurants": [
+      "湘粤情",
+      "肖婆婆砂锅",
+      "留湘",
+      "Z&Y Restaurant",
+      "香锅大王"
+    ],
+    "search_queries": [
+      "怎么样",
+      "踩雷",
+      "人均"
+    ],
+    "status": "partially_completed",
+    "results_path": "data/daily/2026-02-16-deep-tracking/"
+  },
+  "comments_mining": {
+    "status": "pending",
+    "target_posts": [
+      "6927f249000000000d00f75c",
+      "679ff5ff0000000029011f07",
+      "697fc32900000000210327d5"
+    ],
+    "extraction_patterns": [
+      "XXX也不错",
+      "推荐你去XXX",
+      "还可以去XXX"
+    ]
+  },
+  "quality_checks": {
+    "duplicates_checked": false,
+    "addresses_validated": false,
+    "tags_updated": false,
+    "time_fields_checked": false
+  },
+  "notes": [
+    "场景化搜索完成：湾区约会餐厅（周一）",
+    "发现5家潜在新餐厅，待验证",
+    "时间序列数据已记录到 daily/2026-02-16.json",
+    "深度追踪部分完成，剩余搜索待继续"
+  ]
+}

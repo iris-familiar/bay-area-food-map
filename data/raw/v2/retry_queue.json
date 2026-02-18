@@ -1,0 +1,72 @@
+{
+  "pending": [
+    {
+      "note_id": "69031ede0000000007000645",
+      "xsec_token": "ABnqgr2EEKfSkID35bdrSAjrbjNwK2Qa7K3IAqWg8Dik4=",
+      "title": "milpitas，你们也吃太好了吧！",
+      "failure_reason": "API rate limit or token expired",
+      "retry_count": 0,
+      "first_added": "2026-02-16T12:23:04.600396",
+      "last_failure": "2026-02-16T12:23:04.600401",
+      "next_retry": "2026-02-16T12:23:04.600402",
+      "status": "pending"
+    },
+    {
+      "note_id": "691024250000000003021c19",
+      "xsec_token": "ABj_acke9tTavqbC6A-LrNsEbHDmXNlrfeZyKKlkZZquA=",
+      "title": "湾区有复刻黎大厨的人生鸡饭了",
+      "failure_reason": "API rate limit or token expired",
+      "retry_count": 0,
+      "first_added": "2026-02-16T12:23:04.600740",
+      "last_failure": "2026-02-16T12:23:04.600742",
+      "next_retry": "2026-02-16T12:23:04.600743",
+      "status": "pending"
+    },
+    {
+      "note_id": "69267f9c000000001d038a73",
+      "xsec_token": "ABAzcx7LwqBqelwGeabCA951uFPQwfKx77cwQibTv6zVI=",
+      "title": "Santa Clara和Mountain View 探店",
+      "failure_reason": "API rate limit or token expired",
+      "retry_count": 0,
+      "first_added": "2026-02-16T12:23:04.600844",
+      "last_failure": "2026-02-16T12:23:04.600846",
+      "next_retry": "2026-02-16T12:23:04.600846",
+      "status": "pending"
+    },
+    {
+      "note_id": "694a0149000000001f007d63",
+      "xsec_token": "ABomYfSEDHkJ8duq3nhHvx3aJPSno05tTf06bU2LczCVw=",
+      "title": "湾区🥢 我心中最Top级上海餐馆",
+      "failure_reason": "API rate limit or token expired",
+      "retry_count": 0,
+      "first_added": "2026-02-16T12:23:04.600937",
+      "last_failure": "2026-02-16T12:23:04.600938",
+      "next_retry": "2026-02-16T12:23:04.600939",
+      "status": "pending"
+    },
+    {
+      "note_id": "694dc5a3000000002200ba41",
+      "xsec_token": "ABWdaGh86Q6z5up0OLnyN_-RRbz7YgZqw4qjjaOcZkmPs=",
+      "title": "我在湾区咪西咪西",
+      "failure_reason": "API rate limit or token expired",
+      "retry_count": 0,
+      "first_added": "2026-02-16T12:23:04.601105",
+      "last_failure": "2026-02-16T12:23:04.601109",
+      "next_retry": "2026-02-16T12:23:04.601110",
+      "status": "pending"
+    },
+    {
+      "note_id": "697d2bcd0000000022023751",
+      "xsec_token": "ABdBLzCC6_3kH5_IUIWNR9CLtJd_sQFOa-4mhhmWROskc=",
+      "title": "湾区最贵拉面🍜Wakusei替大家交学费了",
+      "failure_reason": "API rate limit or token expired",
+      "retry_count": 0,
+      "first_added": "2026-02-16T12:23:04.601239",
+      "last_failure": "2026-02-16T12:23:04.601241",
+      "next_retry": "2026-02-16T12:23:04.601242",
+      "status": "pending"
+    }
+  ],
+  "failed_permanently": [],
+  "success_history": []
+}

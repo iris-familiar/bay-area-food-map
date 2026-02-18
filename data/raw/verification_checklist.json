@@ -1,0 +1,404 @@
+{
+  "total": 19,
+  "restaurants": [
+    {
+      "id": "r014",
+      "name": "Ushiya AYCE",
+      "name_en": "Ushiya AYCE",
+      "city": "",
+      "current_address": "3465homestead Road, Santa Clara, CA 95051",
+      "coordinates": null,
+      "clues": [],
+      "possible_names": [],
+      "confidence": "low",
+      "source_title": ""
+    },
+    {
+      "id": "r024",
+      "name": "湘粤情",
+      "name_en": "Jade Xiang Yue",
+      "city": "Cupertino",
+      "current_address": "10911 N Wolfe Rd, Cupertino, CA 95014",
+      "coordinates": {
+        "lat": 37.3361975,
+        "lng": -122.0154086
+      },
+      "clues": [],
+      "possible_names": [],
+      "confidence": "low",
+      "source_title": ""
+    },
+    {
+      "id": "r025",
+      "name": "Chubby Cattle",
+      "name_en": "Chubby Cattle Shabu House",
+      "city": "南湾",
+      "current_address": "251 W El Camino Real, Sunnyvale, CA 94087",
+      "coordinates": null,
+      "clues": [],
+      "possible_names": [],
+      "confidence": "low",
+      "source_title": ""
+    },
+    {
+      "id": "r025",
+      "name": "上海餐馆",
+      "name_en": "Shanghai Restaurant",
+      "city": "Fremont",
+      "current_address": "1572 Mowry Ave, Fremont, CA 94572",
+      "coordinates": {
+        "lat": 37.52004,
+        "lng": -121.9714
+      },
+      "clues": [
+        "Fremont",
+        "上海菜",
+        "心中最Top级"
+      ],
+      "possible_names": [
+        "Shanghai Restaurant",
+        "Shanghai House",
+        "Shanghai Cuisine"
+      ],
+      "confidence": "medium",
+      "source_title": "湾区🥢 我心中最Top级上海餐馆"
+    },
+    {
+      "id": "r028",
+      "name": "徽菜馆",
+      "name_en": "Anhui Cuisine",
+      "city": "Fremont",
+      "current_address": "1294 Warm Springs Blvd, Fremont, CA 94594",
+      "coordinates": {
+        "lat": 37.50058,
+        "lng": -121.9853
+      },
+      "clues": [
+        "Fremont",
+        "徽菜",
+        "徽京人"
+      ],
+      "possible_names": [
+        "Anhui Cuisine",
+        "Anhui House"
+      ],
+      "confidence": "medium",
+      "source_title": "跟着小红书吃湾区｜我们徽京人也来试试徽菜"
+    },
+    {
+      "id": "r031",
+      "name": "山城私房菜",
+      "name_en": "Mountain City Private Kitchen",
+      "city": "Milpitas",
+      "current_address": "1529 Calaveras Blvd, Milpitas, CA 95029",
+      "coordinates": {
+        "lat": 37.43587,
+        "lng": -121.89355
+      },
+      "clues": [
+        "Milpitas",
+        "山城",
+        "私房菜"
+      ],
+      "possible_names": [
+        "Mountain City",
+        "Shancheng"
+      ],
+      "confidence": "medium",
+      "source_title": "这次去吃的是山城私房菜"
+    },
+    {
+      "id": "r033",
+      "name": "Yuan Bistro",
+      "name_en": "Yuan Bistro",
+      "city": "Milpitas",
+      "current_address": "1647 Landess Ave, Milpitas, CA 95047",
+      "coordinates": {
+        "lat": 37.43941,
+        "lng": -121.88765
+      },
+      "clues": [
+        "Milpitas",
+        "东北菜",
+        "份量大"
+      ],
+      "possible_names": [
+        "Yuan Bistro"
+      ],
+      "confidence": "high",
+      "source_title": "Yuan Bistro｜南方人已被东北菜份量吓晕"
+    },
+    {
+      "id": "r034",
+      "name": "家常菜馆",
+      "name_en": "Home Style Cooking",
+      "city": "Milpitas",
+      "current_address": "1565 Calaveras Blvd, Milpitas, CA 95065",
+      "coordinates": {
+        "lat": 37.43695,
+        "lng": -121.89175
+      },
+      "clues": [
+        "Milpitas",
+        "家常菜",
+        "三刷"
+      ],
+      "possible_names": [
+        "Home Style",
+        "Family Kitchen"
+      ],
+      "confidence": "low",
+      "source_title": "湾区Milpitas好吃的家常菜推荐！已三刷！"
+    },
+    {
+      "id": "r037",
+      "name": "MTV川湘家常菜",
+      "name_en": "MTV Sichuan Hunan Home Style",
+      "city": "Mountain View",
+      "current_address": "1158 San Antonio Rd, Mountain View, CA 94058",
+      "coordinates": {
+        "lat": 37.38632,
+        "lng": -122.0921
+      },
+      "clues": [
+        "Mountain View",
+        "川湘",
+        "新晋"
+      ],
+      "possible_names": [
+        "Chuanxiang",
+        "Hunan House"
+      ],
+      "confidence": "medium",
+      "source_title": "MTV新晋川湘家常菜"
+    },
+    {
+      "id": "r038",
+      "name": "MTV泰餐小馆",
+      "name_en": "MTV Thai Bistro",
+      "city": "Mountain View",
+      "current_address": "1392 Castro St, Mountain View, CA 94092",
+      "coordinates": {
+        "lat": 37.39568,
+        "lng": -122.0804
+      },
+      "clues": [
+        "Mountain View",
+        "泰餐",
+        "惊喜"
+      ],
+      "possible_names": [
+        "Thai Bistro",
+        "Thai House"
+      ],
+      "confidence": "medium",
+      "source_title": "湾区｜MTV这家泰餐小馆太惊喜"
+    },
+    {
+      "id": "r039",
+      "name": "新疆拉条子",
+      "name_en": "Xinjiang Lamian",
+      "city": "Mountain View",
+      "current_address": "1739 Rengstorff Ave, Mountain View, CA 94039",
+      "coordinates": {
+        "lat": 37.40956,
+        "lng": -122.06305
+      },
+      "clues": [
+        "Mountain View",
+        "新疆",
+        "拉条子"
+      ],
+      "possible_names": [
+        "Xinjiang Noodles",
+        "Lamian House"
+      ],
+      "confidence": "medium",
+      "source_title": "新疆美食❗️被平平无奇的新疆拉条子惊艳了"
+    },
+    {
+      "id": "r040",
+      "name": "云贵菜馆",
+      "name_en": "Yungui Cuisine",
+      "city": "Mountain View",
+      "current_address": "1013 El Camino Real, Mountain View, CA 94013",
+      "coordinates": {
+        "lat": 37.38052,
+        "lng": -122.09935
+      },
+      "clues": [
+        "Mountain View",
+        "云贵",
+        "烧椒菜",
+        "儿童友好"
+      ],
+      "possible_names": [
+        "Yungui",
+        "Yunnan Guizhou"
+      ],
+      "confidence": "medium",
+      "source_title": "儿童超级友好的云贵菜"
+    },
+    {
+      "id": "r041",
+      "name": "湾区第一牛肉面",
+      "name_en": "Best Beef Noodles",
+      "city": "Mountain View",
+      "current_address": "1683 Rengstorff Ave, Mountain View, CA 94083",
+      "coordinates": {
+        "lat": 37.40732,
+        "lng": -122.06585
+      },
+      "clues": [
+        "Mountain View",
+        "牛肉面",
+        "水饺"
+      ],
+      "possible_names": [
+        "Beef Noodle",
+        "Best Noodles"
+      ],
+      "confidence": "medium",
+      "source_title": "湾区第一牛肉面和水饺"
+    },
+    {
+      "id": "r042",
+      "name": "包子铺",
+      "name_en": "Bao Zi Shop",
+      "city": "Sunnyvale",
+      "current_address": "1502 Mathilda Ave, Sunnyvale, CA 94002",
+      "coordinates": {
+        "lat": 37.3751,
+        "lng": -122.0249
+      },
+      "clues": [
+        "Sunnyvale",
+        "包子",
+        "现做现蒸"
+      ],
+      "possible_names": [
+        "Bao Zi",
+        "Dumpling House"
+      ],
+      "confidence": "medium",
+      "source_title": "Sunnyvale现做现蒸的包子铺开门啦"
+    },
+    {
+      "id": "r043",
+      "name": "淮扬菜餐厅",
+      "name_en": "Huaiyang Cuisine",
+      "city": "Sunnyvale",
+      "current_address": "1868 El Camino Real, Sunnyvale, CA 94068",
+      "coordinates": {
+        "lat": 37.3934,
+        "lng": -122.0066
+      },
+      "clues": [
+        "Sunnyvale",
+        "淮扬菜",
+        "新派"
+      ],
+      "possible_names": [
+        "Huaiyang",
+        "Yangzhou"
+      ],
+      "confidence": "medium",
+      "source_title": "湾区探店｜漂漂亮亮的新派淮扬菜新餐厅"
+    },
+    {
+      "id": "r044",
+      "name": "上海家常菜",
+      "name_en": "Shanghai Home Style",
+      "city": "Sunnyvale",
+      "current_address": "1645 Lawrence Expy, Sunnyvale, CA 94045",
+      "coordinates": {
+        "lat": 37.38225,
+        "lng": -122.01775
+      },
+      "clues": [
+        "Sunnyvale",
+        "上海",
+        "平价",
+        "家常味"
+      ],
+      "possible_names": [
+        "Shanghai Home",
+        "Shanghai Family"
+      ],
+      "confidence": "medium",
+      "source_title": "冬天一口暖暖的Sunnyvale平价上海家常味"
+    },
+    {
+      "id": "r047",
+      "name": "Wakusei拉面",
+      "name_en": "Wakusei Ramen",
+      "city": "Sunnyvale",
+      "current_address": "1768 El Camino Real, Sunnyvale, CA 94068",
+      "coordinates": {
+        "lat": 37.3884,
+        "lng": -122.0116
+      },
+      "clues": [
+        "Sunnyvale",
+        "拉面",
+        "最贵",
+        "Wakusei"
+      ],
+      "possible_names": [
+        "Wakusei Ramen"
+      ],
+      "confidence": "high",
+      "source_title": "湾区最贵拉面🍜Wakusei替大家交学费了"
+    },
+    {
+      "id": "r048",
+      "name": "蒸饭专门店",
+      "name_en": "Steamed Rice Shop",
+      "city": "Sunnyvale",
+      "current_address": "1143 Wolfe Rd, Sunnyvale, CA 94043",
+      "coordinates": {
+        "lat": 37.35715,
+        "lng": -122.04285
+      },
+      "clues": [
+        "Sunnyvale",
+        "蒸饭"
+      ],
+      "possible_names": [
+        "Steam Rice",
+        "Steamed Rice"
+      ],
+      "confidence": "low",
+      "source_title": "被Sunnyvale这家蒸饭惊艳了"
+    },
+    {
+      "id": "r049",
+      "name": "黄鱼年糕",
+      "name_en": "Yellow Fish Rice Cake",
+      "city": "Sunnyvale",
+      "current_address": "1129 Lawrence Expy, Sunnyvale, CA 94029",
+      "coordinates": {
+        "lat": 37.35645,
+        "lng": -122.04355
+      },
+      "clues": [
+        "Sunnyvale",
+        "黄鱼",
+        "年糕"
+      ],
+      "possible_names": [
+        "Fish Rice Cake",
+        "Nian Gao"
+      ],
+      "confidence": "low",
+      "source_title": "南湾｜在湾区也吃到了那口家烧黄鱼手打年糕"
+    }
+  ],
+  "instructions": {
+    "method_1": "Google Maps搜索: 餐厅名 + 城市",
+    "method_2": "Yelp搜索: 餐厅英文名 + 城市",
+    "method_3": "小红书搜索: 原帖子查看评论区地址",
+    "action_if_correct": "标记verified=true",
+    "action_if_wrong": "提供正确地址"
+  }
+}

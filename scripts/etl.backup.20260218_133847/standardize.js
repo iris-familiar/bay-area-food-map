@@ -12,7 +12,7 @@
  * - Dry-run mode for testing
  */
 
-const { randomUUID } = require('crypto');
+const { v4: uuidv4 } = require('uuid');
 const https = require('https');
 const { Logger } = require('./utils/logger');
 const { 
@@ -309,7 +309,7 @@ async function transformRecord(raw, format, config, logger) {
   
   // Generate ID if not present
   if (!transformed.id) {
-    transformed.id = randomUUID();
+    transformed.id = uuidv4();
   }
   
   // Set timestamps

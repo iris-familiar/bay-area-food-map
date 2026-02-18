@@ -1,0 +1,187 @@
+[
+  {
+    "id": "r013",
+    "name": "鲜味水饺",
+    "corrections": {
+      "google_place_id": "ChIJ7QMGuJO3j4ARbOM9BefOFFY",
+      "google_name": "Umami Dumpling House",
+      "address": "Mary Manor Shopping Center, #1, Sunnyvale, CA 94086, USA",
+      "area": "Sunnyvale",
+      "google_rating": 4.6,
+      "location": {
+        "lat": 37.378472,
+        "lng": -122.046685
+      },
+      "verified": true,
+      "name_en": "Umami Dumpling House"
+    },
+    "reason": "原匹配错误，用英文名重新搜索匹配"
+  },
+  {
+    "id": "r008",
+    "name": "重庆铺盖面",
+    "corrections": {
+      "google_place_id": "ChIJ55aqQgWHhYARUIQUTYyldjQ",
+      "google_name": "C.Q. Taste",
+      "address": "10815 N Wolfe Rd Suite 101B, Cupertino, CA 95014, USA",
+      "area": "Cupertino",
+      "google_rating": 4.3,
+      "location": {
+        "lat": 37.335496,
+        "lng": -122.014705
+      },
+      "verified": true,
+      "name_en": "C.Q. Taste"
+    },
+    "reason": "用英文名重新匹配"
+  },
+  {
+    "id": "r079",
+    "name": "面面俱到",
+    "corrections": {
+      "google_place_id": "ChIJ9VjnhlvGj4ARiR_n1vGY-Co",
+      "google_name": "Shanghai Flavor",
+      "address": "46132 Warm Springs Blvd, Fremont, CA 94539, USA",
+      "area": "Fremont",
+      "google_rating": 4.1,
+      "location": {
+        "lat": 37.493567,
+        "lng": -121.930710
+      },
+      "verified": true
+    },
+    "reason": "搜索\"面面俱到 Fremont\"第一个结果"
+  },
+  {
+    "id": "r080",
+    "name": "美食坊",
+    "corrections": {
+      "google_place_id": "ChIJqR9iewC3j4ARFdkuydcsVXk",
+      "google_name": "Seasons Noodles & Dumplings Garden",
+      "address": "702 Villa St, Mountain View, CA 94041, USA",
+      "area": "Mountain View",
+      "google_rating": 4.5,
+      "location": {
+        "lat": 37.393541,
+        "lng": -122.077939
+      },
+      "verified": true,
+      "name_en": "Seasons Noodles and Dumpling Garden"
+    },
+    "reason": "用英文名重新匹配"
+  },
+  {
+    "id": "r081",
+    "name": "一品香",
+    "corrections": {
+      "google_place_id": "ChIJ8fiQYwO1j4ARIpej7lX-sPU",
+      "google_name": "Hankow Cuisine",
+      "address": "1071 S De Anza Blvd, San Jose, CA 95129, USA",
+      "area": "San Jose",
+      "google_rating": 4.0,
+      "location": {
+        "lat": 37.307466,
+        "lng": -122.032901
+      },
+      "verified": true,
+      "name_en": "Hankow Cuisine"
+    },
+    "reason": "用英文名重新匹配"
+  },
+  {
+    "id": "r082",
+    "name": "花溪王",
+    "corrections": {
+      "google_place_id": "ChIJ2yPdP5y3j4AR3Xm38i9_-8M",
+      "google_name": "Joyous Cuisine 花溪王 山野美食",
+      "address": "124 Castro St, Mountain View, CA 94041, USA",
+      "area": "Mountain View",
+      "google_rating": 4.8,
+      "location": {
+        "lat": 37.394799,
+        "lng": -122.078618
+      },
+      "verified": true,
+      "name": "花溪王",
+      "name_en": "Joyous Cuisine",
+      "alias": [
+        "山野美食",
+        "山野森林系贵州餐厅"
+      ],
+      "cuisine": "贵州菜"
+    },
+    "reason": "修正名称：从帖子描述称呼改为正式餐厅名"
+  },
+  {
+    "id": "r083",
+    "name": "李与白包子铺",
+    "corrections": {
+      "google_place_id": "ChIJK1UUIAC1j4ARjzCttTx11Rw",
+      "google_name": "Lee & Bai Chinese Bao shop",
+      "address": "1661 Hollenbeck Ave, Sunnyvale, CA 94087, USA",
+      "area": "Sunnyvale",
+      "google_rating": 4.1,
+      "location": {
+        "lat": 37.338980,
+        "lng": -122.042582
+      },
+      "verified": true
+    },
+    "reason": "搜索匹配"
+  },
+  {
+    "id": "r084",
+    "name": "林家万峦猪脚",
+    "corrections": {
+      "google_place_id": "ChIJL2RJ4tDIj4ARm4aIF-Uy2dM",
+      "google_name": "Taiwan Cafe",
+      "address": "568 N Abel St, Milpitas, CA 95035, USA",
+      "area": "Milpitas",
+      "google_rating": 4.4,
+      "location": {
+        "lat": 37.435919,
+        "lng": -121.909944
+      },
+      "verified": true,
+      "name_en": "Taiwan Cafe",
+      "alias": [
+        "万峦猪脚"
+      ],
+      "recommendations": [
+        "万峦猪脚",
+        "炒面线",
+        "麻油鸡汤",
+        "咸蛋苦瓜"
+      ]
+    },
+    "reason": "用英文名重新匹配，并合并r011万峦猪脚的数据"
+  },
+  {
+    "id": "r011",
+    "name": "万峦猪脚",
+    "corrections": {
+      "_status": "duplicate_merged",
+      "_merged_into": "r084",
+      "_duplicate_of": "林家万峦猪脚",
+      "_merged_reason": "相同地址和Google Place ID，为同一餐厅"
+    },
+    "reason": "标记为重复，已合并到r084林家万峦猪脚"
+  },
+  {
+    "id": "r078",
+    "name": "半岛Milpitas",
+    "corrections": {
+      "google_place_id": "ChIJixWvOKvJj4AR3Jp2gbsBZKk",
+      "google_name": "HL Peninsula Restaurant - Milpitas",
+      "address": "136 Ranch Dr, Milpitas, CA 95035, USA",
+      "area": "Milpitas",
+      "google_rating": 3.8,
+      "location": {
+        "lat": 37.426577,
+        "lng": -121.919555
+      },
+      "verified": true
+    },
+    "reason": "搜索匹配"
+  }
+]

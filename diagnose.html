@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>诊断页面</title>
+</head>
+<body>
+    <h1>网站诊断</h1>
+    <div id="result"></div>
+    <script>
+        async function diagnose() {
+            const result = document.getElementById('result');
+            result.innerHTML = '<p>正在检查...</p>';
+            
+            try {
+                // 1. 检查数据库
+                const response = await fetch('data/current/restaurant_database.json?v=' + Date.now());
+                if (!response.ok) {
+                    result.innerHTML += '<p style="color:red">❌ 数据库加载失败: ' + response.status + '</p>';
+                    return;
+                }
+                
+                const data = await response.json();
+                result.innerHTML += '<p style="color:green">✓ 数据库加载成功</p>';
+                result.innerHTML += '<p>餐厅数量: ' + (data.restaurants?.length || 0) + '</p>';
+                
+                if (data.restaurants?.length > 0) {
+                    const first = data.restaurants[0];
+                    result.innerHTML += '<p>第一个餐厅: ' + first.name + '</p>';
+                    result.innerHTML += '<p>必需字段检查:</p>';
+                    result.innerHTML += '<ul>';
+                    result.innerHTML += '<li>xiaohongshu_id: ' + (first.xiaohongshu_id ? '✓' : '❌') + '</li>';
+                    result.innerHTML += '<li>region: ' + (first.region ? '✓' : '❌') + '</li>';
+                    result.innerHTML += '<li>city: ' + (first.city ? '✓' : '❌') + '</li>';
+                    result.innerHTML += '<li>engagement: ' + (typeof first.engagement === 'number' ? '✓' : '❌') + '</li>';
+                    result.innerHTML += '</ul>';
+                }
+                
+                // 2. 检查筛选逻辑
+                let restaurants = data.restaurants || [];
+                let filteredRestaurants = restaurants.filter(r => !r._status || r._status !== 'duplicate_merged');
+                result.innerHTML += '<p>筛选后餐厅数量: ' + filteredRestaurants.length + '</p>';
+                
+            } catch (e) {
+                result.innerHTML += '<p style="color:red">❌ 错误: ' + e.message + '</p>';
+                result.innerHTML += '<pre>' + e.stack + '</pre>';
+            }
+        }
+        
+        diagnose();
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{
+  "note_id": "697c2dcb000000002200ab2d",
+  "comments": [
+    {
+      "comment_id": "697c39d20000000019000b09",
+      "note_id": "697c2dcb000000002200ab2d",
+      "parent_id": "",
+      "root_comment_id": "697c39d20000000019000b09",
+      "content": "小姐姐几点去的呀 我昨天下午四点去Matcha town抹茶的饮料蛋糕已经什么都不剩了",
+      "create_time": 1769748946000,
+      "author": {
+        "user_id": "5acee23711be1019f0a52ceb",
+        "nickname": "☃💚",
+        "avatar": ""
+      },
+      "interaction": {
+        "liked_count": 2,
+        "reply_count": 2
+      },
+      "sub_comments": [
+        {
+          "comment_id": "697c3f64000000000800f81a",
+          "parent_id": "697c39d20000000019000b09",
+          "root_comment_id": "697c39d20000000019000b09",
+          "content": "抹茶店是下午两点多去的",
+          "create_time": 1769750372000,
+          "author": {
+            "user_id": "5a2130bfe8ac2b1f947c1b5e",
+            "nickname": "吃货酷玩地图",
+            "avatar": ""
+          },
+          "interaction": {
+            "liked_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "comment_id": "697fa4b8000000000f025f59",
+      "note_id": "697c2dcb000000002200ab2d",
+      "parent_id": "",
+      "root_comment_id": "697fa4b8000000000f025f59",
+      "content": "奈雪是不是排队很可怕[笑哭R]",
+      "create_time": 1769972920000,
+      "author": {
+        "user_id": "6189f172000000001000c480",
+        "nickname": "First Date Rose湾区花店",
+        "avatar": ""
+      },
+      "interaction": {
+        "liked_count": 0,
+        "reply_count": 1
+      },
+      "sub_comments": [
+        {
+          "comment_id": "69803dfd000000000c015241",
+          "parent_id": "697fa4b8000000000f025f59",
+          "root_comment_id": "697fa4b8000000000f025f59",
+          "content": "我上周中去的人还不多[偷笑R]",
+          "create_time": 1770012158000,
+          "author": {
+            "user_id": "5a2130bfe8ac2b1f947c1b5e",
+            "nickname": "吃货酷玩地图",
+            "avatar": ""
+          },
+          "interaction": {
+            "liked_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "comment_id": "697fabea000000000601f651",
+      "note_id": "697c2dcb000000002200ab2d",
+      "parent_id": "",
+      "root_comment_id": "697fabea000000000601f651",
+      "content": "避雷这家店，排队的时候饭团的人随便插队",
+      "create_time": 1769974762000,
+      "author": {
+        "user_id": "56428bbce00dd844589e552e",
+        "nickname": "Rizan",
+        "avatar": ""
+      },
+      "interaction": {
+        "liked_count": 1,
+        "reply_count": 1
+      },
+      "sub_comments": [
+        {
+          "comment_id": "69803dd50000000009020de7",
+          "parent_id": "697fabea000000000601f651",
+          "root_comment_id": "697fabea000000000601f651",
+          "content": "哪家？",
+          "create_time": 1770012118000,
+          "author": {
+            "user_id": "5a2130bfe8ac2b1f947c1b5e",
+            "nickname": "吃货酷玩地图",
+            "avatar": ""
+          },
+          "interaction": {
+            "liked_count": 0
+          }
+        }
+      ]
+    }
+  ],
+  "total_count": 3,
+  "fetched_at": "2026-02-16T18:48:54.000294+00:00",
+  "fixed": true
+}

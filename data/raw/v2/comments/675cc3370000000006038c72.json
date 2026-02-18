@@ -1,0 +1,24 @@
+{
+  "note_id": "675cc3370000000006038c72",
+  "comments": [
+    {
+      "id": "684520c4000000000b01e6fb",
+      "noteId": "675cc3370000000006038c72",
+      "content": "阳谷县不应该有卖烧饼的吗？",
+      "likeCount": "4",
+      "createTime": 1749360836000,
+      "ipLocation": "美国",
+      "liked": false,
+      "userInfo": {
+        "userId": "67874813000000000803f5ec",
+        "nickname": "一个胖子一周一爬",
+        "nickName": "",
+        "avatar": ""
+      },
+      "subCommentCount": "0",
+      "subComments": [],
+      "showTags": []
+    }
+  ],
+  "fetched_at": "2026-02-16T11:35:24Z"
+}

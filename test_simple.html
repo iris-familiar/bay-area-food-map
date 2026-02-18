@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <script>
+        window.onerror = function(msg, url, line) {
+            document.body.innerHTML += '<div style="color:red">Error: ' + msg + ' at line ' + line + '</div>';
+        };
+    </script>
+</head>
+<body>
+    <h1>Testing...</h1>
+    <div id="status">Loading...</div>
+    <script>
+        document.getElementById('status').textContent = 'JavaScript is working';
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+# Semantic Search Mapping Configuration
+# 关键词 → 场景 → 餐厅ID列表（按匹配度排序）
+# 定期维护：当新增餐厅或semantic_tags变化时，运行维护脚本更新
+
+version: "2.0-simplified"
+updated_at: "2026-02-16"
+
+# 场景定义
+scenes:
+  date:
+    name: "约会"
+    description: "适合约会、浪漫晚餐、情侣用餐"
+    keywords: ["约会", "浪漫", "情侣", "date", "date-night", "anniversary", " special occasion"]
+    
+  group:
+    name: "聚餐"
+    description: "适合朋友聚会、团体用餐"
+    keywords: ["聚餐", "聚会", "朋友", "group", "party", "team dinner", "多人"]
+    
+  family:
+    name: "家庭"
+    description: "适合带小孩、家庭聚餐"
+    keywords: ["家庭", "带孩子", "亲子", "family", "kid-friendly", "儿童", "小孩"]
+    
+  business:
+    name: "商务"
+    description: "适合商务宴请、工作聚餐"
+    keywords: ["商务", "宴请", "工作", "business", "formal", "private room", "正式"]
+    
+  solo:
+    name: "一人食"
+    description: "适合独自用餐"
+    keywords: ["一人", "独自", "单人", "solo", "一个人", "quick lunch"]
+
+# 氛围标签  
+  quiet:
+    name: "安静"
+    description: "环境安静、适合聊天"
+    keywords: ["安静", "私密", "quiet", "peaceful", "intimate"]
+    
+  lively:
+    name: "热闹"
+    description: "氛围热闹、烟火气足"
+    keywords: ["热闹", "烟火气", "lively", "bustling", "energetic"]
+    
+  fancy:
+    name: "高档"
+    description: "环境高级、适合特殊场合"
+    keywords: ["高档", "高级", "fancy", "upscale", "fine dining", "精致"]
+    
+  authentic:
+    name: "正宗"
+    description: "口味地道、家乡味"
+    keywords: ["正宗", "地道", "authentic", "traditional", "家乡味"]
+
+# 实用标签
+  cheap:
+    name: "实惠"
+    description: "性价比高、便宜"
+    keywords: ["便宜", "实惠", "性价比", "cheap", "budget", "affordable", "划算"]
+    
+  spicy:
+    name: "辣味"
+    description: "口味偏辣"
+    keywords: ["辣", "麻辣", "spicy", "hot", "重口味"]
+    
+  parking:
+    name: "好停车"
+    description: "停车位充足"
+    keywords: ["停车", "parking", "车位"]
+    
+  no_wait:
+    name: "不排队"
+    description: "无需等位"
+    keywords: ["不排队", "不用等", "no-wait", "quick"]
+    
+  healthy:
+    name: "健康"
+    description: "健康清淡"
+    keywords: ["健康", "清淡", "healthy", "light"]
+
+# 菜系标签（自动映射到type字段，不需要人工维护）
+cuisines:
+  湘菜: ["湘菜", "湖南菜", "hunan"]
+  川菜: ["川菜", "四川菜", "sichuan"]
+  东北菜: ["东北菜", "dongbei"]
+  日料: ["日料", "日本菜", "japanese", "sushi", "ramen"]
+  韩餐: ["韩餐", "韩国菜", "korean", "bbq"]
+  火锅: ["火锅", "hot pot", "shabu"]
+  上海菜: ["上海菜", "本帮菜", "shanghai"]
+  越南菜: ["越南菜", "vietnamese"]
+  东南亚菜: ["东南亚", " Thai", "泰国菜"]
+  新疆菜: ["新疆菜", "xinjiang", "halal"]
+  粤菜: ["粤菜", "广东菜", "cantonese"]
+
+# 预计算的餐厅映射（由维护脚本自动生成）
+# 格式: 场景ID -> [餐厅ID列表（按匹配度排序）]
+restaurant_mappings:
+  date: ["r006", "r007", "r019", "r025", "r008", "r012", "r015"]
+  group: ["r001", "r020", "r021", "r022", "r023", "r004", "r013"]
+  family: ["r002", "r010", "r011", "r023", "r020", "r021"]
+  business: ["r006", "r007", "r010", "r011", "r012", "r015"]
+  solo: ["r003", "r009", "r012", "r016"]
+  quiet: ["r007", "r008", "r012", "r015", "r006"]
+  lively: ["r001", "r020", "r021", "r022", "r004", "r009"]
+  fancy: ["r006", "r007", "r015", "r020", "r012", "r019"]
+  authentic: ["r002", "r001", "r004", "r009", "r021", "r020"]
+  cheap: ["r002", "r003", "r009", "r021", "r008"]
+  spicy: ["r001", "r005", "r009", "r021", "r016", "r004"]
+  parking: ["r022", "r023", "r010", "r020"]
+  no_wait: ["r003", "r009", "r014", "r007"]
+  healthy: ["r006", "r004"]
+
+# 维护说明
+maintenance:
+  # 触发条件
+  triggers:
+    - "新增餐厅"
+    - "餐厅semantic_tags更新"
+    - "用户反馈搜索结果不准确"
+    
+  # 维护步骤
+  steps:
+    1: "运行 scripts/update-search-mapping.js 重新生成映射"
+    2: "人工审核新映射（特别是新增餐厅的前5个匹配场景）"
+    3: "更新 search_mapping.yaml 并提交"
+    4: "测试关键搜索词的结果"
+    
+  # 审核重点
+  review_focus:
+    - "口碑分数高的餐厅是否排在前面"
+    - "新餐厅是否被正确分类"
+    - "是否有明显错误的匹配（如川菜馆出现在'清淡'场景）"

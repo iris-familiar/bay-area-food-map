@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Search</title>
+</head>
+<body>
+    <h1>Search Test</h1>
+    <input type="text" id="search-input" placeholder="Search..." oninput="testSearch()">
+    <div id="results"></div>
+    <div id="log"></div>
+
+    <script>
+        let searchMapping = null;
+        let restaurants = [];
+
+        // 加载数据
+        async function loadData() {
+            log('Loading data...');
+            try {
+                const response = await fetch('data/current/restaurant_database.json');
+                const data = await response.json();
+                restaurants = data.restaurants;
+                log('Loaded ' + restaurants.length + ' restaurants');
+
+                const mappingResponse = await fetch('data/current/search_mapping.json');
+                searchMapping = await mappingResponse.json();
+                log('Loaded search mapping with ' + Object.keys(searchMapping.keywords).length + ' keywords');
+            } catch (e) {
+                log('Error: ' + e.message);
+            }
+        }
+
+        function findSceneId(query) {
+            if (!searchMapping?.keywords) return null;
+            if (searchMapping.keywords[query]) {
+                return searchMapping.keywords[query];
+            }
+            for (const [keyword, sceneId] of Object.entries(searchMapping.keywords)) {
+                if (query.includes(keyword)) {
+                    return sceneId;
+                }
+            }
+            return null;
+        }
+
+        function testSearch() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+            const resultsDiv = document.getElementById('results');
+            const logDiv = document.getElementById('log');
+
+            if (!query) {
+                resultsDiv.innerHTML = 'Enter a search term';
+                return;
+            }
+
+            const sceneId = findSceneId(query);
+            logDiv.innerHTML = 'Query: ' + query + '<br>Scene ID: ' + sceneId;
+
+            if (sceneId && searchMapping?.mappings?.[sceneId]) {
+                const matchedIds = searchMapping.mappings[sceneId];
+                logDiv.innerHTML += '<br>Matched IDs: ' + matchedIds.join(', ');
+
+                // Find restaurants
+                const matched = restaurants.filter(r => matchedIds.includes(r.id));
+                logDiv.innerHTML += '<br>Found restaurants: ' + matched.length;
+
+                resultsDiv.innerHTML = matched.map(r => '<div>' + r.name + '</div>').join('');
+            } else {
+                resultsDiv.innerHTML = 'No scene mapping found';
+            }
+        }
+
+        function log(msg) {
+            document.getElementById('log').innerHTML += msg + '<br>';
+        }
+
+        loadData();
+    </script>
+</body>
+</html>

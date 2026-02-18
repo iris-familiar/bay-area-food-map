@@ -1,0 +1,1834 @@
+{
+  "phase": "1B",
+  "date": "2026-02-15",
+  "total_new": 27,
+  "duplicates": [
+    "留湘",
+    "肖婆婆砂锅",
+    "湘粤情"
+  ],
+  "new_restaurants": [
+    {
+      "id": "r023",
+      "name": "重庆荣昌铺盖面",
+      "name_en": "Chongqing Noodles",
+      "type": "川菜/面食",
+      "cuisine": "川菜/面食",
+      "area": "Cupertino",
+      "location": "Cupertino",
+      "address": "Cupertino, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "成都人四刷推荐"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "川菜/面食"
+      ],
+      "notes": "成都人四刷推荐",
+      "source_title": "成都人四刷Cupertino重庆铺盖面",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "川菜/面食"
+        ]
+      },
+      "searchable_text": "重庆荣昌铺盖面 Chongqing Noodles 川菜/面食 Cupertino 成都人四刷推荐",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r024",
+      "name": "沸腾鱼",
+      "name_en": "Sizzling Fish",
+      "type": "川菜",
+      "cuisine": "川菜",
+      "area": "Fremont",
+      "location": "Fremont",
+      "address": "Fremont, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "湾区最正宗沸腾鱼"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "川菜"
+      ],
+      "notes": "湾区最正宗沸腾鱼",
+      "source_title": "降温了！来Fremont吃湾区最正宗沸腾鱼",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "川菜"
+        ]
+      },
+      "searchable_text": "沸腾鱼 Sizzling Fish 川菜 Fremont 湾区最正宗沸腾鱼",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r025",
+      "name": "上海餐馆",
+      "name_en": "Shanghai Restaurant",
+      "type": "上海菜",
+      "cuisine": "上海菜",
+      "area": "Fremont",
+      "location": "Fremont",
+      "address": "Fremont, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "上海菜"
+      ],
+      "notes": "",
+      "source_title": "湾区🥢 我心中最Top级上海餐馆",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "上海菜"
+        ]
+      },
+      "searchable_text": "上海餐馆 Shanghai Restaurant 上海菜 Fremont ",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r026",
+      "name": "潮汕砂锅粥",
+      "name_en": "Chaoshan Claypot Porridge",
+      "type": "粤菜/潮汕菜",
+      "cuisine": "粤菜/潮汕菜",
+      "area": "Fremont",
+      "location": "Fremont",
+      "address": "Fremont, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "正宗潮汕砂锅粥"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "粤菜/潮汕菜"
+      ],
+      "notes": "正宗潮汕砂锅粥",
+      "source_title": "老广泪目了！湾区有正宗精致潮汕砂锅粥了",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "粤菜/潮汕菜"
+        ]
+      },
+      "searchable_text": "潮汕砂锅粥 Chaoshan Claypot Porridge 粤菜/潮汕菜 Fremont 正宗潮汕砂锅粥",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r027",
+      "name": "One Piece Lamian",
+      "name_en": "One Piece Lamian",
+      "type": "西北菜/拉面",
+      "cuisine": "西北菜/拉面",
+      "area": "Fremont",
+      "location": "Fremont",
+      "address": "Fremont, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "羊杂汤"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "西北菜/拉面"
+      ],
+      "notes": "羊杂汤",
+      "source_title": "湾区fremont神仙羊杂汤 one piece lamian",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "西北菜/拉面"
+        ]
+      },
+      "searchable_text": "One Piece Lamian One Piece Lamian 西北菜/拉面 Fremont 羊杂汤",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r028",
+      "name": "徽菜馆",
+      "name_en": "Anhui Cuisine",
+      "type": "徽菜",
+      "cuisine": "徽菜",
+      "area": "Fremont",
+      "location": "Fremont",
+      "address": "Fremont, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "徽菜"
+      ],
+      "notes": "",
+      "source_title": "跟着小红书吃湾区｜我们徽京人也来试试徽菜",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "徽菜"
+        ]
+      },
+      "searchable_text": "徽菜馆 Anhui Cuisine 徽菜 Fremont ",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r029",
+      "name": "万峦猪脚",
+      "name_en": "Wanluan Pork Knuckle",
+      "type": "台湾菜",
+      "cuisine": "台湾菜",
+      "area": "Milpitas",
+      "location": "Milpitas",
+      "address": "Milpitas, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "台湾风味"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "台湾菜"
+      ],
+      "notes": "台湾风味",
+      "source_title": "湾区超好吃的万峦猪脚和麻油鸡",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "台湾菜"
+        ]
+      },
+      "searchable_text": "万峦猪脚 Wanluan Pork Knuckle 台湾菜 Milpitas 台湾风味",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r030",
+      "name": "江南雅厨",
+      "name_en": "Jiangnan Ya Chu",
+      "type": "苏州菜",
+      "cuisine": "苏州菜",
+      "area": "Milpitas",
+      "location": "Milpitas",
+      "address": "Milpitas, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "黑珍珠苏州菜"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "苏州菜"
+      ],
+      "notes": "黑珍珠苏州菜",
+      "source_title": "南湾｜特来品尝来自国内的黑珍珠苏州菜",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "苏州菜"
+        ]
+      },
+      "searchable_text": "江南雅厨 Jiangnan Ya Chu 苏州菜 Milpitas 黑珍珠苏州菜",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r031",
+      "name": "山城私房菜",
+      "name_en": "Mountain City Private Kitchen",
+      "type": "川菜",
+      "cuisine": "川菜",
+      "area": "Milpitas",
+      "location": "Milpitas",
+      "address": "Milpitas, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "川菜"
+      ],
+      "notes": "",
+      "source_title": "这次去吃的是山城私房菜",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "川菜"
+        ]
+      },
+      "searchable_text": "山城私房菜 Mountain City Private Kitchen 川菜 Milpitas ",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r032",
+      "name": "牛浪人",
+      "name_en": "Niu Lang Ren",
+      "type": "日料/和牛寿司",
+      "cuisine": "日料/和牛寿司",
+      "area": "Milpitas",
+      "location": "Milpitas",
+      "address": "Milpitas, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "和牛寿司自助"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "日料/和牛寿司"
+      ],
+      "notes": "和牛寿司自助",
+      "source_title": "Milpitas 牛浪人和牛寿司自助测评附菜单",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "日料/和牛寿司"
+        ]
+      },
+      "searchable_text": "牛浪人 Niu Lang Ren 日料/和牛寿司 Milpitas 和牛寿司自助",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r033",
+      "name": "Yuan Bistro",
+      "name_en": "Yuan Bistro",
+      "type": "东北菜",
+      "cuisine": "东北菜",
+      "area": "Milpitas",
+      "location": "Milpitas",
+      "address": "Milpitas, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "东北菜"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "东北菜"
+      ],
+      "notes": "东北菜",
+      "source_title": "Yuan Bistro｜南方人已被东北菜份量吓晕",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "东北菜"
+        ]
+      },
+      "searchable_text": "Yuan Bistro Yuan Bistro 东北菜 Milpitas 东北菜",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r034",
+      "name": "家常菜馆",
+      "name_en": "Home Style Cooking",
+      "type": "中餐",
+      "cuisine": "中餐",
+      "area": "Milpitas",
+      "location": "Milpitas",
+      "address": "Milpitas, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "已三刷"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "中餐"
+      ],
+      "notes": "已三刷",
+      "source_title": "湾区Milpitas好吃的家常菜推荐！已三刷！",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "中餐"
+        ]
+      },
+      "searchable_text": "家常菜馆 Home Style Cooking 中餐 Milpitas 已三刷",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r035",
+      "name": "花溪王",
+      "name_en": "Hua Xi Wang",
+      "type": "贵州菜",
+      "cuisine": "贵州菜",
+      "area": "Mountain View",
+      "location": "Mountain View",
+      "address": "Mountain View, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "贵州菜，猪蹄好吃"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "贵州菜"
+      ],
+      "notes": "贵州菜，猪蹄好吃",
+      "source_title": "湾区竟然有这么一个山野森林系贵州餐厅",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "贵州菜"
+        ]
+      },
+      "searchable_text": "花溪王 Hua Xi Wang 贵州菜 Mountain View 贵州菜，猪蹄好吃",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r036",
+      "name": "包大人",
+      "name_en": "Bao Da Ren",
+      "type": "中餐",
+      "cuisine": "中餐",
+      "area": "Mountain View",
+      "location": "Mountain View",
+      "address": "Mountain View, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "MTV downtown"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "中餐"
+      ],
+      "notes": "MTV downtown",
+      "source_title": "湾区探店之二刷MTV downtown包大人",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "中餐"
+        ]
+      },
+      "searchable_text": "包大人 Bao Da Ren 中餐 Mountain View MTV downtown",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r037",
+      "name": "MTV川湘家常菜",
+      "name_en": "MTV Sichuan Hunan Home Style",
+      "type": "川湘菜",
+      "cuisine": "川湘菜",
+      "area": "Mountain View",
+      "location": "Mountain View",
+      "address": "Mountain View, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "川湘菜"
+      ],
+      "notes": "",
+      "source_title": "MTV新晋川湘家常菜",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "川湘菜"
+        ]
+      },
+      "searchable_text": "MTV川湘家常菜 MTV Sichuan Hunan Home Style 川湘菜 Mountain View ",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r038",
+      "name": "MTV泰餐小馆",
+      "name_en": "MTV Thai Bistro",
+      "type": "泰国菜",
+      "cuisine": "泰国菜",
+      "area": "Mountain View",
+      "location": "Mountain View",
+      "address": "Mountain View, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "泰国菜"
+      ],
+      "notes": "",
+      "source_title": "湾区｜MTV这家泰餐小馆太惊喜",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "泰国菜"
+        ]
+      },
+      "searchable_text": "MTV泰餐小馆 MTV Thai Bistro 泰国菜 Mountain View ",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r039",
+      "name": "新疆拉条子",
+      "name_en": "Xinjiang Lamian",
+      "type": "新疆菜",
+      "cuisine": "新疆菜",
+      "area": "Mountain View",
+      "location": "Mountain View",
+      "address": "Mountain View, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "新疆面食"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "新疆菜"
+      ],
+      "notes": "新疆面食",
+      "source_title": "新疆美食❗️被平平无奇的新疆拉条子惊艳了",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "新疆菜"
+        ]
+      },
+      "searchable_text": "新疆拉条子 Xinjiang Lamian 新疆菜 Mountain View 新疆面食",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r040",
+      "name": "云贵菜馆",
+      "name_en": "Yungui Cuisine",
+      "type": "云贵菜",
+      "cuisine": "云贵菜",
+      "area": "Mountain View",
+      "location": "Mountain View",
+      "address": "Mountain View, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "烧椒菜"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "云贵菜"
+      ],
+      "notes": "烧椒菜",
+      "source_title": "儿童超级友好的云贵菜",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "云贵菜"
+        ]
+      },
+      "searchable_text": "云贵菜馆 Yungui Cuisine 云贵菜 Mountain View 烧椒菜",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r041",
+      "name": "湾区第一牛肉面",
+      "name_en": "Best Beef Noodles",
+      "type": "中餐/面食",
+      "cuisine": "中餐/面食",
+      "area": "Mountain View",
+      "location": "Mountain View",
+      "address": "Mountain View, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "牛肉面+水饺"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "中餐/面食"
+      ],
+      "notes": "牛肉面+水饺",
+      "source_title": "湾区第一牛肉面和水饺",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "中餐/面食"
+        ]
+      },
+      "searchable_text": "湾区第一牛肉面 Best Beef Noodles 中餐/面食 Mountain View 牛肉面+水饺",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r042",
+      "name": "包子铺",
+      "name_en": "Bao Zi Shop",
+      "type": "中餐/早点",
+      "cuisine": "中餐/早点",
+      "area": "Sunnyvale",
+      "location": "Sunnyvale",
+      "address": "Sunnyvale, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "现做现蒸"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "中餐/早点"
+      ],
+      "notes": "现做现蒸",
+      "source_title": "Sunnyvale现做现蒸的包子铺开门啦",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "中餐/早点"
+        ]
+      },
+      "searchable_text": "包子铺 Bao Zi Shop 中餐/早点 Sunnyvale 现做现蒸",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r043",
+      "name": "淮扬菜餐厅",
+      "name_en": "Huaiyang Cuisine",
+      "type": "淮扬菜",
+      "cuisine": "淮扬菜",
+      "area": "Sunnyvale",
+      "location": "Sunnyvale",
+      "address": "Sunnyvale, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "新派淮扬菜"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "淮扬菜"
+      ],
+      "notes": "新派淮扬菜",
+      "source_title": "湾区探店｜漂漂亮亮的新派淮扬菜新餐厅",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "淮扬菜"
+        ]
+      },
+      "searchable_text": "淮扬菜餐厅 Huaiyang Cuisine 淮扬菜 Sunnyvale 新派淮扬菜",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r044",
+      "name": "上海家常菜",
+      "name_en": "Shanghai Home Style",
+      "type": "上海菜",
+      "cuisine": "上海菜",
+      "area": "Sunnyvale",
+      "location": "Sunnyvale",
+      "address": "Sunnyvale, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "平价上海菜"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "上海菜"
+      ],
+      "notes": "平价上海菜",
+      "source_title": "冬天一口暖暖的Sunnyvale平价上海家常味",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "上海菜"
+        ]
+      },
+      "searchable_text": "上海家常菜 Shanghai Home Style 上海菜 Sunnyvale 平价上海菜",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r045",
+      "name": "李与白",
+      "name_en": "Li Yu Bai",
+      "type": "中餐",
+      "cuisine": "中餐",
+      "area": "Sunnyvale",
+      "location": "Sunnyvale",
+      "address": "Sunnyvale, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "中餐"
+      ],
+      "notes": "",
+      "source_title": "湾区|李与白好吃",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "中餐"
+        ]
+      },
+      "searchable_text": "李与白 Li Yu Bai 中餐 Sunnyvale ",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r046",
+      "name": "汆悦麻辣烫",
+      "name_en": "Cuan Yue Malatang",
+      "type": "麻辣烫",
+      "cuisine": "麻辣烫",
+      "area": "Sunnyvale",
+      "location": "Sunnyvale",
+      "address": "Sunnyvale, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "新开业"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "麻辣烫"
+      ],
+      "notes": "新开业",
+      "source_title": "湾区新店|汆悦麻辣烫",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "麻辣烫"
+        ]
+      },
+      "searchable_text": "汆悦麻辣烫 Cuan Yue Malatang 麻辣烫 Sunnyvale 新开业",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r047",
+      "name": "Wakusei拉面",
+      "name_en": "Wakusei Ramen",
+      "type": "日料/拉面",
+      "cuisine": "日料/拉面",
+      "area": "Sunnyvale",
+      "location": "Sunnyvale",
+      "address": "Sunnyvale, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "高价拉面"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "日料/拉面"
+      ],
+      "notes": "高价拉面",
+      "source_title": "湾区最贵拉面🍜Wakusei替大家交学费了",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "日料/拉面"
+        ]
+      },
+      "searchable_text": "Wakusei拉面 Wakusei Ramen 日料/拉面 Sunnyvale 高价拉面",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r048",
+      "name": "蒸饭专门店",
+      "name_en": "Steamed Rice Shop",
+      "type": "中餐",
+      "cuisine": "中餐",
+      "area": "Sunnyvale",
+      "location": "Sunnyvale",
+      "address": "Sunnyvale, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "中餐"
+      ],
+      "notes": "",
+      "source_title": "被Sunnyvale这家蒸饭惊艳了",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "中餐"
+        ]
+      },
+      "searchable_text": "蒸饭专门店 Steamed Rice Shop 中餐 Sunnyvale ",
+      "coordinates": null,
+      "embedding": null
+    },
+    {
+      "id": "r049",
+      "name": "黄鱼年糕",
+      "name_en": "Yellow Fish Rice Cake",
+      "type": "江浙菜",
+      "cuisine": "江浙菜",
+      "area": "Sunnyvale",
+      "location": "Sunnyvale",
+      "address": "Sunnyvale, CA (待验证)",
+      "price_range": "$$",
+      "status": "discovered",
+      "verified": false,
+      "google_place_id": null,
+      "google_rating": null,
+      "google_price_level": null,
+      "metrics": {
+        "discussion_volume": {
+          "total_posts": 1,
+          "total_comments": 0,
+          "total_engagement": 1,
+          "mention_count": 1,
+          "last_mentioned": "2026-02-15",
+          "trend": "new"
+        },
+        "sentiment_analysis": {
+          "overall": "positive",
+          "score": 0.75,
+          "positive_mentions": 1,
+          "neutral_mentions": 0,
+          "negative_mentions": 0,
+          "key_positive_quotes": [
+            "家烧黄鱼手打年糕"
+          ],
+          "key_negative_quotes": [],
+          "confidence": "medium"
+        },
+        "trend_over_time": {
+          "trend_direction": "new",
+          "trend_percentage": 0,
+          "peak_discussion_date": "2026-02-15",
+          "first_mentioned": "2026-02-15"
+        }
+      },
+      "sources": [
+        "xiaohongshu_search"
+      ],
+      "recommendations": [],
+      "highlights": [
+        "江浙菜"
+      ],
+      "notes": "家烧黄鱼手打年糕",
+      "source_title": "南湾｜在湾区也吃到了那口家烧黄鱼手打年糕",
+      "semantic_tags": {
+        "scenes": [
+          "dining"
+        ],
+        "vibes": [
+          "authentic"
+        ],
+        "practical": [],
+        "keywords": [
+          "江浙菜"
+        ]
+      },
+      "searchable_text": "黄鱼年糕 Yellow Fish Rice Cake 江浙菜 Sunnyvale 家烧黄鱼手打年糕",
+      "coordinates": null,
+      "embedding": null
+    }
+  ]
+}
