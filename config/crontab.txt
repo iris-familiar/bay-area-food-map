@@ -1,0 +1,71 @@
+# Bay Area Food Map - Cron Job Configuration
+# Add these to your crontab with: crontab -e
+
+# =============================================================================
+# DAILY AUTOMATED TASKS (Low risk, no rate limiting concerns)
+# =============================================================================
+
+# 09:00 - Check seed bloggers for updates
+0 9 * * * cd ~/projects/bay-area-food-map && python3 scripts/check_bloggers.py >> logs/bloggers.log 2>&1
+
+# 10:00 - Mine comments from yesterday's data
+0 10 * * * cd ~/projects/bay-area-food-map && python3 scripts/discover_from_comments.py >> logs/comments.log 2>&1
+
+# 20:00 - Generate daily summary report
+0 20 * * * cd ~/projects/bay-area-food-map && python3 scripts/daily_report.py >> logs/daily.log 2>&1
+
+# =============================================================================
+# WEEKLY TASKS
+# =============================================================================
+
+# Monday 09:00 - Update blogger list
+0 9 * * 1 cd ~/projects/bay-area-food-map && python3 scripts/update_bloggers.py >> logs/weekly.log 2>&1
+
+# Wednesday 10:00 - Rotate scenario keywords
+0 10 * * 3 cd ~/projects/bay-area-food-map && python3 scripts/rotate_keywords.py >> logs/weekly.log 2>&1
+
+# Friday 18:00 - Weekly candidate summary (before manual review)
+0 18 * * 5 cd ~/projects/bay-area-food-map && python3 scripts/weekly_summary.py >> logs/weekly.log 2>&1
+
+# Sunday 21:00 - Generate weekly report
+0 21 * * 0 cd ~/projects/bay-area-food-map && python3 scripts/weekly_report.py >> logs/weekly.log 2>&1
+
+# =============================================================================
+# MONTHLY MAINTENANCE
+# =============================================================================
+
+# 1st of month - Archive old data
+0 2 1 * * cd ~/projects/bay-area-food-map && python3 scripts/archive_old_data.py >> logs/maintenance.log 2>&1
+
+# =============================================================================
+# MANUAL TASKS (Not automated - require anti-detection measures)
+# =============================================================================
+# These should be run manually with proper delays:
+# 
+# Location Search (11:00 daily) - 30 min duration, 8-12s delays
+# Command: python3 scripts/fetch_xiaohongshu_data.sh "Cupertino美食"
+# 
+# Deep Track (14:00 daily) - 20 min duration
+# Command: python3 scripts/run_recursive_search_*.sh
+#
+# Scenario Search (16:00 daily) - 20 min duration
+# Command: python3 scripts/fetch_xiaohongshu_data.sh "湾区约会餐厅"
+#
+# Friday Candidate Review (19:00) - 1 hour, manual verification
+# Command: python3 scripts/verify_candidates.py
+
+# =============================================================================
+# SAFETY LIMITS (Enforced by scripts)
+# =============================================================================
+# - Max 50 posts per day
+# - Max 30 requests per day  
+# - Max 10 restaurants tracked per day
+# - 8-12s delay between requests
+# - Only run during "active hours" (9am-10pm)
+
+# =============================================================================
+# LOG ROTATION
+# =============================================================================
+# Logs are stored in ~/projects/bay-area-food-map/logs/
+# Weekly rotation: logs are archived every Sunday at 23:59
+59 23 * * 0 cd ~/projects/bay-area-food-map/logs && tar -czf "archive_$(date +\%Y\%m\%d).tar.gz" *.log && rm *.log

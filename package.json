@@ -1,0 +1,28 @@
+{
+  "name": "bay-area-food-map",
+  "version": "3.0.0",
+  "description": "湾区美食地图 - 餐厅发现与推荐平台",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node dev.js",
+    "test": "npm run test:unit && npm run test:integration && npm run test:e2e",
+    "test:unit": "node tests/unit/run.js",
+    "test:integration": "node tests/integration/run.js", 
+    "test:e2e": "node tests/e2e/run.js",
+    "etl": "node src/etl/cli.js",
+    "etl:daily": "cd src/etl && ./daily_master_job.sh",
+    "etl:doctor": "cd src/etl && ./etl doctor",
+    "build": "node scripts/build.js",
+    "deploy": "node scripts/deploy/deploy.js",
+    "backup": "node scripts/backup/backup.js"
+  },
+  "keywords": ["food", "restaurant", "bay-area", "map"],
+  "author": "Travis (AI Butler)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

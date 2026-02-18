@@ -1,0 +1,46 @@
+# Bay Area Food Map - Cron Job Configuration v2.0 (Refactored)
+# 
+# 使用新的ETL管道: scripts/etl/
+#
+# 安装步骤:
+#   crontab -e
+#   然后粘贴以下内容
+
+# =============================================================================
+# DAILY AUTOMATED TASKS
+# =============================================================================
+
+# 02:00 - Run daily master job (new ETL pipeline)
+0 2 * * * cd ~/.openclaw/workspace-planner/projects/bay-area-food-map/scripts/etl && ./daily_master_job.sh >> ../logs/daily_v2.log 2>&1
+
+# 06:00 - Health check and monitoring
+0 6 * * * cd ~/.openclaw/workspace-planner/projects/bay-area-food-map/scripts/etl && ./etl monitor check --all >> ../logs/monitor.log 2>&1
+
+# 12:00 - Midday health check
+0 12 * * * cd ~/.openclaw/workspace-planner/projects/bay-area-food-map/scripts/etl && ./etl doctor >> ../logs/doctor.log 2>&1
+
+# 18:00 - Evening health check
+0 18 * * * cd ~/.openclaw/workspace-planner/projects/bay-area-food-map/scripts/etl && ./etl monitor check --critical >> ../logs/monitor_critical.log 2>&1
+
+# =============================================================================
+# BACKUP TASKS
+# =============================================================================
+
+# Weekly archive backup (Sunday 03:00)
+0 3 * * 0 cd ~/.openclaw/workspace-planner/projects/bay-area-food-map/scripts/etl && ./etl backup level3 weekly >> ../logs/backup_level3.log 2>&1
+
+# =============================================================================
+# NOTES
+# =============================================================================
+# 
+# 旧的脚本已迁移:
+#   - scripts/daily_master_job.sh → scripts/etl/daily_master_job.sh (v2.0)
+#   - scripts/check_bloggers.py → 已集成到新的analyze-daily-data.js
+#   - scripts/merge_batch.py → 已集成到新的merge.js
+#
+# 查看日志:
+#   tail -f logs/daily_v2.log
+#   tail -f logs/monitor.log
+#
+# 手动运行:
+#   cd scripts/etl && ./etl daily
