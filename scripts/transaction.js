@@ -8,8 +8,8 @@ const fs = require('fs');
 const path = require('path');
 
 const DATA_DIR = '/Users/joeli/.openclaw/workspace-planner/projects/bay-area-food-map/data';
-const DB_FILE = path.join(DATA_DIR, 'current', 'restaurant_database.json');
-const BACKUP_DIR = path.join(DATA_DIR, 'backup', 'transactions');
+const DB_FILE = path.join(DATA_DIR, 'restaurant_database.json');
+const BACKUP_DIR = path.join(DATA_DIR, 'backups', 'transactions');
 
 // 确保备份目录存在
 if (!fs.existsSync(BACKUP_DIR)) {

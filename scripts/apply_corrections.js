@@ -10,7 +10,7 @@ const path = require('path');
 const { beginTransaction, commitTransaction } = require('./transaction');
 
 const DATA_DIR = '/Users/joeli/.openclaw/workspace-planner/projects/bay-area-food-map/data';
-const DB_FILE = path.join(DATA_DIR, 'current', 'restaurant_database.json');
+const DB_FILE = path.join(DATA_DIR, 'restaurant_database.json');
 const CORRECTIONS_FILE = path.join(DATA_DIR, 'corrections.json');
 
 console.log('🔧 应用数据修正...');

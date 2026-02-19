@@ -1,6 +1,0 @@
-#!/bin/bash
-# ETL CLI Shortcut
-# 调用 cli.js 的快捷方式
-
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-node "${SCRIPT_DIR}/cli.js" "$@"
