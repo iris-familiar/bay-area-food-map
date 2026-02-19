@@ -16,9 +16,9 @@ const path = require('path');
 // 配置
 const CONFIG = {
   goldDataPath: path.join(__dirname, '../../data/current/restaurant_database.json'),
-  servingDataPath: path.join(__dirname, '../data/serving_data.json'),
-  searchIndexPath: path.join(__dirname, '../data/search_index.json'),
-  statsPath: path.join(__dirname, '../data/stats.json'),
+  servingDataPath: path.join(__dirname, '../../data/serving/serving_data.json'),
+  searchIndexPath: path.join(__dirname, '../../data/serving/search_index.json'),
+  statsPath: path.join(__dirname, '../../data/serving/stats.json'),
   cachePath: path.join(__dirname, '../cache'),
   version: '3.0.0'
 };
