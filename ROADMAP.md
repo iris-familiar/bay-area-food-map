@@ -1,7 +1,7 @@
 # 湾区美食地图 — Engineering Roadmap
 
-> Last updated: 2026-02-19  
-> Status: Post-refactor cleanup complete. Pipeline operational.
+> Last updated: 2026-02-19 (v2 — P0+P1 implemented)
+> Status: Pipeline fully operational. LLM extraction active. Monitoring live.
 
 ---
 
@@ -41,63 +41,51 @@ See P0/P1 issues below.
 
 ## Issues & Improvements (Prioritized)
 
-### 🔴 P0 — Fix Before Next Run
+### ✅ P0 — DONE (2026-02-19)
 
-#### 1. XHS Login Expiry = Silent Scrape Skip
-**Problem:** When XHS cookies expire, `01_scrape.sh` logs a warning and exits 0. The pipeline continues without new data, and nobody knows.  
-**Fix:** Pipeline should send a notification when scrape is skipped due to auth failure. Also add `last_scrape_at` to `data/.pipeline_state.json` so we can detect staleness.
+#### 1. XHS Login Expiry Notification ✅
+**Fixed:** `run.sh` now sends an `openclaw system event` alert when the XHS scrape is skipped due to auth failure.
+Touch sentinel `.scrape_complete` when scrape succeeds; alert if absent after scrape step.
 
-```bash
-# In run.sh, after scrape:
-if [ ! -f "$RAW_DIR/.scrape_complete" ]; then
-    openclaw system event --text "⚠️ XHS scrape skipped: not logged in. Run: cd ~/.agents/skills/xiaohongshu/scripts && ./login.sh" --mode now
-fi
-```
-
-#### 2. Regex Extraction is Too Fragile
-**Problem:** `02_extract.js` uses regex patterns to find restaurant names. These miss 80%+ of actual restaurants in posts (which are mentioned naturally in text, not in brackets).  
-**Better approach:** The old codebase had `v8_llm_extraction_prod.js` which used an LLM to extract restaurant names from post text. That approach is fundamentally better for this use case.  
-**Fix:** Replace `02_extract.js` with an LLM-based extractor (see P1-3 below).
+#### 2. LLM-Based Restaurant Extraction ✅
+**Fixed:** Replaced fragile regex `02_extract.js` with `02_extract_llm.js` using Gemini 1.5 Flash.
+- Extracts restaurant name, city, cuisine, dishes, sentiment in one LLM pass
+- Rate-limited: max 30 posts/run, 500ms between API calls
+- Graceful fallback: parse errors → empty array (pipeline continues)
+- Requires `GEMINI_API_KEY` in `.env`
 
 ---
 
-### 🟡 P1 — High Value, Next Sprint
+### ✅ P1 — DONE (2026-02-19)
 
-#### 3. LLM-Based Restaurant Extraction
-**Problem:** Natural language mentions like "去了趟Cupertino的一家湘菜，叫留湘小聚..." aren't caught by bracket patterns.  
-**Proposed:** `02_extract.js` sends post text + comments to an LLM with a structured prompt:
-```
-Given this XiaoHongShu post about Bay Area food, extract any restaurant names mentioned.
-Return JSON: {"restaurants": [{"name": "...", "city": "...", "cuisine": "...", "dishes": [...]}]}
-```
-This also gives us city, cuisine, and dishes in one pass — eliminating the need for a separate enrichment step.
+#### 3. Engagement Metric Updates ✅
+**Implemented:** `03_update_metrics.js` — runs before merge step.
+- Matches new post candidates against existing restaurants by normalized name
+- Increments `mention_count`, `total_engagement`, appends to `sources[]`
+- Maintains `trend_30d` (rolling 90-day window of `{date, count, engagement}`)
+- Appends new LLM-extracted dishes to `recommendations[]` (deduped)
+- Weighted sentiment update (10% weight to new signal)
 
-**Estimated effort:** 2-3 hours. Reuse pattern from old `v8_llm_extraction_prod.js`.
-
-#### 4. Engagement Score Updates for Existing Restaurants
-**Problem:** Once a restaurant is in the database, its `total_engagement` and `mention_count` never update. A restaurant that gets 50 new XHS posts this week still shows old numbers.  
-**Fix:** Add `05_update_metrics.js` to the pipeline:
-- For each new post, check if it mentions any existing restaurant
-- If yes, increment `mention_count`, update `total_engagement`, append to `sources`
-- Update `trend_30d` (posts in last 30 days)
-
-**Impact:** This is what makes the engagement/trending data meaningful over time.
-
-#### 5. Pipeline State & Monitoring
-**Problem:** No way to see if the pipeline ran successfully today without grepping logs.  
-**Fix:** Write `data/.pipeline_state.json` after every run:
+#### 4. Pipeline State & Monitoring ✅
+**Implemented:** `run.sh` writes `data/.pipeline_state.json` after every run:
 ```json
 {
-  "last_run": "2026-02-19T11:00:00Z",
+  "last_run": "2026-02-19T15:51:26Z",
   "status": "success",
-  "restaurants_before": 79,
-  "restaurants_after": 81,
-  "new_posts_scraped": 12,
-  "new_restaurants_added": 2,
-  "scrape_status": "ok"
+  "restaurants_total": 79,
+  "restaurants_added": 0,
+  "restaurants_metrics_updated": 0,
+  "posts_scraped": 0,
+  "scrape_ok": true,
+  "dry_run": false
 }
 ```
-Frontend can display this (last updated timestamp). Cron can alert on failure.
+Frontend now reads this and displays "更新于 X月Y日 HH:MM" in the header subtitle.
+
+**Also done as part of P1:**
+- `config.sh` — centralised paths/env, sourced by `run.sh` (no more hardcoded paths)
+- `06_generate_index.js` — slim 33KB index for fast initial page load (74% smaller than full DB)
+- `index.html` loads slim index first, falls back to full DB; lazy-loads pipeline state for timestamp
 
 ---
 
@@ -171,19 +159,23 @@ This powers the "trending" chart in the modal and enables genuine discovery of r
 
 ---
 
-## Proposed Pipeline (Target State)
+## Current Pipeline (as of 2026-02-19)
 
 ```
-01_scrape.sh          → data/raw/YYYY-MM-DD/post_*.json
-02_extract_llm.js     → data/candidates/YYYY-MM-DD.json  (LLM extraction)
-03_update_metrics.js  → update engagement/trend for EXISTING restaurants
-04_merge.js           → data/restaurant_database.json    (append-only, reviewed candidates only)
-05_verify.js          → integrity check, auto-restore
-06_generate_index.js  → data/restaurant_database_index.json  (slim for frontend)
-07_commit.sh          → git commit "data: YYYY-MM-DD pipeline (+N new, M updated)"
+run.sh (cron entry)
+  ├── 01_scrape.sh          → data/raw/YYYY-MM-DD/post_*.json  (XHS MCP)
+  ├── 02_extract_llm.js     → data/candidates/YYYY-MM-DD.json  (Gemini LLM)
+  ├── 03_update_metrics.js  → IN-PLACE: update metrics for existing restaurants
+  ├── 04_merge.js           → data/restaurant_database.json    (append-only)
+  ├── scripts/apply_corrections.js → apply data/corrections.json
+  ├── 05_verify.js          → integrity check, auto-restore on fail
+  ├── 06_generate_index.js  → data/restaurant_database_index.json (slim, 74% smaller)
+  └── write .pipeline_state.json + notify on auth failure or new restaurants
 ```
 
 Each step is independent, idempotent, and can be run in isolation.
+
+**TODO (P2):** Add `07_commit.sh` — auto git commit "data: YYYY-MM-DD +N restaurants"
 
 ---
 
@@ -238,13 +230,14 @@ bay-area-food-map/
 
 ## Next Session: Where to Start
 
-Pick up from **P0 issues first**:
+P0 and P1 are done. Pick up from **P2**:
 
-1. **Fix XHS auth notification** (30 min) — add alert to `run.sh` when scrape is skipped
-2. **Replace regex extractor with LLM** (2-3 hrs) — `02_extract_llm.js` based on old `v8_llm_extraction_prod.js`
-3. **Add metrics update step** (2 hrs) — `03_update_metrics.js`
+1. **Candidate review workflow** (2 hrs) — `pipeline/review.js` interactive CLI; new restaurants queue in `data/candidates/` before going live
+2. **Auto git commit after pipeline** (30 min) — `07_commit.sh`: `git add data/ && git commit -m "data: YYYY-MM-DD +N restaurants"`
+3. **Frontend component split** (2-3 hrs) — extract inline JS to `src/app.js`, CSS to `src/styles.css`
+4. **Google Places enrichment for new restaurants** (P3) — `pipeline/enrich_google.js` using existing `GOOGLE_PLACES_API_KEY`
 
-Then test a full pipeline run with live XHS data to see if the end-to-end flow works.
+**Before any of the above:** Test a real pipeline run with live XHS data (not dry-run) to validate the full end-to-end LLM extraction flow.
 
 ---
 
