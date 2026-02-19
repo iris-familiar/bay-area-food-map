@@ -1,0 +1,339 @@
+{
+  "mentions": {
+    "Apple Green Bistro": {
+      "name": "Apple Green Bistro",
+      "mentionCount": 1,
+      "posts": [
+        "690f77cf00000000050317bb"
+      ],
+      "contexts": [
+        "Apple Green Bistro [玫瑰R][玫瑰R][玫瑰R][玫瑰R][玫瑰R] 名字起的太雷了，以为会不正"
+      ],
+      "sentiments": {
+        "positive": 0,
+        "neutral": 1,
+        "negative": 0
+      },
+      "cuisine": "中餐",
+      "area": "Cupertino"
+    },
+    "Cozy Tea Loft": {
+      "name": "Cozy Tea Loft",
+      "mentionCount": 1,
+      "posts": [
+        "690f77cf00000000050317bb"
+      ],
+      "contexts": [
+        "想到超正宗啊！这个水煮牛肉炒鸡多的牛肉，连吃了两顿，太爱了[赞R][赞R] \t Cozy Tea Loft [玫瑰R][玫瑰R][玫瑰R][玫瑰R] 是我喜欢的台湾小吃店！盐酥鸡要的加辣"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "cuisine": "台湾小吃",
+      "area": "Cupertino"
+    },
+    "Marugame Udon": {
+      "name": "Marugame Udon",
+      "mentionCount": 1,
+      "posts": [
+        "690f77cf00000000050317bb"
+      ],
+      "contexts": [
+        "吃店！盐酥鸡要的加辣，真的不含糊啊很辣[笑哭R]章鱼小丸子超多章鱼很喜欢！ \t Marugame Udon [玫瑰R][玫瑰R][玫瑰R][玫瑰R] 第一次吃这家连锁乌冬面店，招牌的番茄"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "cuisine": "日式乌冬",
+      "area": "Cupertino"
+    },
+    "Pacific Catch": {
+      "name": "Pacific Catch",
+      "mentionCount": 1,
+      "posts": [
+        "690f77cf00000000050317bb"
+      ],
+      "contexts": [
+        "[玫瑰R] 没有很好吃也没有不好吃，芝麻酱有点甜了，不过套餐管饱[笑哭R] \t Pacific Catch [玫瑰R][玫瑰R][玫瑰R][玫瑰R][玫瑰R] 非常惊艳的美式海鲜店！奶油"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "cuisine": "美式海鲜",
+      "area": "Cupertino"
+    },
+    "One Pot Shabu Shabu": {
+      "name": "One Pot Shabu Shabu",
+      "mentionCount": 1,
+      "posts": [
+        "690f77cf00000000050317bb"
+      ],
+      "contexts": [
+        "赞R]牛肉蔬菜乌冬面比较中规中矩，天妇罗种类很多，很不错！不过没有很酥脆。 \t One Pot Shabu Shabu [玫瑰R][玫瑰R][玫瑰R] 没有很好吃也没有不好吃，芝麻酱有点甜了，不过套"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "cuisine": "火锅",
+      "area": "Cupertino"
+    },
+    "Tacos La Murenita": {
+      "name": "Tacos La Murenita",
+      "mentionCount": 1,
+      "posts": [
+        "690f77cf00000000050317bb"
+      ],
+      "contexts": [
+        "种生鱼组合在一起的，非常棒！海鲜taco组合也是几种不同的炸鱼，非常推荐！ \t Tacos La Murenita [玫瑰R][玫瑰R][玫瑰R][玫瑰R] 真的墨西哥玉米饼可卷一切哈哈[笑哭R"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "cuisine": "墨西哥菜",
+      "area": "Cupertino"
+    },
+    "Poke": {
+      "name": "Poke",
+      "mentionCount": 1,
+      "posts": [
+        "690f77cf00000000050317bb"
+      ],
+      "contexts": [
+        "] 非常惊艳的美式海鲜店！奶油海鲜汤好喝，很多牡蛎，很浓郁！Poke 碗里面好几种生鱼组合在一起的，非常棒！海鲜taco组合也是"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    "Ping's Bistro": {
+      "name": "Ping's Bistro",
+      "mentionCount": 1,
+      "posts": [
+        "6924d9f7000000001e009d75"
+      ],
+      "contexts": [
+        "了最后时间的珊瑚虾 想念虾图 蓝蟹还行 壳子比梭子蟹硬好多 3-4 再更新一点点pings bistro 3好吃 香茅烤鱼还行 5-7 为了王心凌的票去吃的海底捞(拿到版) 点了四个锅"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "cuisine": "中餐",
+      "area": "Cupertino"
+    },
+    "Tofu Plus": {
+      "name": "Tofu Plus",
+      "mentionCount": 1,
+      "posts": [
+        "6924d9f7000000001e009d75"
+      ],
+      "contexts": [
+        "1 tofu plus 两人惊人饭量 我好喜欢那个猪五花 爽吃肉 2 四季生鲜 在湾区赶上了最后时间的"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "cuisine": "韩式豆腐锅",
+      "area": "Cupertino"
+    },
+    "京味轩": {
+      "name": "京味轩",
+      "mentionCount": 1,
+      "posts": [
+        "6924d9f7000000001e009d75"
+      ],
+      "contexts": [
+        "为了王心凌的票去吃的海底捞(拿到版) 点了四个锅底堪比omakase 8-9 京味轩 safe choice for 烤鸭 10-15 和搭子们吃的外滩十八号 也就"
+      ],
+      "sentiments": {
+        "positive": 0,
+        "neutral": 1,
+        "negative": 0
+      },
+      "cuisine": "北京菜",
+      "area": "Cupertino"
+    },
+    "湘粤情 Jade Xiang Yue": {
+      "name": "湘粤情 Jade Xiang Yue",
+      "mentionCount": 1,
+      "posts": [
+        "6924d9f7000000001e009d75"
+      ],
+      "contexts": [
+        "for 烤鸭 10-15 和搭子们吃的外滩十八号 也就还行 人好少 16-18 湘粤情 团建吃了好多 还行还行 \t 按图片顺序推荐[doge] \t #"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "cuisine": "湘菜+粤菜",
+      "area": "Cupertino"
+    },
+    "外滩十八号": {
+      "name": "外滩十八号",
+      "mentionCount": 1,
+      "posts": [
+        "6924d9f7000000001e009d75"
+      ],
+      "contexts": [
+        "8-9 京味轩 safe choice for 烤鸭 10-15 和搭子们吃的外滩十八号 也就还行 人好少 16-18 湘粤情 团建吃了好多 还行还行 \t 按图片顺序推"
+      ],
+      "sentiments": {
+        "positive": 0,
+        "neutral": 1,
+        "negative": 0
+      },
+      "cuisine": "上海菜",
+      "area": "Cupertino"
+    },
+    "四季生鲜": {
+      "name": "四季生鲜",
+      "mentionCount": 1,
+      "posts": [
+        "6924d9f7000000001e009d75"
+      ],
+      "contexts": [
+        "1 tofu plus 两人惊人饭量 我好喜欢那个猪五花 爽吃肉 2 四季生鲜 在湾区赶上了最后时间的珊瑚虾 想念虾图 蓝蟹还行 壳子比梭子蟹硬好多 3-4"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "cuisine": "海鲜",
+      "area": "Cupertino"
+    },
+    "海底捞 Haidilao": {
+      "name": "海底捞 Haidilao",
+      "mentionCount": 1,
+      "posts": [
+        "6924d9f7000000001e009d75"
+      ],
+      "contexts": [
+        "点点pings bistro 3好吃 香茅烤鱼还行 5-7 为了王心凌的票去吃的海底捞(拿到版) 点了四个锅底堪比omakase 8-9 京味轩 safe choic"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "cuisine": "火锅",
+      "area": "Cupertino"
+    },
+    "Matcha Town": {
+      "name": "Matcha Town",
+      "mentionCount": 1,
+      "posts": [
+        "697c2dcb000000002200ab2d"
+      ],
+      "contexts": [
+        "豌杂面！于是说走就走，去打卡了新开的重庆铺盖面，吃完顺路又拐进了隔壁也是新开的 Matcha Town 🍜🍵 📍重庆铺盖面 C.Q. Taste 点了豌杂面，面条粗细可以选，就"
+      ],
+      "sentiments": {
+        "positive": 0,
+        "neutral": 1,
+        "negative": 0
+      },
+      "cuisine": "抹茶甜品",
+      "area": "Cupertino"
+    },
+    "奈雪的茶": {
+      "name": "奈雪的茶",
+      "mentionCount": 1,
+      "posts": [
+        "697c2dcb000000002200ab2d"
+      ],
+      "contexts": [
+        "了！～美中不足冰有点多，而且这款不能选少冰。大半杯都是冰。[失望R] 📍奈雪 Naisnow Tea & Bakery 附近这周新开了家奈雪，在原来叹茶那边。门口有小绿瓶s"
+      ],
+      "sentiments": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 1
+      },
+      "cuisine": "奶茶/烘焙",
+      "area": "Cupertino"
+    },
+    "Bon Bon Matcha": {
+      "name": "Bon Bon Matcha",
+      "mentionCount": 1,
+      "posts": [
+        "697c2dcb000000002200ab2d"
+      ],
+      "contexts": [
+        "点看着都不错，下次尝尝！门口宣传小哥说周五（明天）有活动。 \t 🍵旁边还有家叫Bon Bon Matcha的正在装修，最近抹茶是真火！# # # \t #"
+      ],
+      "sentiments": {
+        "positive": 1,
+        "neutral": 0,
+        "negative": 0
+      },
+      "cuisine": "抹茶甜品",
+      "area": "Cupertino"
+    },
+    "重庆荣昌铺盖面 C.Q. Taste": {
+      "name": "重庆荣昌铺盖面 C.Q. Taste",
+      "mentionCount": 1,
+      "posts": [
+        "697c2dcb000000002200ab2d"
+      ],
+      "contexts": [
+        "[抓狂R]突然想吃豌杂面！于是说走就走，去打卡了新开的重庆铺盖面，吃完顺路又拐进了隔壁也是新开的 Matcha Town 🍜🍵 📍重庆铺盖"
+      ],
+      "sentiments": {
+        "positive": 0,
+        "neutral": 1,
+        "negative": 0
+      },
+      "cuisine": "重庆面馆",
+      "area": "Cupertino"
+    },
+    "Naisnow Tea": {
+      "name": "Naisnow Tea",
+      "mentionCount": 1,
+      "posts": [
+        "697c2dcb000000002200ab2d"
+      ],
+      "contexts": [
+        "多，而且这款不能选少冰。大半杯都是冰。[失望R] 📍奈雪 Naisnow Tea & Bakery 附近这周新开了家奈雪，在原来叹茶那边。门"
+      ],
+      "sentiments": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 1
+      }
+    },
+    "Bakery": {
+      "name": "Bakery",
+      "mentionCount": 1,
+      "posts": [
+        "697c2dcb000000002200ab2d"
+      ],
+      "contexts": [
+        "杯都是冰。[失望R] 📍奈雪 Naisnow Tea & Bakery 附近这周新开了家奈雪，在原来叹茶那边。门口有小绿瓶samp"
+      ],
+      "sentiments": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 1
+      }
+    }
+  },
+  "count": 20
+}

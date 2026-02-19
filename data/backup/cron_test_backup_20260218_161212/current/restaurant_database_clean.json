@@ -1,0 +1,2085 @@
+{
+  "version": "8.1-clean",
+  "total_restaurants": 76,
+  "processing_steps": [
+    "name_normalization",
+    "duplicate_merge",
+    "cuisine_standardization",
+    "area_standardization",
+    "validation"
+  ],
+  "restaurants": [
+    {
+      "id": "r001",
+      "name": "留湘小聚",
+      "name_en": "",
+      "cuisine": "湘菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 4852,
+      "mention_count": 5,
+      "sources": [
+        "693e02ff000000001e038ae4",
+        "67f363f0000000001c01ecd5",
+        "690c40bf0000000005039eae",
+        "66667292000000000f00f266",
+        "67ba7dae00000000290119d8"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "67ba7dae00000000290119d8",
+          "title": "湾区中餐超全超真诚推荐",
+          "date": "2025-02-22",
+          "engagement": 4149,
+          "context": ""
+        },
+        {
+          "post_id": "693e02ff000000001e038ae4",
+          "title": "湾区吃喝周记",
+          "date": "2025-12-13",
+          "engagement": 92,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r002",
+      "name": "Jun Bistro",
+      "name_en": "",
+      "cuisine": "融合菜",
+      "area": "Milpitas",
+      "price_range": "",
+      "total_engagement": 4366,
+      "mention_count": 3,
+      "sources": [
+        "67ba7dae00000000290119d8",
+        "690cf26b000000000401123f",
+        "6945a4d1000000000d00c3d4"
+      ],
+      "recommendations": [
+        "松露野菌牛油拌饭",
+        "贵州米锅巴",
+        "小炒黄牛肉",
+        "石杵茄子",
+        "芭蕉叶包烧鱼",
+        "宝宝米线"
+      ],
+      "post_details": [
+        {
+          "post_id": "67ba7dae00000000290119d8",
+          "title": "湾区中餐超全超真诚推荐",
+          "date": "2025-02-22",
+          "engagement": 4149,
+          "context": ""
+        },
+        {
+          "post_id": "690cf26b000000000401123f",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-2🥢",
+          "date": "2025-11-06",
+          "engagement": 25,
+          "context": ""
+        },
+        {
+          "post_id": "6945a4d1000000000d00c3d4",
+          "title": "湾区美食 最近孩子爱吃的饭店🍽️",
+          "date": "2025-12-19",
+          "engagement": 192,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r003",
+      "name": "麻辣诱惑",
+      "name_en": "Chongqing Xiaomian",
+      "cuisine": "川菜",
+      "area": "Fremont",
+      "price_range": "",
+      "total_engagement": 1316,
+      "mention_count": 3,
+      "sources": [
+        "697a6fea000000000b008c26",
+        "675f38fb0000000001028bc0",
+        "6923764a000000001f00cd7c"
+      ],
+      "recommendations": [
+        "沸腾活鱼",
+        "沸腾鱼",
+        "水煮鱼",
+        "烤活鱼"
+      ],
+      "post_details": [
+        {
+          "post_id": "675f38fb0000000001028bc0",
+          "title": "降温了！来Fremont吃湾区最正宗沸腾鱼！😭",
+          "date": "2024-12-15",
+          "engagement": 465,
+          "context": ""
+        },
+        {
+          "post_id": "6923764a000000001f00cd7c",
+          "title": "在湾区吃过的最好的烤活鱼",
+          "date": "2025-11-23",
+          "engagement": 291,
+          "context": ""
+        },
+        {
+          "post_id": "697a6fea000000000b008c26",
+          "title": "南湾正宗沸腾鱼",
+          "date": "2026-01-28",
+          "engagement": 560,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r004",
+      "name": "Tanto",
+      "name_en": "",
+      "cuisine": "日料",
+      "area": "Sunnyvale",
+      "price_range": "",
+      "total_engagement": 1172,
+      "mention_count": 1,
+      "sources": [
+        "69111cdd0000000004023026"
+      ],
+      "recommendations": [
+        "AGEDASHI TOFU",
+        "GYUTAN 牛舌",
+        "鳗鱼茶泡饭",
+        "SASHIMI",
+        "UMAKI TAMAGO 鳗鱼蛋卷"
+      ],
+      "post_details": [
+        {
+          "post_id": "69111cdd0000000004023026",
+          "title": "湾区最难忘的一口 直接沦陷了🤤",
+          "date": "2025-11-11",
+          "engagement": 1172,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r005",
+      "name": "活粥王",
+      "name_en": "",
+      "cuisine": "潮汕菜",
+      "area": "Fremont",
+      "price_range": "",
+      "total_engagement": 1036,
+      "mention_count": 1,
+      "sources": [
+        "68db4e100000000007014ccc"
+      ],
+      "recommendations": [
+        "干贝虾仁鲍鱼膏蟹粥",
+        "砂锅粥"
+      ],
+      "post_details": [
+        {
+          "post_id": "68db4e100000000007014ccc",
+          "title": "老广泪目了！🥹湾区有正宗精致潮汕砂锅粥了！",
+          "date": "2025-09-29",
+          "engagement": 1036,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r006",
+      "name": "一品香饺子",
+      "name_en": "Epic Dumpling",
+      "cuisine": "中餐",
+      "area": "Sunnyvale",
+      "price_range": "",
+      "total_engagement": 896,
+      "mention_count": 2,
+      "sources": [
+        "690c40bf0000000005039eae",
+        "670977d9000000002a03115c"
+      ],
+      "recommendations": [
+        "三鲜水饺",
+        "凉拌耳丝",
+        "蒜香葱油薄饼",
+        "干炒牛河",
+        "香脆客家猪肉丸"
+      ],
+      "post_details": [
+        {
+          "post_id": "670977d9000000002a03115c",
+          "title": "50吃到撑！Sunnyvale超高性价比家常美食来了",
+          "date": "2024-10-11",
+          "engagement": 643,
+          "context": ""
+        },
+        {
+          "post_id": "690c40bf0000000005039eae",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
+          "date": "2025-11-05",
+          "engagement": 253,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r007",
+      "name": "韶山印象",
+      "name_en": "Hunan Impression",
+      "cuisine": "湘菜",
+      "area": "Cupertino",
+      "price_range": "",
+      "total_engagement": 812,
+      "mention_count": 3,
+      "sources": [
+        "66667292000000000f00f266",
+        "6856cc340000000013011fd6",
+        "690c40bf0000000005039eae"
+      ],
+      "recommendations": [
+        "铁板蒜香黄花鱼",
+        "海鲜",
+        "小炒黄牛肉",
+        "河鲜",
+        "农家一碗香",
+        "炒菜"
+      ],
+      "post_details": [
+        {
+          "post_id": "66667292000000000f00f266",
+          "title": "湾区丨最近我在吃什么(2)",
+          "date": "2024-06-09",
+          "engagement": 245,
+          "context": ""
+        },
+        {
+          "post_id": "6856cc340000000013011fd6",
+          "title": "湾区｜两周吃遍湾区中餐｜推荐不踩雷合集🔥",
+          "date": "2025-06-21",
+          "engagement": 314,
+          "context": ""
+        },
+        {
+          "post_id": "690c40bf0000000005039eae",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
+          "date": "2025-11-05",
+          "engagement": 253,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r008",
+      "name": "重庆铺盖面",
+      "name_en": "C.Q. Taste",
+      "cuisine": "川菜",
+      "area": "Cupertino",
+      "price_range": "",
+      "total_engagement": 758,
+      "mention_count": 3,
+      "sources": [
+        "697ad7a0000000000c035eb3",
+        "692d5aaf000000001b020caa",
+        "697c2dcb000000002200ab2d"
+      ],
+      "recommendations": [
+        "豌杂面",
+        "铺盖面",
+        "酱肉包子",
+        "肥肠米线"
+      ],
+      "post_details": [
+        {
+          "post_id": "692d5aaf000000001b020caa",
+          "title": "南湾Cupertino的重庆荣昌铺盖面",
+          "date": "2025-12-01",
+          "engagement": 322,
+          "context": ""
+        },
+        {
+          "post_id": "697ad7a0000000000c035eb3",
+          "title": "成都人四刷Cupertino重庆铺盖面｜满意",
+          "date": "2026-01-28",
+          "engagement": 220,
+          "context": ""
+        },
+        {
+          "post_id": "697c2dcb000000002200ab2d",
+          "title": "湾区Cupertino 日常探店🍜🧋",
+          "date": "2026-01-29",
+          "engagement": 216,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r009",
+      "name": "老桂林",
+      "name_en": "Old Gui Lin",
+      "cuisine": "中餐",
+      "area": "Fremont",
+      "price_range": "",
+      "total_engagement": 693,
+      "mention_count": 1,
+      "sources": [
+        "692e54da000000000d03ac6b"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "692e54da000000000d03ac6b",
+          "title": "湾区|免小费还给超多小料！",
+          "date": "2025-12-07",
+          "engagement": 693,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r010",
+      "name": "李与白",
+      "name_en": "",
+      "cuisine": "包子",
+      "area": "Sunnyvale",
+      "price_range": "",
+      "total_engagement": 638,
+      "mention_count": 3,
+      "sources": [
+        "69332e7d00000000190259bd",
+        "693e02ff000000001e038ae4",
+        "6918dec500000000070329d8"
+      ],
+      "recommendations": [
+        "豌杂面",
+        "豆浆",
+        "豌豆面",
+        "酱肉包",
+        "青椒猪肉包",
+        "芽菜包"
+      ],
+      "post_details": [
+        {
+          "post_id": "6918dec500000000070329d8",
+          "title": "Sunnyvale现做现蒸的包子铺开门啦",
+          "date": "2025-11-15",
+          "engagement": 366,
+          "context": ""
+        },
+        {
+          "post_id": "693e02ff000000001e038ae4",
+          "title": "湾区吃喝周记",
+          "date": "2025-12-13",
+          "engagement": 92,
+          "context": ""
+        },
+        {
+          "post_id": "69332e7d00000000190259bd",
+          "title": "湾区|李与白好吃😋",
+          "date": "2025-12-10",
+          "engagement": 180,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r011",
+      "name": "万峦猪脚",
+      "name_en": "Taiwan Cafe",
+      "cuisine": "台湾菜",
+      "area": "Milpitas",
+      "price_range": "",
+      "total_engagement": 625,
+      "mention_count": 1,
+      "sources": [
+        "6928cb59000000001e02569d"
+      ],
+      "recommendations": [
+        "炒面线",
+        "咸蛋苦瓜",
+        "麻油鸡汤",
+        "万峦猪脚"
+      ],
+      "post_details": [
+        {
+          "post_id": "6928cb59000000001e02569d",
+          "title": "湾区超好吃的万峦猪脚和麻油鸡",
+          "date": "2025-11-27",
+          "engagement": 625,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r012",
+      "name": "Los Panchos",
+      "name_en": "",
+      "cuisine": "墨西哥菜",
+      "area": "Mountain View",
+      "price_range": "",
+      "total_engagement": 577,
+      "mention_count": 1,
+      "sources": [
+        "69388a61000000001e038496"
+      ],
+      "recommendations": [
+        "三奶蛋糕 Tres leches cake"
+      ],
+      "post_details": [
+        {
+          "post_id": "69388a61000000001e038496",
+          "title": "湾区 Mountain View | 最强三奶",
+          "date": "2025-12-09",
+          "engagement": 577,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r013",
+      "name": "鲜味水饺",
+      "name_en": "Umami Dumpling House",
+      "cuisine": "上海菜",
+      "area": "Sunnyvale",
+      "price_range": "",
+      "total_engagement": 531,
+      "mention_count": 1,
+      "sources": [
+        "6915759900000000070383d7"
+      ],
+      "recommendations": [
+        "上海菜",
+        "水饺面条",
+        "香菇鱼肉水饺"
+      ],
+      "post_details": [
+        {
+          "post_id": "6915759900000000070383d7",
+          "title": "冬天一口暖暖的😍Sunnyvale平价上海家常味",
+          "date": "2025-11-13",
+          "engagement": 531,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r014",
+      "name": "Eilleen's Kitchen",
+      "name_en": "",
+      "cuisine": "中餐",
+      "area": "Sunnyvale",
+      "price_range": "",
+      "total_engagement": 522,
+      "mention_count": 2,
+      "sources": [
+        "695f083a000000000b008f87",
+        "68620901000000001d00dc41"
+      ],
+      "recommendations": [
+        "清炒佛手瓜",
+        "家烧黄鱼手打年糕",
+        "古法猪肝",
+        "辣椒炒黑猪肉",
+        "豆腐虾滑",
+        "杂菌牛舌"
+      ],
+      "post_details": [
+        {
+          "post_id": "68620901000000001d00dc41",
+          "title": "Sunnyvale终于有好吃的中餐了",
+          "date": "2025-06-29",
+          "engagement": 216,
+          "context": ""
+        },
+        {
+          "post_id": "695f083a000000000b008f87",
+          "title": "南湾｜在湾区也吃到了那口家烧黄鱼手打年糕",
+          "date": "2026-01-07",
+          "engagement": 306,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r015",
+      "name": "从前的小酒馆",
+      "name_en": "",
+      "cuisine": "烧烤",
+      "area": "Fremont",
+      "price_range": "",
+      "total_engagement": 507,
+      "mention_count": 1,
+      "sources": [
+        "691d486c000000001b0226a9"
+      ],
+      "recommendations": [
+        "鸡脆骨",
+        "黄喉",
+        "烤猪蹄",
+        "麻辣烫",
+        "砂锅米线",
+        "烤冷面",
+        "烤尖椒"
+      ],
+      "post_details": [
+        {
+          "post_id": "691d486c000000001b0226a9",
+          "title": "🇺🇸湾区｜大冷天还得是砂锅+烧烤组合‼️",
+          "date": "2025-11-18",
+          "engagement": 507,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r016",
+      "name": "Hunan House",
+      "name_en": "",
+      "cuisine": "湘菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 502,
+      "mention_count": 2,
+      "sources": [
+        "68c71d50000000001c005084",
+        "6856cc340000000013011fd6"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "6856cc340000000013011fd6",
+          "title": "湾区｜两周吃遍湾区中餐｜推荐不踩雷合集🔥",
+          "date": "2025-06-21",
+          "engagement": 314,
+          "context": ""
+        },
+        {
+          "post_id": "68c71d50000000001c005084",
+          "title": "🌟硅谷吃饭无趣星人，逼自己多点体验🌟",
+          "date": "2025-09-14",
+          "engagement": 188,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r017",
+      "name": "Malatown",
+      "name_en": "",
+      "cuisine": "麻辣烫",
+      "area": "Milpitas",
+      "price_range": "",
+      "total_engagement": 383,
+      "mention_count": 2,
+      "sources": [
+        "67b3ee5700000000070314d3",
+        "690c40bf0000000005039eae"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "67b3ee5700000000070314d3",
+          "title": "真羡慕你们Milpitas有这么多好吃的…",
+          "date": "2025-02-17",
+          "engagement": 130,
+          "context": ""
+        },
+        {
+          "post_id": "690c40bf0000000005039eae",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
+          "date": "2025-11-05",
+          "engagement": 253,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r018",
+      "name": "缘聚鑫",
+      "name_en": "Yuan Bistro",
+      "cuisine": "川菜",
+      "area": "Milpitas",
+      "price_range": "",
+      "total_engagement": 378,
+      "mention_count": 2,
+      "sources": [
+        "694d9c04000000001e0255af",
+        "6913dafe0000000003012733"
+      ],
+      "recommendations": [
+        "锅包肉",
+        "农家一碗香",
+        "雷椒茄子"
+      ],
+      "post_details": [
+        {
+          "post_id": "6913dafe0000000003012733",
+          "title": "湾区Milpitas好吃的家常菜推荐！已三刷！",
+          "date": "2025-11-11",
+          "engagement": 168,
+          "context": ""
+        },
+        {
+          "post_id": "694d9c04000000001e0255af",
+          "title": "Milpitas这家美味又干净🍴好吃的菜太多啦😋",
+          "date": "2025-12-25",
+          "engagement": 210,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r019",
+      "name": "金戈戈",
+      "name_en": "",
+      "cuisine": "烧腊",
+      "area": "San Leandro",
+      "price_range": "",
+      "total_engagement": 355,
+      "mention_count": 1,
+      "sources": [
+        "6950d36c000000001e012431"
+      ],
+      "recommendations": [
+        "双拼饭"
+      ],
+      "post_details": [
+        {
+          "post_id": "6950d36c000000001e012431",
+          "title": "湾区美食求推荐",
+          "date": "2025-12-27",
+          "engagement": 355,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r020",
+      "name": "10 seconds yunnan noodle",
+      "name_en": "",
+      "cuisine": "云南菜",
+      "area": "San Leandro",
+      "price_range": "",
+      "total_engagement": 355,
+      "mention_count": 1,
+      "sources": [
+        "6950d36c000000001e012431"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "6950d36c000000001e012431",
+          "title": "湾区美食求推荐",
+          "date": "2025-12-27",
+          "engagement": 355,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r021",
+      "name": "菜友记",
+      "name_en": "cai you kee",
+      "cuisine": "中餐",
+      "area": "San Leandro",
+      "price_range": "",
+      "total_engagement": 355,
+      "mention_count": 1,
+      "sources": [
+        "6950d36c000000001e012431"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "6950d36c000000001e012431",
+          "title": "湾区美食求推荐",
+          "date": "2025-12-27",
+          "engagement": 355,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r022",
+      "name": "蒸功夫",
+      "name_en": "",
+      "cuisine": "中餐",
+      "area": "Sunnyvale",
+      "price_range": "",
+      "total_engagement": 344,
+      "mention_count": 1,
+      "sources": [
+        "67bbe327000000000603d76d"
+      ],
+      "recommendations": [
+        "腊肉蒸饭",
+        "猪蹄蒸饭"
+      ],
+      "post_details": [
+        {
+          "post_id": "67bbe327000000000603d76d",
+          "title": "被Sunnyvale这家蒸饭惊艳了，外卖成功下车",
+          "date": "2025-02-23",
+          "engagement": 344,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r023",
+      "name": "Kow Kra Pao",
+      "name_en": "",
+      "cuisine": "泰国菜",
+      "area": "Mountain View",
+      "price_range": "",
+      "total_engagement": 326,
+      "mention_count": 1,
+      "sources": [
+        "68af9c91000000001d014f9a"
+      ],
+      "recommendations": [
+        "Taro Samosa",
+        "Tom Yum Soup",
+        "打抛猪肉饭"
+      ],
+      "post_details": [
+        {
+          "post_id": "68af9c91000000001d014f9a",
+          "title": "🇺🇸湾区｜MTV这家泰餐小馆太惊喜",
+          "date": "2025-08-27",
+          "engagement": 326,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r024",
+      "name": "Mensho Tokyo",
+      "name_en": "",
+      "cuisine": "拉面",
+      "area": "SF",
+      "price_range": "",
+      "total_engagement": 311,
+      "mention_count": 1,
+      "sources": [
+        "694dc5a3000000002200ba41"
+      ],
+      "recommendations": [
+        "GKO"
+      ],
+      "post_details": [
+        {
+          "post_id": "694dc5a3000000002200ba41",
+          "title": "我在湾区咪西咪西",
+          "date": "2025-12-25",
+          "engagement": 311,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r025",
+      "name": "Nom Nom Bistro",
+      "name_en": "",
+      "cuisine": "港式",
+      "area": "Millbrae",
+      "price_range": "",
+      "total_engagement": 311,
+      "mention_count": 1,
+      "sources": [
+        "694dc5a3000000002200ba41"
+      ],
+      "recommendations": [
+        "咖喱牛腩饭",
+        "港式奶茶"
+      ],
+      "post_details": [
+        {
+          "post_id": "694dc5a3000000002200ba41",
+          "title": "我在湾区咪西咪西",
+          "date": "2025-12-25",
+          "engagement": 311,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r026",
+      "name": "新徽记",
+      "name_en": "",
+      "cuisine": "徽菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 303,
+      "mention_count": 1,
+      "sources": [
+        "697a7529000000000b0111ab"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "697a7529000000000b0111ab",
+          "title": "来美10年，在湾区吃到了我暂时的人生饭店。",
+          "date": "2026-01-28",
+          "engagement": 303,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r027",
+      "name": "一屋饭湘",
+      "name_en": "Hunan House",
+      "cuisine": "湘菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 253,
+      "mention_count": 1,
+      "sources": [
+        "690c40bf0000000005039eae"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "690c40bf0000000005039eae",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
+          "date": "2025-11-05",
+          "engagement": 253,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r028",
+      "name": "小刘清粥",
+      "name_en": "",
+      "cuisine": "台湾菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 253,
+      "mention_count": 1,
+      "sources": [
+        "690c40bf0000000005039eae"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "690c40bf0000000005039eae",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
+          "date": "2025-11-05",
+          "engagement": 253,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r029",
+      "name": "鱼你在一起",
+      "name_en": "Wei's Fish",
+      "cuisine": "川菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 253,
+      "mention_count": 1,
+      "sources": [
+        "690c40bf0000000005039eae"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "690c40bf0000000005039eae",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
+          "date": "2025-11-05",
+          "engagement": 253,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r030",
+      "name": "沪鼎记",
+      "name_en": "",
+      "cuisine": "上海菜",
+      "area": "Cupertino",
+      "price_range": "",
+      "total_engagement": 245,
+      "mention_count": 1,
+      "sources": [
+        "66667292000000000f00f266"
+      ],
+      "recommendations": [
+        "生煎",
+        "酱鸭",
+        "炸猪排"
+      ],
+      "post_details": [
+        {
+          "post_id": "66667292000000000f00f266",
+          "title": "湾区丨最近我在吃什么(2)",
+          "date": "2024-06-09",
+          "engagement": 245,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r031",
+      "name": "Pacific Catch",
+      "name_en": "",
+      "cuisine": "海鲜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 245,
+      "mention_count": 1,
+      "sources": [
+        "66667292000000000f00f266"
+      ],
+      "recommendations": [
+        "鱼生沙拉",
+        "牛排炒饭"
+      ],
+      "post_details": [
+        {
+          "post_id": "66667292000000000f00f266",
+          "title": "湾区丨最近我在吃什么(2)",
+          "date": "2024-06-09",
+          "engagement": 245,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r032",
+      "name": "Pepperlunch",
+      "name_en": "",
+      "cuisine": "日式",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 245,
+      "mention_count": 1,
+      "sources": [
+        "66667292000000000f00f266"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "66667292000000000f00f266",
+          "title": "湾区丨最近我在吃什么(2)",
+          "date": "2024-06-09",
+          "engagement": 245,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r033",
+      "name": "Yogurtland",
+      "name_en": "",
+      "cuisine": "甜品",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 245,
+      "mention_count": 1,
+      "sources": [
+        "66667292000000000f00f266"
+      ],
+      "recommendations": [
+        "酸奶冰淇淋"
+      ],
+      "post_details": [
+        {
+          "post_id": "66667292000000000f00f266",
+          "title": "湾区丨最近我在吃什么(2)",
+          "date": "2024-06-09",
+          "engagement": 245,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r034",
+      "name": "BBQ Chicken",
+      "name_en": "",
+      "cuisine": "炸鸡",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 245,
+      "mention_count": 1,
+      "sources": [
+        "66667292000000000f00f266"
+      ],
+      "recommendations": [
+        "honey soy wings",
+        "芝士boneless"
+      ],
+      "post_details": [
+        {
+          "post_id": "66667292000000000f00f266",
+          "title": "湾区丨最近我在吃什么(2)",
+          "date": "2024-06-09",
+          "engagement": 245,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r035",
+      "name": "川湘小馆",
+      "name_en": "",
+      "cuisine": "湘菜",
+      "area": "Mountain View",
+      "price_range": "",
+      "total_engagement": 236,
+      "mention_count": 2,
+      "sources": [
+        "68d61f76000000000b03e9ad",
+        "688960da0000000023020ce4"
+      ],
+      "recommendations": [
+        "擂椒茄子",
+        "水煮牛肉",
+        "石锅豆花肥牛",
+        "咸鸭蛋炒豆苗",
+        "农家炒土鸡",
+        "鱼汤"
+      ],
+      "post_details": [
+        {
+          "post_id": "688960da0000000023020ce4",
+          "title": "湾区MTV宝藏下饭川湘菜🥬咸蛋黄豆苗一绝🥰",
+          "date": "2025-07-29",
+          "engagement": 165,
+          "context": ""
+        },
+        {
+          "post_id": "68d61f76000000000b03e9ad",
+          "title": "Mountain View新开了一家中餐",
+          "date": "2025-09-25",
+          "engagement": 71,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r036",
+      "name": "川式砂锅",
+      "name_en": "",
+      "cuisine": "川菜",
+      "area": "Cupertino",
+      "price_range": "",
+      "total_engagement": 227,
+      "mention_count": 1,
+      "sources": [
+        "695f421f000000001a022b7e"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "695f421f000000001a022b7e",
+          "title": "Cupertino 新开｜正宗川式砂锅 · 现点现做",
+          "date": "2026-01-07",
+          "engagement": 227,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r037",
+      "name": "Matcha Town",
+      "name_en": "",
+      "cuisine": "甜品",
+      "area": "Cupertino",
+      "price_range": "",
+      "total_engagement": 216,
+      "mention_count": 1,
+      "sources": [
+        "697c2dcb000000002200ab2d"
+      ],
+      "recommendations": [
+        "Salted cheese matcha float"
+      ],
+      "post_details": [
+        {
+          "post_id": "697c2dcb000000002200ab2d",
+          "title": "湾区Cupertino 日常探店🍜🧋",
+          "date": "2026-01-29",
+          "engagement": 216,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r038",
+      "name": "Gyu-Kaku Japanese BBQ",
+      "name_en": "",
+      "cuisine": "日料",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 188,
+      "mention_count": 1,
+      "sources": [
+        "68c71d50000000001c005084"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68c71d50000000001c005084",
+          "title": "🌟硅谷吃饭无趣星人，逼自己多点体验🌟",
+          "date": "2025-09-14",
+          "engagement": 188,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r039",
+      "name": "Mingkee Deli",
+      "name_en": "",
+      "cuisine": "中餐",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 188,
+      "mention_count": 1,
+      "sources": [
+        "68c71d50000000001c005084"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68c71d50000000001c005084",
+          "title": "🌟硅谷吃饭无趣星人，逼自己多点体验🌟",
+          "date": "2025-09-14",
+          "engagement": 188,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r040",
+      "name": "ROKKO",
+      "name_en": "",
+      "cuisine": "日料",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 188,
+      "mention_count": 1,
+      "sources": [
+        "68c71d50000000001c005084"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68c71d50000000001c005084",
+          "title": "🌟硅谷吃饭无趣星人，逼自己多点体验🌟",
+          "date": "2025-09-14",
+          "engagement": 188,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r041",
+      "name": "DISHDASH",
+      "name_en": "",
+      "cuisine": "中东菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 188,
+      "mention_count": 1,
+      "sources": [
+        "68c71d50000000001c005084"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68c71d50000000001c005084",
+          "title": "🌟硅谷吃饭无趣星人，逼自己多点体验🌟",
+          "date": "2025-09-14",
+          "engagement": 188,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r042",
+      "name": "Ume",
+      "name_en": "",
+      "cuisine": "奶茶",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 188,
+      "mention_count": 1,
+      "sources": [
+        "68c71d50000000001c005084"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68c71d50000000001c005084",
+          "title": "🌟硅谷吃饭无趣星人，逼自己多点体验🌟",
+          "date": "2025-09-14",
+          "engagement": 188,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r043",
+      "name": "10 Butchers Korean BBQ",
+      "name_en": "",
+      "cuisine": "韩餐",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 188,
+      "mention_count": 1,
+      "sources": [
+        "68c71d50000000001c005084"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68c71d50000000001c005084",
+          "title": "🌟硅谷吃饭无趣星人，逼自己多点体验🌟",
+          "date": "2025-09-14",
+          "engagement": 188,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r044",
+      "name": "HL Peninsula Restaurant",
+      "name_en": "",
+      "cuisine": "粤菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 188,
+      "mention_count": 1,
+      "sources": [
+        "68c71d50000000001c005084"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68c71d50000000001c005084",
+          "title": "🌟硅谷吃饭无趣星人，逼自己多点体验🌟",
+          "date": "2025-09-14",
+          "engagement": 188,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r045",
+      "name": "BE.STEAK.A",
+      "name_en": "",
+      "cuisine": "牛排",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 188,
+      "mention_count": 1,
+      "sources": [
+        "68c71d50000000001c005084"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68c71d50000000001c005084",
+          "title": "🌟硅谷吃饭无趣星人，逼自己多点体验🌟",
+          "date": "2025-09-14",
+          "engagement": 188,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r046",
+      "name": "Kusan Uyghur Cuisine",
+      "name_en": "",
+      "cuisine": "新疆菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 188,
+      "mention_count": 1,
+      "sources": [
+        "68c71d50000000001c005084"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68c71d50000000001c005084",
+          "title": "🌟硅谷吃饭无趣星人，逼自己多点体验🌟",
+          "date": "2025-09-14",
+          "engagement": 188,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r047",
+      "name": "江南雅厨",
+      "name_en": "JiangNan Delicacy",
+      "cuisine": "江浙菜",
+      "area": "Milpitas",
+      "price_range": "",
+      "total_engagement": 177,
+      "mention_count": 2,
+      "sources": [
+        "694b2ea6000000001e015ae5",
+        "68200be20000000023015646"
+      ],
+      "recommendations": [
+        "毛豆番茄",
+        "姑苏美味酱方",
+        "江南松鼠鱼",
+        "松鼠鱼"
+      ],
+      "post_details": [
+        {
+          "post_id": "68200be20000000023015646",
+          "title": "Milpitas江南雅厨",
+          "date": "2025-05-10",
+          "engagement": 78,
+          "context": ""
+        },
+        {
+          "post_id": "694b2ea6000000001e015ae5",
+          "title": "南湾｜特来品尝来自国内的黑珍珠苏州菜",
+          "date": "2025-12-23",
+          "engagement": 99,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r048",
+      "name": "花溪王",
+      "name_en": "Joyous Cuisine",
+      "cuisine": "贵州菜",
+      "area": "Mountain View",
+      "price_range": "",
+      "total_engagement": 166,
+      "mention_count": 2,
+      "sources": [
+        "68bb9f83000000001b02386a",
+        "68fc063b0000000007017e54"
+      ],
+      "recommendations": [
+        "猪蹄"
+      ],
+      "post_details": [
+        {
+          "post_id": "68bb9f83000000001b02386a",
+          "title": "Mountain View｜一条美食街承包中国胃的快乐",
+          "date": "2025-09-05",
+          "engagement": 70,
+          "context": ""
+        },
+        {
+          "post_id": "68fc063b0000000007017e54",
+          "title": "Mountain View 花溪王，猪蹄好吃",
+          "date": "2025-10-24",
+          "engagement": 96,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r049",
+      "name": "小炒猪腰脆肚",
+      "name_en": "",
+      "cuisine": "湘菜",
+      "area": "Fremont",
+      "price_range": "",
+      "total_engagement": 165,
+      "mention_count": 1,
+      "sources": [
+        "6875756b0000000015022f47"
+      ],
+      "recommendations": [
+        "小炒猪腰脆肚",
+        "白辣椒炒五花肉",
+        "毛氏红烧肉"
+      ],
+      "post_details": [
+        {
+          "post_id": "6875756b0000000015022f47",
+          "title": "老公心中的湾区湘菜榜第一",
+          "date": "2025-07-14",
+          "engagement": 165,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r050",
+      "name": "San Ho Won",
+      "name_en": "",
+      "cuisine": "韩餐",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 132,
+      "mention_count": 1,
+      "sources": [
+        "68c224b1000000001b01f784"
+      ],
+      "recommendations": [
+        "egg soufflé",
+        "Double-cut galbi"
+      ],
+      "post_details": [
+        {
+          "post_id": "68c224b1000000001b01f784",
+          "title": "湾区网红美食测评 ｜米一 ｜留湘",
+          "date": "2025-09-10",
+          "engagement": 132,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r051",
+      "name": "四姐Special Noodles",
+      "name_en": "",
+      "cuisine": "面食",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 131,
+      "mention_count": 1,
+      "sources": [
+        "6959bddc000000002203982b"
+      ],
+      "recommendations": [
+        "小笼包",
+        "冰花煎饺",
+        "生煎包"
+      ],
+      "post_details": [
+        {
+          "post_id": "6959bddc000000002203982b",
+          "title": "湾区美食🥟一人说一个吃过20次以上的餐厅",
+          "date": "2026-01-03",
+          "engagement": 131,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r052",
+      "name": "山城私房菜",
+      "name_en": "",
+      "cuisine": "川菜",
+      "area": "Milpitas",
+      "price_range": "",
+      "total_engagement": 130,
+      "mention_count": 1,
+      "sources": [
+        "67b3ee5700000000070314d3"
+      ],
+      "recommendations": [
+        "白辣椒",
+        "啤酒鸭"
+      ],
+      "post_details": [
+        {
+          "post_id": "67b3ee5700000000070314d3",
+          "title": "真羡慕你们Milpitas有这么多好吃的…",
+          "date": "2025-02-17",
+          "engagement": 130,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r053",
+      "name": "湘粤情",
+      "name_en": "",
+      "cuisine": "湘菜",
+      "area": "Cupertino",
+      "price_range": "",
+      "total_engagement": 127,
+      "mention_count": 1,
+      "sources": [
+        "69572ce8000000001d03de1d"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "69572ce8000000001d03de1d",
+          "title": "🧨湾区年夜饭｜差点被差评劝退",
+          "date": "2026-01-01",
+          "engagement": 127,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r054",
+      "name": "Hong Kong Restaurant",
+      "name_en": "",
+      "cuisine": "粤菜",
+      "area": "Palo Alto",
+      "price_range": "",
+      "total_engagement": 119,
+      "mention_count": 1,
+      "sources": [
+        "68c1b57f000000001d00c132"
+      ],
+      "recommendations": [
+        "贵妃鸡",
+        "烧鸭"
+      ],
+      "post_details": [
+        {
+          "post_id": "68c1b57f000000001d00c132",
+          "title": "湾区探店｜新店老店红黑榜",
+          "date": "2025-09-10",
+          "engagement": 119,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r055",
+      "name": "JOEY Valley Fair",
+      "name_en": "",
+      "cuisine": "西餐",
+      "area": "Santa Clara",
+      "price_range": "",
+      "total_engagement": 119,
+      "mention_count": 1,
+      "sources": [
+        "68c1b57f000000001d00c132"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68c1b57f000000001d00c132",
+          "title": "湾区探店｜新店老店红黑榜",
+          "date": "2025-09-10",
+          "engagement": 119,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r056",
+      "name": "Wojiahunan",
+      "name_en": "",
+      "cuisine": "湘菜",
+      "area": "Albany",
+      "price_range": "",
+      "total_engagement": 111,
+      "mention_count": 1,
+      "sources": [
+        "68ddb63200000000040153ba"
+      ],
+      "recommendations": [
+        "口水鸡",
+        "牛小排锅",
+        "擂椒茄子",
+        "干拌粉",
+        "农家一碗香"
+      ],
+      "post_details": [
+        {
+          "post_id": "68ddb63200000000040153ba",
+          "title": "9月湾区小夫妻的吃吃喝喝",
+          "date": "2025-10-01",
+          "engagement": 111,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r057",
+      "name": "Bangkok Street Thai Street Food",
+      "name_en": "",
+      "cuisine": "泰国菜",
+      "area": "SF",
+      "price_range": "",
+      "total_engagement": 111,
+      "mention_count": 1,
+      "sources": [
+        "68ddb63200000000040153ba"
+      ],
+      "recommendations": [
+        "炒粉"
+      ],
+      "post_details": [
+        {
+          "post_id": "68ddb63200000000040153ba",
+          "title": "9月湾区小夫妻的吃吃喝喝",
+          "date": "2025-10-01",
+          "engagement": 111,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r058",
+      "name": "川湘1616",
+      "name_en": "Spices Garden",
+      "cuisine": "湘菜",
+      "area": "Fremont",
+      "price_range": "",
+      "total_engagement": 85,
+      "mention_count": 1,
+      "sources": [
+        "6915061a000000001b030af5"
+      ],
+      "recommendations": [
+        "烤鱼",
+        "手撕包菜"
+      ],
+      "post_details": [
+        {
+          "post_id": "6915061a000000001b030af5",
+          "title": "湾区|超有锅气的湘菜！",
+          "date": "2025-11-12",
+          "engagement": 85,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r059",
+      "name": "锦鲤缘",
+      "name_en": "",
+      "cuisine": "淮扬菜",
+      "area": "Sunnyvale",
+      "price_range": "",
+      "total_engagement": 83,
+      "mention_count": 1,
+      "sources": [
+        "68f2ae790000000007008035"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68f2ae790000000007008035",
+          "title": "湾区探店｜漂漂亮亮的新派淮扬菜新餐厅",
+          "date": "2025-10-17",
+          "engagement": 83,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r060",
+      "name": "Mina's Korea BBQ",
+      "name_en": "",
+      "cuisine": "韩餐",
+      "area": "San Jose",
+      "price_range": "",
+      "total_engagement": 54,
+      "mention_count": 1,
+      "sources": [
+        "68891d96000000002301aadf"
+      ],
+      "recommendations": [
+        "韩国饼",
+        "韩式炒杂菜",
+        "拌饭"
+      ],
+      "post_details": [
+        {
+          "post_id": "68891d96000000002301aadf",
+          "title": "湾区｜带我闺蜜去吃好吃的😋",
+          "date": "2025-07-29",
+          "engagement": 54,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r061",
+      "name": "Old Street Chengpan Malatang",
+      "name_en": "",
+      "cuisine": "麻辣烫",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 54,
+      "mention_count": 1,
+      "sources": [
+        "68891d96000000002301aadf"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68891d96000000002301aadf",
+          "title": "湾区｜带我闺蜜去吃好吃的😋",
+          "date": "2025-07-29",
+          "engagement": 54,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r062",
+      "name": "Shanghai Noodle House",
+      "name_en": "",
+      "cuisine": "上海菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 54,
+      "mention_count": 1,
+      "sources": [
+        "68891d96000000002301aadf"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68891d96000000002301aadf",
+          "title": "湾区｜带我闺蜜去吃好吃的😋",
+          "date": "2025-07-29",
+          "engagement": 54,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r063",
+      "name": "Cafe Mei",
+      "name_en": "",
+      "cuisine": "中餐",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 54,
+      "mention_count": 1,
+      "sources": [
+        "68891d96000000002301aadf"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68891d96000000002301aadf",
+          "title": "湾区｜带我闺蜜去吃好吃的😋",
+          "date": "2025-07-29",
+          "engagement": 54,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r064",
+      "name": "Kathmandu Cuisine",
+      "name_en": "",
+      "cuisine": "尼泊尔菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 54,
+      "mention_count": 1,
+      "sources": [
+        "68891d96000000002301aadf"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "68891d96000000002301aadf",
+          "title": "湾区｜带我闺蜜去吃好吃的😋",
+          "date": "2025-07-29",
+          "engagement": 54,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r065",
+      "name": "爱饭",
+      "name_en": "",
+      "cuisine": "湘菜",
+      "area": "Mountain View",
+      "price_range": "",
+      "total_engagement": 43,
+      "mention_count": 1,
+      "sources": [
+        "6934dc5b000000000d00c98b"
+      ],
+      "recommendations": [
+        "炭烤乌龙奶茶",
+        "霉千张炒辣椒"
+      ],
+      "post_details": [
+        {
+          "post_id": "6934dc5b000000000d00c98b",
+          "title": "湾区最好吃的川湘菜",
+          "date": "2025-12-06",
+          "engagement": 43,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r066",
+      "name": "Apple Green Bistro",
+      "name_en": "",
+      "cuisine": "中餐",
+      "area": "Cupertino",
+      "price_range": "",
+      "total_engagement": 41,
+      "mention_count": 1,
+      "sources": [
+        "690f77cf00000000050317bb"
+      ],
+      "recommendations": [
+        "水煮牛肉"
+      ],
+      "post_details": [
+        {
+          "post_id": "690f77cf00000000050317bb",
+          "title": "湾区｜Cupertino 一周吃什么🍱🥘🍜🍤 第二弹",
+          "date": "2025-11-08",
+          "engagement": 41,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r067",
+      "name": "Cozy Tea Loft",
+      "name_en": "",
+      "cuisine": "台湾小吃",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 41,
+      "mention_count": 1,
+      "sources": [
+        "690f77cf00000000050317bb"
+      ],
+      "recommendations": [
+        "盐酥鸡",
+        "章鱼小丸子"
+      ],
+      "post_details": [
+        {
+          "post_id": "690f77cf00000000050317bb",
+          "title": "湾区｜Cupertino 一周吃什么🍱🥘🍜🍤 第二弹",
+          "date": "2025-11-08",
+          "engagement": 41,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r068",
+      "name": "汆悦麻辣烫",
+      "name_en": "",
+      "cuisine": "麻辣烫",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 37,
+      "mention_count": 1,
+      "sources": [
+        "69607392000000000a03362c"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "69607392000000000a03362c",
+          "title": "湾区新店|汆悦麻辣烫🍲",
+          "date": "2026-01-08",
+          "engagement": 37,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r069",
+      "name": "小香米粉",
+      "name_en": "",
+      "cuisine": "拉面",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 35,
+      "mention_count": 1,
+      "sources": [
+        "6954b293000000001e003bd7"
+      ],
+      "recommendations": [
+        "酸辣粉",
+        "传统拉面",
+        "羊肉串"
+      ],
+      "post_details": [
+        {
+          "post_id": "6954b293000000001e003bd7",
+          "title": "推荐南湾这家拉面",
+          "date": "2025-12-30",
+          "engagement": 35,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r070",
+      "name": "包大人",
+      "name_en": "",
+      "cuisine": "上海菜",
+      "area": "Mountain View",
+      "price_range": "",
+      "total_engagement": 28,
+      "mention_count": 1,
+      "sources": [
+        "68bc9008000000001c031aeb"
+      ],
+      "recommendations": [
+        "马兰头",
+        "生煎馒头",
+        "蟹粉小笼"
+      ],
+      "post_details": [
+        {
+          "post_id": "68bc9008000000001c031aeb",
+          "title": "湾区探店之二刷MTV downtown包大人",
+          "date": "2025-09-06",
+          "engagement": 28,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r071",
+      "name": "外婆家常菜",
+      "name_en": "Grandma's Kitchen",
+      "cuisine": "家常菜",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 25,
+      "mention_count": 1,
+      "sources": [
+        "690cf26b000000000401123f"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "690cf26b000000000401123f",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-2🥢",
+          "date": "2025-11-06",
+          "engagement": 25,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r072",
+      "name": "汉家宴",
+      "name_en": "Home Eat",
+      "cuisine": "中餐",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 25,
+      "mention_count": 1,
+      "sources": [
+        "690cf26b000000000401123f"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "690cf26b000000000401123f",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-2🥢",
+          "date": "2025-11-06",
+          "engagement": 25,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r073",
+      "name": "丁香砂锅馆",
+      "name_en": "Sizzling Pot House",
+      "cuisine": "砂锅",
+      "area": null,
+      "price_range": "",
+      "total_engagement": 25,
+      "mention_count": 1,
+      "sources": [
+        "690cf26b000000000401123f"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "690cf26b000000000401123f",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-2🥢",
+          "date": "2025-11-06",
+          "engagement": 25,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r074",
+      "name": "老高烧烤",
+      "name_en": "GAO's BBQ & Crab",
+      "cuisine": "烧烤",
+      "area": "Milpitas",
+      "price_range": "",
+      "total_engagement": 25,
+      "mention_count": 1,
+      "sources": [
+        "690cf26b000000000401123f"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "690cf26b000000000401123f",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-2🥢",
+          "date": "2025-11-06",
+          "engagement": 25,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r075",
+      "name": "香小馆",
+      "name_en": "Shang Cafe",
+      "cuisine": "川菜",
+      "area": "San Jose",
+      "price_range": "",
+      "total_engagement": 25,
+      "mention_count": 1,
+      "sources": [
+        "690cf26b000000000401123f"
+      ],
+      "recommendations": [],
+      "post_details": [
+        {
+          "post_id": "690cf26b000000000401123f",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-2🥢",
+          "date": "2025-11-06",
+          "engagement": 25,
+          "context": ""
+        }
+      ]
+    },
+    {
+      "id": "r076",
+      "name": "Kunjip",
+      "name_en": "",
+      "cuisine": "韩餐",
+      "area": "Sunnyvale",
+      "price_range": "",
+      "total_engagement": 2,
+      "mention_count": 1,
+      "sources": [
+        "695dd6e5000000000c035d69"
+      ],
+      "recommendations": [
+        "Modeum Sooyook",
+        "Cheese maeun Galbi Jjim"
+      ],
+      "post_details": [
+        {
+          "post_id": "695dd6e5000000000c035d69",
+          "title": "Sunnyvale Food",
+          "date": "2026-01-06",
+          "engagement": 2,
+          "context": ""
+        }
+      ]
+    }
+  ]
+}

@@ -159,7 +159,7 @@ if [ -f "src/etl/merge.js" ]; then
     node src/etl/merge.js \
         --input "$NEW_DATA_DIR/restaurant_database.json" \
         --output "$DATA_DIR/current/restaurant_database.json" \
-        --mode smart 2>&1 | tee -a "$MAIN_LOG" || {
+        --mode smart --golden-path "''/golden/current/restaurant_database.json" 2>&1 | tee -a "$MAIN_LOG" || {
         error "ETL merge failed"
         # Restore from backup
         log "Restoring from backup..."
