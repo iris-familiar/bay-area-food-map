@@ -166,7 +166,8 @@
                 document.getElementById('content').classList.remove('hidden');
             } catch (e) {
                 console.error('Error:', e);
-                alert('加载失败: ' + e.message);
+                console.error('Error stack:', e.stack);
+                alert('加载失败: ' + e.message + '\n请按F12查看控制台详细错误');
             }
         });
 
@@ -261,7 +262,7 @@
                         </div>
                     </div>
                     
-                    ${r.recommendations?.length > 0 ? `
+                    ${r.recommendations && r.recommendations.length > 0 ? `
                         <div class="flex flex-wrap gap-1 mt-3">
                             ${r.recommendations.slice(0, 3).map(rec => `<span class="recommendation-chip">${rec}</span>`).join('')}
                             ${r.recommendations.length > 3 ? `<span class="recommendation-chip bg-blue-50 text-blue-600">+${r.recommendations.length - 3}</span>` : ''}
@@ -312,7 +313,7 @@
                     </div>
                 ` : ''}
 
-                ${r.recommendations?.length > 0 ? `
+                ${r.recommendations && r.recommendations.length > 0 ? `
                     <div class="mb-6">
                         <h4 class="font-semibold mb-2">推荐菜品</h4>
                         <div class="flex flex-wrap gap-2">
@@ -323,7 +324,7 @@
 
                 ${generateChart(r.post_details)}
 
-                ${r.post_details?.length > 0 ? `
+                ${r.post_details && r.post_details.length > 0 ? `
                     <div>
                         <h4 class="font-semibold mb-2">来源帖子</h4>
                         <div class="space-y-2">
