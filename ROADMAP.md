@@ -179,41 +179,43 @@ Each step is independent, idempotent, and can be run in isolation.
 
 ---
 
-## Proposed Directory Structure (Target State)
+## Current Directory Structure ✅
 
 ```
 bay-area-food-map/
-├── index.html                    # Thin HTML template
-├── src/
-│   ├── app.js                    # All frontend JS (extracted from index.html)
-│   └── styles.css                # All CSS (extracted from index.html)
-├── dev.js                        # Local dev server
-├── config.sh                     # Environment config (sourced by pipeline)
+├── .env                          # API keys (gitignored)
+├── .gitignore
+├── README.md
+├── ROADMAP.md
+├── config.sh                     # Centralised paths + env (sourced by pipeline)
+├── dev.js                        # Local dev server → http://localhost:8080
+├── index.html                    # Frontend (single-page, no build step)
+├── package.json                  # 4 scripts: dev / pipeline / pipeline:dry / test
 │
 ├── data/
-│   ├── restaurant_database.json  # Published restaurants (source of truth)
-│   ├── restaurant_database_index.json  # Slim version for fast initial load
-│   ├── corrections.json          # Manual corrections (git tracked)
-│   ├── candidates/               # Pipeline outputs pending review (gitignored)
-│   ├── raw/                      # Daily scraped posts (gitignored)
-│   └── backups/                  # Auto-backups (gitignored)
+│   ├── restaurant_database.json       # Source of truth (git tracked)
+│   ├── restaurant_database_index.json # Slim 33KB for fast page load (git tracked)
+│   ├── corrections.json               # Manual corrections (git tracked)
+│   ├── .pipeline_state.json           # Written by run.sh after each run
+│   ├── raw/                           # Daily scraped posts (gitignored)
+│   ├── candidates/                    # LLM extraction output (gitignored)
+│   └── backups/                       # Auto-backups, 7-day TTL (gitignored)
 │
 ├── pipeline/
-│   ├── run.sh                    # Orchestrator (cron entry point)
-│   ├── 01_scrape.sh              # XHS data collection
-│   ├── 02_extract_llm.js         # LLM restaurant extraction
-│   ├── 03_update_metrics.js      # Engagement updates for existing restaurants
-│   ├── 04_merge.js               # Safe append-only merge
-│   ├── 05_verify.js              # Integrity check
-│   ├── 06_generate_index.js      # Build slim frontend index
-│   └── review.js                 # Interactive candidate review (manual step)
+│   ├── run.sh                    # Orchestrator — cron calls this
+│   ├── 01_scrape.sh              # XHS MCP → data/raw/YYYY-MM-DD/
+│   ├── 02_extract_llm.js         # Gemini LLM → data/candidates/YYYY-MM-DD.json
+│   ├── 03_update_metrics.js      # Update engagement/trend for existing restaurants
+│   ├── 04_merge.js               # Append-only merge into restaurant_database.json
+│   ├── 05_verify.js              # Integrity check + auto-restore
+│   └── 06_generate_index.js      # Regenerate slim index
 │
 ├── scripts/
-│   ├── apply_corrections.js      # Apply data/corrections.json
-│   └── transaction.js            # Atomic write helper
+│   ├── apply_corrections.js      # Apply data/corrections.json (called by run.sh)
+│   └── transaction.js            # Atomic write + rollback helper
 │
 └── tests/
-    └── pipeline.test.js          # Unit tests for merge/verify logic
+    └── verify.js                 # 22-check functional test suite (no deps, <10s)
 ```
 
 ---
