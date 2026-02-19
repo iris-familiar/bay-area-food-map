@@ -4799,14 +4799,6 @@
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       }
-    },
-    {
-      "id": "test_1771461470806",
-      "name": "🆕 测试餐厅 16:37:50",
-      "cuisine": "测试菜",
-      "city": "Fremont",
-      "region": "East Bay",
-      "engagement": 9999
     }
   ],
   "merge_log": {
@@ -4815,6 +4807,5 @@
     "merged_count": 84,
     "added_count": 0,
     "total_count": 79
-  },
-  "total_count": 80
+  }
 }
