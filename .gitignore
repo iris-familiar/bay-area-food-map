@@ -19,6 +19,7 @@ Thumbs.db
 # Raw scraped data (large, ephemeral — regenerated daily by pipeline)
 data/raw/
 data/backups/
+data/candidates/
 
 # Pipeline logs (ephemeral)
 logs/
