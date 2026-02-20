@@ -203,7 +203,7 @@ function openModal(id) {
             </div>
         </div>` : ''}
 
-        ${generateChart(r.post_details)}
+        ${generateChart(r.post_details, r.timeseries)}
 
         ${r.post_details && r.post_details.length > 0 ? `
         <div>
@@ -282,8 +282,10 @@ function copyToClipboard(text) {
 
 // ─── Chart ────────────────────────────────────────────────────────────────────
 
-function generateChart(postDetails) {
-    if (!postDetails || postDetails.length === 0) return '';
+function generateChart(postDetails, timeseries) {
+    const hasTimeseries = Array.isArray(timeseries) && timeseries.length > 0;
+    const hasPostDetails = postDetails && postDetails.length > 0;
+    if (!hasTimeseries && !hasPostDetails) return '';
 
     const now = new Date();
     const monthly = {};
@@ -291,12 +293,21 @@ function generateChart(postDetails) {
         const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
         monthly[`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`] = 0;
     }
-    postDetails.forEach(p => {
-        if (!p.date) return;
-        const d = new Date(p.date);
-        const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
-        if (monthly[key] !== undefined) monthly[key] += (p.engagement || 0);
-    });
+
+    if (hasTimeseries) {
+        // Use structured timeseries data directly (already monthly)
+        timeseries.forEach(t => {
+            if (monthly[t.month] !== undefined) monthly[t.month] += (t.engagement || t.mentions || 0);
+        });
+    } else {
+        // Fall back to aggregating post_details by month
+        postDetails.forEach(p => {
+            if (!p.date) return;
+            const d = new Date(p.date);
+            const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
+            if (monthly[key] !== undefined) monthly[key] += (p.engagement || 0);
+        });
+    }
 
     const data = Object.entries(monthly).sort((a,b) => a[0].localeCompare(b[0]));
     const maxVal = Math.max(...data.map(d => d[1]), 1);

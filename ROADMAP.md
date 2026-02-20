@@ -124,20 +124,24 @@ Frontend now reads this and displays "更新于 X月Y日 HH:MM" in the header su
 
 #### 10. Google Places Verification ✅ (done in P2)
 
-#### 11. Timeseries Tracking
-**Problem:** `trend_30d` field exists in the schema but isn't maintained by the pipeline.  
-**Proposed:** Store monthly mention counts per restaurant:
+#### 11. Timeseries Tracking ✅
+**Implemented:** Replaced `trend_30d` (scalar) with `timeseries` (monthly array):
 ```json
 "timeseries": [
   {"month": "2026-01", "mentions": 3, "engagement": 45},
   {"month": "2026-02", "mentions": 7, "engagement": 112}
 ]
 ```
-This powers the "trending" chart in the modal and enables genuine discovery of rising restaurants.
+- `03_update_metrics.js`: writes monthly entries, keeps last 24 months; inline migration resets any legacy scalar to `[]`
+- `04_merge.js`: new restaurants start with `timeseries: []`
+- `06_generate_index.js`: includes last 12 months in slim index
+- `src/app.js` `generateChart()`: uses `timeseries` directly if present; falls back to `post_details` aggregation
 
-#### 12. Structured Error Recovery for XHS Auth
-**Problem:** XHS cookies expire ~2-4 weeks. Every time they do, the pipeline silently skips scraping until someone notices.  
-**Proposed:** Trigger a cron notification when `last_scrape_at` is >3 days ago, prompting manual re-login. Longer term, explore whether the MCP can auto-refresh via session tokens.
+#### 12. Structured Error Recovery for XHS Auth ✅
+**Implemented:**
+- `01_scrape.sh`: exits with code `2` (not `0`) on auth failure so `run.sh` correctly sets `SCRAPE_OK=false`
+- `run.sh` `write_state()`: adds `"last_scrape_at"` field — updated only on successful scrapes, preserved otherwise
+- `run.sh` startup health check: reads previous `last_scrape_at`; if >3 days old, fires a recurring notification every run until auth is restored
 
 ---
 

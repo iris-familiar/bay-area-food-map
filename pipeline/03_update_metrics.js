@@ -4,7 +4,7 @@
  *
  * For each new XHS post, check if it mentions any existing restaurant.
  * If yes: increment mention_count, update total_engagement, add to sources[],
- *         update trend_30d, and append new dishes found.
+ *         update timeseries, and append new dishes found.
  *
  * Usage: node pipeline/03_update_metrics.js <db_file> <candidates_file>
  *
@@ -25,6 +25,22 @@ if (!dbFile || !candidatesFile) {
 
 // ─── Load data ───────────────────────────────────────────────────────────────
 const db = JSON.parse(fs.readFileSync(dbFile, 'utf8'));
+
+// ─── Inline migration: trend_30d → timeseries ────────────────────────────────
+// Any restaurant where timeseries is not an array (legacy scalar or missing) gets reset to []
+let migrated = 0;
+for (const r of db.restaurants) {
+    if (!Array.isArray(r.timeseries)) {
+        r.timeseries = [];
+        delete r.trend_30d;
+        migrated++;
+    }
+}
+if (migrated > 0) {
+    db.updated_at = new Date().toISOString();
+    fs.writeFileSync(dbFile, JSON.stringify(db, null, 2));
+    console.log(`Migration: reset timeseries for ${migrated} restaurants`);
+}
 
 let candidates = [];
 try {
@@ -55,7 +71,9 @@ function normalize(str) {
 }
 
 // ─── Process candidates ──────────────────────────────────────────────────────
-const today = new Date().toISOString().split('T')[0];
+const now = new Date();
+const today = now.toISOString().split('T')[0];
+const thisMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
 let updatedCount = 0;
 let newDishesAdded = 0;
 
@@ -80,19 +98,19 @@ for (const candidate of candidates) {
         }
     }
 
-    // --- Update trend_30d (array of {date, count} entries) ---
-    if (!Array.isArray(r.trend_30d)) r.trend_30d = [];
-    const todayEntry = r.trend_30d.find(e => e.date === today);
-    if (todayEntry) {
-        todayEntry.count += 1;
-        todayEntry.engagement = (todayEntry.engagement || 0) + (candidate.engagement || 0);
+    // --- Update timeseries (array of monthly {month, mentions, engagement} entries) ---
+    if (!Array.isArray(r.timeseries)) r.timeseries = [];
+    const monthEntry = r.timeseries.find(e => e.month === thisMonth);
+    if (monthEntry) {
+        monthEntry.mentions += 1;
+        monthEntry.engagement = (monthEntry.engagement || 0) + (candidate.engagement || 0);
     } else {
-        r.trend_30d.push({ date: today, count: 1, engagement: candidate.engagement || 0 });
+        r.timeseries.push({ month: thisMonth, mentions: 1, engagement: candidate.engagement || 0 });
     }
-    // Keep only last 90 days
-    r.trend_30d = r.trend_30d
-        .sort((a, b) => a.date.localeCompare(b.date))
-        .slice(-90);
+    // Keep only last 24 months
+    r.timeseries = r.timeseries
+        .sort((a, b) => a.month.localeCompare(b.month))
+        .slice(-24);
 
     // --- Append new dishes (LLM-extracted, only if not already present) ---
     if (Array.isArray(candidate.dishes) && candidate.dishes.length > 0) {

@@ -43,6 +43,10 @@ const slimRestaurants = db.restaurants
         slim.recommendations = Array.isArray(r.recommendations)
             ? r.recommendations.slice(0, 3)
             : [];
+        // Include last 12 months of timeseries for the chart
+        slim.timeseries = Array.isArray(r.timeseries)
+            ? r.timeseries.slice(-12)
+            : [];
         return slim;
     });
 

@@ -80,6 +80,7 @@ for (const candidate of candidates) {
         recommendations: [],
         sources: [candidate.source_post_id].filter(Boolean),
         post_details: [],
+        timeseries: [],
         semantic_tags: [],
         updated_at: new Date().toISOString(),
         merge_info: {

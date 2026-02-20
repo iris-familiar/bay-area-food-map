@@ -25,7 +25,7 @@ LOGIN_STATUS=$(cd "${MCP_DIR}" && ./mcp-call.sh check_login_status '{}' 2>/dev/n
 if [ "$LOGIN_STATUS" != "logged_in" ]; then
     log "WARNING: XHS MCP not logged in (status: ${LOGIN_STATUS}). Skipping."
     log "To fix: use the xiaohongshu skill to log in via QR code"
-    exit 0
+    exit 2
 fi
 
 log "XHS MCP online. Starting search..."

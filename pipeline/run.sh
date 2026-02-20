@@ -16,6 +16,17 @@ DRY_RUN="${1:-}"
 # Load config (paths, API keys)
 source "${PROJECT_DIR}/config.sh"
 
+# ─── Read previous state to carry forward last_scrape_at ──────────────────────
+PREV_LAST_SCRAPE_AT=""
+if [ -f "${PIPELINE_STATE_FILE}" ]; then
+    PREV_LAST_SCRAPE_AT=$(node -e "
+        try {
+            const s = require('${PIPELINE_STATE_FILE}');
+            console.log(s.last_scrape_at || '');
+        } catch(e) { console.log(''); }
+    " 2>/dev/null || echo "")
+fi
+
 # ─── Derived paths ────────────────────────────────────────────────────────────
 RUN_DATE=$(date +%Y-%m-%d)
 RAW_DIR="${PROJECT_DIR}/data/raw/${RUN_DATE}"
@@ -35,11 +46,19 @@ notify() {
 
 write_state() {
     local status="$1" new_count="${2:-0}" updated="${3:-0}" scraped="${4:-0}" scrape_ok="${5:-true}"
-    local after
+    local after now_iso last_scrape_at
     after=$(node -e "console.log(require('${DB_FILE}').restaurants.length)" 2>/dev/null || echo "?")
+    now_iso="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    # Only update last_scrape_at when scrape succeeded; otherwise preserve previous value
+    if [ "${scrape_ok}" = "true" ]; then
+        last_scrape_at="${now_iso}"
+    else
+        last_scrape_at="${PREV_LAST_SCRAPE_AT}"
+    fi
     cat > "${PIPELINE_STATE_FILE}" <<EOF
 {
-  "last_run": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+  "last_run": "${now_iso}",
+  "last_scrape_at": "${last_scrape_at}",
   "status": "${status}",
   "restaurants_total": ${after},
   "restaurants_added": ${new_count},
@@ -65,6 +84,19 @@ if [ ! -f "$DB_FILE" ]; then
 fi
 BEFORE=$(node -e "console.log(require('${DB_FILE}').restaurants.length)")
 log "Starting: ${BEFORE} restaurants"
+
+# Health check: warn if last successful scrape was >3 days ago
+if [ -n "${PREV_LAST_SCRAPE_AT}" ]; then
+    STALE=$(node -e "
+        const last = new Date('${PREV_LAST_SCRAPE_AT}');
+        const diffDays = (Date.now() - last.getTime()) / (1000 * 86400);
+        console.log(diffDays > 3 ? 'true' : 'false');
+    " 2>/dev/null || echo "false")
+    if [ "${STALE}" = "true" ]; then
+        log "⚠️  XHS auth hasn't succeeded in 3+ days (last: ${PREV_LAST_SCRAPE_AT})"
+        notify "⚠️ 湾区美食地图: XHS auth hasn't succeeded in 3+ days — please re-login: cd ~/.agents/skills/xiaohongshu/scripts && ./login.sh"
+    fi
+fi
 
 # Step 1: Backup
 BACKUP="${BACKUPS_DIR}/restaurant_database_$(date +%Y%m%d_%H%M%S).json"
@@ -117,9 +149,10 @@ else
             const state = require('${DB_FILE}');
             // Rough proxy: count restaurants updated today
             const today = '$(date +%Y-%m-%d)';
+            const thisMonth = today.slice(0, 7);
             const n = state.restaurants.filter(r =>
                 r.updated_at && r.updated_at.startsWith(today) &&
-                r.trend_30d && r.trend_30d.some(t => t.date === today)
+                Array.isArray(r.timeseries) && r.timeseries.some(t => t.month === thisMonth)
             ).length;
             console.log(n);
         } catch(e) { console.log(0); }
