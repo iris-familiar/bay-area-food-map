@@ -169,6 +169,10 @@ ADDED=$((AFTER - BEFORE))
 
 write_state "success" "$ADDED" "${METRICS_UPDATED:-0}" "${POSTS_COUNT:-0}" "$SCRAPE_OK"
 
+# Step 10: Auto git commit data changes
+log "Step 10: Committing data changes..."
+bash "${SCRIPT_DIR}/07_commit.sh" "$BEFORE" "$AFTER" 2>&1 
+
 log "════════════════════════════════════════"
 log "✅ Pipeline complete!"
 log "   Restaurants: ${BEFORE} → ${AFTER} (+${ADDED})"

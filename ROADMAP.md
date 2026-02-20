@@ -1,7 +1,7 @@
 # 湾区美食地图 — Engineering Roadmap
 
-> Last updated: 2026-02-19 (v2 — P0+P1 implemented)
-> Status: Pipeline fully operational. LLM extraction active. Monitoring live.
+> Last updated: 2026-02-19 (v3 — P0+P1+P2 implemented)
+> Status: Pipeline fully operational. Frontend split. Review workflow. Google enrichment ready.
 
 ---
 
@@ -89,58 +89,40 @@ Frontend now reads this and displays "更新于 X月Y日 HH:MM" in the header su
 
 ---
 
-### 🟢 P2 — Architecture Improvements
+### ✅ P2 — DONE (2026-02-19)
 
-#### 6. Separate "Candidates" from "Published" Restaurants
-**Problem:** Currently `03_merge.js` adds new restaurants with `needs_review: true` directly into `restaurant_database.json`. This means unvetted data appears on the frontend immediately.  
-**Better design:**
-```
-data/
-├── restaurant_database.json      ← Published (manually reviewed)
-├── candidates/YYYY-MM-DD.json    ← Pipeline output (pending review)
-└── corrections.json              ← Manual fixes
-```
-Add a lightweight review step: `node pipeline/review.js` shows candidates with a Y/N prompt before they get merged into the main DB. This keeps the map high-quality.
+#### 6. Candidate Review Workflow ✅
+**Implemented:** `pipeline/review.js` — interactive CLI for reviewing new candidates before they enter the main DB.
+- Keys: [y] approve / [n] reject / [s] skip / [q] quit & save
+- Approved candidates written to `data/candidates/approved/YYYY-MM-DD.json`
+- `--auto-approve` flag for CI/unattended mode
+- `--date YYYY-MM-DD` to review a specific day's candidates
 
-#### 7. Frontend: Split Data Loading
-**Problem:** `index.html` fetches the full 125KB JSON on every page load. At 79 restaurants this is fine, but at 300+ restaurants it will slow down initial render.  
-**Fix:** Split the data:
-```
-data/
-├── restaurant_database.json       ← Full data (used for detail modal)
-└── restaurant_database_index.json ← Slim version for list view (name, region, cuisine, rating only)
-```
-`index.html` loads the slim index first (fast render), then lazy-loads full data only when a modal opens.
+#### 7. Frontend: Component Extraction ✅
+**Implemented:**
+- `index.html` reduced from 517 → ~90 lines (pure HTML template)
+- All JS extracted to `src/app.js` (no build step, plain `<script src>`)
+- All CSS extracted to `src/styles.css` (plain `<link rel="stylesheet">`)
 
-**Implementation:** Add a `pipeline/06_generate_index.js` step that outputs the slim file. ~1 hour.
+#### 8. Auto Git Commit After Pipeline ✅
+**Implemented:** `pipeline/07_commit.sh` — called by `run.sh` after each successful run.
+- Only commits if tracked data files actually changed (idempotent)
+- Commit message: `data: YYYY-MM-DD pipeline +N restaurants (total: X)`
 
-#### 8. Frontend: Component Extraction
-**Problem:** `index.html` is 492 lines of HTML + inline CSS + inline JS. This is already at the limit of maintainability. Adding features means this file becomes unmanageable.  
-**Proposed:** Keep the single-file architecture (no build step) but extract JS into `src/app.js` and CSS into `src/styles.css`. No bundler needed — just `<script src="src/app.js">` and `<link rel="stylesheet" href="src/styles.css">`. The HTML stays as a clean template.
-
-**Note:** Full React/Vue migration is NOT recommended here. The app is inherently simple (filter + display). Complexity of a framework outweighs the benefits at this scale.
-
-#### 9. Environment Config File
-**Problem:** Scripts have hardcoded absolute paths (`/Users/joeli/...`). This breaks if the project moves.  
-**Fix:** Add `config.sh` sourced by all pipeline scripts:
-```bash
-# config.sh — Project configuration
-export PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-export DB_FILE="${PROJECT_ROOT}/data/restaurant_database.json"
-export XHS_MCP_DIR="${HOME}/.agents/skills/xiaohongshu/scripts"
-export ANTHROPIC_API_KEY="${ANTHROPIC_API_KEY:-}"  # From env
-```
+#### 9. Google Places Enrichment ✅ (P3 pulled forward)
+**Implemented:** `pipeline/enrich_google.js`
+- Searches Google Places API for each unverified restaurant
+- Picks best match by Levenshtein name similarity (threshold: 40%)
+- Populates: `google_place_id`, `address`, `google_rating`, `lat/lng`, `verified=true`
+- Usage: `node pipeline/enrich_google.js --limit 20`
+- Requires: `GOOGLE_PLACES_API_KEY` in `.env`
+- Cost: ~$0.017/restaurant (Text Search + Place Details)
 
 ---
 
 ### 🔵 P3 — Longer Term
 
-#### 10. Google Places Verification for New Restaurants
-**Problem:** 71/79 restaurants are unverified (no confirmed Google Maps match). The `merge_info.needs_review` flag exists but there's no workflow to act on it.  
-**Proposed:** Add `pipeline/enrich_google.js`:
-- For each unverified restaurant, search Google Places API
-- If high confidence match: populate `google_place_id`, `address`, `google_rating`, set `verified: true`
-- If ambiguous: flag for manual review
+#### 10. Google Places Verification ✅ (done in P2)
 
 #### 11. Timeseries Tracking
 **Problem:** `trend_30d` field exists in the schema but isn't maintained by the pipeline.  
@@ -170,12 +152,12 @@ run.sh (cron entry)
   ├── scripts/apply_corrections.js → apply data/corrections.json
   ├── 05_verify.js          → integrity check, auto-restore on fail
   ├── 06_generate_index.js  → data/restaurant_database_index.json (slim, 74% smaller)
-  └── write .pipeline_state.json + notify on auth failure or new restaurants
+  ├── write .pipeline_state.json
+  ├── 07_commit.sh          → git commit "data: YYYY-MM-DD +N restaurants"
+  └── notify on auth failure or new restaurants
 ```
 
 Each step is independent, idempotent, and can be run in isolation.
-
-**TODO (P2):** Add `07_commit.sh` — auto git commit "data: YYYY-MM-DD +N restaurants"
 
 ---
 
