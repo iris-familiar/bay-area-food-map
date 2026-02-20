@@ -1,6 +1,6 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-19T05:13:55.189Z",
+  "updated_at": "2026-02-20T04:07:56.864Z",
   "total_restaurants": 79,
   "restaurants": [
     {
@@ -51,7 +51,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 3
       },
-      "trend_30d": 0,
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
         "scenes": [
@@ -74,7 +73,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r002",
@@ -131,7 +131,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 6
       },
-      "trend_30d": 0,
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
         "scenes": [
@@ -153,7 +152,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r003",
@@ -208,7 +208,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 5
       },
-      "trend_30d": 43,
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
         "scenes": [
@@ -231,7 +230,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r004",
@@ -271,7 +271,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
         "scenes": [
@@ -293,7 +292,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r005",
@@ -330,7 +330,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
         "scenes": [
@@ -354,7 +353,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r006",
@@ -402,7 +402,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
         "scenes": [
@@ -426,7 +425,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r007",
@@ -480,7 +480,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 3
       },
-      "trend_30d": 0,
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
         "scenes": [
@@ -504,7 +503,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r008",
@@ -559,7 +559,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 3
       },
-      "trend_30d": 58,
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
         "scenes": [
@@ -594,7 +593,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r009",
@@ -629,7 +629,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "semantic_tags": {
         "scenes": [
           "family-dining"
@@ -649,7 +648,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r010",
@@ -705,7 +705,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 4
       },
-      "trend_30d": 0,
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
         "scenes": [
@@ -733,7 +732,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r012",
@@ -765,7 +765,6 @@
       "verified": false,
       "recommendations_source": "llm_extracted",
       "sentiment_score": 0.5,
-      "trend_30d": 0,
       "semantic_tags": {
         "scenes": [
           "family-dining",
@@ -786,7 +785,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r013",
@@ -819,7 +819,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "香菇鱼肉水饺",
         "上海菜",
@@ -864,7 +863,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r014",
@@ -905,7 +905,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [
         "豆腐虾滑",
         "清炒佛手瓜",
@@ -937,7 +936,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r015",
@@ -970,7 +970,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "鸡脆骨",
         "烤尖椒",
@@ -1000,7 +999,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r016",
@@ -1049,7 +1049,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 3
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -1076,7 +1075,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r017",
@@ -1117,7 +1117,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -1141,7 +1140,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r018",
@@ -1182,7 +1182,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "锅包肉",
         "农家一碗香",
@@ -1210,7 +1209,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r019",
@@ -1243,7 +1243,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [
         "双拼饭"
       ],
@@ -1267,7 +1266,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r020",
@@ -1300,7 +1300,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -1325,7 +1324,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r021",
@@ -1355,7 +1355,6 @@
       "verified": false,
       "recommendations_source": "none",
       "sentiment_score": 0.5,
-      "trend_30d": 0,
       "semantic_tags": {
         "scenes": [
           "group-dining"
@@ -1375,7 +1374,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r022",
@@ -1408,7 +1408,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "腊肉蒸饭",
         "猪蹄蒸饭"
@@ -1436,7 +1435,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r023",
@@ -1469,7 +1469,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "打抛猪肉饭",
         "Taro Samosa",
@@ -1498,7 +1497,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r024",
@@ -1531,7 +1531,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "GKO"
       ],
@@ -1556,7 +1555,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r025",
@@ -1589,7 +1589,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "咖喱牛腩饭",
         "港式奶茶"
@@ -1617,7 +1616,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r026",
@@ -1650,7 +1650,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -1673,7 +1672,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r028",
@@ -1706,7 +1706,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -1731,7 +1730,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r029",
@@ -1764,7 +1764,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -1788,7 +1787,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r030",
@@ -1821,7 +1821,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "炸猪排"
       ],
@@ -1846,7 +1845,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r031",
@@ -1879,7 +1879,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "牛排炒饭",
         "鱼生沙拉"
@@ -1905,7 +1904,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r032",
@@ -1938,7 +1938,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -1963,7 +1962,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r033",
@@ -1996,7 +1996,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "酸奶冰淇淋"
       ],
@@ -2022,7 +2021,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r034",
@@ -2055,7 +2055,6 @@
         "negative_mentions": 1,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "芝士boneless",
         "honey soy wings"
@@ -2080,7 +2079,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r035",
@@ -2121,7 +2121,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [
         "咸鸭蛋炒豆苗",
         "农家炒土鸡",
@@ -2151,7 +2150,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r036",
@@ -2186,7 +2186,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "semantic_tags": {
         "scenes": [
           "group-dining",
@@ -2209,7 +2208,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r037",
@@ -2242,7 +2242,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [
         "Salted cheese matcha float"
       ],
@@ -2266,7 +2265,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r038",
@@ -2299,7 +2299,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -2322,7 +2321,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r039",
@@ -2355,7 +2355,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -2379,7 +2378,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r040",
@@ -2412,7 +2412,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -2435,7 +2434,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r041",
@@ -2468,7 +2468,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -2491,7 +2490,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r042",
@@ -2524,7 +2524,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -2547,7 +2546,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r043",
@@ -2580,7 +2580,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -2603,7 +2602,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r045",
@@ -2636,7 +2636,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -2659,7 +2658,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r046",
@@ -2692,7 +2692,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -2714,7 +2713,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r047",
@@ -2755,7 +2755,6 @@
         "negative_mentions": 1,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [
         "江南松鼠鱼",
         "姑苏美味酱方",
@@ -2783,7 +2782,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r049",
@@ -2822,7 +2822,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "semantic_tags": {
         "scenes": [
           "group-dining"
@@ -2844,7 +2843,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r050",
@@ -2877,7 +2877,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "egg soufflé",
         "Double-cut galbi"
@@ -2903,7 +2902,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r051",
@@ -2936,7 +2936,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "生煎包",
         "小笼包",
@@ -2965,7 +2964,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r052",
@@ -2998,7 +2998,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [
         "啤酒鸭",
         "白辣椒"
@@ -3025,7 +3024,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r053",
@@ -3058,7 +3058,6 @@
         "negative_mentions": 1,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -3081,7 +3080,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r054",
@@ -3114,7 +3114,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "贵妃鸡"
       ],
@@ -3139,7 +3138,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r055",
@@ -3172,7 +3172,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -3195,7 +3194,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r056",
@@ -3228,7 +3228,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "口水鸡",
         "擂椒茄子",
@@ -3258,7 +3257,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r057",
@@ -3291,7 +3291,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
@@ -3316,7 +3315,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r058",
@@ -3349,7 +3349,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "手撕包菜"
       ],
@@ -3375,7 +3374,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r059",
@@ -3410,7 +3410,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "semantic_tags": {
         "scenes": [
           "family-dining",
@@ -3431,7 +3430,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r060",
@@ -3464,7 +3464,6 @@
       "verified": false,
       "recommendations_source": "llm_extracted",
       "sentiment_score": 0.5,
-      "trend_30d": 0,
       "semantic_tags": {
         "scenes": [
           "date-night",
@@ -3485,7 +3484,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r061",
@@ -3518,7 +3518,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -3543,7 +3542,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r062",
@@ -3576,7 +3576,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -3599,7 +3598,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r063",
@@ -3634,7 +3634,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "semantic_tags": {
         "scenes": [
           "solo-dining",
@@ -3655,7 +3654,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r064",
@@ -3690,7 +3690,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "semantic_tags": {
         "scenes": [
           "family-dining",
@@ -3711,7 +3710,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r065",
@@ -3744,7 +3744,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "霉千张炒辣椒",
         "炭烤乌龙奶茶"
@@ -3770,7 +3769,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r066",
@@ -3803,7 +3803,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "水煮牛肉"
       ],
@@ -3831,7 +3830,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r067",
@@ -3864,7 +3864,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "盐酥鸡",
         "章鱼小丸子"
@@ -3890,7 +3889,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r068",
@@ -3923,7 +3923,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -3949,7 +3948,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r069",
@@ -3982,7 +3982,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "传统拉面",
         "酸辣粉",
@@ -4011,7 +4010,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r070",
@@ -4050,7 +4050,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "semantic_tags": {
         "scenes": [
           "solo-dining",
@@ -4072,7 +4071,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r071",
@@ -4105,7 +4105,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -4130,7 +4129,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r072",
@@ -4163,7 +4163,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -4187,7 +4186,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r073",
@@ -4220,7 +4220,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -4243,7 +4242,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r074",
@@ -4276,7 +4276,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -4299,7 +4298,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r075",
@@ -4334,7 +4334,6 @@
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "semantic_tags": {
         "scenes": [
           "group-dining"
@@ -4356,7 +4355,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r076",
@@ -4389,7 +4389,6 @@
         "negative_mentions": 1,
         "analyzed_contexts": 1
       },
-      "trend_30d": 0,
       "recommendations": [
         "Cheese maeun Galbi Jjim",
         "Modeum Sooyook"
@@ -4415,7 +4414,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r079",
@@ -4467,7 +4467,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r084",
@@ -4524,7 +4525,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r082",
@@ -4600,7 +4602,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r081",
@@ -4649,7 +4652,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r080",
@@ -4702,7 +4706,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r078",
@@ -4762,7 +4767,8 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     },
     {
       "id": "r077",
@@ -4798,8 +4804,9 @@
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
-      }
+      },
+      "timeseries": []
     }
   ],
-  "verified_at": "2026-02-20T04:06:22.640Z"
+  "verified_at": "2026-02-20T04:08:03.812Z"
 }
