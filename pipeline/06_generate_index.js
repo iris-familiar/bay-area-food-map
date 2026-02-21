@@ -43,9 +43,17 @@ const slimRestaurants = db.restaurants
         slim.recommendations = Array.isArray(r.recommendations)
             ? r.recommendations.slice(0, 3)
             : [];
-        // Include last 12 months of timeseries for the chart
+        // Include last 24 months of timeseries for the chart
         slim.timeseries = Array.isArray(r.timeseries)
-            ? r.timeseries.slice(-12)
+            ? r.timeseries.slice(-24)
+            : [];
+        // Include top 5 post_details (by engagement) for the modal chart fallback and XHS links
+        slim.post_details = Array.isArray(r.post_details)
+            ? r.post_details
+                .slice()
+                .sort((a, b) => (b.engagement || 0) - (a.engagement || 0))
+                .slice(0, 5)
+                .map(({ post_id, title, date, engagement }) => ({ post_id, title, date, engagement }))
             : [];
         return slim;
     });

@@ -8,7 +8,8 @@
     "dev": "node dev.js",
     "pipeline": "bash pipeline/run.sh",
     "pipeline:dry": "bash pipeline/run.sh --dry-run",
-    "test": "node tests/verify.js"
+    "test": "node tests/verify.js",
+    "test:e2e": "node tests/e2e.js"
   },
   "dependencies": {}
 }

@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
  * 02_extract_llm.js — LLM-based restaurant extraction from XHS posts
- * Uses Gemini Flash to extract restaurants, cuisine, dishes from each post.
+ * Uses Kimi K2 (Moonshot AI) to extract restaurants, cuisine, dishes from each post.
  *
  * Usage: node pipeline/02_extract_llm.js <raw_dir> <output_file>
  *
  * Output: JSON array of restaurant candidates with enriched fields
- * Requires: GEMINI_API_KEY in environment or .env
+ * Requires: KIMI_API_KEY in environment or .env
  */
 
 'use strict';
@@ -24,16 +24,18 @@ if (!rawDir || !outputFile) {
     process.exit(1);
 }
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-if (!GEMINI_API_KEY) {
-    console.error('❌ GEMINI_API_KEY not set. Check .env file.');
+const KIMI_API_KEY = process.env.KIMI_API_KEY;
+if (!KIMI_API_KEY) {
+    console.error('❌ KIMI_API_KEY not set. Check .env file.');
     process.exit(1);
 }
 
-const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+const KIMI_MODEL = 'kimi-for-coding';
+const KIMI_URL = 'https://api.kimi.com/coding/v1/chat/completions';
 
 // Only process posts from today to avoid re-processing old data
-const MAX_POSTS_PER_RUN = 30; // Rate limit: ~30 API calls per pipeline run
+// MAX_POSTS env var overrides for testing (e.g. MAX_POSTS=10 in e2e)
+const MAX_POSTS_PER_RUN = parseInt(process.env.MAX_POSTS || '30', 10);
 const DELAY_MS = 500; // 500ms between API calls
 
 // ─── Bay Area validation ────────────────────────────────────────────────────
@@ -50,8 +52,8 @@ function isBayAreaPost(text) {
     return BAY_AREA_SIGNALS.some(s => text.includes(s));
 }
 
-// ─── Gemini API call ────────────────────────────────────────────────────────
-function geminiExtract(postText) {
+// ─── Kimi API call (OpenAI-compatible) ──────────────────────────────────────
+function kimiExtract(postText) {
     return new Promise((resolve, reject) => {
         const prompt = `You are a data extraction assistant. Extract restaurant information from this XiaoHongShu (小红书) post about food in the San Francisco Bay Area.
 
@@ -77,23 +79,26 @@ Rules:
 - dishes should be specific dish names mentioned in the post, not generic terms`;
 
         const body = JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: {
-                responseMimeType: 'application/json',
-                maxOutputTokens: 1024,
-                temperature: 0.1,
-            },
+            model: KIMI_MODEL,
+            messages: [{ role: 'user', content: prompt }],
+            response_format: { type: 'json_object' },
+            max_tokens: 1024,
+            temperature: 0.1,
         });
 
         const options = {
             method: 'POST',
+            hostname: 'api.kimi.com',
+            path: '/coding/v1/chat/completions',
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': `Bearer ${KIMI_API_KEY}`,
                 'Content-Length': Buffer.byteLength(body),
+                'User-Agent': 'KimiCLI/1.3',
             },
         };
 
-        const req = https.request(GEMINI_URL, options, (res) => {
+        const req = https.request(options, (res) => {
             let data = '';
             res.on('data', chunk => { data += chunk; });
             res.on('end', () => {
@@ -103,7 +108,7 @@ Rules:
                         reject(new Error(response.error.message));
                         return;
                     }
-                    const text = response.candidates?.[0]?.content?.parts?.[0]?.text || '{"restaurants":[]}';
+                    const text = response.choices?.[0]?.message?.content || '{"restaurants":[]}';
                     const extracted = JSON.parse(text);
                     resolve(extracted.restaurants || []);
                 } catch (e) {
@@ -113,7 +118,7 @@ Rules:
         });
 
         req.on('error', reject);
-        req.setTimeout(15000, () => { req.destroy(); reject(new Error('timeout')); });
+        req.setTimeout(30000, () => { req.destroy(); reject(new Error('timeout')); });
         req.write(body);
         req.end();
     });
@@ -141,7 +146,7 @@ async function main() {
         return;
     }
 
-    console.log(`Processing ${files.length} posts with Gemini LLM...`);
+    console.log(`Processing ${files.length} posts with Kimi LLM (${KIMI_MODEL})...`);
 
     const allCandidates = [];
     let processed = 0;
@@ -170,7 +175,7 @@ async function main() {
         }
 
         try {
-            const restaurants = await geminiExtract(fullText);
+            const restaurants = await kimiExtract(fullText);
 
             for (const r of restaurants) {
                 if (!r.name || r.name.length < 2) continue;
@@ -186,7 +191,7 @@ async function main() {
                     source_title: title.slice(0, 80),
                     engagement: (post.interactInfo || {}).commentCount || 0,
                     extracted_at: new Date().toISOString(),
-                    extraction_method: 'gemini-llm',
+                    extraction_method: 'kimi-llm',
                 });
             }
 

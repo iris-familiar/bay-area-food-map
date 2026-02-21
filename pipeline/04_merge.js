@@ -60,24 +60,26 @@ for (const candidate of candidates) {
         continue;
     }
 
+    const sentimentScore = { positive: 1.0, neutral: 0.5, negative: 0.0 };
+
     const newRestaurant = {
         id: `pipeline_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
         name: candidate.name,
         name_en: '',
-        cuisine: 'unknown',
+        cuisine: candidate.cuisine || 'unknown',
         area: 'unknown',
         region: 'unknown',
-        city: 'unknown',
-        price_range: 'unknown',
+        city: candidate.city || 'unknown',
+        price_range: candidate.price_range || 'unknown',
         address: '',
         google_rating: null,
         google_place_id: null,
         verified: false,
         total_engagement: candidate.engagement || 0,
         mention_count: 1,
-        sentiment_score: 0.5,
+        sentiment_score: sentimentScore[candidate.sentiment] ?? 0.5,
         sentiment_details: {},
-        recommendations: [],
+        recommendations: Array.isArray(candidate.dishes) ? candidate.dishes : [],
         sources: [candidate.source_post_id].filter(Boolean),
         post_details: [],
         timeseries: [],

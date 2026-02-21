@@ -18,8 +18,17 @@ if [ ! -f "${MCP_DIR}/mcp-call.sh" ]; then
 fi
 
 # Check MCP is running and logged in
+# Response is JSON-RPC: { "result": { "content": [{ "text": "✅ 已登录..." }] } }
 LOGIN_STATUS=$(cd "${MCP_DIR}" && ./mcp-call.sh check_login_status '{}' 2>/dev/null \
-    | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('status','unknown'))" 2>/dev/null \
+    | python3 -c "
+import sys, json
+try:
+    d = json.load(sys.stdin)
+    text = d.get('result', {}).get('content', [{}])[0].get('text', '')
+    print('logged_in' if '已登录' in text else 'not_logged_in')
+except Exception:
+    print('unknown')
+" 2>/dev/null \
     || echo "unknown")
 
 if [ "$LOGIN_STATUS" != "logged_in" ]; then
@@ -51,18 +60,26 @@ SKIP_COUNT=0
 for term in "${SEARCH_TERMS[@]}"; do
     log "Searching: $term"
 
-    RESULT=$(cd "${MCP_DIR}" && ./mcp-call.sh search_feeds "{\"keyword\": \"${term}\"}" 2>/dev/null || echo '{"feeds":[]}')
+    RESULT=$(cd "${MCP_DIR}" && ./mcp-call.sh search_feeds "{\"keyword\": \"${term}\"}" 2>/dev/null || echo '{}')
 
     # Extract post IDs with decent engagement
+    # Response is JSON-RPC: unwrap result.content[0].text to get actual feeds JSON.
+    # interactInfo is nested inside noteCard; counts arrive as strings.
     POSTS=$(echo "$RESULT" | python3 -c "
 import sys, json
 try:
-    data = json.load(sys.stdin)
+    outer = json.load(sys.stdin)
+    text = outer.get('result', {}).get('content', [{}])[0].get('text', '')
+    try:
+        data = json.loads(text)
+    except (ValueError, KeyError):
+        data = outer  # fallback if already unwrapped
     feeds = data.get('feeds', data.get('items', []))
     for f in feeds:
-        interact = f.get('interactInfo', {})
-        comments = interact.get('commentCount', 0)
-        likes = interact.get('likedCount', 0)
+        card = f.get('noteCard', f)
+        interact = card.get('interactInfo', f.get('interactInfo', {}))
+        comments = int(interact.get('commentCount', 0) or 0)
+        likes = int(interact.get('likedCount', 0) or 0)
         if comments >= 3 or likes >= 20:
             note_id = f.get('id', f.get('noteId', ''))
             xsec = f.get('xsecToken', '')
@@ -81,9 +98,36 @@ except Exception:
             continue  # Already fetched
         fi
 
+        # Unwrap JSON-RPC envelope; normalize data.note to flat structure
+        # that 02_extract_llm.js expects (title/desc/id/interactInfo at top level).
+        # MCP server uses "feed_id", not "note_id".
         DETAIL=$(cd "${MCP_DIR}" && ./mcp-call.sh get_feed_detail \
-            "{\"note_id\": \"${note_id}\", \"xsec_token\": \"${xsec_token}\"}" \
-            2>/dev/null || echo '{}')
+            "{\"feed_id\": \"${note_id}\", \"xsec_token\": \"${xsec_token}\"}" \
+            2>/dev/null \
+            | python3 -c "
+import sys, json
+try:
+    outer = json.load(sys.stdin)
+    text = outer.get('result', {}).get('content', [{}])[0].get('text', '')
+    inner = json.loads(text) if text else outer
+    note = inner.get('data', {}).get('note', {})
+    if note:
+        normalized = {
+            'id': note.get('noteId', inner.get('feed_id', '')),
+            'noteId': note.get('noteId', ''),
+            'title': note.get('title', ''),
+            'desc': note.get('desc', ''),
+            'interactInfo': note.get('interactInfo', {}),
+            'comments': note.get('comments', note.get('commentList', [])),
+            'user': note.get('user', {}),
+            'time': note.get('time', ''),
+        }
+        print(json.dumps(normalized))
+    else:
+        print('{}')
+except Exception:
+    print('{}')
+" 2>/dev/null || echo '{}')
 
         # Only save if valid JSON with content
         if echo "$DETAIL" | python3 -c "import sys,json; d=json.load(sys.stdin); assert d.get('title') or d.get('desc')" 2>/dev/null; then

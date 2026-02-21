@@ -98,7 +98,7 @@ function filterAndRender() {
     });
 
     filteredRestaurants.sort((a, b) => {
-        if (currentSort === 'engagement') return (b.engagement || 0) - (a.engagement || 0);
+        if (currentSort === 'engagement') return (b.total_engagement || 0) - (a.total_engagement || 0);
         if (currentSort === 'sentiment')  return (b.sentiment_score || 0) - (a.sentiment_score || 0);
         if (currentSort === 'rating')     return (b.google_rating || 0) - (a.google_rating || 0);
         return 0;
@@ -134,7 +134,7 @@ function renderRestaurants() {
             <div class="grid grid-cols-3 gap-2 mt-3">
                 <div class="bg-gray-50 rounded-lg p-2 text-center">
                     <div class="text-xs text-gray-400">讨论度</div>
-                    <div class="text-sm font-semibold text-orange-600">${(r.engagement || 0).toLocaleString()}</div>
+                    <div class="text-sm font-semibold text-orange-600">${(r.total_engagement || 0).toLocaleString()}</div>
                 </div>
                 <div class="bg-gray-50 rounded-lg p-2 text-center">
                     <div class="text-xs text-gray-400">口碑</div>
@@ -173,7 +173,7 @@ function openModal(id) {
 
         <div class="grid grid-cols-3 gap-4 mb-6">
             <div class="bg-gray-50 rounded-xl p-4 text-center">
-                <div class="text-2xl font-bold text-orange-600">${(r.engagement || 0).toLocaleString()}</div>
+                <div class="text-2xl font-bold text-orange-600">${(r.total_engagement || 0).toLocaleString()}</div>
                 <div class="text-xs text-gray-500 mt-1">讨论度</div>
             </div>
             <div class="bg-gray-50 rounded-xl p-4 text-center">
@@ -209,7 +209,7 @@ function openModal(id) {
         <div>
             <h4 class="font-semibold mb-2">来源帖子</h4>
             <div class="space-y-2">
-                ${r.post_details.slice(0, 3).map(p => `
+                ${r.post_details.slice(0, 5).map(p => `
                 <div class="p-3 bg-gray-50 rounded-lg">
                     <div class="flex justify-between items-start">
                         <a href="https://www.xiaohongshu.com/explore/${p.post_id}" target="_blank" class="flex-1">

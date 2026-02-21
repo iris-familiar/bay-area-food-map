@@ -1,9 +1,13 @@
 # 湾区美食地图 — Engineering Roadmap
 
-> Last updated: 2026-02-19 (v3 — P0+P1+P2 implemented)
-> Status: Pipeline fully operational. Frontend split. Review workflow. Google enrichment ready.
+> Last updated: 2026-02-21 (v4 — P3 complete + e2e test + Kimi LLM)
+> Status: Pipeline fully operational. Full e2e integration test. LLM switched to Kimi K2.5.
 
 ---
+
+## Bug Fixes
+
+- **2026-02-19** — Fixed `讨论度` always showing 0: `src/app.js` was reading `r.engagement` but the database stores this as `r.total_engagement`. Field name corrected in sort, card view, and modal (3 occurrences).
 
 ## Current State (as of 2026-02-19)
 
@@ -48,11 +52,11 @@ See P0/P1 issues below.
 Touch sentinel `.scrape_complete` when scrape succeeds; alert if absent after scrape step.
 
 #### 2. LLM-Based Restaurant Extraction ✅
-**Fixed:** Replaced fragile regex `02_extract.js` with `02_extract_llm.js` using Gemini 1.5 Flash.
+**Fixed:** Replaced fragile regex `02_extract.js` with `02_extract_llm.js` using Kimi K2.5 (Kimi Code API).
 - Extracts restaurant name, city, cuisine, dishes, sentiment in one LLM pass
 - Rate-limited: max 30 posts/run, 500ms between API calls
 - Graceful fallback: parse errors → empty array (pipeline continues)
-- Requires `GEMINI_API_KEY` in `.env`
+- Requires `KIMI_API_KEY` in `.env`
 
 ---
 
@@ -150,7 +154,7 @@ Frontend now reads this and displays "更新于 X月Y日 HH:MM" in the header su
 ```
 run.sh (cron entry)
   ├── 01_scrape.sh          → data/raw/YYYY-MM-DD/post_*.json  (XHS MCP)
-  ├── 02_extract_llm.js     → data/candidates/YYYY-MM-DD.json  (Gemini LLM)
+  ├── 02_extract_llm.js     → data/candidates/YYYY-MM-DD.json  (Kimi LLM)
   ├── 03_update_metrics.js  → IN-PLACE: update metrics for existing restaurants
   ├── 04_merge.js           → data/restaurant_database.json    (append-only)
   ├── scripts/apply_corrections.js → apply data/corrections.json
@@ -176,7 +180,7 @@ bay-area-food-map/
 ├── config.sh                     # Centralised paths + env (sourced by pipeline)
 ├── dev.js                        # Local dev server → http://localhost:8080
 ├── index.html                    # Frontend (single-page, no build step)
-├── package.json                  # 4 scripts: dev / pipeline / pipeline:dry / test
+├── package.json                  # scripts: dev / pipeline / pipeline:dry / test / test:e2e
 │
 ├── data/
 │   ├── restaurant_database.json       # Source of truth (git tracked)
@@ -190,7 +194,7 @@ bay-area-food-map/
 ├── pipeline/
 │   ├── run.sh                    # Orchestrator — cron calls this
 │   ├── 01_scrape.sh              # XHS MCP → data/raw/YYYY-MM-DD/
-│   ├── 02_extract_llm.js         # Gemini LLM → data/candidates/YYYY-MM-DD.json
+│   ├── 02_extract_llm.js         # Kimi LLM → data/candidates/YYYY-MM-DD.json
 │   ├── 03_update_metrics.js      # Update engagement/trend for existing restaurants
 │   ├── 04_merge.js               # Append-only merge into restaurant_database.json
 │   ├── 05_verify.js              # Integrity check + auto-restore
@@ -201,8 +205,36 @@ bay-area-food-map/
 │   └── transaction.js            # Atomic write + rollback helper
 │
 └── tests/
-    └── verify.js                 # 22-check functional test suite (no deps, <10s)
+    ├── verify.js                 # 22-check functional test suite (no deps, <10s)
+    └── e2e.js                    # Full end-to-end integration test (real XHS + Kimi LLM)
 ```
+
+---
+
+### ✅ P4 — DONE (2026-02-21)
+
+#### 13. Switch LLM to Kimi K2.5 ✅
+**Implemented:** `pipeline/02_extract_llm.js` migrated from Gemini to Kimi Code API.
+- Endpoint: `https://api.kimi.com/coding/v1/chat/completions`, model `kimi-for-coding`
+- OpenAI-compatible request format; `User-Agent: KimiCLI/1.3` header required
+- Requires `KIMI_API_KEY` in `.env`
+
+#### 14. XHS MCP JSON-RPC Envelope Fix ✅
+**Fixed:** All three MCP tool calls in `01_scrape.sh` updated to unwrap the JSON-RPC envelope (`result.content[0].text`) before parsing:
+- `check_login_status`: now correctly detects `已登录`
+- `search_feeds`: now reads `interactInfo` from inside `noteCard`; handles string counts
+- `get_feed_detail`: param renamed `note_id` → `feed_id`; response normalized from `data.note.*` to flat structure
+
+#### 15. Merge Field Propagation Fix ✅
+**Fixed:** `pipeline/04_merge.js` was hardcoding `city/cuisine/price_range: 'unknown'` instead of using candidate values. Now correctly propagates all candidate fields into the merged restaurant.
+
+#### 16. End-to-End Integration Test ✅
+**Implemented:** `tests/e2e.js` — full live pipeline test, no mocks.
+- 7 phases: setup → real XHS scrape → real Kimi extraction → merge → verify → approve + index → frontend shape
+- `E2E_QUICK=1` mode skips scrape, uses baked-in sample post for fast local dev testing
+- Sample post named `post_000_test_001.json` to sort before all scraped hex-ID posts
+- Extraction capped at 10 posts with 420s timeout (worst case: 10 × 30s Kimi timeout)
+- Run: `node tests/e2e.js` or `npm run test:e2e`
 
 ---
 
@@ -218,14 +250,12 @@ bay-area-food-map/
 
 ## Next Session: Where to Start
 
-P0 and P1 are done. Pick up from **P2**:
+P0–P4 are done. The pipeline is fully operational with a real e2e test. Potential next improvements:
 
-1. **Candidate review workflow** (2 hrs) — `pipeline/review.js` interactive CLI; new restaurants queue in `data/candidates/` before going live
-2. **Auto git commit after pipeline** (30 min) — `07_commit.sh`: `git add data/ && git commit -m "data: YYYY-MM-DD +N restaurants"`
-3. **Frontend component split** (2-3 hrs) — extract inline JS to `src/app.js`, CSS to `src/styles.css`
-4. **Google Places enrichment for new restaurants** (P3) — `pipeline/enrich_google.js` using existing `GOOGLE_PLACES_API_KEY`
-
-**Before any of the above:** Test a real pipeline run with live XHS data (not dry-run) to validate the full end-to-end LLM extraction flow.
+1. **Increase scrape yield** — current scrape saves ~23-30 posts in 600s; could tune search terms or parallelize
+2. **Kimi timeout resilience** — some Kimi calls hit the 30s per-call timeout; could add retry logic
+3. **More Bay Area content** — only ~1 candidate extracted per e2e run; tuning search terms or expanding BAY_AREA_SIGNALS may help
+4. **Review backlog** — any restaurants with `needs_review: true` are invisible in the UI until reviewed via `pipeline/review.js`
 
 ---
 
