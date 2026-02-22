@@ -4795,7 +4795,7 @@
     },
     {
       "id": "r077",
-      "name": "眷湘Cupertino",
+      "name": "眷湘",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "Cupertino",
@@ -4832,7 +4832,7 @@
     },
     {
       "id": "pipeline_1771721574149_ew7z",
-      "name": "香小馆 Shang Cafe",
+      "name": "香小馆",
       "name_en": "",
       "cuisine": "川菜",
       "area": "unknown",
@@ -4865,7 +4865,7 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "66221334000000000401809a",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
@@ -4904,7 +4904,7 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "67e725b0000000001d01bdd3",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
@@ -4936,7 +4936,7 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "68765310000000002203d09d",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
@@ -4972,7 +4972,7 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "68c0d540000000001c03c788",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
@@ -5012,12 +5012,12 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "68c36f98000000001d000419",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
       "id": "pipeline_1771721574155_i57p",
-      "name": "青苹��",
+      "name": "青苹果",
       "name_en": "",
       "cuisine": "川菜",
       "area": "unknown",
@@ -5052,7 +5052,7 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "68f1b80b0000000004004859",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
@@ -5093,7 +5093,7 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "68fdccea000000000703850d",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
@@ -5129,12 +5129,12 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "694a0149000000001f007d63",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
       "id": "pipeline_1771721574155_zwy6",
-      "name": "外婆家常菜 Grandma's Kitchen",
+      "name": "外婆家常菜",
       "name_en": "",
       "cuisine": "中原菜",
       "area": "unknown",
@@ -5164,12 +5164,12 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "694a464a000000001f00ac7f",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
       "id": "pipeline_1771721574155_rdfp",
-      "name": "眷湘 Easterly Cupertino",
+      "name": "眷湘",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "unknown",
@@ -5202,7 +5202,7 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "695482920000000021033da0",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
@@ -5243,7 +5243,7 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "69584c3d00000000220315ca",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
@@ -5275,7 +5275,7 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "6965c214000000001a0261f5",
-        "needs_review": true
+        "needs_review": false
       }
     },
     {
@@ -5310,9 +5310,9 @@
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "6981750a000000000e03db3a",
-        "needs_review": true
+        "needs_review": false
       }
     }
   ],
-  "verified_at": "2026-02-22T01:12:30.157Z"
+  "verified_at": "2026-02-22T04:51:58.164Z"
 }
