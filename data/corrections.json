@@ -46,7 +46,7 @@
       "google_rating": 4.1,
       "location": {
         "lat": 37.493567,
-        "lng": -121.930710
+        "lng": -121.93071
       },
       "verified": true
     },
@@ -78,7 +78,7 @@
       "google_name": "Hankow Cuisine",
       "address": "1071 S De Anza Blvd, San Jose, CA 95129, USA",
       "area": "San Jose",
-      "google_rating": 4.0,
+      "google_rating": 4,
       "location": {
         "lat": 37.307466,
         "lng": -122.032901
@@ -122,7 +122,7 @@
       "area": "Sunnyvale",
       "google_rating": 4.1,
       "location": {
-        "lat": 37.338980,
+        "lat": 37.33898,
         "lng": -122.042582
       },
       "verified": true
@@ -183,5 +183,35 @@
       "verified": true
     },
     "reason": "搜索匹配"
+  },
+  {
+    "id": "pipeline_1771721574149_ew7z",
+    "corrections": {
+      "name": "香小馆"
+    }
+  },
+  {
+    "id": "pipeline_1771721574155_i57p",
+    "corrections": {
+      "name": "青苹果"
+    }
+  },
+  {
+    "id": "pipeline_1771721574155_zwy6",
+    "corrections": {
+      "name": "外婆家常菜"
+    }
+  },
+  {
+    "id": "pipeline_1771721574155_rdfp",
+    "corrections": {
+      "name": "眷湘"
+    }
+  },
+  {
+    "id": "r077",
+    "corrections": {
+      "name": "眷湘"
+    }
   }
 ]
