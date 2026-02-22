@@ -1,6 +1,6 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-22T08:04:08.491Z",
+  "updated_at": "2026-02-22T08:09:17.980Z",
   "total_restaurants": 92,
   "restaurants": [
     {
@@ -98,7 +98,7 @@
       "cuisine": "融合菜",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": "43668",
+      "total_engagement": 4366,
       "mention_count": 7,
       "sources": [
         "67ba7dae00000000290119d8",
@@ -165,7 +165,7 @@
         {
           "month": "2026-02",
           "mentions": 1,
-          "engagement": "8"
+          "engagement": 8
         }
       ],
       "lat": 37.4236648,
@@ -3891,7 +3891,7 @@
       "cuisine": "中餐",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": "4128",
+      "total_engagement": 4128,
       "mention_count": 4,
       "sources": [
         "690f77cf00000000050317bb",
@@ -3960,7 +3960,7 @@
         {
           "month": "2026-02",
           "mentions": 1,
-          "engagement": "2"
+          "engagement": 2
         }
       ],
       "lat": 37.3357389,
@@ -4220,7 +4220,7 @@
       "cuisine": "家常菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": "2515",
+      "total_engagement": 2515,
       "mention_count": 3,
       "sources": [
         "690cf26b000000000401123f",
@@ -4459,7 +4459,7 @@
       "cuisine": "川菜",
       "area": "San Jose",
       "price_range": "",
-      "total_engagement": "2510",
+      "total_engagement": 2510,
       "mention_count": 3,
       "sources": [
         "690cf26b000000000401123f",
@@ -4939,7 +4939,7 @@
       "cuisine": "湘菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": "912",
+      "total_engagement": 91,
       "mention_count": 3,
       "sources": [
         "695482920000000021033da0"
@@ -4992,7 +4992,7 @@
       "google_rating": 4.1,
       "google_place_id": "ChIJceiBSg61j4ARPic_HgUjNC4",
       "verified": true,
-      "total_engagement": "10",
+      "total_engagement": 10,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5034,7 +5034,7 @@
       "google_rating": 3.7,
       "google_place_id": "ChIJc2rdBQB7j4ARvD7E5jvfwkE",
       "verified": true,
-      "total_engagement": "5",
+      "total_engagement": 5,
       "mention_count": 1,
       "sentiment_score": 0.5,
       "sentiment_details": {},
@@ -5075,7 +5075,7 @@
       "google_rating": null,
       "google_place_id": null,
       "verified": false,
-      "total_engagement": "39",
+      "total_engagement": 39,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5107,7 +5107,7 @@
       "google_rating": null,
       "google_place_id": null,
       "verified": false,
-      "total_engagement": "14",
+      "total_engagement": 14,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5143,7 +5143,7 @@
       "google_rating": 4.4,
       "google_place_id": "ChIJWzjAWoi1j4ARiRFnjdpgt3M",
       "verified": true,
-      "total_engagement": "11",
+      "total_engagement": 11,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5185,7 +5185,7 @@
       "google_rating": 4.1,
       "google_place_id": "ChIJFf37HL61j4AR2qKxTGxiB3Q",
       "verified": true,
-      "total_engagement": "8",
+      "total_engagement": 8,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5229,7 +5229,7 @@
       "google_rating": 4.6,
       "google_place_id": "ChIJLWA0dIt9j4AR3g3Oo_CocNc",
       "verified": true,
-      "total_engagement": "11",
+      "total_engagement": 11,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5272,7 +5272,7 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJqSZ411THj4ARi6IlC4HNcbs",
       "verified": true,
-      "total_engagement": "42",
+      "total_engagement": 42,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5310,7 +5310,7 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJrQlLTxu1j4ARlHgXrtOFG4c",
       "verified": true,
-      "total_engagement": "15",
+      "total_engagement": 15,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5349,7 +5349,7 @@
       "google_rating": 3.7,
       "google_place_id": "ChIJVWa00YO1j4ARC7IHxI4bsQA",
       "verified": true,
-      "total_engagement": "2",
+      "total_engagement": 2,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5391,7 +5391,7 @@
       "google_rating": 5,
       "google_place_id": "ChIJc1nmIQB9j4ARG17vnInodjE",
       "verified": true,
-      "total_engagement": "29",
+      "total_engagement": 29,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5434,7 +5434,7 @@
       "google_rating": null,
       "google_place_id": null,
       "verified": false,
-      "total_engagement": "47",
+      "total_engagement": 47,
       "mention_count": 1,
       "sentiment_score": 0.5,
       "sentiment_details": {},
@@ -5489,5 +5489,5 @@
       }
     }
   ],
-  "verified_at": "2026-02-22T08:04:22.518Z"
+  "verified_at": "2026-02-22T08:09:24.932Z"
 }
