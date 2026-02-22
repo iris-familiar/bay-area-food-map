@@ -1,6 +1,6 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-22T06:53:46.945Z",
+  "updated_at": "2026-02-22T08:04:08.491Z",
   "total_restaurants": 92,
   "restaurants": [
     {
@@ -1211,7 +1211,7 @@
       "google_rating": 4.1,
       "google_place_id": "ChIJz4rjNLDIj4ARDST3dLKZGZE",
       "address": "42 Dixon Rd, Milpitas, CA 95035, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1241,12 +1241,14 @@
       "engagement": 378,
       "city": "Milpitas",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:36.329Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.4570925,
+      "lng": -121.9103666
     },
     {
       "id": "r019",
@@ -1272,7 +1274,7 @@
       "google_rating": 3.6,
       "google_place_id": "ChIJQXo9k1GRj4ARIwAqMPwo3ms",
       "address": "699 Lewelling Blvd # 270, San Leandro, CA 94579, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1298,12 +1300,14 @@
       "engagement": 355,
       "city": "San Leandro",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:37.014Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.6874845,
+      "lng": -122.1364196
     },
     {
       "id": "r020",
@@ -1329,7 +1333,7 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJg-FUJV6Pj4AR4cJT_fRyISQ",
       "address": "145 W Joaquin Ave, San Leandro, CA 94577, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1356,12 +1360,14 @@
       "engagement": 355,
       "city": "San Leandro",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:37.830Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.7240138,
+      "lng": -122.1552883
     },
     {
       "id": "r021",
@@ -1388,7 +1394,7 @@
       "google_rating": 4.1,
       "google_place_id": "ChIJlTq3RRORj4ARxDHFTCl8F90",
       "address": "18002 Hesperian Blvd, Hayward, CA 94545, USA",
-      "verified": false,
+      "verified": true,
       "recommendations_source": "none",
       "sentiment_score": 0.5,
       "semantic_tags": {
@@ -1406,12 +1412,14 @@
       "engagement": 355,
       "city": "Hayward",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:38.574Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.6727043,
+      "lng": -122.1220403
     },
     {
       "id": "r022",
@@ -1437,7 +1445,7 @@
       "google_rating": 4.1,
       "google_place_id": "ChIJ8Qt3_4rJj4AR_I_HWkzFGT0",
       "address": "1219 Wildwood Ave, Sunnyvale, CA 94089, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1467,12 +1475,14 @@
       "engagement": 344,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:39.344Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3909497,
+      "lng": -121.9921677
     },
     {
       "id": "r023",
@@ -1560,7 +1570,7 @@
       "google_rating": 4.5,
       "google_place_id": "ChIJ86TLv5GAhYARdhd8cNsVbe8",
       "address": "672 Geary St, San Francisco, CA 94102, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1587,12 +1597,14 @@
       "engagement": 311,
       "city": "San Francisco",
       "region": "San Francisco",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:40.624Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.7867348,
+      "lng": -122.4143431
     },
     {
       "id": "r025",
@@ -1618,7 +1630,7 @@
       "google_rating": 4.4,
       "google_place_id": "ChIJW9e-pZV3j4ARhSHqmE5cVk4",
       "address": "309 Broadway, Millbrae, CA 94030, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1648,12 +1660,14 @@
       "engagement": 311,
       "city": "Millbrae",
       "region": "Peninsula",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:41.547Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.6008336,
+      "lng": -122.3921175
     },
     {
       "id": "r026",
@@ -1679,7 +1693,7 @@
       "google_rating": 4.5,
       "google_place_id": "ChIJ_3SUBAC_j4ARnl1_8PIrBy8",
       "address": "39135 Cedar Blvd, Newark, CA 94560, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1704,12 +1718,14 @@
       "engagement": 303,
       "city": "Newark",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:42.256Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.5232916,
+      "lng": -122.0063217
     },
     {
       "id": "r028",
@@ -1735,7 +1751,7 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJT0ZlmjS0j4ARobThj0Ev1b8",
       "address": "20956 Homestead Rd Ste A1, Cupertino, CA 95014, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.65,
       "sentiment_details": {
         "positive_mentions": 0,
@@ -1762,12 +1778,14 @@
       "engagement": 253,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:43.120Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3367588,
+      "lng": -122.0402958
     },
     {
       "id": "r029",
@@ -1793,7 +1811,7 @@
       "google_rating": 4.5,
       "google_place_id": "ChIJlZciNwCfj4ARoQRaOS3XOQ4",
       "address": "150 S B St, San Mateo, CA 94401, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1819,12 +1837,14 @@
       "engagement": 253,
       "city": "San Mateo",
       "region": "Peninsula",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:43.781Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.5664339,
+      "lng": -122.3236324
     },
     {
       "id": "r030",
@@ -1850,7 +1870,7 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJhafzm7y1j4ARgdm5WGVYhhk",
       "address": "19634 Stevens Creek Blvd, Cupertino, CA 95014, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1877,12 +1897,14 @@
       "engagement": 245,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:44.570Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3223899,
+      "lng": -122.0176403
     },
     {
       "id": "r031",
@@ -1908,7 +1930,7 @@
       "google_rating": 4.4,
       "google_place_id": "ChIJA-tz2hC3j4AR9xET_eMevsk",
       "address": "300 W McKinley Ave Suite F 170, Sunnyvale, CA 94086, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1936,12 +1958,14 @@
       "engagement": 245,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:45.245Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3744427,
+      "lng": -122.0330603
     },
     {
       "id": "r032",
@@ -2081,10 +2105,10 @@
           "context": ""
         }
       ],
-      "google_rating": 4.2,
-      "google_place_id": "ChIJN7KGGJ-3j4ARpcSEtt_P4X4",
-      "address": "561 E El Camino Real, Sunnyvale, CA 94087, USA",
-      "verified": false,
+      "google_rating": 4.3,
+      "google_place_id": "ChIJ8enMlui2j4AR2xXK5EHDhBs",
+      "address": "1241 W El Camino Real, Sunnyvale, CA 94087, USA",
+      "verified": true,
       "sentiment_score": 0.53,
       "sentiment_details": {
         "positive_mentions": 0,
@@ -2111,12 +2135,14 @@
       "engagement": 245,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:46.656Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3746399,
+      "lng": -122.057105
     },
     {
       "id": "r035",
@@ -2150,7 +2176,7 @@
       "google_rating": 4.8,
       "google_place_id": "ChIJK8pvbKO3j4ARsm7k_GXRY8U",
       "address": "1350 Grant Rd #8, Mountain View, CA 94040, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -2182,12 +2208,14 @@
       "engagement": 236,
       "city": "Mountain View",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:47.368Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3770484,
+      "lng": -122.0766669
     },
     {
       "id": "r036",
@@ -2214,7 +2242,7 @@
       "google_rating": 4.7,
       "google_place_id": "ChIJVV-QNBC1j4ARjQ8yQ1J10Ao",
       "address": "20950 Stevens Creek Blvd, Cupertino, CA 95014, USA",
-      "verified": false,
+      "verified": true,
       "recommendations_source": "none",
       "sentiment_score": 0.82,
       "sentiment_details": {
@@ -2240,12 +2268,14 @@
       "engagement": 227,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T08:00:48.161Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3226107,
+      "lng": -122.0405443
     },
     {
       "id": "r037",
@@ -2328,7 +2358,7 @@
       "google_rating": 4.4,
       "google_place_id": "ChIJVUQltaG1j4AR1P4csSC5AbQ",
       "address": "19620 Stevens Creek Blvd #150, Cupertino, CA 95014, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -2353,12 +2383,14 @@
       "engagement": 188,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:49.194Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.32246749999999,
+      "lng": -122.0168288
     },
     {
       "id": "r039",
@@ -2384,7 +2416,7 @@
       "google_rating": 3.9,
       "google_place_id": "ChIJL1S36ze1j4ARQHRz-5QBu1k",
       "address": "20956 Homestead Rd G, Cupertino, CA 95014, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -2410,12 +2442,14 @@
       "engagement": 188,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:49.932Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3369568,
+      "lng": -122.0403888
     },
     {
       "id": "r040",
@@ -2495,9 +2529,9 @@
         }
       ],
       "google_rating": 4.6,
-      "google_place_id": "ChIJS-AArV22j4AR1rJD3ENugCU",
-      "address": "190 S Murphy Ave, Sunnyvale, CA 94086, USA",
-      "verified": false,
+      "google_place_id": "ChIJk4ZSOq23j4ARA2ybDPJY9Cw",
+      "address": "736 N Mathilda Ave, Sunnyvale, CA 94085, USA",
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -2522,12 +2556,14 @@
       "engagement": 188,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:50.950Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3943264,
+      "lng": -122.0288109
     },
     {
       "id": "r042",
@@ -2609,7 +2645,7 @@
       "google_rating": 4.4,
       "google_place_id": "ChIJy-7zvVS3j4AR5plrODhDwJg",
       "address": "595 E El Camino Real, Sunnyvale, CA 94087, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -2634,12 +2670,14 @@
       "engagement": 188,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:52.177Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3628164,
+      "lng": -122.0254525
     },
     {
       "id": "r045",
@@ -2665,7 +2703,7 @@
       "google_rating": 4.6,
       "google_place_id": "ChIJZdB_jjw1joAR8aLAAUo9ENs",
       "address": "1887 S Bascom Ave, Campbell, CA 95008, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -2690,12 +2728,14 @@
       "engagement": 188,
       "city": "Campbell",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:52.898Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.2874077,
+      "lng": -121.9345297
     },
     {
       "id": "r046",
@@ -2721,7 +2761,7 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJcyE5hWHLj4ARsmYbYJ_RpRI",
       "address": "1516 N 4th St, San Jose, CA 95112, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -2745,12 +2785,14 @@
       "engagement": 188,
       "city": "San Jose",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:53.716Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3656611,
+      "lng": -121.9079129
     },
     {
       "id": "r047",
@@ -2784,7 +2826,7 @@
       "google_rating": 4.1,
       "google_place_id": "ChIJY1nuy3zJj4AR5oUkWDX1eRw",
       "address": "1750 N Milpitas Blvd, Milpitas, CA 95035, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.53,
       "sentiment_details": {
         "positive_mentions": 0,
@@ -2814,12 +2856,14 @@
       "engagement": 177,
       "city": "Milpitas",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:54.313Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.4559707,
+      "lng": -121.9100327
     },
     {
       "id": "r049",
@@ -2850,7 +2894,7 @@
       "google_rating": 4.4,
       "google_place_id": "ChIJ1z_-pS6-j4ARp-Hj9I8PjOM",
       "address": "34145 Fremont Blvd, Fremont, CA 94555, USA",
-      "verified": false,
+      "verified": true,
       "recommendations_source": "llm_extracted",
       "sentiment_score": 0.77,
       "sentiment_details": {
@@ -2875,12 +2919,14 @@
       "engagement": 165,
       "city": "Fremont",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:55.050Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.5753059,
+      "lng": -122.0441278
     },
     {
       "id": "r050",
@@ -2906,7 +2952,7 @@
       "google_rating": 4.6,
       "google_place_id": "ChIJBQpgwVh_j4ARocWBZnqOXEg",
       "address": "2170 Bryant St, San Francisco, CA 94110, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -2934,12 +2980,14 @@
       "engagement": 132,
       "city": "San Francisco",
       "region": "San Francisco",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:55.761Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.759599,
+      "lng": -122.4102473
     },
     {
       "id": "r051",
@@ -2965,7 +3013,7 @@
       "google_rating": 4.6,
       "google_place_id": "ChIJPfZ62tzHj4AR5ONOlIk3W5o",
       "address": "6004 Stevenson Blvd, Fremont, CA 94538, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -2996,12 +3044,14 @@
       "engagement": 131,
       "city": "Fremont",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:56.381Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.5194794,
+      "lng": -121.9891161
     },
     {
       "id": "r052",
@@ -3027,7 +3077,7 @@
       "google_rating": 3.9,
       "google_place_id": "ChIJPcAtyybJj4AR1n4po2iSI_o",
       "address": "278 Barber Ct, Milpitas, CA 95035, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.82,
       "sentiment_details": {
         "positive_mentions": 2,
@@ -3056,12 +3106,14 @@
       "engagement": 130,
       "city": "Milpitas",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:57.091Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.4237885,
+      "lng": -121.9178103
     },
     {
       "id": "r053",
@@ -3087,7 +3139,7 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJ1bP2GeK1j4ARt0ZQZTIT2Jg",
       "address": "10911 N Wolfe Rd, Cupertino, CA 95014, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.53,
       "sentiment_details": {
         "positive_mentions": 0,
@@ -3112,12 +3164,14 @@
       "engagement": 127,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:57.705Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3361975,
+      "lng": -122.0154086
     },
     {
       "id": "r054",
@@ -3143,7 +3197,7 @@
       "google_rating": 4.2,
       "google_place_id": "ChIJtRLy85ywj4AR38KYK7uJ0Yc",
       "address": "3691 El Camino Real, Palo Alto, CA 94306, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -3170,12 +3224,14 @@
       "engagement": 119,
       "city": "Palo Alto",
       "region": "Peninsula",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:58.455Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.4184801,
+      "lng": -122.1328666
     },
     {
       "id": "r055",
@@ -3201,7 +3257,7 @@
       "google_rating": 4.8,
       "google_place_id": "ChIJ03gdUpbLj4ARR2ZdjV8gte4",
       "address": "2855 Stevens Creek Blvd Suite 1840, Santa Clara, CA 95050, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -3226,12 +3282,14 @@
       "engagement": 119,
       "city": "Santa Clara",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:59.171Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3240683,
+      "lng": -121.946435
     },
     {
       "id": "r056",
@@ -3257,7 +3315,7 @@
       "google_rating": 4.5,
       "google_place_id": "ChIJ0eUdhi95hYARzm1xixjQzdM",
       "address": "917 San Pablo Ave, Albany, CA 94706, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -3289,12 +3347,14 @@
       "engagement": 111,
       "city": "Albany",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:00:59.860Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.8895871,
+      "lng": -122.2983939
     },
     {
       "id": "r057",
@@ -3320,7 +3380,7 @@
       "google_rating": 4.4,
       "google_place_id": "ChIJHfxEtLiAhYARDECAdLP2408",
       "address": "1826 Buchanan St, San Francisco, CA 94115, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -3347,12 +3407,14 @@
       "engagement": 111,
       "city": "San Francisco",
       "region": "San Francisco",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:00.777Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.7869423,
+      "lng": -122.4298429
     },
     {
       "id": "r058",
@@ -3378,7 +3440,7 @@
       "google_rating": 4.5,
       "google_place_id": "ChIJB5184GS_j4ARtwUtYG_Y4A8",
       "address": "6092 Mowry Ave, Newark, CA 94560, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -3406,12 +3468,14 @@
       "engagement": 85,
       "city": "Newark",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:01.353Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.52399,
+      "lng": -122.0080432
     },
     {
       "id": "r059",
@@ -3497,7 +3561,7 @@
       "google_rating": 4.5,
       "google_place_id": "ChIJv-HvlQfJj4ARfSMKPKYcqaY",
       "address": "3730 N First St, San Jose, CA 95134, USA",
-      "verified": false,
+      "verified": true,
       "recommendations_source": "llm_extracted",
       "sentiment_score": 0.5,
       "semantic_tags": {
@@ -3516,12 +3580,14 @@
       "engagement": 54,
       "city": "San Jose",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:02.316Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.4107092,
+      "lng": -121.9457713
     },
     {
       "id": "r061",
@@ -3547,7 +3613,7 @@
       "google_rating": 4.7,
       "google_place_id": "ChIJTbgNEJ_Hj4ARaca5Lgbmiq8",
       "address": "6080 Stevenson Blvd, Fremont, CA 94538, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -3574,12 +3640,14 @@
       "engagement": 54,
       "city": "Fremont",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:03.048Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.5182942,
+      "lng": -121.9899302
     },
     {
       "id": "r062",
@@ -3605,7 +3673,7 @@
       "google_rating": 4.4,
       "google_place_id": "ChIJW8-hyMjAj4AR67izitH8S0c",
       "address": "40575 Fremont Blvd, Fremont, CA 94538, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -3630,12 +3698,14 @@
       "engagement": 54,
       "city": "Fremont",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:03.737Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.5358639,
+      "lng": -121.9652861
     },
     {
       "id": "r063",
@@ -3662,7 +3732,7 @@
       "google_rating": 4.4,
       "google_place_id": "ChIJ17e8YR3Hj4ARyLTx-N0wzQY",
       "address": "43761 Boscell Rd #5125, Fremont, CA 94538, USA",
-      "verified": false,
+      "verified": true,
       "recommendations_source": "none",
       "sentiment_score": 0.77,
       "sentiment_details": {
@@ -3686,12 +3756,14 @@
       "engagement": 54,
       "city": "Fremont",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:04.401Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.5001427,
+      "lng": -121.9736139
     },
     {
       "id": "r064",
@@ -3718,7 +3790,7 @@
       "google_rating": 4.2,
       "google_place_id": "ChIJoYNRj07Jj4ARRaiu-Jmki_o",
       "address": "138 S Main St, Milpitas, CA 95035, USA",
-      "verified": false,
+      "verified": true,
       "recommendations_source": "none",
       "sentiment_score": 0.77,
       "sentiment_details": {
@@ -3742,12 +3814,14 @@
       "engagement": 54,
       "city": "Milpitas",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:05.080Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.42869990000001,
+      "lng": -121.9057336
     },
     {
       "id": "r065",
@@ -3770,10 +3844,10 @@
           "context": ""
         }
       ],
-      "google_rating": 4.3,
-      "google_place_id": "ChIJoWWGDQC3j4ARVtesBKYxi0M",
-      "address": "174 Castro St, Mountain View, CA 94041, USA",
-      "verified": false,
+      "google_rating": 4.8,
+      "google_place_id": "ChIJm7r-fwC3j4ARHBWUgHnO2Ec",
+      "address": "1040 Grant Rd STE 100, Mountain View, CA 94040, USA",
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -3801,12 +3875,14 @@
       "engagement": 43,
       "city": "Mountain View",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:05.905Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.37876019999999,
+      "lng": -122.0756505
     },
     {
       "id": "r066",
@@ -3815,11 +3891,12 @@
       "cuisine": "中餐",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": "412",
-      "mention_count": 3,
+      "total_engagement": "4128",
+      "mention_count": 4,
       "sources": [
         "690f77cf00000000050317bb",
-        "680d561a000000000f033dbc"
+        "680d561a000000000f033dbc",
+        "68f1b80b0000000004004859"
       ],
       "post_details": [
         {
@@ -3833,7 +3910,7 @@
       "google_rating": 4.1,
       "google_place_id": "ChIJFf37HL61j4AR2qKxTGxiB3Q",
       "address": "10885 N Wolfe Rd, Cupertino, CA 95014, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.79,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -3845,7 +3922,14 @@
         "冒农家小洋芋",
         "炒饭",
         "砂锅肉沫渣渣茄子",
-        "酸菜鱼"
+        "酸菜鱼",
+        "砂锅油泼酸菜黑鱼片",
+        "干锅牛三绝",
+        "火焰醉羊腩",
+        "红烧牛筋",
+        "砂锅香辣龙凤煲",
+        "砂锅回味鸡",
+        "羊杂汤"
       ],
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
@@ -3867,7 +3951,7 @@
       "engagement": 41,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-22T00:52:54.052Z",
+      "updated_at": "2026-02-22T08:01:06.583Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
@@ -3878,7 +3962,9 @@
           "mentions": 1,
           "engagement": "2"
         }
-      ]
+      ],
+      "lat": 37.3357389,
+      "lng": -122.0157583
     },
     {
       "id": "r067",
@@ -3963,7 +4049,7 @@
       "google_rating": 4.7,
       "google_place_id": "ChIJc6Z0xDW3j4ARO5-IXXyxxjI",
       "address": "150 W El Camino Real, Sunnyvale, CA 94087, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.65,
       "sentiment_details": {
         "positive_mentions": 0,
@@ -3991,12 +4077,14 @@
       "engagement": 37,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:07.577Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3676354,
+      "lng": -122.0335585
     },
     {
       "id": "r069",
@@ -4019,10 +4107,10 @@
           "context": ""
         }
       ],
-      "google_rating": 4.2,
-      "google_place_id": "ChIJiQ1O11e3j4AR1i6FgNv74LM",
-      "address": "1149 Lawrence Expy, Sunnyvale, CA 94089, USA",
-      "verified": false,
+      "google_rating": 4.1,
+      "google_place_id": "ChIJdzqA8My3j4ARTItxcnonDfs",
+      "address": "592 E El Camino Real, Sunnyvale, CA 94087, USA",
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -4053,12 +4141,14 @@
       "engagement": 35,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:08.234Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3611678,
+      "lng": -122.025989
     },
     {
       "id": "r070",
@@ -4086,10 +4176,10 @@
           "context": ""
         }
       ],
-      "google_rating": 4.9,
+      "google_rating": 4.8,
       "google_place_id": "ChIJIVDJCAyxj4ARF8por5EUnRg",
       "address": "108A N Rengstorff Ave, Mountain View, CA 94043, USA",
-      "verified": false,
+      "verified": true,
       "recommendations_source": "llm_extracted",
       "sentiment_score": 0.65,
       "sentiment_details": {
@@ -4114,12 +4204,14 @@
       "engagement": 28,
       "city": "Mountain View",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:08.983Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.4040234,
+      "lng": -122.0980138
     },
     {
       "id": "r071",
@@ -4128,10 +4220,11 @@
       "cuisine": "家常菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 25,
-      "mention_count": 2,
+      "total_engagement": "2515",
+      "mention_count": 3,
       "sources": [
-        "690cf26b000000000401123f"
+        "690cf26b000000000401123f",
+        "694a464a000000001f00ac7f"
       ],
       "post_details": [
         {
@@ -4142,17 +4235,20 @@
           "context": ""
         }
       ],
-      "google_rating": 4.4,
+      "google_rating": 4.3,
       "google_place_id": "ChIJrQlLTxu1j4ARlHgXrtOFG4c",
       "address": "19541 Richwood Dr, Cupertino, CA 95014, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
-      "recommendations": [],
+      "recommendations": [
+        "鱼汤",
+        "炖排骨"
+      ],
       "recommendations_source": "extracted",
       "semantic_tags": {
         "scenes": [
@@ -4172,12 +4268,14 @@
       "engagement": 25,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:09.731Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3219968,
+      "lng": -122.0148829
     },
     {
       "id": "r072",
@@ -4203,7 +4301,7 @@
       "google_rating": 4.6,
       "google_place_id": "ChIJn1gLvcK1j4ARQ-cQ0eqQclY",
       "address": "20588 Stevens Creek Blvd, Cupertino, CA 95014, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -4229,12 +4327,14 @@
       "engagement": 25,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:10.323Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3218464,
+      "lng": -122.0340007
     },
     {
       "id": "r073",
@@ -4260,7 +4360,7 @@
       "google_rating": 4.6,
       "google_place_id": "ChIJT1wDPC7Lj4AR4cYYhg5GlbA",
       "address": "2725 El Camino Real #101, Santa Clara, CA 95051, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -4285,12 +4385,14 @@
       "engagement": 25,
       "city": "Santa Clara",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:11.030Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3528141,
+      "lng": -121.9760456
     },
     {
       "id": "r074",
@@ -4313,10 +4415,10 @@
           "context": ""
         }
       ],
-      "google_rating": 4.6,
+      "google_rating": 4.5,
       "google_place_id": "ChIJvzO7pInJj4ARNiW1idUZ658",
       "address": "1741 N Milpitas Blvd, Milpitas, CA 95035, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -4341,12 +4443,14 @@
       "engagement": 25,
       "city": "Milpitas",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:11.637Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.4554472,
+      "lng": -121.9117963
     },
     {
       "id": "r075",
@@ -4355,12 +4459,19 @@
       "cuisine": "川菜",
       "area": "San Jose",
       "price_range": "",
-      "total_engagement": 25,
-      "mention_count": 2,
+      "total_engagement": "2510",
+      "mention_count": 3,
       "sources": [
-        "690cf26b000000000401123f"
+        "690cf26b000000000401123f",
+        "66221334000000000401809a"
       ],
-      "recommendations": [],
+      "recommendations": [
+        "蒜泥白肉",
+        "麻麻脆舌",
+        "回锅肉",
+        "大蒜烧牛筋",
+        "金桔青柠小紫苏"
+      ],
       "post_details": [
         {
           "post_id": "690cf26b000000000401123f",
@@ -4373,7 +4484,7 @@
       "google_rating": 4.1,
       "google_place_id": "ChIJceiBSg61j4ARPic_HgUjNC4",
       "address": "6154 Bollinger Rd, San Jose, CA 95129, USA",
-      "verified": false,
+      "verified": true,
       "recommendations_source": "none",
       "sentiment_score": 0.77,
       "sentiment_details": {
@@ -4398,12 +4509,14 @@
       "engagement": 25,
       "city": "San Jose",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:12.459Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3086802,
+      "lng": -122.012402
     },
     {
       "id": "r076",
@@ -4429,7 +4542,7 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJO79pfG7Kj4ARTnmoiEbJKEk",
       "address": "1066 Kiely Blvd, Santa Clara, CA 95051, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.53,
       "sentiment_details": {
         "positive_mentions": 0,
@@ -4457,12 +4570,14 @@
       "engagement": 2,
       "city": "Santa Clara",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:13.186Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3457881,
+      "lng": -121.9787694
     },
     {
       "id": "r079",
@@ -4824,13 +4939,17 @@
       "cuisine": "湘菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 91,
-      "mention_count": 2,
+      "total_engagement": "912",
+      "mention_count": 3,
       "sources": [
         "695482920000000021033da0"
       ],
       "recommendations": [
-        "盐菜扣肉"
+        "盐菜扣肉",
+        "长沙臭豆腐",
+        "毛血旺",
+        "干锅野生菌",
+        "攸县炒粉"
       ],
       "post_details": [
         {
@@ -4847,12 +4966,18 @@
       "engagement": 91,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T08:01:14.001Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "google_place_id": "ChIJVWa00YO1j4ARC7IHxI4bsQA",
+      "address": "10495 S De Anza Blvd STE# C, Cupertino, CA 95014, USA",
+      "google_rating": 3.7,
+      "verified": true,
+      "lat": 37.3160458,
+      "lng": -122.0327518
     },
     {
       "id": "pipeline_1771721574149_ew7z",
@@ -4863,10 +4988,10 @@
       "region": "unknown",
       "city": "San Jose",
       "price_range": "unknown",
-      "address": "",
-      "google_rating": null,
-      "google_place_id": null,
-      "verified": false,
+      "address": "6154 Bollinger Rd, San Jose, CA 95129, USA",
+      "google_rating": 4.1,
+      "google_place_id": "ChIJceiBSg61j4ARPic_HgUjNC4",
+      "verified": true,
       "total_engagement": "10",
       "mention_count": 1,
       "sentiment_score": 1,
@@ -4884,13 +5009,17 @@
       "post_details": [],
       "timeseries": [],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T00:52:54.149Z",
+      "updated_at": "2026-02-22T08:01:14.623Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "66221334000000000401809a",
         "needs_review": false
-      }
+      },
+      "lat": 37.3086802,
+      "lng": -122.012402,
+      "_status": "duplicate_merged",
+      "merged_into": "r075"
     },
     {
       "id": "pipeline_1771721574155_ngr2",
@@ -4901,10 +5030,10 @@
       "region": "unknown",
       "city": "Daly City",
       "price_range": "$95",
-      "address": "",
-      "google_rating": null,
-      "google_place_id": null,
-      "verified": false,
+      "address": "63 Serramonte Center, Daly City, CA 94015, USA",
+      "google_rating": 3.7,
+      "google_place_id": "ChIJc2rdBQB7j4ARvD7E5jvfwkE",
+      "verified": true,
       "total_engagement": "5",
       "mention_count": 1,
       "sentiment_score": 0.5,
@@ -4923,13 +5052,15 @@
       "post_details": [],
       "timeseries": [],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T00:52:54.155Z",
+      "updated_at": "2026-02-22T08:01:15.240Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "67e725b0000000001d01bdd3",
         "needs_review": false
-      }
+      },
+      "lat": 37.6720055,
+      "lng": -122.4691698
     },
     {
       "id": "pipeline_1771721574155_kumq",
@@ -5008,10 +5139,10 @@
       "region": "unknown",
       "city": "Santa Clara",
       "price_range": "unknown",
-      "address": "",
-      "google_rating": null,
-      "google_place_id": null,
-      "verified": false,
+      "address": "3581 Homestead Rd, Santa Clara, CA 95051, USA",
+      "google_rating": 4.4,
+      "google_place_id": "ChIJWzjAWoi1j4ARiRFnjdpgt3M",
+      "verified": true,
       "total_engagement": "11",
       "mention_count": 1,
       "sentiment_score": 1,
@@ -5031,13 +5162,15 @@
       "post_details": [],
       "timeseries": [],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T00:52:54.155Z",
+      "updated_at": "2026-02-22T08:01:16.642Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "68c36f98000000001d000419",
         "needs_review": false
-      }
+      },
+      "lat": 37.3384564,
+      "lng": -121.9950091
     },
     {
       "id": "pipeline_1771721574155_i57p",
@@ -5048,10 +5181,10 @@
       "region": "unknown",
       "city": "Cupertino",
       "price_range": "unknown",
-      "address": "",
-      "google_rating": null,
-      "google_place_id": null,
-      "verified": false,
+      "address": "10885 N Wolfe Rd, Cupertino, CA 95014, USA",
+      "google_rating": 4.1,
+      "google_place_id": "ChIJFf37HL61j4AR2qKxTGxiB3Q",
+      "verified": true,
       "total_engagement": "8",
       "mention_count": 1,
       "sentiment_score": 1,
@@ -5071,13 +5204,17 @@
       "post_details": [],
       "timeseries": [],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T00:52:54.155Z",
+      "updated_at": "2026-02-22T08:01:17.464Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "68f1b80b0000000004004859",
         "needs_review": false
-      }
+      },
+      "lat": 37.3357389,
+      "lng": -122.0157583,
+      "_status": "duplicate_merged",
+      "merged_into": "r066"
     },
     {
       "id": "pipeline_1771721574155_sfgc",
@@ -5088,10 +5225,10 @@
       "region": "unknown",
       "city": "SF",
       "price_range": "$30-50",
-      "address": "",
-      "google_rating": null,
-      "google_place_id": null,
-      "verified": false,
+      "address": "272 Claremont Blvd, San Francisco, CA 94127, USA",
+      "google_rating": 4.6,
+      "google_place_id": "ChIJLWA0dIt9j4AR3g3Oo_CocNc",
+      "verified": true,
       "total_engagement": "11",
       "mention_count": 1,
       "sentiment_score": 1,
@@ -5112,13 +5249,15 @@
       "post_details": [],
       "timeseries": [],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T00:52:54.155Z",
+      "updated_at": "2026-02-22T08:01:18.187Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "68fdccea000000000703850d",
         "needs_review": false
-      }
+      },
+      "lat": 37.7410872,
+      "lng": -122.4650679
     },
     {
       "id": "pipeline_1771721574155_1vgo",
@@ -5129,10 +5268,10 @@
       "region": "unknown",
       "city": "Fremont",
       "price_range": "unknown",
-      "address": "",
-      "google_rating": null,
-      "google_place_id": null,
-      "verified": false,
+      "address": "6016 Stevenson Blvd, Fremont, CA 94538, USA",
+      "google_rating": 4.3,
+      "google_place_id": "ChIJqSZ411THj4ARi6IlC4HNcbs",
+      "verified": true,
       "total_engagement": "42",
       "mention_count": 1,
       "sentiment_score": 1,
@@ -5148,13 +5287,15 @@
       "post_details": [],
       "timeseries": [],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T00:52:54.155Z",
+      "updated_at": "2026-02-22T08:01:18.890Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "694a0149000000001f007d63",
         "needs_review": false
-      }
+      },
+      "lat": 37.5193545,
+      "lng": -121.9897423
     },
     {
       "id": "pipeline_1771721574155_zwy6",
@@ -5165,10 +5306,10 @@
       "region": "unknown",
       "city": "Cupertino",
       "price_range": "unknown",
-      "address": "",
-      "google_rating": null,
-      "google_place_id": null,
-      "verified": false,
+      "address": "19541 Richwood Dr, Cupertino, CA 95014, USA",
+      "google_rating": 4.3,
+      "google_place_id": "ChIJrQlLTxu1j4ARlHgXrtOFG4c",
+      "verified": true,
       "total_engagement": "15",
       "mention_count": 1,
       "sentiment_score": 1,
@@ -5183,13 +5324,17 @@
       "post_details": [],
       "timeseries": [],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T00:52:54.155Z",
+      "updated_at": "2026-02-22T08:01:19.612Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "694a464a000000001f00ac7f",
         "needs_review": false
-      }
+      },
+      "lat": 37.3219968,
+      "lng": -122.0148829,
+      "_status": "duplicate_merged",
+      "merged_into": "r071"
     },
     {
       "id": "pipeline_1771721574155_rdfp",
@@ -5200,10 +5345,10 @@
       "region": "unknown",
       "city": "Cupertino",
       "price_range": "unknown",
-      "address": "",
-      "google_rating": null,
-      "google_place_id": null,
-      "verified": false,
+      "address": "10495 S De Anza Blvd STE# C, Cupertino, CA 95014, USA",
+      "google_rating": 3.7,
+      "google_place_id": "ChIJVWa00YO1j4ARC7IHxI4bsQA",
+      "verified": true,
       "total_engagement": "2",
       "mention_count": 1,
       "sentiment_score": 1,
@@ -5221,13 +5366,17 @@
       "post_details": [],
       "timeseries": [],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T00:52:54.155Z",
+      "updated_at": "2026-02-22T08:01:20.325Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "695482920000000021033da0",
         "needs_review": false
-      }
+      },
+      "lat": 37.3160458,
+      "lng": -122.0327518,
+      "_status": "duplicate_merged",
+      "merged_into": "r077"
     },
     {
       "id": "pipeline_1771721574155_bn8w",
@@ -5238,10 +5387,10 @@
       "region": "unknown",
       "city": "SF",
       "price_range": "$39",
-      "address": "",
-      "google_rating": null,
-      "google_place_id": null,
-      "verified": false,
+      "address": "1626 Taraval St, San Francisco, CA 94116, USA",
+      "google_rating": 5,
+      "google_place_id": "ChIJc1nmIQB9j4ARG17vnInodjE",
+      "verified": true,
       "total_engagement": "29",
       "mention_count": 1,
       "sentiment_score": 1,
@@ -5262,13 +5411,15 @@
       "post_details": [],
       "timeseries": [],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T00:52:54.155Z",
+      "updated_at": "2026-02-22T08:01:21.015Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
         "source_post": "69584c3d00000000220315ca",
         "needs_review": false
-      }
+      },
+      "lat": 37.7429316,
+      "lng": -122.4837625
     },
     {
       "id": "pipeline_1771721574155_0r9y",
@@ -5338,5 +5489,5 @@
       }
     }
   ],
-  "verified_at": "2026-02-22T07:50:58.018Z"
+  "verified_at": "2026-02-22T08:04:22.518Z"
 }
