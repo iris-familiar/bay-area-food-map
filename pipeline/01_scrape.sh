@@ -52,6 +52,29 @@ SEARCH_TERMS=(
     "湾区火锅推荐"
     "湾区宝藏餐厅"
     "南湾探店"
+    # Geographic expansion
+    "旧金山美食"
+    "旧金山中餐"
+    "东湾美食"
+    "Oakland美食"
+    "Berkeley美食"
+    "Daly City美食"
+    "San Jose美食"
+    "San Mateo美食"
+    "半岛美食"
+    # Cuisine diversification
+    "湾区粤菜"
+    "湾区日料推荐"
+    "湾区韩餐推荐"
+    "湾区越南菜"
+    "湾区港式茶餐厅"
+    "湾区早茶"
+    "南湾日料"
+    # Discovery angles
+    "湾区新开餐厅"
+    "湾区网红餐厅"
+    "硅谷美食探店"
+    "南湾必吃"
 )
 
 NEW_COUNT=0
@@ -136,12 +159,12 @@ except Exception:
             log "  ✅ Saved: $note_id"
         fi
 
-        # Anti-rate-limit delay: 3-7 seconds between posts
-        sleep $((RANDOM % 5 + 3))
+        # Anti-rate-limit delay: 2-4 seconds between posts
+        sleep $((RANDOM % 3 + 2))
     done <<< "$POSTS"
 
-    # 5-10 second delay between search terms
-    sleep $((RANDOM % 6 + 5))
+    # 3-6 second delay between search terms
+    sleep $((RANDOM % 4 + 3))
 done
 
 log "Done. New: ${NEW_COUNT} posts, Skipped (already had): ${SKIP_COUNT}"

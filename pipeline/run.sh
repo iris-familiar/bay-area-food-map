@@ -126,7 +126,7 @@ else
 
     # Step 3: LLM extraction
     if $SCRAPE_OK && [ "${POSTS_COUNT}" -gt 0 ]; then
-        log "Step 3: LLM extraction (Gemini)..."
+        log "Step 3: LLM extraction (GLM-5)..."
         if node "${SCRIPT_DIR}/02_extract_llm.js" "$RAW_DIR" "$CANDIDATES_FILE" \
                2>&1 | while IFS= read -r line; do log "  $line"; done; then
             CANDIDATE_COUNT=$(node -e "try{const a=require('${CANDIDATES_FILE}'); console.log(a.length)}catch(e){console.log(0)}")
