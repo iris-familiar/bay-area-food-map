@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
  * 02_extract_llm.js — LLM-based restaurant extraction from XHS posts
- * Uses Kimi K2 (Moonshot AI) to extract restaurants, cuisine, dishes from each post.
+ * Uses GLM-5 (智谱AI) to extract restaurants, cuisine, dishes from each post.
  *
  * Usage: node pipeline/02_extract_llm.js <raw_dir> <output_file>
  *
  * Output: JSON array of restaurant candidates with enriched fields
- * Requires: KIMI_API_KEY in environment or .env
+ * Requires: GLM_API_KEY in environment or .env
  */
 
 'use strict';
@@ -24,19 +24,18 @@ if (!rawDir || !outputFile) {
     process.exit(1);
 }
 
-const KIMI_API_KEY = process.env.KIMI_API_KEY;
-if (!KIMI_API_KEY) {
-    console.error('❌ KIMI_API_KEY not set. Check .env file.');
+const GLM_API_KEY = process.env.GLM_API_KEY;
+if (!GLM_API_KEY) {
+    console.error('❌ GLM_API_KEY not set. Check .env file.');
     process.exit(1);
 }
 
-const KIMI_MODEL = 'kimi-for-coding';
-const KIMI_URL = 'https://api.kimi.com/coding/v1/chat/completions';
+const GLM_MODEL = process.env.GLM_MODEL || 'glm-5';
 
 // Only process posts from today to avoid re-processing old data
 // MAX_POSTS env var overrides for testing (e.g. MAX_POSTS=10 in e2e)
-const MAX_POSTS_PER_RUN = parseInt(process.env.MAX_POSTS || '30', 10);
-const DELAY_MS = 500; // 500ms between API calls
+const MAX_POSTS_PER_RUN = parseInt(process.env.MAX_POSTS || '100', 10);
+const DELAY_MS = 200; // 200ms between API calls
 
 // ─── Bay Area validation ────────────────────────────────────────────────────
 const BAY_AREA_SIGNALS = [
@@ -52,8 +51,8 @@ function isBayAreaPost(text) {
     return BAY_AREA_SIGNALS.some(s => text.includes(s));
 }
 
-// ─── Kimi API call (OpenAI-compatible) ──────────────────────────────────────
-function kimiExtract(postText) {
+// ─── GLM API call (OpenAI-compatible) ──────────────────────────────────────
+function glmExtract(postText) {
     return new Promise((resolve, reject) => {
         const prompt = `You are a data extraction assistant. Extract restaurant information from this XiaoHongShu (小红书) post about food in the San Francisco Bay Area.
 
@@ -79,22 +78,20 @@ Rules:
 - dishes should be specific dish names mentioned in the post, not generic terms`;
 
         const body = JSON.stringify({
-            model: KIMI_MODEL,
+            model: GLM_MODEL,
             messages: [{ role: 'user', content: prompt }],
-            response_format: { type: 'json_object' },
             max_tokens: 1024,
             temperature: 0.1,
         });
 
         const options = {
             method: 'POST',
-            hostname: 'api.kimi.com',
-            path: '/coding/v1/chat/completions',
+            hostname: 'open.bigmodel.cn',
+            path: '/api/coding/paas/v4/chat/completions',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${KIMI_API_KEY}`,
+                'Authorization': `Bearer ${GLM_API_KEY}`,
                 'Content-Length': Buffer.byteLength(body),
-                'User-Agent': 'KimiCLI/1.3',
             },
         };
 
@@ -108,7 +105,16 @@ Rules:
                         reject(new Error(response.error.message));
                         return;
                     }
-                    const text = response.choices?.[0]?.message?.content || '{"restaurants":[]}';
+                    let text = response.choices?.[0]?.message?.content || '';
+
+                    if (!text) {
+                        resolve([]);
+                        return;
+                    }
+
+                    // Strip markdown code blocks if present (GLM wraps JSON in ```json ... ```)
+                    text = text.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim();
+
                     const extracted = JSON.parse(text);
                     resolve(extracted.restaurants || []);
                 } catch (e) {
@@ -118,7 +124,7 @@ Rules:
         });
 
         req.on('error', reject);
-        req.setTimeout(30000, () => { req.destroy(); reject(new Error('timeout')); });
+        req.setTimeout(60000, () => { req.destroy(); reject(new Error('timeout')); });
         req.write(body);
         req.end();
     });
@@ -146,7 +152,7 @@ async function main() {
         return;
     }
 
-    console.log(`Processing ${files.length} posts with Kimi LLM (${KIMI_MODEL})...`);
+    console.log(`Processing ${files.length} posts with GLM-5 (${GLM_MODEL})...`);
 
     const allCandidates = [];
     let processed = 0;
@@ -175,7 +181,7 @@ async function main() {
         }
 
         try {
-            const restaurants = await kimiExtract(fullText);
+            const restaurants = await glmExtract(fullText);
 
             for (const r of restaurants) {
                 if (!r.name || r.name.length < 2) continue;
@@ -191,7 +197,7 @@ async function main() {
                     source_title: title.slice(0, 80),
                     engagement: (post.interactInfo || {}).commentCount || 0,
                     extracted_at: new Date().toISOString(),
-                    extraction_method: 'kimi-llm',
+                    extraction_method: 'glm-5',
                 });
             }
 

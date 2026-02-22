@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```bash
 node dev.js                        # Local dev server → http://localhost:8080 (also serves /review.html)
 npm test                           # Run verify.js (22+ checks, <10s, no deps)
-npm run test:e2e                   # Full e2e integration test (real XHS + Kimi; ~15 min)
+npm run test:e2e                   # Full e2e integration test (real XHS + GLM-5; ~15 min)
 E2E_QUICK=1 node tests/e2e.js     # Quick e2e: skip scrape, use baked-in sample post (~2 min)
 npm run pipeline                   # Full daily pipeline run
 npm run pipeline:dry               # Dry-run: skip scraping, just verify + corrections
@@ -29,7 +29,7 @@ cd ~/.agents/skills/xiaohongshu/scripts && ./status.sh
 ### Data Flow
 ```
 XHS posts → 01_scrape.sh → data/raw/YYYY-MM-DD/post_*.json
-          → 02_extract_llm.js (Kimi K2.5) → data/candidates/YYYY-MM-DD.json
+          → 02_extract_llm.js (GLM-5) → data/candidates/YYYY-MM-DD.json
           → 03_update_metrics.js (updates engagement/trend for existing restaurants)
           → 04_merge.js (append-only, never deletes) → data/restaurant_database.json
           → scripts/apply_corrections.js (applies data/corrections.json)
@@ -61,7 +61,7 @@ All orchestrated by `pipeline/run.sh`. Each step is independent and can be run a
 - `config.sh` — all paths and env vars; sourced by pipeline scripts (no hardcoded paths in shell scripts)
 
 ### API Keys (in `.env`, gitignored)
-- `KIMI_API_KEY` — required for `02_extract_llm.js` (Kimi K2.5 LLM extraction)
+- `GLM_API_KEY` — required for `02_extract_llm.js` (GLM-5 LLM extraction)
 - `GOOGLE_PLACES_API_KEY` — required for `pipeline/enrich_google.js`
 
 ### New Restaurant Lifecycle
