@@ -1,7 +1,7 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-20T04:07:56.864Z",
-  "total_restaurants": 79,
+  "updated_at": "2026-02-22T00:52:54.155Z",
+  "total_restaurants": 92,
   "restaurants": [
     {
       "id": "r001",
@@ -86,17 +86,23 @@
         "芭蕉叶包烧鱼",
         "小炒黄牛肉",
         "贵州米锅巴",
-        "石杵茄子"
+        "石杵茄子",
+        "贵州臭虾酸小炒黄牛肉",
+        "木姜子野菌酸汤肥牛",
+        "椒盐百香炸鹌鹑",
+        "大理微醺甜奶酒",
+        "云南玫瑰普洱拿铁"
       ],
       "cuisine": "融合菜",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 4366,
-      "mention_count": 6,
+      "total_engagement": "43668",
+      "mention_count": 7,
       "sources": [
         "67ba7dae00000000290119d8",
         "690cf26b000000000401123f",
-        "6945a4d1000000000d00c3d4"
+        "6945a4d1000000000d00c3d4",
+        "69671260000000000c037773"
       ],
       "post_details": [
         {
@@ -125,7 +131,7 @@
       "google_place_id": "ChIJU-cplT3Jj4AR0luFIENzyRo",
       "address": "290 Barber Ct, Milpitas, CA 95035, USA",
       "verified": false,
-      "sentiment_score": 0.91,
+      "sentiment_score": 0.92,
       "sentiment_details": {
         "positive_mentions": 6,
         "negative_mentions": 0,
@@ -148,12 +154,18 @@
       "engagement": 4366,
       "city": "Milpitas",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T00:52:54.052Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": "8"
+        }
+      ]
     },
     {
       "id": "r003",
@@ -3779,10 +3791,11 @@
       "cuisine": "中餐",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 41,
-      "mention_count": 2,
+      "total_engagement": "412",
+      "mention_count": 3,
       "sources": [
-        "690f77cf00000000050317bb"
+        "690f77cf00000000050317bb",
+        "680d561a000000000f033dbc"
       ],
       "post_details": [
         {
@@ -3797,14 +3810,18 @@
       "google_place_id": "ChIJFf37HL61j4AR2qKxTGxiB3Q",
       "address": "10885 N Wolfe Rd, Cupertino, CA 95014, USA",
       "verified": false,
-      "sentiment_score": 0.77,
+      "sentiment_score": 0.79,
       "sentiment_details": {
         "positive_mentions": 1,
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
       "recommendations": [
-        "水煮牛肉"
+        "水煮牛肉",
+        "冒农家小洋芋",
+        "炒饭",
+        "砂锅肉沫渣渣茄子",
+        "酸菜鱼"
       ],
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
@@ -3826,12 +3843,18 @@
       "engagement": 41,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T00:52:54.052Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": "2"
+        }
+      ]
     },
     {
       "id": "r067",
@@ -4806,7 +4829,490 @@
         "source_count": 2
       },
       "timeseries": []
+    },
+    {
+      "id": "pipeline_1771721574149_ew7z",
+      "name": "香小馆 Shang Cafe",
+      "name_en": "",
+      "cuisine": "川菜",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "San Jose",
+      "price_range": "unknown",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "10",
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "蒜泥白肉",
+        "麻麻脆舌",
+        "回锅肉",
+        "大蒜烧牛筋",
+        "金桔青柠小紫苏"
+      ],
+      "sources": [
+        "66221334000000000401809a"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.149Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "66221334000000000401809a",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_ngr2",
+      "name": "Pogu",
+      "name_en": "",
+      "cuisine": "韩餐",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Daly City",
+      "price_range": "$95",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "5",
+      "mention_count": 1,
+      "sentiment_score": 0.5,
+      "sentiment_details": {},
+      "recommendations": [
+        "南瓜汤",
+        "生鱼沙拉",
+        "buckwheat chicken",
+        "short rib",
+        "豆奶蛋糕",
+        "Mackerel"
+      ],
+      "sources": [
+        "67e725b0000000001d01bdd3"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "67e725b0000000001d01bdd3",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_kumq",
+      "name": "Happy Lemon",
+      "name_en": "",
+      "cuisine": "奶茶",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Mountain View",
+      "price_range": "unknown",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "39",
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [],
+      "sources": [
+        "68765310000000002203d09d"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "68765310000000002203d09d",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_mwci",
+      "name": "Le Moose Crepe Cafe",
+      "name_en": "",
+      "cuisine": "泰法融合",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Fremont",
+      "price_range": "unknown",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "14",
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "软壳蟹蒜香面 Crab Meat Noodle",
+        "椰子烩海鲜 Coco De Sea",
+        "芒果糯米饭 Mango Paradise"
+      ],
+      "sources": [
+        "68c0d540000000001c03c788"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "68c0d540000000001c03c788",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_raib",
+      "name": "川鲁人家",
+      "name_en": "",
+      "cuisine": "川菜",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Santa Clara",
+      "price_range": "unknown",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "11",
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "羊蝎子火锅",
+        "冒烧鸭",
+        "腊肉炒饭",
+        "八宝饭",
+        "麻婆豆腐",
+        "清炒莴笋",
+        "夫妻肺片"
+      ],
+      "sources": [
+        "68c36f98000000001d000419"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "68c36f98000000001d000419",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_i57p",
+      "name": "青苹��",
+      "name_en": "",
+      "cuisine": "川菜",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Cupertino",
+      "price_range": "unknown",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "8",
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "砂锅油泼酸菜黑鱼片",
+        "干锅牛三绝",
+        "火焰醉羊腩",
+        "红烧牛筋",
+        "砂锅香辣龙凤煲",
+        "砂锅回味鸡",
+        "羊杂汤"
+      ],
+      "sources": [
+        "68f1b80b0000000004004859"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "68f1b80b0000000004004859",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_sfgc",
+      "name": "Khao Tiew",
+      "name_en": "",
+      "cuisine": "泰餐",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "SF",
+      "price_range": "$30-50",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "11",
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "Pad Kra Pao 猪肉打抛饭",
+        "Pad Thai 泰式炒面",
+        "油菜",
+        "Tom Yum Hotpot 冬阴功海鲜锅",
+        "Duck Panang Curry 咖喱鸭肉",
+        "Beef Don with Egg 牛肉生蛋饭",
+        "Tom Yum Chicken Soup 冬阴功鸡肉汤",
+        "Burnt Butter Kaya Toast"
+      ],
+      "sources": [
+        "68fdccea000000000703850d"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "68fdccea000000000703850d",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_1vgo",
+      "name": "阿拉上海",
+      "name_en": "",
+      "cuisine": "上海菜",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Fremont",
+      "price_range": "unknown",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "42",
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "蟹黄拌面",
+        "生煎包",
+        "毛蟹年糕"
+      ],
+      "sources": [
+        "694a0149000000001f007d63"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "694a0149000000001f007d63",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_zwy6",
+      "name": "外婆家常菜 Grandma's Kitchen",
+      "name_en": "",
+      "cuisine": "中原菜",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Cupertino",
+      "price_range": "unknown",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "15",
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "鱼汤",
+        "炖排骨"
+      ],
+      "sources": [
+        "694a464a000000001f00ac7f"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "694a464a000000001f00ac7f",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_rdfp",
+      "name": "眷湘 Easterly Cupertino",
+      "name_en": "",
+      "cuisine": "湘菜",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Cupertino",
+      "price_range": "unknown",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "2",
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "盐菜扣肉",
+        "长沙臭豆腐",
+        "毛血旺",
+        "干锅野生菌",
+        "攸县炒粉"
+      ],
+      "sources": [
+        "695482920000000021033da0"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "695482920000000021033da0",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_bn8w",
+      "name": "Hotpot Bay",
+      "name_en": "",
+      "cuisine": "火锅",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "SF",
+      "price_range": "$39",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "29",
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "木姜子红酸汤底",
+        "和牛Chuck Rib",
+        "鱼籽虾滑",
+        "和牛肩胛肉",
+        "牛舌",
+        "老虎虾",
+        "椰子冻",
+        "水果冰粉"
+      ],
+      "sources": [
+        "69584c3d00000000220315ca"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "69584c3d00000000220315ca",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_0r9y",
+      "name": "海底捞",
+      "name_en": "",
+      "cuisine": "火锅",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "unknown",
+      "price_range": "unknown",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": "47",
+      "mention_count": 1,
+      "sentiment_score": 0.5,
+      "sentiment_details": {},
+      "recommendations": [],
+      "sources": [
+        "6965c214000000001a0261f5"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "6965c214000000001a0261f5",
+        "needs_review": true
+      }
+    },
+    {
+      "id": "pipeline_1771721574155_8bkd",
+      "name": "Arwa Yemeni Coffee",
+      "name_en": "",
+      "cuisine": "也门咖啡",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Sunnyvale",
+      "price_range": "unknown",
+      "address": "",
+      "google_rating": null,
+      "google_place_id": null,
+      "verified": false,
+      "total_engagement": 0,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "开心果拿铁",
+        "yemani latte"
+      ],
+      "sources": [
+        "6981750a000000000e03db3a"
+      ],
+      "post_details": [],
+      "timeseries": [],
+      "semantic_tags": [],
+      "updated_at": "2026-02-22T00:52:54.155Z",
+      "merge_info": {
+        "added_date": "2026-02-22",
+        "source": "daily_pipeline",
+        "source_post": "6981750a000000000e03db3a",
+        "needs_review": true
+      }
     }
   ],
-  "verified_at": "2026-02-21T21:54:13.093Z"
+  "verified_at": "2026-02-22T00:52:54.288Z"
 }

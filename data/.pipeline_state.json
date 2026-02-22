@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-02-21T21:54:13Z",
-  "last_scrape_at": "2026-02-21T21:54:13Z",
+  "last_run": "2026-02-22T00:52:54Z",
+  "last_scrape_at": "2026-02-22T00:52:54Z",
   "status": "success",
-  "restaurants_total": 79,
-  "restaurants_added": 0,
+  "restaurants_total": 92,
+  "restaurants_added": 13,
   "restaurants_metrics_updated": 0,
-  "posts_scraped": 0,
+  "posts_scraped": 179,
   "scrape_ok": true,
-  "dry_run": true
+  "dry_run": false
 }
