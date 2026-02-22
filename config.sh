@@ -2,6 +2,9 @@
 # Bay Area Food Map — Project Configuration
 # Source this file in all pipeline scripts: source "$(dirname "$0")/../config.sh"
 
+# Fix cron PATH — cron has minimal environment, ensure homebrew/node are available
+export PATH="/opt/homebrew/bin:${PATH}"
+
 export PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export DB_FILE="${PROJECT_ROOT}/data/restaurant_database.json"
 export DB_INDEX_FILE="${PROJECT_ROOT}/data/restaurant_database_index.json"

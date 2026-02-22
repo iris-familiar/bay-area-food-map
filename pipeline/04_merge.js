@@ -100,6 +100,23 @@ for (const candidate of candidates) {
             }
         }
 
+        // Add post detail if not tracked
+        if (candidate.source_post_id) {
+            if (!Array.isArray(r.post_details)) r.post_details = [];
+            if (!r.post_details.find(p => p.post_id === candidate.source_post_id)) {
+                r.post_details.push({
+                    post_id: candidate.source_post_id,
+                    title: candidate.source_title || '',
+                    date: candidate.source_post_date || '',
+                    engagement: candidate.engagement || 0,
+                    context: ''
+                });
+                // Keep top 10 by engagement
+                r.post_details.sort((a, b) => (b.engagement || 0) - (a.engagement || 0));
+                r.post_details = r.post_details.slice(0, 10);
+            }
+        }
+
         // Update timeseries (monthly engagement tracking)
         if (!Array.isArray(r.timeseries)) r.timeseries = [];
         const monthEntry = r.timeseries.find(e => e.month === thisMonth);
@@ -171,7 +188,13 @@ for (const candidate of candidates) {
             sentiment_details: {},
             recommendations: Array.isArray(candidate.dishes) ? candidate.dishes : [],
             sources: [candidate.source_post_id].filter(Boolean),
-            post_details: [],
+            post_details: candidate.source_post_id ? [{
+                post_id: candidate.source_post_id,
+                title: candidate.source_title || '',
+                date: candidate.source_post_date || '',
+                engagement: candidate.engagement || 0,
+                context: ''
+            }] : [],
             timeseries: [{ month: thisMonth, mentions: 1, engagement: candidate.engagement || 0 }],
             semantic_tags: [],
             updated_at: new Date().toISOString(),

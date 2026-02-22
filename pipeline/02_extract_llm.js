@@ -186,6 +186,12 @@ async function main() {
             for (const r of restaurants) {
                 if (!r.name || r.name.length < 2) continue;
 
+                // Convert post.time (milliseconds) to YYYY-MM-DD
+                let postDate = '';
+                if (post.time) {
+                    postDate = new Date(post.time).toISOString().split('T')[0];
+                }
+
                 allCandidates.push({
                     name: r.name.trim(),
                     city: r.city || 'unknown',
@@ -195,6 +201,7 @@ async function main() {
                     sentiment: r.sentiment || 'neutral',
                     source_post_id: post.id || post.noteId || post.note_id || '',
                     source_title: title.slice(0, 80),
+                    source_post_date: postDate,
                     engagement: (post.interactInfo || {}).commentCount || 0,
                     extracted_at: new Date().toISOString(),
                     extraction_method: 'glm-5',
