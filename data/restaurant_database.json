@@ -1,6 +1,6 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-22T00:52:54.155Z",
+  "updated_at": "2026-02-22T06:53:46.945Z",
   "total_restaurants": 92,
   "restaurants": [
     {
@@ -44,7 +44,7 @@
       "google_rating": 4.2,
       "google_place_id": "ChIJWd-3X_vHj4AR0jnzkNsb6cc",
       "address": "2090 Warm Springs Ct Ste 140, Fremont, CA 94539, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.86,
       "sentiment_details": {
         "positive_mentions": 3,
@@ -69,12 +69,14 @@
       "engagement": 4241,
       "city": "Fremont",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.972Z",
+      "updated_at": "2026-02-22T06:42:48.665Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.496743,
+      "lng": -121.9359852
     },
     {
       "id": "r002",
@@ -130,7 +132,7 @@
       "google_rating": 4.6,
       "google_place_id": "ChIJU-cplT3Jj4AR0luFIENzyRo",
       "address": "290 Barber Ct, Milpitas, CA 95035, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.92,
       "sentiment_details": {
         "positive_mentions": 6,
@@ -154,7 +156,7 @@
       "engagement": 4366,
       "city": "Milpitas",
       "region": "South Bay",
-      "updated_at": "2026-02-22T00:52:54.052Z",
+      "updated_at": "2026-02-22T06:03:27.651Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
@@ -165,7 +167,9 @@
           "mentions": 1,
           "engagement": "8"
         }
-      ]
+      ],
+      "lat": 37.4236648,
+      "lng": -121.9174102
     },
     {
       "id": "r003",
@@ -213,7 +217,7 @@
       "google_rating": 3.9,
       "google_place_id": "ChIJTSfQ_8G_j4ARvhPDPCzAMfQ",
       "address": "34420 Fremont Blvd, Fremont, CA 94555, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.88,
       "sentiment_details": {
         "positive_mentions": 4,
@@ -238,12 +242,14 @@
       "engagement": 1316,
       "city": "Fremont",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T06:53:44.562Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.5756031,
+      "lng": -122.0397982
     },
     {
       "id": "r004",
@@ -335,7 +341,7 @@
       "google_rating": 3.9,
       "google_place_id": "ChIJDZcPCQDHj4AR2sQAHC-5qIw",
       "address": "43773 Boscell Rd, Fremont, CA 94538, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -361,12 +367,14 @@
       "engagement": 1036,
       "city": "Fremont",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T06:43:12.766Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.5000454,
+      "lng": -121.9735123
     },
     {
       "id": "r006",
@@ -407,7 +415,7 @@
       "google_rating": 4.2,
       "google_place_id": "ChIJxzsoIkm3j4ARqtD6u0eBbo0",
       "address": "673 Grape Ave, Sunnyvale, CA 94087, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -433,12 +441,14 @@
       "engagement": 896,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T06:43:13.639Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3719916,
+      "lng": -122.0534541
     },
     {
       "id": "r007",
@@ -485,7 +495,7 @@
       "google_rating": 4.4,
       "google_place_id": "ChIJl41rEWC1j4AR9m5ndL7k-Js",
       "address": "5152 Moorpark Ave #30, San Jose, CA 95129, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.86,
       "sentiment_details": {
         "positive_mentions": 3,
@@ -511,12 +521,14 @@
       "engagement": 812,
       "city": "San Jose",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T06:43:14.309Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3089165,
+      "lng": -121.993827
     },
     {
       "id": "r008",
@@ -633,7 +645,7 @@
       "google_rating": 4.5,
       "google_place_id": "ChIJ0yu2Ej3Hj4ARG_JQrPLgxVw",
       "address": "46825 Warm Springs Blvd, Fremont, CA 94539, USA",
-      "verified": false,
+      "verified": true,
       "recommendations_source": "none",
       "sentiment_score": 0.65,
       "sentiment_details": {
@@ -656,12 +668,14 @@
       "engagement": 693,
       "city": "Fremont",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T06:53:45.632Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.4888808,
+      "lng": -121.9293115
     },
     {
       "id": "r010",
@@ -710,7 +724,7 @@
       "google_rating": 4.1,
       "google_place_id": "ChIJK1UUIAC1j4ARjzCttTx11Rw",
       "address": "1661 Hollenbeck Ave, Sunnyvale, CA 94087, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.82,
       "sentiment_details": {
         "positive_mentions": 2,
@@ -740,12 +754,14 @@
       "engagement": 638,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-22T06:53:46.411Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3389803,
+      "lng": -122.0425815
     },
     {
       "id": "r012",
@@ -910,7 +926,7 @@
       "google_rating": 3.7,
       "google_place_id": "ChIJIWqwT_23j4ARpJOoVOF-ZTc",
       "address": "251 W Washington Ave, Sunnyvale, CA 94086, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.82,
       "sentiment_details": {
         "positive_mentions": 2,
@@ -944,12 +960,14 @@
       "engagement": 522,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T06:49:33.240Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3764759,
+      "lng": -122.0319023
     },
     {
       "id": "r015",
@@ -975,7 +993,7 @@
       "google_rating": 4.6,
       "google_place_id": "ChIJlX_wgTbHj4ARbw4v3jGhX04",
       "address": "46997 Warm Springs Blvd, Fremont, CA 94539, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1007,12 +1025,14 @@
       "engagement": 507,
       "city": "Fremont",
       "region": "East Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T06:49:33.860Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.4873677,
+      "lng": -121.928655
     },
     {
       "id": "r016",
@@ -1054,7 +1074,7 @@
       "google_rating": 4.6,
       "google_place_id": "ChIJRWU8M_a3j4ARt7n30Cdnxhs",
       "address": "122 S Sunnyvale Ave, Sunnyvale, CA 94086, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.82,
       "sentiment_details": {
         "positive_mentions": 2,
@@ -1083,12 +1103,14 @@
       "engagement": 755,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T06:49:34.541Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.3766525,
+      "lng": -122.0287799
     },
     {
       "id": "r017",
@@ -1122,7 +1144,7 @@
       "google_rating": 4.7,
       "google_place_id": "ChIJ1WPQ6a7Jj4ARFntIIXcWLUY",
       "address": "438 Barber Ln, Milpitas, CA 95035, USA",
-      "verified": false,
+      "verified": true,
       "sentiment_score": 0.77,
       "sentiment_details": {
         "positive_mentions": 1,
@@ -1148,12 +1170,14 @@
       "engagement": 383,
       "city": "Milpitas",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-22T06:49:35.158Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "lat": 37.4220608,
+      "lng": -121.9176281
     },
     {
       "id": "r018",
@@ -5314,5 +5338,5 @@
       }
     }
   ],
-  "verified_at": "2026-02-22T05:44:00.933Z"
+  "verified_at": "2026-02-22T07:32:32.406Z"
 }
