@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-node dev.js                        # Local dev server → http://localhost:8080
+node dev.js                        # Local dev server → http://localhost:8080 (also serves /review.html)
 npm test                           # Run verify.js (22+ checks, <10s, no deps)
 npm run test:e2e                   # Full e2e integration test (real XHS + Kimi; ~15 min)
 E2E_QUICK=1 node tests/e2e.js     # Quick e2e: skip scrape, use baked-in sample post (~2 min)
@@ -34,7 +34,7 @@ XHS posts → 01_scrape.sh → data/raw/YYYY-MM-DD/post_*.json
           → 04_merge.js (append-only, never deletes) → data/restaurant_database.json
           → scripts/apply_corrections.js (applies data/corrections.json)
           → 05_verify.js (integrity check, auto-restores backup on failure)
-          → 06_generate_index.js → data/restaurant_database_index.json (slim 33KB)
+          → 06_generate_index.js → data/restaurant_database_index.json (slim ~50KB)
           → 07_commit.sh (auto git commit if data changed)
 ```
 
@@ -46,6 +46,12 @@ All orchestrated by `pipeline/run.sh`. Each step is independent and can be run a
 - `src/styles.css` — all styles (loaded via `<link rel="stylesheet">`)
 - On load: fetches slim `restaurant_database_index.json` first, lazy-loads full DB on demand
 - Reads `data/.pipeline_state.json` to display "last updated" timestamp in the header
+
+### Review UI (local dev only)
+- `review.html` + `src/review.js` — browser-based data review at `http://localhost:8080/review.html`
+- Pending tab: approve/reject restaurants that have `merge_info.needs_review: true`; edits applied before approval are written to `corrections.json`
+- Approved tab: searchable list with inline editing; saves to both `restaurant_database.json` and `corrections.json`
+- `dev.js` exposes write API routes (`POST /api/approve/:id`, `/api/reject/:id`, `/api/correct/:id`) that regenerate the index after each mutation
 
 ### Key Files
 - `data/restaurant_database.json` — source of truth (git-tracked)

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         allRestaurants = (data.restaurants || []).filter(
-            r => !r._status || r._status !== 'duplicate_merged'
+            r => r._status !== 'duplicate_merged' && r._status !== 'rejected'
         );
         filteredRestaurants = [...allRestaurants];
 

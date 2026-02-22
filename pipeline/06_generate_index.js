@@ -33,7 +33,7 @@ const CARD_FIELDS = [
 ];
 
 const slimRestaurants = db.restaurants
-    .filter(r => !r.merge_info?.needs_review) // Exclude unreviewed
+    .filter(r => !r.merge_info?.needs_review && r._status !== 'rejected') // Exclude unreviewed and rejected
     .map(r => {
         const slim = {};
         for (const field of CARD_FIELDS) {
