@@ -64,6 +64,18 @@ All orchestrated by `pipeline/run.sh`. Each step is independent and can be run a
 - `KIMI_API_KEY` — required for `02_extract_llm.js` (Kimi K2.5 LLM extraction)
 - `GOOGLE_PLACES_API_KEY` — required for `pipeline/enrich_google.js`
 
+### New Restaurant Lifecycle
+
+New restaurants from the pipeline have `needs_review: true` and no Google data. Full workflow:
+
+1. **Review** in browser (`/review.html`) — approve or reject
+2. **Enrich** Google data: `node pipeline/enrich_google.js --limit 20`
+   - Filters on `!r.verified || !r.google_place_id` — independent of `needs_review`
+   - Can run before or after approval; order doesn't matter
+3. **Commit**: `npm run pipeline:dry`
+
+Approvals without edits only clear `needs_review` in the DB (nothing written to `corrections.json`). This is safe under normal pipeline runs since `04_merge.js` never modifies existing restaurants. Only a backup restore would lose an edit-free approval.
+
 ### Data Integrity Patterns
 - Auto-backup before every run; 7-day TTL; `05_verify.js` auto-restores if integrity fails
 - `data/corrections.json` corrections are re-applied every run — edits here always win
