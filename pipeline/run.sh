@@ -140,14 +140,27 @@ else
         echo "[]" > "$CANDIDATES_FILE"
     fi
 
-    # Step 4: Update metrics for existing restaurants
-    log "Step 4: Updating metrics for existing restaurants..."
-    node "${SCRIPT_DIR}/03_update_metrics.js" "$DB_FILE" "$CANDIDATES_FILE" \
-        2>&1 | while IFS= read -r line; do log "  $line"; done || true
+    # Step 4: Enrich candidates with Google Places
+    if [ -f "$CANDIDATES_FILE" ]; then
+        CANDIDATE_COUNT=$(node -e "try{const a=require('${CANDIDATES_FILE}'); console.log(a.length)}catch(e){console.log(0)}")
+        if [ "${CANDIDATE_COUNT}" -gt 0 ]; then
+            log "Step 4: Enriching candidates with Google Places..."
+            node "${SCRIPT_DIR}/03_enrich_candidates.js" "$CANDIDATES_FILE" \
+                2>&1 | while IFS= read -r line; do log "  $line"; done || true
+        else
+            log "Step 4: No candidates to enrich"
+        fi
+    fi
+
+    # Step 5: Merge candidates by Google Place ID
+    log "Step 5: Merging candidates by Google Place ID..."
+    node "${SCRIPT_DIR}/04_merge.js" "$DB_FILE" "$CANDIDATES_FILE" "$DB_FILE" \
+        2>&1 | while IFS= read -r line; do log "  $line"; done
+
+    # Count updated restaurants (those with today's timeseries entry)
     METRICS_UPDATED=$(node -e "
         try {
             const state = require('${DB_FILE}');
-            // Rough proxy: count restaurants updated today
             const today = '$(date +%Y-%m-%d)';
             const thisMonth = today.slice(0, 7);
             const n = state.restaurants.filter(r =>
@@ -157,24 +170,10 @@ else
             console.log(n);
         } catch(e) { console.log(0); }
     " 2>/dev/null || echo 0)
-
-    # Step 5: Merge new restaurants
-    log "Step 5: Merging new restaurants..."
-    node "${SCRIPT_DIR}/04_merge.js" "$DB_FILE" "$CANDIDATES_FILE" "$DB_FILE" \
-        2>&1 | while IFS= read -r line; do log "  $line"; done
 fi
 
-# Step 6: Apply manual corrections (always)
-log "Step 6: Applying corrections..."
-if [ -f "$CORRECTIONS_FILE" ]; then
-    node "${PROJECT_DIR}/scripts/apply_corrections.js" \
-        2>&1 | while IFS= read -r line; do log "  $line"; done || true
-else
-    log "  No corrections.json, skipping"
-fi
-
-# Step 7: Verify integrity (auto-restore on failure)
-log "Step 7: Verifying integrity..."
+# Step 6: Verify integrity (auto-restore on failure)
+log "Step 6: Verifying integrity..."
 if node "${SCRIPT_DIR}/05_verify.js" "$DB_FILE" "$BEFORE" "$BACKUP" \
        2>&1 | while IFS= read -r line; do log "  $line"; done; then
     log "✅ Verification passed"
@@ -188,12 +187,12 @@ else
     exit 1
 fi
 
-# Step 8: Generate slim frontend index
-log "Step 8: Generating frontend index..."
+# Step 7: Generate slim frontend index
+log "Step 7: Generating frontend index..."
 node "${SCRIPT_DIR}/06_generate_index.js" "$DB_FILE" "$DB_INDEX_FILE" \
     2>&1 | while IFS= read -r line; do log "  $line"; done
 
-# Step 9: Cleanup old backups (keep 7 days)
+# Step 8: Cleanup old backups (keep 7 days)
 find "$BACKUPS_DIR" -name "restaurant_database_*.json" -mtime +7 -delete 2>/dev/null || true
 
 # ─── Summary ──────────────────────────────────────────────────────────────────
@@ -202,8 +201,8 @@ ADDED=$((AFTER - BEFORE))
 
 write_state "success" "$ADDED" "${METRICS_UPDATED:-0}" "${POSTS_COUNT:-0}" "$SCRAPE_OK"
 
-# Step 10: Auto git commit data changes
-log "Step 10: Committing data changes..."
+# Step 9: Auto git commit data changes
+log "Step 9: Committing data changes..."
 bash "${SCRIPT_DIR}/07_commit.sh" "$BEFORE" "$AFTER" 2>&1 
 
 log "════════════════════════════════════════"

@@ -1,7 +1,7 @@
 # 湾区美食地图 — Engineering Roadmap
 
-> Last updated: 2026-02-21 (v4 — P3 complete + e2e test + Kimi LLM)
-> Status: Pipeline fully operational. Full e2e integration test. LLM switched to Kimi K2.5.
+> Last updated: 2026-02-22 (v5 — Pipeline redesigned with Google Place ID matching)
+> Status: Pipeline fully operational. Google enrichment integrated. No more manual review required.
 
 ---
 
@@ -149,15 +149,14 @@ Frontend now reads this and displays "更新于 X月Y日 HH:MM" in the header su
 
 ---
 
-## Current Pipeline (as of 2026-02-19)
+## Current Pipeline (as of 2026-02-22)
 
 ```
 run.sh (cron entry)
   ├── 01_scrape.sh          → data/raw/YYYY-MM-DD/post_*.json  (XHS MCP)
-  ├── 02_extract_llm.js     → data/candidates/YYYY-MM-DD.json  (Kimi LLM)
-  ├── 03_update_metrics.js  → IN-PLACE: update metrics for existing restaurants
-  ├── 04_merge.js           → data/restaurant_database.json    (append-only)
-  ├── scripts/apply_corrections.js → apply data/corrections.json
+  ├── 02_extract_llm.js     → data/candidates/YYYY-MM-DD.json  (GLM-5 LLM)
+  ├── 03_enrich_candidates.js → enrich candidates with Google Places data
+  ├── 04_merge.js           → data/restaurant_database.json    (merge by place_id)
   ├── 05_verify.js          → integrity check, auto-restore on fail
   ├── 06_generate_index.js  → data/restaurant_database_index.json (slim, 74% smaller)
   ├── write .pipeline_state.json
@@ -194,14 +193,14 @@ bay-area-food-map/
 ├── pipeline/
 │   ├── run.sh                    # Orchestrator — cron calls this
 │   ├── 01_scrape.sh              # XHS MCP → data/raw/YYYY-MM-DD/
-│   ├── 02_extract_llm.js         # Kimi LLM → data/candidates/YYYY-MM-DD.json
-│   ├── 03_update_metrics.js      # Update engagement/trend for existing restaurants
-│   ├── 04_merge.js               # Append-only merge into restaurant_database.json
+│   ├── 02_extract_llm.js         # GLM-5 LLM → data/candidates/YYYY-MM-DD.json
+│   ├── 03_enrich_candidates.js   # Google Places enrichment for candidates
+│   ├── 04_merge.js               # Merge by place_id into restaurant_database.json
 │   ├── 05_verify.js              # Integrity check + auto-restore
 │   └── 06_generate_index.js      # Regenerate slim index
 │
 ├── scripts/
-│   ├── apply_corrections.js      # Apply data/corrections.json (called by run.sh)
+│   ├── apply_corrections.js      # Manual use only — apply data/corrections.json
 │   └── transaction.js            # Atomic write + rollback helper
 │
 └── tests/
@@ -238,24 +237,46 @@ bay-area-food-map/
 
 ---
 
+### ✅ P5 — DONE (2026-02-22)
+
+#### 17. Pipeline Redesign with Google Place ID Matching ✅
+**Implemented:** Complete pipeline redesign to use Google Place ID as the unique identifier for deduplication.
+
+**Changes:**
+- **NEW:** `pipeline/03_enrich_candidates.js` — Enriches LLM candidates with Google Places data before merging
+- **MODIFIED:** `pipeline/04_merge.js` — Now uses `google_place_id` for matching instead of name-based matching
+  - Updates existing restaurants when place_id matches (metrics, engagement, dishes)
+  - Adds new restaurants with `verified: true`, `needs_review: false`
+- **DELETED:** `pipeline/03_update_metrics.js` — Functionality absorbed into new merge script
+- **REMOVED:** `apply_corrections.js` step from pipeline (kept for manual use only)
+
+**Benefits:**
+- No more duplicates from bilingual name variations (e.g., "香小馆 Shang Cafe" vs "香小馆")
+- No manual review required — all merged restaurants are Google-verified
+- CJK-aware matching: trusts Google's top result if city matches
+- Non-CJK matching: requires ≥40% name similarity
+
+**Cost:** ~$0.017 per candidate (Text Search + Place Details)
+
+---
+
 ## What NOT to Build (Anti-patterns)
 
 - **No backend API** — The data is static enough that a JSON file served by nginx is simpler and faster than an API server. Add an API only when you need user-generated content or real-time data.
 - **No database (SQLite/Postgres)** — 79–500 restaurants in a JSON file is fast, auditable, and versionable with git. A database adds operational overhead without benefit at this scale.
 - **No React/Vue/etc** — The app is a filtered list with modals. Vanilla JS handles this fine. A framework would require a build step, CI, and ongoing dependency updates.
 - **No Docker** — This runs on a single Mac. Docker adds complexity without benefit here.
-- **No microservices** — Same reasoning. The pipeline is a simple sequential bash script.
 
 ---
 
 ## Next Session: Where to Start
 
-P0–P4 are done. The pipeline is fully operational with a real e2e test. Potential next improvements:
+P0–P5 are done. The pipeline is fully operational with Google Place ID-based deduplication. Potential next improvements:
 
-1. **Increase scrape yield** — current scrape saves ~23-30 posts in 600s; could tune search terms or parallelize
-2. **Kimi timeout resilience** — some Kimi calls hit the 30s per-call timeout; could add retry logic
-3. **More Bay Area content** — only ~1 candidate extracted per e2e run; tuning search terms or expanding BAY_AREA_SIGNALS may help
-4. **Review backlog** — any restaurants with `needs_review: true` are invisible in the UI until reviewed via `pipeline/review.js`
+1. **Backfill existing unverified restaurants** — Run `node pipeline/enrich_google.js --all` to add Google data to the remaining unverified restaurants
+2. **Clean up duplicates** — The database may have duplicates from old name-based matching (香小馆, 眷湘, 外婆家常菜) — use `/review.html` to mark as `duplicate_merged`
+3. **Increase scrape yield** — current scrape saves ~23-30 posts in 600s; could tune search terms or parallelize
+4. **More Bay Area content** — tune search terms or expand BAY_AREA_SIGNALS
 
 ---
 

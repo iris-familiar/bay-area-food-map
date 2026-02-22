@@ -14,8 +14,9 @@ npm run pipeline:dry               # Dry-run: skip scraping, just verify + corre
 
 # Pipeline steps individually (all idempotent):
 node pipeline/02_extract_llm.js data/raw/YYYY-MM-DD/ data/candidates/YYYY-MM-DD.json
+node pipeline/03_enrich_candidates.js data/candidates/YYYY-MM-DD.json  # Google Places enrichment
 node pipeline/04_merge.js data/restaurant_database.json data/candidates/YYYY-MM-DD.json data/restaurant_database.json
-node pipeline/enrich_google.js --limit 20   # Google Places enrichment (~$0.017/restaurant)
+node pipeline/enrich_google.js --limit 20   # Enrich existing unverified restaurants (~$0.017/restaurant)
 node pipeline/review.js                      # Interactive candidate review CLI
 node pipeline/review.js --auto-approve       # CI mode (no interaction)
 
@@ -30,9 +31,8 @@ cd ~/.agents/skills/xiaohongshu/scripts && ./status.sh
 ```
 XHS posts → 01_scrape.sh → data/raw/YYYY-MM-DD/post_*.json
           → 02_extract_llm.js (GLM-5) → data/candidates/YYYY-MM-DD.json
-          → 03_update_metrics.js (updates engagement/trend for existing restaurants)
-          → 04_merge.js (append-only, never deletes) → data/restaurant_database.json
-          → scripts/apply_corrections.js (applies data/corrections.json)
+          → 03_enrich_candidates.js (Google Places enrichment)
+          → 04_merge.js (merge by place_id) → data/restaurant_database.json
           → 05_verify.js (integrity check, auto-restores backup on failure)
           → 06_generate_index.js → data/restaurant_database_index.json (slim ~50KB)
           → 07_commit.sh (auto git commit if data changed)
@@ -62,25 +62,26 @@ All orchestrated by `pipeline/run.sh`. Each step is independent and can be run a
 
 ### API Keys (in `.env`, gitignored)
 - `GLM_API_KEY` — required for `02_extract_llm.js` (GLM-5 LLM extraction)
-- `GOOGLE_PLACES_API_KEY` — required for `pipeline/enrich_google.js`
+- `GOOGLE_PLACES_API_KEY` — required for `03_enrich_candidates.js` (Google Places enrichment)
 
 ### New Restaurant Lifecycle
 
-New restaurants from the pipeline have `needs_review: true` and no Google data. Full workflow:
+New restaurants are Google-enriched during the pipeline and enter the database with `verified: true` and `needs_review: false`. No manual review is required.
 
-1. **Review** in browser (`/review.html`) — approve or reject
-2. **Enrich** Google data: `node pipeline/enrich_google.js --limit 20`
-   - Filters on `!r.verified || !r.google_place_id` — independent of `needs_review`
-   - Can run before or after approval; order doesn't matter
-3. **Commit**: `npm run pipeline:dry`
+**Manual corrections** (if needed):
+1. Edit via `/review.html` browser UI
+2. Changes save to both `restaurant_database.json` and `corrections.json`
+3. Run `npm run pipeline:dry` to regenerate the index
 
-Approvals without edits only clear `needs_review` in the DB (nothing written to `corrections.json`). This is safe under normal pipeline runs since `04_merge.js` never modifies existing restaurants. Only a backup restore would lose an edit-free approval.
+**Enriching existing unverified restaurants:**
+- Run `node pipeline/enrich_google.js --limit 20` to add Google data to restaurants that predate the new pipeline
+- Filters on `!r.verified || !r.google_place_id`
 
 ### Data Integrity Patterns
 - Auto-backup before every run; 7-day TTL; `05_verify.js` auto-restores if integrity fails
-- `data/corrections.json` corrections are re-applied every run — edits here always win
-- New restaurants from the pipeline enter with `merge_info.needs_review: true`
-- `scripts/transaction.js` provides atomic write + rollback for `apply_corrections.js`
+- Candidates that fail Google enrichment are skipped (only verified restaurants enter the database)
+- New restaurants have `merge_info.needs_review: false` (no review needed)
+- `scripts/transaction.js` provides atomic write + rollback for manual corrections
 
 ### Cron Entry
 ```

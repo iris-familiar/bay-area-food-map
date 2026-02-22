@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 /**
- * pipeline/enrich_google.js — Google Places enrichment for unverified restaurants
+ * pipeline/03_enrich_candidates.js — Google Places enrichment for LLM candidates
  *
- * For each restaurant without a confirmed Google Places match, searches the
- * Places API (Text Search), picks the best match by name similarity, and
- * populates: google_place_id, address, google_rating, lat/lng, verified=true
+ * For each candidate extracted from XHS posts, searches Google Places API
+ * and enriches with: google_place_id, address, google_rating, lat/lng, verified=true
+ *
+ * Candidates that fail enrichment are marked with enrichment_failed=true and
+ * will be skipped during the merge step.
  *
  * Usage:
- *   node pipeline/enrich_google.js                # Enrich up to 10 unverified
- *   node pipeline/enrich_google.js --limit 50     # Enrich up to 50
- *   node pipeline/enrich_google.js --all          # Enrich all unverified
- *   node pipeline/enrich_google.js --dry-run      # Show what would be enriched
+ *   node pipeline/03_enrich_candidates.js <candidates_file>
+ *   node pipeline/03_enrich_candidates.js data/candidates/2026-02-21.json
  *
  * Requires: GOOGLE_PLACES_API_KEY in environment or .env
  * Cost: ~$0.017 per restaurant (1 Text Search + 1 Place Details call)
@@ -34,15 +34,13 @@ if (fs.existsSync(envPath)) {
 }
 
 // ─── Config ──────────────────────────────────────────────────────────────────
-const ROOT    = path.join(__dirname, '..');
-const DB_FILE = path.join(ROOT, 'data', 'restaurant_database.json');
-
 const args     = process.argv.slice(2);
-const DRY_RUN  = args.includes('--dry-run');
-const ALL      = args.includes('--all');
-const limitArg = args.find(a => a.startsWith('--limit='))?.split('=')[1]
-              ?? (args[args.indexOf('--limit') + 1]);
-const LIMIT    = ALL ? Infinity : parseInt(limitArg || '10', 10);
+const CANDIDATES_FILE = args[0];
+
+if (!CANDIDATES_FILE) {
+    console.error('Usage: node 03_enrich_candidates.js <candidates_file>');
+    process.exit(1);
+}
 
 const API_KEY  = process.env.GOOGLE_PLACES_API_KEY;
 if (!API_KEY) {
@@ -101,22 +99,22 @@ function addressInCity(address, city) {
 // ─── Google Places API ────────────────────────────────────────────────────────
 const PLACES_BASE = 'https://maps.googleapis.com/maps/api/place';
 
-async function searchPlace(restaurant) {
+async function searchPlace(candidate) {
     const query = encodeURIComponent(
-        `${restaurant.name} restaurant ${restaurant.city || 'Bay Area'} California`
+        `${candidate.name} restaurant ${candidate.city || 'Bay Area'} California`
     );
     const url = `${PLACES_BASE}/textsearch/json?query=${query}&type=restaurant&key=${API_KEY}`;
     const data = await httpsGet(url);
 
     if (data.status !== 'OK' || !data.results?.length) return null;
 
-    const isCJK = hasCJK(restaurant.name);
-    const results = data.results.map(r => ({ ...r, score: similarity(restaurant.name, r.name) }));
+    const isCJK = hasCJK(candidate.name);
+    const results = data.results.map(r => ({ ...r, score: similarity(candidate.name, r.name) }));
 
     // For CJK names: trust Google's top result if it's in the same city
-    if (isCJK && restaurant.city) {
+    if (isCJK && candidate.city) {
         const top = results[0];
-        if (addressInCity(top.formatted_address, restaurant.city)) {
+        if (addressInCity(top.formatted_address, candidate.city)) {
             return top;
         }
     }
@@ -126,7 +124,7 @@ async function searchPlace(restaurant) {
 
     // Require at least 40% name similarity to avoid false positives
     if (best.score < 0.4) {
-        console.log(`  ⚠️  Low confidence match for "${restaurant.name}": "${best.name}" (${(best.score*100).toFixed(0)}%)`);
+        console.log(`  ⚠️  Low confidence match for "${candidate.name}": "${best.name}" (${(best.score*100).toFixed(0)}%)`);
         return null;
     }
 
@@ -142,68 +140,92 @@ async function getPlaceDetails(placeId) {
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 async function main() {
-    const db = JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
-
-    const unverified = db.restaurants.filter(r =>
-        !r.verified
-        || !r.google_place_id
-        || r.google_place_id === 'placeholder'
-        || r.google_place_id === ''
-    );
-
-    const targets = unverified.slice(0, LIMIT);
-    console.log(`Enriching ${targets.length} of ${unverified.length} unverified restaurants`);
-    if (DRY_RUN) {
-        targets.forEach(r => console.log(`  Would enrich: ${r.name} (${r.city})`));
-        return;
+    let candidates = [];
+    try {
+        candidates = JSON.parse(fs.readFileSync(CANDIDATES_FILE, 'utf8'));
+    } catch (e) {
+        console.log('No candidates file or empty. Nothing to enrich.');
+        process.exit(0);
     }
+
+    if (!Array.isArray(candidates) || candidates.length === 0) {
+        console.log('No candidates to enrich.');
+        process.exit(0);
+    }
+
+    console.log(`Enriching ${candidates.length} candidates with Google Places data`);
 
     let enriched = 0;
     let failed   = 0;
+    let skipped  = 0;
 
-    for (const r of targets) {
-        process.stdout.write(`  ${r.name} (${r.city})... `);
+    for (const candidate of candidates) {
+        // Skip if already enriched (idempotency)
+        if (candidate.google_place_id && candidate.verified) {
+            skipped++;
+            continue;
+        }
+
+        // Skip if name is too short/long
+        if (!candidate.name || candidate.name.length < 2 || candidate.name.length > 30) {
+            candidate.enrichment_failed = true;
+            candidate.enrichment_reason = 'invalid_name';
+            skipped++;
+            continue;
+        }
+
+        process.stdout.write(`  ${candidate.name} (${candidate.city || 'unknown'})... `);
 
         try {
-            const result = await searchPlace(r);
-            if (!result) { console.log('no match'); failed++; continue; }
+            const result = await searchPlace(candidate);
+            if (!result) {
+                console.log('no match');
+                candidate.enrichment_failed = true;
+                candidate.enrichment_reason = 'no_match';
+                failed++;
+                await sleep(DELAY_MS);
+                continue;
+            }
 
             const details = await getPlaceDetails(result.place_id);
-            if (!details) { console.log('details failed'); failed++; continue; }
-
-            // Update restaurant record
-            r.google_place_id = details.place_id;
-            r.address         = details.formatted_address || r.address;
-            r.google_rating   = details.rating ?? r.google_rating;
-            r.verified        = true;
-            r.updated_at      = new Date().toISOString();
-            if (details.geometry?.location) {
-                r.lat = details.geometry.location.lat;
-                r.lng = details.geometry.location.lng;
+            if (!details) {
+                console.log('details failed');
+                candidate.enrichment_failed = true;
+                candidate.enrichment_reason = 'details_failed';
+                failed++;
+                await sleep(DELAY_MS);
+                continue;
             }
+
+            // Enrich candidate with Google data
+            candidate.google_place_id = details.place_id;
+            candidate.address         = details.formatted_address || candidate.address;
+            candidate.google_rating   = details.rating ?? null;
+            candidate.verified        = true;
+            if (details.geometry?.location) {
+                candidate.lat = details.geometry.location.lat;
+                candidate.lng = details.geometry.location.lng;
+            }
+
+            // Clear any previous failure markers
+            delete candidate.enrichment_failed;
+            delete candidate.enrichment_reason;
 
             console.log(`✅ ${details.name} | ⭐ ${details.rating || '-'} | ${details.formatted_address?.split(',')[0]}`);
             enriched++;
         } catch (e) {
             console.log(`error: ${e.message}`);
+            candidate.enrichment_failed = true;
+            candidate.enrichment_reason = `error: ${e.message}`;
             failed++;
         }
 
         await sleep(DELAY_MS);
     }
 
-    // Save if any enriched
-    if (enriched > 0) {
-        db.updated_at = new Date().toISOString();
-        fs.writeFileSync(DB_FILE, JSON.stringify(db, null, 2));
-        console.log(`\n✅ Enriched ${enriched} restaurants, ${failed} failed`);
-        console.log('Regenerating index...');
-        const { execSync } = require('child_process');
-        const indexPath = path.join(ROOT, 'data', 'restaurant_database_index.json');
-        execSync(`node "${path.join(__dirname, '06_generate_index.js')}" "${DB_FILE}" "${indexPath}"`, { stdio: 'inherit' });
-    } else {
-        console.log(`\nNo changes. ${failed} failed.`);
-    }
+    // Save enriched candidates back to file
+    fs.writeFileSync(CANDIDATES_FILE, JSON.stringify(candidates, null, 2));
+    console.log(`\n✅ Enriched ${enriched} candidates, ${failed} failed, ${skipped} skipped`);
 }
 
 main().catch(e => { console.error('Fatal:', e); process.exit(1); });

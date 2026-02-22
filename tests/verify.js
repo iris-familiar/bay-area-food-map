@@ -101,7 +101,7 @@ const REQUIRED_FILES = [
     'pipeline/run.sh',
     'pipeline/01_scrape.sh',
     'pipeline/02_extract_llm.js',
-    'pipeline/03_update_metrics.js',
+    'pipeline/03_enrich_candidates.js',
     'pipeline/04_merge.js',
     'pipeline/05_verify.js',
     'pipeline/06_generate_index.js',
