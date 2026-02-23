@@ -171,6 +171,50 @@ async function main() {
             const details = await getPlaceDetails(result.place_id);
             if (!details) { console.log('details failed'); failed++; continue; }
 
+            // Check if this place_id already exists in another restaurant
+            const existingWithSamePlaceId = db.restaurants.find(other =>
+                other.id !== r.id &&
+                other.google_place_id === details.place_id &&
+                other._status !== 'duplicate_merged'
+            );
+
+            if (existingWithSamePlaceId) {
+                console.log(`⚠️  Duplicate: ${r.name} → already exists as ${existingWithSamePlaceId.name}`);
+
+                // Merge this restaurant INTO the existing one
+                existingWithSamePlaceId.total_engagement = (existingWithSamePlaceId.total_engagement || 0) + (r.total_engagement || 0);
+                existingWithSamePlaceId.mention_count = (existingWithSamePlaceId.mention_count || 0) + (r.mention_count || 0);
+
+                if (r.sources) {
+                    if (!existingWithSamePlaceId.sources) existingWithSamePlaceId.sources = [];
+                    for (const s of r.sources) {
+                        if (!existingWithSamePlaceId.sources.includes(s)) existingWithSamePlaceId.sources.push(s);
+                    }
+                }
+
+                if (r.recommendations) {
+                    if (!existingWithSamePlaceId.recommendations) existingWithSamePlaceId.recommendations = [];
+                    const existing = new Set(existingWithSamePlaceId.recommendations.map(d =>
+                        typeof d === 'string' ? d.toLowerCase() : (d.name || d.dish || '').toLowerCase()
+                    ));
+                    for (const dish of r.recommendations) {
+                        const key = typeof dish === 'string' ? dish.toLowerCase() : (dish.name || dish.dish || '').toLowerCase();
+                        if (!existing.has(key)) {
+                            existingWithSamePlaceId.recommendations.push(dish);
+                            existing.add(key);
+                        }
+                    }
+                }
+
+                // Mark this one as merged
+                r._status = 'duplicate_merged';
+                r.merged_into = existingWithSamePlaceId.id;
+                enriched++; // Count as processed successfully
+
+                await sleep(DELAY_MS);
+                continue;
+            }
+
             // Update restaurant record
             r.google_place_id = details.place_id;
             r.address         = details.formatted_address || r.address;

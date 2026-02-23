@@ -82,6 +82,8 @@ New restaurants are Google-enriched during the pipeline and enter the database w
 - Candidates that fail Google enrichment are skipped (only verified restaurants enter the database)
 - New restaurants have `merge_info.needs_review: false` (no review needed)
 - `scripts/transaction.js` provides atomic write + rollback for manual corrections
+- **Duplicate prevention**: `enrich_google.js` checks for existing restaurants with the same `google_place_id` before assigning; merges engagement/sources/recommendations if found, marks duplicate as `_status: 'duplicate_merged'`
+- Index generator excludes `duplicate_merged` entries from `restaurant_database_index.json`
 
 ### Cron Entry
 ```
