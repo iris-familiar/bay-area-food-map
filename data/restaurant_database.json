@@ -1,6 +1,6 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-22T23:20:40.420Z",
+  "updated_at": "2026-02-23T03:54:45.451Z",
   "total_restaurants": 92,
   "restaurants": [
     {
@@ -16,7 +16,7 @@
       "cuisine": "湘菜",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 4241,
+      "total_engagement": 4252,
       "mention_count": 4,
       "sources": [
         "693e02ff000000001e038ae4",
@@ -112,7 +112,7 @@
       "cuisine": "融合菜",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 4366,
+      "total_engagement": 4374,
       "mention_count": 7,
       "sources": [
         "67ba7dae00000000290119d8",
@@ -3912,7 +3912,7 @@
       "cuisine": "中餐",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 4144,
+      "total_engagement": 51,
       "mention_count": 6,
       "sources": [
         "690f77cf00000000050317bb",
@@ -4255,7 +4255,7 @@
       "cuisine": "家常菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 2545,
+      "total_engagement": 40,
       "mention_count": 5,
       "sources": [
         "690cf26b000000000401123f",
@@ -4501,7 +4501,7 @@
       "cuisine": "川菜",
       "area": "San Jose",
       "price_range": "",
-      "total_engagement": 2530,
+      "total_engagement": 35,
       "mention_count": 5,
       "sources": [
         "690cf26b000000000401123f",
@@ -4988,7 +4988,7 @@
       "cuisine": "湘菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 95,
+      "total_engagement": 91,
       "mention_count": 5,
       "sources": [
         "695482920000000021033da0"
@@ -5642,5 +5642,5 @@
       }
     }
   ],
-  "verified_at": "2026-02-23T02:46:07.424Z"
+  "verified_at": "2026-02-23T03:54:51.494Z"
 }
