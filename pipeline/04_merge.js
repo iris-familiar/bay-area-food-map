@@ -88,9 +88,16 @@ for (const candidate of candidates) {
         // ─── UPDATE existing restaurant ────────────────────────────────────────
         const r = db.restaurants[existingIdx];
 
-        // Update mention count & engagement
-        r.mention_count = (r.mention_count || 0) + 1;
-        r.total_engagement = (r.total_engagement || 0) + (candidate.engagement || 0);
+        // Check if this source post is new (to avoid double-counting)
+        const isNewSource = candidate.source_post_id && (
+            !Array.isArray(r.sources) || !r.sources.includes(candidate.source_post_id)
+        );
+
+        // Only update metrics if this is a new source post
+        if (isNewSource) {
+            r.mention_count = (r.mention_count || 0) + 1;
+            r.total_engagement = (r.total_engagement || 0) + (candidate.engagement || 0);
+        }
 
         // Add source post if not already tracked
         if (candidate.source_post_id) {
