@@ -9,6 +9,12 @@ let currentSort = 'engagement';
 // ─── Data loading ─────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', async () => {
+    // Initialize pill filter listeners
+    initPillFilters();
+
+    // Initialize modal swipe gesture
+    initModalGesture();
+
     try {
         const v = '?v=' + Date.now();
 
@@ -49,13 +55,45 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         } catch (e) { /* non-critical */ }
 
-        document.getElementById('loading').classList.add('hidden');
-        document.getElementById('content').classList.remove('hidden');
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
     } catch (e) {
         console.error('Load error:', e);
         alert('加载失败: ' + e.message + '\n请按F12查看控制台详细错误');
     }
 });
+
+// ─── Pill Filters ─────────────────────────────────────────────────────────────
+
+function initPillFilters() {
+    document.querySelectorAll('.filter-pills').forEach(group => {
+        group.querySelectorAll('.pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                // Update active state
+                group.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+
+                // Apply filter
+                const filterType = group.dataset.filter;
+                const value = pill.dataset.value;
+
+                if (filterType === 'sort') {
+                    applySort(value);
+                } else {
+                    applyFilter(filterType, value);
+                }
+            });
+        });
+    });
+}
+
+function updatePillActive(group, value) {
+    const pills = document.querySelector(`#${group}-pills`);
+    if (!pills) return;
+    pills.querySelectorAll('.pill').forEach(p => {
+        p.classList.toggle('active', p.dataset.value === value);
+    });
+}
 
 // ─── Filtering & sorting ──────────────────────────────────────────────────────
 
@@ -72,9 +110,12 @@ function applySort(value) {
 function clearFilters() {
     currentFilters = { cuisine: 'all', region: 'all' };
     currentSort = 'engagement';
-    document.getElementById('cuisine-filter').value = 'all';
-    document.getElementById('region-filter').value = 'all';
-    document.getElementById('sort-filter').value = 'engagement';
+
+    // Reset all pills
+    updatePillActive('cuisine', 'all');
+    updatePillActive('region', 'all');
+    updatePillActive('sort', 'engagement');
+
     document.getElementById('search-input').value = '';
     filterAndRender();
 }
@@ -114,38 +155,44 @@ function renderRestaurants() {
     const grid = document.getElementById('restaurant-grid');
 
     if (filteredRestaurants.length === 0) {
-        grid.innerHTML = '<p class="text-center text-gray-500 py-8">没有找到匹配的餐厅</p>';
+        grid.innerHTML = `
+            <div class="empty-state" style="grid-column: 1 / -1;">
+                <div class="empty-icon"><i class="fas fa-utensils"></i></div>
+                <p class="empty-text">没有找到匹配的餐厅</p>
+            </div>`;
         return;
     }
 
     grid.innerHTML = filteredRestaurants.map(r => {
-        const chips = (r.recommendations || []).slice(0, 3)
-            .map(rec => `<span class="recommendation-chip">${rec}</span>`).join('');
-        const extra = r.recommendations && r.recommendations.length > 3
-            ? `<span class="recommendation-chip bg-blue-50 text-blue-600">+${r.recommendations.length - 3}</span>`
+        const chips = (r.recommendations || []).slice(0, 2)
+            .map(rec => `<span class="chip">${rec}</span>`).join('');
+        const extra = r.recommendations && r.recommendations.length > 2
+            ? `<span class="chip chip-more">+${r.recommendations.length - 2}</span>`
             : '';
-        const sentColor = (r.sentiment_score || 0) >= 0.85 ? 'text-green-600' : 'text-gray-600';
-        const ratingColor = (r.google_rating || 0) >= 4.5 ? 'text-green-600' : 'text-gray-600';
+
+        const sentimentBadge = (r.sentiment_score || 0) >= 0.85
+            ? `<span class="stat-badge success"><i class="fas fa-heart"></i> ${Math.round(r.sentiment_score * 100)}</span>`
+            : `<span class="stat-badge"><i class="fas fa-heart"></i> ${r.sentiment_score ? Math.round(r.sentiment_score * 100) : '-'}</span>`;
+
+        const ratingBadge = (r.google_rating || 0) >= 4.5
+            ? `<span class="stat-badge success"><i class="fas fa-star"></i> ${r.google_rating || '-'}</span>`
+            : `<span class="stat-badge"><i class="fas fa-star"></i> ${r.google_rating || '-'}</span>`;
 
         return `
-        <div class="ios-card p-4 cursor-pointer" onclick="openModal('${r.id}')">
-            <h3 class="font-semibold text-lg text-gray-900">${r.name}</h3>
-            <p class="text-sm text-gray-500 mt-1">${r.cuisine || '未知'} · ${r.city || r.area || '未知'}</p>
-            <div class="grid grid-cols-3 gap-2 mt-3">
-                <div class="bg-gray-50 rounded-lg p-2 text-center">
-                    <div class="text-xs text-gray-400">讨论度</div>
-                    <div class="text-sm font-semibold text-orange-600">${(r.total_engagement || 0).toLocaleString()}</div>
-                </div>
-                <div class="bg-gray-50 rounded-lg p-2 text-center">
-                    <div class="text-xs text-gray-400">口碑</div>
-                    <div class="text-sm font-semibold ${sentColor}">${r.sentiment_score ? Math.round(r.sentiment_score * 100) : '-'}</div>
-                </div>
-                <div class="bg-gray-50 rounded-lg p-2 text-center">
-                    <div class="text-xs text-gray-400">Google</div>
-                    <div class="text-sm font-semibold ${ratingColor}">${r.google_rating || '-'}</div>
-                </div>
+        <div class="restaurant-card" onclick="openModal('${r.id}')">
+            <div class="card-header">
+                <h3 class="card-title">${r.name}</h3>
+                <p class="card-meta">${r.cuisine || '未知'} · ${r.city || r.area || '未知'}</p>
             </div>
-            ${chips || extra ? `<div class="flex flex-wrap gap-1 mt-3">${chips}${extra}</div>` : ''}
+            <div class="card-stats">
+                <div class="stat-primary">
+                    <span class="stat-value">${(r.total_engagement || 0).toLocaleString()}</span>
+                    <span class="stat-label">讨论度</span>
+                </div>
+                ${sentimentBadge}
+                ${ratingBadge}
+            </div>
+            ${chips || extra ? `<div class="card-chips">${chips}${extra}</div>` : ''}
         </div>`;
     }).join('');
 }
@@ -156,49 +203,50 @@ function openModal(id) {
     const r = allRestaurants.find(x => x.id === id);
     if (!r) return;
 
-    const sentColor  = (r.sentiment_score || 0) >= 0.85 ? 'text-green-600' : 'text-gray-600';
-    const ratingColor = (r.google_rating || 0) >= 4.5 ? 'text-green-600' : 'text-gray-600';
-    const mapsQuery  = encodeURIComponent((r.name || '') + ' ' + (r.address || ''));
+    const sentimentClass = (r.sentiment_score || 0) >= 0.85 ? 'success' : 'neutral';
+    const ratingClass = (r.google_rating || 0) >= 4.5 ? 'success' : 'neutral';
+    const mapsQuery = encodeURIComponent((r.name || '') + ' ' + (r.address || ''));
 
     document.getElementById('modal-body').innerHTML = `
-        <div class="flex justify-between items-start mb-4">
+        <div class="modal-header">
             <div>
-                <h2 class="text-2xl font-bold text-gray-900">${r.name}</h2>
-                <p class="text-gray-500 mt-1">${r.cuisine || '未知'} · ${r.city || r.area || '未知'}</p>
+                <h2 class="modal-title">${r.name}</h2>
+                <p class="modal-subtitle">${r.cuisine || '未知'} · ${r.city || r.area || '未知'}</p>
             </div>
-            <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600">
-                <i class="fas fa-xmark text-xl"></i>
+            <button onclick="closeModal()" class="modal-close">
+                <i class="fas fa-xmark"></i>
             </button>
         </div>
 
-        <div class="grid grid-cols-3 gap-4 mb-6">
-            <div class="bg-gray-50 rounded-xl p-4 text-center">
-                <div class="text-2xl font-bold text-orange-600">${(r.total_engagement || 0).toLocaleString()}</div>
-                <div class="text-xs text-gray-500 mt-1">讨论度</div>
+        <div class="modal-stats">
+            <div class="modal-stat">
+                <div class="modal-stat-value">${(r.total_engagement || 0).toLocaleString()}</div>
+                <div class="modal-stat-label">讨论度</div>
             </div>
-            <div class="bg-gray-50 rounded-xl p-4 text-center">
-                <div class="text-2xl font-bold ${sentColor}">${r.sentiment_score ? Math.round(r.sentiment_score * 100) : '-'}</div>
-                <div class="text-xs text-gray-500 mt-1">口碑</div>
+            <div class="modal-stat">
+                <div class="modal-stat-value ${sentimentClass}">${r.sentiment_score ? Math.round(r.sentiment_score * 100) : '-'}</div>
+                <div class="modal-stat-label">口碑</div>
             </div>
-            <div class="bg-gray-50 rounded-xl p-4 text-center">
-                <div class="text-2xl font-bold ${ratingColor}">${r.google_rating || '-'}</div>
-                <div class="text-xs text-gray-500 mt-1">Google评分</div>
+            <div class="modal-stat">
+                <div class="modal-stat-value ${ratingClass}">${r.google_rating || '-'}</div>
+                <div class="modal-stat-label">Google评分</div>
             </div>
         </div>
 
         ${r.address ? `
-        <div class="mb-4">
+        <div class="modal-section">
             <a href="https://www.google.com/maps/search/?api=1&query=${mapsQuery}"
-               target="_blank" class="text-sm text-blue-600 hover:underline flex items-center gap-2">
-                <i class="fas fa-location-dot mr-2"></i>${r.address}
-                <i class="fas fa-external-link-alt text-xs"></i>
+               target="_blank" class="address-link">
+                <i class="fas fa-location-dot"></i>
+                ${r.address}
+                <i class="fas fa-external-link-alt"></i>
             </a>
         </div>` : ''}
 
         ${r.recommendations && r.recommendations.length > 0 ? `
-        <div class="mb-6">
-            <h4 class="font-semibold mb-2">推荐菜品</h4>
-            <div class="flex flex-wrap gap-2">
+        <div class="modal-section">
+            <h4 class="modal-section-title">推荐菜品</h4>
+            <div class="recommendations">
                 ${r.recommendations.map(rec => `<span class="recommendation-chip">${rec}</span>`).join('')}
             </div>
         </div>` : ''}
@@ -206,18 +254,19 @@ function openModal(id) {
         ${generateChart(r.post_details, r.timeseries)}
 
         ${r.post_details && r.post_details.length > 0 ? `
-        <div>
-            <h4 class="font-semibold mb-2">来源帖子</h4>
-            <div class="space-y-2">
+        <div class="modal-section">
+            <h4 class="modal-section-title">来源帖子</h4>
+            <div class="post-list">
                 ${r.post_details.slice(0, 5).map(p => `
-                <div class="p-3 bg-gray-50 rounded-lg">
-                    <div class="flex justify-between items-start">
-                        <a href="https://www.xiaohongshu.com/explore/${p.post_id}" target="_blank" class="flex-1">
-                            <p class="text-sm font-medium text-gray-900 hover:text-red-600">${p.title || '无标题'}</p>
-                            <p class="text-xs text-gray-500 mt-1">${p.date} · 讨论度 ${p.engagement}</p>
-                        </a>
+                <div class="post-item">
+                    <a href="https://www.xiaohongshu.com/explore/${p.post_id}" target="_blank" class="post-link">
+                        <p class="post-title">${p.title || '无标题'}</p>
+                        <p class="post-meta">${p.date} · 讨论度 ${p.engagement}</p>
+                    </a>
+                    <div class="post-actions">
+                        <span></span>
                         <button onclick="showQRCode('${p.post_id}','${(p.title||'').replace(/'/g,"\\'")}')"
-                                class="ml-2 text-gray-400 hover:text-red-500" title="显示二维码">
+                                class="qr-btn" title="显示二维码">
                             <i class="fas fa-qrcode"></i>
                         </button>
                     </div>
@@ -237,27 +286,65 @@ function closeModal() {
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
+// ─── Modal Swipe Gesture ──────────────────────────────────────────────────────
+
+function initModalGesture() {
+    const sheet = document.querySelector('.modal-sheet');
+    if (!sheet) return;
+
+    let startY = 0;
+    let currentY = 0;
+    let isDragging = false;
+
+    sheet.addEventListener('touchstart', e => {
+        startY = e.touches[0].clientY;
+        isDragging = true;
+        sheet.style.transition = 'none';
+    }, { passive: true });
+
+    sheet.addEventListener('touchmove', e => {
+        if (!isDragging) return;
+        currentY = e.touches[0].clientY;
+        const delta = currentY - startY;
+
+        if (delta > 0) {
+            sheet.style.transform = `translateY(${delta}px)`;
+        }
+    }, { passive: true });
+
+    sheet.addEventListener('touchend', () => {
+        if (!isDragging) return;
+        isDragging = false;
+
+        const delta = currentY - startY;
+        sheet.style.transition = '';
+        sheet.style.transform = '';
+
+        if (delta > 100) {
+            closeModal();
+        }
+    });
+}
+
 // ─── QR Code ──────────────────────────────────────────────────────────────────
 
 function showQRCode(postId, title) {
     const url = `https://www.xiaohongshu.com/explore/${postId}`;
     const modal = document.createElement('div');
     modal.id = 'qrcode-modal';
-    modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-[60]';
+    modal.className = 'qr-modal';
     modal.onclick = closeQRCode;
     modal.innerHTML = `
-        <div class="bg-white rounded-2xl p-6 max-w-sm w-full mx-4 text-center" onclick="event.stopPropagation()">
-            <h3 class="font-semibold mb-2">${title || '小红书帖子'}</h3>
-            <p class="text-sm text-gray-500 mb-4">扫码打开小红书</p>
-            <div class="mb-4">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(url)}"
-                     alt="二维码" class="mx-auto rounded-lg">
-            </div>
-            <div class="flex gap-2">
+        <div class="qr-content" onclick="event.stopPropagation()">
+            <h3 class="qr-title">${title || '小红书帖子'}</h3>
+            <p class="qr-subtitle">扫码打开小红书</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(url)}"
+                 alt="二维码" class="qr-image">
+            <div class="qr-actions">
                 <button onclick="copyToClipboard('${url}')"
-                        class="flex-1 py-2 bg-gray-100 rounded-lg text-sm hover:bg-gray-200">复制链接</button>
+                        class="qr-btn qr-btn-secondary">复制链接</button>
                 <button onclick="closeQRCode()"
-                        class="flex-1 py-2 bg-blue-500 text-white rounded-lg text-sm hover:bg-blue-600">关闭</button>
+                        class="qr-btn qr-btn-primary">关闭</button>
             </div>
         </div>`;
     document.body.appendChild(modal);
@@ -269,7 +356,9 @@ function closeQRCode() {
 }
 
 function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => alert('链接已复制')).catch(() => {
+    navigator.clipboard.writeText(text).then(() => {
+        alert('链接已复制');
+    }).catch(() => {
         const input = document.createElement('input');
         input.value = text;
         document.body.appendChild(input);
@@ -294,18 +383,18 @@ function generateChart(postDetails, timeseries) {
         monthly[`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`] = 0;
     }
 
-    if (hasTimeseries) {
-        // Use structured timeseries data directly (already monthly)
-        timeseries.forEach(t => {
-            if (monthly[t.month] !== undefined) monthly[t.month] += (t.engagement || t.mentions || 0);
-        });
-    } else {
-        // Fall back to aggregating post_details by month
+    // Prefer post_details (complete historical data), fallback to timeseries
+    // Timeseries may be incomplete for older restaurants added before the feature
+    if (hasPostDetails) {
         postDetails.forEach(p => {
             if (!p.date) return;
             const d = new Date(p.date);
             const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
             if (monthly[key] !== undefined) monthly[key] += (p.engagement || 0);
+        });
+    } else if (hasTimeseries) {
+        timeseries.forEach(t => {
+            if (monthly[t.month] !== undefined) monthly[t.month] += (t.engagement || t.mentions || 0);
         });
     }
 
@@ -323,7 +412,7 @@ function generateChart(postDetails, timeseries) {
     const circles = data.map(([,v], i) => {
         const x = PAD + (i/(data.length-1))*cW;
         const y = PAD + cH - (v/maxVal)*cH;
-        return `<circle cx="${x}" cy="${y}" r="3" fill="#007AFF"/>`;
+        return `<circle cx="${x}" cy="${y}" r="3" fill="#FF2442"/>`;
     }).join('');
 
     const labels = data.filter((_,i) => i % 6 === 0 || i === data.length-1).map(([k],i,arr) => {
@@ -334,18 +423,18 @@ function generateChart(postDetails, timeseries) {
     }).join('');
 
     return `
-    <div class="mb-6">
-        <h4 class="font-semibold mb-3">月度讨论度趋势</h4>
-        <div class="bg-white rounded-xl p-4 border border-gray-100">
-            <svg viewBox="0 0 ${W} ${H}" class="w-full">
+    <div class="modal-section">
+        <h4 class="modal-section-title">月度讨论度趋势</h4>
+        <div class="chart-container">
+            <svg viewBox="0 0 ${W} ${H}">
                 <defs>
                     <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%"   style="stop-color:#007AFF;stop-opacity:0.3"/>
-                        <stop offset="100%" style="stop-color:#007AFF;stop-opacity:0.05"/>
+                        <stop offset="0%"   style="stop-color:#FF2442;stop-opacity:0.3"/>
+                        <stop offset="100%" style="stop-color:#FF2442;stop-opacity:0.05"/>
                     </linearGradient>
                 </defs>
                 <polygon points="${PAD},${PAD+cH} ${pts.join(' ')} ${PAD+cW},${PAD+cH}" fill="url(#chartGrad)"/>
-                <polyline points="${pts.join(' ')}" fill="none" stroke="#007AFF" stroke-width="2"
+                <polyline points="${pts.join(' ')}" fill="none" stroke="#FF2442" stroke-width="2"
                           stroke-linecap="round" stroke-linejoin="round"/>
                 ${circles}
                 ${labels}

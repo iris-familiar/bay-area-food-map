@@ -41,9 +41,10 @@ XHS posts → 01_scrape.sh → data/raw/YYYY-MM-DD/post_*.json
 All orchestrated by `pipeline/run.sh`. Each step is independent and can be run alone.
 
 ### Frontend
-- `index.html` — pure HTML template (~90 lines)
+- `index.html` — pure HTML template (~100 lines)
 - `src/app.js` — all application JS (no build step, loaded via `<script src>`)
-- `src/styles.css` — all styles (loaded via `<link rel="stylesheet">`)
+- `src/styles.css` — custom CSS with Apple + 小红书 design system (no external CSS frameworks)
+- Design tokens in `:root` for consistent theming (colors, spacing, typography)
 - On load: fetches slim `restaurant_database_index.json` first, lazy-loads full DB on demand
 - Reads `data/.pipeline_state.json` to display "last updated" timestamp in the header
 
