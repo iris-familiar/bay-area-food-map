@@ -5319,8 +5319,8 @@
       "name_en": "",
       "cuisine": "泰餐",
       "area": "unknown",
-      "region": "unknown",
-      "city": "SF",
+      "region": "San Francisco",
+      "city": "San Francisco",
       "price_range": "$30-50",
       "address": "272 Claremont Blvd, San Francisco, CA 94127, USA",
       "google_rating": 4.6,
@@ -5513,8 +5513,8 @@
       "name_en": "",
       "cuisine": "火锅",
       "area": "unknown",
-      "region": "unknown",
-      "city": "SF",
+      "region": "San Francisco",
+      "city": "San Francisco",
       "price_range": "$39",
       "address": "1626 Taraval St, San Francisco, CA 94116, USA",
       "google_rating": 5,
@@ -5642,5 +5642,5 @@
       }
     }
   ],
-  "verified_at": "2026-02-23T04:02:38.231Z"
+  "verified_at": "2026-02-23T04:40:32.905Z"
 }
