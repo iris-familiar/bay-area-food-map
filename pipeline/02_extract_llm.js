@@ -202,7 +202,11 @@ async function main() {
                     source_post_id: post.id || post.noteId || post.note_id || '',
                     source_title: title.slice(0, 80),
                     source_post_date: postDate,
-                    engagement: (post.interactInfo || {}).commentCount || 0,
+                    engagement: (
+                        parseInt((post.interactInfo || {}).likedCount || 0) +
+                        parseInt((post.interactInfo || {}).commentCount || 0) +
+                        parseInt((post.interactInfo || {}).collectedCount || 0)
+                    ),
                     extracted_at: new Date().toISOString(),
                     extraction_method: 'glm-5',
                 });

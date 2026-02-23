@@ -24,6 +24,22 @@ if git diff --quiet HEAD -- data/restaurant_database.json data/restaurant_databa
     exit 0
 fi
 
+# Check if the only changes are timestamps (verified_at, last_run) - skip commit if so
+# This prevents empty commits when 05_verify.js just updates verified_at
+NON_TIMESTAMP_CHANGES=$(git diff HEAD -- data/restaurant_database.json data/.pipeline_state.json 2>/dev/null | \
+    grep -E '^[+-]' | \
+    grep -v '^[+-]{3}' | \
+    grep -vE '^[+-]\s*"(verified_at|last_run)"' | \
+    grep -vE '^[+-]\s*"verified_at"' | \
+    grep -vE '^[+-]\s*"[0-9]{4}-[0-9]{2}-[0-9]{2}T' | \
+    wc -l | tr -d ' ')
+
+if [ "$NON_TIMESTAMP_CHANGES" -eq 0 ]; then
+    echo "Only timestamp changes detected, skipping commit"
+    git checkout -- data/restaurant_database.json data/.pipeline_state.json 2>/dev/null || true
+    exit 0
+fi
+
 ADDED=$((AFTER - BEFORE))
 SIGN=$([ "$ADDED" -ge 0 ] && echo "+" || echo "")
 

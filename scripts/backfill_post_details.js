@@ -42,7 +42,11 @@ function buildPostIndex() {
                     index.set(postId, {
                         title: (post.title || '').slice(0, 80),
                         date: postDate,
-                        engagement: (post.interactInfo || {}).commentCount || 0
+                        engagement: (
+                            parseInt((post.interactInfo || {}).likedCount || 0) +
+                            parseInt((post.interactInfo || {}).commentCount || 0) +
+                            parseInt((post.interactInfo || {}).collectedCount || 0)
+                        )
                     });
                     totalPosts++;
                 }

@@ -1,7 +1,7 @@
 {
-  "last_run": "2026-02-23T04:40:33Z",
-  "last_scrape_at": "2026-02-23T04:40:33Z",
-  "status": "success",
+  "last_run": "2026-02-23T05:24:08Z",
+  "last_scrape_at": "2026-02-23T05:24:08Z",
+  "status": "failed",
   "restaurants_total": 92,
   "restaurants_added": 0,
   "restaurants_metrics_updated": 0,

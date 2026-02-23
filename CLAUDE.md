@@ -99,6 +99,10 @@ Failed scrapes (XHS auth expiry) trigger an `openclaw system event` notification
 - **No backend/database** — 79–500 restaurants in a flat JSON is faster, auditable, and versionable; add a DB only when user-generated content is needed
 - **No Docker** — single-Mac deployment
 
+### Fix Philosophy
+
+All bug fixes must be future-proof: they should resolve the current issue AND prevent recurrence in future pipeline runs. Fix the root cause in the pipeline code, not just patch existing data.
+
 ## Known Issue
 
 `scripts/apply_corrections.js` has a hardcoded absolute path (`/Users/joeli/.openclaw/...`) instead of reading from `config.sh`. It works locally but will break on any other machine.

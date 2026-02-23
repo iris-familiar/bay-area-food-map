@@ -79,11 +79,30 @@ SEARCH_TERMS=(
 
 NEW_COUNT=0
 SKIP_COUNT=0
+TOTAL_FOUND=0
+FILTERED_OUT=0
 
 for term in "${SEARCH_TERMS[@]}"; do
     log "Searching: $term"
 
     RESULT=$(cd "${MCP_DIR}" && ./mcp-call.sh search_feeds "{\"keyword\": \"${term}\"}" 2>/dev/null || echo '{}')
+
+    # Count total posts found before filtering
+    TERM_TOTAL=$(echo "$RESULT" | python3 -c "
+import sys, json
+try:
+    outer = json.load(sys.stdin)
+    text = outer.get('result', {}).get('content', [{}])[0].get('text', '')
+    try:
+        data = json.loads(text)
+    except (ValueError, KeyError):
+        data = outer
+    feeds = data.get('feeds', data.get('items', []))
+    print(len(feeds))
+except Exception:
+    print(0)
+" 2>/dev/null || echo "0")
+    TOTAL_FOUND=$((TOTAL_FOUND + TERM_TOTAL))
 
     # Extract post IDs with decent engagement
     # Response is JSON-RPC: unwrap result.content[0].text to get actual feeds JSON.
@@ -167,4 +186,8 @@ except Exception:
     sleep $((RANDOM % 4 + 3))
 done
 
-log "Done. New: ${NEW_COUNT} posts, Skipped (already had): ${SKIP_COUNT}"
+# Calculate filtered out count
+PASSED_FILTER=$((NEW_COUNT + SKIP_COUNT))
+FILTERED_OUT=$((TOTAL_FOUND - PASSED_FILTER))
+
+log "Done. Total found: ${TOTAL_FOUND}, Passed filter: ${PASSED_FILTER} (New: ${NEW_COUNT}, Skipped: ${SKIP_COUNT}), Filtered out: ${FILTERED_OUT}"

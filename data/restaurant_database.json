@@ -1,6 +1,6 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-23T03:54:45.451Z",
+  "updated_at": "2026-02-23T05:23:55.151Z",
   "total_restaurants": 92,
   "restaurants": [
     {
@@ -16,7 +16,7 @@
       "cuisine": "湘菜",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 4252,
+      "total_engagement": 4672,
       "mention_count": 4,
       "sources": [
         "693e02ff000000001e038ae4",
@@ -30,28 +30,28 @@
           "post_id": "67ba7dae00000000290119d8",
           "title": "湾区中餐超全超真诚推荐",
           "date": "2025-02-22",
-          "engagement": 4149,
+          "engagement": 4190,
           "context": ""
         },
         {
           "post_id": "693e02ff000000001e038ae4",
           "title": "湾区吃喝周记",
           "date": "2025-12-13",
-          "engagement": 92,
+          "engagement": 94,
           "context": ""
         },
         {
           "post_id": "690c40bf0000000005039eae",
           "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
           "date": "2025-11-06",
-          "engagement": "9",
+          "engagement": 271,
           "context": ""
         },
         {
           "post_id": "67f363f0000000001c01ecd5",
           "title": "湾区生活｜三家吃完就想二刷的餐厅😋🐎住",
           "date": "2025-04-07",
-          "engagement": "2",
+          "engagement": 113,
           "context": ""
         }
       ],
@@ -112,7 +112,7 @@
       "cuisine": "融合菜",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 4374,
+      "total_engagement": 4649,
       "mention_count": 7,
       "sources": [
         "67ba7dae00000000290119d8",
@@ -125,14 +125,14 @@
           "post_id": "67ba7dae00000000290119d8",
           "title": "湾区中餐超全超真诚推荐",
           "date": "2025-02-22",
-          "engagement": 4149,
+          "engagement": 4190,
           "context": ""
         },
         {
           "post_id": "6945a4d1000000000d00c3d4",
           "title": "湾区美食 最近孩子爱吃的饭店🍽️",
           "date": "2025-12-19",
-          "engagement": 192,
+          "engagement": 194,
           "context": ""
         },
         {
@@ -146,7 +146,7 @@
           "post_id": "69671260000000000c037773",
           "title": "😋想在湾区吃点不一样的料理我就来Milpitas",
           "date": "2026-01-14",
-          "engagement": "8",
+          "engagement": 233,
           "context": ""
         }
       ],
@@ -205,7 +205,7 @@
       "cuisine": "川菜",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 1316,
+      "total_engagement": 1326,
       "mention_count": 6,
       "sources": [
         "697a6fea000000000b008c26",
@@ -217,7 +217,7 @@
           "post_id": "697a6fea000000000b008c26",
           "title": "南湾正宗沸腾鱼",
           "date": "2026-01-28",
-          "engagement": 560,
+          "engagement": 564,
           "context": ""
         },
         {
@@ -286,7 +286,7 @@
       "cuisine": "日料",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 1172,
+      "total_engagement": 1181,
       "mention_count": 2,
       "sources": [
         "69111cdd0000000004023026"
@@ -296,7 +296,7 @@
           "post_id": "69111cdd0000000004023026",
           "title": "湾区最难忘的一口 直接沦陷了🤤",
           "date": "2025-11-11",
-          "engagement": 1172,
+          "engagement": 1179,
           "context": ""
         }
       ],
@@ -345,7 +345,7 @@
       "cuisine": "潮汕菜",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 1036,
+      "total_engagement": 1038,
       "mention_count": 2,
       "sources": [
         "68db4e100000000007014ccc"
@@ -411,7 +411,7 @@
       "cuisine": "中餐",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 896,
+      "total_engagement": 919,
       "mention_count": 4,
       "sources": [
         "690c40bf0000000005039eae",
@@ -422,14 +422,14 @@
           "post_id": "670977d9000000002a03115c",
           "title": "50吃到撑！Sunnyvale超高性价比家常美食来了",
           "date": "2024-10-11",
-          "engagement": 643,
+          "engagement": 644,
           "context": ""
         },
         {
           "post_id": "690c40bf0000000005039eae",
           "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
           "date": "2025-11-05",
-          "engagement": 253,
+          "engagement": 271,
           "context": ""
         }
       ],
@@ -483,7 +483,7 @@
       "cuisine": "湘菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 812,
+      "total_engagement": 839,
       "mention_count": 6,
       "sources": [
         "66667292000000000f00f266",
@@ -495,14 +495,14 @@
           "post_id": "6856cc340000000013011fd6",
           "title": "湾区｜两周吃遍湾区中餐｜推荐不踩雷合集🔥",
           "date": "2025-06-21",
-          "engagement": 314,
+          "engagement": 317,
           "context": ""
         },
         {
           "post_id": "690c40bf0000000005039eae",
           "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
           "date": "2025-11-05",
-          "engagement": 253,
+          "engagement": 271,
           "context": ""
         },
         {
@@ -564,7 +564,7 @@
       "cuisine": "川菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 758,
+      "total_engagement": 764,
       "mention_count": 6,
       "sources": [
         "697ad7a0000000000c035eb3",
@@ -648,7 +648,7 @@
       "cuisine": "中餐",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 693,
+      "total_engagement": 689,
       "mention_count": 2,
       "sources": [
         "692e54da000000000d03ac6b"
@@ -659,7 +659,7 @@
           "post_id": "692e54da000000000d03ac6b",
           "title": "湾区|免小费还给超多小料！",
           "date": "2025-12-07",
-          "engagement": 693,
+          "engagement": 687,
           "context": ""
         }
       ],
@@ -712,7 +712,7 @@
       "cuisine": "包子",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 638,
+      "total_engagement": 645,
       "mention_count": 5,
       "sources": [
         "69332e7d00000000190259bd",
@@ -738,7 +738,7 @@
           "post_id": "693e02ff000000001e038ae4",
           "title": "湾区吃喝周记",
           "date": "2025-12-13",
-          "engagement": 92,
+          "engagement": 94,
           "context": ""
         }
       ],
@@ -791,7 +791,7 @@
       "cuisine": "墨西哥菜",
       "area": "Mountain View",
       "price_range": "",
-      "total_engagement": 577,
+      "total_engagement": 582,
       "mention_count": 2,
       "sources": [
         "69388a61000000001e038496"
@@ -804,7 +804,7 @@
           "post_id": "69388a61000000001e038496",
           "title": "湾区 Mountain View | 最强三奶",
           "date": "2025-12-09",
-          "engagement": 577,
+          "engagement": 580,
           "context": ""
         }
       ],
@@ -844,7 +844,7 @@
       "cuisine": "上海菜",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 531,
+      "total_engagement": 540,
       "mention_count": 2,
       "sources": [
         "6915759900000000070383d7"
@@ -854,7 +854,7 @@
           "post_id": "6915759900000000070383d7",
           "title": "冬天一口暖暖的😍Sunnyvale平价上海家常味",
           "date": "2025-11-13",
-          "engagement": 531,
+          "engagement": 538,
           "context": ""
         }
       ],
@@ -922,7 +922,7 @@
       "cuisine": "中餐",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 522,
+      "total_engagement": 526,
       "mention_count": 4,
       "sources": [
         "695f083a000000000b008f87",
@@ -997,7 +997,7 @@
       "cuisine": "烧烤",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 507,
+      "total_engagement": 517,
       "mention_count": 2,
       "sources": [
         "691d486c000000001b0226a9"
@@ -1007,7 +1007,7 @@
           "post_id": "691d486c000000001b0226a9",
           "title": "🇺🇸湾区｜大冷天还得是砂锅+烧烤组合‼️",
           "date": "2025-11-18",
-          "engagement": 507,
+          "engagement": 515,
           "context": ""
         }
       ],
@@ -1062,7 +1062,7 @@
       "cuisine": "湘菜",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 755,
+      "total_engagement": 780,
       "mention_count": 4,
       "sources": [
         "68c71d50000000001c005084",
@@ -1074,14 +1074,14 @@
           "post_id": "6856cc340000000013011fd6",
           "title": "湾区｜两周吃遍湾区中餐｜推荐不踩雷合集🔥",
           "date": "2025-06-21",
-          "engagement": 314,
+          "engagement": 317,
           "context": ""
         },
         {
           "post_id": "690c40bf0000000005039eae",
           "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
           "date": "2025-11-05",
-          "engagement": 253,
+          "engagement": 271,
           "context": ""
         },
         {
@@ -1140,7 +1140,7 @@
       "cuisine": "麻辣烫",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 383,
+      "total_engagement": 408,
       "mention_count": 4,
       "sources": [
         "67b3ee5700000000070314d3",
@@ -1151,14 +1151,14 @@
           "post_id": "690c40bf0000000005039eae",
           "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
           "date": "2025-11-05",
-          "engagement": 253,
+          "engagement": 271,
           "context": ""
         },
         {
           "post_id": "67b3ee5700000000070314d3",
           "title": "真羡慕你们Milpitas有这么多好吃的…",
           "date": "2025-02-17",
-          "engagement": 130,
+          "engagement": 133,
           "context": ""
         }
       ],
@@ -1207,7 +1207,7 @@
       "cuisine": "川菜",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 378,
+      "total_engagement": 386,
       "mention_count": 4,
       "sources": [
         "694d9c04000000001e0255af",
@@ -1225,7 +1225,7 @@
           "post_id": "6913dafe0000000003012733",
           "title": "湾区Milpitas好吃的家常菜推荐！已三刷！",
           "date": "2025-11-11",
-          "engagement": 168,
+          "engagement": 172,
           "context": ""
         }
       ],
@@ -1278,7 +1278,7 @@
       "cuisine": "烧腊",
       "area": "San Leandro",
       "price_range": "",
-      "total_engagement": 355,
+      "total_engagement": 358,
       "mention_count": 2,
       "sources": [
         "6950d36c000000001e012431"
@@ -1288,7 +1288,7 @@
           "post_id": "6950d36c000000001e012431",
           "title": "湾区美食求推荐",
           "date": "2025-12-27",
-          "engagement": 355,
+          "engagement": 356,
           "context": ""
         }
       ],
@@ -1337,7 +1337,7 @@
       "cuisine": "云南菜",
       "area": "San Leandro",
       "price_range": "",
-      "total_engagement": 355,
+      "total_engagement": 358,
       "mention_count": 2,
       "sources": [
         "6950d36c000000001e012431"
@@ -1347,7 +1347,7 @@
           "post_id": "6950d36c000000001e012431",
           "title": "湾区美食求推荐",
           "date": "2025-12-27",
-          "engagement": 355,
+          "engagement": 356,
           "context": ""
         }
       ],
@@ -1397,7 +1397,7 @@
       "cuisine": "中餐",
       "area": "San Leandro",
       "price_range": "",
-      "total_engagement": 355,
+      "total_engagement": 358,
       "mention_count": 2,
       "sources": [
         "6950d36c000000001e012431"
@@ -1408,7 +1408,7 @@
           "post_id": "6950d36c000000001e012431",
           "title": "湾区美食求推荐",
           "date": "2025-12-27",
-          "engagement": 355,
+          "engagement": 356,
           "context": ""
         }
       ],
@@ -1449,7 +1449,7 @@
       "cuisine": "中餐",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 344,
+      "total_engagement": 347,
       "mention_count": 2,
       "sources": [
         "67bbe327000000000603d76d"
@@ -1459,7 +1459,7 @@
           "post_id": "67bbe327000000000603d76d",
           "title": "被Sunnyvale这家蒸饭惊艳了，外卖成功下车",
           "date": "2025-02-23",
-          "engagement": 344,
+          "engagement": 345,
           "context": ""
         }
       ],
@@ -1512,7 +1512,7 @@
       "cuisine": "泰国菜",
       "area": "Mountain View",
       "price_range": "",
-      "total_engagement": 326,
+      "total_engagement": 328,
       "mention_count": 2,
       "sources": [
         "68af9c91000000001d014f9a"
@@ -1574,7 +1574,7 @@
       "cuisine": "拉面",
       "area": "SF",
       "price_range": "",
-      "total_engagement": 311,
+      "total_engagement": 323,
       "mention_count": 2,
       "sources": [
         "694dc5a3000000002200ba41"
@@ -1584,7 +1584,7 @@
           "post_id": "694dc5a3000000002200ba41",
           "title": "我在湾区咪西咪西",
           "date": "2025-12-25",
-          "engagement": 311,
+          "engagement": 321,
           "context": ""
         }
       ],
@@ -1634,7 +1634,7 @@
       "cuisine": "港式",
       "area": "Millbrae",
       "price_range": "",
-      "total_engagement": 311,
+      "total_engagement": 323,
       "mention_count": 2,
       "sources": [
         "694dc5a3000000002200ba41"
@@ -1644,7 +1644,7 @@
           "post_id": "694dc5a3000000002200ba41",
           "title": "我在湾区咪西咪西",
           "date": "2025-12-25",
-          "engagement": 311,
+          "engagement": 321,
           "context": ""
         }
       ],
@@ -1697,7 +1697,7 @@
       "cuisine": "徽菜",
       "area": "Newark",
       "price_range": "",
-      "total_engagement": 303,
+      "total_engagement": 315,
       "mention_count": 2,
       "sources": [
         "697a7529000000000b0111ab"
@@ -1707,7 +1707,7 @@
           "post_id": "697a7529000000000b0111ab",
           "title": "来美10年，在湾区吃到了我暂时的人生饭店。",
           "date": "2026-01-28",
-          "engagement": 303,
+          "engagement": 313,
           "context": ""
         }
       ],
@@ -1755,7 +1755,7 @@
       "cuisine": "台湾菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 253,
+      "total_engagement": 273,
       "mention_count": 2,
       "sources": [
         "690c40bf0000000005039eae"
@@ -1765,7 +1765,7 @@
           "post_id": "690c40bf0000000005039eae",
           "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
           "date": "2025-11-05",
-          "engagement": 253,
+          "engagement": 271,
           "context": ""
         }
       ],
@@ -1815,7 +1815,7 @@
       "cuisine": "川菜",
       "area": "San Mateo",
       "price_range": "",
-      "total_engagement": 253,
+      "total_engagement": 273,
       "mention_count": 2,
       "sources": [
         "690c40bf0000000005039eae"
@@ -1825,7 +1825,7 @@
           "post_id": "690c40bf0000000005039eae",
           "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
           "date": "2025-11-05",
-          "engagement": 253,
+          "engagement": 271,
           "context": ""
         }
       ],
@@ -1874,7 +1874,7 @@
       "cuisine": "上海菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 245,
+      "total_engagement": 247,
       "mention_count": 2,
       "sources": [
         "66667292000000000f00f266"
@@ -1934,7 +1934,7 @@
       "cuisine": "海鲜",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 245,
+      "total_engagement": 247,
       "mention_count": 2,
       "sources": [
         "66667292000000000f00f266"
@@ -1995,7 +1995,7 @@
       "cuisine": "日式",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 245,
+      "total_engagement": 247,
       "mention_count": 2,
       "sources": [
         "66667292000000000f00f266"
@@ -2053,7 +2053,7 @@
       "cuisine": "甜品",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 245,
+      "total_engagement": 247,
       "mention_count": 2,
       "sources": [
         "66667292000000000f00f266"
@@ -2112,7 +2112,7 @@
       "cuisine": "炸鸡",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 245,
+      "total_engagement": 247,
       "mention_count": 2,
       "sources": [
         "66667292000000000f00f266"
@@ -2172,7 +2172,7 @@
       "cuisine": "湘菜",
       "area": "Mountain View",
       "price_range": "",
-      "total_engagement": 236,
+      "total_engagement": 241,
       "mention_count": 4,
       "sources": [
         "68d61f76000000000b03e9ad",
@@ -2190,7 +2190,7 @@
           "post_id": "68d61f76000000000b03e9ad",
           "title": "Mountain View新开了一家中餐",
           "date": "2025-09-25",
-          "engagement": 71,
+          "engagement": 72,
           "context": ""
         }
       ],
@@ -2245,7 +2245,7 @@
       "cuisine": "川菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 227,
+      "total_engagement": 229,
       "mention_count": 2,
       "sources": [
         "695f421f000000001a022b7e"
@@ -2305,7 +2305,7 @@
       "cuisine": "甜品",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 216,
+      "total_engagement": 218,
       "mention_count": 2,
       "sources": [
         "697c2dcb000000002200ab2d"
@@ -2362,7 +2362,7 @@
       "cuisine": "日料",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 188,
+      "total_engagement": 190,
       "mention_count": 2,
       "sources": [
         "68c71d50000000001c005084"
@@ -2420,7 +2420,7 @@
       "cuisine": "中餐",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 188,
+      "total_engagement": 190,
       "mention_count": 2,
       "sources": [
         "68c71d50000000001c005084"
@@ -2479,7 +2479,7 @@
       "cuisine": "日料",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 188,
+      "total_engagement": 190,
       "mention_count": 2,
       "sources": [
         "68c71d50000000001c005084"
@@ -2535,7 +2535,7 @@
       "cuisine": "中东菜",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 188,
+      "total_engagement": 190,
       "mention_count": 2,
       "sources": [
         "68c71d50000000001c005084"
@@ -2593,7 +2593,7 @@
       "cuisine": "奶茶",
       "area": "Mountain View",
       "price_range": "",
-      "total_engagement": 188,
+      "total_engagement": 190,
       "mention_count": 2,
       "sources": [
         "68c71d50000000001c005084"
@@ -2649,7 +2649,7 @@
       "cuisine": "韩餐",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 188,
+      "total_engagement": 190,
       "mention_count": 2,
       "sources": [
         "68c71d50000000001c005084"
@@ -2707,7 +2707,7 @@
       "cuisine": "牛排",
       "area": "Campbell",
       "price_range": "",
-      "total_engagement": 188,
+      "total_engagement": 190,
       "mention_count": 2,
       "sources": [
         "68c71d50000000001c005084"
@@ -2765,7 +2765,7 @@
       "cuisine": "新疆菜",
       "area": "San Jose",
       "price_range": "",
-      "total_engagement": 188,
+      "total_engagement": 190,
       "mention_count": 2,
       "sources": [
         "68c71d50000000001c005084"
@@ -2822,7 +2822,7 @@
       "cuisine": "江浙菜",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 177,
+      "total_engagement": 184,
       "mention_count": 4,
       "sources": [
         "694b2ea6000000001e015ae5",
@@ -2833,7 +2833,7 @@
           "post_id": "694b2ea6000000001e015ae5",
           "title": "南湾｜特来品尝来自国内的黑珍珠苏州菜",
           "date": "2025-12-23",
-          "engagement": 99,
+          "engagement": 102,
           "context": ""
         },
         {
@@ -2893,7 +2893,7 @@
       "cuisine": "湘菜",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 165,
+      "total_engagement": 167,
       "mention_count": 2,
       "sources": [
         "6875756b0000000015022f47"
@@ -2956,7 +2956,7 @@
       "cuisine": "韩餐",
       "area": "San Francisco",
       "price_range": "",
-      "total_engagement": 132,
+      "total_engagement": 134,
       "mention_count": 2,
       "sources": [
         "68c224b1000000001b01f784"
@@ -3017,7 +3017,7 @@
       "cuisine": "面食",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 131,
+      "total_engagement": 133,
       "mention_count": 2,
       "sources": [
         "6959bddc000000002203982b"
@@ -3081,7 +3081,7 @@
       "cuisine": "川菜",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 130,
+      "total_engagement": 135,
       "mention_count": 2,
       "sources": [
         "67b3ee5700000000070314d3"
@@ -3091,7 +3091,7 @@
           "post_id": "67b3ee5700000000070314d3",
           "title": "真羡慕你们Milpitas有这么多好吃的…",
           "date": "2025-02-17",
-          "engagement": 130,
+          "engagement": 133,
           "context": ""
         }
       ],
@@ -3143,7 +3143,7 @@
       "cuisine": "湘菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 127,
+      "total_engagement": 129,
       "mention_count": 2,
       "sources": [
         "69572ce8000000001d03de1d"
@@ -3201,7 +3201,7 @@
       "cuisine": "粤菜",
       "area": "Palo Alto",
       "price_range": "",
-      "total_engagement": 119,
+      "total_engagement": 121,
       "mention_count": 2,
       "sources": [
         "68c1b57f000000001d00c132"
@@ -3261,7 +3261,7 @@
       "cuisine": "西餐",
       "area": "Santa Clara",
       "price_range": "",
-      "total_engagement": 119,
+      "total_engagement": 121,
       "mention_count": 2,
       "sources": [
         "68c1b57f000000001d00c132"
@@ -3319,7 +3319,7 @@
       "cuisine": "湘菜",
       "area": "Albany",
       "price_range": "",
-      "total_engagement": 111,
+      "total_engagement": 114,
       "mention_count": 2,
       "sources": [
         "68ddb63200000000040153ba"
@@ -3329,7 +3329,7 @@
           "post_id": "68ddb63200000000040153ba",
           "title": "9月湾区小夫妻的吃吃喝喝",
           "date": "2025-10-01",
-          "engagement": 111,
+          "engagement": 112,
           "context": ""
         }
       ],
@@ -3384,7 +3384,7 @@
       "cuisine": "泰国菜",
       "area": "SF",
       "price_range": "",
-      "total_engagement": 111,
+      "total_engagement": 114,
       "mention_count": 2,
       "sources": [
         "68ddb63200000000040153ba"
@@ -3394,7 +3394,7 @@
           "post_id": "68ddb63200000000040153ba",
           "title": "9月湾区小夫妻的吃吃喝喝",
           "date": "2025-10-01",
-          "engagement": 111,
+          "engagement": 112,
           "context": ""
         }
       ],
@@ -3444,7 +3444,7 @@
       "cuisine": "湘菜",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 85,
+      "total_engagement": 87,
       "mention_count": 2,
       "sources": [
         "6915061a000000001b030af5"
@@ -3505,7 +3505,7 @@
       "cuisine": "淮扬菜",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 83,
+      "total_engagement": 85,
       "mention_count": 2,
       "sources": [
         "68f2ae790000000007008035"
@@ -3561,7 +3561,7 @@
       "cuisine": "韩餐",
       "area": "San Jose",
       "price_range": "",
-      "total_engagement": 54,
+      "total_engagement": 59,
       "mention_count": 2,
       "sources": [
         "68891d96000000002301aadf"
@@ -3575,7 +3575,7 @@
           "post_id": "68891d96000000002301aadf",
           "title": "湾区｜带我闺蜜去吃好吃的😋",
           "date": "2025-07-29",
-          "engagement": 54,
+          "engagement": 57,
           "context": ""
         }
       ],
@@ -3617,7 +3617,7 @@
       "cuisine": "麻辣烫",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 54,
+      "total_engagement": 59,
       "mention_count": 2,
       "sources": [
         "68891d96000000002301aadf"
@@ -3627,7 +3627,7 @@
           "post_id": "68891d96000000002301aadf",
           "title": "湾区｜带我闺蜜去吃好吃的😋",
           "date": "2025-07-29",
-          "engagement": 54,
+          "engagement": 57,
           "context": ""
         }
       ],
@@ -3677,7 +3677,7 @@
       "cuisine": "上海菜",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 54,
+      "total_engagement": 59,
       "mention_count": 2,
       "sources": [
         "68891d96000000002301aadf"
@@ -3687,7 +3687,7 @@
           "post_id": "68891d96000000002301aadf",
           "title": "湾区｜带我闺蜜去吃好吃的😋",
           "date": "2025-07-29",
-          "engagement": 54,
+          "engagement": 57,
           "context": ""
         }
       ],
@@ -3735,7 +3735,7 @@
       "cuisine": "中餐",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 54,
+      "total_engagement": 59,
       "mention_count": 2,
       "sources": [
         "68891d96000000002301aadf"
@@ -3746,7 +3746,7 @@
           "post_id": "68891d96000000002301aadf",
           "title": "湾区｜带我闺蜜去吃好吃的😋",
           "date": "2025-07-29",
-          "engagement": 54,
+          "engagement": 57,
           "context": ""
         }
       ],
@@ -3793,7 +3793,7 @@
       "cuisine": "尼泊尔菜",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 54,
+      "total_engagement": 59,
       "mention_count": 2,
       "sources": [
         "68891d96000000002301aadf"
@@ -3804,7 +3804,7 @@
           "post_id": "68891d96000000002301aadf",
           "title": "湾区｜带我闺蜜去吃好吃的😋",
           "date": "2025-07-29",
-          "engagement": 54,
+          "engagement": 57,
           "context": ""
         }
       ],
@@ -3851,7 +3851,7 @@
       "cuisine": "湘菜",
       "area": "Mountain View",
       "price_range": "",
-      "total_engagement": 43,
+      "total_engagement": 45,
       "mention_count": 2,
       "sources": [
         "6934dc5b000000000d00c98b"
@@ -3912,7 +3912,7 @@
       "cuisine": "中餐",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 51,
+      "total_engagement": 140,
       "mention_count": 6,
       "sources": [
         "690f77cf00000000050317bb",
@@ -3931,14 +3931,14 @@
           "post_id": "68f1b80b0000000004004859",
           "title": "湾区，多少次来cupertino就是为了这七件套",
           "date": "2025-10-17",
-          "engagement": "8",
+          "engagement": 53,
           "context": ""
         },
         {
           "post_id": "680d561a000000000f033dbc",
           "title": "【Cupertino餐厅】 你还在去多少老馆子",
           "date": "2025-04-26",
-          "engagement": "2",
+          "engagement": 40,
           "context": ""
         }
       ],
@@ -4008,7 +4008,7 @@
       "cuisine": "台湾小吃",
       "area": "San Jose",
       "price_range": "",
-      "total_engagement": 41,
+      "total_engagement": 43,
       "mention_count": 2,
       "sources": [
         "690f77cf00000000050317bb"
@@ -4067,7 +4067,7 @@
       "cuisine": "麻辣烫",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 37,
+      "total_engagement": 39,
       "mention_count": 2,
       "sources": [
         "69607392000000000a03362c"
@@ -4128,7 +4128,7 @@
       "cuisine": "拉面",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 35,
+      "total_engagement": 37,
       "mention_count": 2,
       "sources": [
         "6954b293000000001e003bd7"
@@ -4192,7 +4192,7 @@
       "cuisine": "上海菜",
       "area": "Mountain View",
       "price_range": "",
-      "total_engagement": 28,
+      "total_engagement": 30,
       "mention_count": 2,
       "sources": [
         "68bc9008000000001c031aeb"
@@ -4255,7 +4255,7 @@
       "cuisine": "家常菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 40,
+      "total_engagement": 131,
       "mention_count": 5,
       "sources": [
         "690cf26b000000000401123f",
@@ -4273,7 +4273,7 @@
           "post_id": "694a464a000000001f00ac7f",
           "title": "南湾丨这一口感觉自己回国了🤩",
           "date": "2025-12-23",
-          "engagement": "15",
+          "engagement": 101,
           "context": ""
         }
       ],
@@ -4326,7 +4326,7 @@
       "cuisine": "中餐",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 25,
+      "total_engagement": 27,
       "mention_count": 2,
       "sources": [
         "690cf26b000000000401123f"
@@ -4385,7 +4385,7 @@
       "cuisine": "砂锅",
       "area": "Santa Clara",
       "price_range": "",
-      "total_engagement": 25,
+      "total_engagement": 27,
       "mention_count": 2,
       "sources": [
         "690cf26b000000000401123f"
@@ -4443,7 +4443,7 @@
       "cuisine": "烧烤",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 25,
+      "total_engagement": 27,
       "mention_count": 2,
       "sources": [
         "690cf26b000000000401123f"
@@ -4501,7 +4501,7 @@
       "cuisine": "川菜",
       "area": "San Jose",
       "price_range": "",
-      "total_engagement": 35,
+      "total_engagement": 88,
       "mention_count": 5,
       "sources": [
         "690cf26b000000000401123f",
@@ -4526,7 +4526,7 @@
           "post_id": "66221334000000000401809a",
           "title": "南湾｜好吃到生气的川菜馆",
           "date": "2024-04-19",
-          "engagement": "10",
+          "engagement": 58,
           "context": ""
         }
       ],
@@ -4574,7 +4574,7 @@
       "cuisine": "韩餐",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 2,
+      "total_engagement": 4,
       "mention_count": 2,
       "sources": [
         "695dd6e5000000000c035d69"
@@ -4635,7 +4635,7 @@
       "cuisine": "上海菜",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 4149,
+      "total_engagement": 4192,
       "mention_count": 2,
       "sources": [
         "67ba7dae00000000290119d8"
@@ -4646,7 +4646,7 @@
           "post_id": "67ba7dae00000000290119d8",
           "title": "湾区中餐超全超真诚推荐",
           "date": "2025-02-22",
-          "engagement": 4149,
+          "engagement": 4190,
           "context": ""
         }
       ],
@@ -4688,7 +4688,7 @@
       "cuisine": "台湾菜",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 625,
+      "total_engagement": 630,
       "mention_count": 2,
       "sources": [
         "6928cb59000000001e02569d"
@@ -4704,7 +4704,7 @@
           "post_id": "6928cb59000000001e02569d",
           "title": "湾区超好吃的万峦猪脚和麻油鸡",
           "date": "2025-11-27",
-          "engagement": 625,
+          "engagement": 628,
           "context": ""
         }
       ],
@@ -4746,7 +4746,7 @@
       "cuisine": "贵州菜",
       "area": "Mountain View",
       "price_range": "",
-      "total_engagement": 453,
+      "total_engagement": 459,
       "mention_count": 6,
       "sources": [
         "690da53a00000000070035c0",
@@ -4823,7 +4823,7 @@
       "cuisine": "湖北菜",
       "area": "San Jose",
       "price_range": "",
-      "total_engagement": 253,
+      "total_engagement": 273,
       "mention_count": 2,
       "sources": [
         "690c40bf0000000005039eae"
@@ -4834,7 +4834,7 @@
           "post_id": "690c40bf0000000005039eae",
           "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
           "date": "2025-11-05",
-          "engagement": 253,
+          "engagement": 271,
           "context": ""
         }
       ],
@@ -4873,7 +4873,7 @@
       "cuisine": "面食",
       "area": "Mountain View",
       "price_range": "",
-      "total_engagement": 249,
+      "total_engagement": 255,
       "mention_count": 2,
       "sources": [
         "68f30d8f000000000703b59a"
@@ -4888,7 +4888,7 @@
           "post_id": "68f30d8f000000000703b59a",
           "title": "湾区第一牛肉面和水饺！",
           "date": "2025-10-17",
-          "engagement": 249,
+          "engagement": 253,
           "context": ""
         }
       ],
@@ -4927,7 +4927,7 @@
       "cuisine": "中餐",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 433,
+      "total_engagement": 437,
       "mention_count": 4,
       "sources": [
         "66667292000000000f00f266",
@@ -4988,7 +4988,7 @@
       "cuisine": "湘菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 91,
+      "total_engagement": 100,
       "mention_count": 5,
       "sources": [
         "695482920000000021033da0"
@@ -5005,7 +5005,7 @@
           "post_id": "695482920000000021033da0",
           "title": "湾区美食🔥单方面宣布Cupertino最好吃湘菜",
           "date": "2025-12-30",
-          "engagement": 91,
+          "engagement": 95,
           "context": ""
         }
       ],
@@ -5041,7 +5041,7 @@
       "google_rating": 4.1,
       "google_place_id": "ChIJceiBSg61j4ARPic_HgUjNC4",
       "verified": true,
-      "total_engagement": 10,
+      "total_engagement": 59,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5060,7 +5060,7 @@
           "post_id": "66221334000000000401809a",
           "title": "南湾｜好吃到生气的川菜馆",
           "date": "2024-04-19",
-          "engagement": "10",
+          "engagement": 58,
           "context": ""
         }
       ],
@@ -5091,7 +5091,7 @@
       "google_rating": 3.7,
       "google_place_id": "ChIJc2rdBQB7j4ARvD7E5jvfwkE",
       "verified": true,
-      "total_engagement": 5,
+      "total_engagement": 157,
       "mention_count": 1,
       "sentiment_score": 0.5,
       "sentiment_details": {},
@@ -5111,7 +5111,7 @@
           "post_id": "67e725b0000000001d01bdd3",
           "title": "Pogu 旧金山Daly city",
           "date": "2025-03-28",
-          "engagement": "5",
+          "engagement": 156,
           "context": ""
         }
       ],
@@ -5140,7 +5140,7 @@
       "google_rating": null,
       "google_place_id": null,
       "verified": false,
-      "total_engagement": 39,
+      "total_engagement": 149,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5153,7 +5153,7 @@
           "post_id": "68765310000000002203d09d",
           "title": "🇺🇸Mountain view 湾区高端版唐人街吧…",
           "date": "2025-07-15",
-          "engagement": "39",
+          "engagement": 148,
           "context": ""
         }
       ],
@@ -5180,7 +5180,7 @@
       "google_rating": null,
       "google_place_id": null,
       "verified": false,
-      "total_engagement": 14,
+      "total_engagement": 488,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5197,7 +5197,7 @@
           "post_id": "68c0d540000000001c03c788",
           "title": "湾区｜发现宝藏💎！这家店太会玩了！",
           "date": "2025-09-10",
-          "engagement": "14",
+          "engagement": 487,
           "context": ""
         }
       ],
@@ -5224,7 +5224,7 @@
       "google_rating": 4.4,
       "google_place_id": "ChIJWzjAWoi1j4ARiRFnjdpgt3M",
       "verified": true,
-      "total_engagement": 11,
+      "total_engagement": 207,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5245,7 +5245,7 @@
           "post_id": "68c36f98000000001d000419",
           "title": "湾区美食💫又在南湾找到了好吃的羊蝎子啦‼️",
           "date": "2025-09-12",
-          "engagement": "11",
+          "engagement": 206,
           "context": ""
         }
       ],
@@ -5274,7 +5274,7 @@
       "google_rating": 4.1,
       "google_place_id": "ChIJFf37HL61j4AR2qKxTGxiB3Q",
       "verified": true,
-      "total_engagement": 8,
+      "total_engagement": 54,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5295,7 +5295,7 @@
           "post_id": "68f1b80b0000000004004859",
           "title": "湾区，多少次来cupertino就是为了这七件套",
           "date": "2025-10-17",
-          "engagement": "8",
+          "engagement": 53,
           "context": ""
         }
       ],
@@ -5326,7 +5326,7 @@
       "google_rating": 4.6,
       "google_place_id": "ChIJLWA0dIt9j4AR3g3Oo_CocNc",
       "verified": true,
-      "total_engagement": 11,
+      "total_engagement": 1196,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5348,7 +5348,7 @@
           "post_id": "68fdccea000000000703850d",
           "title": "旧金山必吃神级泰餐！已三刷认证🤩",
           "date": "2025-10-26",
-          "engagement": "11",
+          "engagement": 1195,
           "context": ""
         }
       ],
@@ -5377,7 +5377,7 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJqSZ411THj4ARi6IlC4HNcbs",
       "verified": true,
-      "total_engagement": 42,
+      "total_engagement": 522,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5394,7 +5394,7 @@
           "post_id": "694a0149000000001f007d63",
           "title": "湾区🥢 我心中最Top级上海餐馆",
           "date": "2025-12-23",
-          "engagement": "42",
+          "engagement": 521,
           "context": ""
         }
       ],
@@ -5423,7 +5423,7 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJrQlLTxu1j4ARlHgXrtOFG4c",
       "verified": true,
-      "total_engagement": 15,
+      "total_engagement": 102,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5439,7 +5439,7 @@
           "post_id": "694a464a000000001f00ac7f",
           "title": "南湾丨这一口感觉自己回国了🤩",
           "date": "2025-12-23",
-          "engagement": "15",
+          "engagement": 101,
           "context": ""
         }
       ],
@@ -5470,7 +5470,7 @@
       "google_rating": 3.7,
       "google_place_id": "ChIJVWa00YO1j4ARC7IHxI4bsQA",
       "verified": true,
-      "total_engagement": 2,
+      "total_engagement": 96,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5489,7 +5489,7 @@
           "post_id": "695482920000000021033da0",
           "title": "湾区美食🔥单方面宣布Cupertino最好吃湘菜",
           "date": "2025-12-31",
-          "engagement": "2",
+          "engagement": 95,
           "context": ""
         }
       ],
@@ -5520,7 +5520,7 @@
       "google_rating": 5,
       "google_place_id": "ChIJc1nmIQB9j4ARG17vnInodjE",
       "verified": true,
-      "total_engagement": 29,
+      "total_engagement": 856,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5542,7 +5542,7 @@
           "post_id": "69584c3d00000000220315ca",
           "title": "首发｜感觉目前是湾区top1好吃。。。",
           "date": "2026-01-02",
-          "engagement": "29",
+          "engagement": 855,
           "context": ""
         }
       ],
@@ -5571,7 +5571,7 @@
       "google_rating": null,
       "google_place_id": null,
       "verified": false,
-      "total_engagement": 47,
+      "total_engagement": 81,
       "mention_count": 1,
       "sentiment_score": 0.5,
       "sentiment_details": {},
@@ -5584,7 +5584,7 @@
           "post_id": "6965c214000000001a0261f5",
           "title": "最近真谗火锅呀！！！",
           "date": "2026-01-13",
-          "engagement": "47",
+          "engagement": 80,
           "context": ""
         }
       ],
@@ -5611,7 +5611,7 @@
       "google_rating": null,
       "google_place_id": null,
       "verified": false,
-      "total_engagement": 0,
+      "total_engagement": 104,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -5627,7 +5627,7 @@
           "post_id": "6981750a000000000e03db3a",
           "title": "湾区新开的咖啡店 Arwa Yemeni Coffee",
           "date": "2026-02-03",
-          "engagement": 0,
+          "engagement": 103,
           "context": ""
         }
       ],

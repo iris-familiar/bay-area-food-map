@@ -259,15 +259,15 @@ function openModal(id) {
             <div class="post-list">
                 ${r.post_details.slice(0, 5).map(p => `
                 <div class="post-item">
-                    <a href="https://www.xiaohongshu.com/explore/${p.post_id}" target="_blank" class="post-link">
+                    <div class="post-content">
                         <p class="post-title">${p.title || '无标题'}</p>
                         <p class="post-meta">${p.date} · 讨论度 ${p.engagement}</p>
-                    </a>
+                    </div>
                     <div class="post-actions">
-                        <span></span>
-                        <button onclick="showQRCode('${p.post_id}','${(p.title||'').replace(/'/g,"\\'")}')"
-                                class="qr-btn" title="显示二维码">
-                            <i class="fas fa-qrcode"></i>
+                        <button onclick="openXHSPost('${p.post_id}','${(p.title||'').replace(/'/g,"\\'")}')"
+                                class="xhs-btn" title="${isMobile ? '在App中打开' : '扫码在App中查看'}">
+                            <i class="fas ${isMobile ? 'fa-external-link-alt' : 'fa-qrcode'}"></i>
+                            <span>${isMobile ? '打开' : '查看'}</span>
                         </button>
                     </div>
                 </div>`).join('')}
@@ -324,6 +324,29 @@ function initModalGesture() {
             closeModal();
         }
     });
+}
+
+// ─── Device Detection ──────────────────────────────────────────────────────────
+
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+// Open XHS post - deep link on mobile, QR modal on desktop
+function openXHSPost(postId, title) {
+    const deepLink = `xhsdiscover://item/${postId}`;
+    const webUrl = `https://www.xiaohongshu.com/explore/${postId}`;
+
+    if (isMobile) {
+        // Try deep link, fallback to web if app not installed
+        window.location.href = deepLink;
+        setTimeout(() => {
+            if (document.hasFocus()) {
+                window.open(webUrl, '_blank');
+            }
+        }, 500);
+    } else {
+        // Desktop: show QR modal
+        showQRCode(postId, title);
+    }
 }
 
 // ─── QR Code ──────────────────────────────────────────────────────────────────
