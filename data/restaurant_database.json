@@ -1,7 +1,7 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-24T05:14:48.847Z",
-  "total_restaurants": 92,
+  "updated_at": "2026-02-24T08:10:04.533Z",
+  "total_restaurants": 102,
   "restaurants": [
     {
       "id": "r001",
@@ -154,7 +154,7 @@
       "google_place_id": "ChIJU-cplT3Jj4AR0luFIENzyRo",
       "address": "290 Barber Ct, Milpitas, CA 95035, USA",
       "verified": true,
-      "sentiment_score": 0.92,
+      "sentiment_score": 0.93,
       "sentiment_details": {
         "positive_mentions": 6,
         "negative_mentions": 0,
@@ -177,7 +177,7 @@
       "engagement": 4366,
       "city": "Milpitas",
       "region": "South Bay",
-      "updated_at": "2026-02-22T06:03:27.651Z",
+      "updated_at": "2026-02-24T07:34:23.123Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
@@ -185,8 +185,8 @@
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 1,
-          "engagement": 8
+          "mentions": 2,
+          "engagement": 241
         }
       ],
       "lat": 37.4236648,
@@ -406,16 +406,24 @@
         "香脆客家猪肉丸",
         "蒜香葱油薄饼",
         "凉拌耳丝",
-        "干炒牛河"
+        "干炒牛河",
+        "香菇鱼肉水饺",
+        "虾仁小馄饨",
+        "砂锅双档粉丝汤",
+        "姜葱炒蛏子",
+        "糕点",
+        "油条",
+        "豆浆"
       ],
       "cuisine": "中餐",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 915,
-      "mention_count": 4,
+      "total_engagement": 1453,
+      "mention_count": 5,
       "sources": [
         "690c40bf0000000005039eae",
-        "670977d9000000002a03115c"
+        "670977d9000000002a03115c",
+        "6915759900000000070383d7"
       ],
       "post_details": [
         {
@@ -423,6 +431,13 @@
           "title": "50吃到撑！Sunnyvale超高性价比家常美食来了",
           "date": "2024-10-11",
           "engagement": 644,
+          "context": ""
+        },
+        {
+          "post_id": "6915759900000000070383d7",
+          "title": "冬天一口暖暖的😍Sunnyvale平价上海家常味",
+          "date": "2025-11-14",
+          "engagement": 538,
           "context": ""
         },
         {
@@ -437,7 +452,7 @@
       "google_place_id": "ChIJxzsoIkm3j4ARqtD6u0eBbo0",
       "address": "673 Grape Ave, Sunnyvale, CA 94087, USA",
       "verified": true,
-      "sentiment_score": 0.77,
+      "sentiment_score": 0.79,
       "sentiment_details": {
         "positive_mentions": 1,
         "negative_mentions": 0,
@@ -462,12 +477,18 @@
       "engagement": 896,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-22T06:43:13.639Z",
+      "updated_at": "2026-02-24T07:34:23.123Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": [],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 538
+        }
+      ],
       "lat": 37.3719916,
       "lng": -122.0534541
     },
@@ -1207,11 +1228,12 @@
       "cuisine": "川菜",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 382,
-      "mention_count": 4,
+      "total_engagement": 529,
+      "mention_count": 5,
       "sources": [
         "694d9c04000000001e0255af",
-        "6913dafe0000000003012733"
+        "6913dafe0000000003012733",
+        "69672f16000000001a026754"
       ],
       "post_details": [
         {
@@ -1227,13 +1249,20 @@
           "date": "2025-11-11",
           "engagement": 172,
           "context": ""
+        },
+        {
+          "post_id": "69672f16000000001a026754",
+          "title": "🌶️湾区沸腾鱼界的扛把子",
+          "date": "2026-01-14",
+          "engagement": 147,
+          "context": ""
         }
       ],
       "google_rating": 4.1,
       "google_place_id": "ChIJz4rjNLDIj4ARDST3dLKZGZE",
       "address": "42 Dixon Rd, Milpitas, CA 95035, USA",
       "verified": true,
-      "sentiment_score": 0.77,
+      "sentiment_score": 0.81,
       "sentiment_details": {
         "positive_mentions": 1,
         "negative_mentions": 0,
@@ -1242,7 +1271,19 @@
       "recommendations": [
         "锅包肉",
         "农家一碗香",
-        "雷椒茄子"
+        "雷椒茄子",
+        "擂椒茄子",
+        "羊蝎子",
+        "泡椒鸡胗",
+        "火爆腰花",
+        "孜然黄牛肉",
+        "铁板日本豆腐",
+        "藤椒肥牛",
+        "荷叶双糯排骨",
+        "手撕包菜",
+        "湘西土匪猪肝",
+        "招牌沸腾鱼",
+        "牙签羊肉"
       ],
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
@@ -1262,12 +1303,18 @@
       "engagement": 378,
       "city": "Milpitas",
       "region": "South Bay",
-      "updated_at": "2026-02-22T08:00:36.329Z",
+      "updated_at": "2026-02-24T08:10:04.533Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": [],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 2,
+          "engagement": 357
+        }
+      ],
       "lat": 37.4570925,
       "lng": -121.9103666
     },
@@ -1874,10 +1921,11 @@
       "cuisine": "上海菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 245,
-      "mention_count": 2,
+      "total_engagement": 374,
+      "mention_count": 3,
       "sources": [
-        "66667292000000000f00f266"
+        "66667292000000000f00f266",
+        "68d4c157000000001301d46b"
       ],
       "post_details": [
         {
@@ -1886,20 +1934,31 @@
           "date": "2024-06-09",
           "engagement": 245,
           "context": ""
+        },
+        {
+          "post_id": "68d4c157000000001301d46b",
+          "title": "灣區美食｜Cupertino新開超好吃的上海菜",
+          "date": "2025-09-25",
+          "engagement": 129,
+          "context": ""
         }
       ],
       "google_rating": 4.3,
       "google_place_id": "ChIJhafzm7y1j4ARgdm5WGVYhhk",
       "address": "19634 Stevens Creek Blvd, Cupertino, CA 95014, USA",
       "verified": true,
-      "sentiment_score": 0.77,
+      "sentiment_score": 0.79,
       "sentiment_details": {
         "positive_mentions": 1,
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
       "recommendations": [
-        "炸猪排"
+        "炸猪排",
+        "松鼠桂魚",
+        "江南蔥油雞",
+        "蟹粉小籠包",
+        "蔥油拌麵"
       ],
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
@@ -1918,12 +1977,18 @@
       "engagement": 245,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-22T08:00:44.570Z",
+      "updated_at": "2026-02-24T07:34:23.123Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": [],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 129
+        }
+      ],
       "lat": 37.3223899,
       "lng": -122.0176403
     },
@@ -3143,10 +3208,11 @@
       "cuisine": "湘菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 127,
-      "mention_count": 2,
+      "total_engagement": 205,
+      "mention_count": 3,
       "sources": [
-        "69572ce8000000001d03de1d"
+        "69572ce8000000001d03de1d",
+        "68c50994000000001d02e833"
       ],
       "post_details": [
         {
@@ -3155,19 +3221,32 @@
           "date": "2026-01-01",
           "engagement": 127,
           "context": ""
+        },
+        {
+          "post_id": "68c50994000000001d02e833",
+          "title": "Cupertino中餐顶流！湾区地道粤菜X湘菜🥢",
+          "date": "2025-09-13",
+          "engagement": 78,
+          "context": ""
         }
       ],
       "google_rating": 4.3,
       "google_place_id": "ChIJ1bP2GeK1j4ARt0ZQZTIT2Jg",
       "address": "10911 N Wolfe Rd, Cupertino, CA 95014, USA",
       "verified": true,
-      "sentiment_score": 0.53,
+      "sentiment_score": 0.58,
       "sentiment_details": {
         "positive_mentions": 0,
         "negative_mentions": 1,
         "analyzed_contexts": 1
       },
-      "recommendations": [],
+      "recommendations": [
+        "玻璃脆皮乳鸽",
+        "避风塘炒蟹",
+        "豇豆干小炒牛",
+        "爆炒牛蛙",
+        "荷包蛋丝瓜"
+      ],
       "recommendations_source": "extracted",
       "semantic_tags": {
         "scenes": [
@@ -3185,12 +3264,18 @@
       "engagement": 127,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-22T08:00:57.705Z",
+      "updated_at": "2026-02-24T07:34:23.123Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": [],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 78
+        }
+      ],
       "lat": 37.3361975,
       "lng": -122.0154086
     },
@@ -5423,29 +5508,66 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJrQlLTxu1j4ARlHgXrtOFG4c",
       "verified": true,
-      "total_engagement": 101,
-      "mention_count": 1,
+      "total_engagement": 339,
+      "mention_count": 3,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "鱼汤",
-        "炖排骨"
+        "炖排骨",
+        "臭豆腐",
+        "鱼香肉丝",
+        "凉拌莴笋丝",
+        "砂锅冬瓜排骨汤",
+        "芙蓉豆腐鱼",
+        "农家一碗香",
+        "贡椒牛蛙",
+        "羊杂汤",
+        "咸鸭蛋炒豆苗",
+        "豆浆",
+        "外婆一碗端",
+        "蒜苔炒肥牛",
+        "外婆炒饼",
+        "蒜蓉大虾",
+        "外婆小炒肉"
       ],
       "sources": [
-        "694a464a000000001f00ac7f"
+        "694a464a000000001f00ac7f",
+        "696bedd6000000000a03f993",
+        "675e625c000000000201724e"
       ],
       "post_details": [
+        {
+          "post_id": "696bedd6000000000a03f993",
+          "title": "南湾吃了 3 年的家常菜，每次都点臭豆腐😍",
+          "date": "2026-01-17",
+          "engagement": 174,
+          "context": ""
+        },
         {
           "post_id": "694a464a000000001f00ac7f",
           "title": "南湾丨这一口感觉自己回国了🤩",
           "date": "2025-12-23",
           "engagement": 101,
           "context": ""
+        },
+        {
+          "post_id": "675e625c000000000201724e",
+          "title": "湾区Cupertino外婆家常菜",
+          "date": "2024-12-15",
+          "engagement": 64,
+          "context": ""
         }
       ],
-      "timeseries": [],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 2,
+          "engagement": 238
+        }
+      ],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T08:01:19.612Z",
+      "updated_at": "2026-02-24T08:10:04.530Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
@@ -5470,8 +5592,8 @@
       "google_rating": 3.7,
       "google_place_id": "ChIJVWa00YO1j4ARC7IHxI4bsQA",
       "verified": true,
-      "total_engagement": 95,
-      "mention_count": 1,
+      "total_engagement": 223,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -5479,12 +5601,24 @@
         "长沙臭豆腐",
         "毛血旺",
         "干锅野生菌",
-        "攸县炒粉"
+        "攸县炒粉",
+        "菌菇椰子鸡",
+        "擂辣椒茄子皮蛋",
+        "紫苏水煮鱼",
+        "招牌红烧肉"
       ],
       "sources": [
-        "695482920000000021033da0"
+        "695482920000000021033da0",
+        "696904c4000000000e00df4e"
       ],
       "post_details": [
+        {
+          "post_id": "696904c4000000000e00df4e",
+          "title": "🍄硅谷国宴大厨坐镇的湘菜馆",
+          "date": "2026-01-15",
+          "engagement": 128,
+          "context": ""
+        },
         {
           "post_id": "695482920000000021033da0",
           "title": "湾区美食🔥单方面宣布Cupertino最好吃湘菜",
@@ -5493,9 +5627,15 @@
           "context": ""
         }
       ],
-      "timeseries": [],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 128
+        }
+      ],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T08:01:20.325Z",
+      "updated_at": "2026-02-24T07:34:23.123Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
@@ -5640,7 +5780,544 @@
         "source_post": "6981750a000000000e03db3a",
         "needs_review": false
       }
+    },
+    {
+      "id": "pipeline_1771918463119_pqu4",
+      "name": "The Public Izakaya",
+      "name_en": "",
+      "cuisine": "Japanese",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "San Francisco",
+      "price_range": "unknown",
+      "address": "700 Post St, San Francisco, CA 94109, USA",
+      "google_rating": 4.2,
+      "google_place_id": "ChIJT_jDRWCBhYARS19F4k0oAjY",
+      "lat": 37.7878404,
+      "lng": -122.4135658,
+      "verified": true,
+      "total_engagement": 1314,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "豚骨拉面",
+        "传统鳗鱼饭",
+        "炸饺子",
+        "炸鸡"
+      ],
+      "sources": [
+        "678e8bb90000000029015a12"
+      ],
+      "post_details": [
+        {
+          "post_id": "678e8bb90000000029015a12",
+          "title": "旧金山的日料是整个湾区的天花板",
+          "date": "2025-01-20",
+          "engagement": 1314,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1314
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T07:34:23.119Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "678e8bb90000000029015a12",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1771918463123_bto8",
+      "name": "Imperial Treasure",
+      "name_en": "",
+      "cuisine": "Chinese",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Palo Alto",
+      "price_range": "unknown",
+      "address": "151 California Ave unit e, Palo Alto, CA 94306, USA",
+      "google_rating": 4.1,
+      "google_place_id": "ChIJq0UsRXS7j4ARiC9b0hTPMjg",
+      "lat": 37.428383,
+      "lng": -122.1422935,
+      "verified": true,
+      "total_engagement": 40,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "北京烤鸭",
+        "蒜香牛蛙",
+        "竹蛏粉丝皇",
+        "脆皮羊排",
+        "辣子鸡",
+        "糖醋小排",
+        "上汤大豆苗"
+      ],
+      "sources": [
+        "681f0af700000000120069a6"
+      ],
+      "post_details": [
+        {
+          "post_id": "681f0af700000000120069a6",
+          "title": "【palo alto餐厅】 寻珍藏宝阁",
+          "date": "2025-05-10",
+          "engagement": 40,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 40
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T07:34:23.123Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "681f0af700000000120069a6",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1771918463123_z98q",
+      "name": "Seoul Gom Tang",
+      "name_en": "",
+      "cuisine": "Korean",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Oakland",
+      "price_range": "unknown",
+      "address": "3801 Telegraph Ave, Oakland, CA 94609, USA",
+      "google_rating": 4.4,
+      "google_place_id": "ChIJJxKBhwd-hYARckeSfiqOiT4",
+      "lat": 37.82682740000001,
+      "lng": -122.2653357,
+      "verified": true,
+      "total_engagement": 445,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "牛尾巴汤",
+        "牛窝骨",
+        "年糕汤",
+        "石锅拌饭",
+        "猪肉土豆汤",
+        "蒸饺子",
+        "炸猪排",
+        "蒸饺"
+      ],
+      "sources": [
+        "6938a1ee000000001b0245b2"
+      ],
+      "post_details": [
+        {
+          "post_id": "6938a1ee000000001b0245b2",
+          "title": "伯克利留学生的隐藏食堂",
+          "date": "2025-12-09",
+          "engagement": 445,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 2,
+          "engagement": 893
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T08:10:04.533Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "6938a1ee000000001b0245b2",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1771918463123_wyza",
+      "name": "KAN KIIN BRUNCH & THAI EATERY",
+      "name_en": "",
+      "cuisine": "Thai",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Daly City",
+      "price_range": "unknown",
+      "address": "201 Southgate Ave, Daly City, CA 94015, USA",
+      "google_rating": 4.3,
+      "google_place_id": "ChIJDQYsWeJ9j4ARQERHM0Ylj5k",
+      "lat": 37.6971435,
+      "lng": -122.4843524,
+      "verified": true,
+      "total_engagement": 241,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "冬阴功汤",
+        "Fresh Crab Fried Rice"
+      ],
+      "sources": [
+        "693b34a6000000001b024d0b"
+      ],
+      "post_details": [
+        {
+          "post_id": "693b34a6000000001b024d0b",
+          "title": "每次来Daly City都只为了这一口🤤好吃好吃！",
+          "date": "2025-12-11",
+          "engagement": 241,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 241
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T07:34:23.123Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "693b34a6000000001b024d0b",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1771918463123_jssi",
+      "name": "湾区蓉城火锅",
+      "name_en": "",
+      "cuisine": "Hot Pot",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Fremont",
+      "price_range": "unknown",
+      "address": "43844 Pacific Commons Blvd, Fremont, CA 94538, USA",
+      "google_rating": 4.5,
+      "google_place_id": "ChIJTzAXlcHHj4AReheB6lVYEYY",
+      "lat": 37.5014554,
+      "lng": -121.9697516,
+      "verified": true,
+      "total_engagement": 30,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "麻辣嫩牛肉",
+        "鸡脆骨串串",
+        "肝串串",
+        "牛羊肉肉大环",
+        "粉耗子",
+        "兔兔冰淇淋",
+        "花椒鸡鸳鸯锅"
+      ],
+      "sources": [
+        "6976e996000000001a021721"
+      ],
+      "post_details": [
+        {
+          "post_id": "6976e996000000001a021721",
+          "title": "湾区蓉城火锅",
+          "date": "2026-01-26",
+          "engagement": 30,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 30
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T07:34:23.123Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "6976e996000000001a021721",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1771920604530_wv7y",
+      "name": "Kunjip",
+      "name_en": "",
+      "cuisine": "Korean",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Mountain View",
+      "price_range": "unknown",
+      "address": "1962 El Camino Real, Mountain View, CA 94040, USA",
+      "google_rating": 4.2,
+      "google_place_id": "ChIJl6WpAwCxj4ARGS8burVhH-Q",
+      "lat": 37.3944297,
+      "lng": -122.0981737,
+      "verified": true,
+      "total_engagement": 140,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "Wagyu Selleongtang",
+        "Short Rib",
+        "Beef Bulgogi",
+        "Fried Cod",
+        "Snow Crab Bibimbap",
+        "Abalone Side Dish"
+      ],
+      "sources": [
+        "680c1ac4000000001e00608c"
+      ],
+      "post_details": [
+        {
+          "post_id": "680c1ac4000000001e00608c",
+          "title": "小声说 感觉mountain view的kunjip网红Tofu",
+          "date": "2025-04-25",
+          "engagement": 140,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 140
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T08:10:04.530Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "680c1ac4000000001e00608c",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1771920604533_at66",
+      "name": "The Spicy Shrimp / 浩味茶餐厅",
+      "name_en": "",
+      "cuisine": "Hong Kong Style Cafe / Cantonese",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "San Francisco",
+      "price_range": "unknown",
+      "address": "150 Waverly Pl, San Francisco, CA 94108, USA",
+      "google_rating": 4.1,
+      "google_place_id": "ChIJB4lCVIuAhYARG2AcAOsc1kU",
+      "lat": 37.7948366,
+      "lng": -122.4068215,
+      "verified": true,
+      "total_engagement": 668,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "猪肉肠粉",
+        "生焗黄毛鸡煲",
+        "凉瓜班腩饭"
+      ],
+      "sources": [
+        "682688e2000000002101a3a3"
+      ],
+      "post_details": [
+        {
+          "post_id": "682688e2000000002101a3a3",
+          "title": "最近爱惨了旧金山这家的肠粉和生焗鸡煲！！🥹",
+          "date": "2025-05-16",
+          "engagement": 668,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 668
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T08:10:04.533Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "682688e2000000002101a3a3",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1771920604533_pd9w",
+      "name": "人间烟火小酒馆",
+      "name_en": "",
+      "cuisine": "Chinese Bistro",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Sunnyvale",
+      "price_range": "unknown",
+      "address": "1653 Hollenbeck Ave, Sunnyvale, CA 94087, USA",
+      "google_rating": 4.3,
+      "google_place_id": "ChIJrQAMMEi1j4ARf-auOsP-qr0",
+      "lat": 37.3392241,
+      "lng": -122.0426325,
+      "verified": true,
+      "total_engagement": 550,
+      "mention_count": 1,
+      "sentiment_score": 0,
+      "sentiment_details": {},
+      "recommendations": [],
+      "sources": [
+        "68cc5a600000000013012980"
+      ],
+      "post_details": [
+        {
+          "post_id": "68cc5a600000000013012980",
+          "title": "Sunnyvale 人间烟火小酒馆，吃完喷射36h",
+          "date": "2025-09-18",
+          "engagement": 550,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 550
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T08:10:04.533Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "68cc5a600000000013012980",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1771920604533_o2nd",
+      "name": "冯校长老火锅",
+      "name_en": "",
+      "cuisine": "Hot Pot",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Sunnyvale",
+      "price_range": "unknown",
+      "address": "1669 Hollenbeck Ave A, Sunnyvale, CA 94087, USA",
+      "google_rating": 4.7,
+      "google_place_id": "ChIJMW2SCAC1j4ARO9L_jMpUth4",
+      "lat": 37.3387227,
+      "lng": -122.0425458,
+      "verified": true,
+      "total_engagement": 48,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "新西兰和牛",
+        "八秒土豆丝",
+        "精品千层肚",
+        "酸豇豆丸子",
+        "冰粉",
+        "冰淇淋"
+      ],
+      "sources": [
+        "69236d64000000001b0323d5"
+      ],
+      "post_details": [
+        {
+          "post_id": "69236d64000000001b0323d5",
+          "title": "🍲【湾区宝藏火锅！冯校长老火锅太上头了】🔥",
+          "date": "2025-11-23",
+          "engagement": 48,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 48
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T08:10:04.533Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "69236d64000000001b0323d5",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1771920604533_4diz",
+      "name": "Ushiya Grill",
+      "name_en": "",
+      "cuisine": "Japanese BBQ / All-You-Can-Eat",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Milpitas",
+      "price_range": "unknown",
+      "address": "1792 N Milpitas Blvd, Milpitas, CA 95035, USA",
+      "google_rating": 4.7,
+      "google_place_id": "ChIJ992eDT7Jj4AROhDPPVHi1Gw",
+      "lat": 37.4558618,
+      "lng": -121.9106422,
+      "verified": true,
+      "total_engagement": 290,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "雪花肥牛",
+        "牛舌",
+        "肥牛卷",
+        "芝士玉米",
+        "虾"
+      ],
+      "sources": [
+        "699696ea0000000028008389"
+      ],
+      "post_details": [
+        {
+          "post_id": "699696ea0000000028008389",
+          "title": "湾区自助烤肉🍖和牛🥩无限次‼️续盘",
+          "date": "2026-02-19",
+          "engagement": 290,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 290
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T08:10:04.533Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "699696ea0000000028008389",
+        "needs_review": false
+      }
     }
   ],
-  "verified_at": "2026-02-24T05:49:28.322Z"
+  "verified_at": "2026-02-24T08:13:46.404Z"
 }
