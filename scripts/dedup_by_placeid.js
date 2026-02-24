@@ -20,9 +20,11 @@ const DB_FILE = path.join(ROOT, 'data', 'restaurant_database.json');
 
 const db = JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
 
-// Group by place_id
+// Group by place_id (exclude already-merged entries)
 const byPlaceId = {};
 for (const r of db.restaurants) {
+    // Skip entries that have already been merged into another
+    if (r._status === 'duplicate_merged') continue;
     if (r.google_place_id) {
         if (!byPlaceId[r.google_place_id]) byPlaceId[r.google_place_id] = [];
         byPlaceId[r.google_place_id].push(r);
@@ -79,6 +81,39 @@ for (const [placeId, restaurants] of duplicates) {
                     existing.add(key);
                 }
             }
+        }
+
+        // Combine post_details (individual post links with engagement data)
+        if (r.post_details) {
+            if (!keep.post_details) keep.post_details = [];
+            const existingPostIds = new Set(keep.post_details.map(p => p.post_id));
+            for (const post of r.post_details) {
+                if (post.post_id && !existingPostIds.has(post.post_id)) {
+                    keep.post_details.push(post);
+                    existingPostIds.add(post.post_id);
+                }
+            }
+            // Sort by engagement (highest first) and keep top 10
+            keep.post_details.sort((a, b) => (b.engagement || 0) - (a.engagement || 0));
+            keep.post_details = keep.post_details.slice(0, 10);
+        }
+
+        // Combine timeseries (monthly engagement tracking)
+        if (r.timeseries) {
+            if (!keep.timeseries) keep.timeseries = [];
+            for (const entry of r.timeseries) {
+                const existing = keep.timeseries.find(e => e.month === entry.month);
+                if (existing) {
+                    existing.mentions = (existing.mentions || 0) + (entry.mentions || 0);
+                    existing.engagement = (existing.engagement || 0) + (entry.engagement || 0);
+                } else {
+                    keep.timeseries.push({ ...entry });
+                }
+            }
+            // Keep only last 24 months, sorted
+            keep.timeseries = keep.timeseries
+                .sort((a, b) => a.month.localeCompare(b.month))
+                .slice(-24);
         }
 
         // Mark as merged
