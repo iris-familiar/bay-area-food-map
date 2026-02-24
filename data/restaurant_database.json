@@ -1,7 +1,7 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-23T05:23:55.151Z",
-  "total_restaurants": 92,
+  "updated_at": "2026-02-24T02:30:23.860Z",
+  "total_restaurants": 95,
   "restaurants": [
     {
       "id": "r001",
@@ -1530,7 +1530,7 @@
       "google_place_id": "ChIJuyy5k-i3j4ARXY_xqSqZRpg",
       "address": "225 E Middlefield Rd, Mountain View, CA 94043, USA",
       "verified": false,
-      "sentiment_score": 0.77,
+      "sentiment_score": 0.79,
       "sentiment_details": {
         "positive_mentions": 1,
         "negative_mentions": 0,
@@ -1539,7 +1539,11 @@
       "recommendations": [
         "打抛猪肉饭",
         "Taro Samosa",
-        "Tom Yum Soup"
+        "Tom Yum Soup",
+        "Kow Kra Pao",
+        "Hor Mok Pla",
+        "Mango Sticky Rice",
+        "Pad Thai"
       ],
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
@@ -1560,12 +1564,18 @@
       "engagement": 326,
       "city": "Mountain View",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.973Z",
+      "updated_at": "2026-02-24T02:30:23.860Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 330
+        }
+      ]
     },
     {
       "id": "r024",
@@ -5423,16 +5433,22 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJrQlLTxu1j4ARlHgXrtOFG4c",
       "verified": true,
-      "total_engagement": 101,
-      "mention_count": 1,
+      "total_engagement": 121,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "鱼汤",
-        "炖排骨"
+        "炖排骨",
+        "外婆粒粒鸭",
+        "松子玉米",
+        "小蒸包",
+        "韭菜脆皮卷",
+        "什么一碗香"
       ],
       "sources": [
-        "694a464a000000001f00ac7f"
+        "694a464a000000001f00ac7f",
+        "68647282000000001d00dd38"
       ],
       "post_details": [
         {
@@ -5441,11 +5457,24 @@
           "date": "2025-12-23",
           "engagement": 101,
           "context": ""
+        },
+        {
+          "post_id": "68647282000000001d00dd38",
+          "title": "Cupertino美食｜打卡新升级的老牌川湘菜‼️",
+          "date": "2025-07-01",
+          "engagement": 20,
+          "context": ""
         }
       ],
-      "timeseries": [],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 20
+        }
+      ],
       "semantic_tags": [],
-      "updated_at": "2026-02-22T08:01:19.612Z",
+      "updated_at": "2026-02-24T02:30:23.860Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
@@ -5640,7 +5669,166 @@
         "source_post": "6981750a000000000e03db3a",
         "needs_review": false
       }
+    },
+    {
+      "id": "pipeline_1771900223855_dw09",
+      "name": "朱记重庆小面",
+      "name_en": "",
+      "cuisine": "重庆小面",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Fremont",
+      "price_range": "$10-20",
+      "address": "46164 Warm Springs Blvd #274, Fremont, CA 94539, USA",
+      "google_rating": 4.6,
+      "google_place_id": "ChIJu4h8pAHHj4ARrR4vhGkzrRw",
+      "lat": 37.4937898,
+      "lng": -121.9298449,
+      "verified": true,
+      "total_engagement": 379,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "新品牛腩面",
+        "人气回归牛骨面",
+        "加量肥肠面",
+        "封神豌杂面",
+        "麻辣酸辣粉2.0"
+      ],
+      "sources": [
+        "6646aa0b000000001e01ae16"
+      ],
+      "post_details": [
+        {
+          "post_id": "6646aa0b000000001e01ae16",
+          "title": "来fremont，就是为了嗦这一口👄",
+          "date": "2024-05-17",
+          "engagement": 379,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 379
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T02:30:23.855Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "6646aa0b000000001e01ae16",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1771900223860_kz7e",
+      "name": "御食园川菜馆 (Z & Y Restaurant)",
+      "name_en": "",
+      "cuisine": "川菜",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "San Francisco",
+      "price_range": "人均$40左右",
+      "address": "655 Jackson St, San Francisco, CA 94133, USA",
+      "google_rating": 4.1,
+      "google_place_id": "ChIJmevPu_SAhYARMmQlHRt_Rj4",
+      "lat": 37.7960301,
+      "lng": -122.4060612,
+      "verified": true,
+      "total_engagement": 121,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "万州烤活鱼",
+        "红酒炖牛尾",
+        "东坡肘子"
+      ],
+      "sources": [
+        "666fd3080000000006006530"
+      ],
+      "post_details": [
+        {
+          "post_id": "666fd3080000000006006530",
+          "title": "湾区T0川菜 - 成都人肯定",
+          "date": "2024-06-17",
+          "engagement": 121,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 121
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T02:30:23.860Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "666fd3080000000006006530",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1771900223860_6pft",
+      "name": "Fullhouse Dumpling",
+      "name_en": "",
+      "cuisine": "台湾菜",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Fremont",
+      "price_range": "unknown",
+      "address": "6092 Stevenson Blvd, Fremont, CA 94538, USA",
+      "google_rating": 4.2,
+      "google_place_id": "ChIJMwz3XlTHj4ARU0oxAEgIceA",
+      "lat": 37.5185182,
+      "lng": -121.9901232,
+      "verified": true,
+      "total_engagement": 1109,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "小管芋头煲",
+        "小炒",
+        "汤包",
+        "蟹黄汤包"
+      ],
+      "sources": [
+        "67f59619000000000f031cc3"
+      ],
+      "post_details": [
+        {
+          "post_id": "67f59619000000000f031cc3",
+          "title": "湾区|这家台湾餐厅的小管芋头煲真的太赞了",
+          "date": "2025-04-08",
+          "engagement": 1109,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1109
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T02:30:23.860Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "67f59619000000000f031cc3",
+        "needs_review": false
+      }
     }
   ],
-  "verified_at": "2026-02-23T23:30:08.264Z"
+  "verified_at": "2026-02-24T02:30:23.954Z"
 }
