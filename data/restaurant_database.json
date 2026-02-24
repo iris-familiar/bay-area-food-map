@@ -1,6 +1,6 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-24T03:02:20.509Z",
+  "updated_at": "2026-02-24T04:30:51.232Z",
   "total_restaurants": 96,
   "restaurants": [
     {
@@ -3922,8 +3922,8 @@
       "cuisine": "中餐",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 134,
-      "mention_count": 6,
+      "total_engagement": 187,
+      "mention_count": 7,
       "sources": [
         "690f77cf00000000050317bb",
         "680d561a000000000f033dbc",
@@ -4265,11 +4265,13 @@
       "cuisine": "家常菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 126,
-      "mention_count": 5,
+      "total_engagement": 453,
+      "mention_count": 8,
       "sources": [
         "690cf26b000000000401123f",
-        "694a464a000000001f00ac7f"
+        "694a464a000000001f00ac7f",
+        "68647282000000001d00dd38",
+        "685f837f000000001d00e8f7"
       ],
       "post_details": [
         {
@@ -4299,7 +4301,19 @@
       },
       "recommendations": [
         "鱼汤",
-        "炖排骨"
+        "炖排骨",
+        "外婆粒粒鸭",
+        "松子玉米",
+        "小蒸包",
+        "韭菜脆皮卷",
+        "什么一碗香",
+        "小炒肉",
+        "炒猪肝",
+        "炒牛舌",
+        "臭豆腐酸豆角肥肠",
+        "梅菜黄花鱼",
+        "啤酒鸭",
+        "冬瓜排骨汤"
       ],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -4511,8 +4525,8 @@
       "cuisine": "川菜",
       "area": "San Jose",
       "price_range": "",
-      "total_engagement": 83,
-      "mention_count": 5,
+      "total_engagement": 141,
+      "mention_count": 6,
       "sources": [
         "690cf26b000000000401123f",
         "66221334000000000401809a"
@@ -4998,8 +5012,8 @@
       "cuisine": "湘菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 95,
-      "mention_count": 5,
+      "total_engagement": 190,
+      "mention_count": 6,
       "sources": [
         "695482920000000021033da0"
       ],
