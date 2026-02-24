@@ -15,6 +15,17 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
+// ─── Load .env (if not already set) ──────────────────────────────────────────
+const envPath = path.join(__dirname, '..', '.env');
+if (fs.existsSync(envPath)) {
+    fs.readFileSync(envPath, 'utf8').split('\n').forEach(line => {
+        const match = line.match(/^([A-Z_][A-Z0-9_]*)=(.*)$/);
+        if (match && !process.env[match[1]]) {
+            process.env[match[1]] = match[2];
+        }
+    });
+}
+
 // ─── Config ────────────────────────────────────────────────────────────────
 const rawDir = process.argv[2];
 const outputFile = process.argv[3];
@@ -36,6 +47,8 @@ const GLM_MODEL = process.env.GLM_MODEL || 'glm-5';
 // MAX_POSTS env var overrides for testing (e.g. MAX_POSTS=10 in e2e)
 const MAX_POSTS_PER_RUN = parseInt(process.env.MAX_POSTS || '100', 10);
 const DELAY_MS = 200; // 200ms between API calls
+const MAX_RETRIES = 3; // Max retry attempts for API errors
+const RETRY_DELAY_MS = 1000; // Initial retry delay (exponential backoff)
 
 // ─── Bay Area validation ────────────────────────────────────────────────────
 const BAY_AREA_SIGNALS = [
@@ -47,35 +60,74 @@ const BAY_AREA_SIGNALS = [
     '库柏蒂诺', '米比达斯', '弗里蒙特', '山景城', '桑尼维尔',
 ];
 
+// City name normalization map (Chinese to English aliases)
+const CITY_ALIASES = {
+    '南湾': 'San Jose',
+    '东湾': 'Fremont',
+    '旧金山': 'SF',
+    '硅谷': 'San Jose',
+    '库柏蒂诺': 'Cupertino',
+    '山景城': 'Mountain View',
+    '桑尼维尔': 'Sunnyvale',
+    '圣克拉拉': 'Santa Clara',
+    '湾区': null,  // Too vague, will fail enrichment
+};
+
+const VALID_CITIES = new Set([
+    'Cupertino', 'Milpitas', 'Fremont', 'Mountain View', 'Sunnyvale',
+    'San Jose', 'Palo Alto', 'Santa Clara', 'San Mateo', 'Foster City',
+    'Redwood City', 'Menlo Park', 'Union City', 'Newark', 'Hayward',
+    'SF', 'San Francisco', 'Daly City', 'San Leandro', 'Pleasanton',
+    'Livermore', 'Dublin', 'Walnut Creek', 'Berkeley', 'Oakland', 'San Ramon',
+]);
+
+function normalizeCity(city) {
+    if (!city || city === 'unknown') return 'unknown';
+    // Check aliases first
+    if (CITY_ALIASES[city]) return CITY_ALIASES[city];
+    // Normalize to valid city
+    const normalized = city.trim();
+    for (const valid of VALID_CITIES) {
+        if (valid.toLowerCase() === normalized.toLowerCase()) return valid;
+    }
+    return 'unknown';
+}
+
 function isBayAreaPost(text) {
     return BAY_AREA_SIGNALS.some(s => text.includes(s));
 }
 
+// ─── Bay Area cities for extraction ─────────────────────────────────────────
+const BAY_AREA_CITIES_LIST = 'Cupertino, Milpitas, Fremont, Mountain View, Sunnyvale, San Jose, Palo Alto, Santa Clara, San Mateo, Foster City, Redwood City, Menlo Park, Union City, Newark, Hayward, SF/San Francisco, Daly City, San Leandro, Pleasanton, Livermore, Dublin, Walnut Creek, Berkeley, Oakland, San Ramon';
+
 // ─── GLM API call (OpenAI-compatible) ──────────────────────────────────────
 function glmExtract(postText) {
     return new Promise((resolve, reject) => {
-        const prompt = `You are a data extraction assistant. Extract restaurant information from this XiaoHongShu (小红书) post about food in the San Francisco Bay Area.
+        const prompt = `Extract restaurants from this XiaoHongShu post about SF Bay Area food.
 
 POST CONTENT:
 ${postText.slice(0, 3000)}
 
-Extract all Bay Area restaurants mentioned. Return ONLY valid JSON, no explanation:
+IMPORTANT: This may be a "list post" mentioning MULTIPLE restaurants. Extract ALL of them.
+
+Bay Area cities: ${BAY_AREA_CITIES_LIST}
+
+Return ONLY valid JSON:
 {"restaurants": [
   {
     "name": "restaurant name (Chinese or English)",
-    "city": "city name (e.g. Cupertino, Milpitas, Fremont, San Jose, SF)",
-    "cuisine": "cuisine type (e.g. 川菜, 湘菜, 火锅, 日料, 韩餐, 粤菜, American)",
+    "city": "city name from the list above (required - extract from address or context)",
+    "cuisine": "cuisine type",
     "dishes": ["dish1", "dish2"],
-    "price_per_person": "price range like $15-20 or 人均$50",
     "sentiment": "positive|negative|neutral"
   }
 ]}
 
 Rules:
-- Only include restaurants in the SF Bay Area
-- Restaurant name must be the actual name, not a description
-- If no restaurants are mentioned, return {"restaurants": []}
-- dishes should be specific dish names mentioned in the post, not generic terms`;
+- Extract EVERY restaurant mentioned, even if just a name
+- City is REQUIRED - extract from address, neighborhood, or context
+- If city is unclear, make best guess from Bay Area cities list
+- If no restaurants found, return {"restaurants": []}`;
 
         const body = JSON.stringify({
             model: GLM_MODEL,
@@ -134,6 +186,38 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// Check if error is retryable (rate limiting, timeout, server overload)
+function isRetryableError(error) {
+    const msg = error.message || '';
+    return msg.includes('timeout') ||
+           msg.includes('访问量过大') ||  // "too many requests" in Chinese
+           msg.includes('rate limit') ||
+           msg.includes('429') ||
+           msg.includes('503') ||
+           msg.includes('502');
+}
+
+// Retry wrapper with exponential backoff
+async function glmExtractWithRetry(postText, maxRetries = MAX_RETRIES) {
+    let lastError;
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+        try {
+            const result = await glmExtract(postText);
+            return { success: true, restaurants: result, attempts: attempt };
+        } catch (e) {
+            lastError = e;
+            if (isRetryableError(e) && attempt < maxRetries) {
+                const delay = RETRY_DELAY_MS * Math.pow(2, attempt - 1);
+                console.log(`    Retry ${attempt}/${maxRetries} in ${delay}ms...`);
+                await sleep(delay);
+            } else {
+                break;
+            }
+        }
+    }
+    return { success: false, error: lastError.message, attempts: maxRetries };
+}
+
 // ─── Main ───────────────────────────────────────────────────────────────────
 async function main() {
     if (!fs.existsSync(rawDir)) {
@@ -155,6 +239,7 @@ async function main() {
     console.log(`Processing ${files.length} posts with GLM-5 (${GLM_MODEL})...`);
 
     const allCandidates = [];
+    const failedPosts = []; // Track posts that failed after all retries
     let processed = 0;
     let errors = 0;
     let skipped = 0;
@@ -166,6 +251,7 @@ async function main() {
             post = JSON.parse(fs.readFileSync(filePath, 'utf8'));
         } catch (e) {
             errors++;
+            failedPosts.push({ file, error: 'Invalid JSON', postId: null });
             continue;
         }
 
@@ -180,8 +266,10 @@ async function main() {
             continue;
         }
 
-        try {
-            const restaurants = await glmExtract(fullText);
+        const result = await glmExtractWithRetry(fullText);
+
+        if (result.success) {
+            const restaurants = result.restaurants;
 
             for (const r of restaurants) {
                 if (!r.name || r.name.length < 2) continue;
@@ -194,7 +282,7 @@ async function main() {
 
                 allCandidates.push({
                     name: r.name.trim(),
-                    city: r.city || 'unknown',
+                    city: normalizeCity(r.city) || 'unknown',
                     cuisine: r.cuisine || 'unknown',
                     dishes: Array.isArray(r.dishes) ? r.dishes.filter(d => d && d.length > 0) : [],
                     price_range: r.price_per_person || 'unknown',
@@ -216,9 +304,16 @@ async function main() {
             if (restaurants.length > 0) {
                 console.log(`  ✅ ${path.basename(file)}: found ${restaurants.length} restaurant(s)`);
             }
-        } catch (e) {
-            console.error(`  ⚠️  ${path.basename(file)}: ${e.message}`);
+        } else {
+            console.error(`  ❌ ${path.basename(file)}: ${result.error} (after ${result.attempts} attempts)`);
             errors++;
+            failedPosts.push({
+                file,
+                postId: post.id || post.noteId || post.note_id || 'unknown',
+                title: title.slice(0, 60),
+                error: result.error,
+                attempts: result.attempts,
+            });
         }
 
         await sleep(DELAY_MS);
@@ -240,6 +335,19 @@ async function main() {
     fs.writeFileSync(outputFile, JSON.stringify(unique, null, 2));
     console.log(`\nLLM extraction: ${unique.length} unique candidates from ${processed} posts`);
     console.log(`  Skipped (not Bay Area): ${skipped} | Errors: ${errors}`);
+
+    // Write failed posts log for re-extraction
+    if (failedPosts.length > 0) {
+        const failedLogPath = outputFile.replace('.json', '_failed.json');
+        fs.writeFileSync(failedLogPath, JSON.stringify({
+            generated_at: new Date().toISOString(),
+            source_dir: rawDir,
+            total_failed: failedPosts.length,
+            posts: failedPosts,
+        }, null, 2));
+        console.log(`\n⚠️  ${failedPosts.length} posts failed extraction. See: ${failedLogPath}`);
+        console.log(`   To retry: node scripts/retry_failed.js ${failedLogPath}`);
+    }
 }
 
 main().catch(e => {
