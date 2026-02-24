@@ -1,7 +1,7 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-24T02:30:23.860Z",
-  "total_restaurants": 95,
+  "updated_at": "2026-02-24T03:02:20.509Z",
+  "total_restaurants": 96,
   "restaurants": [
     {
       "id": "r001",
@@ -1530,7 +1530,7 @@
       "google_place_id": "ChIJuyy5k-i3j4ARXY_xqSqZRpg",
       "address": "225 E Middlefield Rd, Mountain View, CA 94043, USA",
       "verified": false,
-      "sentiment_score": 0.79,
+      "sentiment_score": 0.81,
       "sentiment_details": {
         "positive_mentions": 1,
         "negative_mentions": 0,
@@ -1564,7 +1564,7 @@
       "engagement": 326,
       "city": "Mountain View",
       "region": "South Bay",
-      "updated_at": "2026-02-24T02:30:23.860Z",
+      "updated_at": "2026-02-24T03:02:20.509Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
@@ -1572,8 +1572,8 @@
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 1,
-          "engagement": 330
+          "mentions": 2,
+          "engagement": 660
         }
       ]
     },
@@ -5433,8 +5433,8 @@
       "google_rating": 4.3,
       "google_place_id": "ChIJrQlLTxu1j4ARlHgXrtOFG4c",
       "verified": true,
-      "total_engagement": 121,
-      "mention_count": 2,
+      "total_engagement": 327,
+      "mention_count": 3,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -5444,13 +5444,28 @@
         "松子玉米",
         "小蒸包",
         "韭菜脆皮卷",
-        "什么一碗香"
+        "什么一碗香",
+        "小炒肉",
+        "炒猪肝",
+        "炒牛舌",
+        "臭豆腐酸豆角肥肠",
+        "梅菜黄花鱼",
+        "啤酒鸭",
+        "冬瓜排骨汤"
       ],
       "sources": [
         "694a464a000000001f00ac7f",
-        "68647282000000001d00dd38"
+        "68647282000000001d00dd38",
+        "685f837f000000001d00e8f7"
       ],
       "post_details": [
+        {
+          "post_id": "685f837f000000001d00e8f7",
+          "title": "南湾无限打卡的湘味私房菜🍺啤酒鸭🦆",
+          "date": "2025-06-28",
+          "engagement": 206,
+          "context": ""
+        },
         {
           "post_id": "694a464a000000001f00ac7f",
           "title": "南湾丨这一口感觉自己回国了🤩",
@@ -5469,12 +5484,12 @@
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 1,
-          "engagement": 20
+          "mentions": 2,
+          "engagement": 226
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-24T02:30:23.860Z",
+      "updated_at": "2026-02-24T03:02:20.509Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
@@ -5763,12 +5778,12 @@
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 1,
-          "engagement": 121
+          "mentions": 2,
+          "engagement": 242
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-24T02:30:23.860Z",
+      "updated_at": "2026-02-24T03:02:20.506Z",
       "merge_info": {
         "added_date": "2026-02-24",
         "source": "daily_pipeline",
@@ -5828,7 +5843,61 @@
         "source_post": "67f59619000000000f031cc3",
         "needs_review": false
       }
+    },
+    {
+      "id": "pipeline_1771902140506_e8ni",
+      "name": "Ping‘s Bistro留湘小聚",
+      "name_en": "",
+      "cuisine": "云南菜",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Cupertino",
+      "price_range": "人均$53",
+      "address": "10700 S De Anza Blvd, Cupertino, CA 95014, USA",
+      "google_rating": 4.4,
+      "google_place_id": "ChIJg42-9rm1j4ARwBn9d3bdDYA",
+      "lat": 37.313106,
+      "lng": -122.0319021,
+      "verified": true,
+      "total_engagement": 114,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "傣味香茅草烤鱼",
+        "牛肝菌青椒牛肉炒饭",
+        "青椒褐菌炒云腿",
+        "油炸菜心",
+        "云南水豆豉浸秋葵"
+      ],
+      "sources": [
+        "67f363f0000000001c01ecd5"
+      ],
+      "post_details": [
+        {
+          "post_id": "67f363f0000000001c01ecd5",
+          "title": "湾区生活｜三家吃完就想二刷的餐厅😋🐎住",
+          "date": "2025-04-07",
+          "engagement": 114,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 114
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-24T03:02:20.506Z",
+      "merge_info": {
+        "added_date": "2026-02-24",
+        "source": "daily_pipeline",
+        "source_post": "67f363f0000000001c01ecd5",
+        "needs_review": false
+      }
     }
   ],
-  "verified_at": "2026-02-24T02:30:23.954Z"
+  "verified_at": "2026-02-24T03:02:30.698Z"
 }
