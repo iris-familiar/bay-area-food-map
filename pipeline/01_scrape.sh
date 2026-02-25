@@ -82,6 +82,11 @@ SKIP_COUNT=0
 TOTAL_FOUND=0
 FILTERED_OUT=0
 
+# Build a set of already-scraped post IDs across ALL date folders
+# to prevent duplicate scraping across days
+ALL_RAW_DIR="$(dirname "$OUTPUT_DIR")"
+EXISTING_POSTS=$(find "$ALL_RAW_DIR" -name "post_*.json" -exec basename {} \; 2>/dev/null | sort -u)
+
 for term in "${SEARCH_TERMS[@]}"; do
     log "Searching: $term"
 
@@ -134,10 +139,13 @@ except Exception:
     while IFS=$'\t' read -r note_id xsec_token; do
         [ -z "$note_id" ] && continue
 
-        OUT_FILE="${OUTPUT_DIR}/post_${note_id}.json"
-        if [ -f "$OUT_FILE" ]; then
+        POST_FILE="post_${note_id}.json"
+        OUT_FILE="${OUTPUT_DIR}/${POST_FILE}"
+
+        # Check if post already exists in ANY date folder (not just today's)
+        if echo "$EXISTING_POSTS" | grep -q "^${POST_FILE}$"; then
             ((SKIP_COUNT++))
-            continue  # Already fetched
+            continue  # Already fetched on a previous day
         fi
 
         # Unwrap JSON-RPC envelope; normalize data.note to flat structure
