@@ -79,13 +79,22 @@ SEARCH_TERMS=(
 
 NEW_COUNT=0
 SKIP_COUNT=0
+REFRESH_COUNT=0
 TOTAL_FOUND=0
 FILTERED_OUT=0
 
-# Build a set of already-scraped post IDs across ALL date folders
-# to prevent duplicate scraping across days
+# Re-scrape posts older than this many days to update engagement data
+REFRESH_AGE_DAYS="${REFRESH_AGE_DAYS:-7}"
+
+# Build a map of existing posts with their file paths and modification times
+# Format: post_id\tfile_path\tdays_old
 ALL_RAW_DIR="$(dirname "$OUTPUT_DIR")"
-EXISTING_POSTS=$(find "$ALL_RAW_DIR" -name "post_*.json" -exec basename {} \; 2>/dev/null | sort -u)
+EXISTING_POSTS_MAP=$(find "$ALL_RAW_DIR" -name "post_*.json" -type f 2>/dev/null | while read -r f; do
+    basename "$f" .json | sed 's/^post_//'
+    echo -ne "\t$f\t"
+    # Calculate days since file was modified
+    perl -e 'use int((time - (stat($ARGV[0]))[9]) / 86400)' "$f" 2>/dev/null || echo "0"
+done)
 
 for term in "${SEARCH_TERMS[@]}"; do
     log "Searching: $term"
@@ -142,10 +151,22 @@ except Exception:
         POST_FILE="post_${note_id}.json"
         OUT_FILE="${OUTPUT_DIR}/${POST_FILE}"
 
-        # Check if post already exists in ANY date folder (not just today's)
-        if echo "$EXISTING_POSTS" | grep -q "^${POST_FILE}$"; then
-            ((SKIP_COUNT++))
-            continue  # Already fetched on a previous day
+        # Check if post already exists and when it was last scraped
+        EXISTING_LINE=$(echo "$EXISTING_POSTS_MAP" | grep "^${note_id}" | head -1)
+        if [ -n "$EXISTING_LINE" ]; then
+            EXISTING_PATH=$(echo "$EXISTING_LINE" | cut -f2)
+            DAYS_OLD=$(echo "$EXISTING_LINE" | cut -f3)
+
+            # Skip if scraped recently (within REFRESH_AGE_DAYS)
+            if [ "$DAYS_OLD" -lt "$REFRESH_AGE_DAYS" ] 2>/dev/null; then
+                ((SKIP_COUNT++))
+                continue
+            fi
+
+            # Re-scrape old posts to update engagement data
+            # We'll update the existing file in place
+            OUT_FILE="$EXISTING_PATH"
+            log "  🔄 Refreshing (${DAYS_OLD}d old): $note_id"
         fi
 
         # Unwrap JSON-RPC envelope; normalize data.note to flat structure
@@ -181,9 +202,14 @@ except Exception:
 
         # Only save if valid JSON with content
         if echo "$DETAIL" | python3 -c "import sys,json; d=json.load(sys.stdin); assert d.get('title') or d.get('desc')" 2>/dev/null; then
+            # Determine if this is a refresh or new post
+            if [ -n "$EXISTING_LINE" ]; then
+                ((REFRESH_COUNT++))
+            else
+                ((NEW_COUNT++))
+                log "  ✅ Saved: $note_id"
+            fi
             echo "$DETAIL" > "$OUT_FILE"
-            ((NEW_COUNT++))
-            log "  ✅ Saved: $note_id"
         fi
 
         # Anti-rate-limit delay: 2-4 seconds between posts
@@ -195,7 +221,7 @@ except Exception:
 done
 
 # Calculate filtered out count
-PASSED_FILTER=$((NEW_COUNT + SKIP_COUNT))
+PASSED_FILTER=$((NEW_COUNT + SKIP_COUNT + REFRESH_COUNT))
 FILTERED_OUT=$((TOTAL_FOUND - PASSED_FILTER))
 
-log "Done. Total found: ${TOTAL_FOUND}, Passed filter: ${PASSED_FILTER} (New: ${NEW_COUNT}, Skipped: ${SKIP_COUNT}), Filtered out: ${FILTERED_OUT}"
+log "Done. Total found: ${TOTAL_FOUND}, Passed filter: ${PASSED_FILTER} (New: ${NEW_COUNT}, Refreshed: ${REFRESH_COUNT}, Skipped: ${SKIP_COUNT}), Filtered out: ${FILTERED_OUT}"
