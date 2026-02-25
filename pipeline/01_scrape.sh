@@ -93,7 +93,7 @@ EXISTING_POSTS_MAP=$(find "$ALL_RAW_DIR" -name "post_*.json" -type f 2>/dev/null
     basename "$f" .json | sed 's/^post_//'
     echo -ne "\t$f\t"
     # Calculate days since file was modified
-    perl -e 'use int((time - (stat($ARGV[0]))[9]) / 86400)' "$f" 2>/dev/null || echo "0"
+    perl -e 'print int((time - (stat($ARGV[0]))[9]) / 86400)' "$f" 2>/dev/null || echo "0"
 done)
 
 for term in "${SEARCH_TERMS[@]}"; do
@@ -152,7 +152,7 @@ except Exception:
         OUT_FILE="${OUTPUT_DIR}/${POST_FILE}"
 
         # Check if post already exists and when it was last scraped
-        EXISTING_LINE=$(echo "$EXISTING_POSTS_MAP" | grep "^${note_id}" | head -1)
+        EXISTING_LINE=$(echo "$EXISTING_POSTS_MAP" | grep "^${note_id}	" | head -1)
         if [ -n "$EXISTING_LINE" ]; then
             EXISTING_PATH=$(echo "$EXISTING_LINE" | cut -f2)
             DAYS_OLD=$(echo "$EXISTING_LINE" | cut -f3)
