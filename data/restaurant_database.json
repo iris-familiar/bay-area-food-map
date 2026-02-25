@@ -1,7 +1,7 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-24T17:39:13.565Z",
-  "total_restaurants": 121,
+  "updated_at": "2026-02-25T06:55:38.091Z",
+  "total_restaurants": 126,
   "restaurants": [
     {
       "id": "r001",
@@ -3406,12 +3406,20 @@
       "cuisine": "粤菜",
       "area": "Palo Alto",
       "price_range": "",
-      "total_engagement": 119,
-      "mention_count": 2,
+      "total_engagement": 451,
+      "mention_count": 3,
       "sources": [
-        "68c1b57f000000001d00c132"
+        "68c1b57f000000001d00c132",
+        "6856592a00000000220306a6"
       ],
       "post_details": [
+        {
+          "post_id": "6856592a00000000220306a6",
+          "title": "PaloAlto粤菜馆尝鲜！👍藕夹手撕鸡必点！",
+          "date": "2025-06-21",
+          "engagement": 332,
+          "context": ""
+        },
         {
           "post_id": "68c1b57f000000001d00c132",
           "title": "湾区探店｜新店老店红黑榜",
@@ -3424,14 +3432,18 @@
       "google_place_id": "ChIJtRLy85ywj4AR38KYK7uJ0Yc",
       "address": "3691 El Camino Real, Palo Alto, CA 94306, USA",
       "verified": true,
-      "sentiment_score": 0.77,
+      "sentiment_score": 0.79,
       "sentiment_details": {
         "positive_mentions": 1,
         "negative_mentions": 0,
         "analyzed_contexts": 1
       },
       "recommendations": [
-        "贵妃鸡"
+        "贵妃鸡",
+        "藕夹",
+        "手撕鸡",
+        "支竹羊腩煲",
+        "粉丝煲"
       ],
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
@@ -3450,12 +3462,18 @@
       "engagement": 119,
       "city": "Palo Alto",
       "region": "Peninsula",
-      "updated_at": "2026-02-22T08:00:58.455Z",
+      "updated_at": "2026-02-25T06:55:38.091Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": [],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 332
+        }
+      ],
       "lat": 37.4184801,
       "lng": -122.1328666
     },
@@ -4948,16 +4966,19 @@
       "cuisine": "台湾菜",
       "area": "Milpitas",
       "price_range": "",
-      "total_engagement": 628,
-      "mention_count": 2,
+      "total_engagement": 842,
+      "mention_count": 3,
       "sources": [
-        "6928cb59000000001e02569d"
+        "6928cb59000000001e02569d",
+        "66550c4e0000000015011881"
       ],
       "recommendations": [
         "万峦猪脚",
         "炒面线",
         "麻油鸡汤",
-        "咸蛋苦瓜"
+        "咸蛋苦瓜",
+        "五更腸旺",
+        "芋頭冰"
       ],
       "post_details": [
         {
@@ -4966,9 +4987,16 @@
           "date": "2025-11-27",
           "engagement": 628,
           "context": ""
+        },
+        {
+          "post_id": "66550c4e0000000015011881",
+          "title": "灣區Milpitas吃到道地台灣菜啦！",
+          "date": "2024-05-27",
+          "engagement": 214,
+          "context": ""
         }
       ],
-      "sentiment_score": 0.5,
+      "sentiment_score": 0.55,
       "sentiment_confidence": null,
       "google_match_status": "matched_with_english_name_v2",
       "original_id": "r066",
@@ -4992,12 +5020,18 @@
       "engagement": 625,
       "city": "Milpitas",
       "region": "South Bay",
-      "updated_at": "2026-02-18T16:27:03.974Z",
+      "updated_at": "2026-02-25T06:55:38.083Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 214
+        }
+      ]
     },
     {
       "id": "r082",
@@ -5822,9 +5856,9 @@
       "google_rating": 3.7,
       "google_place_id": "ChIJVWa00YO1j4ARC7IHxI4bsQA",
       "verified": true,
-      "total_engagement": 223,
-      "mention_count": 2,
-      "sentiment_score": 1,
+      "total_engagement": 380,
+      "mention_count": 3,
+      "sentiment_score": 0.9,
       "sentiment_details": {},
       "recommendations": [
         "盐菜扣肉",
@@ -5835,13 +5869,22 @@
         "菌菇椰子鸡",
         "擂辣椒茄子皮蛋",
         "紫苏水煮鱼",
-        "招牌红烧肉"
+        "招牌红烧肉",
+        "炒螺肉"
       ],
       "sources": [
         "695482920000000021033da0",
-        "696904c4000000000e00df4e"
+        "696904c4000000000e00df4e",
+        "66a6fa46000000002701041c"
       ],
       "post_details": [
+        {
+          "post_id": "66a6fa46000000002701041c",
+          "title": "湾区湘菜疑似使用福寿螺",
+          "date": "2024-07-29",
+          "engagement": 157,
+          "context": ""
+        },
         {
           "post_id": "696904c4000000000e00df4e",
           "title": "🍄硅谷国宴大厨坐镇的湘菜馆",
@@ -5860,12 +5903,12 @@
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 2,
-          "engagement": 256
+          "mentions": 3,
+          "engagement": 413
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-24T17:39:13.523Z",
+      "updated_at": "2026-02-25T06:55:38.083Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
@@ -7660,7 +7703,274 @@
         "at": "2026-02-25T05:45:23.755Z",
         "reason": "cuisine normalization: Chinese Noodles → 面食"
       }
+    },
+    {
+      "id": "pipeline_1772002538083_ks7m",
+      "name": "Full House Cafe",
+      "name_en": "",
+      "cuisine": "Cantonese",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "San Leandro",
+      "price_range": "unknown",
+      "address": "1456 E 14th St, San Leandro, CA 94577, USA",
+      "google_rating": 3.8,
+      "google_place_id": "ChIJI2h00JWPj4ARIoLRxqsRG4s",
+      "lat": 37.7239446,
+      "lng": -122.1540415,
+      "verified": true,
+      "total_engagement": 234,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "啫啫鸡",
+        "水煮双拼",
+        "铁板皖鱼片",
+        "叉烧蛋肠粉",
+        "山楂酸奶"
+      ],
+      "sources": [
+        "66aee943000000000503b150"
+      ],
+      "post_details": [
+        {
+          "post_id": "66aee943000000000503b150",
+          "title": "湾区好吃的粤菜！啫啫煲超好吃😋",
+          "date": "2024-08-04",
+          "engagement": 234,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 234
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-25T06:55:38.083Z",
+      "merge_info": {
+        "added_date": "2026-02-25",
+        "source": "daily_pipeline",
+        "source_post": "66aee943000000000503b150",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772002538091_x7su",
+      "name": "Jeonju Hostetter",
+      "name_en": "",
+      "cuisine": "Korean",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "San Jose",
+      "price_range": "unknown",
+      "address": "1698 Hostetter Rd siteD, San Jose, CA 95131, USA",
+      "google_rating": 4,
+      "google_place_id": "ChIJMb9mszrNj4AROKkGqrAEomg",
+      "lat": 37.38685,
+      "lng": -121.8838018,
+      "verified": true,
+      "total_engagement": 60,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "参鸡汤",
+        "石锅拌饭",
+        "辣炒鱿鱼",
+        "辣炒猪肉"
+      ],
+      "sources": [
+        "66d51d0d000000001d03a1e7"
+      ],
+      "post_details": [
+        {
+          "post_id": "66d51d0d000000001d03a1e7",
+          "title": "我们家一个月内来第8次的馆子😂",
+          "date": "2024-09-02",
+          "engagement": 60,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 60
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-25T06:55:38.091Z",
+      "merge_info": {
+        "added_date": "2026-02-25",
+        "source": "daily_pipeline",
+        "source_post": "66d51d0d000000001d03a1e7",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772002538091_tvml",
+      "name": "Ramen Wakusei",
+      "name_en": "",
+      "cuisine": "Japanese / Ramen",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Sunnyvale",
+      "price_range": "unknown",
+      "address": "585 E El Camino Real, Sunnyvale, CA 94087, USA",
+      "google_rating": 4.5,
+      "google_place_id": "ChIJK5iGzDi3j4AR-iRLeo0iDTw",
+      "lat": 37.363107,
+      "lng": -122.025691,
+      "verified": true,
+      "total_engagement": 118,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "干拌面",
+        "汤面"
+      ],
+      "sources": [
+        "68621d88000000001203ed51"
+      ],
+      "post_details": [
+        {
+          "post_id": "68621d88000000001203ed51",
+          "title": "湾区美食日记 - 特别好吃的拌面",
+          "date": "2025-06-30",
+          "engagement": 118,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 118
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-25T06:55:38.091Z",
+      "merge_info": {
+        "added_date": "2026-02-25",
+        "source": "daily_pipeline",
+        "source_post": "68621d88000000001203ed51",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772002538091_f03a",
+      "name": "表妹拌粉 Noodles Fresh",
+      "name_en": "",
+      "cuisine": "Jiangxi",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "Berkeley",
+      "price_range": "unknown",
+      "address": "2430 Shattuck Ave., Berkeley, CA 94704, USA",
+      "google_rating": 4.3,
+      "google_place_id": "ChIJg7RvGjd_hYARQZ2mNKdSCho",
+      "lat": 37.8651842,
+      "lng": -122.2679365,
+      "verified": true,
+      "total_engagement": 311,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "南昌拌粉",
+        "卤肉饭",
+        "黑胡椒鸡翅",
+        "葱油饼",
+        "凉拌牛腱",
+        "牛筋"
+      ],
+      "sources": [
+        "68ec43bd0000000005031515"
+      ],
+      "post_details": [
+        {
+          "post_id": "68ec43bd0000000005031515",
+          "title": "🇺🇸湾区伯克利留子食堂，一周吃三次！！！",
+          "date": "2025-10-13",
+          "engagement": 311,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 311
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-25T06:55:38.091Z",
+      "merge_info": {
+        "added_date": "2026-02-25",
+        "source": "daily_pipeline",
+        "source_post": "68ec43bd0000000005031515",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772002538091_t6hr",
+      "name": "Eos & Nyx",
+      "name_en": "",
+      "cuisine": "Cal-Mediterranean",
+      "area": "unknown",
+      "region": "unknown",
+      "city": "San Jose",
+      "price_range": "unknown",
+      "address": "201 S Second St #120, San Jose, CA 95113, USA",
+      "google_rating": 4.4,
+      "google_place_id": "ChIJ08f1IgDNj4ARtegHCSBtKKw",
+      "lat": 37.3331523,
+      "lng": -121.8872454,
+      "verified": true,
+      "total_engagement": 577,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "鱼子酱脆皮小甜筒",
+        "Beef Tartare + Bone Marrow",
+        "整条烤白身鱼",
+        "海鲜炖菜（branzino）",
+        "甜点（马卡龙）"
+      ],
+      "sources": [
+        "691eb073000000001e0020ac"
+      ],
+      "post_details": [
+        {
+          "post_id": "691eb073000000001e0020ac",
+          "title": "湾区美食｜新晋网红餐厅Eos&nyx",
+          "date": "2025-11-20",
+          "engagement": 577,
+          "context": ""
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 577
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-25T06:55:38.091Z",
+      "merge_info": {
+        "added_date": "2026-02-25",
+        "source": "daily_pipeline",
+        "source_post": "691eb073000000001e0020ac",
+        "needs_review": false
+      }
     }
   ],
-  "verified_at": "2026-02-25T05:45:24.521Z"
+  "verified_at": "2026-02-25T06:55:38.223Z"
 }
