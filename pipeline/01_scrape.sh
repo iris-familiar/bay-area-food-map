@@ -91,13 +91,14 @@ REFRESH_AGE_DAYS="${REFRESH_AGE_DAYS:-7}"
 ALL_RAW_DIR="$(dirname "$OUTPUT_DIR")"
 
 # Use glob instead of find (more reliable on macOS)
-EXISTING_POSTS_MAP=""
-for f in "$ALL_RAW_DIR"/*/*.json; do
-    post_id=$(basename "$f" .json | sed 's/^post_//')
-    file_path="$f"
-    days_old=$(( ( $(date +%s) - $(stat -f "%m" "$file_path" 2>/dev/null || stat -c "%Y" "$file_path") ) / 86400 ))
-    echo -ne "${post_id}\t${file_path}\t${days_old}\n"
-done <<< "$EXISTING_POSTS_MAP"
+EXISTING_POSTS_MAP=$(for f in "$ALL_RAW_DIR"/*/*.json; do
+    if [ -f "$f" ]; then
+        post_id=$(basename "$f" .json | sed 's/^post_//')
+        file_path="$f"
+        days_old=$(( ( $(date +%s) - $(stat -f "%m" "$file_path" 2>/dev/null || stat -c "%Y" "$file_path") ) / 86400 ))
+        echo -e "${post_id}\t${file_path}\t${days_old}"
+    fi
+done)
 
 for term in "${SEARCH_TERMS[@]}"; do
     log "Searching: $term"
