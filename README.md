@@ -133,8 +133,15 @@ git checkout <commit> -- data/restaurant_database.json
 ## XHS Login
 
 ```bash
+# Check current login status and username
 cd ~/.agents/skills/xiaohongshu/scripts && ./status.sh
+
+# Log in with a different account (requires GUI)
 cd ~/.agents/skills/xiaohongshu/scripts && ./login.sh
+
+# If MCP server is slow/unresponsive, restart it:
+cd ~/.agents/skills/xiaohongshu/scripts && ./stop-mcp.sh
+cd ~/.agents/skills/xiaohongshu/scripts && ./start-mcp.sh
 ```
 
 ---
