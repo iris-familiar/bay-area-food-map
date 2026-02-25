@@ -89,12 +89,15 @@ REFRESH_AGE_DAYS="${REFRESH_AGE_DAYS:-7}"
 # Build a map of existing posts with their file paths and modification times
 # Format: post_id\tfile_path\tdays_old
 ALL_RAW_DIR="$(dirname "$OUTPUT_DIR")"
-EXISTING_POSTS_MAP=$(find "$ALL_RAW_DIR" -name "post_*.json" -type f 2>/dev/null | while read -r f; do
-    basename "$f" .json | sed 's/^post_//'
-    echo -ne "\t$f\t"
-    # Calculate days since file was modified
-    perl -e 'print int((time - (stat($ARGV[0]))[9]) / 86400)' "$f" 2>/dev/null || echo "0"
-done)
+
+# Use glob instead of find (more reliable on macOS)
+EXISTING_POSTS_MAP=""
+for f in "$ALL_RAW_DIR"/*/*.json; do
+    post_id=$(basename "$f" .json | sed 's/^post_//')
+    file_path="$f"
+    days_old=$(( ( $(date +%s) - $(stat -f "%m" "$file_path" 2>/dev/null || stat -c "%Y" "$file_path") ) / 86400 ))
+    echo -ne "${post_id}\t${file_path}\t${days_old}\n"
+done <<< "$EXISTING_POSTS_MAP"
 
 for term in "${SEARCH_TERMS[@]}"; do
     log "Searching: $term"
