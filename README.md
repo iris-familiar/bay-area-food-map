@@ -144,6 +144,39 @@ cd ~/.agents/skills/xiaohongshu/scripts && ./stop-mcp.sh
 cd ~/.agents/skills/xiaohongshu/scripts && ./start-mcp.sh
 ```
 
+### Troubleshooting: Scrape returns 0 posts
+
+If the pipeline scrape step runs through all search terms but finds 0 new posts (each term
+takes ~2 min and times out), the MCP server is likely using stale cookies.
+
+**Why this happens:** The login tool (`xiaohongshu-login`) writes cookies to
+`~/.agents/skills/xiaohongshu/scripts/cookies.json`, but the MCP server reads from
+`/tmp/cookies.json` (copied from `~/.xiaohongshu/cookies.json` at startup). If you re-login,
+the MCP server doesn't pick up the new cookies until restarted.
+
+**Note:** `check_login_status` may report "logged in" even when cookies are stale — it uses a
+lighter API path than `search_feeds`.
+
+**Fix — refresh cookies and restart MCP:**
+```bash
+# 1. Copy fresh cookies to where MCP expects them
+cp ~/.agents/skills/xiaohongshu/scripts/cookies.json /tmp/cookies.json
+cp ~/.agents/skills/xiaohongshu/scripts/cookies.json ~/.xiaohongshu/cookies.json
+
+# 2. Restart MCP server
+cd ~/.agents/skills/xiaohongshu/scripts && ./stop-mcp.sh && ./start-mcp.sh
+
+# 3. Verify search works (should return feeds JSON, not hang)
+cd ~/.agents/skills/xiaohongshu/scripts && ./mcp-call.sh search_feeds '{"keyword": "湾区餐厅"}' 2>/dev/null | head -20
+
+# 4. If still hanging, force a fresh login (delete cookies first)
+rm /tmp/cookies.json ~/.xiaohongshu/cookies.json ~/.agents/skills/xiaohongshu/scripts/cookies.json
+cd ~/.agents/skills/xiaohongshu/scripts && ./login.sh   # Will show QR code
+cp ~/.agents/skills/xiaohongshu/scripts/cookies.json /tmp/cookies.json
+cp ~/.agents/skills/xiaohongshu/scripts/cookies.json ~/.xiaohongshu/cookies.json
+cd ~/.agents/skills/xiaohongshu/scripts && ./stop-mcp.sh && ./start-mcp.sh
+```
+
 ---
 
 ## Data Model
