@@ -31,7 +31,9 @@ try {
     process.exit(0);
   }
 
-  const corrections = JSON.parse(fs.readFileSync(CORRECTIONS_FILE, 'utf8'));
+  const raw = JSON.parse(fs.readFileSync(CORRECTIONS_FILE, 'utf8'));
+  // Support both flat array format (current) and legacy {restaurant_corrections:[]} format
+  const corrections = Array.isArray(raw) ? { restaurant_corrections: raw } : raw;
 
   let applied = 0;
   let skipped = 0;

@@ -41,6 +41,7 @@ bay-area-food-map/
 │
 └── scripts/
     ├── apply_corrections.js           # Apply corrections.json to the database
+    ├── normalize_cuisine.js           # One-time: normalize cuisine field to canonical Chinese values
     └── transaction.js                 # Atomic write + rollback helper
 ```
 
@@ -100,6 +101,31 @@ node pipeline/enrich_google.js --all       # All unverified
 ```
 
 Requires `GOOGLE_PLACES_API_KEY` in `.env`. Cost: ~$0.017/restaurant.
+
+---
+
+## Cuisine Field Normalization
+
+If the `cuisine` field accumulates messy values (mix of English/Chinese, semantic duplicates):
+
+```bash
+# 1. Preview changes — prints a table of old → new values, no writes
+node scripts/normalize_cuisine.js
+
+# 2. Write correction entries to corrections.json
+node scripts/normalize_cuisine.js --apply
+
+# 3. Apply corrections to the database
+node scripts/apply_corrections.js
+
+# 4. Regenerate the slim index
+node pipeline/06_generate_index.js data/restaurant_database.json data/restaurant_database_index.json
+
+# 5. Verify
+npm test
+```
+
+The canonical cuisine values and mappings live in `scripts/normalize_cuisine.js` (`CUISINE_MAP`). Update that map if new non-canonical values appear.
 
 ---
 

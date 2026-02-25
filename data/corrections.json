@@ -219,5 +219,325 @@
     "corrections": {
       "name": "留湘"
     }
+  },
+  {
+    "id": "r010",
+    "name": "李与白",
+    "corrections": {
+      "cuisine": "面食"
+    },
+    "reason": "cuisine normalization: 包子 → 面食"
+  },
+  {
+    "id": "r023",
+    "name": "Kow Kra Pao",
+    "corrections": {
+      "cuisine": "泰餐"
+    },
+    "reason": "cuisine normalization: 泰国菜 → 泰餐"
+  },
+  {
+    "id": "r024",
+    "name": "Mensho Tokyo",
+    "corrections": {
+      "cuisine": "面食"
+    },
+    "reason": "cuisine normalization: 拉面 → 面食"
+  },
+  {
+    "id": "r025",
+    "name": "Nom Nom Bistro",
+    "corrections": {
+      "cuisine": "粤菜"
+    },
+    "reason": "cuisine normalization: 港式 → 粤菜"
+  },
+  {
+    "id": "r032",
+    "name": "Pepperlunch",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: 日式 → 日料"
+  },
+  {
+    "id": "r057",
+    "name": "Bangkok Street Thai Street Food",
+    "corrections": {
+      "cuisine": "泰餐"
+    },
+    "reason": "cuisine normalization: 泰国菜 → 泰餐"
+  },
+  {
+    "id": "r059",
+    "name": "锦鲤缘",
+    "corrections": {
+      "cuisine": "江浙菜"
+    },
+    "reason": "cuisine normalization: 淮扬菜 → 江浙菜"
+  },
+  {
+    "id": "r067",
+    "name": "Cozy Tea Loft",
+    "corrections": {
+      "cuisine": "台湾菜"
+    },
+    "reason": "cuisine normalization: 台湾小吃 → 台湾菜"
+  },
+  {
+    "id": "r069",
+    "name": "小香米粉",
+    "corrections": {
+      "cuisine": "面食"
+    },
+    "reason": "cuisine normalization: 拉面 → 面食"
+  },
+  {
+    "id": "r071",
+    "name": "外婆家常菜",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: 家常菜 → 中餐"
+  },
+  {
+    "id": "pipeline_1771721574155_mwci",
+    "name": "Le Moose Crepe Cafe",
+    "corrections": {
+      "cuisine": "泰餐"
+    },
+    "reason": "cuisine normalization: 泰法融合 → 泰餐"
+  },
+  {
+    "id": "pipeline_1771721574155_8bkd",
+    "name": "Arwa Yemeni Coffee",
+    "corrections": {
+      "cuisine": "中东菜"
+    },
+    "reason": "cuisine normalization: 也门咖啡 → 中东菜"
+  },
+  {
+    "id": "pipeline_1771918463119_pqu4",
+    "name": "The Public Izakaya",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1771918463123_bto8",
+    "name": "Imperial Treasure",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1771918463123_z98q",
+    "name": "Seoul Gom Tang",
+    "corrections": {
+      "cuisine": "韩餐"
+    },
+    "reason": "cuisine normalization: Korean → 韩餐"
+  },
+  {
+    "id": "pipeline_1771918463123_wyza",
+    "name": "KAN KIIN BRUNCH & THAI EATERY",
+    "corrections": {
+      "cuisine": "泰餐"
+    },
+    "reason": "cuisine normalization: Thai → 泰餐"
+  },
+  {
+    "id": "pipeline_1771918463123_jssi",
+    "name": "湾区蓉城火锅",
+    "corrections": {
+      "cuisine": "火锅"
+    },
+    "reason": "cuisine normalization: Hot Pot → 火锅"
+  },
+  {
+    "id": "pipeline_1771920604530_wv7y",
+    "name": "Kunjip",
+    "corrections": {
+      "cuisine": "韩餐"
+    },
+    "reason": "cuisine normalization: Korean → 韩餐"
+  },
+  {
+    "id": "pipeline_1771920604533_at66",
+    "name": "The Spicy Shrimp / 浩味茶餐厅",
+    "corrections": {
+      "cuisine": "粤菜"
+    },
+    "reason": "cuisine normalization: Hong Kong Style Cafe / Cantonese → 粤菜"
+  },
+  {
+    "id": "pipeline_1771920604533_pd9w",
+    "name": "人间烟火小酒馆",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese Bistro → 中餐"
+  },
+  {
+    "id": "pipeline_1771920604533_o2nd",
+    "name": "冯校长老火锅",
+    "corrections": {
+      "cuisine": "火锅"
+    },
+    "reason": "cuisine normalization: Hot Pot → 火锅"
+  },
+  {
+    "id": "pipeline_1771920604533_4diz",
+    "name": "Ushiya Grill",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese BBQ / All-You-Can-Eat → 日料"
+  },
+  {
+    "id": "pipeline_1771954753520_6czq",
+    "name": "Banana Island",
+    "corrections": {
+      "cuisine": "东南亚菜"
+    },
+    "reason": "cuisine normalization: Singaporean/Malaysian/Thai → 东南亚菜"
+  },
+  {
+    "id": "pipeline_1771954753523_o2c3",
+    "name": "HalalStreet Xinjiang Cuisine",
+    "corrections": {
+      "cuisine": "新疆菜"
+    },
+    "reason": "cuisine normalization: Xinjiang → 新疆菜"
+  },
+  {
+    "id": "pipeline_1771954753523_jteo",
+    "name": "鲤鱼门",
+    "corrections": {
+      "cuisine": "粤菜"
+    },
+    "reason": "cuisine normalization: Cantonese Dim Sum → 粤菜"
+  },
+  {
+    "id": "pipeline_1771954753562_k8nu",
+    "name": "Z & Y Restaurant (御食园川菜馆)",
+    "corrections": {
+      "cuisine": "川菜"
+    },
+    "reason": "cuisine normalization: Sichuan → 川菜"
+  },
+  {
+    "id": "pipeline_1771954753565_cy1u",
+    "name": "Pinstripes",
+    "corrections": {
+      "cuisine": "西餐"
+    },
+    "reason": "cuisine normalization: American → 西餐"
+  },
+  {
+    "id": "pipeline_1771954753565_etm5",
+    "name": "Hibachi Grill and Buffet",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: American Chinese, Buffet → 中餐"
+  },
+  {
+    "id": "pipeline_1771954753565_u6ep",
+    "name": "Yin Du Wonton Noodle 银都云吞面",
+    "corrections": {
+      "cuisine": "粤菜"
+    },
+    "reason": "cuisine normalization: Cantonese → 粤菜"
+  },
+  {
+    "id": "pipeline_1771954753565_pzuy",
+    "name": "Secrets Of Tiger",
+    "corrections": {
+      "cuisine": "泰餐"
+    },
+    "reason": "cuisine normalization: Thai → 泰餐"
+  },
+  {
+    "id": "pipeline_1771954753565_yjqg",
+    "name": "Sotto Mare",
+    "corrections": {
+      "cuisine": "海鲜"
+    },
+    "reason": "cuisine normalization: Seafood → 海鲜"
+  },
+  {
+    "id": "pipeline_1771954753565_aai0",
+    "name": "Hog Island Oyster",
+    "corrections": {
+      "cuisine": "海鲜"
+    },
+    "reason": "cuisine normalization: Seafood → 海鲜"
+  },
+  {
+    "id": "pipeline_1771954753565_jzj7",
+    "name": "金门肠粉",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1771954753565_tdzy",
+    "name": "Madcap",
+    "corrections": {
+      "cuisine": "西餐"
+    },
+    "reason": "cuisine normalization: Fine Dining → 西餐"
+  },
+  {
+    "id": "pipeline_1771954753565_f0mj",
+    "name": "Jungdon Katsu",
+    "corrections": {
+      "cuisine": "韩餐"
+    },
+    "reason": "cuisine normalization: Korean → 韩餐"
+  },
+  {
+    "id": "pipeline_1771954753565_y9l6",
+    "name": "Impression of Lanzhou",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1771954753565_d092",
+    "name": "Niku Steakhouse",
+    "corrections": {
+      "cuisine": "牛排"
+    },
+    "reason": "cuisine normalization: Steakhouse → 牛排"
+  },
+  {
+    "id": "pipeline_1771954753565_djok",
+    "name": "The Breakfast Club at Midtown",
+    "corrections": {
+      "cuisine": "早午餐"
+    },
+    "reason": "cuisine normalization: Brunch → 早午餐"
+  },
+  {
+    "id": "pipeline_1771954753565_i7ms",
+    "name": "滋味小面",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1771954753565_2xrq",
+    "name": "三好拉面",
+    "corrections": {
+      "cuisine": "面食"
+    },
+    "reason": "cuisine normalization: Chinese Noodles → 面食"
   }
 ]
