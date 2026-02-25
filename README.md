@@ -61,6 +61,8 @@ npm run pipeline:dry
 **Pipeline steps:**
 1. **Backup** current database
 2. **Scrape** new XHS posts (skips if not logged in)
+   - Re-scrapes posts older than 7 days to update engagement data
+   - Configurable via `REFRESH_AGE_DAYS` env var (default: 7)
 3. **Extract** restaurant candidates from posts via GLM-5 LLM
 4. **Enrich** candidates with Google Places data (adds rating, address, coordinates)
 5. **Merge** Google-verified candidates by place_id (no duplicates, no review needed)

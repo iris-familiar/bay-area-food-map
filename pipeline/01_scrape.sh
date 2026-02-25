@@ -23,7 +23,13 @@ LOGIN_STATUS=$(cd "${MCP_DIR}" && ./mcp-call.sh check_login_status '{}' 2>/dev/n
     | python3 -c "
 import sys, json
 try:
-    d = json.load(sys.stdin)
+    # Read all input and find JSON start (skip zoxide warnings, etc.)
+    content = sys.stdin.read()
+    json_start = content.find('{')
+    if json_start == -1:
+        print('unknown')
+        exit()
+    d = json.loads(content[json_start:])
     text = d.get('result', {}).get('content', [{}])[0].get('text', '')
     print('logged_in' if '已登录' in text else 'not_logged_in')
 except Exception:
@@ -103,13 +109,18 @@ done)
 for term in "${SEARCH_TERMS[@]}"; do
     log "Searching: $term"
 
-    RESULT=$(cd "${MCP_DIR}" && ./mcp-call.sh search_feeds "{\"keyword\": \"${term}\"}" 2>/dev/null || echo '{}')
-
     # Count total posts found before filtering
-    TERM_TOTAL=$(echo "$RESULT" | python3 -c "
+    TERM_TOTAL=$(cd "${MCP_DIR}" && ./mcp-call.sh search_feeds "{\"keyword\": \"${term}\"}" 2>/dev/null \
+        | python3 -c "
 import sys, json
 try:
-    outer = json.load(sys.stdin)
+    # Read all input and find JSON start (skip zoxide warnings, etc.)
+    content = sys.stdin.read()
+    json_start = content.find('{')
+    if json_start == -1:
+        print(0)
+        exit()
+    outer = json.loads(content[json_start:])
     text = outer.get('result', {}).get('content', [{}])[0].get('text', '')
     try:
         data = json.loads(text)
@@ -125,10 +136,16 @@ except Exception:
     # Extract post IDs with decent engagement
     # Response is JSON-RPC: unwrap result.content[0].text to get actual feeds JSON.
     # interactInfo is nested inside noteCard; counts arrive as strings.
-    POSTS=$(echo "$RESULT" | python3 -c "
+    POSTS=$(cd "${MCP_DIR}" && ./mcp-call.sh search_feeds "{\"keyword\": \"${term}\"}" 2>/dev/null \
+        | python3 -c "
 import sys, json
 try:
-    outer = json.load(sys.stdin)
+    # Read all input and find JSON start (skip zoxide warnings, etc.)
+    content = sys.stdin.read()
+    json_start = content.find('{')
+    if json_start == -1:
+        exit()
+    outer = json.loads(content[json_start:])
     text = outer.get('result', {}).get('content', [{}])[0].get('text', '')
     try:
         data = json.loads(text)
@@ -156,7 +173,7 @@ except Exception:
         OUT_FILE="${OUTPUT_DIR}/${POST_FILE}"
 
         # Check if post already exists and when it was last scraped
-        EXISTING_LINE=$(echo "$EXISTING_POSTS_MAP" | grep "^${note_id}	" | head -1)
+        EXISTING_LINE=$(echo "$EXISTING_POSTS_MAP" | grep "^${note_id}	" | head -1 || true)
         if [ -n "$EXISTING_LINE" ]; then
             EXISTING_PATH=$(echo "$EXISTING_LINE" | cut -f2)
             DAYS_OLD=$(echo "$EXISTING_LINE" | cut -f3)
@@ -177,12 +194,17 @@ except Exception:
         # that 02_extract_llm.js expects (title/desc/id/interactInfo at top level).
         # MCP server uses "feed_id", not "note_id".
         DETAIL=$(cd "${MCP_DIR}" && ./mcp-call.sh get_feed_detail \
-            "{\"feed_id\": \"${note_id}\", \"xsec_token\": \"${xsec_token}\"}" \
-            2>/dev/null \
+            "{\"feed_id\": \"${note_id}\", \"xsec_token\": \"${xsec_token}\"}" 2>/dev/null \
             | python3 -c "
 import sys, json
 try:
-    outer = json.load(sys.stdin)
+    # Read all input and find JSON start (skip zoxide warnings, etc.)
+    content = sys.stdin.read()
+    json_start = content.find('{')
+    if json_start == -1:
+        print('{}')
+        exit()
+    outer = json.loads(content[json_start:])
     text = outer.get('result', {}).get('content', [{}])[0].get('text', '')
     inner = json.loads(text) if text else outer
     note = inner.get('data', {}).get('note', {})

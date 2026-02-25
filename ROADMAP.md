@@ -1,11 +1,22 @@
 # 湾区美食地图 — Engineering Roadmap
 
-> Last updated: 2026-02-22 (v5 — Pipeline redesigned with Google Place ID matching)
+> Last updated: 2026-02-24 (v6 — Fixed 01_scrape.sh silent failure and apply_corrections.js hardcoded path)
 > Status: Pipeline fully operational. Google enrichment integrated. No more manual review required.
 
 ---
 
 ## Bug Fixes
+
+- **2026-02-24** — Fixed `01_scrape.sh` silent failure during XHS scraping:
+  - Restored `set -euo pipefail` for early error detection
+  - Restored `cd "${MCP_DIR}" &&` pattern for all MCP calls (the mcp-call.sh script depends on running from its own directory)
+  - Kept JSON start detection logic to handle zoxide warnings in MCP output
+  - Fixed grep exit on no-match by adding `|| true`
+  - The root cause was a previous change that removed the working directory change, causing mcp-call.sh to fail silently
+
+- **2026-02-24** — Fixed hardcoded absolute path in `scripts/apply_corrections.js`:
+  - Changed from `/Users/joeli/.openclaw/...` to `path.join(__dirname, '..')`
+  - Script now works on any machine, not just the local development environment
 
 - **2026-02-19** — Fixed `讨论度` always showing 0: `src/app.js` was reading `r.engagement` but the database stores this as `r.total_engagement`. Field name corrected in sort, card view, and modal (3 occurrences).
 
