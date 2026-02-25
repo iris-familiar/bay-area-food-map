@@ -119,7 +119,7 @@ try:
     json_start = content.find('{')
     if json_start == -1:
         print(0)
-        exit()
+        sys.exit(0)
     outer = json.loads(content[json_start:])
     text = outer.get('result', {}).get('content', [{}])[0].get('text', '')
     try:
@@ -128,9 +128,14 @@ try:
         data = outer
     feeds = data.get('feeds', data.get('items', []))
     print(len(feeds))
-except Exception:
+    sys.exit(0)
+except Exception as e:
     print(0)
+    sys.exit(1)
 " 2>/dev/null || echo "0")
+    # Trim whitespace and ensure TERM_TOTAL is a valid number
+    TERM_TOTAL=$(echo "$TERM_TOTAL" | tr -d '[:space:]')
+    : "${TERM_TOTAL:=0}"
     TOTAL_FOUND=$((TOTAL_FOUND + TERM_TOTAL))
 
     # Extract post IDs with decent engagement
