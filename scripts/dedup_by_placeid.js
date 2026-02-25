@@ -7,7 +7,9 @@
  * - Marks others as _status: 'duplicate_merged'
  * - Combines sources, recommendations, and engagement metrics
  *
- * Usage: node scripts/dedup_by_placeid.js
+ * Usage:
+ *   node scripts/dedup_by_placeid.js           # Apply changes
+ *   node scripts/dedup_by_placeid.js --dry-run # Preview only
  */
 
 'use strict';
@@ -17,6 +19,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const DB_FILE = path.join(ROOT, 'data', 'restaurant_database.json');
+const DRY_RUN = process.argv.includes('--dry-run');
 
 const db = JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
 
@@ -125,13 +128,18 @@ for (const [placeId, restaurants] of duplicates) {
     console.log();
 }
 
-// Save
-db.updated_at = new Date().toISOString();
-fs.writeFileSync(DB_FILE, JSON.stringify(db, null, 2));
+// Save (or preview in dry-run mode)
+if (DRY_RUN) {
+    console.log('\n[DRY RUN] No changes made. Run without --dry-run to apply.');
+    console.log(`Would merge ${merged} duplicate restaurants`);
+} else {
+    db.updated_at = new Date().toISOString();
+    fs.writeFileSync(DB_FILE, JSON.stringify(db, null, 2));
 
-console.log(`✅ Merged ${merged} duplicate restaurants`);
+    console.log(`✅ Merged ${merged} duplicate restaurants`);
 
-// Regenerate index
-const { execSync } = require('child_process');
-const indexPath = path.join(ROOT, 'data', 'restaurant_database_index.json');
-execSync(`node "${path.join(ROOT, 'pipeline', '06_generate_index.js')}" "${DB_FILE}" "${indexPath}"`, { stdio: 'inherit' });
+    // Regenerate index
+    const { execSync } = require('child_process');
+    const indexPath = path.join(ROOT, 'data', 'restaurant_database_index.json');
+    execSync(`node "${path.join(ROOT, 'pipeline', '06_generate_index.js')}" "${DB_FILE}" "${indexPath}"`, { stdio: 'inherit' });
+}

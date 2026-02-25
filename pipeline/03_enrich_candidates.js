@@ -100,31 +100,43 @@ function addressInCity(address, city) {
 const PLACES_BASE = 'https://maps.googleapis.com/maps/api/place';
 
 async function searchPlace(candidate) {
-    const query = encodeURIComponent(
-        `${candidate.name} restaurant ${candidate.city || 'Bay Area'} California`
-    );
-    const url = `${PLACES_BASE}/textsearch/json?query=${query}&type=restaurant&key=${API_KEY}`;
-    const data = await httpsGet(url);
+    const isCJK = hasCJK(candidate.name);
+    const hasValidCity = candidate.city && candidate.city !== 'unknown' && candidate.city !== 'Bay Area';
+
+    // First attempt: with city
+    let query = hasValidCity
+        ? `${candidate.name} restaurant ${candidate.city} California`
+        : `${candidate.name} restaurant Bay Area California`;
+
+    let data = await httpsGet(`${PLACES_BASE}/textsearch/json?query=${encodeURIComponent(query)}&type=restaurant&key=${API_KEY}`);
+
+    // Fallback: search without location if no results and had city
+    if (data.status !== 'OK' && hasValidCity) {
+        console.log(`  (retrying without city)...`);
+        query = `${candidate.name} restaurant California`;
+        data = await httpsGet(`${PLACES_BASE}/textsearch/json?query=${encodeURIComponent(query)}&type=restaurant&key=${API_KEY}`);
+        await sleep(DELAY_MS);
+    }
 
     if (data.status !== 'OK' || !data.results?.length) return null;
 
-    const isCJK = hasCJK(candidate.name);
     const results = data.results.map(r => ({ ...r, score: similarity(candidate.name, r.name) }));
 
-    // For CJK names: trust Google's top result if it's in the same city
-    if (isCJK && candidate.city) {
+    // For CJK names: trust top result if in same city
+    if (isCJK && hasValidCity) {
         const top = results[0];
         if (addressInCity(top.formatted_address, candidate.city)) {
             return top;
         }
     }
 
-    // For non-CJK names: pick best by similarity
+    // Pick best by similarity
     const best = results.sort((a, b) => b.score - a.score)[0];
 
-    // Require at least 40% name similarity to avoid false positives
-    if (best.score < 0.4) {
-        console.log(`  ⚠️  Low confidence match for "${candidate.name}": "${best.name}" (${(best.score*100).toFixed(0)}%)`);
+    // Lower threshold for CJK names (30%) vs non-CJK (40%)
+    const threshold = isCJK ? 0.30 : 0.40;
+    if (best.score < threshold) {
+        console.log(`  ⚠️  Low confidence for "${candidate.name}": "${best.name}" (${(best.score*100).toFixed(0)}%)`);
         return null;
     }
 
