@@ -354,6 +354,12 @@ body {
   transform: scale(0.97);
 }
 
+.pill-count {
+  opacity: 0.55;
+  font-size: 10px;
+  font-weight: 400;
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    Restaurant Grid
    ───────────────────────────────────────────────────────────────────────────── */
@@ -366,7 +372,7 @@ body {
 
 .restaurant-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-3);
 }
 
@@ -379,6 +385,28 @@ body {
 @media (min-width: 960px) {
   .restaurant-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 639px) {
+  .restaurant-grid {
+    gap: var(--space-2);
+  }
+
+  .restaurant-card {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: var(--font-size-sm);
+  }
+
+  .card-meta {
+    font-size: var(--font-size-xs);
+  }
+
+  .stat-value {
+    font-size: var(--font-size-lg);
   }
 }
 

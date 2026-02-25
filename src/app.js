@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         );
         filteredRestaurants = [...allRestaurants];
 
+        buildCuisineFilter();
         renderRestaurants();
 
         // Show last pipeline run timestamp
@@ -65,26 +66,48 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // ─── Pill Filters ─────────────────────────────────────────────────────────────
 
-function initPillFilters() {
-    document.querySelectorAll('.filter-pills').forEach(group => {
-        group.querySelectorAll('.pill').forEach(pill => {
-            pill.addEventListener('click', () => {
-                // Update active state
-                group.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
-                pill.classList.add('active');
+function initPillGroup(group) {
+    group.querySelectorAll('.pill').forEach(pill => {
+        pill.addEventListener('click', () => {
+            group.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
 
-                // Apply filter
-                const filterType = group.dataset.filter;
-                const value = pill.dataset.value;
+            const filterType = group.dataset.filter;
+            const value = pill.dataset.value;
 
-                if (filterType === 'sort') {
-                    applySort(value);
-                } else {
-                    applyFilter(filterType, value);
-                }
-            });
+            if (filterType === 'sort') {
+                applySort(value);
+            } else {
+                applyFilter(filterType, value);
+            }
         });
     });
+}
+
+function initPillFilters() {
+    document.querySelectorAll('.filter-pills').forEach(group => initPillGroup(group));
+}
+
+function buildCuisineFilter() {
+    const counts = {};
+    allRestaurants.forEach(r => {
+        if (r.cuisine) counts[r.cuisine] = (counts[r.cuisine] || 0) + 1;
+    });
+
+    const top10 = Object.entries(counts)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10);
+
+    const active = currentFilters.cuisine;
+    let html = `<button class="pill${active === 'all' ? ' active' : ''}" data-value="all">全部</button>`;
+    for (const [cuisine, count] of top10) {
+        html += `<button class="pill${active === cuisine ? ' active' : ''}" data-value="${cuisine}">${cuisine} <span class="pill-count">${count}</span></button>`;
+    }
+
+    const container = document.getElementById('cuisine-pills');
+    if (!container) return;
+    container.innerHTML = html;
+    initPillGroup(container);
 }
 
 function updatePillActive(group, value) {
