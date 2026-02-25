@@ -648,7 +648,7 @@
       },
       "google_match_status": "matched_with_english_name_v2",
       "correction_applied": {
-        "at": "2026-02-18T04:04:30.234Z",
+        "at": "2026-02-25T05:45:23.754Z",
         "reason": "用英文名重新匹配"
       },
       "xiaohongshu_id": "r008",
@@ -738,7 +738,7 @@
         "芽菜包",
         "豌豆面"
       ],
-      "cuisine": "包子",
+      "cuisine": "面食",
       "area": "Sunnyvale",
       "price_range": "",
       "total_engagement": 640,
@@ -811,7 +811,11 @@
       },
       "timeseries": [],
       "lat": 37.3389803,
-      "lng": -122.0425815
+      "lng": -122.0425815,
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 包子 → 面食"
+      }
     },
     {
       "id": "r012",
@@ -930,7 +934,7 @@
         "lng": -122.046685
       },
       "correction_applied": {
-        "at": "2026-02-18T04:04:30.234Z",
+        "at": "2026-02-25T05:45:23.754Z",
         "reason": "原匹配错误，用英文名重新搜索匹配"
       },
       "xiaohongshu_id": "r013",
@@ -1574,7 +1578,7 @@
       "id": "r023",
       "name": "Kow Kra Pao",
       "name_en": "",
-      "cuisine": "泰国菜",
+      "cuisine": "泰餐",
       "area": "Mountain View",
       "price_range": "",
       "total_engagement": 326,
@@ -1640,13 +1644,17 @@
           "mentions": 1,
           "engagement": 330
         }
-      ]
+      ],
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 泰国菜 → 泰餐"
+      }
     },
     {
       "id": "r024",
       "name": "Mensho Tokyo",
       "name_en": "",
-      "cuisine": "拉面",
+      "cuisine": "面食",
       "area": "SF",
       "price_range": "",
       "total_engagement": 827,
@@ -1714,13 +1722,17 @@
         }
       ],
       "lat": 37.7867348,
-      "lng": -122.4143431
+      "lng": -122.4143431,
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 拉面 → 面食"
+      }
     },
     {
       "id": "r025",
       "name": "Nom Nom Bistro",
       "name_en": "",
-      "cuisine": "港式",
+      "cuisine": "粤菜",
       "area": "Millbrae",
       "price_range": "",
       "total_engagement": 321,
@@ -1777,7 +1789,11 @@
       },
       "timeseries": [],
       "lat": 37.6008336,
-      "lng": -122.3921175
+      "lng": -122.3921175,
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 港式 → 粤菜"
+      }
     },
     {
       "id": "r026",
@@ -2099,7 +2115,7 @@
       "id": "r032",
       "name": "Pepperlunch",
       "name_en": "",
-      "cuisine": "日式",
+      "cuisine": "日料",
       "area": "Milpitas",
       "price_range": "",
       "total_engagement": 245,
@@ -2151,7 +2167,11 @@
         "last_merged": "2026-02-18T16:27:03.973Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 日式 → 日料"
+      }
     },
     {
       "id": "r033",
@@ -3074,7 +3094,10 @@
       },
       "timeseries": [],
       "lat": 37.5753059,
-      "lng": -122.0441278
+      "lng": -122.0441278,
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z"
+      }
     },
     {
       "id": "r050",
@@ -3577,7 +3600,7 @@
       "id": "r057",
       "name": "Bangkok Street Thai Street Food",
       "name_en": "",
-      "cuisine": "泰国菜",
+      "cuisine": "泰餐",
       "area": "SF",
       "price_range": "",
       "total_engagement": 112,
@@ -3631,7 +3654,11 @@
       },
       "timeseries": [],
       "lat": 37.7869423,
-      "lng": -122.4298429
+      "lng": -122.4298429,
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 泰国菜 → 泰餐"
+      }
     },
     {
       "id": "r058",
@@ -3719,7 +3746,7 @@
       "id": "r059",
       "name": "锦鲤缘",
       "name_en": "",
-      "cuisine": "淮扬菜",
+      "cuisine": "江浙菜",
       "area": "Sunnyvale",
       "price_range": "",
       "total_engagement": 83,
@@ -3769,7 +3796,11 @@
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 淮扬菜 → 江浙菜"
+      }
     },
     {
       "id": "r060",
@@ -4222,7 +4253,7 @@
       "id": "r067",
       "name": "Cozy Tea Loft",
       "name_en": "",
-      "cuisine": "台湾小吃",
+      "cuisine": "台湾菜",
       "area": "San Jose",
       "price_range": "",
       "total_engagement": 41,
@@ -4275,7 +4306,11 @@
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": []
+      "timeseries": [],
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 台湾小吃 → 台湾菜"
+      }
     },
     {
       "id": "r068",
@@ -4342,7 +4377,7 @@
       "id": "r069",
       "name": "小香米粉",
       "name_en": "",
-      "cuisine": "拉面",
+      "cuisine": "面食",
       "area": "Sunnyvale",
       "price_range": "",
       "total_engagement": 35,
@@ -4400,7 +4435,11 @@
       },
       "timeseries": [],
       "lat": 37.3611678,
-      "lng": -122.025989
+      "lng": -122.025989,
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 拉面 → 面食"
+      }
     },
     {
       "id": "r070",
@@ -4469,7 +4508,7 @@
       "id": "r071",
       "name": "外婆家常菜",
       "name_en": "Grandma's Kitchen",
-      "cuisine": "家常菜",
+      "cuisine": "中餐",
       "area": "Cupertino",
       "price_range": "",
       "total_engagement": 126,
@@ -4534,7 +4573,11 @@
       },
       "timeseries": [],
       "lat": 37.3219968,
-      "lng": -122.0148829
+      "lng": -122.0148829,
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 家常菜 → 中餐"
+      }
     },
     {
       "id": "r072",
@@ -4884,7 +4927,7 @@
       },
       "verified": true,
       "correction_applied": {
-        "at": "2026-02-18T04:04:30.234Z",
+        "at": "2026-02-25T05:45:23.754Z",
         "reason": "搜索\"面面俱到 Fremont\"第一个结果"
       },
       "xiaohongshu_id": "r079",
@@ -4939,7 +4982,7 @@
       },
       "verified": true,
       "correction_applied": {
-        "at": "2026-02-18T04:04:30.234Z",
+        "at": "2026-02-25T05:45:23.755Z",
         "reason": "用英文名重新匹配，并合并r011万峦猪脚的数据"
       },
       "alias": [
@@ -5008,7 +5051,7 @@
       "verified": true,
       "google_match_status": "matched_v2",
       "correction_applied": {
-        "at": "2026-02-18T04:04:30.234Z",
+        "at": "2026-02-25T05:45:23.754Z",
         "reason": "修正名称：从帖子描述称呼改为正式餐厅名"
       },
       "name_history": [
@@ -5069,7 +5112,7 @@
       },
       "verified": true,
       "correction_applied": {
-        "at": "2026-02-18T04:04:30.234Z",
+        "at": "2026-02-25T05:45:23.754Z",
         "reason": "用英文名重新匹配"
       },
       "xiaohongshu_id": "r081",
@@ -5123,7 +5166,7 @@
       },
       "verified": true,
       "correction_applied": {
-        "at": "2026-02-18T04:04:30.234Z",
+        "at": "2026-02-25T05:45:23.754Z",
         "reason": "用英文名重新匹配"
       },
       "xiaohongshu_id": "r080",
@@ -5181,7 +5224,7 @@
       "verified": true,
       "google_match_status": "matched_v2",
       "correction_applied": {
-        "at": "2026-02-18T04:04:30.234Z",
+        "at": "2026-02-25T05:45:23.755Z",
         "reason": "搜索匹配"
       },
       "alias": [
@@ -5243,7 +5286,10 @@
       "google_rating": 3.7,
       "verified": true,
       "lat": 37.3160458,
-      "lng": -122.0327518
+      "lng": -122.0327518,
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z"
+      }
     },
     {
       "id": "pipeline_1771721574149_ew7z",
@@ -5299,7 +5345,10 @@
       "lat": 37.3086802,
       "lng": -122.012402,
       "_status": "duplicate_merged",
-      "merged_into": "r075"
+      "merged_into": "r075",
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z"
+      }
     },
     {
       "id": "pipeline_1771721574155_ngr2",
@@ -5394,7 +5443,7 @@
       "id": "pipeline_1771721574155_mwci",
       "name": "Le Moose Crepe Cafe",
       "name_en": "",
-      "cuisine": "泰法融合",
+      "cuisine": "泰餐",
       "area": "unknown",
       "region": "unknown",
       "city": "Fremont",
@@ -5432,6 +5481,10 @@
         "source": "daily_pipeline",
         "source_post": "68c0d540000000001c03c788",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 泰法融合 → 泰餐"
       }
     },
     {
@@ -5558,7 +5611,10 @@
       "lat": 37.3357389,
       "lng": -122.0157583,
       "_status": "duplicate_merged",
-      "merged_into": "r066"
+      "merged_into": "r066",
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z"
+      }
     },
     {
       "id": "pipeline_1771721574155_sfgc",
@@ -5748,7 +5804,10 @@
       "lat": 37.3219968,
       "lng": -122.0148829,
       "_status": "duplicate_merged",
-      "merged_into": "r071"
+      "merged_into": "r071",
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z"
+      }
     },
     {
       "id": "pipeline_1771721574155_rdfp",
@@ -5816,7 +5875,10 @@
       "lat": 37.3160458,
       "lng": -122.0327518,
       "_status": "duplicate_merged",
-      "merged_into": "r077"
+      "merged_into": "r077",
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z"
+      }
     },
     {
       "id": "pipeline_1771721574155_bn8w",
@@ -5913,7 +5975,7 @@
       "id": "pipeline_1771721574155_8bkd",
       "name": "Arwa Yemeni Coffee",
       "name_en": "",
-      "cuisine": "也门咖啡",
+      "cuisine": "中东菜",
       "area": "unknown",
       "region": "unknown",
       "city": "Sunnyvale",
@@ -5950,13 +6012,17 @@
         "source": "daily_pipeline",
         "source_post": "6981750a000000000e03db3a",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: 也门咖啡 → 中东菜"
       }
     },
     {
       "id": "pipeline_1771918463119_pqu4",
       "name": "The Public Izakaya",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -6003,13 +6069,17 @@
         "source": "daily_pipeline",
         "source_post": "678e8bb90000000029015a12",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1771918463123_bto8",
       "name": "Imperial Treasure",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "unknown",
       "region": "unknown",
       "city": "Palo Alto",
@@ -6059,13 +6129,17 @@
         "source": "daily_pipeline",
         "source_post": "681f0af700000000120069a6",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
       "id": "pipeline_1771918463123_z98q",
       "name": "Seoul Gom Tang",
       "name_en": "",
-      "cuisine": "Korean",
+      "cuisine": "韩餐",
       "area": "unknown",
       "region": "unknown",
       "city": "Oakland",
@@ -6116,13 +6190,17 @@
         "source": "daily_pipeline",
         "source_post": "6938a1ee000000001b0245b2",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
     {
       "id": "pipeline_1771918463123_wyza",
       "name": "KAN KIIN BRUNCH & THAI EATERY",
       "name_en": "",
-      "cuisine": "Thai",
+      "cuisine": "泰餐",
       "area": "unknown",
       "region": "unknown",
       "city": "Daly City",
@@ -6167,13 +6245,17 @@
         "source": "daily_pipeline",
         "source_post": "693b34a6000000001b024d0b",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Thai → 泰餐"
       }
     },
     {
       "id": "pipeline_1771918463123_jssi",
       "name": "湾区蓉城火锅",
       "name_en": "",
-      "cuisine": "Hot Pot",
+      "cuisine": "火锅",
       "area": "unknown",
       "region": "unknown",
       "city": "Fremont",
@@ -6223,13 +6305,17 @@
         "source": "daily_pipeline",
         "source_post": "6976e996000000001a021721",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
     {
       "id": "pipeline_1771920604530_wv7y",
       "name": "Kunjip",
       "name_en": "",
-      "cuisine": "Korean",
+      "cuisine": "韩餐",
       "area": "unknown",
       "region": "unknown",
       "city": "Mountain View",
@@ -6289,13 +6375,17 @@
         "source": "daily_pipeline",
         "source_post": "680c1ac4000000001e00608c",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
     {
       "id": "pipeline_1771920604533_at66",
       "name": "The Spicy Shrimp / 浩味茶餐厅",
       "name_en": "",
-      "cuisine": "Hong Kong Style Cafe / Cantonese",
+      "cuisine": "粤菜",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -6341,13 +6431,17 @@
         "source": "daily_pipeline",
         "source_post": "682688e2000000002101a3a3",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Hong Kong Style Cafe / Cantonese → 粤菜"
       }
     },
     {
       "id": "pipeline_1771920604533_pd9w",
       "name": "人间烟火小酒馆",
       "name_en": "",
-      "cuisine": "Chinese Bistro",
+      "cuisine": "中餐",
       "area": "unknown",
       "region": "unknown",
       "city": "Sunnyvale",
@@ -6389,13 +6483,17 @@
         "source": "daily_pipeline",
         "source_post": "68cc5a600000000013012980",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Chinese Bistro → 中餐"
       }
     },
     {
       "id": "pipeline_1771920604533_o2nd",
       "name": "冯校长老火锅",
       "name_en": "",
-      "cuisine": "Hot Pot",
+      "cuisine": "火锅",
       "area": "unknown",
       "region": "unknown",
       "city": "Sunnyvale",
@@ -6444,13 +6542,17 @@
         "source": "daily_pipeline",
         "source_post": "69236d64000000001b0323d5",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
     {
       "id": "pipeline_1771920604533_4diz",
       "name": "Ushiya Grill",
       "name_en": "",
-      "cuisine": "Japanese BBQ / All-You-Can-Eat",
+      "cuisine": "日料",
       "area": "unknown",
       "region": "unknown",
       "city": "Milpitas",
@@ -6498,13 +6600,17 @@
         "source": "daily_pipeline",
         "source_post": "699696ea0000000028008389",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Japanese BBQ / All-You-Can-Eat → 日料"
       }
     },
     {
       "id": "pipeline_1771954753520_6czq",
       "name": "Banana Island",
       "name_en": "",
-      "cuisine": "Singaporean/Malaysian/Thai",
+      "cuisine": "东南亚菜",
       "area": "unknown",
       "region": "unknown",
       "city": "Daly City",
@@ -6552,13 +6658,17 @@
         "source": "daily_pipeline",
         "source_post": "690029370000000004016751",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Singaporean/Malaysian/Thai → 东南亚菜"
       }
     },
     {
       "id": "pipeline_1771954753523_o2c3",
       "name": "HalalStreet Xinjiang Cuisine",
       "name_en": "",
-      "cuisine": "Xinjiang",
+      "cuisine": "新疆菜",
       "area": "unknown",
       "region": "unknown",
       "city": "Mountain View",
@@ -6603,13 +6713,17 @@
         "source": "daily_pipeline",
         "source_post": "696f3247000000000c0355fe",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Xinjiang → 新疆菜"
       }
     },
     {
       "id": "pipeline_1771954753523_jteo",
       "name": "鲤鱼门",
       "name_en": "",
-      "cuisine": "Cantonese Dim Sum",
+      "cuisine": "粤菜",
       "area": "unknown",
       "region": "unknown",
       "city": "Daly City",
@@ -6656,13 +6770,17 @@
         "source": "daily_pipeline",
         "source_post": "698b11e1000000001a01cc4f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Cantonese Dim Sum → 粤菜"
       }
     },
     {
       "id": "pipeline_1771954753562_k8nu",
       "name": "Z & Y Restaurant (御食园川菜馆)",
       "name_en": "",
-      "cuisine": "Sichuan",
+      "cuisine": "川菜",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -6708,13 +6826,17 @@
         "source": "daily_pipeline",
         "source_post": "666fd3080000000006006530",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
     {
       "id": "pipeline_1771954753565_cy1u",
       "name": "Pinstripes",
       "name_en": "",
-      "cuisine": "American",
+      "cuisine": "西餐",
       "area": "unknown",
       "region": "unknown",
       "city": "San Mateo",
@@ -6766,13 +6888,17 @@
         "source": "daily_pipeline",
         "source_post": "66772bf1000000001c0276cb",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: American → 西餐"
       }
     },
     {
       "id": "pipeline_1771954753565_etm5",
       "name": "Hibachi Grill and Buffet",
       "name_en": "",
-      "cuisine": "American Chinese, Buffet",
+      "cuisine": "中餐",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -6819,13 +6945,17 @@
         "source": "daily_pipeline",
         "source_post": "66d15585000000001d03bd1b",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: American Chinese, Buffet → 中餐"
       }
     },
     {
       "id": "pipeline_1771954753565_u6ep",
       "name": "Yin Du Wonton Noodle 银都云吞面",
       "name_en": "",
-      "cuisine": "Cantonese",
+      "cuisine": "粤菜",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -6872,13 +7002,17 @@
         "source": "daily_pipeline",
         "source_post": "68647c78000000001d00f3f7",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
     {
       "id": "pipeline_1771954753565_pzuy",
       "name": "Secrets Of Tiger",
       "name_en": "",
-      "cuisine": "Thai",
+      "cuisine": "泰餐",
       "area": "unknown",
       "region": "unknown",
       "city": "unknown",
@@ -6924,13 +7058,17 @@
         "source": "daily_pipeline",
         "source_post": "6908179d000000000300f3ae",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Thai → 泰餐"
       }
     },
     {
       "id": "pipeline_1771954753565_yjqg",
       "name": "Sotto Mare",
       "name_en": "",
-      "cuisine": "Seafood",
+      "cuisine": "海鲜",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -6976,13 +7114,17 @@
         "source": "daily_pipeline",
         "source_post": "6969caa1000000002102bfbb",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Seafood → 海鲜"
       }
     },
     {
       "id": "pipeline_1771954753565_aai0",
       "name": "Hog Island Oyster",
       "name_en": "",
-      "cuisine": "Seafood",
+      "cuisine": "海鲜",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -7024,13 +7166,17 @@
         "source": "daily_pipeline",
         "source_post": "696c7c0b0000000022023140",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Seafood → 海鲜"
       }
     },
     {
       "id": "pipeline_1771954753565_jzj7",
       "name": "金门肠粉",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -7072,13 +7218,17 @@
         "source": "daily_pipeline",
         "source_post": "696c7c0b0000000022023140",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
       "id": "pipeline_1771954753565_tdzy",
       "name": "Madcap",
       "name_en": "",
-      "cuisine": "Fine Dining",
+      "cuisine": "西餐",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -7120,13 +7270,17 @@
         "source": "daily_pipeline",
         "source_post": "696c7c0b0000000022023140",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Fine Dining → 西餐"
       }
     },
     {
       "id": "pipeline_1771954753565_f0mj",
       "name": "Jungdon Katsu",
       "name_en": "",
-      "cuisine": "Korean",
+      "cuisine": "韩餐",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -7168,13 +7322,17 @@
         "source": "daily_pipeline",
         "source_post": "696c7c0b0000000022023140",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
     {
       "id": "pipeline_1771954753565_y9l6",
       "name": "Impression of Lanzhou",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -7216,13 +7374,17 @@
         "source": "daily_pipeline",
         "source_post": "696c7c0b0000000022023140",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
       "id": "pipeline_1771954753565_d092",
       "name": "Niku Steakhouse",
       "name_en": "",
-      "cuisine": "Steakhouse",
+      "cuisine": "牛排",
       "area": "unknown",
       "region": "unknown",
       "city": "San Francisco",
@@ -7264,13 +7426,17 @@
         "source": "daily_pipeline",
         "source_post": "696c7c0b0000000022023140",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Steakhouse → 牛排"
       }
     },
     {
       "id": "pipeline_1771954753565_djok",
       "name": "The Breakfast Club at Midtown",
       "name_en": "",
-      "cuisine": "Brunch",
+      "cuisine": "早午餐",
       "area": "unknown",
       "region": "unknown",
       "city": "San Jose",
@@ -7317,6 +7483,10 @@
         "source": "daily_pipeline",
         "source_post": "6974798500000000220086ba",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Brunch → 早午餐"
       }
     },
     {
@@ -7377,7 +7547,7 @@
       "id": "pipeline_1771954753565_i7ms",
       "name": "滋味小面",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "unknown",
       "region": "unknown",
       "city": "Milpitas",
@@ -7426,13 +7596,17 @@
         "source": "daily_pipeline",
         "source_post": "6984ff15000000000b00a73b",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
       "id": "pipeline_1771954753565_2xrq",
       "name": "三好拉面",
       "name_en": "",
-      "cuisine": "Chinese Noodles",
+      "cuisine": "面食",
       "area": "unknown",
       "region": "unknown",
       "city": "Milpitas",
@@ -7481,8 +7655,12 @@
         "source": "daily_pipeline",
         "source_post": "69993412000000001a03382d",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-02-25T05:45:23.755Z",
+        "reason": "cuisine normalization: Chinese Noodles → 面食"
       }
     }
   ],
-  "verified_at": "2026-02-25T05:43:16.522Z"
+  "verified_at": "2026-02-25T05:45:24.521Z"
 }
