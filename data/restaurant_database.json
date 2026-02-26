@@ -1,6 +1,6 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-26T04:17:34.850Z",
+  "updated_at": "2026-02-26T06:18:59.870Z",
   "total_restaurants": 522,
   "restaurants": [
     {
@@ -4188,14 +4188,13 @@
       "cuisine": "湘菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 43.298130716961374,
-      "mention_count": 12,
+      "total_engagement": 38.57139643472826,
+      "mention_count": 10,
       "sources": [
         "69572ce8000000001d03de1d",
         "68c50994000000001d02e833",
         "6907acce000000000302c494",
         "693f51380000000019025a7f",
-        "67158d6c0000000021003d8f",
         "68c224b1000000001b01f784",
         "694634c6000000000d035cba",
         "694d88c5000000001e01538b",
@@ -4204,16 +4203,6 @@
         "6973f061000000000a028def"
       ],
       "post_details": [
-        {
-          "post_id": "67158d6c0000000021003d8f",
-          "title": "湾区湘菜天花板",
-          "date": "2024-10-20",
-          "engagement": 799,
-          "context": "",
-          "adjusted_engagement": 4.726734282233114,
-          "restaurant_count_in_post": 2,
-          "sentiment": "positive"
-        },
         {
           "post_id": "689be96b000000001d03b64b",
           "title": "南湾Cupertino也有了请客上台面的粤菜馆子",
@@ -4377,7 +4366,7 @@
       "engagement": 127,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-02-26T00:55:01.544Z",
+      "updated_at": "2026-02-26T06:18:59.870Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
@@ -26847,14 +26836,13 @@
       "lat": 37.7876357,
       "lng": -122.4115134,
       "verified": true,
-      "total_engagement": 11.498867107719187,
-      "mention_count": 2,
+      "total_engagement": 9.013960457931187,
+      "mention_count": 1,
       "sentiment_score": 0.5,
       "sentiment_details": {},
       "recommendations": [],
       "sources": [
-        "6977419b000000001a0279bd",
-        "695c4460000000000b010931"
+        "6977419b000000001a0279bd"
       ],
       "post_details": [
         {
@@ -26866,16 +26854,6 @@
           "adjusted_engagement": 9.013960457931187,
           "restaurant_count_in_post": 1,
           "sentiment": "neutral"
-        },
-        {
-          "post_id": "695c4460000000000b010931",
-          "title": "San Mateo附近最常去的两家家常韩餐小店",
-          "date": "2026-01-05",
-          "engagement": 143,
-          "context": "",
-          "adjusted_engagement": 2.4849066497880004,
-          "restaurant_count_in_post": 4,
-          "sentiment": "neutral"
         }
       ],
       "timeseries": [
@@ -26886,7 +26864,7 @@
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.544Z",
+      "updated_at": "2026-02-26T06:18:59.865Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -34475,5 +34453,5 @@
       }
     }
   ],
-  "verified_at": "2026-02-26T05:37:37.094Z"
+  "verified_at": "2026-02-26T06:19:11.818Z"
 }
