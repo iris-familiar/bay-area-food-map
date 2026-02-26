@@ -40,3 +40,6 @@ playwright-report/
 # Legacy/backup dirs (no longer used)
 scripts/etl.backup*/
 fallback_*/
+
+# Git worktrees
+.worktrees/
