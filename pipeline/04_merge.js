@@ -78,6 +78,28 @@ function normalize(str) {
     return (str || '').toLowerCase().replace(/\s+/g, '').replace(/[·•·\-_]/g, '');
 }
 
+// Check if string contains CJK characters (Chinese, Japanese, Korean)
+function hasCJK(str) {
+    return /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(str || '');
+}
+
+// Normalised Levenshtein similarity (0–1)
+function nameSimilarity(a, b) {
+    a = (a || '').toLowerCase().replace(/\s+/g, '');
+    b = (b || '').toLowerCase().replace(/\s+/g, '');
+    if (a === b) return 1;
+    const la = a.length, lb = b.length;
+    if (!la || !lb) return 0;
+    const dp = Array.from({length: la+1}, (_, i) => [i, ...Array(lb).fill(0)]);
+    for (let j = 0; j <= lb; j++) dp[0][j] = j;
+    for (let i = 1; i <= la; i++)
+        for (let j = 1; j <= lb; j++)
+            dp[i][j] = a[i-1] === b[j-1]
+                ? dp[i-1][j-1]
+                : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
+    return 1 - dp[la][lb] / Math.max(la, lb);
+}
+
 for (const candidate of candidates) {
     // Skip candidates that failed enrichment
     if (candidate.enrichment_failed) {
@@ -96,6 +118,15 @@ for (const candidate of candidates) {
     if (existingIdx !== undefined) {
         // ─── UPDATE existing restaurant ────────────────────────────────────────
         const r = db.restaurants[existingIdx];
+
+        // Guard: cross-script name mismatch likely indicates a wrong Google place_id assignment
+        const candidateIsCJK = hasCJK(candidate.name);
+        const existingIsCJK  = hasCJK(r.name);
+        if (candidateIsCJK !== existingIsCJK && nameSimilarity(candidate.name, r.name) < 0.3) {
+            console.warn(`  ⚠️  Skipping: "${candidate.name}" matched place_id of "${r.name}" (script mismatch) — possible wrong Google match`);
+            skippedNoPlaceId++;
+            continue;
+        }
 
         // Check if this source post is new (to avoid double-counting)
         const isNewSource = candidate.source_post_id && (

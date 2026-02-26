@@ -129,7 +129,9 @@ Return ONLY valid JSON:
 ]}
 
 Rules:
-- Extract EVERY restaurant mentioned, even if just a name
+- Only extract restaurants whose names appear literally in the POST CONTENT above
+- Do NOT include restaurants you know of that are not explicitly named in this post
+- Extract ALL restaurants that are named, even if briefly mentioned
 - City is REQUIRED - extract from address, neighborhood, or context
 - If city is unclear, make best guess from Bay Area cities list
 - If no restaurants found, return {"restaurants": []}`;
