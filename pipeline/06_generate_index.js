@@ -51,9 +51,9 @@ const slimRestaurants = db.restaurants
         slim.post_details = Array.isArray(r.post_details)
             ? r.post_details
                 .slice()
-                .sort((a, b) => (b.engagement || 0) - (a.engagement || 0))
+                .sort((a, b) => (b.adjusted_engagement || 0) - (a.adjusted_engagement || 0))
                 .slice(0, 5)
-                .map(({ post_id, title, date, engagement }) => ({ post_id, title, date, engagement }))
+                .map(({ post_id, title, date, engagement, adjusted_engagement }) => ({ post_id, title, date, engagement, adjusted_engagement }))
             : [];
         return slim;
     });

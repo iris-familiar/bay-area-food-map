@@ -111,6 +111,21 @@ function addressInCity(address, city) {
     return addr.includes(c);
 }
 
+// ─── Delivery prefix stripping ────────────────────────────────────────────────
+// Removes delivery app prefixes that confuse Google Places text search
+// e.g. "熊猫外卖御食园" → "御食园"
+const DELIVERY_PREFIXES = ['熊猫外卖', '美团外卖', '饿了么外卖', '饿了么', '美团', '熊猫'];
+
+function stripDeliveryPrefix(name) {
+    for (const prefix of DELIVERY_PREFIXES) {
+        if (name.startsWith(prefix)) {
+            const stripped = name.slice(prefix.length).trim();
+            if (stripped.length > 0) return stripped;
+        }
+    }
+    return name;
+}
+
 // ─── Google Places API ────────────────────────────────────────────────────────
 const PLACES_BASE = 'https://maps.googleapis.com/maps/api/place';
 
@@ -118,17 +133,20 @@ async function searchPlace(candidate) {
     const isCJK = hasCJK(candidate.name);
     const hasValidCity = candidate.city && candidate.city !== 'unknown' && candidate.city !== 'Bay Area';
 
+    // Strip delivery prefixes before searching (e.g. "熊猫外卖御食园" → "御食园")
+    const searchName = stripDeliveryPrefix(candidate.name);
+
     // First attempt: with city
     let query = hasValidCity
-        ? `${candidate.name} restaurant ${candidate.city} California`
-        : `${candidate.name} restaurant Bay Area California`;
+        ? `${searchName} restaurant ${candidate.city} California`
+        : `${searchName} restaurant Bay Area California`;
 
     let data = await httpsGet(`${PLACES_BASE}/textsearch/json?query=${encodeURIComponent(query)}&type=restaurant&key=${API_KEY}`);
 
     // Fallback: search without location if no results and had city
     if (data.status !== 'OK' && hasValidCity) {
         console.log(`  (retrying without city)...`);
-        query = `${candidate.name} restaurant California`;
+        query = `${searchName} restaurant California`;
         data = await httpsGet(`${PLACES_BASE}/textsearch/json?query=${encodeURIComponent(query)}&type=restaurant&key=${API_KEY}`);
         await sleep(DELAY_MS);
     }
@@ -136,14 +154,14 @@ async function searchPlace(candidate) {
     // Fallback for unknown-city: try broader California search
     if (data.status !== 'OK' && !hasValidCity) {
         console.log(`  (retrying unknown-city with California)...`);
-        query = `${candidate.name} restaurant California`;
+        query = `${searchName} restaurant California`;
         data = await httpsGet(`${PLACES_BASE}/textsearch/json?query=${encodeURIComponent(query)}&type=restaurant&key=${API_KEY}`);
         await sleep(DELAY_MS);
     }
 
     if (data.status !== 'OK' || !data.results?.length) return null;
 
-    const results = data.results.map(r => ({ ...r, score: similarity(candidate.name, r.name) }));
+    const results = data.results.map(r => ({ ...r, score: similarity(searchName, r.name) }));
 
     // For CJK names: trust top result if in same city (or Bay Area for unknown-city)
     if (isCJK) {

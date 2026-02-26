@@ -50,16 +50,29 @@ check('Unique IDs', (() => {
     return ids.length === new Set(ids).size;
 })(), 'duplicate IDs found');
 
-// Check engagement integrity: total_engagement should be >= post_details sum
-// (post_details is capped at top-10 entries; total_engagement is the true cumulative sum)
+// Check engagement integrity: total_engagement should match sum of adjusted_engagement
+// from post_details (within 1% tolerance for floating point).
+// Falls back to verifying total_engagement >= 0 for records without adjusted_engagement.
 check('Engagement matches post_details', (() => {
     for (const r of db.restaurants) {
         if (r._status === 'duplicate_merged') continue;
         if (!Array.isArray(r.post_details) || r.post_details.length === 0) continue;
-        const pdSum = r.post_details.reduce((sum, p) => sum + (parseInt(p.engagement) || 0), 0);
-        if ((r.total_engagement || 0) < pdSum) {
-            console.error(`    ⚠️  ${r.name}: total_engagement=${r.total_engagement} < post_details sum=${pdSum}`);
-            return false;
+
+        // If post_details have adjusted_engagement, verify total matches their sum
+        const hasAdjusted = r.post_details.every(p => typeof p.adjusted_engagement === 'number');
+        if (hasAdjusted) {
+            const adjustedSum = r.post_details.reduce((sum, p) => sum + (p.adjusted_engagement || 0), 0);
+            const tolerance = Math.max(adjustedSum * 0.01, 0.001);
+            if (Math.abs((r.total_engagement || 0) - adjustedSum) > tolerance) {
+                console.error(`    ⚠️  ${r.name}: total_engagement=${r.total_engagement} ≠ adjusted sum=${adjustedSum.toFixed(4)}`);
+                return false;
+            }
+        } else {
+            // Legacy check: total_engagement must be non-negative
+            if ((r.total_engagement || 0) < 0) {
+                console.error(`    ⚠️  ${r.name}: total_engagement=${r.total_engagement} is negative`);
+                return false;
+            }
         }
     }
     return true;

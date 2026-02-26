@@ -58,6 +58,15 @@ const now = new Date();
 const today = now.toISOString().split('T')[0];
 const thisMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
 
+// ─── Pre-compute N: number of restaurants per source post ─────────────────────
+// Used for adjusted engagement: ln(X+1)/sqrt(N) to discount list posts
+const postRestaurantCount = {};
+for (const c of candidates) {
+    if (c.source_post_id) {
+        postRestaurantCount[c.source_post_id] = (postRestaurantCount[c.source_post_id] || 0) + 1;
+    }
+}
+
 // ─── Process candidates ────────────────────────────────────────────────────────
 let added = 0;
 let updated = 0;
@@ -93,10 +102,14 @@ for (const candidate of candidates) {
             !Array.isArray(r.sources) || !r.sources.includes(candidate.source_post_id)
         );
 
+        // Compute adjusted engagement: ln(X+1)/sqrt(N)
+        const N = postRestaurantCount[candidate.source_post_id] || 1;
+        const adjustedEngagement = Math.log((candidate.engagement || 0) + 1) / Math.sqrt(N);
+
         // Only update metrics if this is a new source post
         if (isNewSource) {
             r.mention_count = (r.mention_count || 0) + 1;
-            r.total_engagement = (r.total_engagement || 0) + (candidate.engagement || 0);
+            r.total_engagement = (r.total_engagement || 0) + adjustedEngagement;
         }
 
         // Add source post if not already tracked
@@ -116,10 +129,12 @@ for (const candidate of candidates) {
                     title: candidate.source_title || '',
                     date: candidate.source_post_date || '',
                     engagement: candidate.engagement || 0,
+                    adjusted_engagement: adjustedEngagement,
+                    restaurant_count_in_post: N,
                     context: ''
                 });
-                // Keep top 10 by engagement
-                r.post_details.sort((a, b) => (b.engagement || 0) - (a.engagement || 0));
+                // Keep top 10 by adjusted engagement
+                r.post_details.sort((a, b) => (b.adjusted_engagement || 0) - (a.adjusted_engagement || 0));
                 r.post_details = r.post_details.slice(0, 10);
             }
         }
@@ -172,6 +187,10 @@ for (const candidate of candidates) {
         // ─── ADD new restaurant ─────────────────────────────────────────────────
         const sentimentScore = { positive: 1.0, neutral: 0.5, negative: 0.0 };
 
+        // Compute adjusted engagement: ln(X+1)/sqrt(N)
+        const newN = postRestaurantCount[candidate.source_post_id] || 1;
+        const newAdjustedEngagement = Math.log((candidate.engagement || 0) + 1) / Math.sqrt(newN);
+
         const newRestaurant = {
             id: `pipeline_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
             name: candidate.name,
@@ -189,7 +208,7 @@ for (const candidate of candidates) {
             lng: candidate.lng || null,
             verified: true,  // Already verified via Google enrichment
             // Engagement metrics
-            total_engagement: candidate.engagement || 0,
+            total_engagement: newAdjustedEngagement,
             mention_count: 1,
             sentiment_score: sentimentScore[candidate.sentiment] ?? 0.5,
             sentiment_details: {},
@@ -200,6 +219,8 @@ for (const candidate of candidates) {
                 title: candidate.source_title || '',
                 date: candidate.source_post_date || '',
                 engagement: candidate.engagement || 0,
+                adjusted_engagement: newAdjustedEngagement,
+                restaurant_count_in_post: newN,
                 context: ''
             }] : [],
             timeseries: [{ month: thisMonth, mentions: 1, engagement: candidate.engagement || 0 }],

@@ -20,6 +20,10 @@ node pipeline/enrich_google.js --limit 20   # Enrich existing unverified restaur
 node pipeline/review.js                      # Interactive candidate review CLI
 node pipeline/review.js --auto-approve       # CI mode (no interaction)
 
+# One-time data scripts:
+node scripts/backfill_adjusted_engagement.js  # Recompute adjusted engagement for all restaurants
+node scripts/fix_mismatched_places.js         # Fix wrong Google Place matches (merge into canonical)
+
 # XHS login (if scrape step fails):
 cd ~/.agents/skills/xiaohongshu/scripts && ./login.sh
 cd ~/.agents/skills/xiaohongshu/scripts && ./status.sh
@@ -34,7 +38,7 @@ XHS posts → 01_scrape.sh → data/raw/YYYY-MM-DD/post_*.json
           → 03_enrich_candidates.js (Google Places enrichment)
           → 04_merge.js (merge by place_id) → data/restaurant_database.json
           → 05_verify.js (integrity check, auto-restores backup on failure)
-          → 06_generate_index.js → data/restaurant_database_index.json (slim ~50KB)
+          → 06_generate_index.js → data/restaurant_database_index.json (slim ~370KB)
           → 07_commit.sh (auto git commit if data changed)
 ```
 
@@ -78,6 +82,12 @@ New restaurants are Google-enriched during the pipeline and enter the database w
 - Run `node pipeline/enrich_google.js --limit 20` to add Google data to restaurants that predate the new pipeline
 - Filters on `!r.verified || !r.google_place_id`
 
+### Engagement Metric
+
+`total_engagement` uses an adjusted formula: **`Σ ln(X+1) / sqrt(N)`** where X = raw post engagement, N = number of restaurants extracted from that post. This discounts list posts vs focused reviews. Displayed in UI as `min(round((x/45)*100), 100)` for a 0–100 scale.
+
+Each `post_details` entry stores `adjusted_engagement` and `restaurant_count_in_post` alongside raw `engagement`. `05_verify.js` checks that `total_engagement ≈ Σ adjusted_engagement` (1% tolerance).
+
 ### Data Integrity Patterns
 - Auto-backup before every run; 7-day TTL; `05_verify.js` auto-restores if integrity fails
 - Candidates that fail Google enrichment are skipped (only verified restaurants enter the database)
@@ -85,6 +95,7 @@ New restaurants are Google-enriched during the pipeline and enter the database w
 - `scripts/transaction.js` provides atomic write + rollback for manual corrections
 - **Duplicate prevention**: `enrich_google.js` checks for existing restaurants with the same `google_place_id` before assigning; merges engagement/sources/recommendations if found, marks duplicate as `_status: 'duplicate_merged'`
 - Index generator excludes `duplicate_merged` entries from `restaurant_database_index.json`
+- **Delivery prefix stripping**: `03_enrich_candidates.js` strips prefixes like `熊猫外卖`/`美团外卖` before Google Places search to prevent wrong matches
 
 ### Cron Entry
 ```
