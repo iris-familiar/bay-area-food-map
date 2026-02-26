@@ -46,9 +46,10 @@ const GLM_MODEL = process.env.GLM_MODEL || 'glm-5';
 // Only process posts from today to avoid re-processing old data
 // MAX_POSTS env var overrides for testing (e.g. MAX_POSTS=10 in e2e)
 const MAX_POSTS_PER_RUN = parseInt(process.env.MAX_POSTS || '100', 10);
-const DELAY_MS = 200; // 200ms between API calls
+const DELAY_MS = parseInt(process.env.DELAY_MS || '200', 10); // ms between API calls
 const MAX_RETRIES = 3; // Max retry attempts for API errors
 const RETRY_DELAY_MS = 1000; // Initial retry delay (exponential backoff)
+const REQUEST_TIMEOUT_MS = parseInt(process.env.GLM_TIMEOUT_MS || '60000', 10);
 
 // ─── Bay Area validation ────────────────────────────────────────────────────
 const BAY_AREA_SIGNALS = [
@@ -70,6 +71,8 @@ const CITY_ALIASES = {
     '山景城': 'Mountain View',
     '桑尼维尔': 'Sunnyvale',
     '圣克拉拉': 'Santa Clara',
+    '南旧金山': 'South San Francisco',
+    '坎贝尔': 'Campbell',
     '湾区': null,  // Too vague, will fail enrichment
 };
 
@@ -79,6 +82,8 @@ const VALID_CITIES = new Set([
     'Redwood City', 'Menlo Park', 'Union City', 'Newark', 'Hayward',
     'SF', 'San Francisco', 'Daly City', 'San Leandro', 'Pleasanton',
     'Livermore', 'Dublin', 'Walnut Creek', 'Berkeley', 'Oakland', 'San Ramon',
+    'Millbrae', 'San Bruno', 'Campbell', 'Burlingame', 'South San Francisco',
+    'Albany', 'Pleasant Hill', 'San Carlos', 'Belmont',
 ]);
 
 function normalizeCity(city) {
@@ -98,7 +103,7 @@ function isBayAreaPost(text) {
 }
 
 // ─── Bay Area cities for extraction ─────────────────────────────────────────
-const BAY_AREA_CITIES_LIST = 'Cupertino, Milpitas, Fremont, Mountain View, Sunnyvale, San Jose, Palo Alto, Santa Clara, San Mateo, Foster City, Redwood City, Menlo Park, Union City, Newark, Hayward, SF/San Francisco, Daly City, San Leandro, Pleasanton, Livermore, Dublin, Walnut Creek, Berkeley, Oakland, San Ramon';
+const BAY_AREA_CITIES_LIST = 'Cupertino, Milpitas, Fremont, Mountain View, Sunnyvale, San Jose, Palo Alto, Santa Clara, San Mateo, Foster City, Redwood City, Menlo Park, Union City, Newark, Hayward, SF/San Francisco, Daly City, San Leandro, Pleasanton, Livermore, Dublin, Walnut Creek, Berkeley, Oakland, San Ramon, Millbrae, San Bruno, Campbell, Burlingame, South San Francisco, Albany, Pleasant Hill, San Carlos, Belmont';
 
 // ─── GLM API call (OpenAI-compatible) ──────────────────────────────────────
 function glmExtract(postText) {
@@ -132,7 +137,7 @@ Rules:
         const body = JSON.stringify({
             model: GLM_MODEL,
             messages: [{ role: 'user', content: prompt }],
-            max_tokens: 1024,
+            max_tokens: 4096,
             temperature: 0.1,
         });
 
@@ -157,6 +162,11 @@ Rules:
                         reject(new Error(response.error.message));
                         return;
                     }
+                    const finishReason = response.choices?.[0]?.finish_reason;
+                    if (finishReason === 'length') {
+                        console.warn('  ⚠️  GLM response truncated (finish_reason=length) — some restaurants may be missing');
+                    }
+
                     let text = response.choices?.[0]?.message?.content || '';
 
                     if (!text) {
@@ -176,7 +186,7 @@ Rules:
         });
 
         req.on('error', reject);
-        req.setTimeout(60000, () => { req.destroy(); reject(new Error('timeout')); });
+        req.setTimeout(REQUEST_TIMEOUT_MS, () => { req.destroy(); reject(new Error('timeout')); });
         req.write(body);
         req.end();
     });

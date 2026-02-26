@@ -88,6 +88,21 @@ function hasCJK(str) {
     return /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(str);
 }
 
+const BAY_AREA_CITIES = new Set([
+    'cupertino', 'milpitas', 'fremont', 'mountain view', 'sunnyvale', 'san jose',
+    'palo alto', 'santa clara', 'san mateo', 'foster city', 'redwood city',
+    'menlo park', 'union city', 'newark', 'hayward', 'san francisco', 'daly city',
+    'san leandro', 'pleasanton', 'livermore', 'dublin', 'walnut creek', 'berkeley',
+    'oakland', 'san ramon', 'millbrae', 'san bruno', 'campbell', 'burlingame',
+    'south san francisco', 'albany', 'pleasant hill', 'san carlos', 'belmont',
+]);
+
+function addressInBayArea(address) {
+    if (!address) return false;
+    const addr = address.toLowerCase();
+    return [...BAY_AREA_CITIES].some(c => addr.includes(c));
+}
+
 // Check if address contains the target city
 function addressInCity(address, city) {
     if (!address || !city) return false;
@@ -118,16 +133,25 @@ async function searchPlace(candidate) {
         await sleep(DELAY_MS);
     }
 
+    // Fallback for unknown-city: try broader California search
+    if (data.status !== 'OK' && !hasValidCity) {
+        console.log(`  (retrying unknown-city with California)...`);
+        query = `${candidate.name} restaurant California`;
+        data = await httpsGet(`${PLACES_BASE}/textsearch/json?query=${encodeURIComponent(query)}&type=restaurant&key=${API_KEY}`);
+        await sleep(DELAY_MS);
+    }
+
     if (data.status !== 'OK' || !data.results?.length) return null;
 
     const results = data.results.map(r => ({ ...r, score: similarity(candidate.name, r.name) }));
 
-    // For CJK names: trust top result if in same city
-    if (isCJK && hasValidCity) {
+    // For CJK names: trust top result if in same city (or Bay Area for unknown-city)
+    if (isCJK) {
         const top = results[0];
-        if (addressInCity(top.formatted_address, candidate.city)) {
-            return top;
-        }
+        const cityMatch = hasValidCity
+            ? addressInCity(top.formatted_address, candidate.city)
+            : addressInBayArea(top.formatted_address);
+        if (cityMatch) return top;
     }
 
     // Pick best by similarity

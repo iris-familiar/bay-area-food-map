@@ -313,38 +313,70 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 
 function initModalGesture() {
     const sheet = document.querySelector('.modal-sheet');
-    if (!sheet) return;
+    const content = document.querySelector('.modal-content');
+    if (!sheet || !content) return;
 
     let startY = 0;
     let currentY = 0;
     let isDragging = false;
+    let canDismiss = false;
 
     sheet.addEventListener('touchstart', e => {
         startY = e.touches[0].clientY;
+        currentY = startY;
         isDragging = true;
-        sheet.style.transition = 'none';
+        // Only allow dismiss gesture when content is scrolled to the top
+        canDismiss = content.scrollTop === 0;
+        if (canDismiss) sheet.style.transition = 'none';
     }, { passive: true });
 
     sheet.addEventListener('touchmove', e => {
-        if (!isDragging) return;
+        if (!isDragging || !canDismiss) return;
         currentY = e.touches[0].clientY;
         const delta = currentY - startY;
 
+        // If user scrolls up (finger moves down) but content has scrolled, cancel dismiss
+        if (content.scrollTop > 0) {
+            canDismiss = false;
+            sheet.style.transition = '';
+            sheet.style.transform = '';
+            return;
+        }
+
         if (delta > 0) {
+            e.preventDefault(); // block pull-to-refresh while dismissing
             sheet.style.transform = `translateY(${delta}px)`;
         }
-    }, { passive: true });
+    }, { passive: false });
 
     sheet.addEventListener('touchend', () => {
         if (!isDragging) return;
         isDragging = false;
 
+        if (!canDismiss) {
+            sheet.style.transition = '';
+            sheet.style.transform = '';
+            return;
+        }
+
         const delta = currentY - startY;
-        sheet.style.transition = '';
-        sheet.style.transform = '';
 
         if (delta > 100) {
-            closeModal();
+            // Animate sheet off-screen, then close
+            sheet.style.transition = 'transform 260ms ease-in';
+            sheet.style.transform = 'translateY(100%)';
+            sheet.addEventListener('transitionend', () => {
+                sheet.style.transition = '';
+                sheet.style.transform = '';
+                closeModal();
+            }, { once: true });
+        } else {
+            // Snap back
+            sheet.style.transition = 'transform 300ms var(--ease-spring)';
+            sheet.style.transform = '';
+            sheet.addEventListener('transitionend', () => {
+                sheet.style.transition = '';
+            }, { once: true });
         }
     });
 }

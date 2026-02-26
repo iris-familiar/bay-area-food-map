@@ -66,11 +66,19 @@
    Base Styles
    ───────────────────────────────────────────────────────────────────────────── */
 
+html {
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   font-family: var(--font-family);
   font-size: var(--font-size-md);
   color: var(--color-text-primary);
@@ -309,7 +317,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
-  min-width: max-content;
+  flex-shrink: 0;
 }
 
 .filter-label {
@@ -389,12 +397,18 @@ body {
 }
 
 @media (max-width: 639px) {
+  .main-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .restaurant-grid {
-    gap: var(--space-2);
+    gap: 2px;
   }
 
   .restaurant-card {
     padding: 10px;
+    border-radius: var(--radius-md);
   }
 
   .card-title {
@@ -421,6 +435,7 @@ body {
   cursor: pointer;
   transition: all var(--duration-fast) var(--ease-out);
   box-shadow: var(--shadow-sm);
+  min-width: 0;
 }
 
 .restaurant-card:hover {
@@ -455,6 +470,7 @@ body {
   align-items: center;
   gap: var(--space-3);
   margin-bottom: var(--space-3);
+  flex-wrap: wrap;
 }
 
 .stat-primary {

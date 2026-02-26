@@ -50,14 +50,15 @@ check('Unique IDs', (() => {
     return ids.length === new Set(ids).size;
 })(), 'duplicate IDs found');
 
-// Check engagement integrity: total_engagement should match post_details sum
+// Check engagement integrity: total_engagement should be >= post_details sum
+// (post_details is capped at top-10 entries; total_engagement is the true cumulative sum)
 check('Engagement matches post_details', (() => {
     for (const r of db.restaurants) {
         if (r._status === 'duplicate_merged') continue;
         if (!Array.isArray(r.post_details) || r.post_details.length === 0) continue;
         const pdSum = r.post_details.reduce((sum, p) => sum + (parseInt(p.engagement) || 0), 0);
-        if (r.total_engagement !== pdSum) {
-            console.error(`    ⚠️  ${r.name}: total_engagement=${r.total_engagement}, post_details sum=${pdSum}`);
+        if ((r.total_engagement || 0) < pdSum) {
+            console.error(`    ⚠️  ${r.name}: total_engagement=${r.total_engagement} < post_details sum=${pdSum}`);
             return false;
         }
     }
