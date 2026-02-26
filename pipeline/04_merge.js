@@ -131,7 +131,8 @@ for (const candidate of candidates) {
                     engagement: candidate.engagement || 0,
                     adjusted_engagement: adjustedEngagement,
                     restaurant_count_in_post: N,
-                    context: ''
+                    context: '',
+                    sentiment: candidate.sentiment || 'neutral'
                 });
                 // Keep top 10 by adjusted engagement
                 r.post_details.sort((a, b) => (b.adjusted_engagement || 0) - (a.adjusted_engagement || 0));
@@ -171,13 +172,16 @@ for (const candidate of candidates) {
             }
         }
 
-        // Update sentiment if candidate has it
-        if (candidate.sentiment && candidate.sentiment !== 'neutral') {
-            const sentimentValue = candidate.sentiment === 'positive' ? 1.0
-                : candidate.sentiment === 'negative' ? 0.0 : 0.5;
-            const currentScore = r.sentiment_score || 0.5;
-            const weight = 0.1; // New data has 10% weight
-            r.sentiment_score = Math.round((currentScore * (1 - weight) + sentimentValue * weight) * 100) / 100;
+        // Recompute sentiment_score from engagement-weighted post_details
+        const SENTIMENT_VALUE = { positive: 1.0, neutral: 0.5, negative: 0.0 };
+        const postsWithSentiment = r.post_details.filter(p => p.sentiment);
+        if (postsWithSentiment.length > 0) {
+            const totalWeight = postsWithSentiment.reduce((s, p) => s + (p.adjusted_engagement || 0), 0);
+            const weightedSum = postsWithSentiment.reduce((s, p) =>
+                s + (p.adjusted_engagement || 0) * (SENTIMENT_VALUE[p.sentiment] ?? 0.5), 0);
+            r.sentiment_score = totalWeight > 0
+                ? Math.round((weightedSum / totalWeight) * 100) / 100
+                : r.sentiment_score || 0.5;
         }
 
         r.updated_at = new Date().toISOString();
@@ -221,7 +225,8 @@ for (const candidate of candidates) {
                 engagement: candidate.engagement || 0,
                 adjusted_engagement: newAdjustedEngagement,
                 restaurant_count_in_post: newN,
-                context: ''
+                context: '',
+                sentiment: candidate.sentiment || 'neutral'
             }] : [],
             timeseries: [{ month: thisMonth, mentions: 1, engagement: candidate.engagement || 0 }],
             semantic_tags: [],

@@ -195,7 +195,7 @@ function renderRestaurants() {
 
         const sentimentBadge = (r.sentiment_score || 0) >= 0.85
             ? `<span class="stat-badge success"><i class="fas fa-heart"></i> ${Math.round(r.sentiment_score * 100)}</span>`
-            : `<span class="stat-badge"><i class="fas fa-heart"></i> ${r.sentiment_score ? Math.round(r.sentiment_score * 100) : '-'}</span>`;
+            : `<span class="stat-badge"><i class="fas fa-heart"></i> ${r.sentiment_score != null ? Math.round(r.sentiment_score * 100) : '-'}</span>`;
 
         const ratingBadge = (r.google_rating || 0) >= 4.5
             ? `<span class="stat-badge success"><i class="fas fa-star"></i> ${r.google_rating || '-'}</span>`
@@ -247,7 +247,7 @@ function openModal(id) {
                 <div class="modal-stat-label">讨论度</div>
             </div>
             <div class="modal-stat">
-                <div class="modal-stat-value ${sentimentClass}">${r.sentiment_score ? Math.round(r.sentiment_score * 100) : '-'}</div>
+                <div class="modal-stat-value ${sentimentClass}">${r.sentiment_score != null ? Math.round(r.sentiment_score * 100) : '-'}</div>
                 <div class="modal-stat-label">口碑</div>
             </div>
             <div class="modal-stat">
