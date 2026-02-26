@@ -208,11 +208,27 @@ body {
   margin-bottom: var(--space-4);
 }
 
+.header-title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.header-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 7px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
 .header-title {
   font-size: var(--font-size-3xl);
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--color-text-primary);
+  margin: 0;
+  line-height: 34px;
 }
 
 .header-subtitle {
