@@ -98,6 +98,48 @@ function addressInCity(address, city) {
     return addr.includes(c);
 }
 
+const BAY_AREA_CITIES = new Set([
+    'cupertino', 'milpitas', 'fremont', 'mountain view', 'sunnyvale', 'san jose',
+    'palo alto', 'santa clara', 'san mateo', 'foster city', 'redwood city',
+    'menlo park', 'union city', 'newark', 'hayward', 'san francisco', 'daly city',
+    'san leandro', 'pleasanton', 'livermore', 'dublin', 'walnut creek', 'berkeley',
+    'oakland', 'san ramon', 'millbrae', 'san bruno', 'campbell', 'burlingame',
+    'south san francisco', 'albany', 'pleasant hill', 'san carlos', 'belmont',
+    'emeryville',
+]);
+
+const CITY_TO_REGION = {
+    'san jose': 'South Bay', 'cupertino': 'South Bay', 'sunnyvale': 'South Bay',
+    'mountain view': 'South Bay', 'santa clara': 'South Bay', 'milpitas': 'South Bay',
+    'campbell': 'South Bay',
+    'palo alto': 'Peninsula', 'san mateo': 'Peninsula', 'millbrae': 'Peninsula',
+    'menlo park': 'Peninsula', 'san carlos': 'Peninsula', 'burlingame': 'Peninsula',
+    'redwood city': 'Peninsula', 'south san francisco': 'Peninsula',
+    'san bruno': 'Peninsula', 'belmont': 'Peninsula', 'daly city': 'Peninsula',
+    'foster city': 'Peninsula',
+    'fremont': 'East Bay', 'oakland': 'East Bay', 'berkeley': 'East Bay',
+    'newark': 'East Bay', 'hayward': 'East Bay', 'union city': 'East Bay',
+    'san leandro': 'East Bay', 'albany': 'East Bay', 'dublin': 'East Bay',
+    'pleasanton': 'East Bay', 'walnut creek': 'East Bay', 'pleasant hill': 'East Bay',
+    'emeryville': 'East Bay', 'livermore': 'East Bay', 'san ramon': 'East Bay',
+    'san francisco': 'San Francisco', 'sf': 'San Francisco',
+};
+
+function cityToRegion(city) {
+    if (!city || city === 'unknown') return 'unknown';
+    return CITY_TO_REGION[city.toLowerCase()] || 'unknown';
+}
+
+function extractCityFromAddress(formattedAddress) {
+    if (!formattedAddress) return null;
+    const parts = formattedAddress.split(', ');
+    // Require "..., City, State ZIP, USA" format (4+ parts, USA suffix)
+    if (parts.length < 4 || parts[parts.length - 1] !== 'USA') return null;
+    const cityCandidate = parts[parts.length - 3];
+    if (BAY_AREA_CITIES.has(cityCandidate.toLowerCase())) return cityCandidate;
+    return null;
+}
+
 // ─── Google Places API ────────────────────────────────────────────────────────
 const PLACES_BASE = 'https://maps.googleapis.com/maps/api/place';
 
@@ -218,6 +260,13 @@ async function main() {
             // Update restaurant record
             r.google_place_id = details.place_id;
             r.address         = details.formatted_address || r.address;
+            const googleCity = extractCityFromAddress(details.formatted_address);
+            if (googleCity && googleCity.toLowerCase() !== (r.city || '').toLowerCase()) {
+                console.log(`  (city corrected: ${r.city || 'unknown'} → ${googleCity})`);
+                r.city   = googleCity;
+                r.area   = googleCity;
+                r.region = cityToRegion(googleCity);
+            }
             r.google_rating   = details.rating ?? r.google_rating;
             r.verified        = true;
             r.updated_at      = new Date().toISOString();

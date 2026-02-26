@@ -37,7 +37,7 @@ const CITY_TO_REGION = {
     'newark': 'East Bay', 'hayward': 'East Bay', 'union city': 'East Bay',
     'san leandro': 'East Bay', 'albany': 'East Bay', 'dublin': 'East Bay',
     'pleasanton': 'East Bay', 'walnut creek': 'East Bay', 'pleasant hill': 'East Bay',
-    'emeryville': 'East Bay',
+    'emeryville': 'East Bay', 'livermore': 'East Bay', 'san ramon': 'East Bay',
     // San Francisco
     'san francisco': 'San Francisco', 'sf': 'San Francisco',
 };
@@ -68,6 +68,21 @@ try {
 if (!Array.isArray(candidates) || candidates.length === 0) {
     console.log('No candidates to merge.');
     process.exit(0);
+}
+
+// Load blocked posts (celebrity/spam posts whose engagement shouldn't count)
+const blockedPostsFile = require('path').join(__dirname, '..', 'data', 'blocked_posts.json');
+let blockedPostIds = new Set();
+try {
+    const blocked = JSON.parse(fs.readFileSync(blockedPostsFile, 'utf8'));
+    blockedPostIds = new Set(blocked.map(b => b.post_id));
+    if (blockedPostIds.size > 0) console.log(`Blocking ${blockedPostIds.size} post(s) from merge`);
+} catch (e) { /* no blocklist file is fine */ }
+
+const beforeFilter = candidates.length;
+candidates = candidates.filter(c => !blockedPostIds.has(c.source_post_id));
+if (candidates.length < beforeFilter) {
+    console.log(`  Filtered out ${beforeFilter - candidates.length} candidates from blocked posts`);
 }
 
 // ─── Build lookup: google_place_id → restaurant index ─────────────────────────
@@ -159,9 +174,9 @@ for (const candidate of candidates) {
             !Array.isArray(r.sources) || !r.sources.includes(candidate.source_post_id)
         );
 
-        // Compute adjusted engagement: ln(X+1)/sqrt(N)
+        // Compute adjusted engagement: raw_engagement/sqrt(N)
         const N = postRestaurantCount[candidate.source_post_id] || 1;
-        const adjustedEngagement = Math.log((candidate.engagement || 0) + 1) / Math.sqrt(N);
+        const adjustedEngagement = (candidate.engagement || 0) / Math.sqrt(N);
 
         // Only update metrics if this is a new source post
         if (isNewSource) {
@@ -248,9 +263,9 @@ for (const candidate of candidates) {
         // ─── ADD new restaurant ─────────────────────────────────────────────────
         const sentimentScore = { positive: 1.0, neutral: 0.5, negative: 0.0 };
 
-        // Compute adjusted engagement: ln(X+1)/sqrt(N)
+        // Compute adjusted engagement: raw_engagement/sqrt(N)
         const newN = postRestaurantCount[candidate.source_post_id] || 1;
-        const newAdjustedEngagement = Math.log((candidate.engagement || 0) + 1) / Math.sqrt(newN);
+        const newAdjustedEngagement = (candidate.engagement || 0) / Math.sqrt(newN);
 
         const newRestaurant = {
             id: `pipeline_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,

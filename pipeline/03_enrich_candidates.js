@@ -95,7 +95,18 @@ const BAY_AREA_CITIES = new Set([
     'san leandro', 'pleasanton', 'livermore', 'dublin', 'walnut creek', 'berkeley',
     'oakland', 'san ramon', 'millbrae', 'san bruno', 'campbell', 'burlingame',
     'south san francisco', 'albany', 'pleasant hill', 'san carlos', 'belmont',
+    'emeryville',
 ]);
+
+function extractCityFromAddress(formattedAddress) {
+    if (!formattedAddress) return null;
+    const parts = formattedAddress.split(', ');
+    // Require "..., City, State ZIP, USA" format (4+ parts, USA suffix)
+    if (parts.length < 4 || parts[parts.length - 1] !== 'USA') return null;
+    const cityCandidate = parts[parts.length - 3];
+    if (BAY_AREA_CITIES.has(cityCandidate.toLowerCase())) return cityCandidate;
+    return null;
+}
 
 function addressInBayArea(address) {
     if (!address) return false;
@@ -254,6 +265,11 @@ async function main() {
             // Enrich candidate with Google data
             candidate.google_place_id = details.place_id;
             candidate.address         = details.formatted_address || candidate.address;
+            const googleCity = extractCityFromAddress(details.formatted_address);
+            if (googleCity && googleCity.toLowerCase() !== (candidate.city || '').toLowerCase()) {
+                console.log(`  (city corrected: ${candidate.city || 'unknown'} → ${googleCity})`);
+                candidate.city = googleCity;
+            }
             candidate.google_rating   = details.rating ?? null;
             candidate.verified        = true;
             if (details.geometry?.location) {
