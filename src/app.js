@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         filteredRestaurants = [...allRestaurants];
 
         buildCuisineFilter();
-        renderRestaurants();
+        filterAndRender();
 
         // Show last pipeline run timestamp
         try {
