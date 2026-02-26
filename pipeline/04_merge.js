@@ -21,6 +21,32 @@ const fs = require('fs');
 
 const [, , dbFile, candidatesFile, outputFile] = process.argv;
 
+const CITY_TO_REGION = {
+    // South Bay
+    'san jose': 'South Bay', 'cupertino': 'South Bay', 'sunnyvale': 'South Bay',
+    'mountain view': 'South Bay', 'santa clara': 'South Bay', 'milpitas': 'South Bay',
+    'campbell': 'South Bay',
+    // Peninsula
+    'palo alto': 'Peninsula', 'san mateo': 'Peninsula', 'millbrae': 'Peninsula',
+    'menlo park': 'Peninsula', 'san carlos': 'Peninsula', 'burlingame': 'Peninsula',
+    'redwood city': 'Peninsula', 'south san francisco': 'Peninsula',
+    'san bruno': 'Peninsula', 'belmont': 'Peninsula', 'daly city': 'Peninsula',
+    'foster city': 'Peninsula',
+    // East Bay
+    'fremont': 'East Bay', 'oakland': 'East Bay', 'berkeley': 'East Bay',
+    'newark': 'East Bay', 'hayward': 'East Bay', 'union city': 'East Bay',
+    'san leandro': 'East Bay', 'albany': 'East Bay', 'dublin': 'East Bay',
+    'pleasanton': 'East Bay', 'walnut creek': 'East Bay', 'pleasant hill': 'East Bay',
+    'emeryville': 'East Bay',
+    // San Francisco
+    'san francisco': 'San Francisco', 'sf': 'San Francisco',
+};
+
+function cityToRegion(city) {
+    if (!city || city === 'unknown') return 'unknown';
+    return CITY_TO_REGION[city.toLowerCase()] || 'unknown';
+}
+
 if (!dbFile || !candidatesFile || !outputFile) {
     console.error('Usage: node 04_merge.js <db_file> <candidates_file> <output_file>');
     process.exit(1);
@@ -231,8 +257,8 @@ for (const candidate of candidates) {
             name: candidate.name,
             name_en: '',
             cuisine: candidate.cuisine || 'unknown',
-            area: 'unknown',
-            region: 'unknown',
+            area: candidate.city || 'unknown',
+            region: cityToRegion(candidate.city),
             city: candidate.city || 'unknown',
             price_range: candidate.price_range || 'unknown',
             // Google data (from enrichment)
