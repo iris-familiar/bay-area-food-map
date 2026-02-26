@@ -468,7 +468,7 @@ function generateChart(postDetails, timeseries) {
             if (!p.date) return;
             const d = new Date(p.date);
             const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
-            if (monthly[key] !== undefined) monthly[key] += (p.engagement || 0);
+            if (monthly[key] !== undefined) monthly[key] += (p.adjusted_engagement ?? p.engagement ?? 0);
         });
     } else if (hasTimeseries) {
         timeseries.forEach(t => {
