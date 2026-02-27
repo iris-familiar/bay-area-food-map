@@ -192,9 +192,14 @@ async function main() {
         // Check for MCP-level error response
         if (detailData?.result?.isError) {
           const errText = detailData?.result?.content?.[0]?.text || '(no message)';
-          consecutiveDetailFailures++;
           statNoNote++;
-          if (statNoNote === 1) log(`  ⚠️  get_feed_detail error (session expired?): ${errText}`);
+          if (errText.includes('not found in noteDetailMap')) {
+            // Post deleted/restricted — not a session issue, don't count against session health
+            if (statNoNote === 1) log(`  ⚠️  post unavailable (deleted/restricted): ${errText}`);
+          } else {
+            consecutiveDetailFailures++;
+            if (statNoNote === 1) log(`  ⚠️  get_feed_detail error (session expired?): ${errText}`);
+          }
           continue;
         }
 
