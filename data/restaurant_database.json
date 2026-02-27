@@ -789,7 +789,7 @@
     },
     {
       "id": "r008",
-      "name": "重庆铺盖面",
+      "name": "重庆铺盖面 C.Q. Taste",
       "name_en": "C.Q. Taste",
       "recommendations": [
         "铺盖面",
@@ -1151,7 +1151,7 @@
     },
     {
       "id": "r013",
-      "name": "鲜味水饺",
+      "name": "鲜味水饺 Umami Dumpling House",
       "name_en": "Umami Dumpling House",
       "cuisine": "上海菜",
       "area": "Sunnyvale",
@@ -1860,7 +1860,7 @@
     },
     {
       "id": "r020",
-      "name": "10 seconds yunnan noodle",
+      "name": "10 Seconds Yunnan Noodle",
       "name_en": "",
       "cuisine": "云南菜",
       "area": "San Leandro",
@@ -4072,7 +4072,7 @@
     },
     {
       "id": "r051",
-      "name": "四姐Special Noodles",
+      "name": "四姐 Special Noodles",
       "name_en": "",
       "cuisine": "面食",
       "area": "Fremont",
@@ -4769,7 +4769,7 @@
     },
     {
       "id": "r058",
-      "name": "川湘1616",
+      "name": "川湘 1616",
       "name_en": "Spices Garden",
       "cuisine": "湘菜",
       "area": "Fremont",
@@ -6281,7 +6281,7 @@
     },
     {
       "id": "r079",
-      "name": "面面俱到",
+      "name": "面面俱到 Shanghai Flavor",
       "name_en": "",
       "cuisine": "上海菜",
       "area": "Fremont",
@@ -6356,7 +6356,7 @@
     },
     {
       "id": "r084",
-      "name": "林家万峦猪脚",
+      "name": "林家万峦猪脚 Taiwan Cafe",
       "name_en": "Taiwan Cafe",
       "cuisine": "台湾菜",
       "area": "Milpitas",
@@ -6553,7 +6553,7 @@
     },
     {
       "id": "r081",
-      "name": "一品香",
+      "name": "一品香 Hankow Cuisine",
       "name_en": "Hankow Cuisine",
       "cuisine": "湖北菜",
       "area": "San Jose",
@@ -6614,7 +6614,7 @@
     },
     {
       "id": "r080",
-      "name": "美食坊",
+      "name": "美食坊 Seasons Noodles & Dumplings Garden",
       "name_en": "Seasons Noodles and Dumpling Garden",
       "cuisine": "面食",
       "area": "Mountain View",
@@ -6671,7 +6671,7 @@
     },
     {
       "id": "r078",
-      "name": "半岛Milpitas",
+      "name": "半岛 HL Peninsula Restaurant - Milpitas",
       "name_en": "",
       "cuisine": "中餐",
       "area": "Milpitas",
@@ -8323,7 +8323,7 @@
     },
     {
       "id": "pipeline_1771920604533_at66",
-      "name": "The Spicy Shrimp / 浩味茶餐厅",
+      "name": "浩味茶餐厅 The Spicy Shrimp",
       "name_en": "",
       "cuisine": "粤菜",
       "area": "San Francisco",
@@ -8837,7 +8837,7 @@
     },
     {
       "id": "pipeline_1771954753562_k8nu",
-      "name": "Z & Y Restaurant (御食园川菜馆)",
+      "name": "御食园川菜馆 Z & Y Restaurant",
       "name_en": "",
       "cuisine": "川菜",
       "area": "San Francisco",
@@ -8979,7 +8979,7 @@
     },
     {
       "id": "pipeline_1771954753565_etm5",
-      "name": "Hibachi Grill and Buffet",
+      "name": "Hibachi Grill And Buffet",
       "name_en": "",
       "cuisine": "中餐",
       "area": "San Francisco",
@@ -9039,7 +9039,7 @@
     },
     {
       "id": "pipeline_1771954753565_u6ep",
-      "name": "Yin Du Wonton Noodle 银都云吞面",
+      "name": "银都云吞面 Yin Du Wonton Noodle",
       "name_en": "",
       "cuisine": "粤菜",
       "area": "San Francisco",
@@ -9515,7 +9515,7 @@
     },
     {
       "id": "pipeline_1771954753565_y9l6",
-      "name": "Impression of Lanzhou",
+      "name": "Impression Of Lanzhou",
       "name_en": "",
       "cuisine": "中餐",
       "area": "San Francisco",
@@ -9642,7 +9642,7 @@
     },
     {
       "id": "pipeline_1771954753565_djok",
-      "name": "The Breakfast Club at Midtown",
+      "name": "The Breakfast Club At Midtown",
       "name_en": "",
       "cuisine": "早午餐",
       "area": "San Jose",
@@ -10758,7 +10758,7 @@
     },
     {
       "id": "pipeline_1772067300857_tx71",
-      "name": "Pho auntie 7",
+      "name": "Pho Auntie 7",
       "name_en": "",
       "cuisine": "越南菜",
       "area": "Hayward",
@@ -11049,7 +11049,7 @@
     },
     {
       "id": "pipeline_1772067300857_nbmx",
-      "name": "Chai Thai noodles",
+      "name": "Chai Thai Noodles",
       "name_en": "",
       "cuisine": "泰餐",
       "area": "Hayward",
@@ -11167,7 +11167,7 @@
     },
     {
       "id": "pipeline_1772067300857_bo5y",
-      "name": "Veggie Lee心中有素",
+      "name": "心中有素 Veggie Lee",
       "name_en": "",
       "cuisine": "素食",
       "area": "Hayward",
@@ -11755,7 +11755,7 @@
     },
     {
       "id": "pipeline_1772067300857_mhac",
-      "name": "pho ha noi",
+      "name": "Pho Ha Noi",
       "name_en": "",
       "cuisine": "越南菜",
       "area": "Cupertino",
@@ -11875,7 +11875,7 @@
     },
     {
       "id": "pipeline_1772067300857_rh32",
-      "name": "ramen nagi",
+      "name": "Ramen Nagi",
       "name_en": "",
       "cuisine": "面食",
       "area": "Palo Alto",
@@ -11947,7 +11947,7 @@
     },
     {
       "id": "pipeline_1772067300857_w02n",
-      "name": "Ming’s tasty 名味阁",
+      "name": "名味阁 Ming’s Tasty",
       "name_en": "",
       "cuisine": "粤菜",
       "area": "Oakland",
@@ -13745,7 +13745,7 @@
     },
     {
       "id": "pipeline_1772067300865_nob5",
-      "name": "Fu Niu Tang (福牛堂)",
+      "name": "福牛堂 Fu Niu Tang",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "Sunnyvale",
@@ -13910,7 +13910,7 @@
     },
     {
       "id": "pipeline_1772067300865_43su",
-      "name": "Mikiya Wagyu Shabu (和牛寿喜烧自助)",
+      "name": "和牛寿喜烧自助 Mikiya Wagyu Shabu",
       "name_en": "",
       "cuisine": "日料",
       "area": "San Mateo",
@@ -13967,7 +13967,7 @@
     },
     {
       "id": "pipeline_1772067300865_buhx",
-      "name": "New China (东北菜)",
+      "name": "东北菜 New China",
       "name_en": "",
       "cuisine": "东北菜",
       "area": "Milpitas",
@@ -14529,7 +14529,7 @@
     },
     {
       "id": "pipeline_1772067300868_04zt",
-      "name": "Skates on the bay",
+      "name": "Skates On The Bay",
       "name_en": "",
       "cuisine": "海鲜",
       "area": "Berkeley",
@@ -14755,7 +14755,7 @@
     },
     {
       "id": "pipeline_1772067300868_bp84",
-      "name": "La note",
+      "name": "La Note",
       "name_en": "",
       "cuisine": "西餐",
       "area": "Berkeley",
@@ -14813,7 +14813,7 @@
     },
     {
       "id": "pipeline_1772067300868_2gcv",
-      "name": "Berkeley social club",
+      "name": "Berkeley Social Club",
       "name_en": "",
       "cuisine": "融合菜",
       "area": "Berkeley",
@@ -15606,7 +15606,7 @@
     },
     {
       "id": "pipeline_1772067300868_kgq7",
-      "name": "Naya dessert cafe",
+      "name": "Naya Dessert Cafe",
       "name_en": "",
       "cuisine": "甜品",
       "area": "San Francisco",
@@ -16114,7 +16114,7 @@
     },
     {
       "id": "pipeline_1772067300868_rmkk",
-      "name": "Craftsman and Wolves",
+      "name": "Craftsman And Wolves",
       "name_en": "",
       "cuisine": "甜品",
       "area": "San Francisco",
@@ -16230,7 +16230,7 @@
     },
     {
       "id": "pipeline_1772067300868_vd08",
-      "name": "Keeku da Dhaba",
+      "name": "Keeku Da Dhaba",
       "name_en": "",
       "cuisine": "印度菜",
       "area": "Fremont",
@@ -16405,7 +16405,7 @@
     },
     {
       "id": "pipeline_1772067300868_e9tn",
-      "name": "U dessert",
+      "name": "U Dessert",
       "name_en": "",
       "cuisine": "甜品",
       "area": "San Francisco",
@@ -16463,7 +16463,7 @@
     },
     {
       "id": "pipeline_1772067300868_ku02",
-      "name": "Taipei Station 台北栈",
+      "name": "台北栈 Taipei Station",
       "name_en": "",
       "cuisine": "台湾菜",
       "area": "Fremont",
@@ -18141,7 +18141,7 @@
     },
     {
       "id": "pipeline_1772067300868_cnv0",
-      "name": "Darla cafe",
+      "name": "Darla Cafe",
       "name_en": "",
       "cuisine": "早午餐",
       "area": "Sunnyvale",
@@ -18215,7 +18215,7 @@
     },
     {
       "id": "pipeline_1772067300868_owkm",
-      "name": "mifen101",
+      "name": "Mifen101",
       "name_en": "",
       "cuisine": "中餐",
       "area": "Mountain View",
@@ -18527,7 +18527,7 @@
     },
     {
       "id": "pipeline_1772067300873_dx6g",
-      "name": "noren izakaya",
+      "name": "Noren Izakaya",
       "name_en": "",
       "cuisine": "日料",
       "area": "San Francisco",
@@ -18591,7 +18591,7 @@
     },
     {
       "id": "pipeline_1772067300873_cu1w",
-      "name": "yum noodles杨裕兴",
+      "name": "杨裕兴 Yum Noodles",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "Santa Clara",
@@ -19056,7 +19056,7 @@
     },
     {
       "id": "pipeline_1772067300874_a3lj",
-      "name": "C.Q. Taste重庆铺盖面",
+      "name": "重庆铺盖面 C.Q. Taste",
       "name_en": "",
       "cuisine": "川菜",
       "area": "Newark",
@@ -19760,7 +19760,7 @@
     },
     {
       "id": "pipeline_1772067300874_9mdh",
-      "name": "Ocean Oyster Bar and Grill",
+      "name": "Ocean Oyster Bar And Grill",
       "name_en": "",
       "cuisine": "西餐",
       "area": "Union City",
@@ -19963,7 +19963,7 @@
     },
     {
       "id": "pipeline_1772067300874_5w2e",
-      "name": "88鸡粉",
+      "name": "鸡粉 88",
       "name_en": "",
       "cuisine": "越南菜",
       "area": "Union City",
@@ -20136,7 +20136,7 @@
     },
     {
       "id": "pipeline_1772067300875_c376",
-      "name": "A Sack of Potatoes",
+      "name": "A Sack Of Potatoes",
       "name_en": "",
       "cuisine": "中餐",
       "area": "Fremont",
@@ -21262,7 +21262,7 @@
     },
     {
       "id": "pipeline_1772067300875_jmwb",
-      "name": "Daly City 火锅和烤肉自助",
+      "name": "火锅和烤肉自助 Daly City",
       "name_en": "",
       "cuisine": "火锅",
       "area": "Daly City",
@@ -22456,7 +22456,7 @@
     },
     {
       "id": "pipeline_1772067301116_i4n6",
-      "name": "China Village 川味轩",
+      "name": "川味轩 China Village",
       "name_en": "",
       "cuisine": "川菜",
       "area": "Albany",
@@ -22511,7 +22511,7 @@
     },
     {
       "id": "pipeline_1772067301116_pqie",
-      "name": "Kajiken 歌志轩",
+      "name": "歌志轩 Kajiken",
       "name_en": "",
       "cuisine": "面食",
       "area": "San Mateo",
@@ -22794,7 +22794,7 @@
     },
     {
       "id": "pipeline_1772067301116_880z",
-      "name": "Sue's gallery cafe",
+      "name": "Sue's Gallery Cafe",
       "name_en": "",
       "cuisine": "甜品",
       "area": "San Jose",
@@ -22905,7 +22905,7 @@
     },
     {
       "id": "pipeline_1772067301116_wte8",
-      "name": "iTalico",
+      "name": "ITalico",
       "name_en": "",
       "cuisine": "意大利菜",
       "area": "Palo Alto",
@@ -23188,7 +23188,7 @@
     },
     {
       "id": "pipeline_1772067301116_c3dg",
-      "name": "yummy bakery and cafe",
+      "name": "Yummy Bakery And Cafe",
       "name_en": "",
       "cuisine": "甜品",
       "area": "San Francisco",
@@ -23248,7 +23248,7 @@
     },
     {
       "id": "pipeline_1772067301116_plzr",
-      "name": "gourmet kitchen",
+      "name": "Gourmet Kitchen",
       "name_en": "",
       "cuisine": "粤菜",
       "area": "San Francisco",
@@ -23307,7 +23307,7 @@
     },
     {
       "id": "pipeline_1772067301116_9qbp",
-      "name": "CloudDish 采云南",
+      "name": "采云南 CloudDish",
       "name_en": "",
       "cuisine": "云南菜",
       "area": "Pleasanton",
@@ -24112,7 +24112,7 @@
     },
     {
       "id": "pipeline_1772067301117_g29a",
-      "name": "Four Kings (四大天王)",
+      "name": "四大天王 Four Kings",
       "name_en": "",
       "cuisine": "粤菜",
       "area": "San Francisco",
@@ -24201,7 +24201,7 @@
     },
     {
       "id": "pipeline_1772067301117_u093",
-      "name": "Lingnan Restaurant (岭南小馆)",
+      "name": "岭南小馆 Lingnan Restaurant",
       "name_en": "",
       "cuisine": "粤菜",
       "area": "San Francisco",
@@ -24346,7 +24346,7 @@
     },
     {
       "id": "pipeline_1772067301117_3kal",
-      "name": "Ippudo (一风堂)",
+      "name": "一风堂 Ippudo",
       "name_en": "",
       "cuisine": "面食",
       "area": "Berkeley",
@@ -24511,7 +24511,7 @@
     },
     {
       "id": "pipeline_1772067301117_0gxv",
-      "name": "Roll house",
+      "name": "Roll House",
       "name_en": "",
       "cuisine": "韩餐",
       "area": "Santa Clara",
@@ -24621,7 +24621,7 @@
     },
     {
       "id": "pipeline_1772067301117_2iaw",
-      "name": "Tofu plus",
+      "name": "Tofu Plus",
       "name_en": "",
       "cuisine": "韩餐",
       "area": "Cupertino",
@@ -24854,7 +24854,7 @@
     },
     {
       "id": "pipeline_1772067301117_jdnc",
-      "name": "眷湘 (Santa Clara店)",
+      "name": "眷湘店 (Santa Clara)",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "Santa Clara",
@@ -24927,7 +24927,7 @@
     },
     {
       "id": "pipeline_1772067301117_vmf1",
-      "name": "留湘1号店 (Ping’s Bistro)",
+      "name": "留湘号店 1 (Ping’s Bistro)",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "San Mateo",
@@ -25293,7 +25293,7 @@
     },
     {
       "id": "pipeline_1772067301117_z1sc",
-      "name": "One piece lamian (一条拉面)",
+      "name": "一条拉面 One Piece Lamian",
       "name_en": "",
       "cuisine": "面食",
       "area": "Fremont",
@@ -27543,7 +27543,7 @@
     },
     {
       "id": "pipeline_1772067301536_5byu",
-      "name": "Sunshine HK Cafe 阳光冰室",
+      "name": "阳光冰室 Sunshine HK Cafe",
       "name_en": "",
       "cuisine": "粤菜",
       "area": "San Carlos",
@@ -27777,7 +27777,7 @@
     },
     {
       "id": "pipeline_1772067301543_mdux",
-      "name": "Little Szechuan 川国演义",
+      "name": "川国演义 Little Szechuan",
       "name_en": "",
       "cuisine": "川菜",
       "area": "San Francisco",
@@ -28604,7 +28604,7 @@
     },
     {
       "id": "pipeline_1772067301543_oafu",
-      "name": "House of Prime Rib",
+      "name": "House Of Prime Rib",
       "name_en": "",
       "cuisine": "牛排",
       "area": "San Francisco",
@@ -29420,7 +29420,7 @@
     },
     {
       "id": "pipeline_1772067301543_v7xz",
-      "name": "Sushi pro",
+      "name": "Sushi Pro",
       "name_en": "",
       "cuisine": "日料",
       "area": "San Jose",
@@ -29819,7 +29819,7 @@
     },
     {
       "id": "pipeline_1772067301543_cmln",
-      "name": "Yan‘s kitchen (小城大厨)",
+      "name": "小城大厨 Yan‘s Kitchen",
       "name_en": "",
       "cuisine": "川菜",
       "area": "San Carlos",
@@ -29876,7 +29876,7 @@
     },
     {
       "id": "pipeline_1772067301543_rma5",
-      "name": "OX9兰州牛肉面",
+      "name": "兰州牛肉面 OX9",
       "name_en": "",
       "cuisine": "中餐",
       "area": "San Mateo",
@@ -30225,7 +30225,7 @@
     },
     {
       "id": "pipeline_1772067301543_6g0s",
-      "name": "Lang oc viet",
+      "name": "Lang Oc Viet",
       "name_en": "",
       "cuisine": "越南菜",
       "area": "San Jose",
@@ -30282,7 +30282,7 @@
     },
     {
       "id": "pipeline_1772067301543_y92a",
-      "name": "Oc cay Dua",
+      "name": "Oc Cay Dua",
       "name_en": "",
       "cuisine": "越南菜",
       "area": "San Jose",
@@ -31155,7 +31155,7 @@
     },
     {
       "id": "pipeline_1772067301544_s1s8",
-      "name": "Fairwood Cafe (大快活)",
+      "name": "大快活 Fairwood Cafe",
       "name_en": "",
       "cuisine": "粤菜",
       "area": "Newark",
@@ -32275,7 +32275,7 @@
     },
     {
       "id": "pipeline_1772067301544_e1gb",
-      "name": "zen noodle bar － 陶醉上海",
+      "name": "陶醉上海 Zen Noodle Bar",
       "name_en": "",
       "cuisine": "上海菜",
       "area": "San Mateo",
@@ -32512,7 +32512,7 @@
     },
     {
       "id": "pipeline_1772067301544_pqio",
-      "name": "Copita Tequileria y Comida",
+      "name": "Copita Tequileria Y Comida",
       "name_en": "",
       "cuisine": "墨西哥菜",
       "area": "San Jose",
@@ -33231,7 +33231,7 @@
     },
     {
       "id": "pipeline_1772067301544_jl5p",
-      "name": "CA Bakehouse 环球饼家",
+      "name": "环球饼家 CA Bakehouse",
       "name_en": "",
       "cuisine": "甜品",
       "area": "San Jose",
@@ -33289,7 +33289,7 @@
     },
     {
       "id": "pipeline_1772067301544_d2t2",
-      "name": "Mr. SiuMai烧卖皇",
+      "name": "烧卖皇 Mr. SiuMai",
       "name_en": "",
       "cuisine": "粤菜",
       "area": "San Jose",
@@ -33483,7 +33483,7 @@
     },
     {
       "id": "pipeline_1772067301544_11lz",
-      "name": "Isla restaurant",
+      "name": "Isla Restaurant",
       "name_en": "",
       "cuisine": "东南亚菜",
       "area": "Newark",
@@ -33833,7 +33833,7 @@
     },
     {
       "id": "pipeline_1772067301544_tn0d",
-      "name": "TANING柠檬茶",
+      "name": "柠檬茶 TANING",
       "name_en": "",
       "cuisine": "奶茶",
       "area": "Milpitas",
@@ -34413,7 +34413,7 @@
     },
     {
       "id": "pipeline_1772067301544_k5t7",
-      "name": "Sheng Ji (生记)",
+      "name": "生记 Sheng Ji",
       "name_en": "",
       "cuisine": "甜品",
       "area": "Dublin",
@@ -34841,7 +34841,7 @@
     },
     {
       "id": "pipeline_1772091355879_s8l3",
-      "name": "Daigo 醍醐",
+      "name": "醍醐 Daigo",
       "name_en": "",
       "cuisine": "Japanese Izakaya",
       "area": "Palo Alto",
@@ -34896,7 +34896,7 @@
     },
     {
       "id": "pipeline_1772091355883_ziwz",
-      "name": "Meat House 无肉不欢",
+      "name": "无肉不欢 Meat House",
       "name_en": "",
       "cuisine": "Hot Pot/BBQ Meat",
       "area": "Milpitas",
@@ -35490,7 +35490,7 @@
     },
     {
       "id": "pipeline_1772091355883_mqqw",
-      "name": "Simmer Huang 黄记煌",
+      "name": "黄记煌 Simmer Huang",
       "name_en": "",
       "cuisine": "Chinese",
       "area": "Daly City",
@@ -35543,7 +35543,7 @@
     },
     {
       "id": "pipeline_1772091355883_23bm",
-      "name": "鲤鱼门Koi Palace Contempo",
+      "name": "鲤鱼门 Koi Palace Contempo",
       "name_en": "",
       "cuisine": "粤菜",
       "area": "Cupertino",
@@ -35972,7 +35972,7 @@
     },
     {
       "id": "pipeline_1772091355884_vvuc",
-      "name": "Wonderful Cafe｜粤来粤好",
+      "name": "粤来粤好 Wonderful Cafe",
       "name_en": "",
       "cuisine": "Hong Kong Style Cha Chaan Teng",
       "area": "Millbrae",
@@ -36349,5 +36349,5 @@
       }
     }
   ],
-  "verified_at": "2026-02-26T19:12:48.013Z"
+  "verified_at": "2026-02-27T01:28:51.182Z"
 }
