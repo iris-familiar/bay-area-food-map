@@ -2,13 +2,13 @@
 /**
  * scripts/backfill_adjusted_engagement.js — Recompute adjusted engagement for all restaurants
  *
- * The pipeline now uses ln(X+1)/sqrt(N) instead of raw engagement for total_engagement.
- * This script backfills that formula for all 522 existing restaurants using their
+ * The pipeline now uses raw_engagement/sqrt(N) for total_engagement.
+ * This script backfills that formula for all existing restaurants using their
  * stored post_details.
  *
  * Algorithm:
  *   1. Scan all post_details across all restaurants to build post_id → restaurant_count map
- *   2. For each restaurant, recompute total_engagement = Σ ln(engagement+1)/sqrt(N)
+ *   2. For each restaurant, recompute total_engagement = Σ engagement/sqrt(N)
  *   3. Add adjusted_engagement and restaurant_count_in_post to each post_details entry
  *   4. Write atomically via transaction.js
  *
@@ -60,7 +60,7 @@ function main() {
         let newTotalEngagement = 0;
         for (const p of posts) {
             const N = postRestaurantCount[p.post_id] || 1;
-            const adjusted = Math.log((p.engagement || 0) + 1) / Math.sqrt(N);
+            const adjusted = (p.engagement || 0) / Math.sqrt(N);
 
             // Annotate the post_details entry
             p.adjusted_engagement = adjusted;

@@ -84,7 +84,7 @@ New restaurants are Google-enriched during the pipeline and enter the database w
 
 ### Engagement Metric
 
-`total_engagement` uses an adjusted formula: **`Σ ln(X+1) / sqrt(N)`** where X = raw post engagement, N = number of restaurants extracted from that post. This discounts list posts vs focused reviews. Displayed in UI as `min(round((x/45)*100), 100)` for a 0–100 scale.
+`total_engagement` uses an adjusted formula: **`Σ X / sqrt(N)`** where X = raw post engagement, N = number of restaurants extracted from that post. This discounts list posts vs focused reviews. Displayed in UI as `round(total_engagement)` directly (no scaling).
 
 Each `post_details` entry stores `adjusted_engagement` and `restaurant_count_in_post` alongside raw `engagement`. `05_verify.js` checks that `total_engagement ≈ Σ adjusted_engagement` (1% tolerance).
 

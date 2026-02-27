@@ -209,7 +209,7 @@ function renderRestaurants() {
             </div>
             <div class="card-stats">
                 <div class="stat-primary">
-                    <span class="stat-value">${Math.min(Math.round(((r.total_engagement || 0) / 45) * 100), 100)}</span>
+                    <span class="stat-value">${Math.round(r.total_engagement || 0)}</span>
                     <span class="stat-label">讨论度</span>
                 </div>
                 ${sentimentBadge}
@@ -243,7 +243,7 @@ function openModal(id) {
 
         <div class="modal-stats">
             <div class="modal-stat">
-                <div class="modal-stat-value">${Math.min(Math.round(((r.total_engagement || 0) / 45) * 100), 100)}</div>
+                <div class="modal-stat-value">${Math.round(r.total_engagement || 0)}</div>
                 <div class="modal-stat-label">讨论度</div>
             </div>
             <div class="modal-stat">
@@ -284,7 +284,7 @@ function openModal(id) {
                 <div class="post-item">
                     <div class="post-content">
                         <p class="post-title">${p.title || '无标题'}</p>
-                        <p class="post-meta">${p.date} · 讨论度 ${Math.round(((p.adjusted_engagement || 0) / 45) * 100)}</p>
+                        <p class="post-meta">${p.date} · 讨论度 ${Math.round(p.adjusted_engagement || 0)}</p>
                     </div>
                     <div class="post-actions">
                         <button onclick="openXHSPost('${p.post_id}','${(p.title||'').replace(/'/g,"\\'")}')"
