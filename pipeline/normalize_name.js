@@ -16,8 +16,10 @@
 
 'use strict';
 
-// Chinese Unicode ranges: CJK unified ideographs + extensions + common punctuation
-const CJK_RE = /[\u4e00-\u9fff\u3400-\u4dbf\u{20000}-\u{2a6df}\u{2a700}-\u{2b73f}\uff00-\uffef\u3000-\u303f]/gu;
+// Chinese Unicode ranges: CJK unified ideographs + extensions + CJK punctuation
+// Note: \uff00-\uffef (Halfwidth/Fullwidth Forms) is intentionally excluded — it covers
+// fullwidth ASCII variants (－, ｜, etc.) that are separators, not Chinese characters.
+const CJK_RE = /[\u4e00-\u9fff\u3400-\u4dbf\u{20000}-\u{2a6df}\u{2a700}-\u{2b73f}\u3000-\u303f]/gu;
 
 /**
  * Returns true if str contains any Chinese characters.
@@ -67,6 +69,8 @@ function extractEnglish(str) {
     result = result.replace(CJK_RE, '');
     // Collapse multiple spaces
     result = result.replace(/\s+/g, ' ').trim();
+    // Strip leading/trailing separator chars that become dangling after Chinese removal
+    result = result.replace(/^[\s\/|｜\-－—\\]+|[\s\/|｜\-－—\\]+$/g, '').trim();
     return result;
 }
 
