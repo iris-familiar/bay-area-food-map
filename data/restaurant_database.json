@@ -1,7 +1,7 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-02-26T18:12:26.110Z",
-  "total_restaurants": 550,
+  "updated_at": "2026-02-27T05:30:35.842Z",
+  "total_restaurants": 563,
   "restaurants": [
     {
       "id": "r001",
@@ -12733,8 +12733,8 @@
       "lat": 37.6010306,
       "lng": -122.3908917,
       "verified": true,
-      "total_engagement": 3384.2231511004343,
-      "mention_count": 4,
+      "total_engagement": 1934.2231511004345,
+      "mention_count": 3,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -12750,7 +12750,6 @@
       ],
       "sources": [
         "67ba7dae00000000290119d8",
-        "66c2bf7d0000000005020e6f",
         "688efa14000000002501f67d",
         "68ddeaff000000000402164c"
       ],
@@ -12763,16 +12762,6 @@
           "context": "",
           "adjusted_engagement": 1209.548813952266,
           "restaurant_count_in_post": 12,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "66c2bf7d0000000005020e6f",
-          "title": "半岛San Mateo 食堂盘点",
-          "date": "2024-08-19",
-          "engagement": 1450,
-          "context": "",
-          "adjusted_engagement": 1450,
-          "restaurant_count_in_post": 1,
           "sentiment": "positive"
         },
         {
@@ -12804,7 +12793,7 @@
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.544Z",
+      "updated_at": "2026-02-27T05:27:42.092Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -19657,9 +19646,9 @@
       "lat": 37.5641216,
       "lng": -122.3236615,
       "verified": true,
-      "total_engagement": 1662.5062669908534,
-      "mention_count": 5,
-      "sentiment_score": 1,
+      "total_engagement": 1958.4862775771542,
+      "mention_count": 6,
+      "sentiment_score": 0.92,
       "sentiment_details": {},
       "recommendations": [
         "Bun Cha",
@@ -19677,24 +19666,26 @@
         "THE PIG OUT",
         "Bun bo hue",
         "越南米粉卷",
-        "椰子咖啡"
+        "椰子咖啡",
+        "pho"
       ],
       "sources": [
         "694dc5a3000000002200ba41",
         "68899fb0000000002502410f",
         "669f01d4000000000302723f",
         "677224cc000000000b01717a",
-        "6803da3c000000001c017577"
+        "6803da3c000000001c017577",
+        "66c2bf7d0000000005020e6f"
       ],
       "post_details": [
         {
-          "post_id": "669f01d4000000000302723f",
-          "title": "湾区那些好吃的越南餐合集！！赶紧Mark住啦～",
-          "date": "2024-07-23",
-          "engagement": 1344,
+          "post_id": "677224cc000000000b01717a",
+          "title": "湾区这家老网红的烧肉饭份量令人难以置信！",
+          "date": "2024-12-30",
+          "engagement": 591,
           "context": "",
-          "adjusted_engagement": 347.01930782018457,
-          "restaurant_count_in_post": 15,
+          "adjusted_engagement": 591,
+          "restaurant_count_in_post": 1,
           "sentiment": "positive"
         },
         {
@@ -19708,14 +19699,24 @@
           "sentiment": "positive"
         },
         {
-          "post_id": "677224cc000000000b01717a",
-          "title": "湾区这家老网红的烧肉饭份量令人难以置信！",
-          "date": "2024-12-30",
-          "engagement": 591,
+          "post_id": "669f01d4000000000302723f",
+          "title": "湾区那些好吃的越南餐合集！！赶紧Mark住啦～",
+          "date": "2024-07-23",
+          "engagement": 1344,
           "context": "",
-          "adjusted_engagement": 591,
-          "restaurant_count_in_post": 1,
+          "adjusted_engagement": 347.01930782018457,
+          "restaurant_count_in_post": 15,
           "sentiment": "positive"
+        },
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "neutral"
         },
         {
           "post_id": "694dc5a3000000002200ba41",
@@ -19741,12 +19742,12 @@
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 5,
-          "engagement": 3793
+          "mentions": 6,
+          "engagement": 5243
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.543Z",
+      "updated_at": "2026-02-27T05:30:35.842Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -22524,9 +22525,9 @@
       "lat": 37.5666911,
       "lng": -122.3239936,
       "verified": true,
-      "total_engagement": 2242.949085220184,
-      "mention_count": 5,
-      "sentiment_score": 1,
+      "total_engagement": 2538.9290958064844,
+      "mention_count": 6,
+      "sentiment_score": 0.94,
       "sentiment_details": {},
       "recommendations": [
         "Tsukemen (Dipping Noodles)",
@@ -22542,7 +22543,8 @@
         "67e8d9620000000007036bc5",
         "6803da3c000000001c017577",
         "68ec8f3400000000040018e5",
-        "691fbc23000000001e02ea77"
+        "691fbc23000000001e02ea77",
+        "66c2bf7d0000000005020e6f"
       ],
       "post_details": [
         {
@@ -22556,14 +22558,14 @@
           "sentiment": "positive"
         },
         {
-          "post_id": "67e8d9620000000007036bc5",
-          "title": "湾区｜打卡🆕拉面店🦀软壳蟹好吃😋",
-          "date": "2025-03-30",
-          "engagement": 441,
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
           "context": "",
-          "adjusted_engagement": 180.0374960945636,
-          "restaurant_count_in_post": 6,
-          "sentiment": "positive"
+          "sentiment": "neutral"
         },
         {
           "post_id": "68ec8f3400000000040018e5",
@@ -22576,13 +22578,13 @@
           "sentiment": "positive"
         },
         {
-          "post_id": "6803da3c000000001c017577",
-          "title": "San Mateo半岛人民办公日米粉面选择",
-          "date": "2025-04-19",
-          "engagement": 305,
+          "post_id": "67e8d9620000000007036bc5",
+          "title": "湾区｜打卡🆕拉面店🦀软壳蟹好吃😋",
+          "date": "2025-03-30",
+          "engagement": 441,
           "context": "",
-          "adjusted_engagement": 115.2791642678143,
-          "restaurant_count_in_post": 7,
+          "adjusted_engagement": 180.0374960945636,
+          "restaurant_count_in_post": 6,
           "sentiment": "positive"
         },
         {
@@ -22594,17 +22596,27 @@
           "adjusted_engagement": 150,
           "restaurant_count_in_post": 1,
           "sentiment": "positive"
+        },
+        {
+          "post_id": "6803da3c000000001c017577",
+          "title": "San Mateo半岛人民办公日米粉面选择",
+          "date": "2025-04-19",
+          "engagement": 305,
+          "context": "",
+          "adjusted_engagement": 115.2791642678143,
+          "restaurant_count_in_post": 7,
+          "sentiment": "positive"
         }
       ],
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 5,
-          "engagement": 6040
+          "mentions": 6,
+          "engagement": 7490
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.544Z",
+      "updated_at": "2026-02-27T05:30:35.842Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -25749,9 +25761,9 @@
       "lat": 37.562983,
       "lng": -122.3237478,
       "verified": true,
-      "total_engagement": 465.6522307473679,
-      "mention_count": 1,
-      "sentiment_score": 1,
+      "total_engagement": 761.6322413336686,
+      "mention_count": 2,
+      "sentiment_score": 0.81,
       "sentiment_details": {},
       "recommendations": [
         "麻辣烫",
@@ -25759,7 +25771,8 @@
         "牛筋"
       ],
       "sources": [
-        "68899fb0000000002502410f"
+        "68899fb0000000002502410f",
+        "66c2bf7d0000000005020e6f"
       ],
       "post_details": [
         {
@@ -25771,17 +25784,27 @@
           "adjusted_engagement": 465.6522307473679,
           "restaurant_count_in_post": 7,
           "sentiment": "positive"
+        },
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "neutral"
         }
       ],
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 1,
-          "engagement": 1232
+          "mentions": 2,
+          "engagement": 2682
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.117Z",
+      "updated_at": "2026-02-27T05:30:35.842Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -29889,20 +29912,34 @@
       "lat": 37.5676478,
       "lng": -122.3244765,
       "verified": true,
-      "total_engagement": 115.2791642678143,
-      "mention_count": 1,
+      "total_engagement": 411.259174854115,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "兰州牛肉面",
         "油泼面",
         "川北凉粉",
-        "蒜泥黄瓜"
+        "蒜泥黄瓜",
+        "兰州拉面",
+        "大盘鸡",
+        "鸡丝凉面"
       ],
       "sources": [
-        "6803da3c000000001c017577"
+        "6803da3c000000001c017577",
+        "66c2bf7d0000000005020e6f"
       ],
       "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "positive"
+        },
         {
           "post_id": "6803da3c000000001c017577",
           "title": "San Mateo半岛人民办公日米粉面选择",
@@ -29917,12 +29954,12 @@
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 1,
-          "engagement": 305
+          "mentions": 2,
+          "engagement": 1755
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.543Z",
+      "updated_at": "2026-02-27T05:30:35.842Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -29949,9 +29986,9 @@
       "lat": 37.5434577,
       "lng": -122.3076048,
       "verified": true,
-      "total_engagement": 593.291357576634,
-      "mention_count": 5,
-      "sentiment_score": 1,
+      "total_engagement": 889.2713681629348,
+      "mention_count": 6,
+      "sentiment_score": 0.83,
       "sentiment_details": {},
       "recommendations": [
         "特色牛骨",
@@ -29970,14 +30007,16 @@
         "大米秋柿",
         "辣珍宝蟹配烤法棍",
         "贵州酸汤米线",
-        "五常大米秋柿gelato"
+        "五常大米秋柿gelato",
+        "牛骨米粉"
       ],
       "sources": [
         "6803da3c000000001c017577",
         "69421524000000001f00e896",
         "69535f3b000000001e0110d4",
         "6958bea40000000021033295",
-        "694c93e8000000001e014f3c"
+        "694c93e8000000001e014f3c",
+        "66c2bf7d0000000005020e6f"
       ],
       "post_details": [
         {
@@ -29991,22 +30030,32 @@
           "sentiment": "positive"
         },
         {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "6803da3c000000001c017577",
+          "title": "San Mateo半岛人民办公日米粉面选择",
+          "date": "2025-04-19",
+          "engagement": 305,
+          "context": "",
+          "adjusted_engagement": 115.2791642678143,
+          "restaurant_count_in_post": 7,
+          "sentiment": "positive"
+        },
+        {
           "post_id": "69535f3b000000001e0110d4",
           "title": "湾区吃饭｜人生鸡饭/菌菇汤",
           "date": "2025-12-30",
           "engagement": 55,
           "context": "",
           "adjusted_engagement": 55,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "6958bea40000000021033295",
-          "title": "假期吃饭记录 - Miss Shang",
-          "date": "2026-01-03",
-          "engagement": 36,
-          "context": "",
-          "adjusted_engagement": 36,
           "restaurant_count_in_post": 1,
           "sentiment": "positive"
         },
@@ -30021,25 +30070,25 @@
           "sentiment": "positive"
         },
         {
-          "post_id": "6803da3c000000001c017577",
-          "title": "San Mateo半岛人民办公日米粉面选择",
-          "date": "2025-04-19",
-          "engagement": 305,
+          "post_id": "6958bea40000000021033295",
+          "title": "假期吃饭记录 - Miss Shang",
+          "date": "2026-01-03",
+          "engagement": 36,
           "context": "",
-          "adjusted_engagement": 115.2791642678143,
-          "restaurant_count_in_post": 7,
+          "adjusted_engagement": 36,
+          "restaurant_count_in_post": 1,
           "sentiment": "positive"
         }
       ],
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 5,
-          "engagement": 800
+          "mentions": 6,
+          "engagement": 2250
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T07:35:55.884Z",
+      "updated_at": "2026-02-27T05:30:35.842Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -31883,17 +31932,29 @@
       "lat": 37.5673286,
       "lng": -122.3253401,
       "verified": true,
-      "total_engagement": 135.13018414353866,
-      "mention_count": 1,
+      "total_engagement": 431.11019472983935,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
-        "8-piece omakase"
+        "8-piece omakase",
+        "sushi"
       ],
       "sources": [
-        "68c37fad000000001d02d992"
+        "68c37fad000000001d02d992",
+        "66c2bf7d0000000005020e6f"
       ],
       "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "positive"
+        },
         {
           "post_id": "68c37fad000000001d02d992",
           "title": "湾区周末｜百元档Sushi",
@@ -31908,12 +31969,12 @@
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 1,
-          "engagement": 331
+          "mentions": 2,
+          "engagement": 1781
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.544Z",
+      "updated_at": "2026-02-27T05:30:35.841Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -32765,9 +32826,9 @@
       "lat": 37.5445109,
       "lng": -122.3060999,
       "verified": true,
-      "total_engagement": 129,
-      "mention_count": 1,
-      "sentiment_score": 1,
+      "total_engagement": 424.9800105863007,
+      "mention_count": 2,
+      "sentiment_score": 0.65,
       "sentiment_details": {},
       "recommendations": [
         "毛血旺",
@@ -32778,9 +32839,20 @@
         "木耳秋葵烩冬瓜"
       ],
       "sources": [
-        "68eedfcc000000000301c327"
+        "68eedfcc000000000301c327",
+        "66c2bf7d0000000005020e6f"
       ],
       "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "neutral"
+        },
         {
           "post_id": "68eedfcc000000000301c327",
           "title": "Sanmateo川菜推荐｜降温后的第一碗毛血旺！",
@@ -32795,12 +32867,12 @@
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 1,
-          "engagement": 129
+          "mentions": 2,
+          "engagement": 1579
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.544Z",
+      "updated_at": "2026-02-27T05:30:35.842Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -33365,19 +33437,31 @@
       "lat": 37.5633138,
       "lng": -122.3241043,
       "verified": true,
-      "total_engagement": 89,
-      "mention_count": 1,
+      "total_engagement": 384.9800105863007,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "Takoyaki",
         "Tokusei Tsukemen",
-        "Mazesoba"
+        "Mazesoba",
+        "ramen"
       ],
       "sources": [
-        "69079e680000000004017873"
+        "69079e680000000004017873",
+        "66c2bf7d0000000005020e6f"
       ],
       "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "positive"
+        },
         {
           "post_id": "69079e680000000004017873",
           "title": "湾区这家网红蘸面真的有点东西",
@@ -33392,12 +33476,12 @@
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 1,
-          "engagement": 89
+          "mentions": 2,
+          "engagement": 1539
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.544Z",
+      "updated_at": "2026-02-27T05:30:35.842Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -36347,7 +36431,704 @@
         "source_post": "699121aa000000000e03d435",
         "needs_review": false
       }
+    },
+    {
+      "id": "pipeline_1772170235841_9erk",
+      "name": "Taki Nori Hand Roll Bar",
+      "name_en": "",
+      "cuisine": "Japanese",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "Taki Nori Hand Roll Bar",
+      "address": "144 E 3rd Ave, San Mateo, CA 94401, USA",
+      "google_rating": 4.3,
+      "google_place_id": "ChIJDVXtW-qfj4ARhosLW1QX71s",
+      "lat": 37.5644673,
+      "lng": -122.3236787,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "hand roll sushi"
+      ],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_no6s",
+      "name": "Dash Japanese Tapas And Sushi",
+      "name_en": "",
+      "cuisine": "Japanese",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "Dash Japanese Tapas and Sushi",
+      "address": "204A 2nd Ave, San Mateo, CA 94401, USA",
+      "google_rating": 4.5,
+      "google_place_id": "ChIJp6yImXCej4ARwQ0kgVjz25w",
+      "lat": 37.56588380000001,
+      "lng": -122.3236271,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "omakase sushi",
+        "拌饭"
+      ],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_g3lp",
+      "name": "Takahashi Market",
+      "name_en": "",
+      "cuisine": "Japanese",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "Takahashi Market",
+      "address": "221 S Claremont St, San Mateo, CA 94401, USA",
+      "google_rating": 4.7,
+      "google_place_id": "ChIJI9eeaXqej4ARVJcDscRCXtI",
+      "lat": 37.5670239,
+      "lng": -122.3207761,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "sashimi",
+        "三文鱼"
+      ],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_m4aj",
+      "name": "刘一手火锅 Liuyishou Hotpot (San Mateo)",
+      "name_en": "",
+      "cuisine": "Hot pot",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "Liuyishou Hotpot (San Mateo)",
+      "address": "98 E 3rd Ave, San Mateo, CA 94401, USA",
+      "google_rating": 4.3,
+      "google_place_id": "ChIJv2lTRnCej4ARxfGlAqjhuoo",
+      "lat": 37.5641127,
+      "lng": -122.3241375,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 0,
+      "sentiment_details": {},
+      "recommendations": [],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "negative"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_kgcc",
+      "name": "Shabuway",
+      "name_en": "",
+      "cuisine": "Hot pot",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "Shabuway",
+      "address": "145 E 3rd Ave, San Mateo, CA 94401, USA",
+      "google_rating": 4.1,
+      "google_place_id": "ChIJHzu5W3Cej4ARJHzDBzqYyqk",
+      "lat": 37.5646142,
+      "lng": -122.3239277,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "牛肉"
+      ],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_atbb",
+      "name": "张亮麻辣烫 Zhangliang Malatang",
+      "name_en": "",
+      "cuisine": "麻辣烫",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "Zhangliang Malatang",
+      "address": "139 S B St, San Mateo, CA 94401, USA",
+      "google_rating": 4.3,
+      "google_place_id": "ChIJ4euZB4efj4ARE0P348sbYyc",
+      "lat": 37.5667431,
+      "lng": -122.3233958,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "麻辣拌"
+      ],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_4wc3",
+      "name": "猛男汉堡 The Burger",
+      "name_en": "",
+      "cuisine": "Fast food",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "The Burger",
+      "address": "1501 S El Camino Real, San Mateo, CA 94402, USA",
+      "google_rating": 4.9,
+      "google_place_id": "ChIJ06nLGwCfj4AR-MnK7x2Gt7s",
+      "lat": 37.5540042,
+      "lng": -122.3154649,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 0,
+      "sentiment_details": {},
+      "recommendations": [
+        "汉堡"
+      ],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "negative"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_48kn",
+      "name": "Himawari",
+      "name_en": "",
+      "cuisine": "Japanese",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "Himawari",
+      "address": "202 2nd Ave, San Mateo, CA 94401, USA",
+      "google_rating": 4.4,
+      "google_place_id": "ChIJ3xfY7XCej4ARxv7jAZpvKII",
+      "lat": 37.5658194,
+      "lng": -122.3237602,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 0.5,
+      "sentiment_details": {},
+      "recommendations": [
+        "ramen"
+      ],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_c9kd",
+      "name": "Daeho Kalbijjim & Beef Soup",
+      "name_en": "",
+      "cuisine": "Korean",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "Daeho kalbijjim & beef soup",
+      "address": "213 2nd Ave, San Mateo, CA 94401, USA",
+      "google_rating": 4.5,
+      "google_place_id": "ChIJJ359_7Sfj4ARJZnEW4YwpzM",
+      "lat": 37.5660399,
+      "lng": -122.3238253,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "牛骨汤",
+        "排骨"
+      ],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_9uzk",
+      "name": "鲜芋仙 Meet Fresh | San Mateo",
+      "name_en": "",
+      "cuisine": "Dessert",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "Meet Fresh | San Mateo",
+      "address": "277 S B St, San Mateo, CA 94401, USA",
+      "google_rating": 3.6,
+      "google_place_id": "ChIJjy0MXr-fj4ARldYwo_ozp9c",
+      "lat": 37.5657861,
+      "lng": -122.3223108,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 0.5,
+      "sentiment_details": {},
+      "recommendations": [],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_ty4y",
+      "name": "Pausa Bar & Cookery",
+      "name_en": "",
+      "cuisine": "Italian",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "Pausa Bar & Cookery",
+      "address": "223 E 4th Ave, San Mateo, CA 94401, USA",
+      "google_rating": 4.5,
+      "google_place_id": "ChIJjcw0nnqej4ARvrndVxyQY60",
+      "lat": 37.5647072,
+      "lng": -122.321999,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 0.5,
+      "sentiment_details": {},
+      "recommendations": [],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_oafo",
+      "name": "人间烟火小酒馆 （Dynasty BBQ)",
+      "name_en": "",
+      "cuisine": "Chinese BBQ",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "人间烟火小酒馆（Dynasty BBQ)",
+      "address": "105 W 25th Ave, San Mateo, CA 94403, USA",
+      "google_rating": 4.6,
+      "google_place_id": "ChIJe1hpqKGfj4ARWBFCgo71nII",
+      "lat": 37.5436791,
+      "lng": -122.3071561,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "bbq"
+      ],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772170235842_9klf",
+      "name": "一品主考官 Prime BBQ",
+      "name_en": "",
+      "cuisine": "BBQ",
+      "area": "San Mateo",
+      "region": "Peninsula",
+      "city": "San Mateo",
+      "price_range": "unknown",
+      "google_name": "Prime BBQ",
+      "address": "33 W 25th Ave, San Mateo, CA 94403, USA",
+      "google_rating": 4.8,
+      "google_place_id": "ChIJhVAUTsyfj4ARDeeBUOsZ2JQ",
+      "lat": 37.5437503,
+      "lng": -122.3065682,
+      "verified": true,
+      "total_engagement": 295.9800105863007,
+      "mention_count": 1,
+      "sentiment_score": 0.5,
+      "sentiment_details": {},
+      "recommendations": [],
+      "sources": [
+        "66c2bf7d0000000005020e6f"
+      ],
+      "post_details": [
+        {
+          "post_id": "66c2bf7d0000000005020e6f",
+          "title": "半岛San Mateo 食堂盘点",
+          "date": "2024-08-19",
+          "engagement": 1450,
+          "adjusted_engagement": 295.9800105863007,
+          "restaurant_count_in_post": 24,
+          "context": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-02",
+          "mentions": 1,
+          "engagement": 1450
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-02-27T05:30:35.842Z",
+      "merge_info": {
+        "added_date": "2026-02-27",
+        "source": "daily_pipeline",
+        "source_post": "66c2bf7d0000000005020e6f",
+        "needs_review": false
+      }
     }
   ],
-  "verified_at": "2026-02-27T01:32:07.764Z"
+  "verified_at": "2026-02-27T05:30:39.790Z"
 }

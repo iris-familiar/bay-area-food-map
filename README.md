@@ -20,7 +20,7 @@ bay-area-food-map/
 │   └── styles.css                     # Shared styles
 │
 ├── data/
-│   ├── restaurant_database.json       # ← Single source of truth (92+ restaurants)
+│   ├── restaurant_database.json       # ← Single source of truth (563+ restaurants)
 │   ├── restaurant_database_index.json # Slim version for fast page load (~50KB)
 │   ├── corrections.json               # Manual corrections (re-applied every pipeline run)
 │   ├── candidates/                    # Daily LLM-extracted candidates (gitignored)
@@ -108,7 +108,7 @@ npm run enrich:names
 LIMIT=10 bash pipeline/run_by_name.sh
 ```
 
-A rotation cursor in `data/.name_search_cursor.json` (gitignored) tracks progress. With 550 restaurants at 50/run, a full cycle takes ~11 runs. After each run the cursor advances automatically — just run `npm run enrich:names` repeatedly.
+A rotation cursor in `data/.name_search_cursor.json` (gitignored) tracks progress. With 563 restaurants at 50/run, a full cycle takes ~12 runs. After each run the cursor advances automatically — just run `npm run enrich:names` repeatedly.
 
 **Pipeline files:**
 - `pipeline/01_scrape_by_name.js` — scrapes XHS, rotates cursor, filters by engagement

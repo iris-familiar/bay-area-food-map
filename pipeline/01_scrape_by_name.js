@@ -141,6 +141,8 @@ async function main() {
 
   let newCount = 0;
   let skipCount = 0;
+  let consecutiveDetailFailures = 0;
+  const MAX_CONSECUTIVE_DETAIL_FAILURES = 10; // likely session expiry
 
   // 5. Process each restaurant
   for (let i = 0; i < batch.length; i++) {
@@ -155,6 +157,7 @@ async function main() {
       log(`  ⚠️  Search failed for "${searchTerm}"`);
     } else {
       const feeds = searchData.feeds || searchData.items || [];
+      let statEngagement = 0, statFresh = 0, statDetailNull = 0, statNoNote = 0, statSaved = 0;
 
       for (const feed of feeds) {
         const card = feed.noteCard || feed;
@@ -163,7 +166,7 @@ async function main() {
         const likes = parseInt(interact.likedCount || 0, 10) || 0;
 
         // Engagement filter (same threshold as 01_scrape.sh:165)
-        if (comments < 3 && likes < 20) continue;
+        if (comments < 3 && likes < 20) { statEngagement++; continue; }
 
         const noteId = feed.id || feed.noteId || '';
         const xsecToken = feed.xsecToken || '';
@@ -172,16 +175,39 @@ async function main() {
         // Freshness check
         if (isPostFresh(noteId, 7)) {
           skipCount++;
+          statFresh++;
           continue;
+        }
+
+        // Abort early if session likely expired
+        if (consecutiveDetailFailures >= MAX_CONSECUTIVE_DETAIL_FAILURES) {
+          log(`  💀 ${MAX_CONSECUTIVE_DETAIL_FAILURES}+ consecutive detail failures — session likely expired. Run: cd ~/.agents/skills/xiaohongshu/scripts && ./login.sh`);
+          process.exit(2);
         }
 
         // Fetch post detail
         const detailData = callMcp('get_feed_detail', { feed_id: noteId, xsec_token: xsecToken });
-        if (!detailData) continue;
+        if (!detailData) { statDetailNull++; consecutiveDetailFailures++; continue; }
+
+        // Check for MCP-level error response
+        if (detailData?.result?.isError) {
+          const errText = detailData?.result?.content?.[0]?.text || '(no message)';
+          consecutiveDetailFailures++;
+          statNoNote++;
+          if (statNoNote === 1) log(`  ⚠️  get_feed_detail error (session expired?): ${errText}`);
+          continue;
+        }
 
         // Normalize to flat structure (matches 02_extract_llm.js expectations)
         const note = detailData.data?.note || {};
-        if (!note.title && !note.desc) continue;
+        if (!note.title && !note.desc) {
+          consecutiveDetailFailures++;
+          statNoNote++;
+          if (statNoNote === 1) log(`  ⚠️  No note data for ${noteId} — keys: ${JSON.stringify(Object.keys(detailData))}`);
+          continue;
+        }
+
+        consecutiveDetailFailures = 0; // reset on success
 
         const normalized = {
           id: note.noteId || noteId,
@@ -201,12 +227,23 @@ async function main() {
         const outFile = path.join(OUTPUT_DIR, `post_${noteId}.json`);
         fs.writeFileSync(outFile, JSON.stringify(normalized, null, 2));
         newCount++;
+        statSaved++;
         log(`  ✅ Saved: ${noteId}`);
 
         // Rate limit: 2–4s between posts
         await sleep(2000 + Math.floor(Math.random() * 2000));
       }
+      log(`  📊 feeds=${feeds.length} lowEngagement=${statEngagement} fresh=${statFresh} detailNull=${statDetailNull} noNote=${statNoNote} saved=${statSaved}`);
     }
+
+    // Save cursor after each restaurant so Ctrl+C doesn't lose progress
+    const thisIndex = (startIndex + i) % total;
+    const progressCursor = {
+      last_processed_index: thisIndex,
+      last_run: new Date().toISOString(),
+      cycle_count: cursor.cycle_count + (startIndex + i >= total ? 1 : 0),
+    };
+    fs.writeFileSync(CURSOR_FILE, JSON.stringify(progressCursor, null, 2));
 
     // Rate limit: 3–6s between restaurants
     if (i < batch.length - 1) {
@@ -214,7 +251,7 @@ async function main() {
     }
   }
 
-  // 6. Update cursor
+  // 6. Final cursor update (endIndex)
   const newCursor = {
     last_processed_index: endIndex,
     last_run: new Date().toISOString(),
