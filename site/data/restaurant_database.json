@@ -5,7 +5,7 @@
   "restaurants": [
     {
       "id": "r001",
-      "name": "留湘小聚",
+      "name": "留湘小聚店 Ping's Bistro",
       "name_en": "",
       "recommendations": [
         "傣味香茅草烤鱼",
@@ -2111,7 +2111,7 @@
     },
     {
       "id": "r020",
-      "name": "10 Seconds Yunnan Noodle",
+      "name": "十秒到 10 Seconds Yunnan Noodle",
       "name_en": "",
       "cuisine": "云南菜",
       "area": "San Leandro",
@@ -4144,7 +4144,7 @@
     },
     {
       "id": "r049",
-      "name": "留湘",
+      "name": "留湘 Ping's Bistro",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "Fremont",
@@ -25353,7 +25353,7 @@
     },
     {
       "id": "pipeline_1772067301117_vmf1",
-      "name": "留湘号店 1 (Ping’s Bistro)",
+      "name": "留湘小聚店 Ping‘s Bistro",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "San Mateo",
@@ -27630,7 +27630,8 @@
       "correction_applied": {
         "at": "2026-02-26T01:31:21.455Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
-      }
+      },
+      "_status": "rejected"
     },
     {
       "id": "pipeline_1772067301118_8x3w",
@@ -38841,5 +38842,5 @@
       }
     }
   ],
-  "verified_at": "2026-02-27T16:25:41.482Z"
+  "verified_at": "2026-02-27T17:59:08.965Z"
 }
