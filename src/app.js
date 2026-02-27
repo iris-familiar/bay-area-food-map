@@ -5,6 +5,16 @@ let allRestaurants = [];
 let filteredRestaurants = [];
 let currentFilters = { cuisine: 'all', region: 'all' };
 let currentSort = 'engagement';
+let searchPlaceholderCount = '';
+let searchPlaceholderUpdated = '';
+
+function updateSearchPlaceholder() {
+    const parts = [];
+    if (searchPlaceholderCount) parts.push(searchPlaceholderCount);
+    if (searchPlaceholderUpdated) parts.push(searchPlaceholderUpdated);
+    const el = document.getElementById('search-input');
+    if (el) el.placeholder = parts.length ? parts.join(' · ') : '搜索餐厅、菜品、地址...';
+}
 
 // ─── Data loading ─────────────────────────────────────────────────────────────
 
@@ -35,6 +45,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             r => r._status !== 'duplicate_merged' && r._status !== 'rejected'
         );
         filteredRestaurants = [...allRestaurants];
+        searchPlaceholderCount = `${allRestaurants.length} 家餐厅`;
+        updateSearchPlaceholder();
 
         buildCuisineFilter();
         filterAndRender();
@@ -48,10 +60,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const d = new Date(state.last_run);
                     const fmt = d.toLocaleDateString('zh-CN', {
                         month: 'short', day: 'numeric',
-                        hour: '2-digit', minute: '2-digit',
                     });
-                    const el = document.getElementById('last-updated');
-                    if (el) el.textContent = `· 更新于 ${fmt}`;
+                    searchPlaceholderUpdated = `更新于 ${fmt}`;
+                    updateSearchPlaceholder();
                 }
             }
         } catch (e) { /* non-critical */ }
@@ -174,7 +185,6 @@ function filterAndRender() {
 // ─── Rendering ────────────────────────────────────────────────────────────────
 
 function renderRestaurants() {
-    document.getElementById('total-count').textContent = filteredRestaurants.length;
     const grid = document.getElementById('restaurant-grid');
 
     if (filteredRestaurants.length === 0) {
