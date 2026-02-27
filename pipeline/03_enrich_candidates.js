@@ -21,6 +21,7 @@
 const fs    = require('fs');
 const path  = require('path');
 const https = require('https');
+const { normalizeRestaurantName } = require('./normalize_name');
 
 // ─── Load .env (if not already set) ──────────────────────────────────────────
 const envPath = path.join(__dirname, '..', '.env');
@@ -264,6 +265,8 @@ async function main() {
 
             // Enrich candidate with Google data
             candidate.google_place_id = details.place_id;
+            candidate.google_name     = details.name || '';
+            candidate.name            = normalizeRestaurantName(candidate.name, details.name);
             candidate.address         = details.formatted_address || candidate.address;
             const googleCity = extractCityFromAddress(details.formatted_address);
             if (googleCity && googleCity.toLowerCase() !== (candidate.city || '').toLowerCase()) {

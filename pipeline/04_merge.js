@@ -277,6 +277,7 @@ for (const candidate of candidates) {
             city: candidate.city || 'unknown',
             price_range: candidate.price_range || 'unknown',
             // Google data (from enrichment)
+            google_name: candidate.google_name || '',
             address: candidate.address || '',
             google_rating: candidate.google_rating || null,
             google_place_id: candidate.google_place_id,
