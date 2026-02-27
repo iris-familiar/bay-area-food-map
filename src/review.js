@@ -48,6 +48,21 @@ async function loadData() {
     );
 }
 
+// ─── URL hash state ────────────────────────────────────────────────────────────
+
+function getHashState() {
+    const hash = decodeURIComponent(location.hash.slice(1));
+    const colonIdx = hash.indexOf(':');
+    const tab = colonIdx === -1 ? hash : hash.slice(0, colonIdx);
+    const q = colonIdx === -1 ? '' : hash.slice(colonIdx + 1);
+    return { tab: (tab === 'approved' ? 'approved' : 'pending'), q };
+}
+
+function setHashState(tab, q) {
+    const hash = q ? `${tab}:${q}` : tab;
+    history.replaceState(null, '', '#' + hash);
+}
+
 // ─── Tab switching ─────────────────────────────────────────────────────────────
 
 function switchTab(tab) {
@@ -57,6 +72,7 @@ function switchTab(tab) {
         `px-4 py-2 rounded-lg text-sm font-medium ${tab === 'pending' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-600'}`;
     document.getElementById('tab-approved').className =
         `px-4 py-2 rounded-lg text-sm font-medium ${tab === 'approved' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-600'}`;
+    setHashState(tab, getHashState().q);
 }
 
 // ─── Count display ─────────────────────────────────────────────────────────────
@@ -126,7 +142,7 @@ function pendingCard(r) {
         </button>
         <button onclick="rejectRestaurant('${r.id}')"
                 class="px-5 py-2.5 border border-red-300 text-red-500 rounded-xl text-sm font-medium hover:bg-red-50 active:scale-95 transition-all">
-            <i class="fas fa-times mr-1"></i>拒绝
+            <i class="fas fa-times mr-1"></i>移除
         </button>
     </div>
 </div>`;
@@ -219,6 +235,7 @@ function getFilteredApproved() {
 
 function filterApproved(q) {
     approvedSearchQuery = q.toLowerCase();
+    setHashState(getHashState().tab, q);
     renderApprovedTable(getFilteredApproved());
 }
 
@@ -321,6 +338,10 @@ function renderDrawer(r) {
             <button onclick="toggleDrawer('${r.id}')"
                     class="px-4 py-1.5 bg-gray-200 text-gray-600 rounded-lg text-sm font-medium hover:bg-gray-300 transition-colors">
                 取消
+            </button>
+            <button onclick="removeApprovedRestaurant('${r.id}')"
+                    class="px-4 py-1.5 border border-red-300 text-red-500 rounded-lg text-sm font-medium hover:bg-red-50 transition-colors">
+                移除
             </button>
         </div>
     </div>
@@ -750,6 +771,29 @@ async function saveDrawer(id) {
     }
 }
 
+async function removeApprovedRestaurant(id) {
+    const r = approved.find(x => x.id === id);
+    if (!confirm(`确认移除"${r?.name || id}"？该餐厅将不再显示在地图上。`)) return;
+
+    const result = await apiCall(`/api/reject/${id}`, {});
+    if (result.ok) {
+        const rowEl = document.getElementById('row-' + id);
+        if (rowEl) {
+            rowEl.style.transition = 'opacity 0.3s, transform 0.3s';
+            rowEl.style.opacity = '0';
+            rowEl.style.transform = 'translateX(-40px)';
+            setTimeout(() => {
+                rowEl.remove();
+                approved = approved.filter(x => x.id !== id);
+                updateCounts();
+            }, 300);
+        }
+        showToast('已移除');
+    } else {
+        showToast('操作失败：' + result.error, 'error');
+    }
+}
+
 // ─── Merge dialog ──────────────────────────────────────────────────────────────
 
 let mergeDialogState = null;
@@ -904,6 +948,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         updateCounts();
         renderPending();
         renderApproved();
+        // Restore tab + search filter from URL hash (survives browser refresh)
+        const { tab, q } = getHashState();
+        if (q) {
+            const searchEl = document.getElementById('approved-search');
+            if (searchEl) searchEl.value = q;
+            approvedSearchQuery = q.toLowerCase();
+            renderApprovedTable(getFilteredApproved());
+        }
+        switchTab(tab);
         document.getElementById('loading').classList.add('hidden');
         document.getElementById('content').classList.remove('hidden');
     } catch (err) {
