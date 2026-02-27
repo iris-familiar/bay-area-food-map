@@ -31,7 +31,10 @@
         "lng": -122.014705
       },
       "verified": true,
-      "name_en": "C.Q. Taste"
+      "name_en": "C.Q. Taste",
+      "_status": "duplicate_merged",
+      "post_details": [],
+      "sources": []
     },
     "reason": "用英文名重新匹配"
   },
@@ -1648,7 +1651,13 @@
     "id": "pipeline_1772067300874_a3lj",
     "name": "C.Q. Taste重庆铺盖面",
     "corrections": {
-      "cuisine": "川菜"
+      "cuisine": "川菜",
+      "post_details": [],
+      "total_engagement": 1071.6478940252973,
+      "mention_count": 9,
+      "sources": [],
+      "google_place_id": "ChIJ55aqQgWHhYARUIQUTYyldjQ",
+      "_status": "duplicate_merged"
     },
     "reason": "cuisine normalization: Szechuan → 川菜"
   },
@@ -2616,7 +2625,13 @@
     "id": "pipeline_1772067301118_8x3w",
     "name": "重庆铺盖面 C.Q. Taste",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "中餐",
+      "post_details": [],
+      "total_engagement": 1313.783755400532,
+      "mention_count": 11,
+      "sources": [],
+      "google_place_id": "ChIJ55aqQgWHhYARUIQUTYyldjQ",
+      "_status": "duplicate_merged"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -3611,5 +3626,132 @@
       "cuisine": "韩餐"
     },
     "reason": "cuisine normalization: Korean → 韩餐"
+  },
+  {
+    "id": "pipeline_1772091355884_f6qg",
+    "corrections": {
+      "post_details": [
+        {
+          "post_id": "692d5aaf000000001b020caa",
+          "title": "南湾Cupertino的重庆荣昌铺盖面",
+          "date": "2025-12-01",
+          "engagement": 325,
+          "adjusted_engagement": 229.80970388562793,
+          "restaurant_count_in_post": 2,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "691a9bcf0000000019025423",
+          "title": "南湾｜本成都人去帮你们吃了新开的铺盖面",
+          "date": "",
+          "engagement": 201,
+          "adjusted_engagement": 201,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "697ad7a0000000000c035eb3",
+          "title": "成都人四刷Cupertino重庆铺盖面｜满意",
+          "date": "2026-01-29",
+          "engagement": 228,
+          "context": "",
+          "adjusted_engagement": 131.63586137523467,
+          "restaurant_count_in_post": 3,
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "697c2dcb000000002200ab2d",
+          "title": "湾区Cupertino 日常探店🍜🧋",
+          "date": "2026-01-30",
+          "engagement": 221,
+          "context": "",
+          "adjusted_engagement": 110.5,
+          "restaurant_count_in_post": 4,
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "693e02ff000000001e038ae4",
+          "title": "湾区吃喝周记",
+          "date": "2025-12-14",
+          "engagement": 94,
+          "context": "",
+          "adjusted_engagement": 42.03807797699604,
+          "restaurant_count_in_post": 5,
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "6962fd8c0000000021032f47",
+          "title": "Cupertino CQ taste吃到了最好吃的重庆面",
+          "date": "",
+          "engagement": 247,
+          "adjusted_engagement": 174.65537495307723,
+          "restaurant_count_in_post": 2,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "694dc5a3000000002200ba41",
+          "title": "我在湾区咪西咪西",
+          "date": "2025-12-25",
+          "engagement": 321,
+          "context": "",
+          "adjusted_engagement": 143.55556415548648,
+          "restaurant_count_in_post": 5,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "69333537000000001e013730",
+          "title": "湾区美食·新开重庆铺盖面，冬天热和豆汤饭！",
+          "date": "",
+          "engagement": 182,
+          "adjusted_engagement": 128.69343417595164,
+          "restaurant_count_in_post": 2,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "697086b9000000000a032124",
+          "title": "湾区美食差评系列一，重庆铺盖面",
+          "date": "",
+          "engagement": 68,
+          "adjusted_engagement": 68,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "negative"
+        },
+        {
+          "post_id": "69803b340000000022009b92",
+          "title": "南湾｜成都老辈子又来Cupertino吃铺盖面咯",
+          "date": "2026-02-02",
+          "engagement": 52,
+          "context": "",
+          "adjusted_engagement": 52,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        }
+      ],
+      "total_engagement": 1281.888016522374,
+      "mention_count": 10,
+      "sources": [
+        "692d5aaf000000001b020caa",
+        "691a9bcf0000000019025423",
+        "697ad7a0000000000c035eb3",
+        "697c2dcb000000002200ab2d",
+        "693e02ff000000001e038ae4",
+        "6962fd8c0000000021032f47",
+        "694dc5a3000000002200ba41",
+        "69333537000000001e013730",
+        "697086b9000000000a032124",
+        "69803b340000000022009b92"
+      ],
+      "google_place_id": "ChIJ55aqQgWHhYARUIQUTYyldjQ",
+      "google_name": "C.Q. Taste",
+      "address": "10815 N Wolfe Rd Suite 101B, Cupertino, CA 95014, USA",
+      "google_rating": 4.2,
+      "name": "重庆铺盖面",
+      "name_en": "C.Q. Taste"
+    }
   }
 ]
