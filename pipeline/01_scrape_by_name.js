@@ -19,7 +19,7 @@ const LIMIT = limitArg !== -1 ? parseInt(args[limitArg + 1], 10) : 50;
 
 // ─── Paths ─────────────────────────────────────────────────────────────────────
 const PROJECT_DIR = path.join(__dirname, '..');
-const DB_FILE = path.join(PROJECT_DIR, 'data', 'restaurant_database.json');
+const DB_FILE = path.join(PROJECT_DIR, 'site', 'data', 'restaurant_database.json');
 const CURSOR_FILE = path.join(PROJECT_DIR, 'data', '.name_search_cursor.json');
 const RAW_BASE_DIR = path.join(PROJECT_DIR, 'data', 'raw');
 const MCP_DIR = path.join(process.env.HOME, '.agents', 'skills', 'xiaohongshu', 'scripts');

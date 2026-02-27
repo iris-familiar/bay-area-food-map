@@ -29,7 +29,7 @@ const targetDate  = dateArg || new Date().toISOString().split('T')[0];
 
 // ─── Paths ───────────────────────────────────────────────────────────────────
 const ROOT          = path.join(__dirname, '..');
-const DB_FILE       = path.join(ROOT, 'data', 'restaurant_database.json');
+const DB_FILE       = path.join(ROOT, 'site', 'data', 'restaurant_database.json');
 const CANDIDATES_DIR = path.join(ROOT, 'data', 'candidates');
 const APPROVED_DIR  = path.join(ROOT, 'data', 'candidates', 'approved');
 const CANDIDATES_FILE = path.join(CANDIDATES_DIR, `${targetDate}.json`);

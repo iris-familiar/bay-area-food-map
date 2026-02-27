@@ -35,7 +35,7 @@ if (fs.existsSync(envPath)) {
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 const ROOT    = path.join(__dirname, '..');
-const DB_FILE = path.join(ROOT, 'data', 'restaurant_database.json');
+const DB_FILE = path.join(ROOT, 'site', 'data', 'restaurant_database.json');
 
 const args     = process.argv.slice(2);
 const DRY_RUN  = args.includes('--dry-run');
@@ -292,7 +292,7 @@ async function main() {
         console.log(`\n✅ Enriched ${enriched} restaurants, ${failed} failed`);
         console.log('Regenerating index...');
         const { execSync } = require('child_process');
-        const indexPath = path.join(ROOT, 'data', 'restaurant_database_index.json');
+        const indexPath = path.join(ROOT, 'site', 'data', 'restaurant_database_index.json');
         execSync(`node "${path.join(__dirname, '06_generate_index.js')}" "${DB_FILE}" "${indexPath}"`, { stdio: 'inherit' });
     } else {
         console.log(`\nNo changes. ${failed} failed.`);

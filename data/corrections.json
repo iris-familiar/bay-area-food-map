@@ -220,7 +220,8 @@
   {
     "id": "r049",
     "corrections": {
-      "name": "留湘"
+      "name": "留湘 Ping's Bistro",
+      "name_en": ""
     }
   },
   {
@@ -2361,7 +2362,9 @@
     "id": "pipeline_1772067301117_vmf1",
     "name": "留湘1号店 (Ping’s Bistro)",
     "corrections": {
-      "cuisine": "湘菜"
+      "cuisine": "湘菜",
+      "name": "留湘小聚店 Ping‘s Bistro",
+      "name_en": ""
     },
     "reason": "cuisine normalization: Hunan → 湘菜"
   },
@@ -2617,7 +2620,8 @@
     "id": "pipeline_1772067301118_5esp",
     "name": "晓川哥",
     "corrections": {
-      "cuisine": "川菜"
+      "cuisine": "川菜",
+      "_status": "rejected"
     },
     "reason": "cuisine normalization: Sichuan → 川菜"
   },
@@ -3752,6 +3756,19 @@
       "google_rating": 4.2,
       "name": "重庆铺盖面",
       "name_en": "C.Q. Taste"
+    }
+  },
+  {
+    "id": "r001",
+    "corrections": {
+      "name": "留湘小聚店 Ping's Bistro",
+      "name_en": ""
+    }
+  },
+  {
+    "id": "r020",
+    "corrections": {
+      "name": "十秒到 10 Seconds Yunnan Noodle"
     }
   }
 ]

@@ -110,7 +110,7 @@ function main() {
         // Regenerate index
         const { execSync } = require('child_process');
         const projectRoot = path.join(__dirname, '..');
-        const indexFile = path.join(projectRoot, 'data', 'restaurant_database_index.json');
+        const indexFile = path.join(projectRoot, 'site', 'data', 'restaurant_database_index.json');
         execSync(`node pipeline/06_generate_index.js ${DB_FILE} ${indexFile}`, { cwd: projectRoot, stdio: 'inherit' });
 
         commitTransaction(txId);

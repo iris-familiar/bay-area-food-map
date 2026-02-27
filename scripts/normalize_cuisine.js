@@ -19,7 +19,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const DB_FILE = path.join(ROOT, 'data', 'restaurant_database.json');
+const DB_FILE = path.join(ROOT, 'site', 'data', 'restaurant_database.json');
 const CORRECTIONS_FILE = path.join(ROOT, 'data', 'corrections.json');
 const APPLY = process.argv.includes('--apply');
 

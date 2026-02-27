@@ -11,8 +11,8 @@
 const fs   = require('fs');
 const path = require('path');
 
-const DB_FILE    = path.join(__dirname, '..', 'data', 'restaurant_database.json');
-const INDEX_FILE = path.join(__dirname, '..', 'data', 'restaurant_database_index.json');
+const DB_FILE    = path.join(__dirname, '..', 'site', 'data', 'restaurant_database.json');
+const INDEX_FILE = path.join(__dirname, '..', 'site', 'data', 'restaurant_database_index.json');
 
 const REMOVALS = [
     { restaurantName: '晓川哥', postId: '695c4460000000000b010931', reason: 'Korean restaurant post — wrong place_id collision (Coco Bang)' },
@@ -80,5 +80,5 @@ console.log(`\nDatabase saved. Regenerating index...`);
 
 // Regenerate the index
 const { execSync } = require('child_process');
-execSync('node pipeline/06_generate_index.js data/restaurant_database.json data/restaurant_database_index.json', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
+execSync('node pipeline/06_generate_index.js site/data/restaurant_database.json site/data/restaurant_database_index.json', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
 console.log('Done.');

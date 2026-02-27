@@ -18,7 +18,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const DB_FILE = path.join(ROOT, 'data', 'restaurant_database.json');
+const DB_FILE = path.join(ROOT, 'site', 'data', 'restaurant_database.json');
 const DRY_RUN = process.argv.includes('--dry-run');
 
 const db = JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
@@ -140,6 +140,6 @@ if (DRY_RUN) {
 
     // Regenerate index
     const { execSync } = require('child_process');
-    const indexPath = path.join(ROOT, 'data', 'restaurant_database_index.json');
+    const indexPath = path.join(ROOT, 'site', 'data', 'restaurant_database_index.json');
     execSync(`node "${path.join(ROOT, 'pipeline', '06_generate_index.js')}" "${DB_FILE}" "${indexPath}"`, { stdio: 'inherit' });
 }
