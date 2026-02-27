@@ -998,98 +998,8 @@
       "price_range": "",
       "total_engagement": 1029.6098160483014,
       "mention_count": 11,
-      "sources": [
-        "697ad7a0000000000c035eb3",
-        "692d5aaf000000001b020caa",
-        "697c2dcb000000002200ab2d",
-        "694dc5a3000000002200ba41",
-        "69803b340000000022009b92",
-        "69333537000000001e013730",
-        "6962fd8c0000000021032f47",
-        "697086b9000000000a032124"
-      ],
-      "post_details": [
-        {
-          "post_id": "692d5aaf000000001b020caa",
-          "title": "南湾Cupertino的重庆荣昌铺盖面",
-          "date": "2025-12-01",
-          "engagement": 322,
-          "context": "",
-          "adjusted_engagement": 227.6883835420683,
-          "restaurant_count_in_post": 2,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "6962fd8c0000000021032f47",
-          "title": "Cupertino CQ taste吃到了最好吃的重庆面",
-          "date": "",
-          "engagement": 247,
-          "adjusted_engagement": 174.65537495307723,
-          "restaurant_count_in_post": 2,
-          "context": "",
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "694dc5a3000000002200ba41",
-          "title": "我在湾区咪西咪西",
-          "date": "2025-12-25",
-          "engagement": 321,
-          "context": "",
-          "adjusted_engagement": 143.55556415548648,
-          "restaurant_count_in_post": 5,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "69333537000000001e013730",
-          "title": "湾区美食·新开重庆铺盖面，冬天热和豆汤饭！",
-          "date": "",
-          "engagement": 182,
-          "adjusted_engagement": 128.69343417595164,
-          "restaurant_count_in_post": 2,
-          "context": "",
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "697ad7a0000000000c035eb3",
-          "title": "成都人四刷Cupertino重庆铺盖面｜满意",
-          "date": "2026-01-28",
-          "engagement": 220,
-          "context": "",
-          "adjusted_engagement": 127.01705922171767,
-          "restaurant_count_in_post": 3,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "697c2dcb000000002200ab2d",
-          "title": "湾区Cupertino 日常探店🍜🧋",
-          "date": "2026-01-29",
-          "engagement": 216,
-          "context": "",
-          "adjusted_engagement": 108,
-          "restaurant_count_in_post": 4,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "697086b9000000000a032124",
-          "title": "湾区美食差评系列一，重庆铺盖面",
-          "date": "",
-          "engagement": 68,
-          "adjusted_engagement": 68,
-          "restaurant_count_in_post": 1,
-          "context": "",
-          "sentiment": "negative"
-        },
-        {
-          "post_id": "69803b340000000022009b92",
-          "title": "南湾｜成都老辈子又来Cupertino吃铺盖面咯",
-          "date": "2026-02-02",
-          "engagement": 52,
-          "context": "",
-          "adjusted_engagement": 52,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "google_rating": 4.3,
       "google_place_id": "ChIJ55aqQgWHhYARUIQUTYyldjQ",
       "address": "10815 N Wolfe Rd Suite 101B, Cupertino, CA 95014, USA",
@@ -1141,7 +1051,8 @@
           "mentions": 5,
           "engagement": 870
         }
-      ]
+      ],
+      "_status": "duplicate_merged"
     },
     {
       "id": "r009",
@@ -19558,12 +19469,12 @@
       "price_range": "unknown",
       "address": "35233 Newark Blvd, Newark, CA 94560, USA",
       "google_rating": 3.9,
-      "google_place_id": "ChIJ0SsGqlG-j4ARXm5wsneU8Vw",
+      "google_place_id": "ChIJ55aqQgWHhYARUIQUTYyldjQ",
       "lat": 37.547704,
       "lng": -122.046339,
       "verified": true,
-      "total_engagement": 42.03807797699604,
-      "mention_count": 1,
+      "total_engagement": 1071.6478940252973,
+      "mention_count": 9,
       "sentiment_score": 0.5,
       "sentiment_details": {},
       "recommendations": [
@@ -19571,21 +19482,8 @@
         "泡椒滑肉刀削面",
         "鸡汤铺盖面"
       ],
-      "sources": [
-        "693e02ff000000001e038ae4"
-      ],
-      "post_details": [
-        {
-          "post_id": "693e02ff000000001e038ae4",
-          "title": "湾区吃喝周记",
-          "date": "2025-12-14",
-          "engagement": 94,
-          "context": "",
-          "adjusted_engagement": 42.03807797699604,
-          "restaurant_count_in_post": 5,
-          "sentiment": "neutral"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "timeseries": [
         {
           "month": "2026-02",
@@ -19604,7 +19502,8 @@
       "correction_applied": {
         "at": "2026-02-26T01:31:21.447Z",
         "reason": "cuisine normalization: Szechuan → 川菜"
-      }
+      },
+      "_status": "duplicate_merged"
     },
     {
       "id": "pipeline_1772067300874_blux",
@@ -27744,12 +27643,12 @@
       "price_range": "unknown",
       "address": "10889 S Blaney Ave, Cupertino, CA 95014, USA",
       "google_rating": 4.3,
-      "google_place_id": "ChIJA0G9Rw61j4AR435CQh9ikyI",
+      "google_place_id": "ChIJ55aqQgWHhYARUIQUTYyldjQ",
       "lat": 37.3107069,
       "lng": -122.0242054,
       "verified": true,
-      "total_engagement": 242.13586137523467,
-      "mention_count": 2,
+      "total_engagement": 1313.783755400532,
+      "mention_count": 11,
       "sentiment_score": 0.5,
       "sentiment_details": {},
       "recommendations": [
@@ -27759,32 +27658,8 @@
         "肥肠米线",
         "粉蒸羊肉"
       ],
-      "sources": [
-        "697c2dcb000000002200ab2d",
-        "697ad7a0000000000c035eb3"
-      ],
-      "post_details": [
-        {
-          "post_id": "697ad7a0000000000c035eb3",
-          "title": "成都人四刷Cupertino重庆铺盖面｜满意",
-          "date": "2026-01-29",
-          "engagement": 228,
-          "context": "",
-          "adjusted_engagement": 131.63586137523467,
-          "restaurant_count_in_post": 3,
-          "sentiment": "neutral"
-        },
-        {
-          "post_id": "697c2dcb000000002200ab2d",
-          "title": "湾区Cupertino 日常探店🍜🧋",
-          "date": "2026-01-30",
-          "engagement": 221,
-          "context": "",
-          "adjusted_engagement": 110.5,
-          "restaurant_count_in_post": 4,
-          "sentiment": "neutral"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "timeseries": [
         {
           "month": "2026-02",
@@ -27803,7 +27678,8 @@
       "correction_applied": {
         "at": "2026-02-26T01:31:21.455Z",
         "reason": "cuisine normalization: Chinese → 中餐"
-      }
+      },
+      "_status": "duplicate_merged"
     },
     {
       "id": "pipeline_1772067301118_gphe",
@@ -36481,14 +36357,14 @@
       "region": "South Bay",
       "city": "Cupertino",
       "price_range": "unknown",
-      "address": "19052 Stevens Creek Blvd, Cupertino, CA 95014, USA",
-      "google_rating": 3.6,
-      "google_place_id": "ChIJy0U4cly1j4ARjofjJ_gL09k",
+      "address": "10815 N Wolfe Rd Suite 101B, Cupertino, CA 95014, USA",
+      "google_rating": 4.2,
+      "google_place_id": "ChIJ55aqQgWHhYARUIQUTYyldjQ",
       "lat": 37.3226913,
       "lng": -122.0056789,
       "verified": true,
-      "total_engagement": 430.8097038856279,
-      "mention_count": 2,
+      "total_engagement": 1281.888016522374,
+      "mention_count": 10,
       "sentiment_score": 0.77,
       "sentiment_details": {},
       "recommendations": [
@@ -36499,7 +36375,15 @@
       ],
       "sources": [
         "692d5aaf000000001b020caa",
-        "691a9bcf0000000019025423"
+        "691a9bcf0000000019025423",
+        "697ad7a0000000000c035eb3",
+        "697c2dcb000000002200ab2d",
+        "693e02ff000000001e038ae4",
+        "6962fd8c0000000021032f47",
+        "694dc5a3000000002200ba41",
+        "69333537000000001e013730",
+        "697086b9000000000a032124",
+        "69803b340000000022009b92"
       ],
       "post_details": [
         {
@@ -36521,6 +36405,86 @@
           "restaurant_count_in_post": 1,
           "context": "",
           "sentiment": "neutral"
+        },
+        {
+          "post_id": "697ad7a0000000000c035eb3",
+          "title": "成都人四刷Cupertino重庆铺盖面｜满意",
+          "date": "2026-01-29",
+          "engagement": 228,
+          "context": "",
+          "adjusted_engagement": 131.63586137523467,
+          "restaurant_count_in_post": 3,
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "697c2dcb000000002200ab2d",
+          "title": "湾区Cupertino 日常探店🍜🧋",
+          "date": "2026-01-30",
+          "engagement": 221,
+          "context": "",
+          "adjusted_engagement": 110.5,
+          "restaurant_count_in_post": 4,
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "693e02ff000000001e038ae4",
+          "title": "湾区吃喝周记",
+          "date": "2025-12-14",
+          "engagement": 94,
+          "context": "",
+          "adjusted_engagement": 42.03807797699604,
+          "restaurant_count_in_post": 5,
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "6962fd8c0000000021032f47",
+          "title": "Cupertino CQ taste吃到了最好吃的重庆面",
+          "date": "",
+          "engagement": 247,
+          "adjusted_engagement": 174.65537495307723,
+          "restaurant_count_in_post": 2,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "694dc5a3000000002200ba41",
+          "title": "我在湾区咪西咪西",
+          "date": "2025-12-25",
+          "engagement": 321,
+          "context": "",
+          "adjusted_engagement": 143.55556415548648,
+          "restaurant_count_in_post": 5,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "69333537000000001e013730",
+          "title": "湾区美食·新开重庆铺盖面，冬天热和豆汤饭！",
+          "date": "",
+          "engagement": 182,
+          "adjusted_engagement": 128.69343417595164,
+          "restaurant_count_in_post": 2,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "697086b9000000000a032124",
+          "title": "湾区美食差评系列一，重庆铺盖面",
+          "date": "",
+          "engagement": 68,
+          "adjusted_engagement": 68,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "negative"
+        },
+        {
+          "post_id": "69803b340000000022009b92",
+          "title": "南湾｜成都老辈子又来Cupertino吃铺盖面咯",
+          "date": "2026-02-02",
+          "engagement": 52,
+          "context": "",
+          "adjusted_engagement": 52,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
         }
       ],
       "timeseries": [
@@ -36537,7 +36501,8 @@
         "source": "daily_pipeline",
         "source_post": "692d5aaf000000001b020caa",
         "needs_review": false
-      }
+      },
+      "google_name": "C.Q. Taste"
     },
     {
       "id": "pipeline_1772091355884_cbtu",
@@ -38876,5 +38841,5 @@
       }
     }
   ],
-  "verified_at": "2026-02-27T16:04:29.219Z"
+  "verified_at": "2026-02-27T16:25:41.482Z"
 }
