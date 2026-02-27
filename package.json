@@ -10,7 +10,9 @@
     "pipeline:dry": "bash pipeline/run.sh --dry-run",
     "boost": "MAX_POSTS=200 bash pipeline/run.sh",
     "test": "node tests/verify.js",
-    "test:e2e": "node tests/e2e.js"
+    "test:e2e": "node tests/e2e.js",
+    "enrich:names": "bash pipeline/run_by_name.sh",
+    "enrich:names:dry": "node pipeline/01_scrape_by_name.js --dry-run"
   },
   "dependencies": {}
 }

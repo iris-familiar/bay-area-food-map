@@ -41,5 +41,8 @@ playwright-report/
 scripts/etl.backup*/
 fallback_*/
 
+# Pipeline cursor (rotates through restaurants; ephemeral)
+data/.name_search_cursor.json
+
 # Git worktrees
 .worktrees/

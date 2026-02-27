@@ -20,6 +20,10 @@ node pipeline/enrich_google.js --limit 20   # Enrich existing unverified restaur
 node pipeline/review.js                      # Interactive candidate review CLI
 node pipeline/review.js --auto-approve       # CI mode (no interaction)
 
+# Name-based enrichment (searches XHS for each known restaurant by name):
+npm run enrich:names             # Enrich next 50 restaurants by name search (on-demand)
+npm run enrich:names:dry         # Preview which 50 restaurants would be searched next
+
 # One-time data scripts:
 node scripts/backfill_adjusted_engagement.js  # Recompute adjusted engagement for all restaurants
 node scripts/fix_mismatched_places.js         # Fix wrong Google Place matches (merge into canonical)
