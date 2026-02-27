@@ -157,7 +157,7 @@ async function main() {
       log(`  ⚠️  Search failed for "${searchTerm}"`);
     } else {
       const feeds = searchData.feeds || searchData.items || [];
-      let statEngagement = 0, statFresh = 0, statDetailNull = 0, statNoNote = 0, statSaved = 0;
+      let statEngagement = 0, statFresh = 0, statDetailNull = 0, statDeleted = 0, statEmpty = 0, statErr = 0, statSaved = 0;
 
       for (const feed of feeds) {
         const card = feed.noteCard || feed;
@@ -200,13 +200,12 @@ async function main() {
             const errText = detailData?.result?.content?.[0]?.text || '(no message)';
             if (errText.includes('not found in noteDetailMap')) {
               // Post deleted/restricted — never retryable, not a session issue
-              if (statNoNote === 0) log(`  ⚠️  post unavailable (deleted/restricted): ${errText}`);
-              statNoNote++; detailData = null;
+              statDeleted++; detailData = null;
             } else {
               if (attempt < MAX_DETAIL_RETRIES) { await sleep(2000); continue; }
               consecutiveDetailFailures++;
-              if (statNoNote === 0) log(`  ⚠️  get_feed_detail error (session expired?): ${errText}`);
-              statNoNote++; detailData = null;
+              log(`  ⚠️  get_feed_detail error (session expired?): ${errText}`);
+              statErr++; detailData = null;
             }
             break;
           }
@@ -214,8 +213,8 @@ async function main() {
           if (!note.title && !note.desc) {
             if (attempt < MAX_DETAIL_RETRIES) { await sleep(2000); continue; }
             consecutiveDetailFailures++;
-            if (statNoNote === 0) log(`  ⚠️  No note data for ${noteId} (${attempt} attempts) — keys: ${JSON.stringify(Object.keys(detailData))}`);
-            statNoNote++; detailData = null;
+            log(`  ⚠️  No note data for ${noteId} (${attempt} attempts) — keys: ${JSON.stringify(Object.keys(detailData))}`);
+            statEmpty++; detailData = null;
             break;
           }
           break; // success
@@ -248,7 +247,7 @@ async function main() {
         // Rate limit: 2–4s between posts
         await sleep(2000 + Math.floor(Math.random() * 2000));
       }
-      log(`  📊 feeds=${feeds.length} lowEngagement=${statEngagement} fresh=${statFresh} detailNull=${statDetailNull} noNote=${statNoNote} saved=${statSaved}`);
+      log(`  📊 feeds=${feeds.length} lowEngagement=${statEngagement} fresh=${statFresh} detailNull=${statDetailNull} deleted=${statDeleted} emptyNote=${statEmpty} err=${statErr} saved=${statSaved}`);
     }
 
     // Save cursor after each restaurant so Ctrl+C doesn't lose progress
