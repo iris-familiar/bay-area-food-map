@@ -185,32 +185,42 @@ async function main() {
           process.exit(2);
         }
 
-        // Fetch post detail
-        const detailData = callMcp('get_feed_detail', { feed_id: noteId, xsec_token: xsecToken });
-        if (!detailData) { statDetailNull++; consecutiveDetailFailures++; continue; }
-
-        // Check for MCP-level error response
-        if (detailData?.result?.isError) {
-          const errText = detailData?.result?.content?.[0]?.text || '(no message)';
-          statNoNote++;
-          if (errText.includes('not found in noteDetailMap')) {
-            // Post deleted/restricted — not a session issue, don't count against session health
-            if (statNoNote === 1) log(`  ⚠️  post unavailable (deleted/restricted): ${errText}`);
-          } else {
-            consecutiveDetailFailures++;
-            if (statNoNote === 1) log(`  ⚠️  get_feed_detail error (session expired?): ${errText}`);
+        // Fetch post detail (up to 3 attempts; retry on null or empty note data)
+        const MAX_DETAIL_RETRIES = 3;
+        let detailData = null;
+        let note = {};
+        for (let attempt = 1; attempt <= MAX_DETAIL_RETRIES; attempt++) {
+          detailData = callMcp('get_feed_detail', { feed_id: noteId, xsec_token: xsecToken });
+          if (!detailData) {
+            if (attempt < MAX_DETAIL_RETRIES) { await sleep(2000); continue; }
+            statDetailNull++; consecutiveDetailFailures++;
+            break;
           }
-          continue;
+          if (detailData?.result?.isError) {
+            const errText = detailData?.result?.content?.[0]?.text || '(no message)';
+            if (errText.includes('not found in noteDetailMap')) {
+              // Post deleted/restricted — never retryable, not a session issue
+              if (statNoNote === 0) log(`  ⚠️  post unavailable (deleted/restricted): ${errText}`);
+              statNoNote++; detailData = null;
+            } else {
+              if (attempt < MAX_DETAIL_RETRIES) { await sleep(2000); continue; }
+              consecutiveDetailFailures++;
+              if (statNoNote === 0) log(`  ⚠️  get_feed_detail error (session expired?): ${errText}`);
+              statNoNote++; detailData = null;
+            }
+            break;
+          }
+          note = detailData.data?.note || {};
+          if (!note.title && !note.desc) {
+            if (attempt < MAX_DETAIL_RETRIES) { await sleep(2000); continue; }
+            consecutiveDetailFailures++;
+            if (statNoNote === 0) log(`  ⚠️  No note data for ${noteId} (${attempt} attempts) — keys: ${JSON.stringify(Object.keys(detailData))}`);
+            statNoNote++; detailData = null;
+            break;
+          }
+          break; // success
         }
-
-        // Normalize to flat structure (matches 02_extract_llm.js expectations)
-        const note = detailData.data?.note || {};
-        if (!note.title && !note.desc) {
-          consecutiveDetailFailures++;
-          statNoNote++;
-          if (statNoNote === 1) log(`  ⚠️  No note data for ${noteId} — keys: ${JSON.stringify(Object.keys(detailData))}`);
-          continue;
-        }
+        if (!detailData) continue;
 
         consecutiveDetailFailures = 0; // reset on success
 
