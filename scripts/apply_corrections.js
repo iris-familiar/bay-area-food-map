@@ -10,9 +10,8 @@ const path = require('path');
 const { beginTransaction, commitTransaction } = require('./transaction');
 
 const PROJECT_ROOT = path.join(__dirname, '..');
-const DATA_DIR = path.join(PROJECT_ROOT, 'data');
-const DB_FILE = path.join(DATA_DIR, 'restaurant_database.json');
-const CORRECTIONS_FILE = path.join(DATA_DIR, 'corrections.json');
+const DB_FILE = path.join(PROJECT_ROOT, 'site', 'data', 'restaurant_database.json');
+const CORRECTIONS_FILE = path.join(PROJECT_ROOT, 'data', 'corrections.json');
 
 console.log('🔧 应用数据修正...');
 console.log('='.repeat(70));

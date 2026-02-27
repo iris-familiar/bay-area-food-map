@@ -11,8 +11,8 @@ const { execSync } = require('child_process');
 
 const PORT = 8080;
 
-const DB_FILE = path.join(__dirname, 'data/restaurant_database.json');
-const INDEX_FILE = path.join(__dirname, 'data/restaurant_database_index.json');
+const DB_FILE = path.join(__dirname, 'site/data/restaurant_database.json');
+const INDEX_FILE = path.join(__dirname, 'site/data/restaurant_database_index.json');
 const CORRECTIONS_FILE = path.join(__dirname, 'data/corrections.json');
 const GENERATE_INDEX = path.join(__dirname, 'pipeline/06_generate_index.js');
 
@@ -144,10 +144,13 @@ const server = http.createServer(async (req, res) => {
         return;
     }
 
-    // Static file serving
-    let filePath = '.' + urlPath;
-    if (filePath === './') {
-        filePath = './index.html';
+    // Static file serving — serve from site/, fallback to root for local-only files
+    let filePath = path.join(__dirname, 'site', urlPath);
+    if (urlPath === '/' || urlPath === '') {
+        filePath = path.join(__dirname, 'site', 'index.html');
+    }
+    if (!fs.existsSync(filePath)) {
+        filePath = path.join(__dirname, urlPath);
     }
 
     const extname = String(path.extname(filePath)).toLowerCase();

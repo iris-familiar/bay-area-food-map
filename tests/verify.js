@@ -20,9 +20,9 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
-const DB   = path.join(ROOT, 'data', 'restaurant_database.json');
-const IDX  = path.join(ROOT, 'data', 'restaurant_database_index.json');
-const STATE = path.join(ROOT, 'data', '.pipeline_state.json');
+const DB   = path.join(ROOT, 'site', 'data', 'restaurant_database.json');
+const IDX  = path.join(ROOT, 'site', 'data', 'restaurant_database_index.json');
+const STATE = path.join(ROOT, 'site', 'data', '.pipeline_state.json');
 
 let passed = 0;
 let failed = 0;
@@ -108,8 +108,8 @@ const REQUIRED_FILES = [
     'pipeline/07_commit.sh',
     'pipeline/review.js',
     'pipeline/enrich_google.js',
-    'src/app.js',
-    'src/styles.css',
+    'site/src/app.js',
+    'site/src/styles.css',
     'config.sh',
     'scripts/apply_corrections.js',
     'scripts/transaction.js',
