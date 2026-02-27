@@ -661,7 +661,7 @@ async function refetchPlaceId(id) {
             // Show merge dialog
             openMergeDialog(id, newPlaceId, result.conflict);
         } else if (result.ok && result.newData) {
-            // Show diff preview
+            // Store for save
             const state = getDrawerState(id);
             if (state) {
                 state.pendingGoogleData = { ...result.newData, google_place_id: newPlaceId };
@@ -669,11 +669,18 @@ async function refetchPlaceId(id) {
             }
 
             const { google_name, address, google_rating } = result.newData;
+
+            // Update form fields immediately so user sees the new values
+            const addrEl = document.getElementById(`edit-${id}-address`);
+            if (addrEl && address) addrEl.value = address;
+            const ratingEl2 = document.getElementById(`edit-${id}-google_rating`);
+            if (ratingEl2 && google_rating != null) ratingEl2.value = google_rating;
+
             const lines = [];
-            if (google_name) lines.push(`名称 → "${google_name}"`);
-            if (address) lines.push(`地址 → "${address}"`);
+            if (google_name) lines.push(`Google名称 → "${google_name}"`);
+            if (address) lines.push(`地址已更新`);
             if (google_rating) lines.push(`评分 → ${google_rating}`);
-            previewEl.innerHTML = `<span class="font-medium">将更新：</span> ${escHtml(lines.join(' · '))}`;
+            previewEl.innerHTML = `<span class="font-medium">已获取，保存后生效：</span> ${escHtml(lines.join(' · '))}`;
             previewEl.classList.remove('hidden');
         } else if (result.error) {
             showToast('获取失败：' + result.error, 'error');
@@ -758,11 +765,15 @@ function openMergeDialog(currentId, newPlaceId, conflict) {
         _source: 'current',
         _key: `current-${i}`,
     }));
-    const conflictPosts = (conflict.post_details || []).map((p, i) => ({
-        ...p,
-        _source: 'conflict',
-        _key: `conflict-${i}`,
-    }));
+    // Exclude conflict posts whose post_id already exists in current (deduplicate)
+    const currentPostIds = new Set((current.post_details || []).map(p => p.post_id));
+    const conflictPosts = (conflict.post_details || [])
+        .filter(p => !currentPostIds.has(p.post_id))
+        .map((p, i) => ({
+            ...p,
+            _source: 'conflict',
+            _key: `conflict-${i}`,
+        }));
     const allPosts = [...currentPosts, ...conflictPosts];
 
     const postRows = allPosts.map(p => `

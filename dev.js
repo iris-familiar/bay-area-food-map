@@ -237,10 +237,16 @@ const server = http.createServer(async (req, res) => {
             if (!keepR) throw new Error(`Restaurant ${keepId} not found`);
             if (!mergeR) throw new Error(`Restaurant ${mergeId} not found`);
 
-            // Apply merged post_details and recalc metrics
+            // Apply merged post_details: filter removed, deduplicate by post_id
             const cleanPosts = mergedPostDetails.filter(p => !p._removed);
-            keepR.post_details = cleanPosts;
-            const metrics = recalcMetrics(cleanPosts);
+            const seenPostIds = new Set();
+            const dedupedPosts = cleanPosts.filter(p => {
+                if (!p.post_id || seenPostIds.has(p.post_id)) return false;
+                seenPostIds.add(p.post_id);
+                return true;
+            });
+            keepR.post_details = dedupedPosts;
+            const metrics = recalcMetrics(dedupedPosts);
             Object.assign(keepR, metrics);
 
             // Apply fetched Google data if provided
@@ -261,7 +267,7 @@ const server = http.createServer(async (req, res) => {
             // Upsert both into corrections.json
             const corrections = readJSON(CORRECTIONS_FILE);
             const keepPatch = {
-                post_details: cleanPosts,
+                post_details: dedupedPosts,
                 ...metrics,
                 ...(googleData.google_name ? { google_name: googleData.google_name } : {}),
                 ...(googleData.address ? { address: googleData.address } : {}),
