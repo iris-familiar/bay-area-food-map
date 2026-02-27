@@ -29,7 +29,9 @@ bay-area-food-map/
 │
 ├── pipeline/
 │   ├── run.sh                         # ← Main entry point (cron calls this)
+│   ├── run_by_name.sh                 # On-demand: enrich by restaurant name
 │   ├── 01_scrape.sh                   # Scrape new XHS posts via MCP
+│   ├── 01_scrape_by_name.js           # Scrape XHS by restaurant name (rotating cursor)
 │   ├── 02_extract_llm.js              # Extract candidates from posts (GLM-5)
 │   ├── 03_enrich_candidates.js        # Google Places enrichment for candidates
 │   ├── 04_merge.js                    # Merge candidates by place_id (append-only)
@@ -88,6 +90,29 @@ Edit via Review UI: http://localhost:8080/review.html
 ```
 node pipeline/enrich_google.js --limit 20
 ```
+
+---
+
+## Name-Based Enrichment Pipeline
+
+Inverts the search: for each known restaurant, searches XHS by name (`"湾区 {chinese_name}"`) to boost engagement accuracy, surface recent posts, and discover more dishes.
+
+```bash
+# Preview which 50 restaurants would be searched next (no API calls)
+npm run enrich:names:dry
+
+# Run enrichment for next 50 restaurants
+npm run enrich:names
+
+# Run a smaller batch
+LIMIT=10 bash pipeline/run_by_name.sh
+```
+
+A rotation cursor in `data/.name_search_cursor.json` (gitignored) tracks progress. With 550 restaurants at 50/run, a full cycle takes ~11 runs. After each run the cursor advances automatically — just run `npm run enrich:names` repeatedly.
+
+**Pipeline files:**
+- `pipeline/01_scrape_by_name.js` — scrapes XHS, rotates cursor, filters by engagement
+- `pipeline/run_by_name.sh` — orchestrates scrape → extract → enrich → merge → verify → index → commit
 
 ---
 
