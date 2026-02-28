@@ -3507,7 +3507,58 @@
     "id": "pipeline_1772067301544_j17f",
     "name": "肖婆婆成都砂锅",
     "corrections": {
-      "cuisine": "川菜"
+      "cuisine": "川菜",
+      "post_details": [
+        {
+          "post_id": "6959ecd30000000022030ad7",
+          "title": "肖婆婆成都砂锅来湾区啦",
+          "date": "2026-01-04",
+          "engagement": 279,
+          "context": "",
+          "adjusted_engagement": 279,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "695f421f000000001a022b7e",
+          "title": "Cupertino 新开｜正宗川式砂锅 · 现点现做",
+          "date": "2026-01-07",
+          "engagement": 227,
+          "context": "",
+          "adjusted_engagement": 227,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "698f65480000000016009c34",
+          "title": "🍽️湾区100家店【9】南湾新开砂锅馆值不值得",
+          "date": "2026-02-13",
+          "engagement": 55,
+          "context": "",
+          "adjusted_engagement": 55,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6976a9c6000000001a01ea3a",
+          "title": "湾区探新店-砂锅篇",
+          "date": "",
+          "engagement": 18,
+          "adjusted_engagement": 18,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "negative"
+        }
+      ],
+      "total_engagement": 579,
+      "mention_count": 4,
+      "sources": [
+        "6959ecd30000000022030ad7",
+        "695f421f000000001a022b7e",
+        "698f65480000000016009c34",
+        "6976a9c6000000001a01ea3a"
+      ],
+      "google_place_id": "ChIJVV-QNBC1j4ARjQ8yQ1J10Ao"
     },
     "reason": "cuisine normalization: Sichuan → 川菜"
   },
@@ -3769,6 +3820,20 @@
     "id": "r020",
     "corrections": {
       "name": "十秒到 10 Seconds Yunnan Noodle"
+    }
+  },
+  {
+    "id": "r036",
+    "corrections": {
+      "_status": "duplicate_merged",
+      "post_details": [],
+      "sources": []
+    }
+  },
+  {
+    "id": "r041",
+    "corrections": {
+      "name": "Dish N Dash"
     }
   }
 ]

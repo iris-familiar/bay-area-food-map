@@ -3284,11 +3284,7 @@
       "price_range": "",
       "total_engagement": 300,
       "mention_count": 4,
-      "sources": [
-        "695f421f000000001a022b7e",
-        "698f65480000000016009c34",
-        "6976a9c6000000001a01ea3a"
-      ],
+      "sources": [],
       "recommendations": [
         "网红爆品黑鸭煲",
         "酥肉手工丸子双拼",
@@ -3301,38 +3297,7 @@
         "黑毛肚",
         "红糖糍粑"
       ],
-      "post_details": [
-        {
-          "post_id": "695f421f000000001a022b7e",
-          "title": "Cupertino 新开｜正宗川式砂锅 · 现点现做",
-          "date": "2026-01-07",
-          "engagement": 227,
-          "context": "",
-          "adjusted_engagement": 227,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "698f65480000000016009c34",
-          "title": "🍽️湾区100家店【9】南湾新开砂锅馆值不值得",
-          "date": "2026-02-13",
-          "engagement": 55,
-          "context": "",
-          "adjusted_engagement": 55,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "6976a9c6000000001a01ea3a",
-          "title": "湾区探新店-砂锅篇",
-          "date": "",
-          "engagement": 18,
-          "adjusted_engagement": 18,
-          "restaurant_count_in_post": 1,
-          "context": "",
-          "sentiment": "negative"
-        }
-      ],
+      "post_details": [],
       "google_rating": 4.7,
       "google_place_id": "ChIJVV-QNBC1j4ARjQ8yQ1J10Ao",
       "address": "20950 Stevens Creek Blvd, Cupertino, CA 95014, USA",
@@ -3375,7 +3340,8 @@
         }
       ],
       "lat": 37.3226107,
-      "lng": -122.0405443
+      "lng": -122.0405443,
+      "_status": "duplicate_merged"
     },
     {
       "id": "r037",
@@ -3643,7 +3609,7 @@
     },
     {
       "id": "r041",
-      "name": "DISHDASH",
+      "name": "Dish N Dash",
       "name_en": "",
       "cuisine": "中东菜",
       "area": "Sunnyvale",
@@ -34422,12 +34388,12 @@
       "price_range": "unknown",
       "address": "Via Paolo Sarpi, 50, 20154 Milano MI, Italy",
       "google_rating": 4,
-      "google_place_id": "ChIJN3SaQrfBhkcRUcpphFj_zyk",
+      "google_place_id": "ChIJVV-QNBC1j4ARjQ8yQ1J10Ao",
       "lat": 45.4811349,
       "lng": 9.1725999,
       "verified": true,
-      "total_engagement": 279,
-      "mention_count": 1,
+      "total_engagement": 579,
+      "mention_count": 4,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -34436,7 +34402,10 @@
         "清汤萝卜牛腩"
       ],
       "sources": [
-        "6959ecd30000000022030ad7"
+        "6959ecd30000000022030ad7",
+        "695f421f000000001a022b7e",
+        "698f65480000000016009c34",
+        "6976a9c6000000001a01ea3a"
       ],
       "post_details": [
         {
@@ -34448,6 +34417,36 @@
           "adjusted_engagement": 279,
           "restaurant_count_in_post": 1,
           "sentiment": "positive"
+        },
+        {
+          "post_id": "695f421f000000001a022b7e",
+          "title": "Cupertino 新开｜正宗川式砂锅 · 现点现做",
+          "date": "2026-01-07",
+          "engagement": 227,
+          "context": "",
+          "adjusted_engagement": 227,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "698f65480000000016009c34",
+          "title": "🍽️湾区100家店【9】南湾新开砂锅馆值不值得",
+          "date": "2026-02-13",
+          "engagement": 55,
+          "context": "",
+          "adjusted_engagement": 55,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6976a9c6000000001a01ea3a",
+          "title": "湾区探新店-砂锅篇",
+          "date": "",
+          "engagement": 18,
+          "adjusted_engagement": 18,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "negative"
         }
       ],
       "timeseries": [
