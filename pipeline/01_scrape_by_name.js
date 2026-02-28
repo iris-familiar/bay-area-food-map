@@ -169,8 +169,13 @@ async function main() {
         if (comments < 3 && likes < 20) { statEngagement++; continue; }
 
         const noteId = feed.id || feed.noteId || '';
-        const xsecToken = feed.xsecToken || '';
+        const xsecToken = feed.xsecToken || feed.noteCard?.xsecToken || '';
         if (!noteId) continue;
+
+        // Debug: log first post's token presence per restaurant
+        if (statEngagement + statFresh + statDetailNull + statDeleted + statEmpty + statErr + statSaved === 0) {
+          log(`  🔍 first eligible post: id=${noteId} xsecToken=${xsecToken ? xsecToken.slice(0, 20) + '…' : '(empty)'}`);
+        }
 
         // Freshness check
         if (isPostFresh(noteId, 7)) {
@@ -199,10 +204,11 @@ async function main() {
           if (detailData?.result?.isError) {
             const errText = detailData?.result?.content?.[0]?.text || '(no message)';
             if (errText.includes('not found in noteDetailMap')) {
-              // Post deleted/restricted — never retryable, not a session issue
+              // SPA not hydrated yet — retry with longer delay
+              if (attempt < MAX_DETAIL_RETRIES) { await sleep(5000); continue; }
               statDeleted++; detailData = null;
             } else {
-              if (attempt < MAX_DETAIL_RETRIES) { await sleep(2000); continue; }
+              if (attempt < MAX_DETAIL_RETRIES) { await sleep(5000); continue; }
               consecutiveDetailFailures++;
               log(`  ⚠️  get_feed_detail error (session expired?): ${errText}`);
               statErr++; detailData = null;
@@ -211,7 +217,7 @@ async function main() {
           }
           note = detailData.data?.note || {};
           if (!note.title && !note.desc) {
-            if (attempt < MAX_DETAIL_RETRIES) { await sleep(2000); continue; }
+            if (attempt < MAX_DETAIL_RETRIES) { await sleep(5000); continue; }
             consecutiveDetailFailures++;
             log(`  ⚠️  No note data for ${noteId} (${attempt} attempts) — keys: ${JSON.stringify(Object.keys(detailData))}`);
             statEmpty++; detailData = null;
