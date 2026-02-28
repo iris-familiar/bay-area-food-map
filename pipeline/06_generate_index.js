@@ -28,7 +28,7 @@ const CARD_FIELDS = [
     'id', 'name', 'name_en', 'cuisine', 'region', 'city',
     'price_range', 'google_rating', 'verified',
     'total_engagement', 'mention_count', 'sentiment_score',
-    'address', 'semantic_tags',
+    'address', 'semantic_tags', 'lat', 'lng',
     // Recommendations: keep only first 3 for card chip display
 ];
 

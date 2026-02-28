@@ -952,6 +952,309 @@ body {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
+   View Toggle
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.view-toggle {
+  display: flex;
+  background: var(--color-bg-tertiary);
+  border-radius: 10px;
+  padding: 2px;
+  gap: 2px;
+}
+
+.view-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.view-btn.active {
+  background: var(--color-bg-primary);
+  color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.view-btn:not(.active):hover {
+  color: var(--color-text-primary);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Map View
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.map-view {
+  position: fixed;
+  top: var(--header-height, 180px);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.map-view.hidden {
+  display: none;
+}
+
+#leaflet-map {
+  width: 100%;
+  height: 100%;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Map Bottom Sheet
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.map-sheet {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  box-shadow: var(--shadow-xl);
+  transition: height 0.3s ease-out;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.map-sheet.collapsed {
+  height: 140px;
+}
+
+.map-sheet.expanded {
+  height: 50vh;
+}
+
+.sheet-handle-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-2) 0 var(--space-1);
+  cursor: pointer;
+  touch-action: none;
+}
+
+.sheet-handle {
+  width: 36px;
+  height: 5px;
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-full);
+}
+
+.locate-btn-float {
+  position: absolute;
+  right: 12px;
+  bottom: 160px; /* sits above the collapsed sheet */
+  z-index: 25;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-primary);
+  border: none;
+  border-radius: var(--radius-full);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  box-shadow: var(--shadow-lg);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.locate-btn-float:hover {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.locate-btn-float.locating {
+  color: var(--color-primary);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.sheet-content {
+  display: flex;
+  gap: var(--space-3);
+  padding: 0 var(--space-4) var(--space-5);
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.sheet-content::-webkit-scrollbar {
+  display: none;
+}
+
+.map-sheet.expanded .sheet-content {
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(50vh - 80px);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Sheet Cards
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.sheet-card {
+  flex: 0 0 150px;
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: border-color var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);
+}
+
+.sheet-card:hover {
+  transform: translateY(-1px);
+}
+
+.sheet-card.sheet-card-hl {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.sheet-card-rank {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+}
+
+.sheet-card-name {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.3;
+  margin-bottom: var(--space-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sheet-card-meta {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sheet-card-stats {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.sheet-card-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+}
+
+.sheet-card-stat i {
+  font-size: 9px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Leaflet Map Popup
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.map-popup .leaflet-popup-content-wrapper {
+  border-radius: var(--radius-md);
+  padding: 0;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.map-popup .leaflet-popup-content {
+  margin: 0;
+  width: auto !important;
+}
+
+.map-popup .leaflet-popup-tip-container {
+  margin-top: -1px;
+}
+
+.popup-card {
+  padding: var(--space-3) var(--space-4);
+  cursor: pointer;
+  min-width: 180px;
+  max-width: 240px;
+}
+
+.popup-card:hover {
+  background: var(--color-bg-secondary);
+}
+
+.popup-name {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+.popup-meta {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.popup-stats {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.popup-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.popup-stat i {
+  font-size: 9px;
+  color: var(--color-text-tertiary);
+}
+
+.popup-hint {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+  margin-top: var(--space-2);
+  text-align: center;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
    Empty State
    ───────────────────────────────────────────────────────────────────────────── */
 

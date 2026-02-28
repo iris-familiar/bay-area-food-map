@@ -8,6 +8,14 @@ let currentSort = 'engagement';
 let searchPlaceholderCount = '';
 let searchPlaceholderUpdated = '';
 
+// Map state
+let currentView = 'list';
+let leafletMap = null;
+let mapMarkers = [];
+let selectedMarkerId = null;
+let engagementQ33 = 0, engagementQ66 = 0;
+let locationMarker = null;
+
 function updateSearchPlaceholder() {
     const parts = [];
     if (searchPlaceholderCount) parts.push(searchPlaceholderCount);
@@ -24,6 +32,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Initialize modal swipe gesture
     initModalGesture();
+
+    // Initialize sheet swipe gesture
+    initSheetGesture();
 
     try {
         const v = '?v=' + Date.now();
@@ -180,6 +191,7 @@ function filterAndRender() {
     });
 
     renderRestaurants();
+    if (currentView === 'map') { renderMarkers(); renderSheetCards(); }
 }
 
 // ─── Rendering ────────────────────────────────────────────────────────────────
@@ -529,4 +541,220 @@ function generateChart(postDetails, timeseries) {
             </svg>
         </div>
     </div>`;
+}
+
+// ─── Map View ─────────────────────────────────────────────────────────────────
+
+function switchView(view) {
+    if (currentView === view) return;
+    currentView = view;
+
+    const mapEl = document.getElementById('map-view');
+    const mainEl = document.querySelector('.main-content');
+    const btns = document.querySelectorAll('.view-btn');
+
+    btns.forEach(b => b.classList.toggle('active', b.dataset.view === view));
+
+    if (view === 'map') {
+        mainEl.style.display = 'none';
+        mapEl.classList.remove('hidden');
+        // Measure header height so map positions correctly below it
+        const headerH = document.querySelector('.header').getBoundingClientRect().height;
+        document.documentElement.style.setProperty('--header-height', headerH + 'px');
+        mapEl.style.top = headerH + 'px';
+        initMap();
+        renderMarkers();
+        renderSheetCards();
+    } else {
+        mapEl.classList.add('hidden');
+        mainEl.style.display = '';
+    }
+}
+
+function initMap() {
+    if (leafletMap) return;
+    leafletMap = L.map('leaflet-map', { zoomControl: false }).setView([37.55, -122.05], 10);
+    L.control.zoom({ position: 'topright' }).addTo(leafletMap);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19,
+    }).addTo(leafletMap);
+    computeEngagementTiers();
+}
+
+function computeEngagementTiers() {
+    const vals = allRestaurants
+        .filter(r => r.lat && r.lng)
+        .map(r => r.total_engagement || 0)
+        .sort((a, b) => a - b);
+    if (vals.length === 0) return;
+    engagementQ33 = vals[Math.floor(vals.length * 0.33)];
+    engagementQ66 = vals[Math.floor(vals.length * 0.66)];
+}
+
+function markerRadius(engagement) {
+    if (engagement >= engagementQ66) return 8;
+    if (engagement >= engagementQ33) return 6;
+    return 4;
+}
+
+function renderMarkers() {
+    if (!leafletMap) return;
+    // Clear existing markers
+    mapMarkers.forEach(m => m.marker.remove());
+    mapMarkers = [];
+    selectedMarkerId = null;
+
+    filteredRestaurants.forEach(r => {
+        if (!r.lat || !r.lng) return;
+        const radius = markerRadius(r.total_engagement || 0);
+        const marker = L.circleMarker([r.lat, r.lng], {
+            radius,
+            fillColor: '#FF2442',
+            color: '#FFFFFF',
+            weight: 1.5,
+            fillOpacity: 0.85,
+        });
+
+        const popup = L.popup({ className: 'map-popup', closeButton: false, maxWidth: 260 })
+            .setContent(createMarkerPopupHTML(r));
+        marker.bindPopup(popup);
+        marker.on('click', () => selectMarker(r.id, marker));
+        marker.addTo(leafletMap);
+        mapMarkers.push({ id: r.id, marker, radius });
+    });
+}
+
+function createMarkerPopupHTML(r) {
+    const engagement = Math.round(r.total_engagement || 0);
+    const sentiment = r.sentiment_score != null ? Math.round(r.sentiment_score * 100) : '-';
+    const rating = r.google_rating || '-';
+    return `<div class="popup-card" onclick="openModal('${r.id}')">
+        <div class="popup-name">${r.name}</div>
+        <div class="popup-meta">${r.cuisine || '未知'} · ${r.city || r.area || '未知'}</div>
+        <div class="popup-stats">
+            <span class="popup-stat"><i class="fas fa-fire"></i> ${engagement}</span>
+            <span class="popup-stat"><i class="fas fa-heart"></i> ${sentiment}</span>
+            <span class="popup-stat"><i class="fas fa-star"></i> ${rating}</span>
+        </div>
+        <div class="popup-hint">点击查看详情</div>
+    </div>`;
+}
+
+function selectMarker(id, marker) {
+    // Restore previous selection
+    if (selectedMarkerId) {
+        const prev = mapMarkers.find(m => m.id === selectedMarkerId);
+        if (prev) {
+            prev.marker.setStyle({ fillColor: '#FF2442', color: '#FFFFFF', fillOpacity: 0.85 });
+            prev.marker.setRadius(prev.radius);
+        }
+    }
+    selectedMarkerId = id;
+    marker.setStyle({ fillColor: '#FFFFFF', color: '#FF2442', weight: 2.5, fillOpacity: 1 });
+    const entry = mapMarkers.find(m => m.id === id);
+    if (entry) marker.setRadius(entry.radius + 2);
+    scrollSheetToCard(id);
+}
+
+function scrollSheetToCard(id) {
+    const card = document.querySelector(`[data-rid="${id}"]`);
+    if (!card) return;
+    card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    card.classList.add('sheet-card-hl');
+    setTimeout(() => card.classList.remove('sheet-card-hl'), 1200);
+}
+
+function renderSheetCards() {
+    const container = document.getElementById('sheet-content');
+    if (!container) return;
+    if (filteredRestaurants.length === 0) {
+        container.innerHTML = '<p style="color:var(--color-text-tertiary);font-size:13px;padding:8px 0;">没有找到匹配的餐厅</p>';
+        return;
+    }
+    container.innerHTML = filteredRestaurants.map((r, i) => {
+        const engagement = Math.round(r.total_engagement || 0);
+        const sentiment = r.sentiment_score != null ? Math.round(r.sentiment_score * 100) : '-';
+        const rating = r.google_rating || '-';
+        const hasLocation = r.lat && r.lng ? '' : ' style="opacity:0.6"';
+        return `<div class="sheet-card" data-rid="${r.id}" onclick="sheetCardClick('${r.id}')"${hasLocation}>
+            <div class="sheet-card-rank">#${i + 1}</div>
+            <div class="sheet-card-name">${r.name}</div>
+            <div class="sheet-card-meta">${r.cuisine || '未知'} · ${r.city || r.area || '未知'}</div>
+            <div class="sheet-card-stats">
+                <span class="sheet-card-stat"><i class="fas fa-fire"></i> ${engagement}</span>
+                <span class="sheet-card-stat"><i class="fas fa-star"></i> ${rating}</span>
+            </div>
+        </div>`;
+    }).join('');
+}
+
+function sheetCardClick(id) {
+    const entry = mapMarkers.find(m => m.id === id);
+    if (entry) {
+        leafletMap.panTo(entry.marker.getLatLng(), { animate: true });
+        entry.marker.openPopup();
+        selectMarker(id, entry.marker);
+    } else {
+        // No location — open modal directly
+        openModal(id);
+    }
+}
+
+function toggleSheet() {
+    const sheet = document.getElementById('map-sheet');
+    if (!sheet) return;
+    sheet.classList.toggle('expanded');
+    sheet.classList.toggle('collapsed');
+}
+
+function initSheetGesture() {
+    const handleBar = document.querySelector('.sheet-handle-bar');
+    if (!handleBar) return;
+    let startY = 0;
+    handleBar.addEventListener('touchstart', e => {
+        startY = e.touches[0].clientY;
+    }, { passive: true });
+    handleBar.addEventListener('touchend', e => {
+        const delta = e.changedTouches[0].clientY - startY;
+        const sheet = document.getElementById('map-sheet');
+        if (!sheet) return;
+        if (delta < -50) { sheet.classList.remove('collapsed'); sheet.classList.add('expanded'); }
+        else if (delta > 50) { sheet.classList.remove('expanded'); sheet.classList.add('collapsed'); }
+    }, { passive: true });
+}
+
+// ─── Locate Me ────────────────────────────────────────────────────────────────
+
+function locateMe() {
+    if (!navigator.geolocation) {
+        alert('您的浏览器不支持定位功能');
+        return;
+    }
+    const btn = document.getElementById('locate-btn');
+    if (btn) btn.classList.add('locating');
+
+    navigator.geolocation.getCurrentPosition(pos => {
+        if (btn) btn.classList.remove('locating');
+        const { latitude: lat, longitude: lng } = pos.coords;
+        if (!leafletMap) return;
+        leafletMap.setView([lat, lng], 13);
+
+        // Remove previous location marker
+        if (locationMarker) locationMarker.remove();
+        locationMarker = L.circleMarker([lat, lng], {
+            radius: 8,
+            fillColor: '#007AFF',
+            color: '#FFFFFF',
+            weight: 2,
+            fillOpacity: 0.9,
+        }).addTo(leafletMap);
+        locationMarker.bindPopup('<div style="padding:8px;font-size:13px;font-weight:600;">📍 我在这里</div>').openPopup();
+    }, err => {
+        if (btn) btn.classList.remove('locating');
+        if (err.code === err.PERMISSION_DENIED) {
+            alert('请允许浏览器访问您的位置');
+        }
+    }, { timeout: 10000 });
 }

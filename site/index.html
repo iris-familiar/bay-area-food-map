@@ -11,6 +11,7 @@
     <meta property="og:image" content="https://bayeats.pages.dev/src/preview_og.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
@@ -39,9 +40,19 @@
                         </div>
                         <p class="header-subtitle">刷遍小红书，帮你找到湾区真正好吃的</p>
                     </div>
-                    <button onclick="clearFilters()" class="reset-btn" title="重置筛选">
-                        <i class="fas fa-rotate-left"></i>
-                    </button>
+                    <div class="header-actions">
+                        <div class="view-toggle" id="view-toggle">
+                            <button class="view-btn active" data-view="list" onclick="switchView('list')" title="列表视图">
+                                <i class="fas fa-list"></i>
+                            </button>
+                            <button class="view-btn" data-view="map" onclick="switchView('map')" title="地图视图">
+                                <i class="fas fa-map"></i>
+                            </button>
+                        </div>
+                        <button onclick="clearFilters()" class="reset-btn" title="重置筛选">
+                            <i class="fas fa-rotate-left"></i>
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Search -->
@@ -90,6 +101,20 @@
         </main>
     </div>
 
+    <!-- Map View -->
+    <div id="map-view" class="map-view hidden">
+        <div id="leaflet-map"></div>
+        <button id="locate-btn" onclick="locateMe()" class="locate-btn-float" title="定位到我的位置">
+            <i class="fas fa-location-crosshairs"></i>
+        </button>
+        <div id="map-sheet" class="map-sheet collapsed">
+            <div class="sheet-handle-bar" onclick="toggleSheet()">
+                <div class="sheet-handle"></div>
+            </div>
+            <div id="sheet-content" class="sheet-content"></div>
+        </div>
+    </div>
+
     <!-- Detail Modal -->
     <div id="detail-modal" class="modal-overlay" onclick="closeModal()">
         <div class="modal-sheet" onclick="event.stopPropagation()">
@@ -98,6 +123,7 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="src/app.js"></script>
 </body>
 </html>
