@@ -11663,7 +11663,8 @@
       "correction_applied": {
         "at": "2026-02-26T01:31:21.445Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
-      }
+      },
+      "_status": "rejected"
     },
     {
       "id": "pipeline_1772067300857_2g1w",
@@ -38841,5 +38842,5 @@
       }
     }
   ],
-  "verified_at": "2026-02-28T17:43:56.202Z"
+  "verified_at": "2026-02-28T21:56:48.791Z"
 }
