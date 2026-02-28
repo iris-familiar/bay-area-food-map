@@ -10259,21 +10259,8 @@
         "叉烧蛋肠粉",
         "山楂酸奶"
       ],
-      "sources": [
-        "66aee943000000000503b150"
-      ],
-      "post_details": [
-        {
-          "post_id": "66aee943000000000503b150",
-          "title": "湾区好吃的粤菜！啫啫煲超好吃😋",
-          "date": "2024-08-04",
-          "engagement": 234,
-          "context": "",
-          "adjusted_engagement": 234,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "timeseries": [
         {
           "month": "2026-02",
@@ -10292,7 +10279,8 @@
       "correction_applied": {
         "at": "2026-02-26T01:31:21.445Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
-      }
+      },
+      "_status": "duplicate_merged"
     },
     {
       "id": "pipeline_1772002538091_x7su",
@@ -30926,7 +30914,8 @@
       "correction_applied": {
         "at": "2026-02-26T01:31:21.456Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
-      }
+      },
+      "_status": "rejected"
     },
     {
       "id": "pipeline_1772067301543_8ndb",
@@ -31059,21 +31048,21 @@
     },
     {
       "id": "pipeline_1772067301543_ubpk",
-      "name": "啫煲",
+      "name": "啫煲 Full House Cafe",
       "name_en": "",
       "cuisine": "粤菜",
-      "area": "San Jose",
+      "area": "San Leandro",
       "region": "South Bay",
       "city": "San Jose",
       "price_range": "unknown",
-      "address": "1711 Branham Ln # A9, San Jose, CA 95118, USA",
-      "google_rating": 4.7,
-      "google_place_id": "ChIJSVOIhQo1joARbGYqp1MDJYc",
+      "address": "1456 E 14th St, San Leandro, CA 94577, USA",
+      "google_rating": 3.8,
+      "google_place_id": "ChIJI2h00JWPj4ARIoLRxqsRG4s",
       "lat": 37.2522901,
       "lng": -121.9096685,
       "verified": true,
-      "total_engagement": 328.2316255329459,
-      "mention_count": 1,
+      "total_engagement": 562.2316255329458,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -31082,7 +31071,8 @@
         "手撕鸡"
       ],
       "sources": [
-        "6817c20d0000000022005bf3"
+        "6817c20d0000000022005bf3",
+        "66aee943000000000503b150"
       ],
       "post_details": [
         {
@@ -31093,6 +31083,16 @@
           "context": "",
           "adjusted_engagement": 328.2316255329459,
           "restaurant_count_in_post": 6,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "66aee943000000000503b150",
+          "title": "湾区好吃的粤菜！啫啫煲超好吃😋",
+          "date": "2024-08-04",
+          "engagement": 234,
+          "context": "",
+          "adjusted_engagement": 234,
+          "restaurant_count_in_post": 1,
           "sentiment": "positive"
         }
       ],
