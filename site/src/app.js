@@ -725,6 +725,31 @@ function initSheetGesture() {
     }, { passive: true });
 }
 
+// ─── Location Permission Helpers ──────────────────────────────────────────────
+
+function getPlatform() {
+    const ua = navigator.userAgent;
+    if (/iPhone|iPad|iPod/.test(ua)) return 'ios';
+    if (/Android/.test(ua)) return 'android';
+    return 'desktop';
+}
+
+const LOCATION_INSTRUCTIONS = {
+    ios: '设置 → Safari → 位置\n→ 找到本网站 → 选择"允许"\n\n如仍无效：\n设置 → 隐私与安全性 → 定位服务\n→ Safari → 使用期间',
+    android: '浏览器地址栏 → 点击锁形图标\n→ 权限 → 位置 → 允许',
+    desktop: '点击地址栏左侧的锁形图标\n→ 位置 → 允许\n\n如已永久拒绝，请前往\n浏览器设置 → 网站权限 → 位置',
+};
+
+function showLocationDeniedModal() {
+    const modal = document.getElementById('location-denied-modal');
+    const steps = document.getElementById('location-denied-steps');
+    if (!modal || !steps) return;
+    steps.textContent = LOCATION_INSTRUCTIONS[getPlatform()];
+    modal.hidden = false;
+    modal.querySelector('.location-denied-close').onclick = () => modal.hidden = true;
+    modal.onclick = (e) => { if (e.target === modal) modal.hidden = true; };
+}
+
 // ─── Locate Me ────────────────────────────────────────────────────────────────
 
 function locateMe() {
@@ -754,7 +779,7 @@ function locateMe() {
     }, err => {
         if (btn) btn.classList.remove('locating');
         if (err.code === err.PERMISSION_DENIED) {
-            alert('请允许浏览器访问您的位置');
+            showLocationDeniedModal();
         }
     }, { timeout: 10000 });
 }

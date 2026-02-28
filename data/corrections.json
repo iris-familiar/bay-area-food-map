@@ -727,7 +727,8 @@
     "id": "pipeline_1772067300857_xb0s",
     "name": "八九门",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "火锅",
+      "_status": "rejected"
     },
     "reason": "cuisine normalization: Hot Pot → 火锅"
   },

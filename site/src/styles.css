@@ -1015,6 +1015,8 @@ body {
 #leaflet-map {
   width: 100%;
   height: 100%;
+  position: relative; /* Leaflet sets this at runtime; explicit here for clarity */
+  z-index: 1;         /* Creates stacking context, contains Leaflet's internal panes */
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -1272,4 +1274,38 @@ body {
 
 .empty-text {
   font-size: var(--font-size-md);
+}
+
+/* Location denied modal */
+.location-denied-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.location-denied-modal[hidden] { display: none; }
+.location-denied-sheet {
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  padding: 28px 24px 40px;
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  text-align: center;
+}
+.location-denied-close {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: none; border: none;
+  font-size: 18px; color: #888; cursor: pointer;
+}
+.location-denied-icon { font-size: 40px; margin-bottom: 12px; }
+.location-denied-title { font-size: 17px; font-weight: 700; margin: 0 0 12px; }
+.location-denied-steps {
+  font-size: 14px; color: #444; line-height: 1.7;
+  white-space: pre-line; margin: 0;
+  text-align: left;
 }
