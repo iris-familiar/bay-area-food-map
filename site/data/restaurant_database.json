@@ -8436,11 +8436,11 @@
       "price_range": "unknown",
       "address": "43844 Pacific Commons Blvd, Fremont, CA 94538, USA",
       "google_rating": 4.5,
-      "google_place_id": "ChIJTzAXlcHHj4AReheB6lVYEYY",
+      "google_place_id": "ChIJU0V_bY_Hj4ARlIm9-ax2loc",
       "lat": 37.5014554,
       "lng": -121.9697516,
       "verified": true,
-      "total_engagement": 439.44504337239835,
+      "total_engagement": 238.33304448274092,
       "mention_count": 4,
       "sentiment_score": 0.99,
       "sentiment_details": {},
@@ -8458,31 +8458,11 @@
       ],
       "sources": [
         "6976e996000000001a021721",
-        "669597e00000000025000819",
-        "67ba13000000000007036599",
-        "69a27a53000000001a02c7b8"
+        "699121aa000000000e03d435",
+        "697ac6da00000000210286f4",
+        "698823580000000015038d11"
       ],
       "post_details": [
-        {
-          "post_id": "67ba13000000000007036599",
-          "title": "湾区探店｜吐血整理火锅红黑榜！全真实测评😎",
-          "date": "2025-02-22",
-          "engagement": 495,
-          "context": "",
-          "adjusted_engagement": 221.37072977247917,
-          "restaurant_count_in_post": 5,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "669597e00000000025000819",
-          "title": "湾区火锅天花板",
-          "date": "2024-07-15",
-          "engagement": 452,
-          "context": "",
-          "adjusted_engagement": 184.5282272896661,
-          "restaurant_count_in_post": 6,
-          "sentiment": "positive"
-        },
         {
           "post_id": "6976e996000000001a021721",
           "title": "湾区蓉城火锅",
@@ -8494,14 +8474,34 @@
           "sentiment": "positive"
         },
         {
-          "post_id": "69a27a53000000001a02c7b8",
-          "title": "湾区小夫妻的一二月外食",
-          "date": "2026-02-28",
-          "engagement": 39,
-          "adjusted_engagement": 12.33288287465668,
-          "restaurant_count_in_post": 10,
+          "post_id": "699121aa000000000e03d435",
+          "title": "五刷蓉城 | 我已经完全掌握点菜秘诀了",
+          "date": "2026-02-15",
+          "engagement": 14,
+          "adjusted_engagement": 14,
+          "restaurant_count_in_post": 1,
           "context": "",
-          "sentiment": "neutral"
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "697ac6da00000000210286f4",
+          "title": "📍 Fremont 蓉城老火锅｜从夯到拉 实吃测评",
+          "date": "2026-01-30",
+          "engagement": 242,
+          "adjusted_engagement": 171.1198410471445,
+          "restaurant_count_in_post": 2,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "698823580000000015038d11",
+          "title": "湾区火锅赛道又出黑马",
+          "date": "2026-02-08",
+          "engagement": 32,
+          "context": "",
+          "adjusted_engagement": 32,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
         }
       ],
       "timeseries": [
@@ -22680,43 +22680,8 @@
         "鸭血",
         "金汤花胶鸡锅底"
       ],
-      "sources": [
-        "6976e996000000001a021721",
-        "698823580000000015038d11",
-        "697ac6da00000000210286f4"
-      ],
-      "post_details": [
-        {
-          "post_id": "697ac6da00000000210286f4",
-          "title": "📍 Fremont 蓉城老火锅｜从夯到拉 实吃测评",
-          "date": "2026-01-30",
-          "engagement": 242,
-          "adjusted_engagement": 171.1198410471445,
-          "restaurant_count_in_post": 2,
-          "context": "",
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "698823580000000015038d11",
-          "title": "湾区火锅赛道又出黑马",
-          "date": "2026-02-08",
-          "engagement": 32,
-          "context": "",
-          "adjusted_engagement": 32,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "6976e996000000001a021721",
-          "title": "湾区蓉城火锅",
-          "date": "2026-01-26",
-          "engagement": 30,
-          "context": "",
-          "adjusted_engagement": 21.213203435596423,
-          "restaurant_count_in_post": 2,
-          "sentiment": "positive"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "timeseries": [
         {
           "month": "2026-02",
@@ -22735,7 +22700,8 @@
       "correction_applied": {
         "at": "2026-02-26T01:31:21.453Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
-      }
+      },
+      "_status": "duplicate_merged"
     },
     {
       "id": "pipeline_1772067300875_jr64",
@@ -29666,7 +29632,8 @@
       "correction_applied": {
         "at": "2026-02-26T01:31:21.456Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
-      }
+      },
+      "_status": "rejected"
     },
     {
       "id": "pipeline_1772067301543_cgsi",
@@ -37361,33 +37328,20 @@
       "price_range": "unknown",
       "address": "7777 Hwy 65 NE Suite A, Spring Lake Park, MN 55432, USA",
       "google_rating": 4.5,
-      "google_place_id": "ChIJnaOBBpgvs1IRy_YOjgMN1Lk",
+      "google_place_id": "ChIJU0V_bY_Hj4ARlIm9-ax2loc",
       "lat": 45.10946149999999,
       "lng": -93.2425696,
       "verified": true,
-      "total_engagement": 14,
-      "mention_count": 1,
+      "total_engagement": 238.33304448274092,
+      "mention_count": 4,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "花胶鸡的锅底",
         "肉的转盘"
       ],
-      "sources": [
-        "699121aa000000000e03d435"
-      ],
-      "post_details": [
-        {
-          "post_id": "699121aa000000000e03d435",
-          "title": "五刷蓉城 | 我已经完全掌握点菜秘诀了",
-          "date": "2026-02-15",
-          "engagement": 14,
-          "adjusted_engagement": 14,
-          "restaurant_count_in_post": 1,
-          "context": "",
-          "sentiment": "positive"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "timeseries": [
         {
           "month": "2026-02",
@@ -37402,7 +37356,8 @@
         "source": "daily_pipeline",
         "source_post": "699121aa000000000e03d435",
         "needs_review": false
-      }
+      },
+      "_status": "duplicate_merged"
     },
     {
       "id": "pipeline_1772170235841_9erk",
@@ -40274,5 +40229,5 @@
       }
     }
   ],
-  "verified_at": "2026-03-01T06:31:32.882Z"
+  "verified_at": "2026-03-01T17:57:39.043Z"
 }
