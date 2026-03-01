@@ -312,98 +312,8 @@
       "price_range": "",
       "total_engagement": 2771.6623331648875,
       "mention_count": 11,
-      "sources": [
-        "697a6fea000000000b008c26",
-        "675f38fb0000000001028bc0",
-        "6923764a000000001f00cd7c",
-        "67ba7dae00000000290119d8",
-        "6917cd5900000000050000d4",
-        "67cc8dc9000000002602f8be",
-        "69804d110000000028009567",
-        "68546bb5000000000d01bbdb"
-      ],
-      "post_details": [
-        {
-          "post_id": "67ba7dae00000000290119d8",
-          "title": "湾区中餐超全超真诚推荐",
-          "date": "2025-02-23",
-          "engagement": 4190,
-          "context": "",
-          "adjusted_engagement": 1209.548813952266,
-          "restaurant_count_in_post": 12,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "697a6fea000000000b008c26",
-          "title": "南湾正宗沸腾鱼",
-          "date": "2026-01-28",
-          "engagement": 564,
-          "context": "",
-          "adjusted_engagement": 564,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "675f38fb0000000001028bc0",
-          "title": "降温了！来Fremont吃湾区最正宗沸腾鱼！😭",
-          "date": "2024-12-15",
-          "engagement": 465,
-          "context": "",
-          "adjusted_engagement": 465,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "6923764a000000001f00cd7c",
-          "title": "在湾区吃过的最好的烤活鱼",
-          "date": "2025-11-23",
-          "engagement": 291,
-          "context": "",
-          "adjusted_engagement": 291,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "68546bb5000000000d01bbdb",
-          "title": "🐟湾区活鱼天花板！麻辣诱惑的沸腾活鱼绝了！",
-          "date": "",
-          "engagement": 72,
-          "adjusted_engagement": 72,
-          "restaurant_count_in_post": 1,
-          "context": "",
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "69804d110000000028009567",
-          "title": "湾区探店｜活鱼",
-          "date": "2026-02-02",
-          "engagement": 62,
-          "context": "",
-          "adjusted_engagement": 62,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "67cc8dc9000000002602f8be",
-          "title": "湾区吃货系列❤️川菜湖南菜，墙推！！",
-          "date": "2025-03-08",
-          "engagement": 135,
-          "context": "",
-          "adjusted_engagement": 55.11351921262151,
-          "restaurant_count_in_post": 6,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "6917cd5900000000050000d4",
-          "title": "秋冬进补｜湾区超香烤全羊🐑",
-          "date": "2025-11-15",
-          "engagement": 53,
-          "context": "",
-          "adjusted_engagement": 53,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "google_rating": 3.9,
       "google_place_id": "ChIJTSfQ_8G_j4ARvhPDPCzAMfQ",
       "address": "34420 Fremont Blvd, Fremont, CA 94555, USA",
@@ -445,7 +355,8 @@
         }
       ],
       "lat": 37.5756031,
-      "lng": -122.0397982
+      "lng": -122.0397982,
+      "_status": "duplicate_merged"
     },
     {
       "id": "r004",
@@ -2817,7 +2728,7 @@
     },
     {
       "id": "r030",
-      "name": "沪鼎记",
+      "name": "沪鼎记 Hu Din Ji Shanghai Bistro",
       "name_en": "",
       "cuisine": "上海菜",
       "area": "Cupertino",
@@ -2850,9 +2761,9 @@
           "sentiment": "positive"
         }
       ],
-      "google_rating": 4.3,
-      "google_place_id": "ChIJhafzm7y1j4ARgdm5WGVYhhk",
-      "address": "19634 Stevens Creek Blvd, Cupertino, CA 95014, USA",
+      "google_rating": 4.2,
+      "google_place_id": "ChIJmdsuxk-_j4ARtQ5wZkg6sVk",
+      "address": "39169 Cedar Blvd, Newark, CA 94560, USA",
       "verified": true,
       "sentiment_score": 1,
       "sentiment_details": {
@@ -2896,8 +2807,9 @@
           "engagement": 387
         }
       ],
-      "lat": 37.3223899,
-      "lng": -122.0176403
+      "lat": 37.5231047,
+      "lng": -122.0058949,
+      "google_name": "Hu Din Ji Shanghai Bistro"
     },
     {
       "id": "r031",
@@ -15656,12 +15568,12 @@
       "price_range": "unknown",
       "address": "19672 Stevens Creek Blvd, Cupertino, CA 95014, USA",
       "google_rating": 4.3,
-      "google_place_id": "ChIJGRHBh_W1j4ARmmTnQKWLByc",
+      "google_place_id": "ChIJTSfQ_8G_j4ARvhPDPCzAMfQ",
       "lat": 37.3217104,
       "lng": -122.0174991,
       "verified": true,
-      "total_engagement": 398.18890174337696,
-      "mention_count": 2,
+      "total_engagement": 3169.851234908265,
+      "mention_count": 10,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -15671,8 +15583,16 @@
         "重庆小面"
       ],
       "sources": [
+        "65f63b6f00000000140071bb",
         "68a51576000000001d03a6af",
-        "65f63b6f00000000140071bb"
+        "67ba7dae00000000290119d8",
+        "697a6fea000000000b008c26",
+        "675f38fb0000000001028bc0",
+        "6923764a000000001f00cd7c",
+        "68546bb5000000000d01bbdb",
+        "69804d110000000028009567",
+        "67cc8dc9000000002602f8be",
+        "6917cd5900000000050000d4"
       ],
       "post_details": [
         {
@@ -15693,6 +15613,86 @@
           "context": "",
           "adjusted_engagement": 144.33756729740645,
           "restaurant_count_in_post": 3,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "67ba7dae00000000290119d8",
+          "title": "湾区中餐超全超真诚推荐",
+          "date": "2025-02-23",
+          "engagement": 4190,
+          "context": "",
+          "adjusted_engagement": 1209.548813952266,
+          "restaurant_count_in_post": 12,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "697a6fea000000000b008c26",
+          "title": "南湾正宗沸腾鱼",
+          "date": "2026-01-28",
+          "engagement": 564,
+          "context": "",
+          "adjusted_engagement": 564,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "675f38fb0000000001028bc0",
+          "title": "降温了！来Fremont吃湾区最正宗沸腾鱼！😭",
+          "date": "2024-12-15",
+          "engagement": 465,
+          "context": "",
+          "adjusted_engagement": 465,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6923764a000000001f00cd7c",
+          "title": "在湾区吃过的最好的烤活鱼",
+          "date": "2025-11-23",
+          "engagement": 291,
+          "context": "",
+          "adjusted_engagement": 291,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68546bb5000000000d01bbdb",
+          "title": "🐟湾区活鱼天花板！麻辣诱惑的沸腾活鱼绝了！",
+          "date": "",
+          "engagement": 72,
+          "adjusted_engagement": 72,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "69804d110000000028009567",
+          "title": "湾区探店｜活鱼",
+          "date": "2026-02-02",
+          "engagement": 62,
+          "context": "",
+          "adjusted_engagement": 62,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "67cc8dc9000000002602f8be",
+          "title": "湾区吃货系列❤️川菜湖南菜，墙推！！",
+          "date": "2025-03-08",
+          "engagement": 135,
+          "context": "",
+          "adjusted_engagement": 55.11351921262151,
+          "restaurant_count_in_post": 6,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6917cd5900000000050000d4",
+          "title": "秋冬进补｜湾区超香烤全羊🐑",
+          "date": "2025-11-15",
+          "engagement": 53,
+          "context": "",
+          "adjusted_engagement": 53,
+          "restaurant_count_in_post": 1,
           "sentiment": "positive"
         }
       ],

@@ -1176,7 +1176,124 @@
     "id": "pipeline_1772067300868_fh2p",
     "name": "麻辣诱惑",
     "corrections": {
-      "cuisine": "川菜"
+      "cuisine": "川菜",
+      "post_details": [
+        {
+          "post_id": "65f63b6f00000000140071bb",
+          "title": "湾区探店｜吐血整理川菜红黑榜！看这篇就够啦",
+          "date": "2024-03-17",
+          "engagement": 359,
+          "context": "",
+          "adjusted_engagement": 253.85133444597054,
+          "restaurant_count_in_post": 2,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68a51576000000001d03a6af",
+          "title": "南湾组川菜/湘菜局（求口味接近的朋友）",
+          "date": "2025-08-20",
+          "engagement": 250,
+          "context": "",
+          "adjusted_engagement": 144.33756729740645,
+          "restaurant_count_in_post": 3,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "67ba7dae00000000290119d8",
+          "title": "湾区中餐超全超真诚推荐",
+          "date": "2025-02-23",
+          "engagement": 4190,
+          "context": "",
+          "adjusted_engagement": 1209.548813952266,
+          "restaurant_count_in_post": 12,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "697a6fea000000000b008c26",
+          "title": "南湾正宗沸腾鱼",
+          "date": "2026-01-28",
+          "engagement": 564,
+          "context": "",
+          "adjusted_engagement": 564,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "675f38fb0000000001028bc0",
+          "title": "降温了！来Fremont吃湾区最正宗沸腾鱼！😭",
+          "date": "2024-12-15",
+          "engagement": 465,
+          "context": "",
+          "adjusted_engagement": 465,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6923764a000000001f00cd7c",
+          "title": "在湾区吃过的最好的烤活鱼",
+          "date": "2025-11-23",
+          "engagement": 291,
+          "context": "",
+          "adjusted_engagement": 291,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68546bb5000000000d01bbdb",
+          "title": "🐟湾区活鱼天花板！麻辣诱惑的沸腾活鱼绝了！",
+          "date": "",
+          "engagement": 72,
+          "adjusted_engagement": 72,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "69804d110000000028009567",
+          "title": "湾区探店｜活鱼",
+          "date": "2026-02-02",
+          "engagement": 62,
+          "context": "",
+          "adjusted_engagement": 62,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "67cc8dc9000000002602f8be",
+          "title": "湾区吃货系列❤️川菜湖南菜，墙推！！",
+          "date": "2025-03-08",
+          "engagement": 135,
+          "context": "",
+          "adjusted_engagement": 55.11351921262151,
+          "restaurant_count_in_post": 6,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6917cd5900000000050000d4",
+          "title": "秋冬进补｜湾区超香烤全羊🐑",
+          "date": "2025-11-15",
+          "engagement": 53,
+          "context": "",
+          "adjusted_engagement": 53,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        }
+      ],
+      "total_engagement": 3169.851234908265,
+      "mention_count": 10,
+      "sources": [
+        "65f63b6f00000000140071bb",
+        "68a51576000000001d03a6af",
+        "67ba7dae00000000290119d8",
+        "697a6fea000000000b008c26",
+        "675f38fb0000000001028bc0",
+        "6923764a000000001f00cd7c",
+        "68546bb5000000000d01bbdb",
+        "69804d110000000028009567",
+        "67cc8dc9000000002602f8be",
+        "6917cd5900000000050000d4"
+      ],
+      "google_place_id": "ChIJTSfQ_8G_j4ARvhPDPCzAMfQ"
     },
     "reason": "cuisine normalization: Sichuan → 川菜"
   },
@@ -3872,6 +3989,26 @@
     "id": "r041",
     "corrections": {
       "name": "Dish N Dash"
+    }
+  },
+  {
+    "id": "r030",
+    "corrections": {
+      "name": "沪鼎记 Hu Din Ji Shanghai Bistro",
+      "address": "39169 Cedar Blvd, Newark, CA 94560, USA",
+      "google_rating": 4.2,
+      "google_name": "Hu Din Ji Shanghai Bistro",
+      "lat": 37.5231047,
+      "lng": -122.0058949,
+      "google_place_id": "ChIJmdsuxk-_j4ARtQ5wZkg6sVk"
+    }
+  },
+  {
+    "id": "r003",
+    "corrections": {
+      "_status": "duplicate_merged",
+      "post_details": [],
+      "sources": []
     }
   }
 ]
