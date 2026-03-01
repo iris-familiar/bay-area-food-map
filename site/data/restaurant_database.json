@@ -11355,15 +11355,15 @@
       "name": "Hong Kong BBQ",
       "name_en": "",
       "cuisine": "粤菜",
-      "area": "San Francisco",
+      "area": "Castro Valley",
       "region": "San Francisco",
       "city": "San Francisco",
       "price_range": "unknown",
-      "address": "295 Orizaba Ave, San Francisco, CA 94132, USA",
-      "google_rating": 5,
-      "google_place_id": "ChIJoy_AOjF8j4ARmhhm5h2kNhA",
-      "lat": 37.7141127,
-      "lng": -122.4629032,
+      "address": "20918 Redwood Rd, Castro Valley, CA 94546, USA",
+      "google_rating": 4.2,
+      "google_place_id": "ChIJc6UUyi-Sj4ARWiZ8Z1EvabI",
+      "lat": 37.6943086,
+      "lng": -122.0735949,
       "verified": true,
       "total_engagement": 295.57063453597686,
       "mention_count": 1,
@@ -11406,7 +11406,8 @@
       "correction_applied": {
         "at": "2026-02-26T01:31:21.445Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
-      }
+      },
+      "google_name": "Hong Kong BBQ Restaurant"
     },
     {
       "id": "pipeline_1772067300857_nbmx",
@@ -12554,8 +12555,8 @@
       "lat": 37.4565375,
       "lng": -122.1883738,
       "verified": true,
-      "total_engagement": 1375.7897250386936,
-      "mention_count": 4,
+      "total_engagement": 792.2125787124467,
+      "mention_count": 3,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -12572,10 +12573,9 @@
         "Panna Cotta"
       ],
       "sources": [
-        "673d265b0000000007034919",
+        "66720a88000000000d00cc8a",
         "68c37fad000000001d02d992",
-        "69632b87000000000e03e522",
-        "66720a88000000000d00cc8a"
+        "69632b87000000000e03e522"
       ],
       "post_details": [
         {
@@ -12586,16 +12586,6 @@
           "adjusted_engagement": 625.082394568908,
           "restaurant_count_in_post": 2,
           "context": "",
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "673d265b0000000007034919",
-          "title": "三访｜湾区今年最爱的韩料定食",
-          "date": "2024-11-19",
-          "engagement": 1544,
-          "context": "",
-          "adjusted_engagement": 583.5771463262469,
-          "restaurant_count_in_post": 7,
           "sentiment": "positive"
         },
         {
@@ -13398,7 +13388,7 @@
     },
     {
       "id": "pipeline_1772067300857_ts76",
-      "name": "BBQ Factory",
+      "name": "烟火里 BBQ Factory",
       "name_en": "",
       "cuisine": "烧烤",
       "area": "Fremont",
@@ -24959,29 +24949,18 @@
       "lat": 37.794115,
       "lng": -122.404942,
       "verified": true,
-      "total_engagement": 2326.7096319853204,
-      "mention_count": 3,
+      "total_engagement": 476.91829240131204,
+      "mention_count": 2,
       "sentiment_score": 0.5,
       "sentiment_details": {},
       "recommendations": [
         "Fried squab"
       ],
       "sources": [
-        "6747f2e60000000002028fcb",
-        "68c5f2a9000000001b03f2e6",
-        "65f77bfe000000001202398f"
+        "65f77bfe000000001202398f",
+        "68c5f2a9000000001b03f2e6"
       ],
       "post_details": [
-        {
-          "post_id": "6747f2e60000000002028fcb",
-          "title": "旧金山四大天王four kings终于排上了🥹",
-          "date": "2024-11-28",
-          "engagement": 2616,
-          "context": "",
-          "adjusted_engagement": 1849.7913395840083,
-          "restaurant_count_in_post": 2,
-          "sentiment": "neutral"
-        },
         {
           "post_id": "65f77bfe000000001202398f",
           "title": "N访｜湾区只有一家传统早茶让我反复想吃",

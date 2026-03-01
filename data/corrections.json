@@ -252,7 +252,8 @@
     "id": "r025",
     "name": "Nom Nom Bistro",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "粤菜",
+      "name": "嚐满 Nom Nom Bistro"
     },
     "reason": "cuisine normalization: 港式 → 粤菜"
   },
@@ -276,7 +277,8 @@
     "id": "r059",
     "name": "锦鲤缘",
     "corrections": {
-      "cuisine": "江浙菜"
+      "cuisine": "江浙菜",
+      "_status": "rejected"
     },
     "reason": "cuisine normalization: 淮扬菜 → 江浙菜"
   },
@@ -687,7 +689,14 @@
     "id": "pipeline_1772067300857_39ll",
     "name": "Hong Kong BBQ",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "粤菜",
+      "area": "Castro Valley",
+      "address": "20918 Redwood Rd, Castro Valley, CA 94546, USA",
+      "google_rating": 4.2,
+      "google_name": "Hong Kong BBQ Restaurant",
+      "lat": 37.6943086,
+      "lng": -122.0735949,
+      "google_place_id": "ChIJc6UUyi-Sj4ARWiZ8Z1EvabI"
     },
     "reason": "cuisine normalization: Cantonese → 粤菜"
   },
@@ -832,7 +841,46 @@
     "id": "pipeline_1772067300857_n02n",
     "name": "Drunken Monk",
     "corrections": {
-      "cuisine": "日料"
+      "cuisine": "日料",
+      "post_details": [
+        {
+          "post_id": "66720a88000000000d00cc8a",
+          "title": "居酒屋｜南湾我心目中的Top Two",
+          "date": "2024-06-18",
+          "engagement": 884,
+          "adjusted_engagement": 625.082394568908,
+          "restaurant_count_in_post": 2,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68c37fad000000001d02d992",
+          "title": "湾区周末｜百元档Sushi",
+          "date": "2025-09-12",
+          "engagement": 331,
+          "context": "",
+          "adjusted_engagement": 135.13018414353866,
+          "restaurant_count_in_post": 6,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "69632b87000000000e03e522",
+          "title": "攒了2年的湾区美食🍣日料篇",
+          "date": "2026-01-11",
+          "engagement": 64,
+          "adjusted_engagement": 32,
+          "restaurant_count_in_post": 4,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "total_engagement": 792.2125787124467,
+      "mention_count": 3,
+      "sources": [
+        "66720a88000000000d00cc8a",
+        "68c37fad000000001d02d992",
+        "69632b87000000000e03e522"
+      ]
     },
     "reason": "cuisine normalization: Izakaya → 日料"
   },
@@ -912,7 +960,8 @@
     "id": "pipeline_1772067300857_ts76",
     "name": "BBQ Factory",
     "corrections": {
-      "cuisine": "烧烤"
+      "cuisine": "烧烤",
+      "name": "烟火里 BBQ Factory"
     },
     "reason": "cuisine normalization: 烤串 → 烧烤"
   },
@@ -1199,16 +1248,6 @@
           "sentiment": "positive"
         },
         {
-          "post_id": "67ba7dae00000000290119d8",
-          "title": "湾区中餐超全超真诚推荐",
-          "date": "2025-02-23",
-          "engagement": 4190,
-          "context": "",
-          "adjusted_engagement": 1209.548813952266,
-          "restaurant_count_in_post": 12,
-          "sentiment": "positive"
-        },
-        {
           "post_id": "697a6fea000000000b008c26",
           "title": "南湾正宗沸腾鱼",
           "date": "2026-01-28",
@@ -1279,12 +1318,11 @@
           "sentiment": "positive"
         }
       ],
-      "total_engagement": 3169.851234908265,
-      "mention_count": 10,
+      "total_engagement": 1960.3024209559983,
+      "mention_count": 9,
       "sources": [
         "65f63b6f00000000140071bb",
         "68a51576000000001d03a6af",
-        "67ba7dae00000000290119d8",
         "697a6fea000000000b008c26",
         "675f38fb0000000001028bc0",
         "6923764a000000001f00cd7c",
@@ -1875,7 +1913,8 @@
     "id": "pipeline_1772067300874_xc7b",
     "name": "王家卫",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "中餐",
+      "name": "王家味 Wang Jia Wei"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -2291,7 +2330,8 @@
     "id": "pipeline_1772067301116_u1s1",
     "name": "特别面条汤 (Special Noodle Soup)",
     "corrections": {
-      "cuisine": "潮汕菜"
+      "cuisine": "潮汕菜",
+      "name": "和记鸡汤米线 Special Noodle Soup"
     },
     "reason": "cuisine normalization: Chaoshan (Teochew) → 潮汕菜"
   },
@@ -2387,7 +2427,35 @@
     "id": "pipeline_1772067301117_u093",
     "name": "Lingnan Restaurant (岭南小馆)",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "粤菜",
+      "post_details": [
+        {
+          "post_id": "65f77bfe000000001202398f",
+          "title": "N访｜湾区只有一家传统早茶让我反复想吃",
+          "date": "2024-03-17",
+          "engagement": 529,
+          "context": "",
+          "adjusted_engagement": 305.41829240131204,
+          "restaurant_count_in_post": 3,
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "68c5f2a9000000001b03f2e6",
+          "title": "私藏的旧金山老牌中餐🥢每家都好吃到跳舞",
+          "date": "2025-09-14",
+          "engagement": 343,
+          "context": "",
+          "adjusted_engagement": 171.5,
+          "restaurant_count_in_post": 4,
+          "sentiment": "neutral"
+        }
+      ],
+      "total_engagement": 476.91829240131204,
+      "mention_count": 2,
+      "sources": [
+        "65f77bfe000000001202398f",
+        "68c5f2a9000000001b03f2e6"
+      ]
     },
     "reason": "cuisine normalization: Cantonese → 粤菜"
   },
@@ -2493,7 +2561,8 @@
     "id": "pipeline_1772067301117_jeu4",
     "name": "香小馆 (Fremont Shang Cafe)",
     "corrections": {
-      "cuisine": "川菜"
+      "cuisine": "川菜",
+      "name": "香小馆 Fremont Shang Cafe"
     },
     "reason": "cuisine normalization: Sichuan / Hunan → 川菜"
   },
@@ -2501,7 +2570,8 @@
     "id": "pipeline_1772067301117_dmw1",
     "name": "福牛堂 (Noodle Talk Home Cuisine)",
     "corrections": {
-      "cuisine": "湘菜"
+      "cuisine": "湘菜",
+      "name": "福牛堂 Noodle Talk Home Cuisine"
     },
     "reason": "cuisine normalization: Hunan / Noodles → 湘菜"
   },
@@ -2621,7 +2691,8 @@
     "id": "pipeline_1772067301117_re8i",
     "name": "鱼你在一起 (Yu Ni Zai Yi Qi)",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "中餐",
+      "name": "鱼你在一起 Fish With You"
     },
     "reason": "cuisine normalization: Chinese / Sauerkraut Fish → 中餐"
   },
@@ -4005,6 +4076,107 @@
   },
   {
     "id": "r003",
+    "corrections": {
+      "_status": "duplicate_merged",
+      "post_details": [],
+      "sources": []
+    }
+  },
+  {
+    "id": "pipeline_1772170235842_oafo",
+    "corrections": {
+      "name": "人间烟火小酒馆 Dynasty BBQ"
+    }
+  },
+  {
+    "id": "pipeline_1772091355884_x5jl",
+    "corrections": {
+      "name": "蓉城 Rong Cheng"
+    }
+  },
+  {
+    "id": "pipeline_1771954753565_39ca",
+    "corrections": {
+      "name": "你瞅啥铁锅炖",
+      "google_rating": 3.8
+    }
+  },
+  {
+    "id": "r029",
+    "corrections": {
+      "name": "鱼你在一起 Fish With You",
+      "name_en": ""
+    }
+  },
+  {
+    "id": "r065",
+    "corrections": {
+      "post_details": [
+        {
+          "post_id": "6934dc5b000000000d00c98b",
+          "title": "湾区最好吃的川湘菜",
+          "date": "2025-12-06",
+          "engagement": 43,
+          "context": "",
+          "adjusted_engagement": 43,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6882fafa000000001c035c50",
+          "title": "MTV新晋川湘家常菜🔥帮你们试过了超级棒😋",
+          "date": "2025-07-25",
+          "engagement": 335,
+          "context": "",
+          "adjusted_engagement": 335,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "693746bc000000001b0209b5",
+          "title": "终于找到真正川湘味了❗️湾区这家值得收藏",
+          "date": "2025-12-08",
+          "engagement": 174,
+          "context": "",
+          "adjusted_engagement": 174,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "688960da0000000023020ce4",
+          "title": "湾区MTV宝藏下饭川湘菜🥬咸蛋黄豆苗一绝🥰",
+          "date": "2025-07-29",
+          "engagement": 165,
+          "context": "",
+          "adjusted_engagement": 165,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68d61f76000000000b03e9ad",
+          "title": "Mountain View新开了一家中餐",
+          "date": "2025-09-25",
+          "engagement": 72,
+          "context": "",
+          "adjusted_engagement": 72,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        }
+      ],
+      "total_engagement": 789,
+      "mention_count": 5,
+      "sources": [
+        "6934dc5b000000000d00c98b",
+        "6882fafa000000001c035c50",
+        "693746bc000000001b0209b5",
+        "688960da0000000023020ce4",
+        "68d61f76000000000b03e9ad"
+      ],
+      "google_place_id": "ChIJK8pvbKO3j4ARsm7k_GXRY8U"
+    }
+  },
+  {
+    "id": "r035",
     "corrections": {
       "_status": "duplicate_merged",
       "post_details": [],
