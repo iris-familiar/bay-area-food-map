@@ -165,6 +165,13 @@ function clearFilters() {
     filterAndRender();
 }
 
+let searchDebounceTimer = null;
+
+function debouncedSearch() {
+    clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = setTimeout(applySearch, 250);
+}
+
 function applySearch() {
     filterAndRender();
 }
@@ -655,6 +662,7 @@ function selectMarker(id, marker) {
     marker.setStyle({ fillColor: '#FFFFFF', color: '#FF2442', weight: 2.5, fillOpacity: 1 });
     const entry = mapMarkers.find(m => m.id === id);
     if (entry) marker.setRadius(entry.radius + 2);
+    leafletMap.panTo(marker.getLatLng(), { animate: true });
     scrollSheetToCard(id);
 }
 
@@ -688,6 +696,7 @@ function renderSheetCards() {
             </div>
         </div>`;
     }).join('');
+    container.scrollLeft = 0;
 }
 
 function sheetCardClick(id) {

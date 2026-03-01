@@ -358,7 +358,58 @@
     "id": "pipeline_1771918463123_jssi",
     "name": "湾区蓉城火锅",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "火锅",
+      "post_details": [
+        {
+          "post_id": "6976e996000000001a021721",
+          "title": "湾区蓉城火锅",
+          "date": "2026-01-26",
+          "engagement": 30,
+          "context": "",
+          "adjusted_engagement": 21.213203435596423,
+          "restaurant_count_in_post": 2,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "699121aa000000000e03d435",
+          "title": "五刷蓉城 | 我已经完全掌握点菜秘诀了",
+          "date": "2026-02-15",
+          "engagement": 14,
+          "adjusted_engagement": 14,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "697ac6da00000000210286f4",
+          "title": "📍 Fremont 蓉城老火锅｜从夯到拉 实吃测评",
+          "date": "2026-01-30",
+          "engagement": 242,
+          "adjusted_engagement": 171.1198410471445,
+          "restaurant_count_in_post": 2,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "698823580000000015038d11",
+          "title": "湾区火锅赛道又出黑马",
+          "date": "2026-02-08",
+          "engagement": 32,
+          "context": "",
+          "adjusted_engagement": 32,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        }
+      ],
+      "total_engagement": 238.33304448274092,
+      "mention_count": 4,
+      "sources": [
+        "6976e996000000001a021721",
+        "699121aa000000000e03d435",
+        "697ac6da00000000210286f4",
+        "698823580000000015038d11"
+      ],
+      "google_place_id": "ChIJU0V_bY_Hj4ARlIm9-ax2loc"
     },
     "reason": "cuisine normalization: Hot Pot → 火锅"
   },
@@ -446,7 +497,8 @@
     "id": "pipeline_1771954753565_etm5",
     "name": "Hibachi Grill and Buffet",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "中餐",
+      "area": "Fairfield"
     },
     "reason": "cuisine normalization: American Chinese, Buffet → 中餐"
   },
@@ -494,7 +546,8 @@
     "id": "pipeline_1771954753565_tdzy",
     "name": "Madcap",
     "corrections": {
-      "cuisine": "西餐"
+      "cuisine": "西餐",
+      "area": "San Anselmo"
     },
     "reason": "cuisine normalization: Fine Dining → 西餐"
   },
@@ -510,7 +563,8 @@
     "id": "pipeline_1771954753565_y9l6",
     "name": "Impression of Lanzhou",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "中餐",
+      "area": "Concord"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -2178,7 +2232,10 @@
     "id": "pipeline_1772067300875_vmph",
     "name": "湾区蓉城火锅",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "火锅",
+      "_status": "duplicate_merged",
+      "post_details": [],
+      "sources": []
     },
     "reason": "cuisine normalization: Hot Pot → 火锅"
   },
@@ -3051,7 +3108,8 @@
     "id": "pipeline_1772067301543_kgsf",
     "name": "DNM Hot Pot",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "火锅",
+      "_status": "rejected"
     },
     "reason": "cuisine normalization: Hot Pot → 火锅"
   },
@@ -4071,7 +4129,8 @@
       "google_name": "Hu Din Ji Shanghai Bistro",
       "lat": 37.5231047,
       "lng": -122.0058949,
-      "google_place_id": "ChIJmdsuxk-_j4ARtQ5wZkg6sVk"
+      "google_place_id": "ChIJmdsuxk-_j4ARtQ5wZkg6sVk",
+      "area": "Newark"
     }
   },
   {
@@ -4091,7 +4150,13 @@
   {
     "id": "pipeline_1772091355884_x5jl",
     "corrections": {
-      "name": "蓉城 Rong Cheng"
+      "name": "蓉城 Rong Cheng",
+      "post_details": [],
+      "total_engagement": 238.33304448274092,
+      "mention_count": 4,
+      "sources": [],
+      "google_place_id": "ChIJU0V_bY_Hj4ARlIm9-ax2loc",
+      "_status": "duplicate_merged"
     }
   },
   {

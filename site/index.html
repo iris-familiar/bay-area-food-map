@@ -61,7 +61,7 @@
                     <input type="text" id="search-input"
                            placeholder="搜索餐厅、菜品、地址..."
                            class="search-input"
-                           onkeyup="if(event.key==='Enter') applySearch()">
+                           oninput="debouncedSearch()">
                 </div>
 
                 <!-- Filters -->
