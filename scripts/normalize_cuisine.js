@@ -31,13 +31,19 @@ const CUISINE_MAP = {
   'Buffet':                                '西餐',
   'Cal-Mediterranean':                     '西餐',
   'Californian':                           '西餐',
+  'Deli/Sandwiches':                       '西餐',
   'Fast Food':                             '西餐',
+  'Fast food':                             '西餐',
   'French':                                '西餐',
   'Greek':                                 '西餐',
+  'Healthy':                               '西餐',
+  'Hot dog':                               '西餐',
   'Modern American':                       '西餐',
   'New American':                          '西餐',
   'Peruvian':                              '西餐',
+  'Sandwiches':                            '西餐',
   'Spanish':                               '西餐',
+  '美式':                                   '西餐',
   '美国南部菜':                              '西餐',
 
   // → 早午餐
@@ -56,6 +62,7 @@ const CUISINE_MAP = {
   '云贵川融合':                              '融合菜',
   '泰国美式融合菜':                            '融合菜',
   '韩式融合菜':                               '融合菜',
+  '韩餐+日料融合':                            '融合菜',
 
   // → 甜品
   'Bakery':                                '甜品',
@@ -71,9 +78,11 @@ const CUISINE_MAP = {
   'Bubble Tea':                            '奶茶',
   'Bubble Tea / Fruit Tea':                '奶茶',
   'Lemon Tea / Beverage':                  '奶茶',
+  '奶茶店':                                 '奶茶',
 
   // → 粤菜
   'Cantonese':                             '粤菜',
+  'Cantonese / Dim Sum':                   '粤菜',
   'Cantonese Dim Sum':                     '粤菜',
   'Chinese Street Food / Dim Sum':         '粤菜',
   'Dim Sum':                               '粤菜',
@@ -82,6 +91,7 @@ const CUISINE_MAP = {
   'Hong Kong Style Cafe (Cha Chaan Teng)': '粤菜',
   'Hong Kong Style Cafe (茶餐厅)':          '粤菜',
   'Hong Kong Style Cafe / Cantonese':      '粤菜',
+  'Hong Kong Style Cha Chaan Teng':        '粤菜',
   'Hong Kong Style Tea Restaurant':        '粤菜',
   '广式早茶':                               '粤菜',
   '港式':                                   '粤菜',
@@ -96,7 +106,9 @@ const CUISINE_MAP = {
   'Chinese':                               '中餐',
   'Chinese Bistro':                        '中餐',
   'Chinese / Sauerkraut Fish':             '中餐',
+  'Chinese-style burgers':                 '中餐',
   'Jiangxi':                               '中餐',
+  'Northern Chinese':                      '中餐',
   '家常菜':                                  '中餐',
   '西北菜':                                  '中餐',
 
@@ -109,8 +121,11 @@ const CUISINE_MAP = {
   'Hot Pot':                               '火锅',
   'Hot Pot / Skewers':                     '火锅',
   'Hot Pot, BBQ, Buffet':                  '火锅',
+  'Hot Pot/BBQ Meat':                      '火锅',
+  'Hot pot':                               '火锅',
   'Hotpot':                                '火锅',
   'Japanese Hot Pot':                      '火锅',
+  '茶底火锅':                               '火锅',
 
   // → 面食
   'Chinese Noodles':                       '面食',
@@ -136,6 +151,7 @@ const CUISINE_MAP = {
   'Hunan, Coconut Chicken Hotpot':         '湘菜',
 
   // → 川菜
+  'Chinese (Sichuan)':                     '川菜',
   'Sichuan':                               '川菜',
   'Sichuan / Hunan':                       '川菜',
   'Szechuan':                              '川菜',
@@ -146,14 +162,17 @@ const CUISINE_MAP = {
   'Japanese':                              '日料',
   'Japanese / Ramen':                      '日料',
   'Japanese / Udon':                       '日料',
+  'Japanese BBQ':                          '日料',
   'Japanese BBQ / All-You-Can-Eat':        '日料',
   'Japanese Izakaya':                      '日料',
+  'Japanese Shabu Shabu':                  '日料',
   'Japanese Yakitori':                     '日料',
   'Japanese, Sushi':                       '日料',
   'Omakase':                               '日料',
   'Sukiyaki':                              '日料',
   'Sushi':                                 '日料',
   'Sushi Buffet':                          '日料',
+  '寿司':                                   '日料',
   '日式':                                   '日料',
   '日餐':                                   '日料',
   '素食日料':                                '日料',
@@ -162,11 +181,13 @@ const CUISINE_MAP = {
   'Korean':                                '韩餐',
   'Korean BBQ':                            '韩餐',
   'Korean BBQ Buffet':                     '韩餐',
+  'Korean fried chicken':                  '韩餐',
   '韩式当代料理':                             '韩餐',
 
   // → 麻辣烫
   'Korean Malatang':                       '麻辣烫',
   'Malatang':                              '麻辣烫',
+  '麻辣香锅':                               '麻辣烫',
 
   // → 泰餐
   'Thai':                                  '泰餐',
@@ -214,8 +235,12 @@ const CUISINE_MAP = {
   // → 牛排
   'Steakhouse':                            '牛排',
 
+  // → 烧腊
+  'Chinese BBQ':                           '烧腊',
+
   // → 烧烤
   'American BBQ':                          '烧烤',
+  'BBQ':                                   '烧烤',
   '烤串':                                   '烧烤',
 
   // → 墨西哥菜

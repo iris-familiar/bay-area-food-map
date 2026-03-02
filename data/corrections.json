@@ -214,7 +214,7 @@
   {
     "id": "r077",
     "corrections": {
-      "name": "眷湘"
+      "name": "眷湘 Easterly"
     }
   },
   {
@@ -2600,7 +2600,8 @@
     "id": "pipeline_1772067301117_jdnc",
     "name": "眷湘 (Santa Clara店)",
     "corrections": {
-      "cuisine": "湘菜"
+      "cuisine": "湘菜",
+      "name": "眷湘 Easterly"
     },
     "reason": "cuisine normalization: Hunan → 湘菜"
   },
@@ -4246,6 +4247,596 @@
       "_status": "duplicate_merged",
       "post_details": [],
       "sources": []
+    }
+  },
+  {
+    "id": "pipeline_1772091355879_s8l3",
+    "name": "醍醐 Daigo",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese Izakaya → 日料"
+  },
+  {
+    "id": "pipeline_1772091355883_ziwz",
+    "name": "无肉不欢 Meat House",
+    "corrections": {
+      "cuisine": "火锅"
+    },
+    "reason": "cuisine normalization: Hot Pot/BBQ Meat → 火锅"
+  },
+  {
+    "id": "pipeline_1772091355883_1xwu",
+    "name": "曾三仙米线 ZSX Szechuan Rice Noodle",
+    "corrections": {
+      "cuisine": "川菜"
+    },
+    "reason": "cuisine normalization: Szechuan → 川菜"
+  },
+  {
+    "id": "pipeline_1772091355883_se5q",
+    "name": "Fresh Element",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1772091355883_w2q8",
+    "name": "Turtle Tower",
+    "corrections": {
+      "cuisine": "越南菜"
+    },
+    "reason": "cuisine normalization: Vietnamese → 越南菜"
+  },
+  {
+    "id": "pipeline_1772091355883_a6q6",
+    "name": "Kin Khao",
+    "corrections": {
+      "cuisine": "泰餐"
+    },
+    "reason": "cuisine normalization: Thai → 泰餐"
+  },
+  {
+    "id": "pipeline_1772091355883_lmmw",
+    "name": "Blue Sky Cafe",
+    "corrections": {
+      "cuisine": "粤菜"
+    },
+    "reason": "cuisine normalization: Cantonese → 粤菜"
+  },
+  {
+    "id": "pipeline_1772091355883_z63o",
+    "name": "Mission City Grill",
+    "corrections": {
+      "cuisine": "西餐"
+    },
+    "reason": "cuisine normalization: 美式 → 西餐"
+  },
+  {
+    "id": "pipeline_1772091355883_u427",
+    "name": "GIWA",
+    "corrections": {
+      "cuisine": "融合菜"
+    },
+    "reason": "cuisine normalization: 韩餐+日料融合 → 融合菜"
+  },
+  {
+    "id": "pipeline_1772091355883_2elu",
+    "name": "Oh Baby Sushi",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: 寿司 → 日料"
+  },
+  {
+    "id": "pipeline_1772091355883_mqqw",
+    "name": "黄记煌 Simmer Huang",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1772091355883_hgz8",
+    "name": "鲜芋仙",
+    "corrections": {
+      "cuisine": "甜品"
+    },
+    "reason": "cuisine normalization: Dessert → 甜品"
+  },
+  {
+    "id": "pipeline_1772091355883_bvlc",
+    "name": "SweetHome Kitchen",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1772091355884_x5oc",
+    "name": "Katsu Gin",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1772091355884_ylwm",
+    "name": "香港楼",
+    "corrections": {
+      "cuisine": "粤菜"
+    },
+    "reason": "cuisine normalization: Cantonese / Dim Sum → 粤菜"
+  },
+  {
+    "id": "pipeline_1772091355884_f6qg",
+    "name": "重庆铺盖面",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1772091355884_cbtu",
+    "name": "好一方烩面",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1772091355884_ox1s",
+    "name": "Rantei",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1772091355884_vvuc",
+    "name": "粤来粤好 Wonderful Cafe",
+    "corrections": {
+      "cuisine": "粤菜"
+    },
+    "reason": "cuisine normalization: Hong Kong Style Cha Chaan Teng → 粤菜"
+  },
+  {
+    "id": "pipeline_1772091355884_06z2",
+    "name": "Omakase",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1772091355884_1ktx",
+    "name": "Ichika Izakaya",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1772091355884_cxo4",
+    "name": "Kokko",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1772091355884_0gja",
+    "name": "Dope Pho",
+    "corrections": {
+      "cuisine": "越南菜"
+    },
+    "reason": "cuisine normalization: Vietnamese → 越南菜"
+  },
+  {
+    "id": "pipeline_1772091355884_qwte",
+    "name": "Mokkoji Shabu Shabu",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese Shabu Shabu → 日料"
+  },
+  {
+    "id": "pipeline_1772170235841_9erk",
+    "name": "Taki Nori Hand Roll Bar",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1772170235842_no6s",
+    "name": "Dash Japanese Tapas And Sushi",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1772170235842_g3lp",
+    "name": "Takahashi Market",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1772170235842_m4aj",
+    "name": "刘一手火锅 Liuyishou Hotpot (San Mateo)",
+    "corrections": {
+      "cuisine": "火锅"
+    },
+    "reason": "cuisine normalization: Hot pot → 火锅"
+  },
+  {
+    "id": "pipeline_1772170235842_kgcc",
+    "name": "Shabuway",
+    "corrections": {
+      "cuisine": "火锅"
+    },
+    "reason": "cuisine normalization: Hot pot → 火锅"
+  },
+  {
+    "id": "pipeline_1772170235842_4wc3",
+    "name": "猛男汉堡 The Burger",
+    "corrections": {
+      "cuisine": "西餐"
+    },
+    "reason": "cuisine normalization: Fast food → 西餐"
+  },
+  {
+    "id": "pipeline_1772170235842_48kn",
+    "name": "Himawari",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1772170235842_c9kd",
+    "name": "Daeho Kalbijjim & Beef Soup",
+    "corrections": {
+      "cuisine": "韩餐"
+    },
+    "reason": "cuisine normalization: Korean → 韩餐"
+  },
+  {
+    "id": "pipeline_1772170235842_9uzk",
+    "name": "鲜芋仙 Meet Fresh | San Mateo",
+    "corrections": {
+      "cuisine": "甜品"
+    },
+    "reason": "cuisine normalization: Dessert → 甜品"
+  },
+  {
+    "id": "pipeline_1772170235842_ty4y",
+    "name": "Pausa Bar & Cookery",
+    "corrections": {
+      "cuisine": "意大利菜"
+    },
+    "reason": "cuisine normalization: Italian → 意大利菜"
+  },
+  {
+    "id": "pipeline_1772170235842_oafo",
+    "name": "人间烟火小酒馆 Dynasty BBQ",
+    "corrections": {
+      "cuisine": "烧腊"
+    },
+    "reason": "cuisine normalization: Chinese BBQ → 烧腊"
+  },
+  {
+    "id": "pipeline_1772170235842_9klf",
+    "name": "一品主考官 Prime BBQ",
+    "corrections": {
+      "cuisine": "烧烤"
+    },
+    "reason": "cuisine normalization: BBQ → 烧烤"
+  },
+  {
+    "id": "pipeline_1772170543797_c6ie",
+    "name": "Dumpling Capital 水饺之都",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1772170543797_tsxu",
+    "name": "Fugetsu - San Jose",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1772170543797_gvyh",
+    "name": "Com Tam Sai Gon",
+    "corrections": {
+      "cuisine": "越南菜"
+    },
+    "reason": "cuisine normalization: Vietnamese → 越南菜"
+  },
+  {
+    "id": "pipeline_1772170543797_po5l",
+    "name": "Shanghai Delight",
+    "corrections": {
+      "cuisine": "上海菜"
+    },
+    "reason": "cuisine normalization: Shanghainese → 上海菜"
+  },
+  {
+    "id": "pipeline_1772170543797_fiw9",
+    "name": "Bel Cool Tasty Pot",
+    "corrections": {
+      "cuisine": "麻辣烫"
+    },
+    "reason": "cuisine normalization: 麻辣香锅 → 麻辣烫"
+  },
+  {
+    "id": "pipeline_1772170543798_q21v",
+    "name": "土包子 FUSION DUMPLING",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1772170543798_wvrv",
+    "name": "旺龙谷盒饭 Dragon Valley Express - Sunnyvale",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1772170543798_caum",
+    "name": "士林鸡排 Shihlin Taiwan Street Snacks",
+    "corrections": {
+      "cuisine": "台湾菜"
+    },
+    "reason": "cuisine normalization: Taiwanese → 台湾菜"
+  },
+  {
+    "id": "pipeline_1772170543798_fl2k",
+    "name": "校园汉堡 Campus Burgers",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese-style burgers → 中餐"
+  },
+  {
+    "id": "pipeline_1772170543798_w2ko",
+    "name": "Vons Chicken | Sunnyvale",
+    "corrections": {
+      "cuisine": "韩餐"
+    },
+    "reason": "cuisine normalization: Korean fried chicken → 韩餐"
+  },
+  {
+    "id": "pipeline_1772170543798_zfe3",
+    "name": "菠蘿王 Pearl Bay",
+    "corrections": {
+      "cuisine": "甜品"
+    },
+    "reason": "cuisine normalization: Chinese Bakery → 甜品"
+  },
+  {
+    "id": "pipeline_1772170543798_a7q5",
+    "name": "老芋仔",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1772170543798_8pi9",
+    "name": "鲜味水饺 Special Noodle",
+    "corrections": {
+      "cuisine": "中餐"
+    },
+    "reason": "cuisine normalization: Northern Chinese → 中餐"
+  },
+  {
+    "id": "pipeline_1772170543798_pu4j",
+    "name": "瓷禧 Fugetsu - Sunnyvale",
+    "corrections": {
+      "cuisine": "奶茶"
+    },
+    "reason": "cuisine normalization: 奶茶店 → 奶茶"
+  },
+  {
+    "id": "pipeline_1772170543798_2mbe",
+    "name": "鲜味水饺 Old Town Shanghai",
+    "corrections": {
+      "cuisine": "上海菜"
+    },
+    "reason": "cuisine normalization: Shanghainese → 上海菜"
+  },
+  {
+    "id": "pipeline_1772170543798_qsoj",
+    "name": "米线 575 Miishien Express （Rice Noodle Soup)",
+    "corrections": {
+      "cuisine": "云南菜"
+    },
+    "reason": "cuisine normalization: Yunnan → 云南菜"
+  },
+  {
+    "id": "pipeline_1772170543798_9fiu",
+    "name": "Mad Yolks",
+    "corrections": {
+      "cuisine": "融合菜"
+    },
+    "reason": "cuisine normalization: Asian Fusion → 融合菜"
+  },
+  {
+    "id": "pipeline_1772170543798_5zkf",
+    "name": "Palmetto Superfoods - Fremont",
+    "corrections": {
+      "cuisine": "西餐"
+    },
+    "reason": "cuisine normalization: Healthy → 西餐"
+  },
+  {
+    "id": "pipeline_1772170543798_wzfr",
+    "name": "梁妈妈 Liang's Village",
+    "corrections": {
+      "cuisine": "川菜"
+    },
+    "reason": "cuisine normalization: Sichuan → 川菜"
+  },
+  {
+    "id": "pipeline_1772170543798_6zys",
+    "name": "牛浪人 Wagyu Grill AYCE Barbeque, Sushi & Bar",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese BBQ → 日料"
+  },
+  {
+    "id": "pipeline_1772346692755_zvfx",
+    "name": "Anh Hong Restaurant",
+    "corrections": {
+      "cuisine": "越南菜"
+    },
+    "reason": "cuisine normalization: Vietnamese → 越南菜"
+  },
+  {
+    "id": "pipeline_1772346692755_28zc",
+    "name": "港式茶餐厅 Venus Cafe - San Jose",
+    "corrections": {
+      "cuisine": "粤菜"
+    },
+    "reason": "cuisine normalization: Hong Kong Style Cafe → 粤菜"
+  },
+  {
+    "id": "pipeline_1772346692755_4wkm",
+    "name": "Imperial Soup",
+    "corrections": {
+      "cuisine": "粤菜"
+    },
+    "reason": "cuisine normalization: Cantonese → 粤菜"
+  },
+  {
+    "id": "pipeline_1772346692755_x86c",
+    "name": "Top Dog",
+    "corrections": {
+      "cuisine": "西餐"
+    },
+    "reason": "cuisine normalization: Hot dog → 西餐"
+  },
+  {
+    "id": "pipeline_1772346692755_91wb",
+    "name": "古月飘香 Chengdu Style Restaurant",
+    "corrections": {
+      "cuisine": "川菜"
+    },
+    "reason": "cuisine normalization: Chinese (Sichuan) → 川菜"
+  },
+  {
+    "id": "pipeline_1772346692755_jqsp",
+    "name": "Meet Rice Noodle 蒙自源米线大王",
+    "corrections": {
+      "cuisine": "云南菜"
+    },
+    "reason": "cuisine normalization: Yunnan → 云南菜"
+  },
+  {
+    "id": "pipeline_1772346692755_5e9y",
+    "name": "WuJi's Mala House",
+    "corrections": {
+      "cuisine": "火锅"
+    },
+    "reason": "cuisine normalization: Hot pot → 火锅"
+  },
+  {
+    "id": "pipeline_1772346692755_el6s",
+    "name": "四季茶馆火锅 Four Seasons Tea House Hot Pot",
+    "corrections": {
+      "cuisine": "火锅"
+    },
+    "reason": "cuisine normalization: 茶底火锅 → 火锅"
+  },
+  {
+    "id": "pipeline_1772346692755_0bba",
+    "name": "Wooga Korean BBQ",
+    "corrections": {
+      "cuisine": "韩餐"
+    },
+    "reason": "cuisine normalization: Korean BBQ → 韩餐"
+  },
+  {
+    "id": "pipeline_1772346692756_09do",
+    "name": "Izakaya Uosan",
+    "corrections": {
+      "cuisine": "日料"
+    },
+    "reason": "cuisine normalization: Japanese → 日料"
+  },
+  {
+    "id": "pipeline_1772346692756_i1ps",
+    "name": "鲤鱼门 Koi Palace - Milpitas",
+    "corrections": {
+      "cuisine": "粤菜"
+    },
+    "reason": "cuisine normalization: Dim Sum → 粤菜"
+  },
+  {
+    "id": "pipeline_1772346692756_ehxz",
+    "name": "许留山 Hui Lau Shan",
+    "corrections": {
+      "cuisine": "甜品"
+    },
+    "reason": "cuisine normalization: Dessert → 甜品"
+  },
+  {
+    "id": "pipeline_1772346692756_fgqq",
+    "name": "B N Chicken",
+    "corrections": {
+      "cuisine": "韩餐"
+    },
+    "reason": "cuisine normalization: Korean → 韩餐"
+  },
+  {
+    "id": "pipeline_1772346692756_61no",
+    "name": "SGD Tofu House",
+    "corrections": {
+      "cuisine": "韩餐"
+    },
+    "reason": "cuisine normalization: Korean → 韩餐"
+  },
+  {
+    "id": "pipeline_1772346692756_j9dy",
+    "name": "Tang Jip",
+    "corrections": {
+      "cuisine": "韩餐"
+    },
+    "reason": "cuisine normalization: Korean → 韩餐"
+  },
+  {
+    "id": "pipeline_1772346692756_77gi",
+    "name": "CRUST Sourdough Deli",
+    "corrections": {
+      "cuisine": "西餐"
+    },
+    "reason": "cuisine normalization: Deli/Sandwiches → 西餐"
+  },
+  {
+    "id": "pipeline_1772346692756_pqt5",
+    "name": "Wooly Pig",
+    "corrections": {
+      "cuisine": "西餐"
+    },
+    "reason": "cuisine normalization: Sandwiches → 西餐"
+  },
+  {
+    "id": "r002",
+    "corrections": {
+      "cuisine": "云南菜"
     }
   }
 ]
