@@ -942,11 +942,24 @@ async function executeMerge() {
     }
 }
 
+function buildCuisineDatalist() {
+    const cuisines = [...new Set(
+        db.restaurants
+            .filter(r => r._status !== 'duplicate_merged' && r.cuisine)
+            .map(r => r.cuisine)
+    )].sort();
+    const dl = document.createElement('datalist');
+    dl.id = 'cuisine-options';
+    dl.innerHTML = cuisines.map(c => `<option value="${escHtml(c)}">`).join('');
+    document.body.appendChild(dl);
+}
+
 // ─── Init ──────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         await loadData();
+        buildCuisineDatalist();
         updateCounts();
         renderPending();
         renderApproved();
