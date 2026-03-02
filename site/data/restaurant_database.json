@@ -123,7 +123,10 @@
         }
       ],
       "lat": 37.496743,
-      "lng": -121.9359852
+      "lng": -121.9359852,
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z"
+      }
     },
     {
       "id": "r002",
@@ -1188,7 +1191,7 @@
       "lat": 37.3389803,
       "lng": -122.0425815,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 包子 → 面食"
       }
     },
@@ -1330,7 +1333,7 @@
         "lng": -122.046685
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.963Z",
         "reason": "原匹配错误，用英文名重新搜索匹配"
       },
       "xiaohongshu_id": "r013",
@@ -2101,7 +2104,10 @@
         }
       ],
       "lat": 37.7240138,
-      "lng": -122.1552883
+      "lng": -122.1552883,
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z"
+      }
     },
     {
       "id": "r021",
@@ -2312,7 +2318,7 @@
         }
       ],
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 泰国菜 → 泰餐"
       }
     },
@@ -2419,7 +2425,7 @@
       "lat": 37.7867348,
       "lng": -122.4143431,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 拉面 → 面食"
       }
     },
@@ -2495,7 +2501,7 @@
       "lat": 37.6008336,
       "lng": -122.3921175,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 港式 → 粤菜"
       }
     },
@@ -2735,7 +2741,10 @@
       },
       "timeseries": [],
       "lat": 37.5664339,
-      "lng": -122.3236324
+      "lng": -122.3236324,
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z"
+      }
     },
     {
       "id": "r030",
@@ -2820,7 +2829,10 @@
       ],
       "lat": 37.5231047,
       "lng": -122.0058949,
-      "google_name": "Hu Din Ji Shanghai Bistro"
+      "google_name": "Hu Din Ji Shanghai Bistro",
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z"
+      }
     },
     {
       "id": "r031",
@@ -2947,7 +2959,7 @@
       },
       "timeseries": [],
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 日式 → 日料"
       }
     },
@@ -3565,7 +3577,10 @@
         }
       ],
       "lat": 37.3943264,
-      "lng": -122.0288109
+      "lng": -122.0288109,
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z"
+      }
     },
     {
       "id": "r042",
@@ -4136,7 +4151,7 @@
       "lat": 37.5753059,
       "lng": -122.0441278,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z"
+        "at": "2026-03-02T00:22:15.964Z"
       }
     },
     {
@@ -4970,7 +4985,7 @@
       "lat": 37.7869423,
       "lng": -122.4298429,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 泰国菜 → 泰餐"
       }
     },
@@ -5145,7 +5160,7 @@
       },
       "timeseries": [],
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 淮扬菜 → 江浙菜"
       },
       "_status": "rejected"
@@ -5665,7 +5680,10 @@
         }
       ],
       "lat": 37.37876019999999,
-      "lng": -122.0756505
+      "lng": -122.0756505,
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z"
+      }
     },
     {
       "id": "r066",
@@ -5834,7 +5852,7 @@
       },
       "timeseries": [],
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 台湾小吃 → 台湾菜"
       }
     },
@@ -6000,7 +6018,7 @@
       "lat": 37.3611678,
       "lng": -122.025989,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 拉面 → 面食"
       }
     },
@@ -6153,7 +6171,7 @@
       "lat": 37.3219968,
       "lng": -122.0148829,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 家常菜 → 中餐"
       }
     },
@@ -6652,7 +6670,7 @@
       },
       "verified": true,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "搜索\"面面俱到 Fremont\"第一个结果"
       },
       "xiaohongshu_id": "r079",
@@ -6749,7 +6767,7 @@
       },
       "verified": true,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "用英文名重新匹配，并合并r011万峦猪脚的数据"
       },
       "alias": [
@@ -6864,7 +6882,7 @@
       "verified": true,
       "google_match_status": "matched_v2",
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "修正名称：从帖子描述称呼改为正式餐厅名"
       },
       "name_history": [
@@ -6936,7 +6954,7 @@
       },
       "verified": true,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "用英文名重新匹配"
       },
       "xiaohongshu_id": "r081",
@@ -6999,7 +7017,7 @@
       },
       "verified": true,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "用英文名重新匹配"
       },
       "xiaohongshu_id": "r080",
@@ -7066,7 +7084,7 @@
       "verified": true,
       "google_match_status": "matched_v2",
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "搜索匹配"
       },
       "alias": [
@@ -7091,7 +7109,7 @@
     },
     {
       "id": "r077",
-      "name": "眷湘",
+      "name": "眷湘 Easterly",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "Cupertino",
@@ -7139,7 +7157,7 @@
       "lat": 37.3160458,
       "lng": -122.0327518,
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z"
+        "at": "2026-03-02T00:22:15.964Z"
       }
     },
     {
@@ -7258,7 +7276,7 @@
       "_status": "duplicate_merged",
       "merged_into": "r075",
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z"
+        "at": "2026-03-02T00:22:15.964Z"
       }
     },
     {
@@ -7423,7 +7441,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 泰法融合 → 泰餐"
       }
     },
@@ -7569,7 +7587,7 @@
       "_status": "duplicate_merged",
       "merged_into": "r066",
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z"
+        "at": "2026-03-02T00:22:15.964Z"
       }
     },
     {
@@ -7871,7 +7889,7 @@
       "_status": "duplicate_merged",
       "merged_into": "r071",
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z"
+        "at": "2026-03-02T00:22:15.964Z"
       }
     },
     {
@@ -7962,7 +7980,7 @@
       "_status": "duplicate_merged",
       "merged_into": "r077",
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.444Z"
+        "at": "2026-03-02T00:22:15.964Z"
       }
     },
     {
@@ -8122,7 +8140,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: 也门咖啡 → 中东菜"
       }
     },
@@ -8182,7 +8200,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -8297,7 +8315,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -8361,7 +8379,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -8421,7 +8439,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Thai → 泰餐"
       }
     },
@@ -8520,7 +8538,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -8673,7 +8691,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -8744,7 +8762,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Hong Kong Style Cafe / Cantonese → 粤菜"
       }
     },
@@ -8812,7 +8830,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Chinese Bistro → 中餐"
       }
     },
@@ -8916,7 +8934,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -8977,7 +8995,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Japanese BBQ / All-You-Can-Eat → 日料"
       }
     },
@@ -9069,7 +9087,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Singaporean/Malaysian/Thai → 东南亚菜"
       }
     },
@@ -9127,7 +9145,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Xinjiang → 新疆菜"
       }
     },
@@ -9187,7 +9205,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Cantonese Dim Sum → 粤菜"
       }
     },
@@ -9264,7 +9282,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -9329,7 +9347,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -9389,7 +9407,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: American Chinese, Buffet → 中餐"
       }
     },
@@ -9479,7 +9497,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
@@ -9539,7 +9557,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Thai → 泰餐"
       }
     },
@@ -9625,7 +9643,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Seafood → 海鲜"
       }
     },
@@ -9696,7 +9714,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Seafood → 海鲜"
       }
     },
@@ -9751,7 +9769,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -9808,7 +9826,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Fine Dining → 西餐"
       }
     },
@@ -9865,7 +9883,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -9922,7 +9940,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -9992,7 +10010,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Steakhouse → 牛排"
       }
     },
@@ -10055,7 +10073,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Brunch → 早午餐"
       }
     },
@@ -10126,6 +10144,9 @@
         "source": "daily_pipeline",
         "source_post": "69770add000000001a037f2b",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z"
       }
     },
     {
@@ -10203,7 +10224,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -10265,7 +10286,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Chinese Noodles → 面食"
       }
     },
@@ -10378,7 +10399,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.964Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -10464,7 +10485,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese / Ramen → 日料"
       }
     },
@@ -10526,7 +10547,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Jiangxi → 中餐"
       }
     },
@@ -10605,7 +10626,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Cal-Mediterranean → 西餐"
       }
     },
@@ -10665,7 +10686,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -10741,7 +10762,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -10800,7 +10821,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -10857,7 +10878,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean Malatang → 麻辣烫"
       }
     },
@@ -10917,7 +10938,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -10976,7 +10997,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean BBQ → 韩餐"
       }
     },
@@ -11036,7 +11057,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Spanish → 西餐"
       }
     },
@@ -11113,7 +11134,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese Yakitori → 日料"
       }
     },
@@ -11172,7 +11193,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -11231,7 +11252,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -11288,7 +11309,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: American BBQ → 烧烤"
       }
     },
@@ -11346,7 +11367,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -11404,7 +11425,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       },
       "google_name": "Hong Kong BBQ Restaurant"
@@ -11464,7 +11485,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Thai → 泰餐"
       }
     },
@@ -11523,7 +11544,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hong Kong Style Cafe → 粤菜"
       }
     },
@@ -11581,7 +11602,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Vegetarian → 素食"
       }
     },
@@ -11641,7 +11662,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chongqing Hot Pot → 火锅"
       }
     },
@@ -11698,7 +11719,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       },
       "_status": "rejected"
@@ -11768,7 +11789,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -11872,7 +11893,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -11956,7 +11977,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -12015,7 +12036,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Dessert → 甜品"
       }
     },
@@ -12075,7 +12096,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Italian → 意大利菜"
       }
     },
@@ -12150,7 +12171,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Peruvian → 西餐"
       }
     },
@@ -12209,7 +12230,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -12270,7 +12291,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Rice Noodles → 面食"
       }
     },
@@ -12342,7 +12363,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese Ramen → 面食"
       }
     },
@@ -12420,7 +12441,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: 广式早茶 → 粤菜"
       }
     },
@@ -12477,7 +12498,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Dim Sum → 粤菜"
       }
     },
@@ -12536,7 +12557,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -12625,7 +12646,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Izakaya → 日料"
       }
     },
@@ -12726,7 +12747,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -12837,7 +12858,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -12905,7 +12926,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -12965,7 +12986,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -13024,7 +13045,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -13105,7 +13126,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -13160,7 +13181,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hot Pot / Skewers → 火锅"
       }
     },
@@ -13302,7 +13323,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: 西北菜 → 中餐"
       }
     },
@@ -13382,7 +13403,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: 云贵川融合 → 融合菜"
       }
     },
@@ -13440,7 +13461,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: 烤串 → 烧烤"
       }
     },
@@ -13626,7 +13647,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hunan → 湘菜"
       }
     },
@@ -13684,7 +13705,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -13755,7 +13776,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -13812,7 +13833,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Pizza → 意大利菜"
       }
     },
@@ -13869,7 +13890,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -13929,7 +13950,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
@@ -14010,7 +14031,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Thai → 泰餐"
       }
     },
@@ -14069,7 +14090,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -14131,7 +14152,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese Bakery → 甜品"
       }
     },
@@ -14191,7 +14212,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese Street Food / Dim Sum → 粤菜"
       }
     },
@@ -14413,7 +14434,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: 日餐 → 日料"
       }
     },
@@ -14552,7 +14573,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Brunch → 早午餐"
       }
     },
@@ -14611,7 +14632,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Thai → 泰餐"
       }
     },
@@ -14670,7 +14691,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -14730,7 +14751,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Taiwanese → 台湾菜"
       }
     },
@@ -14799,7 +14820,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese Hot Pot → 火锅"
       }
     },
@@ -14865,7 +14886,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -14920,7 +14941,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -14975,7 +14996,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Pizza → 意大利菜"
       }
     },
@@ -15043,7 +15064,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Seafood → 海鲜"
       }
     },
@@ -15100,7 +15121,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Dessert → 甜品"
       }
     },
@@ -15155,7 +15176,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -15212,7 +15233,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -15270,7 +15291,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: French → 西餐"
       }
     },
@@ -15327,7 +15348,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean-American → 融合菜"
       }
     },
@@ -15398,7 +15419,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -15453,7 +15474,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Cafe → 甜品"
       }
     },
@@ -15510,7 +15531,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -15583,7 +15604,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -15673,7 +15694,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
@@ -15734,7 +15755,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: French → 西餐"
       }
     },
@@ -15789,7 +15810,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Bubble Tea → 奶茶"
       }
     },
@@ -15937,7 +15958,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -15995,7 +16016,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -16067,7 +16088,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.445Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hunan → 湘菜"
       }
     },
@@ -16140,7 +16161,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: American/Brunch → 早午餐"
       }
     },
@@ -16197,7 +16218,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Dessert → 甜品"
       }
     },
@@ -16296,7 +16317,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hunan / Rice Noodles → 湘菜"
       }
     },
@@ -16367,7 +16388,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -16425,7 +16446,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Ramen → 面食"
       }
     },
@@ -16484,7 +16505,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Italian → 意大利菜"
       }
     },
@@ -16544,7 +16565,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hunan → 湘菜"
       }
     },
@@ -16604,7 +16625,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Indian Fusion → 印度菜"
       }
     },
@@ -16661,7 +16682,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean Asian Fusion → 融合菜"
       }
     },
@@ -16722,7 +16743,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Bakery & Coffee → 甜品"
       }
     },
@@ -16791,7 +16812,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean BBQ → 韩餐"
       }
     },
@@ -16850,7 +16871,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Indian → 印度菜"
       }
     },
@@ -16908,7 +16929,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -16966,7 +16987,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Brunch → 早午餐"
       }
     },
@@ -17024,7 +17045,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Dessert → 甜品"
       }
     },
@@ -17086,7 +17107,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Taiwanese → 台湾菜"
       }
     },
@@ -17155,7 +17176,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Mexican → 墨西哥菜"
       }
     },
@@ -17213,7 +17234,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Bakery → 甜品"
       }
     },
@@ -17284,7 +17305,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Seafood → 海鲜"
       }
     },
@@ -17342,7 +17363,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Greek → 西餐"
       }
     },
@@ -17400,7 +17421,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Modern American → 西餐"
       }
     },
@@ -17458,7 +17479,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -17516,7 +17537,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -17574,7 +17595,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Creative → 融合菜"
       }
     },
@@ -17632,7 +17653,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.446Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -17689,7 +17710,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Xi'an / Chinese → 面食"
       }
     },
@@ -17747,7 +17768,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Halal / Chinese → 新疆菜"
       }
     },
@@ -17805,7 +17826,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hotpot → 火锅"
       }
     },
@@ -17882,7 +17903,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Xinjiang → 新疆菜"
       }
     },
@@ -17952,7 +17973,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Malatang → 麻辣烫"
       }
     },
@@ -18010,7 +18031,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Cambodian → 东南亚菜"
       }
     },
@@ -18070,7 +18091,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -18128,7 +18149,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -18199,7 +18220,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Vietnamese Hot Pot → 越南菜"
       }
     },
@@ -18262,7 +18283,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Seafood → 海鲜"
       }
     },
@@ -18335,7 +18356,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -18390,7 +18411,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Mexican → 墨西哥菜"
       }
     },
@@ -18448,7 +18469,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Italian → 意大利菜"
       }
     },
@@ -18553,7 +18574,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Yunnan → 云南菜"
       }
     },
@@ -18608,7 +18629,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -18672,7 +18693,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Shanghainese → 上海菜"
       }
     },
@@ -18736,7 +18757,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hunan, Coconut Chicken Hotpot → 湘菜"
       }
     },
@@ -18810,7 +18831,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Brunch → 早午餐"
       }
     },
@@ -18892,7 +18913,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -18949,7 +18970,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -19033,7 +19054,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -19090,7 +19111,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -19147,7 +19168,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -19211,7 +19232,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Japanese Izakaya → 日料"
       }
     },
@@ -19281,7 +19302,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hunan Chinese → 湘菜"
       }
     },
@@ -19341,7 +19362,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -19409,7 +19430,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Bubble Tea → 奶茶"
       }
     },
@@ -19464,7 +19485,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -19519,7 +19540,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -19574,7 +19595,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -19629,7 +19650,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -19709,7 +19730,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -19814,7 +19835,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -19872,7 +19893,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -19943,7 +19964,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -20012,7 +20033,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -20069,7 +20090,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Coffee → 甜品"
       }
     },
@@ -20137,7 +20158,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -20227,7 +20248,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -20285,7 +20306,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -20413,7 +20434,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -20473,7 +20494,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -20531,7 +20552,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -20616,7 +20637,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.447Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -20673,7 +20694,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.452Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -20732,7 +20753,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.452Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -20789,7 +20810,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Dessert → 甜品"
       }
     },
@@ -20847,7 +20868,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -20905,7 +20926,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -20973,7 +20994,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -21031,7 +21052,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -21088,7 +21109,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -21145,7 +21166,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Italian → 意大利菜"
       }
     },
@@ -21216,7 +21237,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -21271,7 +21292,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Thai → 泰餐"
       }
     },
@@ -21326,7 +21347,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Sushi → 日料"
       }
     },
@@ -21383,7 +21404,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Thai → 泰餐"
       }
     },
@@ -21452,7 +21473,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Californian → 西餐"
       }
     },
@@ -21509,7 +21530,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -21566,7 +21587,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Italian → 意大利菜"
       }
     },
@@ -21623,7 +21644,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Italian → 意大利菜"
       }
     },
@@ -21678,7 +21699,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Seafood → 海鲜"
       }
     },
@@ -21733,7 +21754,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Italian → 意大利菜"
       }
     },
@@ -21790,7 +21811,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -21845,7 +21866,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: French → 西餐"
       }
     },
@@ -21926,7 +21947,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -22017,7 +22038,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hot Pot, BBQ, Buffet → 火锅"
       }
     },
@@ -22099,7 +22120,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -22167,7 +22188,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Pizza → 意大利菜"
       }
     },
@@ -22224,7 +22245,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Bakery → 甜品"
       }
     },
@@ -22339,7 +22360,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hong Kong Style Cafe → 粤菜"
       }
     },
@@ -22413,7 +22434,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 港式茶餐厅 → 粤菜"
       }
     },
@@ -22470,7 +22491,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Bar → 西餐"
       }
     },
@@ -22527,7 +22548,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: French → 西餐"
       }
     },
@@ -22587,7 +22608,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Spanish → 西餐"
       }
     },
@@ -22644,7 +22665,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean Brunch → 早午餐"
       }
     },
@@ -22758,7 +22779,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 广式早茶 → 粤菜"
       }
     },
@@ -22882,7 +22903,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hong Kong Style Cafe → 粤菜"
       }
     },
@@ -22940,7 +22961,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -23000,7 +23021,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -23061,7 +23082,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chongqing Noodles → 面食"
       }
     },
@@ -23116,7 +23137,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 泰国菜 → 泰餐"
       }
     },
@@ -23171,7 +23192,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 四川菜 → 川菜"
       }
     },
@@ -23300,7 +23321,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 日式油拌面 → 面食"
       }
     },
@@ -23355,7 +23376,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 韩式当代料理 → 韩餐"
       }
     },
@@ -23421,7 +23442,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 素食日料 → 日料"
       }
     },
@@ -23476,7 +23497,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 菲律宾菜 → 东南亚菜"
       }
     },
@@ -23536,7 +23557,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.453Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Cafe, Japanese → 甜品"
       }
     },
@@ -23760,7 +23781,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 韩式融合菜 → 融合菜"
       }
     },
@@ -23815,7 +23836,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 泰国美式融合菜 → 融合菜"
       }
     },
@@ -23870,7 +23891,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 美国南部菜 → 西餐"
       }
     },
@@ -23930,7 +23951,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Bakery → 甜品"
       }
     },
@@ -23989,7 +24010,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Dim Sum → 粤菜"
       }
     },
@@ -24049,7 +24070,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Yunnan → 云南菜"
       }
     },
@@ -24122,7 +24143,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chaoshan (Teochew) → 潮汕菜"
       }
     },
@@ -24244,7 +24265,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -24301,7 +24322,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean BBQ → 韩餐"
       }
     },
@@ -24371,7 +24392,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -24429,7 +24450,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -24487,7 +24508,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -24544,7 +24565,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean BBQ → 韩餐"
       }
     },
@@ -24604,7 +24625,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 潮州粉 → 潮汕菜"
       }
     },
@@ -24664,7 +24685,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 潮州粉 → 潮汕菜"
       }
     },
@@ -24734,7 +24755,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 潮州粉 → 潮汕菜"
       }
     },
@@ -24807,7 +24828,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: 粉店 → 面食"
       }
     },
@@ -24896,7 +24917,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
@@ -24964,7 +24985,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
@@ -25030,7 +25051,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Guilin Rice Noodles → 面食"
       }
     },
@@ -25085,7 +25106,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Ramen → 面食"
       }
     },
@@ -25140,7 +25161,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -25195,7 +25216,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -25250,7 +25271,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -25305,7 +25326,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -25360,7 +25381,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -25428,7 +25449,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -25483,7 +25504,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -25538,13 +25559,13 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
     {
       "id": "pipeline_1772067301117_jdnc",
-      "name": "眷湘店 (Santa Clara)",
+      "name": "眷湘 Easterly",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "Santa Clara",
@@ -25611,7 +25632,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hunan → 湘菜"
       }
     },
@@ -25707,7 +25728,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hunan → 湘菜"
       }
     },
@@ -25777,7 +25798,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Sichuan / Hunan → 川菜"
       }
     },
@@ -25836,7 +25857,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Hunan / Noodles → 湘菜"
       }
     },
@@ -25894,7 +25915,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Japanese / Ramen → 日料"
       }
     },
@@ -25951,7 +25972,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Japanese / Udon → 日料"
       }
     },
@@ -26008,7 +26029,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Japanese / Ramen → 日料"
       }
     },
@@ -26096,7 +26117,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese / Noodles → 面食"
       }
     },
@@ -26151,7 +26172,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -26211,7 +26232,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Dessert → 甜品"
       }
     },
@@ -26269,7 +26290,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -26327,7 +26348,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -26382,7 +26403,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.454Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -26467,7 +26488,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Filipino → 东南亚菜"
       }
     },
@@ -26537,7 +26558,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -26597,7 +26618,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Seafood → 海鲜"
       }
     },
@@ -26659,7 +26680,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Buffet → 西餐"
       }
     },
@@ -26745,7 +26766,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -26854,7 +26875,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese / Sauerkraut Fish → 中餐"
       }
     },
@@ -26911,7 +26932,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Bubble Tea / Fruit Tea → 奶茶"
       }
     },
@@ -26966,7 +26987,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -27034,7 +27055,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -27089,7 +27110,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -27144,7 +27165,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -27218,7 +27239,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -27277,7 +27298,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Seafood → 海鲜"
       }
     },
@@ -27337,7 +27358,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Western Fusion → 融合菜"
       }
     },
@@ -27476,7 +27497,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Brunch → 早午餐"
       }
     },
@@ -27535,7 +27556,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Brunch → 早午餐"
       }
     },
@@ -27593,7 +27614,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Brunch → 早午餐"
       }
     },
@@ -27651,7 +27672,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Brunch → 早午餐"
       }
     },
@@ -27711,7 +27732,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -27850,7 +27871,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
@@ -27892,7 +27913,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       },
       "_status": "rejected"
@@ -27999,7 +28020,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Tea & Bakery → 甜品"
       }
     },
@@ -28071,7 +28092,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -28132,7 +28153,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Southeast Asian → 东南亚菜"
       }
     },
@@ -28204,7 +28225,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Chinese Omakase → 融合菜"
       }
     },
@@ -28263,7 +28284,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Dim Sum → 粤菜"
       }
     },
@@ -28327,7 +28348,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Hong Kong Style Cafe (茶餐厅) → 粤菜"
       }
     },
@@ -28381,7 +28402,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       },
       "_status": "duplicate_merged",
@@ -28440,7 +28461,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -28497,7 +28518,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Bakery → 甜品"
       }
     },
@@ -28556,7 +28577,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -28617,7 +28638,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -28675,7 +28696,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -28749,7 +28770,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -28825,7 +28846,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -28883,7 +28904,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -28941,7 +28962,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -28998,7 +29019,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese-Cajun → 越南菜"
       }
     },
@@ -29058,7 +29079,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese Fusion → 越南菜"
       }
     },
@@ -29127,7 +29148,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.455Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Southeast Asian / Vietnamese → 越南菜"
       }
     },
@@ -29184,7 +29205,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -29241,7 +29262,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -29298,7 +29319,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -29353,7 +29374,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -29408,7 +29429,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Steakhouse → 牛排"
       }
     },
@@ -29463,7 +29484,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Thai Hot Pot → 泰餐"
       }
     },
@@ -29518,7 +29539,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Sushi Buffet → 日料"
       }
     },
@@ -29573,7 +29594,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Korean BBQ Buffet → 韩餐"
       }
     },
@@ -29630,7 +29651,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       },
       "_status": "rejected"
@@ -29688,7 +29709,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Spanish → 西餐"
       }
     },
@@ -29762,7 +29783,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -29819,7 +29840,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
@@ -29877,7 +29898,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -29937,7 +29958,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
       }
     },
@@ -29994,7 +30015,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Pizza → 意大利菜"
       }
     },
@@ -30052,7 +30073,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
@@ -30112,7 +30133,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -30186,7 +30207,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Brunch → 早午餐"
       }
     },
@@ -30246,7 +30267,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -30305,7 +30326,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -30360,7 +30381,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Hotpot → 火锅"
       }
     },
@@ -30415,7 +30436,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Sukiyaki → 日料"
       }
     },
@@ -30473,7 +30494,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -30530,7 +30551,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Asian Fusion → 融合菜"
       }
     },
@@ -30585,7 +30606,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -30716,7 +30737,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -30859,7 +30880,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -30916,7 +30937,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Chinese (Yunnan) → 云南菜"
       }
     },
@@ -30974,7 +30995,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -31031,7 +31052,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -31088,7 +31109,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese Seafood → 越南菜"
       }
     },
@@ -31152,7 +31173,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese Seafood → 越南菜"
       }
     },
@@ -31223,7 +31244,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Hong Kong Style → 粤菜"
       }
     },
@@ -31282,7 +31303,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       },
       "_status": "rejected"
@@ -31354,7 +31375,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
@@ -31412,7 +31433,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Hong Kong Style → 粤菜"
       }
     },
@@ -31482,7 +31503,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.456Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
@@ -31624,7 +31645,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.457Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -31682,7 +31703,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.457Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -31741,7 +31762,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.457Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -31799,7 +31820,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.457Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -31858,7 +31879,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.457Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -31916,7 +31937,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -31973,7 +31994,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Seafood → 海鲜"
       }
     },
@@ -32039,7 +32060,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Hong Kong Style Cafe → 粤菜"
       }
     },
@@ -32094,7 +32115,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Hong Kong Style Cafe → 粤菜"
       }
     },
@@ -32152,7 +32173,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -32209,7 +32230,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -32267,7 +32288,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -32324,7 +32345,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: New American → 西餐"
       }
     },
@@ -32381,7 +32402,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -32439,7 +32460,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Fine Dining → 融合菜"
       }
     },
@@ -32496,7 +32517,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -32553,7 +32574,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Hong Kong Style Cafe (Cha Chaan Teng) → 粤菜"
       }
     },
@@ -32688,7 +32709,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese, Sushi → 日料"
       }
     },
@@ -32757,7 +32778,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese, Sushi → 日料"
       }
     },
@@ -32816,7 +32837,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese, Sushi → 日料"
       }
     },
@@ -32871,7 +32892,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese, Sushi → 日料"
       }
     },
@@ -32929,7 +32950,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese, Sushi → 日料"
       }
     },
@@ -32987,7 +33008,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -33046,7 +33067,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Dessert → 甜品"
       }
     },
@@ -33105,7 +33126,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: 港式茶餐厅 → 粤菜"
       }
     },
@@ -33165,7 +33186,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Shanghainese → 上海菜"
       }
     },
@@ -33224,7 +33245,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
@@ -33284,7 +33305,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Greek → 西餐"
       }
     },
@@ -33342,7 +33363,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -33401,7 +33422,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Mexican → 墨西哥菜"
       }
     },
@@ -33463,7 +33484,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Jiangxi → 中餐"
       }
     },
@@ -33524,7 +33545,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -33582,7 +33603,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -33655,7 +33676,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -33727,7 +33748,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: American → 西餐"
       }
     },
@@ -33788,7 +33809,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -33843,7 +33864,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Omakase → 日料"
       }
     },
@@ -33900,7 +33921,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Omakase → 日料"
       }
     },
@@ -33955,7 +33976,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Omakase → 日料"
       }
     },
@@ -34015,7 +34036,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Hong Kong Style Tea Restaurant → 粤菜"
       }
     },
@@ -34072,7 +34093,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Vietnamese Coffee → 越南菜"
       }
     },
@@ -34130,7 +34151,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Bakery → 甜品"
       }
     },
@@ -34193,7 +34214,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Cantonese Dim Sum → 粤菜"
       }
     },
@@ -34264,7 +34285,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -34336,7 +34357,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -34394,7 +34415,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Filipino → 东南亚菜"
       }
     },
@@ -34454,7 +34475,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Inner Mongolian → 东北菜"
       }
     },
@@ -34513,7 +34534,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.967Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -34570,7 +34591,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -34627,7 +34648,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -34686,7 +34707,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Lanzhou Ramen → 面食"
       }
     },
@@ -34743,7 +34764,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Lemon Tea / Beverage → 奶茶"
       }
     },
@@ -34835,7 +34856,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
@@ -34890,7 +34911,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -34949,7 +34970,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -35007,7 +35028,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -35066,7 +35087,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -35125,7 +35146,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -35187,7 +35208,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.458Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Taiwanese → 台湾菜"
       }
     },
@@ -35244,7 +35265,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.459Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
@@ -35299,7 +35320,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.459Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Sichuan Noodles → 面食"
       }
     },
@@ -35356,7 +35377,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.459Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Chinese Bakery → 甜品"
       }
     },
@@ -35413,7 +35434,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.459Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -35470,7 +35491,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.459Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Fast Food → 西餐"
       }
     },
@@ -35525,7 +35546,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.459Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
@@ -35611,7 +35632,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.459Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Japanese → 日料"
       }
     },
@@ -35670,7 +35691,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.459Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -35727,7 +35748,7 @@
         "needs_review": false
       },
       "correction_applied": {
-        "at": "2026-02-26T01:31:21.459Z",
+        "at": "2026-03-02T00:22:15.968Z",
         "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
@@ -35735,7 +35756,7 @@
       "id": "pipeline_1772091355879_s8l3",
       "name": "醍醐 Daigo",
       "name_en": "",
-      "cuisine": "Japanese Izakaya",
+      "cuisine": "日料",
       "area": "Palo Alto",
       "region": "Peninsula",
       "city": "Palo Alto",
@@ -35784,13 +35805,17 @@
         "source": "daily_pipeline",
         "source_post": "66cbaec3000000001d01a843",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Japanese Izakaya → 日料"
       }
     },
     {
       "id": "pipeline_1772091355883_ziwz",
       "name": "无肉不欢 Meat House",
       "name_en": "",
-      "cuisine": "Hot Pot/BBQ Meat",
+      "cuisine": "火锅",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -35838,13 +35863,17 @@
         "source": "daily_pipeline",
         "source_post": "66cbaec3000000001d01a843",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Hot Pot/BBQ Meat → 火锅"
       }
     },
     {
       "id": "pipeline_1772091355883_1xwu",
       "name": "曾三仙米线 ZSX Szechuan Rice Noodle",
       "name_en": "",
-      "cuisine": "Szechuan",
+      "cuisine": "川菜",
       "area": "Newark",
       "region": "East Bay",
       "city": "Newark",
@@ -35892,13 +35921,17 @@
         "source": "daily_pipeline",
         "source_post": "67e57e050000000007037c97",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Szechuan → 川菜"
       }
     },
     {
       "id": "pipeline_1772091355883_se5q",
       "name": "Fresh Element",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "Daly City",
       "region": "Peninsula",
       "city": "Daly City",
@@ -35946,13 +35979,17 @@
         "source": "daily_pipeline",
         "source_post": "67e57e050000000007037c97",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
       "id": "pipeline_1772091355883_w2q8",
       "name": "Turtle Tower",
       "name_en": "",
-      "cuisine": "Vietnamese",
+      "cuisine": "越南菜",
       "area": "San Francisco",
       "region": "San Francisco",
       "city": "San Francisco",
@@ -36001,13 +36038,17 @@
         "source": "daily_pipeline",
         "source_post": "68081572000000001c0379db",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
     {
       "id": "pipeline_1772091355883_a6q6",
       "name": "Kin Khao",
       "name_en": "",
-      "cuisine": "Thai",
+      "cuisine": "泰餐",
       "area": "San Francisco",
       "region": "San Francisco",
       "city": "San Francisco",
@@ -36052,13 +36093,17 @@
         "source": "daily_pipeline",
         "source_post": "68081572000000001c0379db",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Thai → 泰餐"
       }
     },
     {
       "id": "pipeline_1772091355883_lmmw",
       "name": "Blue Sky Cafe",
       "name_en": "",
-      "cuisine": "Cantonese",
+      "cuisine": "粤菜",
       "area": "Belmont",
       "region": "Peninsula",
       "city": "Belmont",
@@ -36107,6 +36152,10 @@
         "source": "daily_pipeline",
         "source_post": "683b495b000000002300d8f5",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
     {
@@ -36168,7 +36217,7 @@
       "id": "pipeline_1772091355883_z63o",
       "name": "Mission City Grill",
       "name_en": "",
-      "cuisine": "美式",
+      "cuisine": "西餐",
       "area": "Santa Clara",
       "region": "South Bay",
       "city": "Santa Clara",
@@ -36217,13 +36266,17 @@
         "source": "daily_pipeline",
         "source_post": "689632250000000025023b2c",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: 美式 → 西餐"
       }
     },
     {
       "id": "pipeline_1772091355883_u427",
       "name": "GIWA",
       "name_en": "",
-      "cuisine": "韩餐+日料融合",
+      "cuisine": "融合菜",
       "area": "Santa Clara",
       "region": "South Bay",
       "city": "Santa Clara",
@@ -36285,13 +36338,17 @@
         "source": "daily_pipeline",
         "source_post": "689632250000000025023b2c",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: 韩餐+日料融合 → 融合菜"
       }
     },
     {
       "id": "pipeline_1772091355883_2elu",
       "name": "Oh Baby Sushi",
       "name_en": "",
-      "cuisine": "寿司",
+      "cuisine": "日料",
       "area": "Sunnyvale",
       "region": "South Bay",
       "city": "Sunnyvale",
@@ -36340,6 +36397,10 @@
         "source": "daily_pipeline",
         "source_post": "689632250000000025023b2c",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: 寿司 → 日料"
       }
     },
     {
@@ -36399,7 +36460,7 @@
       "id": "pipeline_1772091355883_mqqw",
       "name": "黄记煌 Simmer Huang",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "Daly City",
       "region": "Peninsula",
       "city": "Daly City",
@@ -36446,6 +36507,10 @@
         "source": "daily_pipeline",
         "source_post": "68a0140e000000001d00ed43",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
@@ -36508,7 +36573,7 @@
       "id": "pipeline_1772091355883_hgz8",
       "name": "鲜芋仙",
       "name_en": "",
-      "cuisine": "Dessert",
+      "cuisine": "甜品",
       "area": "Cupertino",
       "region": "South Bay",
       "city": "Cupertino",
@@ -36553,13 +36618,17 @@
         "source": "daily_pipeline",
         "source_post": "68b555b8000000001d037ba6",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Dessert → 甜品"
       }
     },
     {
       "id": "pipeline_1772091355883_bvlc",
       "name": "SweetHome Kitchen",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "San Jose",
       "region": "South Bay",
       "city": "San Jose",
@@ -36607,13 +36676,17 @@
         "source": "daily_pipeline",
         "source_post": "68c6fc90000000001d02dee5",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
       "id": "pipeline_1772091355884_x5oc",
       "name": "Katsu Gin",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -36663,13 +36736,17 @@
         "source": "daily_pipeline",
         "source_post": "690a98a90000000004013368",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1772091355884_ylwm",
       "name": "香港楼",
       "name_en": "",
-      "cuisine": "Cantonese / Dim Sum",
+      "cuisine": "粤菜",
       "area": "San Bruno",
       "region": "Peninsula",
       "city": "San Bruno",
@@ -36716,13 +36793,17 @@
         "source": "daily_pipeline",
         "source_post": "6912a1670000000004014ea2",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Cantonese / Dim Sum → 粤菜"
       }
     },
     {
       "id": "pipeline_1772091355884_f6qg",
       "name": "重庆铺盖面",
       "name_en": "C.Q. Taste",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "Cupertino",
       "region": "South Bay",
       "city": "Cupertino",
@@ -36872,13 +36953,17 @@
         "source_post": "692d5aaf000000001b020caa",
         "needs_review": false
       },
-      "google_name": "C.Q. Taste"
+      "google_name": "C.Q. Taste",
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
+      }
     },
     {
       "id": "pipeline_1772091355884_cbtu",
       "name": "好一方烩面",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -36940,13 +37025,17 @@
         "source": "daily_pipeline",
         "source_post": "692e79a30000000019027013",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
       "id": "pipeline_1772091355884_ox1s",
       "name": "Rantei",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -36991,13 +37080,17 @@
         "source": "daily_pipeline",
         "source_post": "693f9a1c000000001f007b87",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1772091355884_vvuc",
       "name": "粤来粤好 Wonderful Cafe",
       "name_en": "",
-      "cuisine": "Hong Kong Style Cha Chaan Teng",
+      "cuisine": "粤菜",
       "area": "Millbrae",
       "region": "Peninsula",
       "city": "Millbrae",
@@ -37047,13 +37140,17 @@
         "source": "daily_pipeline",
         "source_post": "69607151000000001a032f6b",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Hong Kong Style Cha Chaan Teng → 粤菜"
       }
     },
     {
       "id": "pipeline_1772091355884_06z2",
       "name": "Omakase",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "San Francisco",
       "region": "San Francisco",
       "city": "San Francisco",
@@ -37098,13 +37195,17 @@
         "source": "daily_pipeline",
         "source_post": "69632b87000000000e03e522",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1772091355884_1ktx",
       "name": "Ichika Izakaya",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "San Bruno",
       "region": "Peninsula",
       "city": "San Bruno",
@@ -37153,13 +37254,17 @@
         "source": "daily_pipeline",
         "source_post": "69632b87000000000e03e522",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1772091355884_cxo4",
       "name": "Kokko",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -37204,13 +37309,17 @@
         "source": "daily_pipeline",
         "source_post": "69632b87000000000e03e522",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1772091355884_0gja",
       "name": "Dope Pho",
       "name_en": "",
-      "cuisine": "Vietnamese",
+      "cuisine": "越南菜",
       "area": "Fremont",
       "region": "East Bay",
       "city": "Fremont",
@@ -37261,13 +37370,17 @@
         "source": "daily_pipeline",
         "source_post": "697d41cd000000002202087e",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
     {
       "id": "pipeline_1772091355884_qwte",
       "name": "Mokkoji Shabu Shabu",
       "name_en": "",
-      "cuisine": "Japanese Shabu Shabu",
+      "cuisine": "日料",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -37315,6 +37428,10 @@
         "source": "daily_pipeline",
         "source_post": "698ec6cd000000000b0088b6",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Japanese Shabu Shabu → 日料"
       }
     },
     {
@@ -37363,7 +37480,7 @@
       "id": "pipeline_1772170235841_9erk",
       "name": "Taki Nori Hand Roll Bar",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -37411,13 +37528,17 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1772170235842_no6s",
       "name": "Dash Japanese Tapas And Sushi",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -37466,13 +37587,17 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1772170235842_g3lp",
       "name": "Takahashi Market",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -37521,13 +37646,17 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1772170235842_m4aj",
       "name": "刘一手火锅 Liuyishou Hotpot (San Mateo)",
       "name_en": "",
-      "cuisine": "Hot pot",
+      "cuisine": "火锅",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -37573,13 +37702,17 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Hot pot → 火锅"
       }
     },
     {
       "id": "pipeline_1772170235842_kgcc",
       "name": "Shabuway",
       "name_en": "",
-      "cuisine": "Hot pot",
+      "cuisine": "火锅",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -37627,6 +37760,10 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Hot pot → 火锅"
       }
     },
     {
@@ -37687,7 +37824,7 @@
       "id": "pipeline_1772170235842_4wc3",
       "name": "猛男汉堡 The Burger",
       "name_en": "",
-      "cuisine": "Fast food",
+      "cuisine": "西餐",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -37735,13 +37872,17 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Fast food → 西餐"
       }
     },
     {
       "id": "pipeline_1772170235842_48kn",
       "name": "Himawari",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -37789,13 +37930,17 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1772170235842_c9kd",
       "name": "Daeho Kalbijjim & Beef Soup",
       "name_en": "",
-      "cuisine": "Korean",
+      "cuisine": "韩餐",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -37844,13 +37989,17 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
     {
       "id": "pipeline_1772170235842_9uzk",
       "name": "鲜芋仙 Meet Fresh | San Mateo",
       "name_en": "",
-      "cuisine": "Dessert",
+      "cuisine": "甜品",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -37896,13 +38045,17 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Dessert → 甜品"
       }
     },
     {
       "id": "pipeline_1772170235842_ty4y",
       "name": "Pausa Bar & Cookery",
       "name_en": "",
-      "cuisine": "Italian",
+      "cuisine": "意大利菜",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -37948,13 +38101,17 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Italian → 意大利菜"
       }
     },
     {
       "id": "pipeline_1772170235842_oafo",
       "name": "人间烟火小酒馆 Dynasty BBQ",
       "name_en": "",
-      "cuisine": "Chinese BBQ",
+      "cuisine": "烧腊",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -38002,13 +38159,17 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.968Z",
+        "reason": "cuisine normalization: Chinese BBQ → 烧腊"
       }
     },
     {
       "id": "pipeline_1772170235842_9klf",
       "name": "一品主考官 Prime BBQ",
       "name_en": "",
-      "cuisine": "BBQ",
+      "cuisine": "烧烤",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -38054,13 +38215,17 @@
         "source": "daily_pipeline",
         "source_post": "66c2bf7d0000000005020e6f",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: BBQ → 烧烤"
       }
     },
     {
       "id": "pipeline_1772170543797_c6ie",
       "name": "Dumpling Capital 水饺之都",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "Santa Clara",
       "region": "South Bay",
       "city": "Santa Clara",
@@ -38106,13 +38271,17 @@
         "source": "daily_pipeline",
         "source_post": "67283aca0000000019016b2a",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
       "id": "pipeline_1772170543797_tsxu",
       "name": "Fugetsu - San Jose",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "San Jose",
       "region": "South Bay",
       "city": "San Jose",
@@ -38160,13 +38329,17 @@
         "source": "daily_pipeline",
         "source_post": "67283aca0000000019016b2a",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1772170543797_gvyh",
       "name": "Com Tam Sai Gon",
       "name_en": "",
-      "cuisine": "Vietnamese",
+      "cuisine": "越南菜",
       "area": "San Jose",
       "region": "South Bay",
       "city": "San Jose",
@@ -38212,13 +38385,17 @@
         "source": "daily_pipeline",
         "source_post": "67283aca0000000019016b2a",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
     {
       "id": "pipeline_1772170543797_po5l",
       "name": "Shanghai Delight",
       "name_en": "",
-      "cuisine": "Shanghainese",
+      "cuisine": "上海菜",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -38280,13 +38457,17 @@
         "source": "daily_pipeline",
         "source_post": "677c2300000000000203d1d0",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Shanghainese → 上海菜"
       }
     },
     {
       "id": "pipeline_1772170543797_fiw9",
       "name": "Bel Cool Tasty Pot",
       "name_en": "",
-      "cuisine": "麻辣香锅",
+      "cuisine": "麻辣烫",
       "area": "Cupertino",
       "region": "South Bay",
       "city": "Cupertino",
@@ -38334,13 +38515,17 @@
         "source": "daily_pipeline",
         "source_post": "67a7d41d000000002802aa13",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: 麻辣香锅 → 麻辣烫"
       }
     },
     {
       "id": "pipeline_1772170543798_q21v",
       "name": "土包子 FUSION DUMPLING",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "San Francisco",
       "region": "San Francisco",
       "city": "San Francisco",
@@ -38386,6 +38571,10 @@
         "source": "daily_pipeline",
         "source_post": "6850e3230000000021001688",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
@@ -38444,7 +38633,7 @@
       "id": "pipeline_1772170543798_wvrv",
       "name": "旺龙谷盒饭 Dragon Valley Express - Sunnyvale",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "Sunnyvale",
       "region": "South Bay",
       "city": "Sunnyvale",
@@ -38494,13 +38683,17 @@
         "source": "daily_pipeline",
         "source_post": "689e8cfd000000001d00917d",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
       "id": "pipeline_1772170543798_caum",
       "name": "士林鸡排 Shihlin Taiwan Street Snacks",
       "name_en": "",
-      "cuisine": "Taiwanese",
+      "cuisine": "台湾菜",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -38548,13 +38741,17 @@
         "source": "daily_pipeline",
         "source_post": "689e8cfd000000001d00917d",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Taiwanese → 台湾菜"
       }
     },
     {
       "id": "pipeline_1772170543798_fl2k",
       "name": "校园汉堡 Campus Burgers",
       "name_en": "",
-      "cuisine": "Chinese-style burgers",
+      "cuisine": "中餐",
       "area": "San Jose",
       "region": "South Bay",
       "city": "San Jose",
@@ -38602,13 +38799,17 @@
         "source": "daily_pipeline",
         "source_post": "689e8cfd000000001d00917d",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Chinese-style burgers → 中餐"
       }
     },
     {
       "id": "pipeline_1772170543798_w2ko",
       "name": "Vons Chicken | Sunnyvale",
       "name_en": "",
-      "cuisine": "Korean fried chicken",
+      "cuisine": "韩餐",
       "area": "Sunnyvale",
       "region": "South Bay",
       "city": "Sunnyvale",
@@ -38656,13 +38857,17 @@
         "source": "daily_pipeline",
         "source_post": "689e8cfd000000001d00917d",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Korean fried chicken → 韩餐"
       }
     },
     {
       "id": "pipeline_1772170543798_zfe3",
       "name": "菠蘿王 Pearl Bay",
       "name_en": "",
-      "cuisine": "Chinese Bakery",
+      "cuisine": "甜品",
       "area": "Fremont",
       "region": "East Bay",
       "city": "Fremont",
@@ -38708,13 +38913,17 @@
         "source": "daily_pipeline",
         "source_post": "68c51a09000000001b0209fe",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Chinese Bakery → 甜品"
       }
     },
     {
       "id": "pipeline_1772170543798_a7q5",
       "name": "老芋仔",
       "name_en": "",
-      "cuisine": "Chinese",
+      "cuisine": "中餐",
       "area": "Fremont",
       "region": "East Bay",
       "city": "Fremont",
@@ -38760,13 +38969,17 @@
         "source": "daily_pipeline",
         "source_post": "68c51a09000000001b0209fe",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Chinese → 中餐"
       }
     },
     {
       "id": "pipeline_1772170543798_8pi9",
       "name": "鲜味水饺 Special Noodle",
       "name_en": "",
-      "cuisine": "Northern Chinese",
+      "cuisine": "中餐",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -38818,13 +39031,17 @@
         "source": "daily_pipeline",
         "source_post": "68e15d40000000000402a627",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Northern Chinese → 中餐"
       }
     },
     {
       "id": "pipeline_1772170543798_pu4j",
       "name": "瓷禧 Fugetsu - Sunnyvale",
       "name_en": "",
-      "cuisine": "奶茶店",
+      "cuisine": "奶茶",
       "area": "Sunnyvale",
       "region": "South Bay",
       "city": "Sunnyvale",
@@ -38873,13 +39090,17 @@
         "source": "daily_pipeline",
         "source_post": "68ead161000000000503b338",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: 奶茶店 → 奶茶"
       }
     },
     {
       "id": "pipeline_1772170543798_2mbe",
       "name": "鲜味水饺 Old Town Shanghai",
       "name_en": "",
-      "cuisine": "Shanghainese",
+      "cuisine": "上海菜",
       "area": "Sunnyvale",
       "region": "South Bay",
       "city": "Sunnyvale",
@@ -38941,13 +39162,17 @@
         "source": "daily_pipeline",
         "source_post": "69117201000000000301a6f1",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Shanghainese → 上海菜"
       }
     },
     {
       "id": "pipeline_1772170543798_qsoj",
       "name": "米线 575 Miishien Express （Rice Noodle Soup)",
       "name_en": "",
-      "cuisine": "Yunnan",
+      "cuisine": "云南菜",
       "area": "Fremont",
       "region": "East Bay",
       "city": "Fremont",
@@ -38995,13 +39220,17 @@
         "source": "daily_pipeline",
         "source_post": "691516c4000000000503a1b8",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Yunnan → 云南菜"
       }
     },
     {
       "id": "pipeline_1772170543798_9fiu",
       "name": "Mad Yolks",
       "name_en": "",
-      "cuisine": "Asian Fusion",
+      "cuisine": "融合菜",
       "area": "San Jose",
       "region": "South Bay",
       "city": "San Jose",
@@ -39050,13 +39279,17 @@
         "source": "daily_pipeline",
         "source_post": "6927f8d30000000019026929",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Asian Fusion → 融合菜"
       }
     },
     {
       "id": "pipeline_1772170543798_5zkf",
       "name": "Palmetto Superfoods - Fremont",
       "name_en": "",
-      "cuisine": "Healthy",
+      "cuisine": "西餐",
       "area": "Fremont",
       "region": "East Bay",
       "city": "Fremont",
@@ -39102,13 +39335,17 @@
         "source": "daily_pipeline",
         "source_post": "6927f8d30000000019026929",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Healthy → 西餐"
       }
     },
     {
       "id": "pipeline_1772170543798_wzfr",
       "name": "梁妈妈 Liang's Village",
       "name_en": "",
-      "cuisine": "Sichuan",
+      "cuisine": "川菜",
       "area": "Cupertino",
       "region": "South Bay",
       "city": "Cupertino",
@@ -39154,13 +39391,17 @@
         "source": "daily_pipeline",
         "source_post": "69333537000000001e013730",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Sichuan → 川菜"
       }
     },
     {
       "id": "pipeline_1772170543798_6zys",
       "name": "牛浪人 Wagyu Grill AYCE Barbeque, Sushi & Bar",
       "name_en": "",
-      "cuisine": "Japanese BBQ",
+      "cuisine": "日料",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -39209,13 +39450,17 @@
         "source": "daily_pipeline",
         "source_post": "69421dd7000000001e03512b",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Japanese BBQ → 日料"
       }
     },
     {
       "id": "pipeline_1772346692755_zvfx",
       "name": "Anh Hong Restaurant",
       "name_en": "",
-      "cuisine": "Vietnamese",
+      "cuisine": "越南菜",
       "area": "San Jose",
       "region": "South Bay",
       "city": "San Jose",
@@ -39268,6 +39513,10 @@
         "source": "daily_pipeline",
         "source_post": "665e8713000000001303eb6d",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Vietnamese → 越南菜"
       }
     },
     {
@@ -39334,7 +39583,7 @@
       "id": "pipeline_1772346692755_28zc",
       "name": "港式茶餐厅 Venus Cafe - San Jose",
       "name_en": "",
-      "cuisine": "Hong Kong Style Cafe",
+      "cuisine": "粤菜",
       "area": "San Jose",
       "region": "South Bay",
       "city": "San Jose",
@@ -39380,13 +39629,17 @@
         "source": "daily_pipeline",
         "source_post": "67b527ba000000000900dc3a",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Hong Kong Style Cafe → 粤菜"
       }
     },
     {
       "id": "pipeline_1772346692755_4wkm",
       "name": "Imperial Soup",
       "name_en": "",
-      "cuisine": "Cantonese",
+      "cuisine": "粤菜",
       "area": "Oakland",
       "region": "East Bay",
       "city": "Oakland",
@@ -39437,13 +39690,17 @@
         "source": "daily_pipeline",
         "source_post": "67cdd51a000000002503ee8c",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Cantonese → 粤菜"
       }
     },
     {
       "id": "pipeline_1772346692755_x86c",
       "name": "Top Dog",
       "name_en": "",
-      "cuisine": "Hot dog",
+      "cuisine": "西餐",
       "area": "Berkeley",
       "region": "East Bay",
       "city": "Berkeley",
@@ -39492,13 +39749,17 @@
         "source": "daily_pipeline",
         "source_post": "6837f7eb000000001101ef38",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Hot dog → 西餐"
       }
     },
     {
       "id": "pipeline_1772346692755_91wb",
       "name": "古月飘香 Chengdu Style Restaurant",
       "name_en": "",
-      "cuisine": "Chinese (Sichuan)",
+      "cuisine": "川菜",
       "area": "Berkeley",
       "region": "East Bay",
       "city": "Berkeley",
@@ -39544,13 +39805,17 @@
         "source": "daily_pipeline",
         "source_post": "6837f7eb000000001101ef38",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Chinese (Sichuan) → 川菜"
       }
     },
     {
       "id": "pipeline_1772346692755_jqsp",
       "name": "Meet Rice Noodle 蒙自源米线大王",
       "name_en": "",
-      "cuisine": "Yunnan",
+      "cuisine": "云南菜",
       "area": "Fremont",
       "region": "East Bay",
       "city": "Fremont",
@@ -39600,13 +39865,17 @@
         "source": "daily_pipeline",
         "source_post": "683ce3d3000000002001d260",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Yunnan → 云南菜"
       }
     },
     {
       "id": "pipeline_1772346692755_5e9y",
       "name": "WuJi's Mala House",
       "name_en": "",
-      "cuisine": "Hot pot",
+      "cuisine": "火锅",
       "area": "San Jose",
       "region": "South Bay",
       "city": "San Jose",
@@ -39658,13 +39927,17 @@
         "source": "daily_pipeline",
         "source_post": "68a23a52000000001d028389",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Hot pot → 火锅"
       }
     },
     {
       "id": "pipeline_1772346692755_el6s",
       "name": "四季茶馆火锅 Four Seasons Tea House Hot Pot",
       "name_en": "",
-      "cuisine": "茶底火锅",
+      "cuisine": "火锅",
       "area": "Mountain View",
       "region": "South Bay",
       "city": "Mountain View",
@@ -39720,13 +39993,17 @@
         "source": "daily_pipeline",
         "source_post": "68c90af5000000001203d5da",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: 茶底火锅 → 火锅"
       }
     },
     {
       "id": "pipeline_1772346692755_0bba",
       "name": "Wooga Korean BBQ",
       "name_en": "",
-      "cuisine": "Korean BBQ",
+      "cuisine": "韩餐",
       "area": "Cupertino",
       "region": "South Bay",
       "city": "Cupertino",
@@ -39791,13 +40068,17 @@
         "source": "daily_pipeline",
         "source_post": "68f828af00000000050119d3",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Korean BBQ → 韩餐"
       }
     },
     {
       "id": "pipeline_1772346692756_09do",
       "name": "Izakaya Uosan",
       "name_en": "",
-      "cuisine": "Japanese",
+      "cuisine": "日料",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -39845,13 +40126,17 @@
         "source": "daily_pipeline",
         "source_post": "690827d60000000005001e60",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Japanese → 日料"
       }
     },
     {
       "id": "pipeline_1772346692756_i1ps",
       "name": "鲤鱼门 Koi Palace - Milpitas",
       "name_en": "",
-      "cuisine": "Dim Sum",
+      "cuisine": "粤菜",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -39902,13 +40187,17 @@
         "source": "daily_pipeline",
         "source_post": "693e2b74000000001e007ebb",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Dim Sum → 粤菜"
       }
     },
     {
       "id": "pipeline_1772346692756_ehxz",
       "name": "许留山 Hui Lau Shan",
       "name_en": "",
-      "cuisine": "Dessert",
+      "cuisine": "甜品",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -39956,13 +40245,17 @@
         "source": "daily_pipeline",
         "source_post": "698bda20000000000b00b05b",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Dessert → 甜品"
       }
     },
     {
       "id": "pipeline_1772346692756_fgqq",
       "name": "B N Chicken",
       "name_en": "",
-      "cuisine": "Korean",
+      "cuisine": "韩餐",
       "area": "Santa Clara",
       "region": "South Bay",
       "city": "Santa Clara",
@@ -40010,13 +40303,17 @@
         "source": "daily_pipeline",
         "source_post": "699a1caf000000000a028bad",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
     {
       "id": "pipeline_1772346692756_61no",
       "name": "SGD Tofu House",
       "name_en": "",
-      "cuisine": "Korean",
+      "cuisine": "韩餐",
       "area": "Santa Clara",
       "region": "South Bay",
       "city": "Santa Clara",
@@ -40062,13 +40359,17 @@
         "source": "daily_pipeline",
         "source_post": "699a1caf000000000a028bad",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
     {
       "id": "pipeline_1772346692756_j9dy",
       "name": "Tang Jip",
       "name_en": "",
-      "cuisine": "Korean",
+      "cuisine": "韩餐",
       "area": "Hayward",
       "region": "East Bay",
       "city": "Hayward",
@@ -40117,13 +40418,17 @@
         "source": "daily_pipeline",
         "source_post": "69a27a53000000001a02c7b8",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Korean → 韩餐"
       }
     },
     {
       "id": "pipeline_1772346692756_77gi",
       "name": "CRUST Sourdough Deli",
       "name_en": "",
-      "cuisine": "Deli/Sandwiches",
+      "cuisine": "西餐",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -40172,13 +40477,17 @@
         "source": "daily_pipeline",
         "source_post": "69a27a53000000001a02c7b8",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Deli/Sandwiches → 西餐"
       }
     },
     {
       "id": "pipeline_1772346692756_pqt5",
       "name": "Wooly Pig",
       "name_en": "",
-      "cuisine": "Sandwiches",
+      "cuisine": "西餐",
       "area": "San Francisco",
       "region": "San Francisco",
       "city": "San Francisco",
@@ -40226,8 +40535,12 @@
         "source": "daily_pipeline",
         "source_post": "69a27a53000000001a02c7b8",
         "needs_review": false
+      },
+      "correction_applied": {
+        "at": "2026-03-02T00:22:15.969Z",
+        "reason": "cuisine normalization: Sandwiches → 西餐"
       }
     }
   ],
-  "verified_at": "2026-03-01T17:57:39.043Z"
+  "verified_at": "2026-03-02T01:17:06.062Z"
 }
