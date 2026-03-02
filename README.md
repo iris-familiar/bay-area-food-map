@@ -129,6 +129,55 @@ Requires `GOOGLE_PLACES_API_KEY` in `.env`. Cost: ~$0.017/restaurant.
 
 ---
 
+## Cuisine Breakdown
+
+As of **2026-03-02** (588 restaurants, excluding duplicates):
+
+| 菜系 | 数量 |
+|------|-----:|
+| 日料 | 71 |
+| 中餐 | 68 |
+| 韩餐 | 48 |
+| 粤菜 | 47 |
+| 越南菜 | 41 |
+| 西餐 | 38 |
+| 火锅 | 33 |
+| 川菜 | 27 |
+| 甜品 | 25 |
+| 湘菜 | 20 |
+| 面食 | 18 |
+| 泰餐 | 15 |
+| 意大利菜 | 13 |
+| 融合菜 | 12 |
+| 早午餐 | 11 |
+| 上海菜 | 10 |
+| 海鲜 | 10 |
+| 云南菜 | 7 |
+| 麻辣烫 | 7 |
+| 台湾菜 | 7 |
+| 奶茶 | 7 |
+| 墨西哥菜 | 6 |
+| 新疆菜 | 6 |
+| 东南亚菜 | 6 |
+| 潮汕菜 | 5 |
+| 烧烤 | 5 |
+| 东北菜 | 4 |
+| 牛排 | 3 |
+| 江浙菜 | 3 |
+| 印度菜 | 3 |
+| 烧腊 | 2 |
+| 中东菜 | 2 |
+| 徽菜 | 1 |
+| 炸鸡 | 1 |
+| 尼泊尔菜 | 1 |
+| 砂锅 | 1 |
+| 贵州菜 | 1 |
+| 湖北菜 | 1 |
+| 素食 | 1 |
+| Unknown | 1 |
+
+---
+
 ## Cuisine Field Normalization
 
 If the `cuisine` field accumulates messy values (mix of English/Chinese, semantic duplicates):
