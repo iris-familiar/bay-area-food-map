@@ -1253,42 +1253,18 @@
     },
     {
       "id": "r013",
-      "name": "鲜味水饺 Umami Dumpling House",
-      "name_en": "Umami Dumpling House",
+      "name": "鲜味水饺 Old Town Shanghai",
+      "name_en": "",
       "cuisine": "上海菜",
       "area": "Sunnyvale",
       "price_range": "",
       "total_engagement": 387.4234482783625,
       "mention_count": 3,
-      "sources": [
-        "6915759900000000070383d7",
-        "6918f689000000000d038521"
-      ],
-      "post_details": [
-        {
-          "post_id": "6915759900000000070383d7",
-          "title": "冬天一口暖暖的😍Sunnyvale平价上海家常味",
-          "date": "2025-11-13",
-          "engagement": 538,
-          "context": "",
-          "adjusted_engagement": 380.4234482783625,
-          "restaurant_count_in_post": 2,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "6918f689000000000d038521",
-          "title": "Sunnyvale鲜味水饺探店repo",
-          "date": "",
-          "engagement": 7,
-          "adjusted_engagement": 7,
-          "restaurant_count_in_post": 1,
-          "context": "",
-          "sentiment": "negative"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "google_rating": 4.6,
       "google_place_id": "ChIJ7QMGuJO3j4ARbOM9BefOFFY",
-      "address": "Mary Manor Shopping Center, #1, Sunnyvale, CA 94086, USA",
+      "address": "251 S Mary Ave #1, Sunnyvale, CA 94086",
       "verified": true,
       "sentiment_score": 0.98,
       "sentiment_details": {
@@ -1351,7 +1327,8 @@
           "mentions": 1,
           "engagement": 7
         }
-      ]
+      ],
+      "_status": "duplicate_merged"
     },
     {
       "id": "r014",
@@ -1636,7 +1613,7 @@
     },
     {
       "id": "r016",
-      "name": "Hunan House",
+      "name": "一屋饭湘 Hunan House",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "Sunnyvale",
@@ -4991,30 +4968,19 @@
     },
     {
       "id": "r058",
-      "name": "川湘 1616",
-      "name_en": "Spices Garden",
+      "name": "川湘阁 Chuan Xiang Spicy Cuisine",
+      "name_en": "",
       "cuisine": "湘菜",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 327.99494936611666,
-      "mention_count": 5,
+      "total_engagement": 229,
+      "mention_count": 3,
       "sources": [
-        "6915061a000000001b030af5",
         "68ddd152000000000302c593",
-        "697423080000000022039cb4",
+        "6915061a000000001b030af5",
         "699534d7000000001a0269e4"
       ],
       "post_details": [
-        {
-          "post_id": "697423080000000022039cb4",
-          "title": "湾区下班吃什么｜乱评Fremont新徽记",
-          "date": "2026-01-24",
-          "engagement": 140,
-          "context": "",
-          "adjusted_engagement": 98.99494936611664,
-          "restaurant_count_in_post": 2,
-          "sentiment": "positive"
-        },
         {
           "post_id": "68ddd152000000000302c593",
           "title": "湾区Newark烟火气川菜馆！凉拌腰花好好吃！",
@@ -5567,7 +5533,7 @@
     },
     {
       "id": "r065",
-      "name": "爱饭",
+      "name": "川湘小馆 Hunan Szechuan Cuisine",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "Mountain View",
@@ -5635,7 +5601,7 @@
       ],
       "google_rating": 4.8,
       "google_place_id": "ChIJK8pvbKO3j4ARsm7k_GXRY8U",
-      "address": "1040 Grant Rd STE 100, Mountain View, CA 94040, USA",
+      "address": "1350 Grant Rd #8, Mountain View, CA 94040",
       "verified": true,
       "sentiment_score": 1,
       "sentiment_details": {
@@ -13603,12 +13569,12 @@
       "price_range": "unknown",
       "address": "674 Sacramento St, San Francisco, CA 94111, USA",
       "google_rating": 4.6,
-      "google_place_id": "ChIJ1dIgA82BhYARF0NrYkCbYfI",
+      "google_place_id": "ChIJOSqhJH2AhYAR5H07IDI_A6s",
       "lat": 37.7937257,
       "lng": -122.4041544,
       "verified": true,
-      "total_engagement": 95,
-      "mention_count": 1,
+      "total_engagement": 400.91146679853256,
+      "mention_count": 3,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -13617,7 +13583,9 @@
         "孜然牛肉"
       ],
       "sources": [
-        "67d68b1c000000000603b7d8"
+        "67d68b1c000000000603b7d8",
+        "66834a25000000001f004691",
+        "68a51576000000001d03a6af"
       ],
       "post_details": [
         {
@@ -13629,6 +13597,26 @@
           "adjusted_engagement": 95,
           "restaurant_count_in_post": 1,
           "sentiment": "positive"
+        },
+        {
+          "post_id": "66834a25000000001f004691",
+          "title": "旧金山美食探店红黑榜 游客无广测评版",
+          "date": "2024-07-02",
+          "engagement": 457,
+          "context": "",
+          "adjusted_engagement": 161.5738995011261,
+          "restaurant_count_in_post": 8,
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "68a51576000000001d03a6af",
+          "title": "南湾组川菜/湘菜局（求口味接近的朋友）",
+          "date": "2025-08-20",
+          "engagement": 250,
+          "context": "",
+          "adjusted_engagement": 144.33756729740645,
+          "restaurant_count_in_post": 3,
+          "sentiment": "neutral"
         }
       ],
       "timeseries": [
@@ -14218,9 +14206,9 @@
     },
     {
       "id": "pipeline_1772067300865_nob5",
-      "name": "福牛堂 Fu Niu Tang",
+      "name": "福牛堂 Noodle Talk",
       "name_en": "",
-      "cuisine": "湘菜",
+      "cuisine": "米粉",
       "area": "Sunnyvale",
       "region": "South Bay",
       "city": "Sunnyvale",
@@ -16046,32 +16034,8 @@
         "剁椒鱼头",
         "小炒牛肉"
       ],
-      "sources": [
-        "68a51576000000001d03a6af",
-        "66834a25000000001f004691"
-      ],
-      "post_details": [
-        {
-          "post_id": "66834a25000000001f004691",
-          "title": "旧金山美食探店红黑榜 游客无广测评版",
-          "date": "2024-07-02",
-          "engagement": 457,
-          "context": "",
-          "adjusted_engagement": 161.5738995011261,
-          "restaurant_count_in_post": 8,
-          "sentiment": "neutral"
-        },
-        {
-          "post_id": "68a51576000000001d03a6af",
-          "title": "南湾组川菜/湘菜局（求口味接近的朋友）",
-          "date": "2025-08-20",
-          "engagement": 250,
-          "context": "",
-          "adjusted_engagement": 144.33756729740645,
-          "restaurant_count_in_post": 3,
-          "sentiment": "neutral"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "timeseries": [
         {
           "month": "2026-02",
@@ -16090,7 +16054,8 @@
       "correction_applied": {
         "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Hunan → 湘菜"
-      }
+      },
+      "_status": "duplicate_merged"
     },
     {
       "id": "pipeline_1772067300868_bo7g",
@@ -16224,9 +16189,9 @@
     },
     {
       "id": "pipeline_1772067300868_ajzv",
-      "name": "长沙米粉",
+      "name": "长沙米粉 Changsha Rice Noodle",
       "name_en": "",
-      "cuisine": "湘菜",
+      "cuisine": "米粉",
       "area": "Cupertino",
       "region": "South Bay",
       "city": "Cupertino",
@@ -19240,7 +19205,7 @@
       "id": "pipeline_1772067300873_cu1w",
       "name": "杨裕兴 Yum Noodles",
       "name_en": "",
-      "cuisine": "湘菜",
+      "cuisine": "米粉",
       "area": "Santa Clara",
       "region": "South Bay",
       "city": "Santa Clara",
@@ -20098,7 +20063,7 @@
       "id": "pipeline_1772067300874_94sq",
       "name": "台山风味餐厅 Taishan Cuisine",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "粤菜",
       "area": "San Francisco",
       "region": "San Francisco",
       "city": "San Francisco",
@@ -24400,7 +24365,7 @@
       "id": "pipeline_1772067301117_zfm7",
       "name": "Full House Dumpling",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "台湾菜",
       "area": "Fremont",
       "region": "East Bay",
       "city": "Fremont",
@@ -25804,7 +25769,7 @@
     },
     {
       "id": "pipeline_1772067301117_dmw1",
-      "name": "福牛堂 Noodle Talk Home Cuisine",
+      "name": "福牛堂私房菜 Noodle Talk Home Cuisine",
       "name_en": "",
       "cuisine": "湘菜",
       "area": "Fremont",
@@ -26125,7 +26090,7 @@
       "id": "pipeline_1772067301117_r2je",
       "name": "好客栈",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "台湾菜",
       "area": "Cupertino",
       "region": "South Bay",
       "city": "Cupertino",
@@ -27678,18 +27643,18 @@
     },
     {
       "id": "pipeline_1772067301118_o311",
-      "name": "Unspecified Restaurant",
+      "name": "湘黔劲 Noodle Net",
       "name_en": "",
       "cuisine": "中餐",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
       "price_range": "unknown",
-      "address": "182 Ranch Dr, Milpitas, CA 95035, USA",
-      "google_rating": 4.2,
-      "google_place_id": "ChIJ1Z_3Id_Ij4ARFkIKYjV1-Y4",
-      "lat": 37.428123,
-      "lng": -121.920126,
+      "address": "1557 Landess Ave, Milpitas, CA 95035, USA",
+      "google_rating": 4.9,
+      "google_place_id": "ChIJ8xio1vvPj4ARQFtg9_AaBkw",
+      "lat": 37.4161644,
+      "lng": -121.8759703,
       "verified": true,
       "total_engagement": 110,
       "mention_count": 1,
@@ -27734,7 +27699,8 @@
       "correction_applied": {
         "at": "2026-03-02T00:22:15.966Z",
         "reason": "cuisine normalization: Chinese → 中餐"
-      }
+      },
+      "google_name": "Noodle Net"
     },
     {
       "id": "pipeline_1772067301118_vllh",
@@ -29848,7 +29814,7 @@
       "id": "pipeline_1772067301543_numw",
       "name": "牛麵王 Utopia Cafe",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "面食",
       "area": "San Francisco",
       "region": "San Francisco",
       "city": "San Francisco",
@@ -30669,9 +30635,9 @@
     },
     {
       "id": "pipeline_1772067301543_rma5",
-      "name": "兰州牛肉面 OX9",
+      "name": "九牛兰州拉面 Ox 9 Lanzhou Handpulled Noodles",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "面食",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -30743,9 +30709,9 @@
     },
     {
       "id": "pipeline_1772067301543_yjq4",
-      "name": "小香牛骨米粉",
+      "name": "小香融合料理",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "融合菜",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -30943,9 +30909,9 @@
     },
     {
       "id": "pipeline_1772067301543_6u1n",
-      "name": "李面清刀削面",
+      "name": "李面清刀削面 Li's Knife Cut Noodle",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "面食",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -32958,7 +32924,7 @@
       "id": "pipeline_1772067301544_56lk",
       "name": "杨国福麻辣烫",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "麻辣烫",
       "area": "Daly City",
       "region": "Peninsula",
       "city": "Daly City",
@@ -34293,7 +34259,7 @@
       "id": "pipeline_1772067301544_cmpj",
       "name": "575 Miishien",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "云南菜",
       "area": "San Jose",
       "region": "South Bay",
       "city": "San Jose",
@@ -35929,9 +35895,9 @@
     },
     {
       "id": "pipeline_1772091355883_se5q",
-      "name": "Fresh Element",
+      "name": "鲜元素 Fresh Element",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "海鲜",
       "area": "Daly City",
       "region": "Peninsula",
       "city": "Daly City",
@@ -36803,7 +36769,7 @@
       "id": "pipeline_1772091355884_f6qg",
       "name": "重庆铺盖面",
       "name_en": "C.Q. Taste",
-      "cuisine": "中餐",
+      "cuisine": "面食",
       "area": "Cupertino",
       "region": "South Bay",
       "city": "Cupertino",
@@ -36961,9 +36927,9 @@
     },
     {
       "id": "pipeline_1772091355884_cbtu",
-      "name": "好一方烩面",
+      "name": "好一方烩面 Henan Braised Noodle",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "面食",
       "area": "Milpitas",
       "region": "South Bay",
       "city": "Milpitas",
@@ -38223,9 +38189,9 @@
     },
     {
       "id": "pipeline_1772170543797_c6ie",
-      "name": "Dumpling Capital 水饺之都",
+      "name": "水饺之都 Dumpling Capital",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "面食",
       "area": "Santa Clara",
       "region": "South Bay",
       "city": "Santa Clara",
@@ -38525,7 +38491,7 @@
       "id": "pipeline_1772170543798_q21v",
       "name": "土包子 FUSION DUMPLING",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "面食",
       "area": "San Francisco",
       "region": "San Francisco",
       "city": "San Francisco",
@@ -38631,7 +38597,7 @@
     },
     {
       "id": "pipeline_1772170543798_wvrv",
-      "name": "旺龙谷盒饭 Dragon Valley Express - Sunnyvale",
+      "name": "旺龙谷盒饭 Dragon Valley Express",
       "name_en": "",
       "cuisine": "中餐",
       "area": "Sunnyvale",
@@ -38749,9 +38715,9 @@
     },
     {
       "id": "pipeline_1772170543798_fl2k",
-      "name": "校园汉堡 Campus Burgers",
+      "name": "Campus Burgers",
       "name_en": "",
-      "cuisine": "中餐",
+      "cuisine": "西餐",
       "area": "San Jose",
       "region": "South Bay",
       "city": "San Jose",
@@ -38973,26 +38939,27 @@
       "correction_applied": {
         "at": "2026-03-02T00:22:15.969Z",
         "reason": "cuisine normalization: Chinese → 中餐"
-      }
+      },
+      "_status": "rejected"
     },
     {
       "id": "pipeline_1772170543798_8pi9",
-      "name": "鲜味水饺 Special Noodle",
+      "name": "鲜味水饺 Old Town Shanghai",
       "name_en": "",
       "cuisine": "中餐",
-      "area": "Milpitas",
+      "area": "Sunnyvale",
       "region": "South Bay",
       "city": "Milpitas",
       "price_range": "unknown",
-      "google_name": "四姐 Special Noodle",
-      "address": "402 Barber Ln, Milpitas, CA 95035, USA",
-      "google_rating": 4.2,
-      "google_place_id": "ChIJj-OYYjbJj4ARA5lI85ttoao",
-      "lat": 37.422215,
-      "lng": -121.9165652,
+      "google_name": "Old Town Shanghai",
+      "address": "251 S Mary Ave #1, Sunnyvale, CA 94086, USA",
+      "google_rating": 3.9,
+      "google_place_id": "ChIJT-sTPUy3j4ARVmQA4HjHFpc",
+      "lat": 37.3784696,
+      "lng": -122.0466892,
       "verified": true,
-      "total_engagement": 46,
-      "mention_count": 1,
+      "total_engagement": 832.4234482783625,
+      "mention_count": 4,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -39003,7 +38970,10 @@
         "凉拌花生米"
       ],
       "sources": [
-        "68e15d40000000000402a627"
+        "68e15d40000000000402a627",
+        "69117201000000000301a6f1",
+        "6915759900000000070383d7",
+        "6918f689000000000d038521"
       ],
       "post_details": [
         {
@@ -39015,6 +38985,36 @@
           "restaurant_count_in_post": 1,
           "context": "",
           "sentiment": "positive"
+        },
+        {
+          "post_id": "69117201000000000301a6f1",
+          "title": "湾区17刀的双档砂锅汤！江浙沪才懂的家常菜！",
+          "date": "",
+          "engagement": 399,
+          "adjusted_engagement": 399,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6915759900000000070383d7",
+          "title": "冬天一口暖暖的😍Sunnyvale平价上海家常味",
+          "date": "2025-11-13",
+          "engagement": 538,
+          "context": "",
+          "adjusted_engagement": 380.4234482783625,
+          "restaurant_count_in_post": 2,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6918f689000000000d038521",
+          "title": "Sunnyvale鲜味水饺探店repo",
+          "date": "",
+          "engagement": 7,
+          "adjusted_engagement": 7,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "negative"
         }
       ],
       "timeseries": [
@@ -39133,21 +39133,8 @@
         "糖醋小排",
         "红烧狮子头"
       ],
-      "sources": [
-        "69117201000000000301a6f1"
-      ],
-      "post_details": [
-        {
-          "post_id": "69117201000000000301a6f1",
-          "title": "湾区17刀的双档砂锅汤！江浙沪才懂的家常菜！",
-          "date": "",
-          "engagement": 399,
-          "adjusted_engagement": 399,
-          "restaurant_count_in_post": 1,
-          "context": "",
-          "sentiment": "positive"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "timeseries": [
         {
           "month": "2026-02",
@@ -39166,7 +39153,8 @@
       "correction_applied": {
         "at": "2026-03-02T00:22:15.969Z",
         "reason": "cuisine normalization: Shanghainese → 上海菜"
-      }
+      },
+      "_status": "duplicate_merged"
     },
     {
       "id": "pipeline_1772170543798_qsoj",

@@ -5,7 +5,7 @@
     "corrections": {
       "google_place_id": "ChIJ7QMGuJO3j4ARbOM9BefOFFY",
       "google_name": "Umami Dumpling House",
-      "address": "Mary Manor Shopping Center, #1, Sunnyvale, CA 94086, USA",
+      "address": "251 S Mary Ave #1, Sunnyvale, CA 94086",
       "area": "Sunnyvale",
       "google_rating": 4.6,
       "location": {
@@ -13,7 +13,11 @@
         "lng": -122.046685
       },
       "verified": true,
-      "name_en": "Umami Dumpling House"
+      "name_en": "",
+      "name": "鲜味水饺 Old Town Shanghai",
+      "_status": "duplicate_merged",
+      "post_details": [],
+      "sources": []
     },
     "reason": "原匹配错误，用英文名重新搜索匹配"
   },
@@ -1025,7 +1029,47 @@
     "id": "pipeline_1772067300857_ysmm",
     "name": "Henry's Hunan",
     "corrections": {
-      "cuisine": "湘菜"
+      "cuisine": "湘菜",
+      "post_details": [
+        {
+          "post_id": "67d68b1c000000000603b7d8",
+          "title": "SF湘菜henry‘s hunan探店",
+          "date": "2025-03-16",
+          "engagement": 95,
+          "context": "",
+          "adjusted_engagement": 95,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "66834a25000000001f004691",
+          "title": "旧金山美食探店红黑榜 游客无广测评版",
+          "date": "2024-07-02",
+          "engagement": 457,
+          "context": "",
+          "adjusted_engagement": 161.5738995011261,
+          "restaurant_count_in_post": 8,
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "68a51576000000001d03a6af",
+          "title": "南湾组川菜/湘菜局（求口味接近的朋友）",
+          "date": "2025-08-20",
+          "engagement": 250,
+          "context": "",
+          "adjusted_engagement": 144.33756729740645,
+          "restaurant_count_in_post": 3,
+          "sentiment": "neutral"
+        }
+      ],
+      "total_engagement": 400.91146679853256,
+      "mention_count": 3,
+      "sources": [
+        "67d68b1c000000000603b7d8",
+        "66834a25000000001f004691",
+        "68a51576000000001d03a6af"
+      ],
+      "google_place_id": "ChIJOSqhJH2AhYAR5H07IDI_A6s"
     },
     "reason": "cuisine normalization: Hunan → 湘菜"
   },
@@ -1403,7 +1447,10 @@
     "id": "pipeline_1772067300868_vd3s",
     "name": "Henry’s Hunan",
     "corrections": {
-      "cuisine": "湘菜"
+      "cuisine": "湘菜",
+      "_status": "duplicate_merged",
+      "post_details": [],
+      "sources": []
     },
     "reason": "cuisine normalization: Hunan → 湘菜"
   },
@@ -1427,7 +1474,8 @@
     "id": "pipeline_1772067300868_ajzv",
     "name": "长沙米粉",
     "corrections": {
-      "cuisine": "湘菜"
+      "cuisine": "米粉",
+      "name": "长沙米粉 Changsha Rice Noodle"
     },
     "reason": "cuisine normalization: Hunan / Rice Noodles → 湘菜"
   },
@@ -1803,7 +1851,7 @@
     "id": "pipeline_1772067300873_cu1w",
     "name": "yum noodles杨裕兴",
     "corrections": {
-      "cuisine": "湘菜"
+      "cuisine": "米粉"
     },
     "reason": "cuisine normalization: Hunan Chinese → 湘菜"
   },
@@ -1921,7 +1969,7 @@
     "id": "pipeline_1772067300874_94sq",
     "name": "台山风味餐厅 Taishan Cuisine",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "粤菜"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -2422,7 +2470,7 @@
     "id": "pipeline_1772067301117_zfm7",
     "name": "Full House Dumpling",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "台湾菜"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -2631,7 +2679,7 @@
     "name": "福牛堂 (Noodle Talk Home Cuisine)",
     "corrections": {
       "cuisine": "湘菜",
-      "name": "福牛堂 Noodle Talk Home Cuisine"
+      "name": "福牛堂私房菜 Noodle Talk Home Cuisine"
     },
     "reason": "cuisine normalization: Hunan / Noodles → 湘菜"
   },
@@ -2671,7 +2719,7 @@
     "id": "pipeline_1772067301117_r2je",
     "name": "好客栈",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "台湾菜"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -2858,7 +2906,14 @@
     "id": "pipeline_1772067301118_o311",
     "name": "Unspecified Restaurant",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "中餐",
+      "name": "湘黔劲 Noodle Net",
+      "address": "1557 Landess Ave, Milpitas, CA 95035, USA",
+      "google_rating": 4.9,
+      "google_name": "Noodle Net",
+      "lat": 37.4161644,
+      "lng": -121.8759703,
+      "google_place_id": "ChIJ8xio1vvPj4ARQFtg9_AaBkw"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -3146,7 +3201,7 @@
     "id": "pipeline_1772067301543_numw",
     "name": "牛麵王 Utopia Cafe",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "面食"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -3250,7 +3305,8 @@
     "id": "pipeline_1772067301543_rma5",
     "name": "OX9兰州牛肉面",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "面食",
+      "name": "九牛兰州拉面 Ox 9 Lanzhou Handpulled Noodles"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -3258,7 +3314,8 @@
     "id": "pipeline_1772067301543_yjq4",
     "name": "小香牛骨米粉",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "融合菜",
+      "name": "小香融合料理"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -3274,7 +3331,8 @@
     "id": "pipeline_1772067301543_6u1n",
     "name": "李面清刀削面",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "面食",
+      "name": "李面清刀削面 Li's Knife Cut Noodle"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -3556,7 +3614,7 @@
     "id": "pipeline_1772067301544_56lk",
     "name": "杨国福麻辣烫",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "麻辣烫"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -3732,7 +3790,7 @@
     "id": "pipeline_1772067301544_cmpj",
     "name": "575 Miishien",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "云南菜"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -4095,7 +4153,8 @@
       "address": "10815 N Wolfe Rd Suite 101B, Cupertino, CA 95014, USA",
       "google_rating": 4.2,
       "name": "重庆铺盖面",
-      "name_en": "C.Q. Taste"
+      "name_en": "C.Q. Taste",
+      "cuisine": "面食"
     }
   },
   {
@@ -4242,7 +4301,9 @@
         "688960da0000000023020ce4",
         "68d61f76000000000b03e9ad"
       ],
-      "google_place_id": "ChIJK8pvbKO3j4ARsm7k_GXRY8U"
+      "google_place_id": "ChIJK8pvbKO3j4ARsm7k_GXRY8U",
+      "name": "川湘小馆 Hunan Szechuan Cuisine",
+      "address": "1350 Grant Rd #8, Mountain View, CA 94040"
     }
   },
   {
@@ -4281,7 +4342,8 @@
     "id": "pipeline_1772091355883_se5q",
     "name": "Fresh Element",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "海鲜",
+      "name": "鲜元素 Fresh Element"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -4385,7 +4447,8 @@
     "id": "pipeline_1772091355884_cbtu",
     "name": "好一方烩面",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "面食",
+      "name": "好一方烩面 Henan Braised Noodle"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -4545,7 +4608,8 @@
     "id": "pipeline_1772170543797_c6ie",
     "name": "Dumpling Capital 水饺之都",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "面食",
+      "name": "水饺之都 Dumpling Capital"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -4585,7 +4649,7 @@
     "id": "pipeline_1772170543798_q21v",
     "name": "土包子 FUSION DUMPLING",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "面食"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -4593,7 +4657,8 @@
     "id": "pipeline_1772170543798_wvrv",
     "name": "旺龙谷盒饭 Dragon Valley Express - Sunnyvale",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "中餐",
+      "name": "旺龙谷盒饭 Dragon Valley Express"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -4609,7 +4674,8 @@
     "id": "pipeline_1772170543798_fl2k",
     "name": "校园汉堡 Campus Burgers",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "西餐",
+      "name": "Campus Burgers"
     },
     "reason": "cuisine normalization: Chinese-style burgers → 中餐"
   },
@@ -4633,7 +4699,8 @@
     "id": "pipeline_1772170543798_a7q5",
     "name": "老芋仔",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "中餐",
+      "_status": "rejected"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -4641,7 +4708,65 @@
     "id": "pipeline_1772170543798_8pi9",
     "name": "鲜味水饺 Special Noodle",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "中餐",
+      "post_details": [
+        {
+          "post_id": "68e15d40000000000402a627",
+          "title": "湾区｜碳水爱好者看过来！他家面点真的绝绝子",
+          "date": "",
+          "engagement": 46,
+          "adjusted_engagement": 46,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "69117201000000000301a6f1",
+          "title": "湾区17刀的双档砂锅汤！江浙沪才懂的家常菜！",
+          "date": "",
+          "engagement": 399,
+          "adjusted_engagement": 399,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6915759900000000070383d7",
+          "title": "冬天一口暖暖的😍Sunnyvale平价上海家常味",
+          "date": "2025-11-13",
+          "engagement": 538,
+          "context": "",
+          "adjusted_engagement": 380.4234482783625,
+          "restaurant_count_in_post": 2,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6918f689000000000d038521",
+          "title": "Sunnyvale鲜味水饺探店repo",
+          "date": "",
+          "engagement": 7,
+          "adjusted_engagement": 7,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "negative"
+        }
+      ],
+      "total_engagement": 832.4234482783625,
+      "mention_count": 4,
+      "sources": [
+        "68e15d40000000000402a627",
+        "69117201000000000301a6f1",
+        "6915759900000000070383d7",
+        "6918f689000000000d038521"
+      ],
+      "google_place_id": "ChIJT-sTPUy3j4ARVmQA4HjHFpc",
+      "name": "鲜味水饺 Old Town Shanghai",
+      "area": "Sunnyvale",
+      "address": "251 S Mary Ave #1, Sunnyvale, CA 94086, USA",
+      "google_rating": 3.9,
+      "google_name": "Old Town Shanghai",
+      "lat": 37.3784696,
+      "lng": -122.0466892
     },
     "reason": "cuisine normalization: Northern Chinese → 中餐"
   },
@@ -4657,7 +4782,10 @@
     "id": "pipeline_1772170543798_2mbe",
     "name": "鲜味水饺 Old Town Shanghai",
     "corrections": {
-      "cuisine": "上海菜"
+      "cuisine": "上海菜",
+      "_status": "duplicate_merged",
+      "post_details": [],
+      "sources": []
     },
     "reason": "cuisine normalization: Shanghainese → 上海菜"
   },
@@ -4847,6 +4975,65 @@
     "id": "r021",
     "corrections": {
       "cuisine": "粤菜"
+    }
+  },
+  {
+    "id": "r016",
+    "corrections": {
+      "name": "一屋饭湘 Hunan House"
+    }
+  },
+  {
+    "id": "pipeline_1772067300865_nob5",
+    "corrections": {
+      "name": "福牛堂 Noodle Talk",
+      "cuisine": "米粉"
+    }
+  },
+  {
+    "id": "r058",
+    "corrections": {
+      "name": "川湘阁 Chuan Xiang Spicy Cuisine",
+      "name_en": "",
+      "post_details": [
+        {
+          "post_id": "68ddd152000000000302c593",
+          "title": "湾区Newark烟火气川菜馆！凉拌腰花好好吃！",
+          "date": "2025-10-02",
+          "engagement": 135,
+          "context": "",
+          "adjusted_engagement": 135,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6915061a000000001b030af5",
+          "title": "湾区|超有锅气的湘菜！",
+          "date": "2025-11-12",
+          "engagement": 85,
+          "context": "",
+          "adjusted_engagement": 85,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "699534d7000000001a0269e4",
+          "title": "东湾中餐厅 这道菜香迷糊了",
+          "date": "2026-02-18",
+          "engagement": 9,
+          "context": "",
+          "adjusted_engagement": 9,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        }
+      ],
+      "total_engagement": 229,
+      "mention_count": 3,
+      "sources": [
+        "68ddd152000000000302c593",
+        "6915061a000000001b030af5",
+        "699534d7000000001a0269e4"
+      ]
     }
   }
 ]
