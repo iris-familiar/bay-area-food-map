@@ -420,13 +420,23 @@ function openXHSPost(postId, title) {
     const webUrl = `https://www.xiaohongshu.com/explore/${postId}`;
 
     if (isMobile) {
-        // Try deep link, fallback to web if app not installed
+        let appOpened = false;
+
+        const onBlur = () => { appOpened = true; };
+        const onVisChange = () => { if (document.hidden) appOpened = true; };
+
+        window.addEventListener('blur', onBlur, { once: true });
+        document.addEventListener('visibilitychange', onVisChange);
+
         window.location.href = deepLink;
+
         setTimeout(() => {
-            if (document.hasFocus()) {
+            window.removeEventListener('blur', onBlur);
+            document.removeEventListener('visibilitychange', onVisChange);
+            if (!appOpened) {
                 window.open(webUrl, '_blank');
             }
-        }, 500);
+        }, 800);
     } else {
         // Desktop: show QR modal
         showQRCode(postId, title);

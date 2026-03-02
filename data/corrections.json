@@ -183,7 +183,9 @@
         "lat": 37.426577,
         "lng": -121.919555
       },
-      "verified": true
+      "verified": true,
+      "name": "半岛 HL Peninsula",
+      "cuisine": "粤菜"
     },
     "reason": "搜索匹配"
   },
@@ -433,7 +435,7 @@
     "id": "pipeline_1771920604533_pd9w",
     "name": "人间烟火小酒馆",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "烧烤"
     },
     "reason": "cuisine normalization: Chinese Bistro → 中餐"
   },
@@ -538,7 +540,7 @@
     "id": "pipeline_1771954753565_jzj7",
     "name": "金门肠粉",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "粤菜"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -1879,7 +1881,7 @@
     "id": "pipeline_1772067300874_blux",
     "name": "金门肠粉 Rice Roll Express",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "粤菜"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -2701,7 +2703,8 @@
     "id": "pipeline_1772067301117_nv6d",
     "name": "HL Peninsula Pearl",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "粤菜",
+      "name": "半岛明珠 HL Peninsula Pearl"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -2782,7 +2785,7 @@
     "id": "pipeline_1772067301117_0hjr",
     "name": "俏龙轩 Dragon Beaux",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "粤菜"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -2790,7 +2793,8 @@
     "id": "pipeline_1772067301117_u2t2",
     "name": "Koi Palace",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "粤菜",
+      "name": "鲤鱼门 Koi Palace"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -2798,7 +2802,7 @@
     "id": "pipeline_1772067301117_khr1",
     "name": "汤司令",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "烧烤"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -4837,6 +4841,12 @@
     "id": "r002",
     "corrections": {
       "cuisine": "云南菜"
+    }
+  },
+  {
+    "id": "r021",
+    "corrections": {
+      "cuisine": "粤菜"
     }
   }
 ]
