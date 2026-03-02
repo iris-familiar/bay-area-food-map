@@ -5,7 +5,7 @@
   "restaurants": [
     {
       "id": "r001",
-      "name": "留湘小聚店 Ping's Bistro",
+      "name": "留湘 Ping's Bistro",
       "name_en": "",
       "recommendations": [
         "傣味香茅草烤鱼",
@@ -18,29 +18,19 @@
         "云南小锅米线"
       ],
       "cuisine": "湘菜",
-      "area": "Fremont",
+      "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 1481.296466309836,
-      "mention_count": 5,
+      "total_engagement": 420.94718318793156,
+      "mention_count": 6,
       "sources": [
-        "693e02ff000000001e038ae4",
         "67f363f0000000001c01ecd5",
         "690c40bf0000000005039eae",
-        "66667292000000000f00f266",
-        "67ba7dae00000000290119d8",
-        "687820b9000000001202c4ba"
+        "693e02ff000000001e038ae4",
+        "687820b9000000001202c4ba",
+        "666c980a000000000e033193",
+        "67e4a9d7000000001b027a79"
       ],
       "post_details": [
-        {
-          "post_id": "67ba7dae00000000290119d8",
-          "title": "湾区中餐超全超真诚推荐",
-          "date": "2025-02-22",
-          "engagement": 4190,
-          "context": "",
-          "adjusted_engagement": 1209.548813952266,
-          "restaurant_count_in_post": 12,
-          "sentiment": "positive"
-        },
         {
           "post_id": "67f363f0000000001c01ecd5",
           "title": "湾区生活｜三家吃完就想二刷的餐厅😋🐎住",
@@ -80,11 +70,31 @@
           "restaurant_count_in_post": 1,
           "context": "",
           "sentiment": "positive"
+        },
+        {
+          "post_id": "666c980a000000000e033193",
+          "title": "湾区探店｜Cupertino的留湘✅终于开门了👍",
+          "date": "2024-06-14",
+          "engagement": 142,
+          "context": "",
+          "adjusted_engagement": 100.40916292848974,
+          "restaurant_count_in_post": 2,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "67e4a9d7000000001b027a79",
+          "title": "🇺🇸湾区｜让人上瘾的云南菜🍄",
+          "date": "",
+          "engagement": 69,
+          "adjusted_engagement": 48.790367901871775,
+          "restaurant_count_in_post": 2,
+          "context": "",
+          "sentiment": "positive"
         }
       ],
       "google_rating": 4.2,
-      "google_place_id": "ChIJWd-3X_vHj4AR0jnzkNsb6cc",
-      "address": "2090 Warm Springs Ct Ste 140, Fremont, CA 94539, USA",
+      "google_place_id": "ChIJg42-9rm1j4ARwBn9d3bdDYA",
+      "address": "10700 S De Anza Blvd, Cupertino, CA 95014",
       "verified": true,
       "sentiment_score": 1,
       "sentiment_details": {
@@ -3985,16 +3995,15 @@
       "cuisine": "湘菜",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 692.8369471366748,
-      "mention_count": 8,
+      "total_engagement": 521.7171060895303,
+      "mention_count": 6,
       "sources": [
+        "687568e00000000012032414",
         "6875756b0000000015022f47",
         "666c980a000000000e033193",
-        "688d7d83000000002500d54e",
         "68f016c80000000003022538",
         "691ba4650000000007017292",
-        "687568e00000000012032414",
-        "697ac6da00000000210286f4"
+        "688d7d83000000002500d54e"
       ],
       "recommendations": [
         "小炒猪腰脆肚",
@@ -4023,16 +4032,6 @@
           "restaurant_count_in_post": 1,
           "context": "",
           "sentiment": "negative"
-        },
-        {
-          "post_id": "697ac6da00000000210286f4",
-          "title": "📍 Fremont 蓉城老火锅｜从夯到拉 实吃测评",
-          "date": "2026-01-30",
-          "engagement": 242,
-          "adjusted_engagement": 171.1198410471445,
-          "restaurant_count_in_post": 2,
-          "context": "",
-          "sentiment": "neutral"
         },
         {
           "post_id": "6875756b0000000015022f47",
@@ -4435,20 +4434,16 @@
       "cuisine": "湘菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 1094.8025612106917,
-      "mention_count": 11,
+      "total_engagement": 880.8025612106916,
+      "mention_count": 7,
       "sources": [
-        "69572ce8000000001d03de1d",
-        "68c50994000000001d02e833",
-        "6907acce000000000302c494",
-        "693f51380000000019025a7f",
-        "68c224b1000000001b01f784",
-        "694634c6000000000d035cba",
-        "694d88c5000000001e01538b",
-        "69266346000000000d03d27a",
         "689be96b000000001d03b64b",
-        "6973f061000000000a028def",
-        "68aa0bd0000000001d019757"
+        "693f51380000000019025a7f",
+        "69266346000000000d03d27a",
+        "694634c6000000000d035cba",
+        "6907acce000000000302c494",
+        "69572ce8000000001d03de1d",
+        "68c50994000000001d02e833"
       ],
       "post_details": [
         {
@@ -4479,16 +4474,6 @@
           "context": "",
           "adjusted_engagement": 157,
           "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "68aa0bd0000000001d019757",
-          "title": "湾区云南菜还得是",
-          "date": "",
-          "engagement": 113,
-          "adjusted_engagement": 113,
-          "restaurant_count_in_post": 1,
-          "context": "",
           "sentiment": "positive"
         },
         {
@@ -4528,26 +4513,6 @@
           "engagement": 78,
           "context": "",
           "adjusted_engagement": 78,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "68c224b1000000001b01f784",
-          "title": "湾区网红美食测评 ｜米一 ｜留湘",
-          "date": "2025-09-11",
-          "engagement": 132,
-          "context": "",
-          "adjusted_engagement": 66,
-          "restaurant_count_in_post": 4,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "694d88c5000000001e01538b",
-          "title": "湾区烤鴨｜宝藏Imperial treasure",
-          "date": "2025-12-25",
-          "engagement": 35,
-          "context": "",
-          "adjusted_engagement": 35,
           "restaurant_count_in_post": 1,
           "sentiment": "positive"
         }
@@ -18475,54 +18440,8 @@
         "盆盆香锅牛三鲜",
         "桂花酒酿奶冻"
       ],
-      "sources": [
-        "690c40bf0000000005039eae",
-        "693e02ff000000001e038ae4",
-        "666c980a000000000e033193",
-        "67e4a9d7000000001b027a79"
-      ],
-      "post_details": [
-        {
-          "post_id": "666c980a000000000e033193",
-          "title": "湾区探店｜Cupertino的留湘✅终于开门了👍",
-          "date": "2024-06-14",
-          "engagement": 142,
-          "context": "",
-          "adjusted_engagement": 100.40916292848974,
-          "restaurant_count_in_post": 2,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "690c40bf0000000005039eae",
-          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
-          "date": "2025-11-06",
-          "engagement": 271,
-          "context": "",
-          "adjusted_engagement": 81.70957438057394,
-          "restaurant_count_in_post": 11,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "67e4a9d7000000001b027a79",
-          "title": "🇺🇸湾区｜让人上瘾的云南菜🍄",
-          "date": "",
-          "engagement": 69,
-          "adjusted_engagement": 48.790367901871775,
-          "restaurant_count_in_post": 2,
-          "context": "",
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "693e02ff000000001e038ae4",
-          "title": "湾区吃喝周记",
-          "date": "2025-12-14",
-          "engagement": 94,
-          "context": "",
-          "adjusted_engagement": 42.03807797699604,
-          "restaurant_count_in_post": 5,
-          "sentiment": "positive"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "timeseries": [
         {
           "month": "2026-02",
@@ -18541,7 +18460,8 @@
       "correction_applied": {
         "at": "2026-03-02T00:22:15.965Z",
         "reason": "cuisine normalization: Yunnan → 云南菜"
-      }
+      },
+      "_status": "duplicate_merged"
     },
     {
       "id": "pipeline_1772067300868_9iwr",
@@ -40530,5 +40450,5 @@
       }
     }
   ],
-  "verified_at": "2026-03-02T01:24:00.098Z"
+  "verified_at": "2026-03-02T05:24:13.927Z"
 }
