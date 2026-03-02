@@ -208,12 +208,44 @@ const server = http.createServer(async (req, res) => {
             }
 
             const p = result.result;
+            const address = p.formatted_address || '';
+            const BAY_AREA_CITIES = new Set([
+                'cupertino', 'milpitas', 'fremont', 'mountain view', 'sunnyvale', 'san jose',
+                'palo alto', 'santa clara', 'san mateo', 'foster city', 'redwood city',
+                'menlo park', 'union city', 'newark', 'hayward', 'san francisco', 'daly city',
+                'san leandro', 'pleasanton', 'livermore', 'dublin', 'walnut creek', 'berkeley',
+                'oakland', 'san ramon', 'millbrae', 'san bruno', 'campbell', 'burlingame',
+                'south san francisco', 'albany', 'pleasant hill', 'san carlos', 'belmont',
+                'emeryville',
+            ]);
+            const CITY_TO_REGION = {
+                'san jose': 'South Bay', 'cupertino': 'South Bay', 'sunnyvale': 'South Bay',
+                'mountain view': 'South Bay', 'santa clara': 'South Bay', 'milpitas': 'South Bay',
+                'campbell': 'South Bay',
+                'palo alto': 'Peninsula', 'san mateo': 'Peninsula', 'millbrae': 'Peninsula',
+                'menlo park': 'Peninsula', 'san carlos': 'Peninsula', 'burlingame': 'Peninsula',
+                'redwood city': 'Peninsula', 'south san francisco': 'Peninsula',
+                'san bruno': 'Peninsula', 'belmont': 'Peninsula', 'daly city': 'Peninsula',
+                'foster city': 'Peninsula',
+                'fremont': 'East Bay', 'oakland': 'East Bay', 'berkeley': 'East Bay',
+                'newark': 'East Bay', 'hayward': 'East Bay', 'union city': 'East Bay',
+                'san leandro': 'East Bay', 'albany': 'East Bay', 'dublin': 'East Bay',
+                'pleasanton': 'East Bay', 'walnut creek': 'East Bay', 'pleasant hill': 'East Bay',
+                'emeryville': 'East Bay', 'livermore': 'East Bay', 'san ramon': 'East Bay',
+                'san francisco': 'San Francisco', 'sf': 'San Francisco',
+            };
+            const addrParts = address.split(', ');
+            const cityCandidate = addrParts.length >= 4 && addrParts[addrParts.length - 1] === 'USA'
+                ? addrParts[addrParts.length - 3] : null;
+            const city = cityCandidate && BAY_AREA_CITIES.has(cityCandidate.toLowerCase()) ? cityCandidate : null;
+            const region = city ? (CITY_TO_REGION[city.toLowerCase()] || null) : null;
             const newData = {
                 google_name: p.name || '',
-                address: p.formatted_address || '',
+                address,
                 google_rating: p.rating || null,
                 lat: p.geometry?.location?.lat || null,
                 lng: p.geometry?.location?.lng || null,
+                ...(city ? { city, area: city, region } : {}),
             };
 
             jsonResponse(res, 200, { ok: true, newData });

@@ -227,7 +227,68 @@
     "id": "r049",
     "corrections": {
       "name": "留湘 Ping's Bistro",
-      "name_en": ""
+      "name_en": "",
+      "post_details": [
+        {
+          "post_id": "687568e00000000012032414",
+          "title": "湾区云南菜踩雷Ping’s Bistro 留湘小聚",
+          "date": "",
+          "engagement": 190,
+          "adjusted_engagement": 190,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "negative"
+        },
+        {
+          "post_id": "6875756b0000000015022f47",
+          "title": "老公心中的湾区湘菜榜第一",
+          "date": "2025-07-14",
+          "engagement": 165,
+          "context": "",
+          "adjusted_engagement": 165,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68f016c80000000003022538",
+          "title": "湾区美食之Ping's Bistro Fremont留湘",
+          "date": "2025-10-15",
+          "engagement": 36,
+          "context": "",
+          "adjusted_engagement": 36,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "691ba4650000000007017292",
+          "title": "东湾吃的",
+          "date": "2025-11-17",
+          "engagement": 28,
+          "context": "",
+          "adjusted_engagement": 16.165807537309522,
+          "restaurant_count_in_post": 3,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "688d7d83000000002500d54e",
+          "title": "湾区 Fremont 川湘1616 且吃且珍惜吧",
+          "date": "2025-08-02",
+          "engagement": 20,
+          "context": "",
+          "adjusted_engagement": 14.14213562373095,
+          "restaurant_count_in_post": 2,
+          "sentiment": "positive"
+        }
+      ],
+      "total_engagement": 421.3079431610405,
+      "mention_count": 5,
+      "sources": [
+        "687568e00000000012032414",
+        "6875756b0000000015022f47",
+        "68f016c80000000003022538",
+        "691ba4650000000007017292",
+        "688d7d83000000002500d54e"
+      ]
     }
   },
   {
@@ -1763,7 +1824,10 @@
     "id": "pipeline_1772067300868_639n",
     "name": "Ping's Bistro Cupertino",
     "corrections": {
-      "cuisine": "云南菜"
+      "cuisine": "云南菜",
+      "_status": "duplicate_merged",
+      "post_details": [],
+      "sources": []
     },
     "reason": "cuisine normalization: Yunnan → 云南菜"
   },
@@ -4160,8 +4224,98 @@
   {
     "id": "r001",
     "corrections": {
-      "name": "留湘小聚店 Ping's Bistro",
-      "name_en": ""
+      "name": "留湘 Ping's Bistro",
+      "name_en": "",
+      "post_details": [
+        {
+          "post_id": "67f363f0000000001c01ecd5",
+          "title": "湾区生活｜三家吃完就想二刷的餐厅😋🐎住",
+          "date": "2025-04-07",
+          "engagement": 113,
+          "context": "",
+          "adjusted_engagement": 113,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "690c40bf0000000005039eae",
+          "title": "湾区一年吃好饭😋整理推荐之：中餐篇-1🥢",
+          "date": "2025-11-06",
+          "engagement": 271,
+          "context": "",
+          "adjusted_engagement": 81.70957438057394,
+          "restaurant_count_in_post": 11,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "693e02ff000000001e038ae4",
+          "title": "湾区吃喝周记",
+          "date": "2025-12-13",
+          "engagement": 94,
+          "context": "",
+          "adjusted_engagement": 42.03807797699604,
+          "restaurant_count_in_post": 5,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "687820b9000000001202c4ba",
+          "title": "🇺🇸湾区云南菜天花板",
+          "date": "",
+          "engagement": 35,
+          "adjusted_engagement": 35,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "666c980a000000000e033193",
+          "title": "湾区探店｜Cupertino的留湘✅终于开门了👍",
+          "date": "2024-06-14",
+          "engagement": 142,
+          "context": "",
+          "adjusted_engagement": 100.40916292848974,
+          "restaurant_count_in_post": 2,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "67e4a9d7000000001b027a79",
+          "title": "🇺🇸湾区｜让人上瘾的云南菜🍄",
+          "date": "",
+          "engagement": 69,
+          "adjusted_engagement": 48.790367901871775,
+          "restaurant_count_in_post": 2,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "0e033193",
+          "title": "",
+          "date": "",
+          "engagement": 142,
+          "context": "湾区探店｜Cupertino的留湘✅终于开门了👍",
+          "restaurant_count_in_post": 142,
+          "sentiment": "positive",
+          "adjusted_engagement": 11.916375287812986
+        }
+      ],
+      "total_engagement": 432.8635584757445,
+      "mention_count": 7,
+      "sources": [
+        "67f363f0000000001c01ecd5",
+        "690c40bf0000000005039eae",
+        "693e02ff000000001e038ae4",
+        "687820b9000000001202c4ba",
+        "666c980a000000000e033193",
+        "67e4a9d7000000001b027a79",
+        "0e033193"
+      ],
+      "google_place_id": "ChIJg42-9rm1j4ARwBn9d3bdDYA",
+      "area": "Cupertino",
+      "city": "Cupertino",
+      "region": "South Bay",
+      "address": "10700 S De Anza Blvd, Cupertino, CA 95014",
+      "lat": 37.313106,
+      "lng": -122.0319021
     }
   },
   {
@@ -5034,6 +5188,100 @@
         "6915061a000000001b030af5",
         "699534d7000000001a0269e4"
       ]
+    }
+  },
+  {
+    "id": "r053",
+    "corrections": {
+      "post_details": [
+        {
+          "post_id": "689be96b000000001d03b64b",
+          "title": "南湾Cupertino也有了请客上台面的粤菜馆子",
+          "date": "2025-08-13",
+          "engagement": 175,
+          "context": "",
+          "adjusted_engagement": 175,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "693f51380000000019025a7f",
+          "title": "南湾食堂｜我最爱的南湾烧腊 & 湘菜宝藏食堂",
+          "date": "2025-12-15",
+          "engagement": 160,
+          "context": "",
+          "adjusted_engagement": 160,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "69266346000000000d03d27a",
+          "title": "谁说湾区吃饭贵❓大厅餐馆双人套餐超预期",
+          "date": "2025-11-26",
+          "engagement": 157,
+          "context": "",
+          "adjusted_engagement": 157,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "694634c6000000000d035cba",
+          "title": "南湾美食 | ☝🏻烤鸭这笔账记下了🔥售罄💢",
+          "date": "2025-12-20",
+          "engagement": 112,
+          "context": "",
+          "adjusted_engagement": 112,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6907acce000000000302c494",
+          "title": "Jade Xiang Yue湘粤情 是舒服的好吃",
+          "date": "2025-11-02",
+          "engagement": 109,
+          "context": "",
+          "adjusted_engagement": 109,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "69572ce8000000001d03de1d",
+          "title": "🧨湾区年夜饭｜差点被差评劝退",
+          "date": "2026-01-01",
+          "engagement": 127,
+          "context": "",
+          "adjusted_engagement": 89.80256121069154,
+          "restaurant_count_in_post": 2,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68c50994000000001d02e833",
+          "title": "Cupertino中餐顶流！湾区地道粤菜X湘菜🥢",
+          "date": "2025-09-13",
+          "engagement": 78,
+          "context": "",
+          "adjusted_engagement": 78,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        }
+      ],
+      "total_engagement": 880.8025612106916,
+      "mention_count": 7,
+      "sources": [
+        "689be96b000000001d03b64b",
+        "693f51380000000019025a7f",
+        "69266346000000000d03d27a",
+        "694634c6000000000d035cba",
+        "6907acce000000000302c494",
+        "69572ce8000000001d03de1d",
+        "68c50994000000001d02e833"
+      ]
+    }
+  },
+  {
+    "id": "pipeline_1772067301116_494i",
+    "corrections": {
+      "name": "顾湘 Hometown Kitchen"
     }
   }
 ]
