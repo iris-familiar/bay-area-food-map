@@ -16,6 +16,8 @@ const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
 const limitArg = args.indexOf('--limit');
 const LIMIT = limitArg !== -1 ? parseInt(args[limitArg + 1], 10) : 50;
+const maxPostsArg = args.indexOf('--max-posts');
+const MAX_POSTS_PER_RESTAURANT = maxPostsArg !== -1 ? parseInt(args[maxPostsArg + 1], 10) : 10;
 
 // ─── Paths ─────────────────────────────────────────────────────────────────────
 const PROJECT_DIR = path.join(__dirname, '..');
@@ -158,6 +160,7 @@ async function main() {
     } else {
       const feeds = searchData.feeds || searchData.items || [];
       let statEngagement = 0, statFresh = 0, statDetailNull = 0, statDeleted = 0, statEmpty = 0, statErr = 0, statSaved = 0;
+      let detailAttempts = 0;
 
       for (const feed of feeds) {
         const card = feed.noteCard || feed;
@@ -189,6 +192,10 @@ async function main() {
           log(`  💀 ${MAX_CONSECUTIVE_DETAIL_FAILURES}+ consecutive detail failures — session likely expired. Run: cd ~/.agents/skills/xiaohongshu/scripts && ./login.sh`);
           process.exit(2);
         }
+
+        // Cap detail fetches per restaurant
+        if (detailAttempts >= MAX_POSTS_PER_RESTAURANT) break;
+        detailAttempts++;
 
         // Fetch post detail (up to 3 attempts; retry on null or empty note data)
         const MAX_DETAIL_RETRIES = 3;
