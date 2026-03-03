@@ -1,7 +1,7 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-03-03T05:25:57.773Z",
-  "total_restaurants": 616,
+  "updated_at": "2026-03-03T06:35:31.922Z",
+  "total_restaurants": 618,
   "restaurants": [
     {
       "id": "r001",
@@ -11682,7 +11682,7 @@
       "lat": 37.4237137,
       "lng": -121.9177146,
       "verified": true,
-      "total_engagement": 184.5282272896661,
+      "total_engagement": 159.80613254815972,
       "mention_count": 1,
       "sentiment_score": 1,
       "sentiment_details": {},
@@ -11702,8 +11702,8 @@
           "date": "2024-07-15",
           "engagement": 452,
           "context": "",
-          "adjusted_engagement": 184.5282272896661,
-          "restaurant_count_in_post": 6,
+          "adjusted_engagement": 159.80613254815972,
+          "restaurant_count_in_post": 8,
           "sentiment": "positive"
         }
       ],
@@ -11712,10 +11712,15 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 452
+        },
+        {
+          "month": "2026-03",
+          "mentions": 1,
+          "engagement": 452
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:00.857Z",
+      "updated_at": "2026-03-03T06:35:31.921Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -11742,7 +11747,7 @@
       "lat": 37.4020375,
       "lng": -122.1076114,
       "verified": true,
-      "total_engagement": 184.5282272896661,
+      "total_engagement": 159.80613254815972,
       "mention_count": 1,
       "sentiment_score": 0,
       "sentiment_details": {},
@@ -11759,8 +11764,8 @@
           "date": "2024-07-15",
           "engagement": 452,
           "context": "",
-          "adjusted_engagement": 184.5282272896661,
-          "restaurant_count_in_post": 6,
+          "adjusted_engagement": 159.80613254815972,
+          "restaurant_count_in_post": 8,
           "sentiment": "negative"
         }
       ],
@@ -11769,10 +11774,15 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 452
+        },
+        {
+          "month": "2026-03",
+          "mentions": 1,
+          "engagement": 452
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:00.857Z",
+      "updated_at": "2026-03-03T06:35:31.922Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -11800,7 +11810,7 @@
       "lat": 37.5233645,
       "lng": -122.0076689,
       "verified": true,
-      "total_engagement": 246.69091706416023,
+      "total_engagement": 221.96882232265386,
       "mention_count": 2,
       "sentiment_score": 0.5,
       "sentiment_details": {},
@@ -11819,8 +11829,8 @@
           "date": "2024-07-15",
           "engagement": 452,
           "context": "",
-          "adjusted_engagement": 184.5282272896661,
-          "restaurant_count_in_post": 6,
+          "adjusted_engagement": 159.80613254815972,
+          "restaurant_count_in_post": 8,
           "sentiment": "neutral"
         },
         {
@@ -11839,10 +11849,15 @@
           "month": "2026-02",
           "mentions": 2,
           "engagement": 591
+        },
+        {
+          "month": "2026-03",
+          "mentions": 1,
+          "engagement": 452
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.543Z",
+      "updated_at": "2026-03-03T06:35:31.922Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -11869,9 +11884,9 @@
       "lat": 37.5000276,
       "lng": -121.9735408,
       "verified": true,
-      "total_engagement": 570.4470320396555,
+      "total_engagement": 545.7249372981491,
       "mention_count": 4,
-      "sentiment_score": 0.6,
+      "sentiment_score": 0.61,
       "sentiment_details": {},
       "recommendations": [
         "小酥肉",
@@ -11903,8 +11918,8 @@
           "date": "2024-07-15",
           "engagement": 452,
           "context": "",
-          "adjusted_engagement": 184.5282272896661,
-          "restaurant_count_in_post": 6,
+          "adjusted_engagement": 159.80613254815972,
+          "restaurant_count_in_post": 8,
           "sentiment": "neutral"
         },
         {
@@ -11943,10 +11958,15 @@
           "month": "2026-02",
           "mentions": 4,
           "engagement": 1220
+        },
+        {
+          "month": "2026-03",
+          "mentions": 1,
+          "engagement": 452
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-03-01T06:31:32.755Z",
+      "updated_at": "2026-03-03T06:35:31.922Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -11973,9 +11993,9 @@
       "lat": 37.5596172,
       "lng": -122.0091525,
       "verified": true,
-      "total_engagement": 373.8611101643228,
+      "total_engagement": 349.13901542281644,
       "mention_count": 3,
-      "sentiment_score": 0.03,
+      "sentiment_score": 0.04,
       "sentiment_details": {},
       "recommendations": [
         "鸭血",
@@ -11997,8 +12017,8 @@
           "date": "2024-07-15",
           "engagement": 452,
           "context": "",
-          "adjusted_engagement": 184.5282272896661,
-          "restaurant_count_in_post": 6,
+          "adjusted_engagement": 159.80613254815972,
+          "restaurant_count_in_post": 8,
           "sentiment": "negative"
         },
         {
@@ -12027,10 +12047,15 @@
           "month": "2026-02",
           "mentions": 3,
           "engagement": 668
+        },
+        {
+          "month": "2026-03",
+          "mentions": 1,
+          "engagement": 452
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-03-01T06:31:32.756Z",
+      "updated_at": "2026-03-03T06:35:31.922Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -14903,7 +14928,7 @@
       "id": "pipeline_1772067300865_my10",
       "name": "Mikiya Wagyu Shabu",
       "name_en": "",
-      "cuisine": "火锅",
+      "cuisine": "日料",
       "area": "Santa Clara",
       "region": "South Bay",
       "city": "Santa Clara",
@@ -27544,8 +27569,8 @@
       "lat": 37.323785,
       "lng": -122.009201,
       "verified": true,
-      "total_engagement": 137.82311536145474,
-      "mention_count": 2,
+      "total_engagement": 297.6292479096145,
+      "mention_count": 3,
       "sentiment_score": 0.5,
       "sentiment_details": {},
       "recommendations": [
@@ -27553,17 +27578,18 @@
       ],
       "sources": [
         "690fbfea0000000005038f41",
-        "67ddc9a9000000001a004c58"
+        "67ddc9a9000000001a004c58",
+        "669597e00000000025000819"
       ],
       "post_details": [
         {
-          "post_id": "67ddc9a9000000001a004c58",
-          "title": "这些年去过的湾区火锅店2025 Ver.",
-          "date": "2025-03-21",
-          "engagement": 139,
+          "post_id": "669597e00000000025000819",
+          "title": "湾区火锅天花板",
+          "date": "2024-07-15",
+          "engagement": 452,
+          "adjusted_engagement": 159.80613254815972,
+          "restaurant_count_in_post": 8,
           "context": "",
-          "adjusted_engagement": 62.16268977449415,
-          "restaurant_count_in_post": 5,
           "sentiment": "neutral"
         },
         {
@@ -27575,6 +27601,16 @@
           "adjusted_engagement": 75.66042558696059,
           "restaurant_count_in_post": 2,
           "sentiment": "neutral"
+        },
+        {
+          "post_id": "67ddc9a9000000001a004c58",
+          "title": "这些年去过的湾区火锅店2025 Ver.",
+          "date": "2025-03-21",
+          "engagement": 139,
+          "context": "",
+          "adjusted_engagement": 62.16268977449415,
+          "restaurant_count_in_post": 5,
+          "sentiment": "neutral"
         }
       ],
       "timeseries": [
@@ -27582,10 +27618,15 @@
           "month": "2026-02",
           "mentions": 2,
           "engagement": 246
+        },
+        {
+          "month": "2026-03",
+          "mentions": 1,
+          "engagement": 452
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.543Z",
+      "updated_at": "2026-03-03T06:35:31.922Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -38052,7 +38093,7 @@
       "id": "pipeline_1772170235842_kgcc",
       "name": "Shabuway",
       "name_en": "",
-      "cuisine": "火锅",
+      "cuisine": "日料",
       "area": "San Mateo",
       "region": "Peninsula",
       "city": "San Mateo",
@@ -41723,7 +41764,111 @@
         "source_post": "69a4c0650000000026030b98",
         "needs_review": false
       }
+    },
+    {
+      "id": "pipeline_1772519731922_469f",
+      "name": "张飞火锅",
+      "name_en": "",
+      "cuisine": "火锅",
+      "area": "Fremont",
+      "region": "East Bay",
+      "city": "Fremont",
+      "price_range": "unknown",
+      "google_name": "Zhang Fei Hotpot",
+      "address": "43844 Pacific Commons Blvd, Fremont, CA 94538, USA",
+      "google_rating": 4.5,
+      "google_place_id": "ChIJTzAXlcHHj4AReheB6lVYEYY",
+      "lat": 37.5014554,
+      "lng": -121.9697516,
+      "verified": true,
+      "total_engagement": 159.80613254815972,
+      "mention_count": 1,
+      "sentiment_score": 0,
+      "sentiment_details": {},
+      "recommendations": [],
+      "sources": [
+        "669597e00000000025000819"
+      ],
+      "post_details": [
+        {
+          "post_id": "669597e00000000025000819",
+          "title": "湾区火锅天花板",
+          "date": "2024-07-15",
+          "engagement": 452,
+          "adjusted_engagement": 159.80613254815972,
+          "restaurant_count_in_post": 8,
+          "context": "",
+          "sentiment": "negative"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 1,
+          "engagement": 452
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-03T06:35:31.922Z",
+      "merge_info": {
+        "added_date": "2026-03-03",
+        "source": "daily_pipeline",
+        "source_post": "669597e00000000025000819",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772519731922_wv7q",
+      "name": "快乐小羊",
+      "name_en": "",
+      "cuisine": "火锅",
+      "area": "Union City",
+      "region": "East Bay",
+      "city": "Union City",
+      "price_range": "unknown",
+      "google_name": "Happy Lamb Hot Pot, Union City 快乐小羊",
+      "address": "34396 Alvarado-Niles Rd, Union City, CA 94587, USA",
+      "google_rating": 4.4,
+      "google_place_id": "ChIJ4VBLBmKVj4ARCfp8aqbveWQ",
+      "lat": 37.587718,
+      "lng": -122.021866,
+      "verified": true,
+      "total_engagement": 159.80613254815972,
+      "mention_count": 1,
+      "sentiment_score": 0.5,
+      "sentiment_details": {},
+      "recommendations": [],
+      "sources": [
+        "669597e00000000025000819"
+      ],
+      "post_details": [
+        {
+          "post_id": "669597e00000000025000819",
+          "title": "湾区火锅天花板",
+          "date": "2024-07-15",
+          "engagement": 452,
+          "adjusted_engagement": 159.80613254815972,
+          "restaurant_count_in_post": 8,
+          "context": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 1,
+          "engagement": 452
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-03T06:35:31.922Z",
+      "merge_info": {
+        "added_date": "2026-03-03",
+        "source": "daily_pipeline",
+        "source_post": "669597e00000000025000819",
+        "needs_review": false
+      }
     }
   ],
-  "verified_at": "2026-03-03T05:25:57.884Z"
+  "verified_at": "2026-03-03T06:35:52.630Z"
 }
