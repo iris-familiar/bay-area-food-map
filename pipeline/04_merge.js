@@ -184,6 +184,24 @@ for (const candidate of candidates) {
             r.total_engagement = (r.total_engagement || 0) + adjustedEngagement;
         }
 
+        // If post already tracked but N changed (re-extract found more restaurants),
+        // fix adjusted_engagement in the post_detail and propagate the delta to total_engagement
+        if (!isNewSource && candidate.source_post_id) {
+            const existingDetail = Array.isArray(r.post_details)
+                ? r.post_details.find(p => p.post_id === candidate.source_post_id)
+                : null;
+            if (existingDetail && existingDetail.restaurant_count_in_post !== N) {
+                const oldN = existingDetail.restaurant_count_in_post;
+                const oldAdjusted = existingDetail.adjusted_engagement || 0;
+                const newAdjusted = (existingDetail.engagement || 0) / Math.sqrt(N);
+                const delta = newAdjusted - oldAdjusted;
+                existingDetail.restaurant_count_in_post = N;
+                existingDetail.adjusted_engagement = newAdjusted;
+                r.total_engagement = (r.total_engagement || 0) + delta;
+                console.log(`  ~ N-fix "${r.name}": N ${oldN}→${N}, Δadj_eng ${delta >= 0 ? '+' : ''}${delta.toFixed(1)}`);
+            }
+        }
+
         // Add source post if not already tracked
         if (candidate.source_post_id) {
             if (!Array.isArray(r.sources)) r.sources = [];

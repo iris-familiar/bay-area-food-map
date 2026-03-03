@@ -134,6 +134,8 @@ Rules:
 - Extract ALL restaurants that are named, even if briefly mentioned
 - City is REQUIRED - extract from address, neighborhood, or context
 - If city is unclear, make best guess from Bay Area cities list
+- CRITICAL: Extract a restaurant even if the author gives it a negative review, says it is bad, not recommended, or they won't go back. Negative sentiment is still a mention. Do NOT filter by the author's opinion.
+- Count distinct restaurant names in the post before writing your JSON, and verify your list is complete.
 - If no restaurants found, return {"restaurants": []}`;
 
         const body = JSON.stringify({

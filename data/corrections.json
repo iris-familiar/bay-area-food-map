@@ -655,7 +655,7 @@
     "id": "pipeline_1771954753565_i7ms",
     "name": "滋味小面",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "面食"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -698,7 +698,7 @@
     "id": "pipeline_1772002538091_f03a",
     "name": "表妹拌粉 Noodles Fresh",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "米粉"
     },
     "reason": "cuisine normalization: Jiangxi → 中餐"
   },
@@ -1065,7 +1065,7 @@
     "id": "pipeline_1772067300857_er2g",
     "name": "Z-One Kitchen",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "烧烤"
     },
     "reason": "cuisine normalization: 西北菜 → 中餐"
   },
@@ -1138,7 +1138,7 @@
     "id": "pipeline_1772067300865_5o5q",
     "name": "Sichuan Style",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "川菜"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -1146,7 +1146,7 @@
     "id": "pipeline_1772067300865_kok1",
     "name": "Noodle Dynasty",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "面食"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -1346,7 +1346,7 @@
     "id": "pipeline_1772067300868_lryz",
     "name": "Malatown",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "麻辣烫"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -1867,7 +1867,7 @@
     "id": "pipeline_1772067300868_owkm",
     "name": "mifen101",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "米粉"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -1899,7 +1899,7 @@
     "id": "pipeline_1772067300873_ht4k",
     "name": "合味桂林米粉",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "米粉"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -2832,7 +2832,7 @@
     "id": "pipeline_1772067301117_rune",
     "name": "Tang Bar San Mateo",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "麻辣烫"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -3742,7 +3742,7 @@
     "id": "pipeline_1772067301544_nco4",
     "name": "表妹拌粉 Noodles Fresh",
     "corrections": {
-      "cuisine": "中餐"
+      "cuisine": "米粉"
     },
     "reason": "cuisine normalization: Jiangxi → 中餐"
   },
@@ -4862,7 +4862,7 @@
     "id": "pipeline_1772170543798_8pi9",
     "name": "鲜味水饺 Special Noodle",
     "corrections": {
-      "cuisine": "中餐",
+      "cuisine": "上海菜",
       "post_details": [
         {
           "post_id": "68e15d40000000000402a627",
@@ -5035,7 +5035,8 @@
     "id": "pipeline_1772346692755_5e9y",
     "name": "WuJi's Mala House",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "火锅",
+      "name": "吴记麻辣 WuJi's Mala House"
     },
     "reason": "cuisine normalization: Hot pot → 火锅"
   },
@@ -5282,6 +5283,20 @@
     "id": "pipeline_1772067301116_494i",
     "corrections": {
       "name": "顾湘 Hometown Kitchen"
+    }
+  },
+  {
+    "id": "r006",
+    "corrections": {
+      "name": "一品香饺子 Epic Dumpling",
+      "name_en": "",
+      "cuisine": "面食"
+    }
+  },
+  {
+    "id": "r009",
+    "corrections": {
+      "cuisine": "米粉"
     }
   }
 ]
