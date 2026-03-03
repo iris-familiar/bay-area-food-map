@@ -4480,7 +4480,8 @@
     "id": "pipeline_1772091355883_ziwz",
     "name": "无肉不欢 Meat House",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "日料",
+      "name": "Meat House"
     },
     "reason": "cuisine normalization: Hot Pot/BBQ Meat → 火锅"
   },
