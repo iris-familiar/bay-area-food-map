@@ -882,7 +882,8 @@
     "id": "pipeline_1772067300857_x3h7",
     "name": "囍火锅",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "火锅",
+      "name": "囍火锅 Happiness Hot Pot"
     },
     "reason": "cuisine normalization: Hot Pot → 火锅"
   },
@@ -1250,7 +1251,7 @@
     "id": "pipeline_1772067300865_my10",
     "name": "Mikiya Wagyu Shabu",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "日料"
     },
     "reason": "cuisine normalization: Japanese Hot Pot → 火锅"
   },
@@ -2266,7 +2267,8 @@
     "id": "pipeline_1772067300875_jmwb",
     "name": "Daly City 火锅和烤肉自助",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "火锅",
+      "_status": "rejected"
     },
     "reason": "cuisine normalization: Hot Pot, BBQ, Buffet → 火锅"
   },
@@ -4699,7 +4701,7 @@
     "id": "pipeline_1772170235842_kgcc",
     "name": "Shabuway",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "日料"
     },
     "reason": "cuisine normalization: Hot pot → 火锅"
   },
@@ -5298,6 +5300,62 @@
     "id": "r009",
     "corrections": {
       "cuisine": "米粉"
+    }
+  },
+  {
+    "id": "pipeline_1772519731922_469f",
+    "corrections": {
+      "name": "张飞火锅 Zhang Fei Hotpot"
+    }
+  },
+  {
+    "id": "pipeline_1772067301118_p0vt",
+    "corrections": {
+      "post_details": [
+        {
+          "post_id": "669597e00000000025000819",
+          "title": "湾区火锅天花板",
+          "date": "2024-07-15",
+          "engagement": 452,
+          "adjusted_engagement": 159.80613254815972,
+          "restaurant_count_in_post": 8,
+          "context": "",
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "690fbfea0000000005038f41",
+          "title": "可以说是湾区最佳了",
+          "date": "2025-11-08",
+          "engagement": 107,
+          "context": "",
+          "adjusted_engagement": 75.66042558696059,
+          "restaurant_count_in_post": 2,
+          "sentiment": "neutral"
+        },
+        {
+          "post_id": "67ddc9a9000000001a004c58",
+          "title": "这些年去过的湾区火锅店2025 Ver.",
+          "date": "2025-03-21",
+          "engagement": 139,
+          "context": "",
+          "adjusted_engagement": 62.16268977449415,
+          "restaurant_count_in_post": 5,
+          "sentiment": "neutral"
+        }
+      ],
+      "total_engagement": 297.62924790961443,
+      "mention_count": 3,
+      "sources": [
+        "669597e00000000025000819",
+        "690fbfea0000000005038f41",
+        "67ddc9a9000000001a004c58"
+      ]
+    }
+  },
+  {
+    "id": "pipeline_1771721574155_0r9y",
+    "corrections": {
+      "_status": "rejected"
     }
   }
 ]

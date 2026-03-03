@@ -8075,7 +8075,8 @@
         "source": "daily_pipeline",
         "source_post": "6965c214000000001a0261f5",
         "needs_review": false
-      }
+      },
+      "_status": "rejected"
     },
     {
       "id": "pipeline_1771721574155_8bkd",
@@ -11980,7 +11981,7 @@
     },
     {
       "id": "pipeline_1772067300857_x3h7",
-      "name": "囍火锅",
+      "name": "囍火锅 Happiness Hot Pot",
       "name_en": "",
       "cuisine": "火锅",
       "area": "Fremont",
@@ -22181,7 +22182,8 @@
       "correction_applied": {
         "at": "2026-03-02T05:29:08.058Z",
         "reason": "cuisine normalization: Hot Pot, BBQ, Buffet → 火锅"
-      }
+      },
+      "_status": "rejected"
     },
     {
       "id": "pipeline_1772067300875_j0os",
@@ -27569,7 +27571,7 @@
       "lat": 37.323785,
       "lng": -122.009201,
       "verified": true,
-      "total_engagement": 297.6292479096145,
+      "total_engagement": 297.62924790961443,
       "mention_count": 3,
       "sentiment_score": 0.5,
       "sentiment_details": {},
@@ -27577,9 +27579,9 @@
         "Lunch combo"
       ],
       "sources": [
+        "669597e00000000025000819",
         "690fbfea0000000005038f41",
-        "67ddc9a9000000001a004c58",
-        "669597e00000000025000819"
+        "67ddc9a9000000001a004c58"
       ],
       "post_details": [
         {
@@ -41767,7 +41769,7 @@
     },
     {
       "id": "pipeline_1772519731922_469f",
-      "name": "张飞火锅",
+      "name": "张飞火锅 Zhang Fei Hotpot",
       "name_en": "",
       "cuisine": "火锅",
       "area": "Fremont",
