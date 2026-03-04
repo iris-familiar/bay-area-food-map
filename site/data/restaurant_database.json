@@ -10113,8 +10113,8 @@
       "lat": 37.3530086,
       "lng": -121.9758334,
       "verified": true,
-      "total_engagement": 795,
-      "mention_count": 3,
+      "total_engagement": 972,
+      "mention_count": 4,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -10135,7 +10135,8 @@
       "sources": [
         "69770add000000001a037f2b",
         "697762bc000000000903bd82",
-        "699bdf800000000015022832"
+        "699bdf800000000015022832",
+        "699d2cad000000001b015c6d"
       ],
       "post_details": [
         {
@@ -10167,6 +10168,16 @@
           "restaurant_count_in_post": 1,
           "context": "",
           "sentiment": "positive"
+        },
+        {
+          "post_id": "699d2cad000000001b015c6d",
+          "title": "湾区铁锅炖 很久没有吃过这么糟糕的东西了",
+          "date": "2026-02-24",
+          "engagement": 177,
+          "adjusted_engagement": 177,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "negative"
         }
       ],
       "timeseries": [
@@ -11977,7 +11988,8 @@
       "correction_applied": {
         "at": "2026-03-02T05:29:08.057Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
-      }
+      },
+      "_status": "rejected"
     },
     {
       "id": "pipeline_1772067300857_x3h7",
@@ -11994,8 +12006,8 @@
       "lat": 37.5596172,
       "lng": -122.0091525,
       "verified": true,
-      "total_engagement": 349.13901542281644,
-      "mention_count": 3,
+      "total_engagement": 172.13901542281644,
+      "mention_count": 2,
       "sentiment_score": 0.04,
       "sentiment_details": {},
       "recommendations": [
@@ -12008,7 +12020,6 @@
       ],
       "sources": [
         "669597e00000000025000819",
-        "699d2cad000000001b015c6d",
         "69a27a53000000001a02c7b8"
       ],
       "post_details": [
@@ -12020,16 +12031,6 @@
           "context": "",
           "adjusted_engagement": 159.80613254815972,
           "restaurant_count_in_post": 8,
-          "sentiment": "negative"
-        },
-        {
-          "post_id": "699d2cad000000001b015c6d",
-          "title": "湾区铁锅炖 很久没有吃过这么糟糕的东西了",
-          "date": "2026-02-24",
-          "engagement": 177,
-          "adjusted_engagement": 177,
-          "restaurant_count_in_post": 1,
-          "context": "",
           "sentiment": "negative"
         },
         {
@@ -13273,7 +13274,8 @@
       "correction_applied": {
         "at": "2026-03-02T05:29:08.057Z",
         "reason": "cuisine normalization: Hot Pot → 火锅"
-      }
+      },
+      "_status": "rejected"
     },
     {
       "id": "pipeline_1772067300857_jlf9",
@@ -41872,5 +41874,5 @@
       }
     }
   ],
-  "verified_at": "2026-03-03T06:35:52.630Z"
+  "verified_at": "2026-03-04T05:16:31.283Z"
 }
