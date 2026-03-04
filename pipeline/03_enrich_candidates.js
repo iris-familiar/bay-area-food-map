@@ -187,8 +187,8 @@ async function searchPlace(candidate) {
     // Pick best by similarity
     const best = results.sort((a, b) => b.score - a.score)[0];
 
-    // Lower threshold for CJK names (30%) vs non-CJK (40%)
-    const threshold = isCJK ? 0.30 : 0.40;
+    // Lower threshold for CJK names (30%) vs non-CJK (80%)
+    const threshold = isCJK ? 0.30 : 0.80;
     if (best.score < threshold) {
         console.log(`  ⚠️  Low confidence for "${candidate.name}": "${best.name}" (${(best.score*100).toFixed(0)}%)`);
         return null;

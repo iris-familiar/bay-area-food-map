@@ -874,7 +874,8 @@
     "id": "pipeline_1772067300857_ess2",
     "name": "那年遇见",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "火锅",
+      "_status": "rejected"
     },
     "reason": "cuisine normalization: Hot Pot → 火锅"
   },
@@ -1050,7 +1051,8 @@
     "id": "pipeline_1772067300857_fvlt",
     "name": "巴九门老火锅",
     "corrections": {
-      "cuisine": "火锅"
+      "cuisine": "火锅",
+      "_status": "rejected"
     },
     "reason": "cuisine normalization: Hot Pot → 火锅"
   },
