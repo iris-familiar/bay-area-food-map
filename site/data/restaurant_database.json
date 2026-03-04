@@ -7275,8 +7275,8 @@
       "google_rating": 3.7,
       "google_place_id": "ChIJc2rdBQB7j4ARvD7E5jvfwkE",
       "verified": true,
-      "total_engagement": 1861,
-      "mention_count": 2,
+      "total_engagement": 156,
+      "mention_count": 1,
       "sentiment_score": 0.5,
       "sentiment_details": {},
       "recommendations": [
@@ -7291,20 +7291,9 @@
         "Soy milk cake"
       ],
       "sources": [
-        "67e725b0000000001d01bdd3",
-        "67e727c8000000001d02c967"
+        "67e725b0000000001d01bdd3"
       ],
       "post_details": [
-        {
-          "post_id": "67e727c8000000001d02c967",
-          "title": "韩国版Eataly开到湾区了？！",
-          "date": "2025-03-28",
-          "engagement": 1705,
-          "context": "",
-          "adjusted_engagement": 1705,
-          "restaurant_count_in_post": 1,
-          "sentiment": "neutral"
-        },
         {
           "post_id": "67e725b0000000001d01bdd3",
           "title": "Pogu 旧金山Daly city",
@@ -7319,12 +7308,12 @@
       "timeseries": [
         {
           "month": "2026-02",
-          "mentions": 2,
-          "engagement": 1861
+          "mentions": 1,
+          "engagement": 156
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.543Z",
+      "updated_at": "2026-03-04T05:28:12.611Z",
       "merge_info": {
         "added_date": "2026-02-22",
         "source": "daily_pipeline",
@@ -41874,5 +41863,5 @@
       }
     }
   ],
-  "verified_at": "2026-03-04T05:16:39.605Z"
+  "verified_at": "2026-03-04T05:28:31.724Z"
 }
