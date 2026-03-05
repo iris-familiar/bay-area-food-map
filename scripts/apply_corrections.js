@@ -47,29 +47,51 @@ try {
         if (correction.corrections._status === 'duplicate_merged') {
           console.log(`\n🔄 ${correction.name} (${correction.id}):`);
           console.log(`   标记为重复，已合并到 ${correction.corrections._merged_into}`);
-          
+
           // 应用所有标记字段
           Object.entries(correction.corrections).forEach(([key, value]) => {
             r[key] = value;
           });
-          
+
+          // Recalculate metrics for duplicate_merged (should be 0)
+          if ('post_details' in correction.corrections) {
+            const posts = r.post_details || [];
+            r.total_engagement = posts.reduce((sum, p) => sum + (p.adjusted_engagement || 0), 0);
+            r.mention_count = posts.length;
+            r.sources = [...new Set(posts.map(p => p.post_id).filter(Boolean))];
+          }
+
           applied++;
           return;
         }
         
         console.log(`\n✅ ${correction.name} (${correction.id}):`);
-        
-        // 应用修正字段
+
+        // 应用修正字段 (post_details handled separately below)
         Object.entries(correction.corrections).forEach(([key, value]) => {
+          if (key === 'post_details') return; // handled separately below
           const oldValue = r[key];
           r[key] = value;
-          
+
           // 只显示关键字段的变化
           if (['google_name', 'address', 'google_rating', 'name', 'name_en'].includes(key)) {
             console.log(`   ${key}: ${oldValue} → ${value}`);
           }
         });
-        
+
+        // post_details: UNION of correction posts + pipeline-only posts (preserves new additions)
+        if ('post_details' in correction.corrections) {
+          const correctionPosts = correction.corrections.post_details || [];
+          const correctionPostIds = new Set(correctionPosts.map(p => p.post_id));
+          const pipelineOnlyPosts = (r.post_details || []).filter(p => !correctionPostIds.has(p.post_id));
+          r.post_details = [...correctionPosts, ...pipelineOnlyPosts];
+          // Recalculate metrics to match the merged post list
+          r.total_engagement = r.post_details.reduce((sum, p) => sum + (p.adjusted_engagement || 0), 0);
+          r.mention_count = r.post_details.length;
+          r.sources = [...new Set(r.post_details.map(p => p.post_id).filter(Boolean))];
+          console.log(`   post_details: ${correctionPosts.length} correction posts + ${pipelineOnlyPosts.length} pipeline posts`);
+        }
+
         // 添加修正标记
         r.correction_applied = {
           at: new Date().toISOString(),

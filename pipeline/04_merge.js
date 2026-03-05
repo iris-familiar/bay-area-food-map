@@ -160,6 +160,11 @@ for (const candidate of candidates) {
         // ─── UPDATE existing restaurant ────────────────────────────────────────
         const r = db.restaurants[existingIdx];
 
+        // Skip duplicate_merged restaurants — posts should not accumulate on dead entries
+        if (r._status === 'duplicate_merged') {
+            continue;
+        }
+
         // Guard: cross-script name mismatch likely indicates a wrong Google place_id assignment
         const candidateIsCJK = hasCJK(candidate.name);
         const existingIsCJK  = hasCJK(r.name);

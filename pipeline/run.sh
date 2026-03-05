@@ -172,6 +172,15 @@ else
     " 2>/dev/null || echo 0)
 fi
 
+# Step 5.5: Apply manual corrections (preserve human edits across pipeline runs)
+log "Step 5.5: Applying manual corrections..."
+if node "${PROJECT_DIR}/scripts/apply_corrections.js" \
+       2>&1 | while IFS= read -r line; do log "  $line"; done; then
+    log "✅ Corrections applied"
+else
+    log "⚠️  apply_corrections failed — manual corrections may not be applied (check corrections.json)"
+fi
+
 # Step 6: Verify integrity (auto-restore on failure)
 log "Step 6: Verifying integrity..."
 if node "${SCRIPT_DIR}/05_verify.js" "$DB_FILE" "$BEFORE" "$BACKUP" \
