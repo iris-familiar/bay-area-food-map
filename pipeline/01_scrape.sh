@@ -68,6 +68,11 @@ SEARCH_TERMS=(
     "San Jose美食"
     "San Mateo美食"
     "半岛美食"
+    "Santa Clara美食"
+    "Palo Alto美食"
+    "San Bruno美食"
+    "Foster City美食"
+    "Redwood City美食"
     # Cuisine diversification
     "湾区粤菜"
     "湾区日料推荐"
@@ -76,11 +81,22 @@ SEARCH_TERMS=(
     "湾区港式茶餐厅"
     "湾区早茶"
     "南湾日料"
+    "湾区台湾菜"
+    "湾区泰国菜"
+    "湾区海鲜"
     # Discovery angles
     "湾区新开餐厅"
     "湾区网红餐厅"
     "硅谷美食探店"
     "南湾必吃"
+    "湾区美食2025"
+    "湾区美食2026"
+    "湾区美食合集"
+    "湾区必吃清单"
+    "湾区餐厅测评"
+    "湾区打卡餐厅"
+    "北加美食"
+    "湾区踩雷餐厅"
 )
 
 NEW_COUNT=0
