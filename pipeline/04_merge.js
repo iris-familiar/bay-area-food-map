@@ -279,6 +279,13 @@ for (const candidate of candidates) {
                 : r.sentiment_score || 0.5;
         }
 
+        // Always recompute total_engagement from stored post_details to stay consistent
+        // (handles displaced posts when post_details is capped at 10)
+        if (Array.isArray(r.post_details) && r.post_details.length > 0 &&
+            r.post_details.every(p => typeof p.adjusted_engagement === 'number')) {
+            r.total_engagement = r.post_details.reduce((sum, p) => sum + (p.adjusted_engagement || 0), 0);
+        }
+
         r.updated_at = new Date().toISOString();
         updated++;
 

@@ -1,7 +1,7 @@
 {
   "version": "10.1-1-pipeline-test-pipeline-test",
-  "updated_at": "2026-03-03T06:35:31.922Z",
-  "total_restaurants": 618,
+  "updated_at": "2026-03-05T07:03:12.326Z",
+  "total_restaurants": 632,
   "restaurants": [
     {
       "id": "r001",
@@ -1123,7 +1123,7 @@
       "cuisine": "面食",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 647.0380779769961,
+      "total_engagement": 539.8391598912724,
       "mention_count": 6,
       "sources": [
         "69332e7d00000000190259bd",
@@ -1138,8 +1138,8 @@
           "date": "2025-11-15",
           "engagement": 366,
           "context": "",
-          "adjusted_engagement": 366,
-          "restaurant_count_in_post": 1,
+          "adjusted_engagement": 258.8010819142764,
+          "restaurant_count_in_post": 2,
           "sentiment": "positive"
         },
         {
@@ -1206,7 +1206,7 @@
       "engagement": 638,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-27T05:35:43.798Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
@@ -1216,6 +1216,11 @@
           "month": "2026-02",
           "mentions": 2,
           "engagement": 240
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 1095
         }
       ],
       "lat": 37.3389803,
@@ -3661,12 +3666,13 @@
       "cuisine": "韩餐",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 1109.9189600393684,
-      "mention_count": 4,
+      "total_engagement": 1645.4189600393684,
+      "mention_count": 5,
       "sources": [
         "68c71d50000000001c005084",
         "673d265b0000000007034919",
-        "671c231c000000001b03f913"
+        "671c231c000000001b03f913",
+        "672c02e5000000001b010767"
       ],
       "post_details": [
         {
@@ -3677,6 +3683,16 @@
           "context": "",
           "adjusted_engagement": 583.5771463262469,
           "restaurant_count_in_post": 7,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "672c02e5000000001b010767",
+          "title": "二访｜南湾真的很难看得上其他的传统韩餐了",
+          "date": "2024-11-06",
+          "engagement": 1071,
+          "adjusted_engagement": 535.5,
+          "restaurant_count_in_post": 4,
+          "context": "",
           "sentiment": "positive"
         },
         {
@@ -3731,7 +3747,7 @@
       "engagement": 188,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-26T00:55:01.116Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
@@ -3741,6 +3757,11 @@
           "month": "2026-02",
           "mentions": 2,
           "engagement": 2588
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 3213
         }
       ],
       "lat": 37.3628164,
@@ -4152,12 +4173,13 @@
       "cuisine": "韩餐",
       "area": "San Francisco",
       "price_range": "",
-      "total_engagement": 1500.5374584779292,
-      "mention_count": 4,
+      "total_engagement": 1721.0137610594086,
+      "mention_count": 5,
       "sources": [
         "68c224b1000000001b01f784",
         "67943d42000000001800e375",
-        "66cbaec3000000001d01a843"
+        "66cbaec3000000001d01a843",
+        "66dd438a000000002503048b"
       ],
       "post_details": [
         {
@@ -4171,16 +4193,6 @@
           "sentiment": "positive"
         },
         {
-          "post_id": "68c224b1000000001b01f784",
-          "title": "湾区网红美食测评 ｜米一 ｜留湘",
-          "date": "2025-09-10",
-          "engagement": 132,
-          "context": "",
-          "adjusted_engagement": 66,
-          "restaurant_count_in_post": 4,
-          "sentiment": "positive"
-        },
-        {
           "post_id": "67943d42000000001800e375",
           "title": "2024我最愛灣區美食最新版‼️",
           "date": "2025-01-25",
@@ -4188,6 +4200,26 @@
           "context": "",
           "adjusted_engagement": 605.2834046956847,
           "restaurant_count_in_post": 18,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "66dd438a000000002503048b",
+          "title": "旧金山，你还是好吃得太全面了",
+          "date": "2024-09-08",
+          "engagement": 493,
+          "adjusted_engagement": 220.47630258147925,
+          "restaurant_count_in_post": 5,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68c224b1000000001b01f784",
+          "title": "湾区网红美食测评 ｜米一 ｜留湘",
+          "date": "2025-09-10",
+          "engagement": 132,
+          "context": "",
+          "adjusted_engagement": 66,
+          "restaurant_count_in_post": 4,
           "sentiment": "positive"
         }
       ],
@@ -4211,7 +4243,10 @@
         "House Double Cut Galbi",
         "牛肋排",
         "厚切牛舌",
-        "海鲜粥"
+        "海鲜粥",
+        "kimchi",
+        "doenjang jjigae",
+        "grilled meat"
       ],
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
@@ -4230,7 +4265,7 @@
       "engagement": 132,
       "city": "San Francisco",
       "region": "San Francisco",
-      "updated_at": "2026-02-26T07:35:55.879Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
@@ -4240,6 +4275,11 @@
           "month": "2026-02",
           "mentions": 3,
           "engagement": 4894
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 1479
         }
       ],
       "lat": 37.759599,
@@ -4252,13 +4292,24 @@
       "cuisine": "面食",
       "area": "Fremont",
       "price_range": "",
-      "total_engagement": 185.63098833543773,
-      "mention_count": 3,
+      "total_engagement": 389.63098833543773,
+      "mention_count": 4,
       "sources": [
         "6959bddc000000002203982b",
-        "68a7a3f6000000001d01ef78"
+        "68a7a3f6000000001d01ef78",
+        "688bd0f4000000002301b078"
       ],
       "post_details": [
+        {
+          "post_id": "688bd0f4000000002301b078",
+          "title": "湾区美食｜MTV新开的川湘菜🔥🔥干饭人冲❗️",
+          "date": "2025-07-31",
+          "engagement": 204,
+          "adjusted_engagement": 204,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "negative"
+        },
         {
           "post_id": "68a7a3f6000000001d01ef78",
           "title": "湾区｜江浙留子只想吃这碗Eilleen’s排骨🥹",
@@ -4284,7 +4335,7 @@
       "google_place_id": "ChIJPfZ62tzHj4AR5ONOlIk3W5o",
       "address": "6004 Stevenson Blvd, Fremont, CA 94538, USA",
       "verified": true,
-      "sentiment_score": 1,
+      "sentiment_score": 0.48,
       "sentiment_details": {
         "positive_mentions": 1,
         "negative_mentions": 0,
@@ -4294,7 +4345,8 @@
         "生煎包",
         "小笼包",
         "冰花煎饺",
-        "茭白肉丝"
+        "茭白肉丝",
+        "辣子鸡"
       ],
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
@@ -4315,7 +4367,7 @@
       "engagement": 131,
       "city": "Fremont",
       "region": "East Bay",
-      "updated_at": "2026-02-27T05:35:43.798Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
@@ -4325,6 +4377,11 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 93
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 612
         }
       ],
       "lat": 37.5194794,
@@ -4449,8 +4506,8 @@
       "cuisine": "湘菜",
       "area": "Cupertino",
       "price_range": "",
-      "total_engagement": 995.8025612106916,
-      "mention_count": 8,
+      "total_engagement": 1026.8025612106917,
+      "mention_count": 9,
       "sources": [
         "689be96b000000001d03b64b",
         "693f51380000000019025a7f",
@@ -4459,7 +4516,8 @@
         "6907acce000000000302c494",
         "69572ce8000000001d03de1d",
         "68c50994000000001d02e833",
-        "68963baa000000002303b5f0"
+        "68963baa000000002303b5f0",
+        "698bed44000000000c034f98"
       ],
       "post_details": [
         {
@@ -4490,6 +4548,16 @@
           "context": "",
           "adjusted_engagement": 157,
           "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68963baa000000002303b5f0",
+          "title": "湾区新晋粤菜馆｜家庭聚会新据点",
+          "date": "2025-08-08",
+          "engagement": 115,
+          "adjusted_engagement": 115,
+          "restaurant_count_in_post": 1,
+          "context": "",
           "sentiment": "positive"
         },
         {
@@ -4533,11 +4601,11 @@
           "sentiment": "positive"
         },
         {
-          "post_id": "68963baa000000002303b5f0",
-          "title": "湾区新晋粤菜馆｜家庭聚会新据点",
-          "date": "2025-08-08",
-          "engagement": 115,
-          "adjusted_engagement": 115,
+          "post_id": "698bed44000000000c034f98",
+          "title": "南湾湘粤情确实有所改进",
+          "date": "2026-02-11",
+          "engagement": 31,
+          "adjusted_engagement": 31,
           "restaurant_count_in_post": 1,
           "context": "",
           "sentiment": "positive"
@@ -4608,7 +4676,9 @@
         "辣子菌",
         "蟹黄肉沫粉丝煲",
         "擂辣椒豆角",
-        "黑松露葱爆雪花牛肉"
+        "黑松露葱爆雪花牛肉",
+        "衡东脆肚",
+        "大鱿鱼"
       ],
       "recommendations_source": "extracted",
       "semantic_tags": {
@@ -4627,7 +4697,7 @@
       "engagement": 127,
       "city": "Cupertino",
       "region": "South Bay",
-      "updated_at": "2026-03-03T05:25:57.773Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
@@ -4640,8 +4710,8 @@
         },
         {
           "month": "2026-03",
-          "mentions": 1,
-          "engagement": 115
+          "mentions": 4,
+          "engagement": 208
         }
       ],
       "lat": 37.3361975,
@@ -5852,7 +5922,7 @@
       "cuisine": "麻辣烫",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 37,
+      "total_engagement": 26.162950903902257,
       "mention_count": 2,
       "sources": [
         "69607392000000000a03362c"
@@ -5864,8 +5934,8 @@
           "date": "2026-01-08",
           "engagement": 37,
           "context": "",
-          "adjusted_engagement": 37,
-          "restaurant_count_in_post": 1,
+          "adjusted_engagement": 26.162950903902257,
+          "restaurant_count_in_post": 2,
           "sentiment": "neutral"
         }
       ],
@@ -5879,7 +5949,10 @@
         "negative_mentions": 0,
         "analyzed_contexts": 2
       },
-      "recommendations": [],
+      "recommendations": [
+        "麻辣拌",
+        "麻辣烫"
+      ],
       "recommendations_source": "extracted",
       "semantic_tags": {
         "scenes": [
@@ -5900,12 +5973,18 @@
       "engagement": 37,
       "city": "Sunnyvale",
       "region": "South Bay",
-      "updated_at": "2026-02-22T08:01:07.577Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
       },
-      "timeseries": [],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 135
+        }
+      ],
       "lat": 37.3676354,
       "lng": -122.0335585
     },
@@ -6507,13 +6586,14 @@
       "cuisine": "韩餐",
       "area": "Sunnyvale",
       "price_range": "",
-      "total_engagement": 708.0109030559875,
-      "mention_count": 5,
+      "total_engagement": 1243.5109030559875,
+      "mention_count": 6,
       "sources": [
         "695dd6e5000000000c035d69",
         "673d265b0000000007034919",
         "694a3ebf000000001f00bccc",
-        "699a1caf000000000a028bad"
+        "699a1caf000000000a028bad",
+        "672c02e5000000001b010767"
       ],
       "post_details": [
         {
@@ -6525,6 +6605,16 @@
           "adjusted_engagement": 583.5771463262469,
           "restaurant_count_in_post": 7,
           "sentiment": "neutral"
+        },
+        {
+          "post_id": "672c02e5000000001b010767",
+          "title": "二访｜南湾真的很难看得上其他的传统韩餐了",
+          "date": "2024-11-06",
+          "engagement": 1071,
+          "adjusted_engagement": 535.5,
+          "restaurant_count_in_post": 4,
+          "context": "",
+          "sentiment": "positive"
         },
         {
           "post_id": "694a3ebf000000001f00bccc",
@@ -6561,7 +6651,7 @@
       "google_place_id": "ChIJO79pfG7Kj4ARTnmoiEbJKEk",
       "address": "1066 Kiely Blvd, Santa Clara, CA 95051, USA",
       "verified": true,
-      "sentiment_score": 0.49,
+      "sentiment_score": 0.71,
       "sentiment_details": {
         "positive_mentions": 0,
         "negative_mentions": 1,
@@ -6570,7 +6660,8 @@
       "recommendations": [
         "Cheese maeun Galbi Jjim",
         "Modeum Sooyook",
-        "Hot soup"
+        "Hot soup",
+        "Galbi 牛肋骨"
       ],
       "recommendations_source": "llm_extracted",
       "semantic_tags": {
@@ -6589,7 +6680,7 @@
       "engagement": 2,
       "city": "Santa Clara",
       "region": "South Bay",
-      "updated_at": "2026-03-01T06:31:32.756Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
@@ -6599,6 +6690,11 @@
           "month": "2026-02",
           "mentions": 3,
           "engagement": 1677
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 3213
         }
       ],
       "lat": 37.3457881,
@@ -6786,14 +6882,15 @@
       "cuisine": "贵州菜",
       "area": "Mountain View",
       "price_range": "",
-      "total_engagement": 726.999039075444,
-      "mention_count": 8,
+      "total_engagement": 841.999039075444,
+      "mention_count": 9,
       "sources": [
         "690da53a00000000070035c0",
         "68bb9f83000000001b02386a",
         "68fc063b0000000007017e54",
         "67a93b0600000000290315d9",
-        "68ae6943000000001c010060"
+        "68ae6943000000001c010060",
+        "68b54489000000001c030633"
       ],
       "recommendations": [
         "烤鱼",
@@ -6803,7 +6900,12 @@
         "新鲜鲈鱼",
         "藤椒麻辣锅",
         "黑猪肉小笼包",
-        "生烫牛肉粉"
+        "生烫牛肉粉",
+        "贵州米粉",
+        "现包黑猪肉小笼包",
+        "小酥肉",
+        "贵州生烫牛肉米粉",
+        "花生米"
       ],
       "post_details": [
         {
@@ -6825,6 +6927,16 @@
           "adjusted_engagement": 222.99903907544405,
           "restaurant_count_in_post": 7,
           "sentiment": "neutral"
+        },
+        {
+          "post_id": "68b54489000000001c030633",
+          "title": "儿童超级友好的云贵菜🔥一口销魂烧椒菜🔥",
+          "date": "2025-09-01",
+          "engagement": 115,
+          "adjusted_engagement": 115,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
         },
         {
           "post_id": "68fc063b0000000007017e54",
@@ -6857,7 +6969,7 @@
           "sentiment": "neutral"
         }
       ],
-      "sentiment_score": 0.56,
+      "sentiment_score": 0.62,
       "sentiment_confidence": null,
       "original_id": "r057",
       "google_place_id": "ChIJ2yPdP5y3j4AR3Xm38i9_-8M",
@@ -6889,7 +7001,7 @@
       "engagement": 453,
       "city": "Mountain View",
       "region": "South Bay",
-      "updated_at": "2026-03-01T06:31:32.755Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "last_merged": "2026-02-18T16:27:03.974Z",
         "source_count": 2
@@ -6899,6 +7011,11 @@
           "month": "2026-02",
           "mentions": 3,
           "engagement": 968
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 345
         }
       ]
     },
@@ -8576,8 +8693,8 @@
       "lat": 37.3944297,
       "lng": -122.0981737,
       "verified": true,
-      "total_engagement": 1819.968140028203,
-      "mention_count": 7,
+      "total_engagement": 2355.468140028203,
+      "mention_count": 8,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -8611,7 +8728,15 @@
         "side dishes",
         "Wangyu Galbi",
         "Chilean Seabass Twigim",
-        "Purple potato mash"
+        "Purple potato mash",
+        "Abalone Bibimbap 鲍鱼石锅拌饭",
+        "Wagyu Galbi 和牛烤牛肋骨",
+        "Snow Crab Tofu Soup 雪蟹豆腐汤",
+        "Wagyu Yookhweh 韩式鞑靼牛肉",
+        "Truffle Seafood Pancake 黑松露海鲜饼",
+        "Oxtail Jjim 红烧炖牛尾",
+        "Spicy Octopus Bibimbap 辣八爪鱼拌饭",
+        "Snow Crab Twigim 雪蟹腿天妇罗"
       ],
       "sources": [
         "680c1ac4000000001e00608c",
@@ -8620,9 +8745,40 @@
         "671c231c000000001b03f913",
         "6789ee09000000001d01370b",
         "67e2602d000000001b025fc4",
-        "68e58f410000000007008e7e"
+        "68e58f410000000007008e7e",
+        "672c02e5000000001b010767"
       ],
       "post_details": [
+        {
+          "post_id": "673d265b0000000007034919",
+          "title": "三访｜湾区今年最爱的韩料定食",
+          "date": "2024-11-19",
+          "engagement": 1544,
+          "context": "",
+          "adjusted_engagement": 583.5771463262469,
+          "restaurant_count_in_post": 7,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "672c02e5000000001b010767",
+          "title": "二访｜南湾真的很难看得上其他的传统韩餐了",
+          "date": "2024-11-06",
+          "engagement": 1071,
+          "adjusted_engagement": 535.5,
+          "restaurant_count_in_post": 4,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "671c231c000000001b03f913",
+          "title": "随聊在南湾算得上是精致的1️⃣2️⃣家韩餐",
+          "date": "2024-10-25",
+          "engagement": 1044,
+          "context": "",
+          "adjusted_engagement": 466.89099370195606,
+          "restaurant_count_in_post": 5,
+          "sentiment": "positive"
+        },
         {
           "post_id": "68391755000000000f030fdf",
           "title": "湾区韩餐新贵！环境和出品都很惊艳！❤️",
@@ -8654,36 +8810,6 @@
           "sentiment": "positive"
         },
         {
-          "post_id": "68e58f410000000007008e7e",
-          "title": "湾区韩餐漂亮饭不踩雷",
-          "date": "2025-10-07",
-          "engagement": 37,
-          "adjusted_engagement": 37,
-          "restaurant_count_in_post": 1,
-          "context": "",
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "671c231c000000001b03f913",
-          "title": "随聊在南湾算得上是精致的1️⃣2️⃣家韩餐",
-          "date": "2024-10-25",
-          "engagement": 1044,
-          "context": "",
-          "adjusted_engagement": 466.89099370195606,
-          "restaurant_count_in_post": 5,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "673d265b0000000007034919",
-          "title": "三访｜湾区今年最爱的韩料定食",
-          "date": "2024-11-19",
-          "engagement": 1544,
-          "context": "",
-          "adjusted_engagement": 583.5771463262469,
-          "restaurant_count_in_post": 7,
-          "sentiment": "positive"
-        },
-        {
           "post_id": "67e2602d000000001b025fc4",
           "title": "南湾美食新店打卡🍷🍣🍕",
           "date": "2025-03-25",
@@ -8692,6 +8818,16 @@
           "adjusted_engagement": 45.5,
           "restaurant_count_in_post": 4,
           "sentiment": "positive"
+        },
+        {
+          "post_id": "68e58f410000000007008e7e",
+          "title": "湾区韩餐漂亮饭不踩雷",
+          "date": "2025-10-07",
+          "engagement": 37,
+          "adjusted_engagement": 37,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
         }
       ],
       "timeseries": [
@@ -8699,10 +8835,15 @@
           "month": "2026-02",
           "mentions": 9,
           "engagement": 3852
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 3213
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T07:35:55.884Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-24",
         "source": "daily_pipeline",
@@ -8868,9 +9009,9 @@
       "lat": 37.3387227,
       "lng": -122.0425458,
       "verified": true,
-      "total_engagement": 246.66042558696057,
-      "mention_count": 4,
-      "sentiment_score": 1,
+      "total_engagement": 528.7544007200504,
+      "mention_count": 6,
+      "sentiment_score": 0.73,
       "sentiment_details": {},
       "recommendations": [
         "新西兰和牛",
@@ -8887,24 +9028,32 @@
         "嫩牛肉",
         "腰片",
         "牛舌",
-        "番茄锅"
+        "番茄锅",
+        "鳝鱼丝",
+        "双椒牛肉",
+        "卤豆腐",
+        "卤鸡爪",
+        "黄喉丝",
+        "猪血"
       ],
       "sources": [
         "69236d64000000001b0323d5",
         "69421e78000000001e0221e8",
         "677ae179000000001300a4ae",
-        "690fbfea0000000005038f41"
+        "690fbfea0000000005038f41",
+        "6918dec500000000070329d8",
+        "699fbc73000000001b01fedb"
       ],
       "post_details": [
         {
-          "post_id": "690fbfea0000000005038f41",
-          "title": "可以说是湾区最佳了",
-          "date": "2025-11-08",
-          "engagement": 107,
-          "context": "",
-          "adjusted_engagement": 75.66042558696059,
+          "post_id": "6918dec500000000070329d8",
+          "title": "Sunnyvale现做现蒸的包子铺开门啦",
+          "date": "2025-11-15",
+          "engagement": 365,
+          "adjusted_engagement": 258.0939751330898,
           "restaurant_count_in_post": 2,
-          "sentiment": "positive"
+          "context": "",
+          "sentiment": "neutral"
         },
         {
           "post_id": "677ae179000000001300a4ae",
@@ -8914,6 +9063,16 @@
           "context": "",
           "adjusted_engagement": 85,
           "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "690fbfea0000000005038f41",
+          "title": "可以说是湾区最佳了",
+          "date": "2025-11-08",
+          "engagement": 107,
+          "context": "",
+          "adjusted_engagement": 75.66042558696059,
+          "restaurant_count_in_post": 2,
           "sentiment": "positive"
         },
         {
@@ -8935,6 +9094,16 @@
           "adjusted_engagement": 38,
           "restaurant_count_in_post": 1,
           "sentiment": "positive"
+        },
+        {
+          "post_id": "699fbc73000000001b01fedb",
+          "title": "🇺🇸问问🍠活人，冯校长好不好吃❤️🖤",
+          "date": "2026-02-26",
+          "engagement": 24,
+          "adjusted_engagement": 24,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "neutral"
         }
       ],
       "timeseries": [
@@ -8942,10 +9111,15 @@
           "month": "2026-02",
           "mentions": 5,
           "engagement": 326
+        },
+        {
+          "month": "2026-03",
+          "mentions": 6,
+          "engagement": 1167
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.118Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-24",
         "source": "daily_pipeline",
@@ -9243,8 +9417,8 @@
       "lat": 37.7960301,
       "lng": -122.4060612,
       "verified": true,
-      "total_engagement": 192,
-      "mention_count": 2,
+      "total_engagement": 298.71578903249576,
+      "mention_count": 4,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -9257,11 +9431,20 @@
         "蜜汁酥皮虾",
         "牛油果酱汁",
         "樱桃山药",
-        "鲜肉酥饼"
+        "鲜肉酥饼",
+        "凉粉",
+        "夫妻肺片",
+        "招牌沸腾鱼",
+        "辣子鸡",
+        "红酒石锅烧牛尾",
+        "上汤豆苗",
+        "蛋炒饭"
       ],
       "sources": [
         "666fd3080000000006006530",
-        "6903c77d0000000003011159"
+        "6903c77d0000000003011159",
+        "667f50e2000000001d01bbfe",
+        "685da44e000000001c036272"
       ],
       "post_details": [
         {
@@ -9275,6 +9458,16 @@
           "sentiment": "positive"
         },
         {
+          "post_id": "667f50e2000000001d01bbfe",
+          "title": "旧金山必打卡餐厅：很多人都不知道这家名店",
+          "date": "2024-06-29",
+          "engagement": 145,
+          "adjusted_engagement": 83.71578903249574,
+          "restaurant_count_in_post": 3,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
           "post_id": "6903c77d0000000003011159",
           "title": "三藩Chinatown必打卡的四季民福同款烤鸭！",
           "date": "2025-10-30",
@@ -9283,6 +9476,16 @@
           "adjusted_engagement": 71,
           "restaurant_count_in_post": 1,
           "sentiment": "positive"
+        },
+        {
+          "post_id": "685da44e000000001c036272",
+          "title": "加州游玩美食记-旧金山美食推荐2",
+          "date": "2025-06-26",
+          "engagement": 23,
+          "adjusted_engagement": 23,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
         }
       ],
       "timeseries": [
@@ -9290,10 +9493,15 @@
           "month": "2026-02",
           "mentions": 3,
           "engagement": 313
+        },
+        {
+          "month": "2026-03",
+          "mentions": 6,
+          "engagement": 504
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.118Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-24",
         "source": "daily_pipeline",
@@ -9681,21 +9889,36 @@
       "lat": 37.7959647,
       "lng": -122.3934171,
       "verified": true,
-      "total_engagement": 293.8980156401965,
-      "mention_count": 2,
-      "sentiment_score": 1,
+      "total_engagement": 594.2773844957557,
+      "mention_count": 4,
+      "sentiment_score": 0.93,
       "sentiment_details": {},
       "recommendations": [
         "Oyster Platter",
         "Grilled Oysters",
         "Rusty Seafood Stew",
-        "Oysters"
+        "Oysters",
+        "fried soft shell crab burger",
+        "fish and chips",
+        "seafood pasta"
       ],
       "sources": [
         "696c7c0b0000000022023140",
-        "68ff6f18000000000503330d"
+        "68ff6f18000000000503330d",
+        "66dd438a000000002503048b",
+        "672458d3000000001a01e502"
       ],
       "post_details": [
+        {
+          "post_id": "66dd438a000000002503048b",
+          "title": "旧金山，你还是好吃得太全面了",
+          "date": "2024-09-08",
+          "engagement": 493,
+          "adjusted_engagement": 220.47630258147925,
+          "restaurant_count_in_post": 5,
+          "context": "",
+          "sentiment": "positive"
+        },
         {
           "post_id": "696c7c0b0000000022023140",
           "title": "旧金山干饭MVP｜8家好店分享",
@@ -9715,6 +9938,16 @@
           "adjusted_engagement": 115,
           "restaurant_count_in_post": 4,
           "sentiment": "positive"
+        },
+        {
+          "post_id": "672458d3000000001a01e502",
+          "title": "SF｜三番吃喝3天不踩雷攻略👌真的好好吃🔥",
+          "date": "2024-11-01",
+          "engagement": 226,
+          "adjusted_engagement": 79.90306627407986,
+          "restaurant_count_in_post": 8,
+          "context": "",
+          "sentiment": "neutral"
         }
       ],
       "timeseries": [
@@ -9722,10 +9955,15 @@
           "month": "2026-02",
           "mentions": 3,
           "engagement": 1242
+        },
+        {
+          "month": "2026-03",
+          "mentions": 6,
+          "engagement": 2157
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.118Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-24",
         "source": "daily_pipeline",
@@ -11010,17 +11248,24 @@
       "lat": 37.8273136,
       "lng": -122.2571428,
       "verified": true,
-      "total_engagement": 260.4624093159446,
-      "mention_count": 1,
+      "total_engagement": 477.4624093159446,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "Short Ribs",
         "Beef Tongue",
-        "Kimchi Stew"
+        "Kimchi Stew",
+        "和牛串",
+        "澳洲肥羊串",
+        "烤生蚝",
+        "金汤肥牛鍋",
+        "窝蛋烤茄子",
+        "酸奶酒"
       ],
       "sources": [
-        "661313a2000000001b00a16d"
+        "661313a2000000001b00a16d",
+        "6908382900000000030194c0"
       ],
       "post_details": [
         {
@@ -11032,6 +11277,16 @@
           "adjusted_engagement": 260.4624093159446,
           "restaurant_count_in_post": 6,
           "sentiment": "positive"
+        },
+        {
+          "post_id": "6908382900000000030194c0",
+          "title": "灣區新店｜真的拒絕不了這家的蒜香燒生蠔",
+          "date": "2025-11-03",
+          "engagement": 217,
+          "adjusted_engagement": 217,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
         }
       ],
       "timeseries": [
@@ -11039,10 +11294,15 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 638
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 651
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:00.855Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -11129,9 +11389,9 @@
       "lat": 37.3791409,
       "lng": -122.11665,
       "verified": true,
-      "total_engagement": 914.3652045862804,
-      "mention_count": 3,
-      "sentiment_score": 1,
+      "total_engagement": 1060.6040503147665,
+      "mention_count": 4,
+      "sentiment_score": 0.86,
       "sentiment_details": {},
       "recommendations": [
         "猪肉烧鸟",
@@ -11150,7 +11410,8 @@
       "sources": [
         "665a61810000000005004fba",
         "680c77a4000000001b03e265",
-        "5e434fa3000000000100aa09"
+        "5e434fa3000000000100aa09",
+        "67018ea3000000002c017ec2"
       ],
       "post_details": [
         {
@@ -11174,6 +11435,16 @@
           "sentiment": "positive"
         },
         {
+          "post_id": "67018ea3000000002c017ec2",
+          "title": "湾区探店｜Ippuku - 完爆南湾所有烧鸟",
+          "date": "2024-10-05",
+          "engagement": 327,
+          "adjusted_engagement": 146.23884572848624,
+          "restaurant_count_in_post": 5,
+          "context": "",
+          "sentiment": "negative"
+        },
+        {
           "post_id": "665a61810000000005004fba",
           "title": "湾区美食 ｜Mountain View和Los Altos吃什么",
           "date": "2024-05-31",
@@ -11192,12 +11463,12 @@
         },
         {
           "month": "2026-03",
-          "mentions": 1,
-          "engagement": 1056
+          "mentions": 4,
+          "engagement": 2037
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-03-03T05:25:57.773Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -11894,9 +12165,9 @@
       "lat": 37.5000276,
       "lng": -121.9735408,
       "verified": true,
-      "total_engagement": 545.7249372981491,
-      "mention_count": 4,
-      "sentiment_score": 0.61,
+      "total_engagement": 700.724937298149,
+      "mention_count": 5,
+      "sentiment_score": 0.58,
       "sentiment_details": {},
       "recommendations": [
         "小酥肉",
@@ -11913,15 +12184,33 @@
         "竹荪虾滑",
         "鸭血",
         "牛百叶",
-        "脑花"
+        "脑花",
+        "干锅牛蛙",
+        "藕片",
+        "宽粉",
+        "年糕",
+        "水煮牛肉",
+        "烧椒皮蛋",
+        "芋头西米露"
       ],
       "sources": [
         "669597e00000000025000819",
         "6950d36c000000001e012431",
         "674fd239000000000202a937",
-        "67b527ba000000000900dc3a"
+        "67b527ba000000000900dc3a",
+        "675fb61d000000000700a4fe"
       ],
       "post_details": [
+        {
+          "post_id": "674fd239000000000202a937",
+          "title": "湾区那年遇见变 AYCE 啦！",
+          "date": "2024-12-04",
+          "engagement": 176,
+          "context": "",
+          "adjusted_engagement": 176,
+          "restaurant_count_in_post": 1,
+          "sentiment": "neutral"
+        },
         {
           "post_id": "669597e00000000025000819",
           "title": "湾区火锅天花板",
@@ -11933,13 +12222,13 @@
           "sentiment": "neutral"
         },
         {
-          "post_id": "674fd239000000000202a937",
-          "title": "湾区那年遇见变 AYCE 啦！",
-          "date": "2024-12-04",
-          "engagement": 176,
-          "context": "",
-          "adjusted_engagement": 176,
+          "post_id": "675fb61d000000000700a4fe",
+          "title": "打卡号称东湾干锅天花板-锅将军",
+          "date": "2024-12-16",
+          "engagement": 155,
+          "adjusted_engagement": 155,
           "restaurant_count_in_post": 1,
+          "context": "",
           "sentiment": "neutral"
         },
         {
@@ -11971,12 +12260,12 @@
         },
         {
           "month": "2026-03",
-          "mentions": 1,
-          "engagement": 452
+          "mentions": 4,
+          "engagement": 917
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-03-03T06:35:31.922Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -13021,16 +13310,19 @@
       "lat": 37.78588269999999,
       "lng": -122.4285535,
       "verified": true,
-      "total_engagement": 659.2375719132075,
-      "mention_count": 2,
-      "sentiment_score": 0.94,
+      "total_engagement": 1194.7375719132074,
+      "mention_count": 3,
+      "sentiment_score": 0.97,
       "sentiment_details": {},
       "recommendations": [
-        "Galbi Jjim"
+        "Galbi Jjim",
+        "Kalbijim",
+        "Beef Soup"
       ],
       "sources": [
         "673d265b0000000007034919",
-        "68f828af00000000050119d3"
+        "68f828af00000000050119d3",
+        "672c02e5000000001b010767"
       ],
       "post_details": [
         {
@@ -13041,6 +13333,16 @@
           "context": "",
           "adjusted_engagement": 583.5771463262469,
           "restaurant_count_in_post": 7,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "672c02e5000000001b010767",
+          "title": "二访｜南湾真的很难看得上其他的传统韩餐了",
+          "date": "2024-11-06",
+          "engagement": 1071,
+          "adjusted_engagement": 535.5,
+          "restaurant_count_in_post": 4,
+          "context": "",
           "sentiment": "positive"
         },
         {
@@ -13059,10 +13361,15 @@
           "month": "2026-02",
           "mentions": 2,
           "engagement": 1651
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 3213
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-03-01T06:31:32.756Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -15310,15 +15617,26 @@
       "lat": 37.863753,
       "lng": -122.258889,
       "verified": true,
-      "total_engagement": 94.97411928169345,
-      "mention_count": 1,
+      "total_engagement": 241.2129650101797,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [],
       "sources": [
-        "6886af2e00000000120141fc"
+        "6886af2e00000000120141fc",
+        "67018ea3000000002c017ec2"
       ],
       "post_details": [
+        {
+          "post_id": "67018ea3000000002c017ec2",
+          "title": "湾区探店｜Ippuku - 完爆南湾所有烧鸟",
+          "date": "2024-10-05",
+          "engagement": 327,
+          "adjusted_engagement": 146.23884572848624,
+          "restaurant_count_in_post": 5,
+          "context": "",
+          "sentiment": "positive"
+        },
         {
           "post_id": "6886af2e00000000120141fc",
           "title": "伯克利美食推荐✨最爱的餐厅们",
@@ -15335,10 +15653,15 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 329
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 981
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:00.868Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -15989,25 +16312,35 @@
       "name": "麻辣诱惑",
       "name_en": "",
       "cuisine": "川菜",
-      "area": "Cupertino",
-      "region": "South Bay",
-      "city": "Cupertino",
+      "area": "Fremont",
+      "region": "East Bay",
+      "city": "Fremont",
       "price_range": "unknown",
-      "address": "19672 Stevens Creek Blvd, Cupertino, CA 95014, USA",
-      "google_rating": 4.3,
+      "address": "34420 Fremont Blvd, Fremont, CA 94555, USA",
+      "google_rating": 3.9,
       "google_place_id": "ChIJTSfQ_8G_j4ARvhPDPCzAMfQ",
-      "lat": 37.3217104,
-      "lng": -122.0174991,
+      "lat": 37.5756031,
+      "lng": -122.0397982,
       "verified": true,
-      "total_engagement": 1960.3024209559983,
-      "mention_count": 9,
+      "total_engagement": 2315.3024209559985,
+      "mention_count": 11,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "水煮活鱼",
         "美蛙鱼",
         "辣子鸡",
-        "重庆小面"
+        "重庆小面",
+        "水煮鱼",
+        "酸菜鱼",
+        "水煮美蛙鱼",
+        "肝腰合炒",
+        "爆炒爽脆",
+        "石锅田鸡",
+        "干锅花菜",
+        "干锅包菜",
+        "牛蛙",
+        "螃蟹"
       ],
       "sources": [
         "65f63b6f00000000140071bb",
@@ -16018,29 +16351,11 @@
         "68546bb5000000000d01bbdb",
         "69804d110000000028009567",
         "67cc8dc9000000002602f8be",
-        "6917cd5900000000050000d4"
+        "6917cd5900000000050000d4",
+        "6786f2e6000000001c00ce7c",
+        "6833c70c000000002100f106"
       ],
       "post_details": [
-        {
-          "post_id": "65f63b6f00000000140071bb",
-          "title": "湾区探店｜吐血整理川菜红黑榜！看这篇就够啦",
-          "date": "2024-03-17",
-          "engagement": 359,
-          "context": "",
-          "adjusted_engagement": 253.85133444597054,
-          "restaurant_count_in_post": 2,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "68a51576000000001d03a6af",
-          "title": "南湾组川菜/湘菜局（求口味接近的朋友）",
-          "date": "2025-08-20",
-          "engagement": 250,
-          "context": "",
-          "adjusted_engagement": 144.33756729740645,
-          "restaurant_count_in_post": 3,
-          "sentiment": "positive"
-        },
         {
           "post_id": "697a6fea000000000b008c26",
           "title": "南湾正宗沸腾鱼",
@@ -16072,6 +16387,46 @@
           "sentiment": "positive"
         },
         {
+          "post_id": "65f63b6f00000000140071bb",
+          "title": "湾区探店｜吐血整理川菜红黑榜！看这篇就够啦",
+          "date": "2024-03-17",
+          "engagement": 359,
+          "context": "",
+          "adjusted_engagement": 253.85133444597054,
+          "restaurant_count_in_post": 2,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6786f2e6000000001c00ce7c",
+          "title": "湾区居然有良心餐馆用现杀活鱼做水煮鱼",
+          "date": "2025-01-14",
+          "engagement": 248,
+          "adjusted_engagement": 248,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6833c70c000000002100f106",
+          "title": "湾区最好吃的牛蛙水煮鱼👍",
+          "date": "2025-05-26",
+          "engagement": 160,
+          "adjusted_engagement": 160,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68a51576000000001d03a6af",
+          "title": "南湾组川菜/湘菜局（求口味接近的朋友）",
+          "date": "2025-08-20",
+          "engagement": 250,
+          "context": "",
+          "adjusted_engagement": 144.33756729740645,
+          "restaurant_count_in_post": 3,
+          "sentiment": "positive"
+        },
+        {
           "post_id": "68546bb5000000000d01bbdb",
           "title": "🐟湾区活鱼天花板！麻辣诱惑的沸腾活鱼绝了！",
           "date": "",
@@ -16100,16 +16455,6 @@
           "adjusted_engagement": 55.11351921262151,
           "restaurant_count_in_post": 6,
           "sentiment": "positive"
-        },
-        {
-          "post_id": "6917cd5900000000050000d4",
-          "title": "秋冬进补｜湾区超香烤全羊🐑",
-          "date": "2025-11-15",
-          "engagement": 53,
-          "context": "",
-          "adjusted_engagement": 53,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
         }
       ],
       "timeseries": [
@@ -16117,10 +16462,15 @@
           "month": "2026-02",
           "mentions": 2,
           "engagement": 609
+        },
+        {
+          "month": "2026-03",
+          "mentions": 6,
+          "engagement": 1224
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.116Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -16130,7 +16480,8 @@
       "correction_applied": {
         "at": "2026-03-05T06:22:25.679Z",
         "reason": "cuisine normalization: Sichuan → 川菜"
-      }
+      },
+      "google_name": "ChongQing Xiao Mian"
     },
     {
       "id": "pipeline_1772067300868_b29o",
@@ -17211,8 +17562,8 @@
       "lat": 37.4760886,
       "lng": -121.9212219,
       "verified": true,
-      "total_engagement": 301.22748878546923,
-      "mention_count": 1,
+      "total_engagement": 523.2274887854692,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -17221,10 +17572,18 @@
         "三杯小卷",
         "白菜卤",
         "樱花虾炒高丽菜",
-        "九层塔炒蛤蜊"
+        "九层塔炒蛤蜊",
+        "薑母鴨",
+        "羊肉爐",
+        "蔬菜盤",
+        "滷肉飯",
+        "沙茶牛肉",
+        "清炒絲瓜",
+        "櫻花蝦炒高麗菜"
       ],
       "sources": [
-        "68ec1d44000000000700392b"
+        "68ec1d44000000000700392b",
+        "6961ab59000000002203b803"
       ],
       "post_details": [
         {
@@ -17236,6 +17595,16 @@
           "adjusted_engagement": 301.22748878546923,
           "restaurant_count_in_post": 2,
           "sentiment": "positive"
+        },
+        {
+          "post_id": "6961ab59000000002203b803",
+          "title": "東灣Fremont冬天吃薑母鴨或羊肉爐的美好！",
+          "date": "2026-01-10",
+          "engagement": 222,
+          "adjusted_engagement": 222,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
         }
       ],
       "timeseries": [
@@ -17243,10 +17612,15 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 426
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 666
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:00.868Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -19110,9 +19484,9 @@
       "lat": 37.4206455,
       "lng": -121.9169619,
       "verified": true,
-      "total_engagement": 175.2301846064982,
-      "mention_count": 3,
-      "sentiment_score": 0.36,
+      "total_engagement": 249.2301846064982,
+      "mention_count": 4,
+      "sentiment_score": 0.55,
       "sentiment_details": {},
       "recommendations": [
         "烤鱼",
@@ -19120,12 +19494,17 @@
         "香辣烤鱼",
         "包子",
         "鱼杂",
-        "面疙瘩"
+        "面疙瘩",
+        "黄金鸡米花",
+        "爽口草原肚",
+        "秘制藤椒鸡",
+        "馋嘴牛蛙"
       ],
       "sources": [
         "692364ad000000001e009d80",
         "6917d7d2000000000d0395d9",
-        "696d89bf000000001a033aa2"
+        "696d89bf000000001a033aa2",
+        "67aa4548000000001902f99b"
       ],
       "post_details": [
         {
@@ -19137,6 +19516,16 @@
           "restaurant_count_in_post": 1,
           "context": "",
           "sentiment": "negative"
+        },
+        {
+          "post_id": "67aa4548000000001902f99b",
+          "title": "湾区探店｜这家藏着神仙级下饭菜！",
+          "date": "2025-02-13",
+          "engagement": 74,
+          "adjusted_engagement": 74,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
         },
         {
           "post_id": "696d89bf000000001a033aa2",
@@ -19164,10 +19553,15 @@
           "month": "2026-02",
           "mentions": 3,
           "engagement": 199
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 222
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-03-01T06:31:32.756Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -19917,18 +20311,31 @@
       "lat": 37.7962296,
       "lng": -122.4084831,
       "verified": true,
-      "total_engagement": 147.78410894660783,
-      "mention_count": 1,
+      "total_engagement": 355.6302058548731,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "Rice Roll",
-        "Sesame Paste"
+        "Sesame Paste",
+        "鲜虾盛宴肠粉",
+        "红枣枸杞豆浆"
       ],
       "sources": [
-        "693e694f000000000d03f51a"
+        "693e694f000000000d03f51a",
+        "682d614100000000200297ae"
       ],
       "post_details": [
+        {
+          "post_id": "682d614100000000200297ae",
+          "title": "😋｜旧金山中餐包好吃的！",
+          "date": "2025-05-21",
+          "engagement": 360,
+          "adjusted_engagement": 207.84609690826528,
+          "restaurant_count_in_post": 3,
+          "context": "",
+          "sentiment": "positive"
+        },
         {
           "post_id": "693e694f000000000d03f51a",
           "title": "LA人来SF吃什么🥢旧金山Special美食合集🌉",
@@ -19945,10 +20352,15 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 391
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 1080
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:00.874Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -20104,17 +20516,23 @@
       "lat": 37.7966667,
       "lng": -122.4102778,
       "verified": true,
-      "total_engagement": 899.5501629820371,
-      "mention_count": 2,
+      "total_engagement": 1107.3962598903024,
+      "mention_count": 3,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "Eel and Frog Claypot Rice",
-        "排骨腊味双拼煲仔饭"
+        "排骨腊味双拼煲仔饭",
+        "腊味系列煲仔饭",
+        "黄鳝煲仔饭",
+        "地瓜麻球",
+        "芋饺",
+        "凉瓜炒蛋"
       ],
       "sources": [
         "693e694f000000000d03f51a",
-        "66ad7dda0000000005039fdf"
+        "66ad7dda0000000005039fdf",
+        "682d614100000000200297ae"
       ],
       "post_details": [
         {
@@ -20125,6 +20543,16 @@
           "context": "",
           "adjusted_engagement": 751.7660540354293,
           "restaurant_count_in_post": 5,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "682d614100000000200297ae",
+          "title": "😋｜旧金山中餐包好吃的！",
+          "date": "2025-05-21",
+          "engagement": 360,
+          "adjusted_engagement": 207.84609690826528,
+          "restaurant_count_in_post": 3,
+          "context": "",
           "sentiment": "positive"
         },
         {
@@ -20143,10 +20571,15 @@
           "month": "2026-02",
           "mentions": 2,
           "engagement": 2072
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 1080
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.116Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -21805,15 +22238,34 @@
       "lat": 37.7930864,
       "lng": -122.392181,
       "verified": true,
-      "total_engagement": 153.4079528577316,
-      "mention_count": 1,
+      "total_engagement": 373.88425543921085,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
-      "recommendations": [],
+      "recommendations": [
+        "oysters",
+        "kingfish",
+        "tuna tartar",
+        "grilled lobster",
+        "grilled sea bream",
+        "pan-fried black fish",
+        "mushrooms"
+      ],
       "sources": [
-        "6955e3c6000000001e02c2b3"
+        "6955e3c6000000001e02c2b3",
+        "66dd438a000000002503048b"
       ],
       "post_details": [
+        {
+          "post_id": "66dd438a000000002503048b",
+          "title": "旧金山，你还是好吃得太全面了",
+          "date": "2024-09-08",
+          "engagement": 493,
+          "adjusted_engagement": 220.47630258147925,
+          "restaurant_count_in_post": 5,
+          "context": "",
+          "sentiment": "positive"
+        },
         {
           "post_id": "6955e3c6000000001e02c2b3",
           "title": "2025 年旧金山城区好饭总结",
@@ -21830,10 +22282,15 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 574
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 1479
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:00.875Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -24305,17 +24762,25 @@
       "lat": 37.4481286,
       "lng": -121.8882774,
       "verified": true,
-      "total_engagement": 851.5,
-      "mention_count": 2,
+      "total_engagement": 908.5,
+      "mention_count": 3,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "泡椒牛蛙",
-        "莴笋片炒腊肉"
+        "莴笋片炒腊肉",
+        "紫苏黄瓜鳝鱼",
+        "米豆腐",
+        "丝瓜粉",
+        "素粉",
+        "甲鱼红烧肉",
+        "牛蛙",
+        "茉莉豆浆"
       ],
       "sources": [
         "67158d6c0000000021003d8f",
-        "68e2ed150000000007002588"
+        "68e2ed150000000007002588",
+        "6956f526000000001e009413"
       ],
       "post_details": [
         {
@@ -24326,6 +24791,16 @@
           "context": "",
           "adjusted_engagement": 799,
           "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6956f526000000001e009413",
+          "title": "踏遍湾区湘菜竟然没吃过顾湘",
+          "date": "2026-01-01",
+          "engagement": 57,
+          "adjusted_engagement": 57,
+          "restaurant_count_in_post": 1,
+          "context": "",
           "sentiment": "positive"
         },
         {
@@ -24344,10 +24819,15 @@
           "month": "2026-02",
           "mentions": 2,
           "engagement": 904
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 171
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.544Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -26229,8 +26709,8 @@
       "lat": 37.5760377,
       "lng": -122.0441078,
       "verified": true,
-      "total_engagement": 263,
-      "mention_count": 3,
+      "total_engagement": 301,
+      "mention_count": 4,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -26243,12 +26723,18 @@
         "西葫芦羊肉水饺",
         "烧卖",
         "牛肉卷饼",
-        "卤味拼盘"
+        "卤味拼盘",
+        "酱爆猪肝面",
+        "葱油肉丝面",
+        "鳝鱼面",
+        "拍黄瓜",
+        "茄汁鱼花"
       ],
       "sources": [
         "67fc9578000000000b01de88",
         "68df433c000000000701726b",
-        "66eaed87000000002503002b"
+        "66eaed87000000002503002b",
+        "69631891000000001a02582d"
       ],
       "post_details": [
         {
@@ -26272,6 +26758,16 @@
           "sentiment": "positive"
         },
         {
+          "post_id": "69631891000000001a02582d",
+          "title": "一家接近食堂的店 —— 东湾面面俱到",
+          "date": "2026-01-11",
+          "engagement": 38,
+          "adjusted_engagement": 38,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
           "post_id": "66eaed87000000002503002b",
           "title": "湾区探店🥡｜一口水饺🥟满口家的味道",
           "date": "",
@@ -26287,10 +26783,15 @@
           "month": "2026-02",
           "mentions": 3,
           "engagement": 263
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 114
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-27T05:35:43.797Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -27203,18 +27704,33 @@
       "lat": 37.7963524,
       "lng": -122.4054916,
       "verified": true,
-      "total_engagement": 333.0738995011261,
-      "mention_count": 2,
+      "total_engagement": 416.78968853362187,
+      "mention_count": 3,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
-        "川北凉粉"
+        "川北凉粉",
+        "北京烤鸭",
+        "烤鳕鱼",
+        "藤椒串串香",
+        "贝勒爷葱爆羊"
       ],
       "sources": [
         "68c5f2a9000000001b03f2e6",
-        "66834a25000000001f004691"
+        "66834a25000000001f004691",
+        "667f50e2000000001d01bbfe"
       ],
       "post_details": [
+        {
+          "post_id": "68c5f2a9000000001b03f2e6",
+          "title": "私藏的旧金山老牌中餐🥢每家都好吃到跳舞",
+          "date": "2025-09-14",
+          "engagement": 343,
+          "context": "",
+          "adjusted_engagement": 171.5,
+          "restaurant_count_in_post": 4,
+          "sentiment": "positive"
+        },
         {
           "post_id": "66834a25000000001f004691",
           "title": "旧金山美食探店红黑榜 游客无广测评版",
@@ -27226,13 +27742,13 @@
           "sentiment": "positive"
         },
         {
-          "post_id": "68c5f2a9000000001b03f2e6",
-          "title": "私藏的旧金山老牌中餐🥢每家都好吃到跳舞",
-          "date": "2025-09-14",
-          "engagement": 343,
+          "post_id": "667f50e2000000001d01bbfe",
+          "title": "旧金山必打卡餐厅：很多人都不知道这家名店",
+          "date": "2024-06-29",
+          "engagement": 145,
+          "adjusted_engagement": 83.71578903249574,
+          "restaurant_count_in_post": 3,
           "context": "",
-          "adjusted_engagement": 171.5,
-          "restaurant_count_in_post": 4,
           "sentiment": "positive"
         }
       ],
@@ -27241,10 +27757,15 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 343
+        },
+        {
+          "month": "2026-03",
+          "mentions": 6,
+          "engagement": 870
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T04:17:31.490Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -27271,15 +27792,32 @@
       "lat": 37.7804622,
       "lng": -122.4806298,
       "verified": true,
-      "total_engagement": 171.5,
-      "mention_count": 1,
+      "total_engagement": 379.3460969082653,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
-      "recommendations": [],
+      "recommendations": [
+        "珍宝带子烧卖",
+        "太极马拉糕",
+        "菠菜虾饺",
+        "牛腩肠粉煲",
+        "蒜子炒通菜"
+      ],
       "sources": [
-        "68c5f2a9000000001b03f2e6"
+        "68c5f2a9000000001b03f2e6",
+        "682d614100000000200297ae"
       ],
       "post_details": [
+        {
+          "post_id": "682d614100000000200297ae",
+          "title": "😋｜旧金山中餐包好吃的！",
+          "date": "2025-05-21",
+          "engagement": 360,
+          "adjusted_engagement": 207.84609690826528,
+          "restaurant_count_in_post": 3,
+          "context": "",
+          "sentiment": "positive"
+        },
         {
           "post_id": "68c5f2a9000000001b03f2e6",
           "title": "私藏的旧金山老牌中餐🥢每家都好吃到跳舞",
@@ -27296,10 +27834,15 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 343
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 1080
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T00:55:01.117Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -37664,15 +38207,26 @@
       "lat": 37.5677306,
       "lng": -122.3214944,
       "verified": true,
-      "total_engagement": 32,
-      "mention_count": 1,
-      "sentiment_score": 0.5,
+      "total_engagement": 178.23884572848624,
+      "mention_count": 2,
+      "sentiment_score": 0.09,
       "sentiment_details": {},
       "recommendations": [],
       "sources": [
-        "69632b87000000000e03e522"
+        "69632b87000000000e03e522",
+        "67018ea3000000002c017ec2"
       ],
       "post_details": [
+        {
+          "post_id": "67018ea3000000002c017ec2",
+          "title": "湾区探店｜Ippuku - 完爆南湾所有烧鸟",
+          "date": "2024-10-05",
+          "engagement": 327,
+          "adjusted_engagement": 146.23884572848624,
+          "restaurant_count_in_post": 5,
+          "context": "",
+          "sentiment": "negative"
+        },
         {
           "post_id": "69632b87000000000e03e522",
           "title": "攒了2年的湾区美食🍣日料篇",
@@ -37689,10 +38243,15 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 64
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 981
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-02-26T07:35:55.884Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-02-26",
         "source": "daily_pipeline",
@@ -40808,18 +41367,31 @@
       "lat": 37.6736188,
       "lng": -122.0838237,
       "verified": true,
-      "total_engagement": 12.33288287465668,
-      "mention_count": 1,
-      "sentiment_score": 0.5,
+      "total_engagement": 265.33288287465666,
+      "mention_count": 2,
+      "sentiment_score": 0.98,
       "sentiment_details": {},
       "recommendations": [
         "kalbi Jjim",
-        "传统汤食"
+        "传统汤食",
+        "牛排大锅",
+        "海鲜饼"
       ],
       "sources": [
-        "69a27a53000000001a02c7b8"
+        "69a27a53000000001a02c7b8",
+        "699659420000000016009a83"
       ],
       "post_details": [
+        {
+          "post_id": "699659420000000016009a83",
+          "title": "湾区Hayward的这家韩餐不简单：汤家",
+          "date": "2026-02-19",
+          "engagement": 253,
+          "adjusted_engagement": 253,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
         {
           "post_id": "69a27a53000000001a02c7b8",
           "title": "湾区小夫妻的一二月外食",
@@ -40836,10 +41408,15 @@
           "month": "2026-02",
           "mentions": 1,
           "engagement": 39
+        },
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 759
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-03-01T06:31:32.756Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-03-01",
         "source": "daily_pipeline",
@@ -41210,16 +41787,19 @@
       "lat": 37.7765267,
       "lng": -122.4249906,
       "verified": true,
-      "total_engagement": 179.77986539098308,
-      "mention_count": 1,
+      "total_engagement": 259.68293166506294,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "冻希腊酸奶",
-        "蜂蜜"
+        "蜂蜜",
+        "Greek yogurt ice",
+        "honey"
       ],
       "sources": [
-        "6784ae35000000000b00d615"
+        "6784ae35000000000b00d615",
+        "672458d3000000001a01e502"
       ],
       "post_details": [
         {
@@ -41231,17 +41811,27 @@
           "restaurant_count_in_post": 5,
           "context": "",
           "sentiment": "positive"
+        },
+        {
+          "post_id": "672458d3000000001a01e502",
+          "title": "SF｜三番吃喝3天不踩雷攻略👌真的好好吃🔥",
+          "date": "2024-11-01",
+          "engagement": 226,
+          "adjusted_engagement": 79.90306627407986,
+          "restaurant_count_in_post": 8,
+          "context": "",
+          "sentiment": "positive"
         }
       ],
       "timeseries": [
         {
           "month": "2026-03",
-          "mentions": 1,
-          "engagement": 402
+          "mentions": 4,
+          "engagement": 1080
         }
       ],
       "semantic_tags": [],
-      "updated_at": "2026-03-03T05:25:57.773Z",
+      "updated_at": "2026-03-05T07:03:12.326Z",
       "merge_info": {
         "added_date": "2026-03-03",
         "source": "daily_pipeline",
@@ -41879,7 +42469,802 @@
         "source_post": "669597e00000000025000819",
         "needs_review": false
       }
+    },
+    {
+      "id": "pipeline_1772693975024_fc7u",
+      "name": "Amy's Drive Thru",
+      "name_en": "",
+      "cuisine": "American",
+      "area": "San Francisco",
+      "region": "San Francisco",
+      "city": "San Francisco",
+      "price_range": "unknown",
+      "google_name": "Amy's Drive Thru",
+      "address": "Domestic Terminals Departures Level, San Francisco, CA 94128, USA",
+      "google_rating": 3.6,
+      "google_place_id": "ChIJ2eZAOWB3j4ARuu5pcrM639w",
+      "lat": 37.6137191,
+      "lng": -122.3845427,
+      "verified": true,
+      "total_engagement": 220.47630258147925,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "fried chicken burger",
+        "pizza"
+      ],
+      "sources": [
+        "66dd438a000000002503048b"
+      ],
+      "post_details": [
+        {
+          "post_id": "66dd438a000000002503048b",
+          "title": "旧金山，你还是好吃得太全面了",
+          "date": "2024-09-08",
+          "engagement": 493,
+          "adjusted_engagement": 220.47630258147925,
+          "restaurant_count_in_post": 5,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 1479
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "66dd438a000000002503048b",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_pgex",
+      "name": "Ippuku",
+      "name_en": "",
+      "cuisine": "Yakitori/Japanese",
+      "area": "Berkeley",
+      "region": "East Bay",
+      "city": "Berkeley",
+      "price_range": "unknown",
+      "google_name": "Ippuku",
+      "address": "2130 Center St, Berkeley, CA 94704, USA",
+      "google_rating": 4.5,
+      "google_place_id": "ChIJucLtwJ1-hYAR7qhrXpzINOo",
+      "lat": 37.870291,
+      "lng": -122.267111,
+      "verified": true,
+      "total_engagement": 146.23884572848624,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "鸡肝",
+        "鸡脖子",
+        "牛舌",
+        "葱烤鸡腿肉",
+        "鸡心",
+        "蔬菜葱饼"
+      ],
+      "sources": [
+        "67018ea3000000002c017ec2"
+      ],
+      "post_details": [
+        {
+          "post_id": "67018ea3000000002c017ec2",
+          "title": "湾区探店｜Ippuku - 完爆南湾所有烧鸟",
+          "date": "2024-10-05",
+          "engagement": 327,
+          "adjusted_engagement": 146.23884572848624,
+          "restaurant_count_in_post": 5,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 981
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "67018ea3000000002c017ec2",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_fa9r",
+      "name": "Marufuku Ramen",
+      "name_en": "",
+      "cuisine": "Japanese (Ramen)",
+      "area": "San Francisco",
+      "region": "San Francisco",
+      "city": "San Francisco",
+      "price_range": "unknown",
+      "google_name": "Marufuku Ramen",
+      "address": "1581 Webster St #235, San Francisco, CA 94115, USA",
+      "google_rating": 4.5,
+      "google_place_id": "ChIJsYdOvCx-j4ARJItjWBikyOk",
+      "lat": 37.7851005,
+      "lng": -122.4320079,
+      "verified": true,
+      "total_engagement": 79.90306627407986,
+      "mention_count": 1,
+      "sentiment_score": 0.5,
+      "sentiment_details": {},
+      "recommendations": [
+        "Ramen"
+      ],
+      "sources": [
+        "672458d3000000001a01e502"
+      ],
+      "post_details": [
+        {
+          "post_id": "672458d3000000001a01e502",
+          "title": "SF｜三番吃喝3天不踩雷攻略👌真的好好吃🔥",
+          "date": "2024-11-01",
+          "engagement": 226,
+          "adjusted_engagement": 79.90306627407986,
+          "restaurant_count_in_post": 8,
+          "context": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 678
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "672458d3000000001a01e502",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_s5tw",
+      "name": "Marco Polo",
+      "name_en": "",
+      "cuisine": "Ice cream",
+      "area": "San Francisco",
+      "region": "San Francisco",
+      "city": "San Francisco",
+      "price_range": "unknown",
+      "google_name": "Marco Polo",
+      "address": "4141 Santa Monica Blvd, Los Angeles, CA 90029, USA",
+      "google_rating": 4.3,
+      "google_place_id": "ChIJq6p62k7HwoAR27oENJ9Jv1M",
+      "lat": 34.0917222,
+      "lng": -118.2829931,
+      "verified": true,
+      "total_engagement": 79.90306627407986,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "Durian ice cream"
+      ],
+      "sources": [
+        "672458d3000000001a01e502"
+      ],
+      "post_details": [
+        {
+          "post_id": "672458d3000000001a01e502",
+          "title": "SF｜三番吃喝3天不踩雷攻略👌真的好好吃🔥",
+          "date": "2024-11-01",
+          "engagement": 226,
+          "adjusted_engagement": 79.90306627407986,
+          "restaurant_count_in_post": 8,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 678
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "672458d3000000001a01e502",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_t56w",
+      "name": "锦鲤缘 Kirin Chinese Fusion",
+      "name_en": "",
+      "cuisine": "Chinese",
+      "area": "Mountain View",
+      "region": "South Bay",
+      "city": "Mountain View",
+      "price_range": "unknown",
+      "google_name": "Kirin Chinese Fusion",
+      "address": "485 Castro St, Mountain View, CA 94041, USA",
+      "google_rating": 3.9,
+      "google_place_id": "ChIJoyO3qTO3j4ARqP2pWUBWU54",
+      "lat": 37.3902971,
+      "lng": -122.080917,
+      "verified": true,
+      "total_engagement": 83,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "椰子鸡"
+      ],
+      "sources": [
+        "6779ee21000000001301a227"
+      ],
+      "post_details": [
+        {
+          "post_id": "6779ee21000000001301a227",
+          "title": "真的不理解湾区这家店为什么这么多人骂",
+          "date": "2025-01-05",
+          "engagement": 83,
+          "adjusted_engagement": 83,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 249
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "6779ee21000000001301a227",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_dkgq",
+      "name": "外滩十八号 Shanghai Bun Dynasty",
+      "name_en": "",
+      "cuisine": "上海菜/本帮菜",
+      "area": "Cupertino",
+      "region": "South Bay",
+      "city": "Cupertino",
+      "price_range": "unknown",
+      "google_name": "Shanghai Bun Dynasty",
+      "address": "19634 Stevens Creek Blvd, Cupertino, CA 95014, USA",
+      "google_rating": 4.3,
+      "google_place_id": "ChIJhafzm7y1j4ARgdm5WGVYhhk",
+      "lat": 37.3223899,
+      "lng": -122.0176403,
+      "verified": true,
+      "total_engagement": 353,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "响油鳝丝",
+        "蟹粉虾仁",
+        "江南第一蹄",
+        "红烧黄鱼年糕",
+        "蟹粉煮干丝"
+      ],
+      "sources": [
+        "67a31850000000002900b469"
+      ],
+      "post_details": [
+        {
+          "post_id": "67a31850000000002900b469",
+          "title": "在湾区！刘亦菲吃上海菜的品味遥遥领先😍",
+          "date": "2025-02-06",
+          "engagement": 353,
+          "adjusted_engagement": 353,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 1059
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "67a31850000000002900b469",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_sh8t",
+      "name": "宴遇火锅 TOP POT Restaurant",
+      "name_en": "",
+      "cuisine": "Hot Pot / Chinese",
+      "area": "Pleasanton",
+      "region": "East Bay",
+      "city": "Pleasanton",
+      "price_range": "unknown",
+      "google_name": "TOP POT Restaurant 宴遇火锅",
+      "address": "2733 Stoneridge Dr Suite 105, Pleasanton, CA 94588, USA",
+      "google_rating": 4,
+      "google_place_id": "ChIJrZ-0cnbpj4ARkHS_mvQKWLg",
+      "lat": 37.696816,
+      "lng": -121.8505343,
+      "verified": true,
+      "total_engagement": 158,
+      "mention_count": 1,
+      "sentiment_score": 0,
+      "sentiment_details": {},
+      "recommendations": [
+        "北京烤鸭",
+        "烤牛羊肉串",
+        "火锅",
+        "牛百叶",
+        "腰片",
+        "猪舌",
+        "蒜泥白肉"
+      ],
+      "sources": [
+        "67c4ed67000000000602be4c"
+      ],
+      "post_details": [
+        {
+          "post_id": "67c4ed67000000000602be4c",
+          "title": "东湾宴遇火锅 TOP POT 真实评价",
+          "date": "2025-03-02",
+          "engagement": 158,
+          "adjusted_engagement": 158,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "negative"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 474
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "67c4ed67000000000602be4c",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_28jq",
+      "name": "敦煌兰州牛肉拉面 DH Noodles & Grill",
+      "name_en": "",
+      "cuisine": "Chinese/Lanzhou Noodles",
+      "area": "San Jose",
+      "region": "South Bay",
+      "city": "San Jose",
+      "price_range": "unknown",
+      "google_name": "DH Noodles & Grill 敦煌兰州牛肉拉面",
+      "address": "De Anza Shopping Center, 1183 S De Anza Blvd suit 60, San Jose, CA 95129, USA",
+      "google_rating": 4.5,
+      "google_place_id": "ChIJe3E4QgC1j4ARbgdzd8Th2Co",
+      "lat": 37.3040469,
+      "lng": -122.0331006,
+      "verified": true,
+      "total_engagement": 358,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "水盆羊肉",
+        "干香手抓土豆",
+        "干脆鱿鱼条",
+        "香酥羊排",
+        "兰州特色老酸奶"
+      ],
+      "sources": [
+        "67d89aef000000001c03c0e3"
+      ],
+      "post_details": [
+        {
+          "post_id": "67d89aef000000001c03c0e3",
+          "title": "在Cupertino吃到了比脸盆还大的羊肉泡馍🤭",
+          "date": "2025-03-18",
+          "engagement": 358,
+          "adjusted_engagement": 358,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 1074
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "67d89aef000000001c03c0e3",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_16iw",
+      "name": "星河茶餐廳 K Tea Cafe",
+      "name_en": "",
+      "cuisine": "港式茶餐厅",
+      "area": "Sunnyvale",
+      "region": "South Bay",
+      "city": "Sunnyvale",
+      "price_range": "unknown",
+      "google_name": "K Tea Cafe",
+      "address": "139 S Murphy Ave B, Sunnyvale, CA 94086, USA",
+      "google_rating": 4.2,
+      "google_place_id": "ChIJSWInW1y2j4ARpg3uncV1Zhg",
+      "lat": 37.3770903,
+      "lng": -122.0305967,
+      "verified": true,
+      "total_engagement": 739.8198051533947,
+      "mention_count": 2,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "免费罗宋汤",
+        "铁板羊扒套餐",
+        "白汁蘑菇焗海鲜意面",
+        "药膳清汤牛腩汤濑粉",
+        "果蔬茶"
+      ],
+      "sources": [
+        "67eb4db4000000001c01e380",
+        "69607392000000000a03362c"
+      ],
+      "post_details": [
+        {
+          "post_id": "67eb4db4000000001c01e380",
+          "title": "在Sunnyvale！便宜大碗的港式茶餐厅🤩",
+          "date": "2025-04-02",
+          "engagement": 708,
+          "adjusted_engagement": 708,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "69607392000000000a03362c",
+          "title": "湾区新店|汆悦麻辣烫🍲",
+          "date": "2026-01-09",
+          "engagement": 45,
+          "adjusted_engagement": 31.819805153394636,
+          "restaurant_count_in_post": 2,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 6,
+          "engagement": 2259
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "67eb4db4000000001c01e380",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_bnh9",
+      "name": "粉阿姐 Super Potato",
+      "name_en": "",
+      "cuisine": "Chinese",
+      "area": "Milpitas",
+      "region": "South Bay",
+      "city": "Milpitas",
+      "price_range": "unknown",
+      "google_name": "Super Potato",
+      "address": "177 W Calaveras Blvd, Milpitas, CA 95035, USA",
+      "google_rating": 4.7,
+      "google_place_id": "ChIJN96jTlrJj4ARHE-nTZo3Qco",
+      "lat": 37.4290388,
+      "lng": -121.9109367,
+      "verified": true,
+      "total_engagement": 2072,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "猪脚饭",
+        "新奥尔良大鸡腿",
+        "土豆丝"
+      ],
+      "sources": [
+        "684a52410000000022035f2d"
+      ],
+      "post_details": [
+        {
+          "post_id": "684a52410000000022035f2d",
+          "title": "湾区 | 永吃不厌的13刀猪脚饭",
+          "date": "2025-06-12",
+          "engagement": 2072,
+          "adjusted_engagement": 2072,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 6216
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "684a52410000000022035f2d",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_vz01",
+      "name": "Pacific Catch",
+      "name_en": "",
+      "cuisine": "American",
+      "area": "San Francisco",
+      "region": "San Francisco",
+      "city": "San Francisco",
+      "price_range": "unknown",
+      "google_name": "Pacific Catch",
+      "address": "1200 9th Ave, San Francisco, CA 94122, USA",
+      "google_rating": 4.3,
+      "google_place_id": "ChIJ1zxz4VyHhYARlPgXutVijz4",
+      "lat": 37.765699,
+      "lng": -122.4662647,
+      "verified": true,
+      "total_engagement": 90.33333333333333,
+      "mention_count": 1,
+      "sentiment_score": 0.5,
+      "sentiment_details": {},
+      "recommendations": [],
+      "sources": [
+        "690b7c6f000000000703b381"
+      ],
+      "post_details": [
+        {
+          "post_id": "690b7c6f000000000703b381",
+          "title": "湾区近期外食记录📝",
+          "date": "2025-11-05",
+          "engagement": 271,
+          "adjusted_engagement": 90.33333333333333,
+          "restaurant_count_in_post": 9,
+          "context": "",
+          "sentiment": "neutral"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 813
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "690b7c6f000000000703b381",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_9yqd",
+      "name": "Zareen's",
+      "name_en": "",
+      "cuisine": "Indian",
+      "area": "Mountain View",
+      "region": "South Bay",
+      "city": "Mountain View",
+      "price_range": "unknown",
+      "google_name": "Zareen's",
+      "address": "1477 Plymouth St suite c, Mountain View, CA 94043, USA",
+      "google_rating": 4.4,
+      "google_place_id": "ChIJQ8nPjFW3j4ARcAaUg5pF-Ts",
+      "lat": 37.4162147,
+      "lng": -122.0795314,
+      "verified": true,
+      "total_engagement": 90.33333333333333,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "garlic naan"
+      ],
+      "sources": [
+        "690b7c6f000000000703b381"
+      ],
+      "post_details": [
+        {
+          "post_id": "690b7c6f000000000703b381",
+          "title": "湾区近期外食记录📝",
+          "date": "2025-11-05",
+          "engagement": 271,
+          "adjusted_engagement": 90.33333333333333,
+          "restaurant_count_in_post": 9,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 813
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "690b7c6f000000000703b381",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_cydd",
+      "name": "门口的 Taco Bell",
+      "name_en": "",
+      "cuisine": "Mexican",
+      "area": "Foster City",
+      "region": "Peninsula",
+      "city": "Foster City",
+      "price_range": "unknown",
+      "google_name": "Taco Bell",
+      "address": "1131 Triton Dr, Foster City, CA 94404, USA",
+      "google_rating": 3.8,
+      "google_place_id": "ChIJ8TNWp86ej4ARqKXPIJQYE88",
+      "lat": 37.56361709999999,
+      "lng": -122.2711171,
+      "verified": true,
+      "total_engagement": 90.33333333333333,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "taco",
+        "菠萝汁"
+      ],
+      "sources": [
+        "690b7c6f000000000703b381"
+      ],
+      "post_details": [
+        {
+          "post_id": "690b7c6f000000000703b381",
+          "title": "湾区近期外食记录📝",
+          "date": "2025-11-05",
+          "engagement": 271,
+          "adjusted_engagement": 90.33333333333333,
+          "restaurant_count_in_post": 9,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 813
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "690b7c6f000000000703b381",
+        "needs_review": false
+      }
+    },
+    {
+      "id": "pipeline_1772693975024_smbp",
+      "name": "中餐厅宝藏烤鸭店 Treasure",
+      "name_en": "",
+      "cuisine": "Chinese",
+      "area": "Belmont",
+      "region": "Peninsula",
+      "city": "Belmont",
+      "price_range": "unknown",
+      "google_name": "Treasure 中餐厅",
+      "address": "510 El Camino Real, Belmont, CA 94002, USA",
+      "google_rating": 4.4,
+      "google_place_id": "ChIJU6FDewCfj4ARHJ3Q_U30vk4",
+      "lat": 37.5258336,
+      "lng": -122.2828008,
+      "verified": true,
+      "total_engagement": 67,
+      "mention_count": 1,
+      "sentiment_score": 1,
+      "sentiment_details": {},
+      "recommendations": [
+        "烤鸭",
+        "海鲜蒸蛋",
+        "凉拌海蜇",
+        "擂辣子皮蛋"
+      ],
+      "sources": [
+        "6949abbd000000001e0058c8"
+      ],
+      "post_details": [
+        {
+          "post_id": "6949abbd000000001e0058c8",
+          "title": "宝藏烤鸭店 - Treasure 中餐厅- Belmont",
+          "date": "2025-12-22",
+          "engagement": 67,
+          "adjusted_engagement": 67,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "timeseries": [
+        {
+          "month": "2026-03",
+          "mentions": 3,
+          "engagement": 201
+        }
+      ],
+      "semantic_tags": [],
+      "updated_at": "2026-03-05T07:03:12.326Z",
+      "merge_info": {
+        "added_date": "2026-03-05",
+        "source": "daily_pipeline",
+        "source_post": "6949abbd000000001e0058c8",
+        "needs_review": false
+      }
     }
   ],
-  "verified_at": "2026-03-05T06:22:27.501Z"
+  "verified_at": "2026-03-05T07:03:12.388Z"
 }
