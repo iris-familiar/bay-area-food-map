@@ -115,9 +115,9 @@
         "山野美食",
         "山野森林系贵州餐厅"
       ],
-      "cuisine": "贵州菜"
+      "cuisine": "中餐"
     },
-    "reason": "修正名称：从帖子描述称呼改为正式餐厅名"
+    "reason": "修正名称：从帖子描述称呼改为正式餐厅名 (cuisine updated: 贵州菜 → 中餐 per normalization)"
   },
   {
     "id": "r083",
@@ -4760,9 +4760,9 @@
     "id": "pipeline_1772170235842_oafo",
     "name": "人间烟火小酒馆 Dynasty BBQ",
     "corrections": {
-      "cuisine": "烧腊"
+      "cuisine": "烧烤"
     },
-    "reason": "cuisine normalization: Chinese BBQ → 烧腊"
+    "reason": "cuisine normalization: Chinese BBQ → 烧腊 → 烧烤"
   },
   {
     "id": "pipeline_1772170235842_9klf",
