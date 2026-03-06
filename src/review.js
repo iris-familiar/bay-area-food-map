@@ -668,10 +668,6 @@ async function refetchPlaceId(id) {
     }
 
     const orig = approved.find(r => r.id === id);
-    if (orig && newPlaceId === orig.google_place_id) {
-        showToast('Place ID 未变更', 'error');
-        return;
-    }
 
     btn.disabled = true;
     btn.textContent = '获取中...';
@@ -684,6 +680,23 @@ async function refetchPlaceId(id) {
             // Show merge dialog
             openMergeDialog(id, newPlaceId, result.conflict);
         } else if (result.ok && result.newData) {
+            // Check if fetched data is identical to existing data
+            if (orig) {
+                const { google_name, address, google_rating, lat, lng, city, area, region } = result.newData;
+                const isSame =
+                    (google_name || '') === (orig.google_name || '') &&
+                    (address || '') === (orig.address || '') &&
+                    google_rating === orig.google_rating &&
+                    lat === orig.lat &&
+                    lng === orig.lng &&
+                    (!city || city === orig.city) &&
+                    (!area || area === orig.area) &&
+                    (!region || region === orig.region);
+                if (isSame && !confirm('获取的数据与现有相同，是否仍要标记为待保存？')) {
+                    return;
+                }
+            }
+
             // Store for save
             const state = getDrawerState(id);
             if (state) {

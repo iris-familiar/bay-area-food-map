@@ -311,7 +311,7 @@
     "id": "r024",
     "name": "Mensho Tokyo",
     "corrections": {
-      "cuisine": "面食"
+      "cuisine": "日料"
     },
     "reason": "cuisine normalization: 拉面 → 面食"
   },
@@ -361,7 +361,7 @@
     "id": "r069",
     "name": "小香米粉",
     "corrections": {
-      "cuisine": "面食"
+      "cuisine": "米粉"
     },
     "reason": "cuisine normalization: 拉面 → 面食"
   },
@@ -924,7 +924,7 @@
     "id": "pipeline_1772067300857_bnp1",
     "name": "小香牛骨米粉",
     "corrections": {
-      "cuisine": "面食"
+      "cuisine": "米粉"
     },
     "reason": "cuisine normalization: Rice Noodles → 面食"
   },
@@ -1495,7 +1495,16 @@
         "67cc8dc9000000002602f8be",
         "6917cd5900000000050000d4"
       ],
-      "google_place_id": "ChIJTSfQ_8G_j4ARvhPDPCzAMfQ"
+      "google_place_id": "ChIJTSfQ_8G_j4ARvhPDPCzAMfQ",
+      "area": "Fremont",
+      "address": "34420 Fremont Blvd, Fremont, CA 94555, USA",
+      "google_rating": 3.9,
+      "google_name": "ChongQing Xiao Mian",
+      "lat": 37.5756031,
+      "lng": -122.0397982,
+      "city": "Fremont",
+      "region": "East Bay",
+      "name": "饿了么活鱼馆 Chongqing Xiao Mian"
     },
     "reason": "cuisine normalization: Sichuan → 川菜"
   },
@@ -1555,7 +1564,7 @@
     "id": "pipeline_1772067300868_e55z",
     "name": "HINODEYA Ramen",
     "corrections": {
-      "cuisine": "面食"
+      "cuisine": "日料"
     },
     "reason": "cuisine normalization: Ramen → 面食"
   },
@@ -2417,7 +2426,7 @@
     "id": "pipeline_1772067301116_pqie",
     "name": "Kajiken 歌志轩",
     "corrections": {
-      "cuisine": "面食"
+      "cuisine": "日料"
     },
     "reason": "cuisine normalization: 日式油拌面 → 面食"
   },
@@ -2638,7 +2647,7 @@
     "id": "pipeline_1772067301117_3ttk",
     "name": "世家桂林米粉",
     "corrections": {
-      "cuisine": "面食"
+      "cuisine": "米粉"
     },
     "reason": "cuisine normalization: Guilin Rice Noodles → 面食"
   },
@@ -2646,7 +2655,7 @@
     "id": "pipeline_1772067301117_3kal",
     "name": "Ippudo (一风堂)",
     "corrections": {
-      "cuisine": "面食"
+      "cuisine": "日料"
     },
     "reason": "cuisine normalization: Ramen → 面食"
   },
