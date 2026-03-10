@@ -189,7 +189,7 @@
       },
       "verified": true,
       "name": "半岛 HL Peninsula",
-      "cuisine": "粤菜"
+      "cuisine": "早茶"
     },
     "reason": "搜索匹配"
   },
@@ -940,17 +940,17 @@
     "id": "pipeline_1772067300857_w02n",
     "name": "Ming’s tasty 名味阁",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "早茶"
     },
-    "reason": "cuisine normalization: 广式早茶 → 粤菜"
+    "reason": "cuisine normalization: 广式早茶 → 早茶"
   },
   {
     "id": "pipeline_1772067300857_0xvf",
     "name": "Yummy Dim Sum & Fast Food",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "早茶"
     },
-    "reason": "cuisine normalization: Dim Sum → 粤菜"
+    "reason": "cuisine normalization: Dim Sum → 早茶"
   },
   {
     "id": "pipeline_1772067300857_wf66",
@@ -1173,9 +1173,9 @@
     "id": "pipeline_1772067300865_9ds9",
     "name": "Hong Kong East Ocean Seafood",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "早茶"
     },
-    "reason": "cuisine normalization: Cantonese → 粤菜"
+    "reason": "cuisine normalization: Cantonese → 早茶"
   },
   {
     "id": "pipeline_1772067300865_somm",
@@ -1365,9 +1365,9 @@
     "id": "pipeline_1772067300868_q634",
     "name": "凯悦汇 Harborview",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "早茶"
     },
-    "reason": "cuisine normalization: Cantonese → 粤菜"
+    "reason": "cuisine normalization: Cantonese → 早茶"
   },
   {
     "id": "pipeline_1772067300868_z7fu",
@@ -2370,9 +2370,9 @@
     "id": "pipeline_1772067300875_jr64",
     "name": "Osmanthus Dim Sum Lounge",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "早茶"
     },
-    "reason": "cuisine normalization: 广式早茶 → 粤菜"
+    "reason": "cuisine normalization: 广式早茶 → 早茶"
   },
   {
     "id": "pipeline_1772067300875_s8gj",
@@ -2828,7 +2828,7 @@
     "id": "pipeline_1772067301117_nv6d",
     "name": "HL Peninsula Pearl",
     "corrections": {
-      "cuisine": "粤菜",
+      "cuisine": "早茶",
       "name": "半岛明珠 HL Peninsula Pearl"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
@@ -2910,7 +2910,7 @@
     "id": "pipeline_1772067301117_0hjr",
     "name": "俏龙轩 Dragon Beaux",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "早茶"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
   },
@@ -2918,7 +2918,7 @@
     "id": "pipeline_1772067301117_u2t2",
     "name": "Koi Palace",
     "corrections": {
-      "cuisine": "粤菜",
+      "cuisine": "早茶",
       "name": "鲤鱼门 Koi Palace"
     },
     "reason": "cuisine normalization: Chinese → 中餐"
@@ -3061,9 +3061,9 @@
     "id": "pipeline_1772067301496_gol4",
     "name": "Yank Sing",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "早茶"
     },
-    "reason": "cuisine normalization: Dim Sum → 粤菜"
+    "reason": "cuisine normalization: Dim Sum → 早茶"
   },
   {
     "id": "pipeline_1772067301536_5byu",
@@ -3723,9 +3723,9 @@
     "id": "pipeline_1772067301544_2c07",
     "name": "半岛豪苑 HL Peninsula",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "早茶"
     },
-    "reason": "cuisine normalization: Cantonese → 粤菜"
+    "reason": "cuisine normalization: Cantonese → 早茶"
   },
   {
     "id": "pipeline_1772067301544_d0i0",
@@ -5082,9 +5082,9 @@
     "id": "pipeline_1772346692756_i1ps",
     "name": "鲤鱼门 Koi Palace - Milpitas",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "早茶"
     },
-    "reason": "cuisine normalization: Dim Sum → 粤菜"
+    "reason": "cuisine normalization: Dim Sum → 早茶"
   },
   {
     "id": "pipeline_1772346692756_ehxz",
@@ -5368,5 +5368,37 @@
     "corrections": {
       "_status": "rejected"
     }
+  },
+  {
+    "id": "pipeline_1772515557773_yakh",
+    "name": "如苑早茶 Jade Tea Garden",
+    "corrections": {
+      "cuisine": "早茶"
+    },
+    "reason": "早茶 reclassification: dim sum / yum cha restaurant"
+  },
+  {
+    "id": "pipeline_1772091355883_23bm",
+    "name": "鲤鱼门 Koi Palace Contempo",
+    "corrections": {
+      "cuisine": "早茶"
+    },
+    "reason": "早茶 reclassification: dim sum / yum cha restaurant"
+  },
+  {
+    "id": "pipeline_1772067301118_vllh",
+    "name": "西贡渔港",
+    "corrections": {
+      "cuisine": "早茶"
+    },
+    "reason": "早茶 reclassification: dim sum / yum cha restaurant"
+  },
+  {
+    "id": "pipeline_1772515557773_v5u9",
+    "name": "鲤鱼门 ，",
+    "corrections": {
+      "cuisine": "早茶"
+    },
+    "reason": "早茶 reclassification: dim sum / yum cha restaurant"
   }
 ]

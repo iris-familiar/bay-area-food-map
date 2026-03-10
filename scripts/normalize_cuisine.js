@@ -80,12 +80,15 @@ const CUISINE_MAP = {
   'Lemon Tea / Beverage':                  '奶茶',
   '奶茶店':                                 '奶茶',
 
-  // → 粤菜
+  // → 早茶 (dim sum / yum cha format)
+  'Cantonese / Dim Sum':                   '早茶',
+  'Cantonese Dim Sum':                     '早茶',
+  'Chinese Street Food / Dim Sum':         '早茶',
+  'Dim Sum':                               '早茶',
+  '广式早茶':                               '早茶',
+
+  // → 粤菜 (general Cantonese, HK cafe / cha chaan teng style)
   'Cantonese':                             '粤菜',
-  'Cantonese / Dim Sum':                   '粤菜',
-  'Cantonese Dim Sum':                     '粤菜',
-  'Chinese Street Food / Dim Sum':         '粤菜',
-  'Dim Sum':                               '粤菜',
   'Hong Kong Style':                       '粤菜',
   'Hong Kong Style Cafe':                  '粤菜',
   'Hong Kong Style Cafe (Cha Chaan Teng)': '粤菜',
@@ -93,7 +96,6 @@ const CUISINE_MAP = {
   'Hong Kong Style Cafe / Cantonese':      '粤菜',
   'Hong Kong Style Cha Chaan Teng':        '粤菜',
   'Hong Kong Style Tea Restaurant':        '粤菜',
-  '广式早茶':                               '粤菜',
   '港式':                                   '粤菜',
   '港式茶餐厅':                              '粤菜',
 
@@ -310,7 +312,7 @@ const CANONICAL = new Set([
   '上海菜','东北菜','东南亚菜','中东菜','中原菜','中餐','云南菜','台湾菜',
   '墨西哥菜','奶茶','尼泊尔菜','印度菜','意大利菜','川菜','徽菜','新疆菜',
   '日料','江浙菜','泰餐','海鲜','湖北菜','湘菜','潮汕菜','火锅','炸鸡',
-  '烧烤','烧腊','牛排','甜品','砂锅','粤菜','融合菜','素食','西餐','贵州菜',
+  '烧烤','烧腊','牛排','甜品','砂锅','早茶','粤菜','融合菜','素食','西餐','贵州菜',
   '越南菜','面食','韩餐','麻辣烫','早午餐',
 ]);
 

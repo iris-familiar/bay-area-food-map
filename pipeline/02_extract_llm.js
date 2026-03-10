@@ -122,7 +122,7 @@ Return ONLY valid JSON:
   {
     "name": "restaurant name (Chinese or English)",
     "city": "city name from the list above (required - extract from address or context)",
-    "cuisine": "cuisine type",
+    "cuisine": "cuisine type — use canonical values: 粤菜(Cantonese/HK cafe)|早茶(dim sum/yum cha)|川菜|湘菜|日料|韩餐|越南菜|泰餐|东南亚菜|台湾菜|上海菜|云南菜|潮汕菜|新疆菜|火锅|面食|海鲜|烧腊|融合菜|西餐|甜品|奶茶|早午餐|中餐(generic Chinese)",
     "dishes": ["dish1", "dish2"],
     "sentiment": "positive|negative|neutral"
   }
