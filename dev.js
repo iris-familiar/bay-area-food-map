@@ -154,6 +154,22 @@ const server = http.createServer(async (req, res) => {
                     }
                 }
             }
+            // Fallback: search restaurant database post_details
+            if (!postData && fs.existsSync(DB_FILE)) {
+                const db = readJSON(DB_FILE);
+                for (const r of (db.restaurants || [])) {
+                    const match = (r.post_details || []).find(p => p.post_id === postId || (p.post_id || '').endsWith(postId));
+                    if (match) {
+                        postData = {
+                            title: match.title || '',
+                            date: match.date || '',
+                            engagement: match.engagement || 0,
+                            restaurant_count_in_post: match.restaurant_count_in_post || 1,
+                        };
+                        break;
+                    }
+                }
+            }
             if (postData) {
                 jsonResponse(res, 200, { ok: true, post: postData });
             } else {

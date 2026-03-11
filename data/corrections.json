@@ -3441,7 +3441,67 @@
     "id": "pipeline_1772067301543_2az5",
     "name": "香港小馆",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "粤菜",
+      "post_details": [
+        {
+          "post_id": "6817c20d0000000022005bf3",
+          "title": "湾区｜6年湾区人吐血整理粤菜茶餐厅红黑榜😆",
+          "date": "2025-05-04",
+          "engagement": 804,
+          "context": "",
+          "adjusted_engagement": 328.2316255329459,
+          "restaurant_count_in_post": 6,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6856592a00000000220306a6",
+          "title": "PaloAlto粤菜馆尝鲜！👍藕夹手撕鸡必点！",
+          "date": "2025-06-21",
+          "engagement": 332,
+          "context": "",
+          "adjusted_engagement": 332,
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6784ae35000000000b00d615",
+          "title": "又回半岛(附近)吃喜欢的饭了",
+          "date": "2025-01-13",
+          "engagement": 402,
+          "adjusted_engagement": 179.77986539098308,
+          "restaurant_count_in_post": 5,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68c1b57f000000001d00c132",
+          "title": "湾区探店｜新店老店红黑榜",
+          "date": "2025-09-10",
+          "engagement": 119,
+          "context": "",
+          "adjusted_engagement": 84.14570696119915,
+          "restaurant_count_in_post": 2,
+          "sentiment": "positive"
+        }
+      ],
+      "total_engagement": 924.1571978851281,
+      "mention_count": 4,
+      "sources": [
+        "6817c20d0000000022005bf3",
+        "6856592a00000000220306a6",
+        "6784ae35000000000b00d615",
+        "68c1b57f000000001d00c132"
+      ],
+      "google_place_id": "ChIJtRLy85ywj4AR38KYK7uJ0Yc",
+      "area": "Palo Alto",
+      "address": "3691 El Camino Real, Palo Alto, CA 94306, USA",
+      "google_rating": 4.2,
+      "google_name": "Hong Kong Restaurant",
+      "lat": 37.4184801,
+      "lng": -122.1328666,
+      "city": "Palo Alto",
+      "region": "Peninsula",
+      "name": "香港小馆 Hong Kong Restaurant"
     },
     "reason": "cuisine normalization: Hong Kong Style → 粤菜"
   },
@@ -4599,7 +4659,35 @@
     "id": "pipeline_1772091355884_ylwm",
     "name": "香港楼",
     "corrections": {
-      "cuisine": "粤菜"
+      "cuisine": "粤菜",
+      "post_details": [
+        {
+          "post_id": "6912a1670000000004014ea2",
+          "title": "湾区蕞后一家！！老式手推车点心！",
+          "date": "2025-11-11",
+          "engagement": 32,
+          "adjusted_engagement": 32,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "1e030d78",
+          "title": "湾区，我很少用震撼来形容一家餐厅…",
+          "date": "2025-12-09",
+          "engagement": 81,
+          "context": "",
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive",
+          "adjusted_engagement": 81
+        }
+      ],
+      "total_engagement": 113,
+      "mention_count": 2,
+      "sources": [
+        "6912a1670000000004014ea2",
+        "1e030d78"
+      ]
     },
     "reason": "cuisine normalization: Cantonese / Dim Sum → 粤菜"
   },
@@ -5400,5 +5488,13 @@
       "cuisine": "早茶"
     },
     "reason": "早茶 reclassification: dim sum / yum cha restaurant"
+  },
+  {
+    "id": "r054",
+    "corrections": {
+      "_status": "duplicate_merged",
+      "post_details": [],
+      "sources": []
+    }
   }
 ]

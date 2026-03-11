@@ -611,13 +611,13 @@ async function addPost(id) {
     if (!state) return;
 
     // Check for duplicate
-    if (state.posts.some(p => p.post_id === postId)) {
+    if (state.posts.some(p => p.post_id === postId || (p.post_id || '').endsWith(postId))) {
         showToast('该帖子已存在', 'error');
         return;
     }
 
     // Try to fetch post data
-    let title = '', date = '', engagement = 0;
+    let title = '', date = '', engagement = 0, restaurant_count_in_post = 1;
     try {
         const res = await fetch(`/api/post/${encodeURIComponent(postId)}`);
         const data = await res.json();
@@ -625,6 +625,7 @@ async function addPost(id) {
             title = data.post.title || '';
             date = data.post.date || '';
             engagement = data.post.engagement || 0;
+            restaurant_count_in_post = data.post.restaurant_count_in_post || 1;
         }
     } catch (e) {
         // Silently continue — user can fill in manually
@@ -636,9 +637,10 @@ async function addPost(id) {
         date,
         engagement,
         context: '',
-        restaurant_count_in_post: 1,
+        restaurant_count_in_post,
         sentiment: 'positive',
-        adjusted_engagement: engagement,
+        adjusted_engagement: engagement / Math.sqrt(restaurant_count_in_post),
+        _editing: true,
     });
 
     inputEl.value = '';

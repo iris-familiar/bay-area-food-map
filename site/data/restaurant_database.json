@@ -4761,43 +4761,8 @@
       "price_range": "",
       "total_engagement": 595.9255723521823,
       "mention_count": 4,
-      "sources": [
-        "68c1b57f000000001d00c132",
-        "6856592a00000000220306a6",
-        "6784ae35000000000b00d615"
-      ],
-      "post_details": [
-        {
-          "post_id": "6856592a00000000220306a6",
-          "title": "PaloAlto粤菜馆尝鲜！👍藕夹手撕鸡必点！",
-          "date": "2025-06-21",
-          "engagement": 332,
-          "context": "",
-          "adjusted_engagement": 332,
-          "restaurant_count_in_post": 1,
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "6784ae35000000000b00d615",
-          "title": "又回半岛(附近)吃喜欢的饭了",
-          "date": "2025-01-13",
-          "engagement": 402,
-          "adjusted_engagement": 179.77986539098308,
-          "restaurant_count_in_post": 5,
-          "context": "",
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "68c1b57f000000001d00c132",
-          "title": "湾区探店｜新店老店红黑榜",
-          "date": "2025-09-10",
-          "engagement": 119,
-          "context": "",
-          "adjusted_engagement": 84.14570696119915,
-          "restaurant_count_in_post": 2,
-          "sentiment": "positive"
-        }
-      ],
+      "sources": [],
+      "post_details": [],
       "google_rating": 4.2,
       "google_place_id": "ChIJtRLy85ywj4AR38KYK7uJ0Yc",
       "address": "3691 El Camino Real, Palo Alto, CA 94306, USA",
@@ -4852,7 +4817,8 @@
         }
       ],
       "lat": 37.4184801,
-      "lng": -122.1328666
+      "lng": -122.1328666,
+      "_status": "duplicate_merged"
     },
     {
       "id": "r055",
@@ -32442,21 +32408,21 @@
     },
     {
       "id": "pipeline_1772067301543_2az5",
-      "name": "香港小馆",
+      "name": "香港小馆 Hong Kong Restaurant",
       "name_en": "",
       "cuisine": "粤菜",
-      "area": "Millbrae",
+      "area": "Palo Alto",
       "region": "Peninsula",
-      "city": "Millbrae",
+      "city": "Palo Alto",
       "price_range": "unknown",
-      "address": "300 El Camino Real, Millbrae, CA 94030, USA",
-      "google_rating": 3.8,
-      "google_place_id": "ChIJ-zJZKKV3j4ARE9requYfIpM",
-      "lat": 37.6018206,
-      "lng": -122.3908169,
+      "address": "3691 El Camino Real, Palo Alto, CA 94306, USA",
+      "google_rating": 4.2,
+      "google_place_id": "ChIJtRLy85ywj4AR38KYK7uJ0Yc",
+      "lat": 37.4184801,
+      "lng": -122.1328666,
       "verified": true,
-      "total_engagement": 409.2316255329459,
-      "mention_count": 2,
+      "total_engagement": 924.1571978851281,
+      "mention_count": 4,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -32467,7 +32433,9 @@
       ],
       "sources": [
         "6817c20d0000000022005bf3",
-        "6937834e000000001e030d78"
+        "6856592a00000000220306a6",
+        "6784ae35000000000b00d615",
+        "68c1b57f000000001d00c132"
       ],
       "post_details": [
         {
@@ -32481,13 +32449,33 @@
           "sentiment": "positive"
         },
         {
-          "post_id": "6937834e000000001e030d78",
-          "title": "湾区，我很少用震撼来形容一家餐厅…",
-          "date": "2025-12-09",
-          "engagement": 81,
+          "post_id": "6856592a00000000220306a6",
+          "title": "PaloAlto粤菜馆尝鲜！👍藕夹手撕鸡必点！",
+          "date": "2025-06-21",
+          "engagement": 332,
           "context": "",
-          "adjusted_engagement": 81,
+          "adjusted_engagement": 332,
           "restaurant_count_in_post": 1,
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6784ae35000000000b00d615",
+          "title": "又回半岛(附近)吃喜欢的饭了",
+          "date": "2025-01-13",
+          "engagement": 402,
+          "adjusted_engagement": 179.77986539098308,
+          "restaurant_count_in_post": 5,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "68c1b57f000000001d00c132",
+          "title": "湾区探店｜新店老店红黑榜",
+          "date": "2025-09-10",
+          "engagement": 119,
+          "context": "",
+          "adjusted_engagement": 84.14570696119915,
+          "restaurant_count_in_post": 2,
           "sentiment": "positive"
         }
       ],
@@ -32509,7 +32497,8 @@
       "correction_applied": {
         "at": "2026-03-10T08:51:07.103Z",
         "reason": "cuisine normalization: Hong Kong Style → 粤菜"
-      }
+      },
+      "google_name": "Hong Kong Restaurant"
     },
     {
       "id": "pipeline_1772067301543_4li4",
@@ -38219,15 +38208,16 @@
       "lat": 37.6391912,
       "lng": -122.4212829,
       "verified": true,
-      "total_engagement": 32,
-      "mention_count": 1,
+      "total_engagement": 113,
+      "mention_count": 2,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
         "Dim Sum"
       ],
       "sources": [
-        "6912a1670000000004014ea2"
+        "6912a1670000000004014ea2",
+        "1e030d78"
       ],
       "post_details": [
         {
@@ -38239,6 +38229,16 @@
           "restaurant_count_in_post": 1,
           "context": "",
           "sentiment": "positive"
+        },
+        {
+          "post_id": "1e030d78",
+          "title": "湾区，我很少用震撼来形容一家餐厅…",
+          "date": "2025-12-09",
+          "engagement": 81,
+          "context": "",
+          "restaurant_count_in_post": 1,
+          "sentiment": "positive",
+          "adjusted_engagement": 81
         }
       ],
       "timeseries": [
