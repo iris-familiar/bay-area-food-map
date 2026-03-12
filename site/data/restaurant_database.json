@@ -32695,14 +32695,14 @@
       "name_en": "",
       "cuisine": "粤菜",
       "area": "San Leandro",
-      "region": "South Bay",
-      "city": "San Jose",
+      "region": "East Bay",
+      "city": "San Leandro",
       "price_range": "unknown",
       "address": "1456 E 14th St, San Leandro, CA 94577, USA",
       "google_rating": 3.8,
       "google_place_id": "ChIJI2h00JWPj4ARIoLRxqsRG4s",
-      "lat": 37.2522901,
-      "lng": -121.9096685,
+      "lat": 37.7239446,
+      "lng": -122.1540415,
       "verified": true,
       "total_engagement": 562.2316255329458,
       "mention_count": 2,
@@ -32757,7 +32757,8 @@
       "correction_applied": {
         "at": "2026-03-12T00:10:53.982Z",
         "reason": "cuisine normalization: Cantonese → 粤菜"
-      }
+      },
+      "google_name": "Full House Cafe"
     },
     {
       "id": "pipeline_1772067301543_1ssk",
@@ -40461,7 +40462,7 @@
       "cuisine": "上海菜",
       "area": "Sunnyvale",
       "region": "South Bay",
-      "city": "Milpitas",
+      "city": "Sunnyvale",
       "price_range": "unknown",
       "google_name": "Old Town Shanghai",
       "address": "251 S Mary Ave #1, Sunnyvale, CA 94086, USA",

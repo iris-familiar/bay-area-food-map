@@ -3567,7 +3567,12 @@
       "area": "San Leandro",
       "address": "1456 E 14th St, San Leandro, CA 94577, USA",
       "google_rating": 3.8,
-      "name": "啫煲 Full House Cafe"
+      "name": "啫煲 Full House Cafe",
+      "google_name": "Full House Cafe",
+      "lat": 37.7239446,
+      "lng": -122.1540415,
+      "city": "San Leandro",
+      "region": "East Bay"
     },
     "reason": "cuisine normalization: Cantonese → 粤菜"
   },
@@ -5022,7 +5027,9 @@
       "google_rating": 3.9,
       "google_name": "Old Town Shanghai",
       "lat": 37.3784696,
-      "lng": -122.0466892
+      "lng": -122.0466892,
+      "city": "Sunnyvale",
+      "region": "South Bay"
     },
     "reason": "cuisine normalization: Northern Chinese → 中餐"
   },
