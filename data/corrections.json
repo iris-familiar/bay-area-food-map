@@ -2595,7 +2595,56 @@
     "id": "pipeline_1772067301117_rnmu",
     "name": "Noodles&Things",
     "corrections": {
-      "cuisine": "面食"
+      "cuisine": "粤菜",
+      "google_name": "Porridge & Things",
+      "address": "235 Broadway, Millbrae, CA 94030, USA",
+      "google_rating": 4.2,
+      "lat": 37.60010279999999,
+      "lng": -122.3911965,
+      "city": "Millbrae",
+      "area": "Millbrae",
+      "region": "Peninsula",
+      "google_place_id": "ChIJr-lSxa13j4AR1y499hE-hXE",
+      "name": "Porridge & Things",
+      "post_details": [
+        {
+          "post_id": "66cbaec3000000001d01a843",
+          "title": "最近在湾区吃到的一些好饭",
+          "date": "2024-08-25",
+          "engagement": 2194,
+          "adjusted_engagement": 829.2540537822445,
+          "restaurant_count_in_post": 7,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "683663e0000000000c039009",
+          "title": "湾区｜为了这一口卤鹅，值得来一趟半岛",
+          "date": "2025-05-28",
+          "engagement": 265,
+          "adjusted_engagement": 265,
+          "restaurant_count_in_post": 1,
+          "context": "",
+          "sentiment": "positive"
+        },
+        {
+          "post_id": "6784ae35000000000b00d615",
+          "title": "又回半岛(附近)吃喜欢的饭了",
+          "date": "2025-01-13",
+          "engagement": 402,
+          "adjusted_engagement": 179.77986539098308,
+          "restaurant_count_in_post": 5,
+          "context": "",
+          "sentiment": "positive"
+        }
+      ],
+      "total_engagement": 1274.0339191732276,
+      "mention_count": 3,
+      "sources": [
+        "66cbaec3000000001d01a843",
+        "683663e0000000000c039009",
+        "6784ae35000000000b00d615"
+      ]
     },
     "reason": "cuisine normalization: 粉店 → 面食"
   },

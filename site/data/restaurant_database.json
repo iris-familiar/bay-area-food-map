@@ -25660,9 +25660,9 @@
     },
     {
       "id": "pipeline_1772067301117_rnmu",
-      "name": "Noodles&Things",
+      "name": "Porridge & Things",
       "name_en": "",
-      "cuisine": "面食",
+      "cuisine": "粤菜",
       "area": "Millbrae",
       "region": "Peninsula",
       "city": "Millbrae",
@@ -25673,8 +25673,8 @@
       "lat": 37.60010279999999,
       "lng": -122.3911965,
       "verified": true,
-      "total_engagement": 1553.5424163607013,
-      "mention_count": 4,
+      "total_engagement": 1274.0339191732276,
+      "mention_count": 3,
       "sentiment_score": 1,
       "sentiment_details": {},
       "recommendations": [
@@ -25691,10 +25691,9 @@
         "蟹酱蛤蜊粉丝煲"
       ],
       "sources": [
-        "67469c6200000000020184ec",
         "66cbaec3000000001d01a843",
-        "6784ae35000000000b00d615",
-        "683663e0000000000c039009"
+        "683663e0000000000c039009",
+        "6784ae35000000000b00d615"
       ],
       "post_details": [
         {
@@ -25705,16 +25704,6 @@
           "adjusted_engagement": 829.2540537822445,
           "restaurant_count_in_post": 7,
           "context": "",
-          "sentiment": "positive"
-        },
-        {
-          "post_id": "67469c6200000000020184ec",
-          "title": "湾区潮州米粉横评",
-          "date": "2024-11-27",
-          "engagement": 625,
-          "context": "",
-          "adjusted_engagement": 279.5084971874737,
-          "restaurant_count_in_post": 5,
           "sentiment": "positive"
         },
         {
@@ -25761,7 +25750,8 @@
       "correction_applied": {
         "at": "2026-03-12T05:16:55.732Z",
         "reason": "cuisine normalization: 粉店 → 面食"
-      }
+      },
+      "google_name": "Porridge & Things"
     },
     {
       "id": "pipeline_1772067301117_g29a",
