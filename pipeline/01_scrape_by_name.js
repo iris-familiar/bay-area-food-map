@@ -55,17 +55,18 @@ function callMcp(method, params) {
 }
 
 // ─── Post Freshness Check ──────────────────────────────────────────────────────
+// Cached once per run — directory listing doesn't change during a single execution
+const RAW_DATE_DIRS = fs.existsSync(RAW_BASE_DIR)
+    ? fs.readdirSync(RAW_BASE_DIR).filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d))
+    : [];
+
 function isPostFresh(noteId, maxAgeDays = 7) {
-  // Check all date subdirs under data/raw/
-  if (!fs.existsSync(RAW_BASE_DIR)) return false;
-  const dateDirs = fs.readdirSync(RAW_BASE_DIR).filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d));
-  for (const dateDir of dateDirs) {
-    const candidate = path.join(RAW_BASE_DIR, dateDir, `post_${noteId}.json`);
-    if (fs.existsSync(candidate)) {
-      const stats = fs.statSync(candidate);
-      const ageMs = Date.now() - stats.mtimeMs;
-      if (ageMs < maxAgeDays * 86400 * 1000) return true;
-    }
+  const maxAgeMs = maxAgeDays * 86400 * 1000;
+  for (const dateDir of RAW_DATE_DIRS) {
+    try {
+      const stats = fs.statSync(path.join(RAW_BASE_DIR, dateDir, `post_${noteId}.json`));
+      if (Date.now() - stats.mtimeMs < maxAgeMs) return true;
+    } catch { /* file doesn't exist */ }
   }
   return false;
 }

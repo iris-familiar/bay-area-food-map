@@ -18,34 +18,9 @@
 'use strict';
 
 const fs = require('fs');
+const { cityToRegion, hasCJK, nameSimilarity } = require('./utils');
 
 const [, , dbFile, candidatesFile, outputFile] = process.argv;
-
-const CITY_TO_REGION = {
-    // South Bay
-    'san jose': 'South Bay', 'cupertino': 'South Bay', 'sunnyvale': 'South Bay',
-    'mountain view': 'South Bay', 'santa clara': 'South Bay', 'milpitas': 'South Bay',
-    'campbell': 'South Bay',
-    // Peninsula
-    'palo alto': 'Peninsula', 'san mateo': 'Peninsula', 'millbrae': 'Peninsula',
-    'menlo park': 'Peninsula', 'san carlos': 'Peninsula', 'burlingame': 'Peninsula',
-    'redwood city': 'Peninsula', 'south san francisco': 'Peninsula',
-    'san bruno': 'Peninsula', 'belmont': 'Peninsula', 'daly city': 'Peninsula',
-    'foster city': 'Peninsula',
-    // East Bay
-    'fremont': 'East Bay', 'oakland': 'East Bay', 'berkeley': 'East Bay',
-    'newark': 'East Bay', 'hayward': 'East Bay', 'union city': 'East Bay',
-    'san leandro': 'East Bay', 'albany': 'East Bay', 'dublin': 'East Bay',
-    'pleasanton': 'East Bay', 'walnut creek': 'East Bay', 'pleasant hill': 'East Bay',
-    'emeryville': 'East Bay', 'livermore': 'East Bay', 'san ramon': 'East Bay',
-    // San Francisco
-    'san francisco': 'San Francisco', 'sf': 'San Francisco',
-};
-
-function cityToRegion(city) {
-    if (!city || city === 'unknown') return 'unknown';
-    return CITY_TO_REGION[city.toLowerCase()] || 'unknown';
-}
 
 if (!dbFile || !candidatesFile || !outputFile) {
     console.error('Usage: node 04_merge.js <db_file> <candidates_file> <output_file>');
@@ -119,27 +94,7 @@ function normalize(str) {
     return (str || '').toLowerCase().replace(/\s+/g, '').replace(/[·•·\-_]/g, '');
 }
 
-// Check if string contains CJK characters (Chinese, Japanese, Korean)
-function hasCJK(str) {
-    return /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(str || '');
-}
-
-// Normalised Levenshtein similarity (0–1)
-function nameSimilarity(a, b) {
-    a = (a || '').toLowerCase().replace(/\s+/g, '');
-    b = (b || '').toLowerCase().replace(/\s+/g, '');
-    if (a === b) return 1;
-    const la = a.length, lb = b.length;
-    if (!la || !lb) return 0;
-    const dp = Array.from({length: la+1}, (_, i) => [i, ...Array(lb).fill(0)]);
-    for (let j = 0; j <= lb; j++) dp[0][j] = j;
-    for (let i = 1; i <= la; i++)
-        for (let j = 1; j <= lb; j++)
-            dp[i][j] = a[i-1] === b[j-1]
-                ? dp[i-1][j-1]
-                : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
-    return 1 - dp[la][lb] / Math.max(la, lb);
-}
+const SENTIMENT_VALUE = { positive: 1.0, neutral: 0.5, negative: 0.0 };
 
 for (const candidate of candidates) {
     // Skip candidates that failed enrichment
@@ -268,7 +223,6 @@ for (const candidate of candidates) {
         }
 
         // Recompute sentiment_score from engagement-weighted post_details
-        const SENTIMENT_VALUE = { positive: 1.0, neutral: 0.5, negative: 0.0 };
         const postsWithSentiment = r.post_details.filter(p => p.sentiment);
         if (postsWithSentiment.length > 0) {
             const totalWeight = postsWithSentiment.reduce((s, p) => s + (p.adjusted_engagement || 0), 0);
@@ -291,7 +245,6 @@ for (const candidate of candidates) {
 
     } else {
         // ─── ADD new restaurant ─────────────────────────────────────────────────
-        const sentimentScore = { positive: 1.0, neutral: 0.5, negative: 0.0 };
 
         // Compute adjusted engagement: raw_engagement/sqrt(N)
         const newN = postRestaurantCount[candidate.source_post_id] || 1;
@@ -317,7 +270,7 @@ for (const candidate of candidates) {
             // Engagement metrics
             total_engagement: newAdjustedEngagement,
             mention_count: 1,
-            sentiment_score: sentimentScore[candidate.sentiment] ?? 0.5,
+            sentiment_score: SENTIMENT_VALUE[candidate.sentiment] ?? 0.5,
             sentiment_details: {},
             recommendations: Array.isArray(candidate.dishes) ? candidate.dishes : [],
             sources: [candidate.source_post_id].filter(Boolean),

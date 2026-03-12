@@ -26,7 +26,7 @@ const CJK_RE = /[\u4e00-\u9fff\u3400-\u4dbf\u{20000}-\u{2a6df}\u{2a700}-\u{2b73f
  */
 function hasChinese(str) {
     if (!str) return false;
-    return /[\u4e00-\u9fff\u3400-\u4dbf\uff00-\uffef\u3000-\u303f]/u.test(str);
+    return /[\u4e00-\u9fff\u3400-\u4dbf\u3000-\u303f]/u.test(str);
 }
 
 /**

@@ -14,17 +14,7 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-
-// ─── Load .env (if not already set) ──────────────────────────────────────────
-const envPath = path.join(__dirname, '..', '.env');
-if (fs.existsSync(envPath)) {
-    fs.readFileSync(envPath, 'utf8').split('\n').forEach(line => {
-        const match = line.match(/^([A-Z_][A-Z0-9_]*)=(.*)$/);
-        if (match && !process.env[match[1]]) {
-            process.env[match[1]] = match[2];
-        }
-    });
-}
+const { sleep } = require('./utils');
 
 // ─── Config ────────────────────────────────────────────────────────────────
 const rawDir = process.argv[2];
@@ -88,8 +78,8 @@ const VALID_CITIES = new Set([
 
 function normalizeCity(city) {
     if (!city || city === 'unknown') return 'unknown';
-    // Check aliases first
-    if (CITY_ALIASES[city]) return CITY_ALIASES[city];
+    // Check aliases first (use `in` to handle explicit null values like '湾区')
+    if (city in CITY_ALIASES) return CITY_ALIASES[city] || 'unknown';
     // Normalize to valid city
     const normalized = city.trim();
     for (const valid of VALID_CITIES) {
@@ -194,10 +184,6 @@ Rules:
         req.write(body);
         req.end();
     });
-}
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 // Check if error is retryable (rate limiting, timeout, server overload)

@@ -65,10 +65,11 @@ const index = {
     restaurants: slimRestaurants,
 };
 
-fs.writeFileSync(indexFile, JSON.stringify(index));
+const indexJson = JSON.stringify(index);
+fs.writeFileSync(indexFile, indexJson);
 
 const fullSize = fs.statSync(dbFile).size;
-const indexSize = Buffer.byteLength(JSON.stringify(index));
+const indexSize = Buffer.byteLength(indexJson);
 const reduction = Math.round((1 - indexSize / fullSize) * 100);
 
 console.log(`Index generated: ${slimRestaurants.length} restaurants`);

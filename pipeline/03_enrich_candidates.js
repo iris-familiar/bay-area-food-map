@@ -18,21 +18,13 @@
 
 'use strict';
 
-const fs    = require('fs');
-const path  = require('path');
-const https = require('https');
+const fs = require('fs');
 const { normalizeRestaurantName } = require('./normalize_name');
-
-// ─── Load .env (if not already set) ──────────────────────────────────────────
-const envPath = path.join(__dirname, '..', '.env');
-if (fs.existsSync(envPath)) {
-    fs.readFileSync(envPath, 'utf8').split('\n').forEach(line => {
-        const match = line.match(/^([A-Z_][A-Z0-9_]*)=(.*)$/);
-        if (match && !process.env[match[1]]) {
-            process.env[match[1]] = match[2];
-        }
-    });
-}
+const {
+    sleep, httpsGet, nameSimilarity: similarity, hasCJK,
+    BAY_AREA_CITIES, extractCityFromAddress, addressInBayArea, addressInCity,
+    PLACES_BASE,
+} = require('./utils');
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 const args     = process.argv.slice(2);
@@ -51,78 +43,6 @@ if (!API_KEY) {
 
 const DELAY_MS = 300; // ~3 requests/sec, well within quota
 
-// ─── Helpers ──────────────────────────────────────────────────────────────────
-function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-
-function httpsGet(url) {
-    return new Promise((resolve, reject) => {
-        https.get(url, res => {
-            let data = '';
-            res.on('data', c => { data += c; });
-            res.on('end', () => {
-                try { resolve(JSON.parse(data)); }
-                catch (e) { reject(new Error('JSON parse error: ' + data.slice(0, 100))); }
-            });
-        }).on('error', reject).setTimeout(10000, function() { this.destroy(); reject(new Error('timeout')); });
-    });
-}
-
-// Normalised Levenshtein similarity (0–1)
-function similarity(a, b) {
-    a = a.toLowerCase().replace(/\s+/g, '');
-    b = b.toLowerCase().replace(/\s+/g, '');
-    if (a === b) return 1;
-    const la = a.length, lb = b.length;
-    if (!la || !lb) return 0;
-    const dp = Array.from({length: la+1}, (_, i) => [i, ...Array(lb).fill(0)]);
-    for (let j = 0; j <= lb; j++) dp[0][j] = j;
-    for (let i = 1; i <= la; i++)
-        for (let j = 1; j <= lb; j++)
-            dp[i][j] = a[i-1] === b[j-1]
-                ? dp[i-1][j-1]
-                : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
-    return 1 - dp[la][lb] / Math.max(la, lb);
-}
-
-// Check if string contains CJK characters (Chinese, Japanese, Korean)
-function hasCJK(str) {
-    return /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(str);
-}
-
-const BAY_AREA_CITIES = new Set([
-    'cupertino', 'milpitas', 'fremont', 'mountain view', 'sunnyvale', 'san jose',
-    'palo alto', 'santa clara', 'san mateo', 'foster city', 'redwood city',
-    'menlo park', 'union city', 'newark', 'hayward', 'san francisco', 'daly city',
-    'san leandro', 'pleasanton', 'livermore', 'dublin', 'walnut creek', 'berkeley',
-    'oakland', 'san ramon', 'millbrae', 'san bruno', 'campbell', 'burlingame',
-    'south san francisco', 'albany', 'pleasant hill', 'san carlos', 'belmont',
-    'emeryville',
-]);
-
-function extractCityFromAddress(formattedAddress) {
-    if (!formattedAddress) return null;
-    const parts = formattedAddress.split(', ');
-    // Require "..., City, State ZIP, USA" format (4+ parts, USA suffix)
-    if (parts.length < 4 || parts[parts.length - 1] !== 'USA') return null;
-    const cityCandidate = parts[parts.length - 3];
-    if (BAY_AREA_CITIES.has(cityCandidate.toLowerCase())) return cityCandidate;
-    return null;
-}
-
-function addressInBayArea(address) {
-    if (!address) return false;
-    const addr = address.toLowerCase();
-    return [...BAY_AREA_CITIES].some(c => addr.includes(c));
-}
-
-// Check if address contains the target city
-function addressInCity(address, city) {
-    if (!address || !city) return false;
-    const addr = address.toLowerCase();
-    const c = city.toLowerCase();
-    return addr.includes(c);
-}
-
 // ─── Delivery prefix stripping ────────────────────────────────────────────────
 // Removes delivery app prefixes that confuse Google Places text search
 // e.g. "熊猫外卖御食园" → "御食园"
@@ -139,8 +59,6 @@ function stripDeliveryPrefix(name) {
 }
 
 // ─── Google Places API ────────────────────────────────────────────────────────
-const PLACES_BASE = 'https://maps.googleapis.com/maps/api/place';
-
 async function searchPlace(candidate) {
     const isCJK = hasCJK(candidate.name);
     const hasValidCity = candidate.city && candidate.city !== 'unknown' && candidate.city !== 'Bay Area';

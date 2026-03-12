@@ -18,20 +18,13 @@
 
 'use strict';
 
-const fs    = require('fs');
-const path  = require('path');
-const https = require('https');
-
-// ─── Load .env (if not already set) ──────────────────────────────────────────
-const envPath = path.join(__dirname, '..', '.env');
-if (fs.existsSync(envPath)) {
-    fs.readFileSync(envPath, 'utf8').split('\n').forEach(line => {
-        const match = line.match(/^([A-Z_][A-Z0-9_]*)=(.*)$/);
-        if (match && !process.env[match[1]]) {
-            process.env[match[1]] = match[2];
-        }
-    });
-}
+const fs   = require('fs');
+const path = require('path');
+const {
+    sleep, httpsGet, nameSimilarity: similarity, hasCJK,
+    cityToRegion, extractCityFromAddress, addressInCity,
+    PLACES_BASE,
+} = require('./utils');
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 const ROOT    = path.join(__dirname, '..');
@@ -52,96 +45,7 @@ if (!API_KEY) {
 
 const DELAY_MS = 300; // ~3 requests/sec, well within quota
 
-// ─── Helpers ──────────────────────────────────────────────────────────────────
-function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-
-function httpsGet(url) {
-    return new Promise((resolve, reject) => {
-        https.get(url, res => {
-            let data = '';
-            res.on('data', c => { data += c; });
-            res.on('end', () => {
-                try { resolve(JSON.parse(data)); }
-                catch (e) { reject(new Error('JSON parse error: ' + data.slice(0, 100))); }
-            });
-        }).on('error', reject).setTimeout(10000, function() { this.destroy(); reject(new Error('timeout')); });
-    });
-}
-
-// Normalised Levenshtein similarity (0–1)
-function similarity(a, b) {
-    a = a.toLowerCase().replace(/\s+/g, '');
-    b = b.toLowerCase().replace(/\s+/g, '');
-    if (a === b) return 1;
-    const la = a.length, lb = b.length;
-    if (!la || !lb) return 0;
-    const dp = Array.from({length: la+1}, (_, i) => [i, ...Array(lb).fill(0)]);
-    for (let j = 0; j <= lb; j++) dp[0][j] = j;
-    for (let i = 1; i <= la; i++)
-        for (let j = 1; j <= lb; j++)
-            dp[i][j] = a[i-1] === b[j-1]
-                ? dp[i-1][j-1]
-                : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
-    return 1 - dp[la][lb] / Math.max(la, lb);
-}
-
-// Check if string contains CJK characters (Chinese, Japanese, Korean)
-function hasCJK(str) {
-    return /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(str);
-}
-
-// Check if address contains the target city
-function addressInCity(address, city) {
-    if (!address || !city) return false;
-    const addr = address.toLowerCase();
-    const c = city.toLowerCase();
-    return addr.includes(c);
-}
-
-const BAY_AREA_CITIES = new Set([
-    'cupertino', 'milpitas', 'fremont', 'mountain view', 'sunnyvale', 'san jose',
-    'palo alto', 'santa clara', 'san mateo', 'foster city', 'redwood city',
-    'menlo park', 'union city', 'newark', 'hayward', 'san francisco', 'daly city',
-    'san leandro', 'pleasanton', 'livermore', 'dublin', 'walnut creek', 'berkeley',
-    'oakland', 'san ramon', 'millbrae', 'san bruno', 'campbell', 'burlingame',
-    'south san francisco', 'albany', 'pleasant hill', 'san carlos', 'belmont',
-    'emeryville',
-]);
-
-const CITY_TO_REGION = {
-    'san jose': 'South Bay', 'cupertino': 'South Bay', 'sunnyvale': 'South Bay',
-    'mountain view': 'South Bay', 'santa clara': 'South Bay', 'milpitas': 'South Bay',
-    'campbell': 'South Bay',
-    'palo alto': 'Peninsula', 'san mateo': 'Peninsula', 'millbrae': 'Peninsula',
-    'menlo park': 'Peninsula', 'san carlos': 'Peninsula', 'burlingame': 'Peninsula',
-    'redwood city': 'Peninsula', 'south san francisco': 'Peninsula',
-    'san bruno': 'Peninsula', 'belmont': 'Peninsula', 'daly city': 'Peninsula',
-    'foster city': 'Peninsula',
-    'fremont': 'East Bay', 'oakland': 'East Bay', 'berkeley': 'East Bay',
-    'newark': 'East Bay', 'hayward': 'East Bay', 'union city': 'East Bay',
-    'san leandro': 'East Bay', 'albany': 'East Bay', 'dublin': 'East Bay',
-    'pleasanton': 'East Bay', 'walnut creek': 'East Bay', 'pleasant hill': 'East Bay',
-    'emeryville': 'East Bay', 'livermore': 'East Bay', 'san ramon': 'East Bay',
-    'san francisco': 'San Francisco', 'sf': 'San Francisco',
-};
-
-function cityToRegion(city) {
-    if (!city || city === 'unknown') return 'unknown';
-    return CITY_TO_REGION[city.toLowerCase()] || 'unknown';
-}
-
-function extractCityFromAddress(formattedAddress) {
-    if (!formattedAddress) return null;
-    const parts = formattedAddress.split(', ');
-    // Require "..., City, State ZIP, USA" format (4+ parts, USA suffix)
-    if (parts.length < 4 || parts[parts.length - 1] !== 'USA') return null;
-    const cityCandidate = parts[parts.length - 3];
-    if (BAY_AREA_CITIES.has(cityCandidate.toLowerCase())) return cityCandidate;
-    return null;
-}
-
 // ─── Google Places API ────────────────────────────────────────────────────────
-const PLACES_BASE = 'https://maps.googleapis.com/maps/api/place';
 
 async function searchPlace(restaurant) {
     const query = encodeURIComponent(
@@ -186,6 +90,13 @@ async function getPlaceDetails(placeId) {
 async function main() {
     const db = JSON.parse(fs.readFileSync(DB_FILE, 'utf8'));
 
+    // Build place_id → restaurant map for O(1) duplicate detection
+    const placeIdMap = new Map(
+        db.restaurants
+            .filter(r => r.google_place_id && r._status !== 'duplicate_merged')
+            .map(r => [r.google_place_id, r])
+    );
+
     const unverified = db.restaurants.filter(r =>
         !r.verified
         || !r.google_place_id
@@ -213,12 +124,9 @@ async function main() {
             const details = await getPlaceDetails(result.place_id);
             if (!details) { console.log('details failed'); failed++; continue; }
 
-            // Check if this place_id already exists in another restaurant
-            const existingWithSamePlaceId = db.restaurants.find(other =>
-                other.id !== r.id &&
-                other.google_place_id === details.place_id &&
-                other._status !== 'duplicate_merged'
-            );
+            // Check if this place_id already exists in another restaurant (O(1) lookup)
+            const _existing = placeIdMap.get(details.place_id);
+            const existingWithSamePlaceId = _existing && _existing.id !== r.id ? _existing : null;
 
             if (existingWithSamePlaceId) {
                 console.log(`⚠️  Duplicate: ${r.name} → already exists as ${existingWithSamePlaceId.name}`);
@@ -259,6 +167,7 @@ async function main() {
 
             // Update restaurant record
             r.google_place_id = details.place_id;
+            placeIdMap.set(details.place_id, r); // Keep map current for subsequent iterations
             r.address         = details.formatted_address || r.address;
             const googleCity = extractCityFromAddress(details.formatted_address);
             if (googleCity && googleCity.toLowerCase() !== (r.city || '').toLowerCase()) {
