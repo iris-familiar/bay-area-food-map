@@ -145,7 +145,30 @@ try {
     fail('Pipeline dry-run exits 0', e.message.slice(0, 120));
 }
 
-// ─── 5. Pipeline state file ───────────────────────────────────────────────────
+// ─── 5. Pipeline --keywords flag ─────────────────────────────────────────────
+section('Pipeline --keywords flag');
+
+try {
+    const envSource = fs.existsSync(path.join(ROOT, '.env'))
+        ? `set -o allexport; source "${ROOT}/.env"; set +o allexport; `
+        : '';
+    const out = execSync(
+        `${envSource}bash "${ROOT}/pipeline/run.sh" --dry-run --keywords "湾区火锅,湾区拉面" 2>&1`,
+        { cwd: ROOT, encoding: 'utf8', timeout: 30000 }
+    );
+    out.includes('Pipeline complete')
+        ? ok('--keywords with --dry-run exits 0 and completes')
+        : fail('--keywords dry-run output', 'missing "Pipeline complete"');
+
+    const countAfter = JSON.parse(fs.readFileSync(DB, 'utf8')).restaurants.length;
+    countAfter === count
+        ? ok(`--keywords dry-run preserved restaurant count (${count})`)
+        : fail('--keywords dry-run preserved count', `${count} → ${countAfter}`);
+} catch (e) {
+    fail('--keywords flag accepted by run.sh', e.message.slice(0, 120));
+}
+
+// ─── 6. Pipeline state file ──────────────────────────────────────────────────
 section('Pipeline state');
 
 try {

@@ -99,6 +99,12 @@ SEARCH_TERMS=(
     "湾区踩雷餐厅"
 )
 
+# Override preset list with custom keywords if provided
+if [ -n "${CUSTOM_KEYWORDS:-}" ]; then
+    IFS=',' read -ra SEARCH_TERMS <<< "$CUSTOM_KEYWORDS"
+    log "Custom keywords (${#SEARCH_TERMS[@]}): ${SEARCH_TERMS[*]}"
+fi
+
 NEW_COUNT=0
 SKIP_COUNT=0
 REFRESH_COUNT=0

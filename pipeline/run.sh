@@ -11,7 +11,17 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
-DRY_RUN="${1:-}"
+
+# Parse flags
+DRY_RUN=false
+CUSTOM_KEYWORDS=""
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --dry-run)  DRY_RUN=true; shift ;;
+        --keywords) CUSTOM_KEYWORDS="${2:-}"; shift 2 ;;
+        *)          shift ;;
+    esac
+done
 
 # Load config (paths, API keys)
 source "${PROJECT_DIR}/config.sh"
@@ -65,14 +75,14 @@ write_state() {
   "restaurants_metrics_updated": ${updated},
   "posts_scraped": ${scraped},
   "scrape_ok": ${scrape_ok},
-  "dry_run": $([ "${DRY_RUN}" = "--dry-run" ] && echo "true" || echo "false")
+  "dry_run": $([ "${DRY_RUN}" = "true" ] && echo "true" || echo "false")
 }
 EOF
 }
 
 # ─── Start ────────────────────────────────────────────────────────────────────
 log "════════════════════════════════════════"
-log "Daily Pipeline — ${RUN_DATE}$([ "${DRY_RUN}" = "--dry-run" ] && echo ' [DRY RUN]' || echo '')"
+log "Daily Pipeline — ${RUN_DATE}$([ "${DRY_RUN}" = "true" ] && echo ' [DRY RUN]' || echo '')"
 log "════════════════════════════════════════"
 
 # Step 0: Pre-flight
@@ -107,14 +117,14 @@ log "✅ Backup: $BACKUP"
 SCRAPE_OK=true
 POSTS_COUNT=0
 
-if [ "$DRY_RUN" = "--dry-run" ]; then
+if [ "$DRY_RUN" = "true" ]; then
     log "[DRY RUN] Skipping scrape & extraction"
 else
     # Step 2: Scrape XHS
     log "Step 2: Scraping XHS..."
     SCRAPE_SENTINEL="${RAW_DIR}/.scrape_complete"
 
-    if bash "${SCRIPT_DIR}/01_scrape.sh" "$RAW_DIR" 2>&1 | while IFS= read -r line; do log "  $line"; done; then
+    if CUSTOM_KEYWORDS="$CUSTOM_KEYWORDS" bash "${SCRIPT_DIR}/01_scrape.sh" "$RAW_DIR" 2>&1 | while IFS= read -r line; do log "  $line"; done; then
         touch "$SCRAPE_SENTINEL"
         POSTS_COUNT=$(find "$RAW_DIR" -name "post_*.json" | wc -l | tr -d ' ')
         log "✅ Scrape complete: ${POSTS_COUNT} posts in ${RAW_DIR}"
