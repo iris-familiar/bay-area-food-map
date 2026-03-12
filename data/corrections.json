@@ -3029,7 +3029,16 @@
     "id": "pipeline_1772067301118_gphe",
     "name": "奈雪 Naisnow Tea & Bakery",
     "corrections": {
-      "cuisine": "甜品"
+      "cuisine": "甜品",
+      "address": "19600 Vallco Pkwy #100, Cupertino, CA 95014, USA",
+      "google_rating": 3.3,
+      "google_name": "NaiSnow Tea and Bakery Cupertino",
+      "lat": 37.3253682,
+      "lng": -122.0114917,
+      "city": "Cupertino",
+      "area": "Cupertino",
+      "region": "South Bay",
+      "google_place_id": "ChIJVUyRLli1j4AR5oVwiN4azew"
     },
     "reason": "cuisine normalization: Tea & Bakery → 甜品"
   },
