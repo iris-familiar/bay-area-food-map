@@ -31,7 +31,7 @@ if (!GLM_API_KEY) {
     process.exit(1);
 }
 
-const GLM_MODEL = process.env.GLM_MODEL || 'glm-5';
+const GLM_MODEL = process.env.GLM_MODEL || 'glm-5.1';
 
 // Only process posts from today to avoid re-processing old data
 // MAX_POSTS env var overrides for testing (e.g. MAX_POSTS=10 in e2e)
@@ -236,7 +236,7 @@ async function main() {
         return;
     }
 
-    console.log(`Processing ${files.length} posts with GLM-5 (${GLM_MODEL})...`);
+    console.log(`Processing ${files.length} posts with GLM-5.1 (${GLM_MODEL})...`);
 
     const allCandidates = [];
     const failedPosts = []; // Track posts that failed after all retries
@@ -296,7 +296,7 @@ async function main() {
                         parseInt((post.interactInfo || {}).collectedCount || 0)
                     ),
                     extracted_at: new Date().toISOString(),
-                    extraction_method: 'glm-5',
+                    extraction_method: 'glm-5.1',
                 });
             }
 
